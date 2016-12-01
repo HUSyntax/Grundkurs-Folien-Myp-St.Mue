@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[vietnamese, english,ngerman]{babel}   % seems incompatible with german.sty
+%\usepackage[T3,T1]{fontenc} breaks xelatex
+\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%% MnSymbol: Mathematische Klammern und Symbole (Inkompatibel mit ams-Packages!)
+%% Bedeutungs- und Graphemklammern: $\lsem$ Tisch $\rsem$ $\langle TEXT \rangle$ $\llangle$ TEXT $\rrangle$ 
+\usepackage{MnSymbol}
+%% ulem: Strike out
+\usepackage[normalem]{ulem}  
+
+%% Special Spaces (s. Commands)
+\usepackage{xspace}				
+\usepackage{setspace}
+%	\onehalfspacing
+
+%% mdwlist: Special lists
+\usepackage{mdwlist}	
+
+\usepackage[noenc,safe]{tipa}
+
+% maybe define \textipa to use \originalTeX to avoid problems with `"'.
+%
+%	\ex \textipa{\originalTeX [pa.pa."g\t{aI}]}
+
+
+
+\usepackage{etex}		%For Forest bug
+
+
+\usepackage{jambox}
+
+
+
+%\usepackage{forest-v105}
+\usepackage{modified-langsci-forest-setup}
+
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+
+
+%\usepackage{natbib}
+%\setcitestyle{notesep={:~}}
+
+
+
+
+% for toggles
+\usepackage{etex}
+
+
+
+% Fraktur!
+\usepackage{yfonts}
+
+\usepackage{url}
+
+%% huberlin: Style sheet
+%\usepackage{huberlin}
+\usepackage{hu-beamer-includes-pdflatex}
+\huberlinlogon{0.86cm}
+
+
+%% Last Packages
+%\usepackage{hyperref}	%URLs
+%\usepackage{gb4e}		%Linguistic examples
+
+% sorry this was incompatible with gb4e and had to go.
+%\usepackage{linguex-cgloss}	%Linguistic examples (patched version that works with jambox
+
+\usepackage{multirow}  %Mehrere Zeilen in einer Tabelle
+%\usepackage{array}
+\usepackage{marginnote}	%Notizen

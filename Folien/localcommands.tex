@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%          Commands                            %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% German quotation marks:
+\newcommand{\gqq}[1]{\glqq{}#1\grqq{}}		%double
+\newcommand{\gq}[1]{\glq{}#1\grq{}}			%simple
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbreviations in German
+% package needed: xspace
+% Short space in German abbreviations: \,	
+\newcommand{\idR}{\mbox{i.\,d.\,R.}\xspace}
+\newcommand{\su}{\mbox{s.\,u.}\xspace}
+%\newcommand{\ua}{\mbox{u.\,a.}\xspace}       % in abbrev
+%\newcommand{\zB}{\mbox{z.\,B.}\xspace}       % in abbrev
+%\newcommand{\s}{s.~}
+%not possibel: \dh --> d.\,h.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Abbreviations in English
+\newcommand{\ao}{a.o.\ }	% among others
+\renewcommand{\cf}[1]{(cf.~#1)}	% confer = compare
+\renewcommand{\ia}{i.a.}	% inter alia = among others
+\renewcommand{\ie}{i.e.~}	% id est = that is
+\newcommand{\fe}{e.g.~}	% exempli gratia = for example
+%not possible: \eg --> e.g.~
+\newcommand{\vs}{vs.\ }	% versus
+\newcommand{\wrt}{w.r.t.\ }	% with respect to
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dash:
+\newcommand{\gs}[1]{--\,#1\,--}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Rightarrow with and without space
+\def\ra{\ensuremath\rightarrow}			%without space
+\def\ras{\ensuremath\rightarrow\ }		%with space
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% X-bar notation
+
+%% Notation with primes (not emphasized): \xbar{X}
+\newcommand{\MyPxbar}[1]{#1$^{\prime}$}
+\newcommand{\xxbar}[1]{#1$^{\prime\prime}$}
+\newcommand{\xxxbar}[1]{#1$^{\prime\prime\prime}$}
+
+%% Notation with primes (emphasized): \exbar{X}
+\newcommand{\exbar}[1]{\emph{#1}$^{\prime}$}
+\newcommand{\exxbar}[1]{\emph{#1}$^{\prime\prime}$}
+\newcommand{\exxxbar}[1]{\emph{#1}$^{\prime\prime\prime}$}
+
+% Notation with zero and max (not emphasized): \xbar{X}
+\newcommand{\zerobar}[1]{#1$^{0}$}
+\newcommand{\maxbar}[1]{#1$^{\textsc{max}}$}
+
+% Notation with zero and max (emphasized): \xbar{X}
+\newcommand{\ezerobar}[1]{\emph{#1}$^{0}$}
+\newcommand{\emaxbar}[1]{\emph{#1}$^{\textsc{max}}$}
+
+%% Notation with bars (already implemented in gb4e):
+% \obar{X}, \ibar{X}, \iibar{X}, \mbar{X} %Problems with \mbar!
+%
+%% Without gb4e:
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+%
+%% OR:
+\newcommand{\MyPibar}[1]{$\overline{\textrm{#1}}$}
+\newcommand{\MyPiibar}[1]{$\overline{\overline{\textrm{#1}}}$}
+%% (emphasized):
+\newcommand{\eibar}[1]{$\overline{#1}$}
+\newcommand{\eiibar}[1]{\overline{$\overline{#1}}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Subscript & Superscript: no italics
+\newcommand{\MyPdown}[1]{$_{\textrm{#1}}$}
+\newcommand{\MyPup}[1]{$^{\textrm{#1}}$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objekt language marking:
+%\newcommand{\obj}[1]{\glqq{}#1\grqq{}}	%German double quotes
+%\newcommand{\obj}[1]{``#1''}			%English double quotes
+\newcommand{\MyPobj}[1]{\emph{#1}}		%Emphasising
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Semantic types (<e,t>), features, variables and graphemes in angled brackets 
+
+%%% types and variables, in math mode: angled brackets + italics + no space
+%\newcommand{\type}[1]{$<#1>$}
+
+%%% OR more correctly: 
+%%% types and variables, in math mode: chevrons! + italics + no space
+\newcommand{\MyPtype}[1]{$\langle #1 \rangle$}
+
+%%% features and graphemes, in math mode: chevrons! + italics + no space
+\newcommand{\abe}[1]{$\langle #1 \rangle$}
+
+
+%%% features and graphemes, in math mode: chevrons! + no italics + space
+\newcommand{\ab}[1]{$\langle$#1$\rangle$}  %%same as \abu  
+\newcommand{\abu}[1]{$\langle$#1$\rangle$} %%Umlaute
+
+%%% Notizen
+\renewcommand{\marginfont}{\singlespacing}
+\renewcommand{\marginfont}{\footnotesize}
+\renewcommand{\marginfont}{\color{black}}
+
+\newcommand{\myp}[1]{%
+	\marginnote{%
+		\begin{spacing}{1}
+			\vspace{-\baselineskip}%
+			\color{red}\footnotesize#1
+		\end{spacing}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Outputbox
+\newcommand{\outputbox}[1]{\noindent\fbox{\parbox[t][][t]{0.98\linewidth}{#1}}\vspace{0.5em}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% (Syntactic) Trees
+% package needed: forest
+%
+%% Setting for simple trees
+\forestset{
+	MyP edges/.style={for tree={parent anchor=south, child anchor=north}}
+}
+
+%% this is taken from langsci-setup file
+%% Setting for complex trees
+%% \forestset{
+%% 	sn edges/.style={for tree={parent anchor=south, child anchor=north,align=center}}, 
+%% background tree/.style={for tree={text opacity=0.2,draw opacity=0.2,edge={draw opacity=0.2}}}
+%% }
+
+\newcommand\HideWd[1]{%
+	\makebox[0pt]{#1}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%          Useful commands                     %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%
+%% FOR ITEMS:
+%\begin{itemize}
+%  \item<2-> from point 2
+%  \item<3-> from point 3 
+%  \item<4-> from point 4 
+%\end{itemize}
+%
+% or: \onslide<2->
+% or: \pause
+
+%%%%%%%%%%%%%%%%%%%%%
+%% VERTICAL SPACE:
+% \vspace{.5cm}
+% \vfill
+
+%%%%%%%%%%%%%%%%%%%%%
+% RED MARKING OF TEXT:
+%\alert{bis spätestens Mittwoch, 18 Uhr}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% RESCALE BIG TABLES:
+%\scalebox{0.8}{
+%For Big Tables
+%}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% BLOCKS:
+%\begin{alertblock}{Title}
+%Text
+%\end{alertblock}
+%
+%\begin{block}{Title}
+%Text
+%\end{block}
+%
+%\begin{exampleblock}{Title}
+%Text
+%\end{exampleblock}
+
+
+\newtoggle{uebung}
+\newtoggle{loesung}
+
+
+\newtoggle{hpsgvorlesung}\togglefalse{hpsgvorlesung}
+\newtoggle{syntaxvorlesungen}\togglefalse{syntaxvorlesungen}
+
+%\includecomment{psgbegriffe}
+%\excludecomment{konstituentenprobleme}
+%\includecomment{konstituentenprobleme-hinweis}
+
+\newtoggle{konstituentenprobleme}\togglefalse{konstituentenprobleme}
+\newtoggle{konstituentenprobleme-hinweis}\toggletrue{konstituentenprobleme-hinweis}
+
+%\includecomment{einfsprachwiss-include}
+%\excludecomment{einfsprachwiss-exclude}
+\newtoggle{einfsprachwiss-include}\toggletrue{einfsprachwiss-include}
+\newtoggle{einfsprachwiss-exclude}\togglefalse{einfsprachwiss-exclude}
+
+\newtoggle{psgbegriffe}\toggletrue{psgbegriffe}
+
+\newtoggle{gb-intro}\togglefalse{gb-intro}

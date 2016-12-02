@@ -9,9 +9,9 @@ SOURCE= 00-Organisatorisches-include.tex \
 	03a-phonologie-include.tex\
 	03b-phonologie-include.tex\
 	04a-graphematik-include.tex\
-	05a-wortbildung.tex\
-	05b-flexion.tex\
-	06-syntax.tex
+	05a-wortbildung-include.tex\
+	05b-flexion-include.tex\
+	06a-syntax-stefan-include.tex
 
 
 

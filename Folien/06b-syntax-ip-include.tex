@@ -1,6 +1,6 @@
 %% -*- coding:utf-8 -*-
 \subsection{Bemerkungen zum Spracherwerb}
-
+\if 0
 
 
 \frame{
@@ -184,8 +184,8 @@ Siehe \zb \citew{Pinker94a} und Kritik von \citew{Tomasello95a,Dabrowska2004a}.
 
 \begin{itemize}[<+->]
 \item Annahme: Es gibt ein Problem bei der Erklärung der Spracherwerbs.
-\item Spracherwerb wäre einfacher, wenn Lerner (Kinder) schön wüssten, dass alle sprachlichen
-  Ausdrücke eine bestimmte Struktur haben.
+\item Spracherwerb wäre einfacher, wenn Lerner (Kinder) schon wüssten,\\
+      dass alle sprachlichen Ausdrücke eine bestimmte Struktur haben.
 \item Annahme: Alle sprachlichen Ausdrücke (die zum Kernbereich der Sprache gehören) gehorchen den Gesetzmäßigkeiten der \xbart.
 
 \item Wichtiger Grundsatz: Wenn wir die UG erforschen und aus einer Sprache Aufschlüsse über die UG
@@ -201,7 +201,7 @@ Siehe \zb \citew{Pinker94a} und Kritik von \citew{Tomasello95a,Dabrowska2004a}.
 \subsubsection{\xbart für Englisch}
 
 \frame{
-\frametitle{Die Struktur des deutschen Satzes}
+\frametitle{Die Struktur englischer Sätze}
 
 
 \begin{itemize}
@@ -665,7 +665,7 @@ Hilfsverbumstellungen und Relativsätzen die korrekten Strukturen zugewiesen wer
 
 \pause
 
-Um (\mex{-1}) zu lernen, reichen \zb die Sätze in (\mex{1}) aus:
+Um Strukturen für (\mex{-1}) zu lernen, reichen \zb die Sätze in (\mex{1}) aus:
 \eal
 \ex The man who is eating mumbled.
 \ex The man is hungry.
@@ -681,7 +681,7 @@ Um (\mex{-1}) zu lernen, reichen \zb die Sätze in (\mex{1}) aus:
 \frametitle{Poverty of the Stimulus und U"=DOP -- II}
 
 \begin{itemize}
-\item Procedure:
+\item Algorithmus:
 
 \begin{enumerate}
 \item Berechne alle möglichen (binär verzweigenden) Bäume (ohne Kategoriesymbole)\\
@@ -810,11 +810,11 @@ sn edges
 	[X [,phantom ]]]
 \end{forest}
 &
-\begin{forest}
+\gruen<2->{\begin{forest}
 [X
 	[the]
 	[dog]]
-\end{forest}\hfill\mbox{}
+\end{forest}}\hfill\mbox{}
 \\[3ex]
 \begin{forest}
 sn edges
@@ -832,11 +832,11 @@ sn edges
 	[barks]]
 \end{forest}
 &
-\begin{forest}
+\gruen<2->{\begin{forest}
 [X
 	[the]
 	[dog]]
-\end{forest}\hfill\mbox{}
+\end{forest}}\hfill\mbox{}
 \\[3ex]
 \hfill\begin{forest}
 sn edges
@@ -873,113 +873,241 @@ sn edges
 \end{columns}
 }
 
-
-\if 0
+\fi
 
 \frame{
-\frametitle{Analysis with Subtrees and Probabilities}
+\frametitle{Analyse mit Teilbäumen und Wahrscheinlichkeiten}
 
 \vfill
 
-\oneline{
+
+\hfill
 \begin{tabular}{@{}ccccc@{}}
-\rot<10>{\begin{tabular}{@{}ccc@{}}
-\multicolumn{3}{c}{\node{41}{X}}\\[2ex]
-& \multicolumn{2}{c}{\node{42}{X}}\\[2ex]
-\node{43}{the} & \node{44}{dog} & \node{45}{barks}\\
-\end{tabular}
-\nodeconnect{41}{43}\nodeconnect{41}{42}%
-\nodeconnect{42}{44}\nodeconnect{42}{45}%
-}
+\rot<10>{%
+\adjustbox{valign=c}{%
+\begin{forest}
+sn edges
+[X
+	[the]
+	[X
+		[dog]
+		[barks]]]
+\end{forest}}}
 &
-\begin{tabular}{l}
-is\\
-produced\\ 
-by
-\end{tabular}
+erzeugt aus
 &
-\begin{tabular}{@{}ccc@{}}
-\multicolumn{3}{c}{\node{241}{X}}\\[2ex]
-& \multicolumn{2}{c}{\node{242}{X}}\\[2ex]
-\node{243}{the} & \node{244}{dog} & \node{245}{barks}\\
-\end{tabular}
-\nodeconnect{241}{243}\nodeconnect{241}{242}%
-\nodeconnect{242}{244}\nodeconnect{242}{245}%
+\adjustbox{valign=c}{%
+\begin{forest}
+sn edges
+[X
+	[the]
+	[X
+		[dog]
+		[barks]]]
+\end{forest}}
 &
-\visible<2->{and}
+\visible<2->{und}
 &
 \visible<2->{%
-\begin{tabular}{@{}ccc@{}}
-\multicolumn{3}{c}{\node{341}{X}}\\[2ex]
-& \multicolumn{2}{c}{\node{342}{X}}\\[2ex]
-\node{343}{the}\\
-\end{tabular}
-\nodeconnect{341}{343}\nodeconnect{341}{342}%
+\adjustbox{valign=c}{%
+\begin{forest}
+sn edges
+[X
+	[the]
+	[X [,phantom ]]]
+\end{forest}}
 $\circ$
-%%%%%%%%%%%%%%%%%%%%
-\begin{tabular}{@{}ccc@{}}
-& \multicolumn{2}{c}{\node{442}{X}}\\[2ex]
- & \node{444}{dog} & \node{445}{barks}\\
-\end{tabular}
-\nodeconnect{442}{444}\nodeconnect{442}{445}%
-%
-\\[3pt]
+\adjustbox{valign=c}{%
+\begin{forest}
+[X
+	[dog]
+	[barks]]
+\end{forest}}}
+\\
 \visible<5->{13/144} && \visible<3->{1/12 = 12/144}  & & \visible<4->{1/12 $\times$ 1/12 = 1/144}\\
-\end{tabular}
-}
-}
-\vfill
+\end{tabular}\hfill\mbox{}
 
 \pause\pause\pause\pause\pause
 
-\oneline{%
+\vfill
+
+\hfill
 \begin{tabular}{@{}ccccc@{}}
-\gruen<10->{\begin{tabular}{@{}ccc@{}}
-\multicolumn{3}{c}{\node{31}{X}}\\[2ex]
-\multicolumn{2}{c}{\node{32}{X}}\\[2ex]
-\node{33}{the} & \node{34}{dog} & \node{35}{barks}\\
-\end{tabular}
-\nodeconnect{31}{32}\nodeconnect{31}{35}%
-\nodeconnect{32}{33}\nodeconnect{32}{34}%
-}
+\gruen<10->{%
+\adjustbox{valign=c}{%
+\begin{forest}
+sn edges
+[X
+	[X
+		[the]
+		[dog]]
+	[barks]]
+\end{forest}}}
 &
-\begin{tabular}{l}
-is\\
-produced\\ 
-by
-\end{tabular}
+erzeugt aus
 &
-\begin{tabular}{@{}ccc@{}}
-\multicolumn{3}{c}{\node{231}{X}}\\[2ex]
-\multicolumn{2}{c}{\node{232}{X}}\\[2ex]
-\node{233}{the} & \node{234}{dog} & \node{235}{barks}\\
-\end{tabular}
-\nodeconnect{231}{232}\nodeconnect{231}{235}%
-\nodeconnect{232}{233}\nodeconnect{232}{234}%
+\adjustbox{valign=c}{%
+\begin{forest}
+sn edges
+[X
+	[X
+		[the]
+		[dog]]
+	[barks]]
+\end{forest}}
 &
-\visible<7->{and}
+\visible<7->{und}
 &
-\visible<7->{\begin{tabular}{@{}ccc@{}}
-\multicolumn{3}{c}{\node{331}{X}}\\[2ex]
-\multicolumn{2}{c}{\node{332}{X}}\\[2ex]
-     && \node{335}{barks}\\
-\end{tabular}
-\nodeconnect{331}{332}\nodeconnect{331}{335}%
+\visible<7->{%
+\adjustbox{valign=c}{%
+\begin{forest}
+sn edges
+[X
+	[X [,phantom ]]
+	[barks]]
+\end{forest}}
 $\circ$
-\begin{tabular}{@{}ccc@{}}
-\multicolumn{2}{c}{\node{432}{X}}\\[2ex]
-\node{433}{the} & \node{434}{dog}\\
-\end{tabular}
-\nodeconnect{432}{433}\nodeconnect{432}{434}%
-}
-\\[3pt]
+\adjustbox{valign=c}{%
+\begin{forest}
+[X
+	[the]
+	[dog]]
+\end{forest}}}\\
 \visible<10->{14/144} && \visible<8->{1/12 = 12/144}  & & \visible<9->{1/12 $\times$ \gruen<9>{2/12} = 2/144}\\
 \end{tabular}
-}
+
+\pause\pause\pause\pause
+
+\hfill\mbox{}
+
+%% \oneline{
+%% \begin{tabular}{@{}ccccc@{}}
+%% \rot<10>{\begin{tabular}{@{}ccc@{}}
+%% \multicolumn{3}{c}{\node{41}{X}}\\[2ex]
+%% & \multicolumn{2}{c}{\node{42}{X}}\\[2ex]
+%% \node{43}{the} & \node{44}{dog} & \node{45}{barks}\\
+%% \end{tabular}
+%% \nodeconnect{41}{43}\nodeconnect{41}{42}%
+%% \nodeconnect{42}{44}\nodeconnect{42}{45}%
+%% }
+%% &
+%% \begin{tabular}{l}
+%% is\\
+%% produced\\ 
+%% by
+%% \end{tabular}
+%% &
+%% \begin{tabular}{@{}ccc@{}}
+%% \multicolumn{3}{c}{\node{241}{X}}\\[2ex]
+%% & \multicolumn{2}{c}{\node{242}{X}}\\[2ex]
+%% \node{243}{the} & \node{244}{dog} & \node{245}{barks}\\
+%% \end{tabular}
+%% \nodeconnect{241}{243}\nodeconnect{241}{242}%
+%% \nodeconnect{242}{244}\nodeconnect{242}{245}%
+%% &
+%% \visible<2->{and}
+%% &
+%% \visible<2->{%
+%% \begin{tabular}{@{}ccc@{}}
+%% \multicolumn{3}{c}{\node{341}{X}}\\[2ex]
+%% & \multicolumn{2}{c}{\node{342}{X}}\\[2ex]
+%% \node{343}{the}\\
+%% \end{tabular}
+%% \nodeconnect{341}{343}\nodeconnect{341}{342}%
+%% $\circ$
+%% %%%%%%%%%%%%%%%%%%%%
+%% \begin{tabular}{@{}ccc@{}}
+%% & \multicolumn{2}{c}{\node{442}{X}}\\[2ex]
+%%  & \node{444}{dog} & \node{445}{barks}\\
+%% \end{tabular}
+%% \nodeconnect{442}{444}\nodeconnect{442}{445}%
+%% %
+%% \\[3pt]
+%% \visible<5->{13/144} && \visible<3->{1/12 = 12/144}  & & \visible<4->{1/12 $\times$ 1/12 = 1/144}\\
+%% \end{tabular}
+%% }
+%% }
+%% \vfill
+
+%% \pause\pause\pause\pause\pause
+
+%% \oneline{%
+%% \begin{tabular}{@{}ccccc@{}}
+%% \gruen<10->{\begin{tabular}{@{}ccc@{}}
+%% \multicolumn{3}{c}{\node{31}{X}}\\[2ex]
+%% \multicolumn{2}{c}{\node{32}{X}}\\[2ex]
+%% \node{33}{the} & \node{34}{dog} & \node{35}{barks}\\
+%% \end{tabular}
+%% \nodeconnect{31}{32}\nodeconnect{31}{35}%
+%% \nodeconnect{32}{33}\nodeconnect{32}{34}%
+%% }
+%% &
+%% \begin{tabular}{l}
+%% is\\
+%% produced\\ 
+%% by
+%% \end{tabular}
+%% &
+%% \begin{tabular}{@{}ccc@{}}
+%% \multicolumn{3}{c}{\node{231}{X}}\\[2ex]
+%% \multicolumn{2}{c}{\node{232}{X}}\\[2ex]
+%% \node{233}{the} & \node{234}{dog} & \node{235}{barks}\\
+%% \end{tabular}
+%% \nodeconnect{231}{232}\nodeconnect{231}{235}%
+%% \nodeconnect{232}{233}\nodeconnect{232}{234}%
+%% &
+%% \visible<7->{and}
+%% &
+%% \visible<7->{\begin{tabular}{@{}ccc@{}}
+%% \multicolumn{3}{c}{\node{331}{X}}\\[2ex]
+%% \multicolumn{2}{c}{\node{332}{X}}\\[2ex]
+%%      && \node{335}{barks}\\
+%% \end{tabular}
+%% \nodeconnect{331}{332}\nodeconnect{331}{335}%
+%% $\circ$
+%% \begin{tabular}{@{}ccc@{}}
+%% \multicolumn{2}{c}{\node{432}{X}}\\[2ex]
+%% \node{433}{the} & \node{434}{dog}\\
+%% \end{tabular}
+%% \nodeconnect{432}{433}\nodeconnect{432}{434}%
+%% }
+%% \\[3pt]
+%% \visible<10->{14/144} && \visible<8->{1/12 = 12/144}  & & \visible<9->{1/12 $\times$ \gruen<9>{2/12} = 2/144}\\
+%% \end{tabular}
+%% }
 
 \vfill
 
 }
 
-\fi
 
+
+\frame{
+\frametitle{Schlussfolgerungen}
+
+
+\begin{itemize}[<+->]
+\item Was für UDOP angeguckt wird, ist gemeinsames Vorkommen von Wörtern.
+\item Wortarten lassen sich auch gut lernen und würden eine weiter Verbesserung bringen.
+
+\bigskip
+
+\item Kompatibel mit der revidierten Ansicht von Chomsky, dass nur sehr allgemeine Eigenschaften von
+  Sprache Bestandteil unseres sprachspezifischen angeborenen Wissens sind \citep*{HCF2002a}.
+
+\item Das hat Konsequenzen für unsere Theorien.
+
+\item Wir können nicht mit einer TP im Englischen für eine TP im Deutschen argumentieren.
+
+\item Wir können nicht mit Einheitlichkeit sprachübergreifend für eine DP argumentieren.
+
+\bigskip
+
+\item In diesem Kurs (und in der Klausur) sollen Sie aber dennoch von DPen ausgehen.
+
+\item Wenn Sie sich jetzt ärgern, ist das gut.
+
+\end{itemize}
+
+
+}

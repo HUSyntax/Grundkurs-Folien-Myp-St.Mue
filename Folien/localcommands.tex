@@ -195,6 +195,10 @@
 \newtoggle{loesung}
 \newtoggle{toc}
 
+% The toc is not needed on Handouts. Safe trees.
+\mode<handout>{
+\togglefalse{toc}
+}
 
 \newtoggle{hpsgvorlesung}\togglefalse{hpsgvorlesung}
 \newtoggle{syntaxvorlesungen}\togglefalse{syntaxvorlesungen}

@@ -449,21 +449,116 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Architektur des Sprachsystems}
+%\begin{frame}{Architektur des Sprachsystems}
 
-\begin{figure}[H]
-\centering
+%\begin{figure}[H]
+%\centering
 				
-	\includegraphics[width=\textwidth]{material/03ArchitekturSprachsystem.jpg}
-	\caption{Architektur des Sprachsystems \citep{Abramowski2016a}}
-	\label{Zeichen3}
+%	\includegraphics[width=\textwidth]{material/03ArchitekturSprachsystem.jpg}
+%	\caption{Architektur des Sprachsystems \citep{Abramowski2016a}}
+%	\label{Zeichen3}
 
+%\end{figure}
+
+%\end{frame}			
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{figure}
+\centering
+\small
+\begin{minipage}{0.55\textwidth}
+\centering
+\fbox{Lexikon}\\
+\Large
+$ \Downarrow $
+\end{minipage}
+%
+\begin{minipage}{0.1\textwidth}
+\centering
+\hfill
+\end{minipage}
+%
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\textit{Sprachliche Ebene}
+\end{minipage}
+
+\begin{minipage}[t]{0.55\textwidth}
+\centering
+\outputbox{\centering Sprachliche Strukturbildung\\
+\begin{forest}sn edges,
+[(Morpho-)Syntaktische Struktur
+[Phonetische Form]
+[Semantische Form]
+]
+\end{forest}}
+\begin{tabular}{cp{3cm}c}
+\Large
+$ \Updownarrow $ && \Large $ \Updownarrow $\\
+\end{tabular}
+\end{minipage}
+%
+\begin{minipage}[c]{0.1\textwidth}
+\centering
+\Large
+$ \Leftarrow $
+\end{minipage}
+%
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\small
+\outputbox{
+Grammatik
+\begin{itemize}
+\item Phonologische Komponente\\
+\item Morphologische K.\\
+\item Syntaktische K.\\
+\item Semantische K.
+\end{itemize}}
+\end{minipage}
+
+\begin{minipage}{0.24\textwidth}
+\centering
+\outputbox{\centering Artikularisch-perzeptorischer Apparat}
+\end{minipage}
+%
+\begin{minipage}[c]{0.05\textwidth}
+\hfill
+\end{minipage}
+%
+\begin{minipage}{0.24\textwidth}
+\centering
+\outputbox{\centering Konzeptuell-Intentionales System}
+\end{minipage}
+%
+\begin{minipage}{0.1\textwidth}
+\centering
+\Large
+$\Leftarrow$
+\end{minipage}
+%
+\begin{minipage}{0.3\textwidth}
+\outputbox{Begriffssystem
+\newline
+\small
+Weltwissen, Kontextwissen, analytisches Wissen}
+\end{minipage}
+
+\begin{minipage}{0.65\textwidth}
+\hfill
+\end{minipage}
+%
+\begin{minipage}{0.3\textwidth}
+\centering
+\small
+\textit{Außersprachliche Ebene}
+\end{minipage}
+\caption{Die Architektur des Sprachsystems\citep[vgl.]{Abramowski2016a}}
 \end{figure}
 
-\end{frame}			
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Linguistische Teildisziplinen}		

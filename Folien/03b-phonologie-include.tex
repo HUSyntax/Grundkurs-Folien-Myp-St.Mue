@@ -1504,13 +1504,16 @@ MyP edges,
     [R
     	[N
     		[x
-    			[\textipa{e:}]
+    			[\textipa{e:}, name=e]
     		]
-    		[x]{\draw[black] (.south)--++(-2.38em,-2.3ex);}
+    		[x, name=x]
     	]
     	[K []]]
   ]  
 ]
+{
+\draw[black] (e.north)--(x.south);
+}
 \end{forest}
 
 \end{minipage}
@@ -1525,13 +1528,16 @@ MyP edges,
     [R
     	[N
     		[x
-    			[\textipa{\t{aU}}]
+    			[\textipa{\t{aU}}, name=aU]
     		]
-    		[x]{\draw[black] (.south)--++(-2.38em,-1.7ex);}
+    		[x, name=x]
     	]
     	[K[x[\textipa{x}]]]]
   ]  
 ]
+{
+\draw[black] (aU.north)--(x.south);
+}
 \end{forest}
 
 \end{minipage}

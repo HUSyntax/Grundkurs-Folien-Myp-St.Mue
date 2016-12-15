@@ -1615,15 +1615,15 @@ MyP edges,
     		]
     	]  		
     	[K 
-    		[x
+    		[x, name=x
     			[\textipa{t}]
     		]
     	]
     ]
   ]
   [$\sigma$
-    [O 
-    ]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
+    [O, name=O
+    ]
     [R
     	[N
     		[x
@@ -1633,6 +1633,9 @@ MyP edges,
     	[K [x[\textipa{n}]]]]
   ]  
 ]
+{
+\draw[black] (x.north)--(O.south)
+}
 \end{forest}
 
 \end{minipage}
@@ -1670,13 +1673,16 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
     [R
     	[N
     		[x
-    			[\textipa{e:}]
+    			[\textipa{e:}, name=e]
     		]
-    		[x]{\draw[black] (.south)--++(-2.38em,-2.3ex);}
+    		[x, name=x]
     	]
     	[K []]]
   ]  
 ]
+{
+\draw[black] (e.north)--(x.south)
+}
 \end{forest}
 
 \end{minipage}
@@ -1691,13 +1697,16 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
     [R
     	[N
     		[x
-    			[\textipa{\t{aU}}]
+    			[\textipa{\t{aU}}, name=aU]
     		]
-    		[x]{\draw[black] (.south)--++(-2.38em,-1.7ex);}
+    		[x, name=x]
     	]
     	[K[x[\textipa{x}]]]]
   ]  
 ]
+{
+\draw[black] (aU.north)--(x.south)
+}
 \end{forest}
 
 \end{minipage}
@@ -2109,15 +2118,15 @@ $x > y :=$ $x$ ist sonorer als $y$
     		]
     	]  		
     	[K 
-    		[x
+    		[x, name=x
     			[\textipa{k}]
     		]
     	]
     ]
   ]
   [$\sigma$
-    [O 
-    ]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
+    [O, name=onset 
+    ]
     [R
     	[N
     		[x
@@ -2127,6 +2136,9 @@ $x > y :=$ $x$ ist sonorer als $y$
     	[K [x[\textipa{n}]]]]
   ]  
 ]
+{
+\draw[black] (x.north)--(onset.south)
+}
 \end{forest}
 
 \end{minipage}
@@ -2159,15 +2171,15 @@ $x > y :=$ $x$ ist sonorer als $y$
     		]
     	]  		
     	[K 
-    		[x
+    		[x, name=x
     			[\textipa{N}]
     		]
     	]
     ]
   ]
   [$\sigma$
-    [O 
-    ]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
+    [O, name=onset
+    ]
     [R
     	[N
     		[x
@@ -2177,6 +2189,9 @@ $x > y :=$ $x$ ist sonorer als $y$
     	[K [x[\textipa{n}]]]]
   ]  
 ]
+{
+\draw[black] (x.north)--(onset.south)
+}
 \end{forest}
 
 \end{minipage}

@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Ziel des Kurses}{2}{0}{1}
+\beamer@sectionintoc {2}{Sprache und natürliche Sprache}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Zeichensysteme}{23}{0}{2}
+\beamer@subsectionintoc {2}{2}{Merkmale natürlicher Sprachen}{30}{0}{2}

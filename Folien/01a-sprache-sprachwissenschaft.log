@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9) (preloaded format=xelatex 2016.7.4)  19 DEC 2016 11:51
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9) (preloaded format=xelatex 2016.7.4)  19 DEC 2016 12:03
 entering extended mode
-**./00-Organisatorisches-Mueller.tex
-(00-Organisatorisches-Mueller.tex
+**./01a-sprache-sprachwissenschaft.tex
+(01a-sprache-sprachwissenschaft.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 (C:\Users\ling_flh\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamer.cls
@@ -2446,45 +2446,45 @@ Package: CJKfntef 2015/04/18 4.8.4
 .................................................
 \c__xeCJK_filll_skip=\skip85
 )
-(00-Organisatorisches-Mueller.aux)
-\openout1 = `00-Organisatorisches-Mueller.aux'.
+(01a-sprache-sprachwissenschaft.aux)
+\openout1 = `01a-sprache-sprachwissenschaft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 23.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 22.
 
 (C:\Users\ling_flh\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2521,7 +2521,7 @@ LaTeX Font Info:    ... okay on input line 23.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box146
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2531,60 +2531,60 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count357
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
-(00-Organisatorisches-Mueller.out) (00-Organisatorisches-Mueller.out)
+(01a-sprache-sprachwissenschaft.out) (01a-sprache-sprachwissenschaft.out)
 \@outlinefile=\write5
-\openout5 = `00-Organisatorisches-Mueller.out'.
+\openout5 = `01a-sprache-sprachwissenschaft.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 23.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 23.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 23.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 23.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 22.
 \symnumbers=\mathgroup11
 \sympureletters=\mathgroup12
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 23.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 22.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 23.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 23.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 22.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 23.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 23.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 22.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 23.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 23.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 22.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 23.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 23.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 23.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 23.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 23.
+(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 23.
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 23.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 23.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 23.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 22.
 
 (C:\Users\ling_flh\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\
 dicts\translator-basic-dictionary\translator-basic-dictionary-English.dict
@@ -2612,35 +2612,33 @@ Dictionary: translator-numbers-dictionary, Language: English
 dicts\translator-theorem-dictionary\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 23.
+LaTeX Info: Redefining \includegraphics on input line 22.
 Package marginnote Info: \pdfoutput not 0 or unimportant and
 (marginnote)             \pdflastxpos or \lastxpos available.
 (marginnote)             Extended position detection mode activated.
-(00-Organisatorisches-Mueller.nav)
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 23.
+(01a-sprache-sprachwissenschaft.nav)
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 22.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (3.0pt too wide) in paragraph at lines 23--23
+Overfull \hbox (3.0pt too wide) in paragraph at lines 22--22
  [][] 
  []
 
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \Pifont with sig. 'm' on line 23.
+. Redefining command \Pifont with sig. 'm' on line 22.
 .................................................
-(localcommands.tex)
+(localcommands.tex) (01a-sprache-sprachwissenschaft-include.tex
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 39.
+(hyperref)                setting the option has no effect on input line 14.
 
-(00-Organisatorisches-include.tex
 File: identity-grammatik-deutsch-chinesisch-persisch-hindi.pdf Graphic file (ty
 pe QTm)
-
 <use  "identity-grammatik-deutsch-chinesisch-persisch-hindi.pdf" >
 Overfull \hbox (3.0pt too wide) has occurred while \output is active
  [][] 
@@ -2649,38 +2647,6 @@ Overfull \hbox (3.0pt too wide) has occurred while \output is active
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 58.
-
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
-File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 58.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+wasy on input line 58.
-
-(C:\Users\ling_flh\AppData\Roaming\MiKTeX\2.9\tex\latex\wasysym\uwasy.fd
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 58.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 58.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 58.
-
 Overfull \hbox (3.0pt too wide) has occurred while \output is active
  [][] 
  []
@@ -2716,59 +2682,559 @@ Overfull \hbox (3.0pt too wide) has occurred while \output is active
 [6
 
 ]
-
-Package natbib Warning: Citation `Schaefer2016a' on page 7 undefined on input l
-ine 186.
-
-
-Package natbib Warning: Citation `Luedeling2009a' on page 7 undefined on input 
-line 186.
-
-
-Package natbib Warning: Citation `Meibauer&Co07a' on page 7 undefined on input 
-line 186.
-
-
-Package natbib Warning: Citation `Abramowski2016a' on page 7 undefined on input
- line 186.
-
-
 Overfull \hbox (3.0pt too wide) has occurred while \output is active
  [][] 
  []
 
 [7
 
-]) (gk-literatur.tex
-No file 00-Organisatorisches-Mueller.bbl.
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[8
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[9
+
+]
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 122
+.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 122.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 122.
+
+(C:\Users\ling_flh\AppData\Roaming\MiKTeX\2.9\tex\latex\wasysym\uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 122.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 122.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 122.
+
+
+Package natbib Warning: Citation `Duden13a' on page 10 undefined on input line 
+122.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[10
+
+]
+
+Package natbib Warning: Citation `Duden13a' on page 11 undefined on input line 
+122.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[11
+
+]
+
+Package natbib Warning: Citation `Duden13a' on page 12 undefined on input line 
+122.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[12
+
+]
+
+Package natbib Warning: Citation `Duden13a' on page 13 undefined on input line 
+122.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[13
+
+]
+
+Package natbib Warning: Citation `Duden13a' on page 14 undefined on input line 
+122.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[14
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[15
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[16
+
+]
+
+Package natbib Warning: Citation `Glueck00a' on page 17 undefined on input line
+ 155.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[17
+
+]
+
+Package natbib Warning: Citation `Glueck00a' on page 18 undefined on input line
+ 155.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[18
+
+]
+
+Package natbib Warning: Citation `Glueck00a' on page 19 undefined on input line
+ 155.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[19
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+
+
+Package natbib Warning: Citation `Bussmann83a' on page 20 undefined on input li
+ne 171.
+
+
+Package natbib Warning: Citation `Thuemmel00a' on page 20 undefined on input li
+ne 171.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[20
+
+]
+
+Package natbib Warning: Citation `Bussmann83a' on page 21 undefined on input li
+ne 171.
+
+
+Package natbib Warning: Citation `Thuemmel00a' on page 21 undefined on input li
+ne 171.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[21
+
+]
+
+Package natbib Warning: Citation `Bussmann83a' on page 22 undefined on input li
+ne 171.
+
+
+Package natbib Warning: Citation `Thuemmel00a' on page 22 undefined on input li
+ne 171.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[22
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[23
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[24
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[25
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <20.74> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+File: material/Hauskatze-an-einem-Scheunenfenster-in-Grossarl.jpg Graphic file 
+(type QTm)
+ <use  "material/Hauskatze-an-einem-Scheunenfenster-in-Grossarl.jpg" >
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 231.
+
+Overfull \hbox (97.51793pt too wide) in paragraph at lines 231--231
+[]|[]| 
+ []
+
+LaTeX Font Info:    Try loading font information for T3+lmss on input line 231.
+
+LaTeX Font Info:    No file T3lmss.fd. on input line 231.
+
+LaTeX Font Warning: Font shape `T3/lmss/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead
+(Font)              for symbol `textschwa' on input line 231.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[26
+
+]
+File: material/Bee-dance.png Graphic file (type QTm)
+ <use  "material/Bee-dance.png" >
+Overfull \vbox (8.18727pt too high) detected at line 265
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[27
+
+]
+File: material/Bee-dance.png Graphic file (type QTm)
+ <use  "material/Bee-dance.png" >
+Overfull \vbox (8.18727pt too high) detected at line 265
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[28
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[29
+
+]
+
+Package natbib Warning: Citation `Hockett60a' on page 30 undefined on input lin
+e 295.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[30
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 321.
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[31
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[32
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[33
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[34
+
+]
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[35
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 385.
+
+Overfull \vbox (16.03203pt too high) detected at line 385
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[36
+
+]
+Overfull \vbox (16.03203pt too high) detected at line 385
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[37
+
+]
+Overfull \vbox (16.03203pt too high) detected at line 385
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[38
+
+]
+Overfull \vbox (16.03203pt too high) detected at line 385
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[39
+
+]
+Overfull \vbox (7.13203pt too high) detected at line 416
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[40
+
+]
+Overfull \vbox (7.13203pt too high) detected at line 416
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[41
+
+]
+Overfull \vbox (7.13203pt too high) detected at line 416
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[42
+
+]
+Overfull \vbox (7.13203pt too high) detected at line 416
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[43
+
+]
+Overfull \vbox (7.36952pt too high) detected at line 453
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[44
+
+]
+Overfull \vbox (7.36952pt too high) detected at line 453
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[45
+
+]
+Overfull \vbox (7.36952pt too high) detected at line 453
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[46
+
+]
+Overfull \vbox (7.36952pt too high) detected at line 453
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[47
+
+]
+Overfull \vbox (7.36952pt too high) detected at line 453
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[48
+
+]
+Overfull \vbox (7.36952pt too high) detected at line 453
+ []
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[49
+
+]
+
+Package natbib Warning: Citation `Luedeling2009a' on page 50 undefined on input
+ line 464.
+
+
+Overfull \hbox (3.0pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[50
+
+]) (gk-literatur.tex (01a-sprache-sprachwissenschaft.bbl))
 \tf@nav=\write6
-\openout6 = `00-Organisatorisches-Mueller.nav'.
+\openout6 = `01a-sprache-sprachwissenschaft.nav'.
 
 \tf@toc=\write7
-\openout7 = `00-Organisatorisches-Mueller.toc'.
+\openout7 = `01a-sprache-sprachwissenschaft.toc'.
 
 \tf@snm=\write8
-\openout8 = `00-Organisatorisches-Mueller.snm'.
+\openout8 = `01a-sprache-sprachwissenschaft.snm'.
 
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
-(00-Organisatorisches-Mueller.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 48.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+(01a-sprache-sprachwissenschaft.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 39.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 50653 strings out of 428410
- 1008356 string characters out of 3159549
- 1068910 words of memory out of 3000000
- 53263 multiletter control sequences out of 15000+200000
- 54067 words of font info for 75 fonts, out of 3000000 for 9000
+ 50973 strings out of 428410
+ 1014358 string characters out of 3159549
+ 1073471 words of memory out of 3000000
+ 53522 multiletter control sequences out of 15000+200000
+ 142245 words of font info for 182 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 71i,18n,78p,10482b,628s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,18n,78p,10484b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 00-Organisatorisches-Mueller.pdf (7 pages).
+Output written on 01a-sprache-sprachwissenschaft.pdf (50 pages).

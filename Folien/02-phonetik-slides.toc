@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Einführung}{2}{0}{1}
+\beamer@sectionintoc {2}{Bereiche der Phonetik}{7}{0}{2}
+\beamer@sectionintoc {3}{Methodik}{10}{0}{3}
+\beamer@sectionintoc {4}{Probleme der Phonetik}{14}{0}{4}
+\beamer@sectionintoc {5}{IPA-Alphabet}{17}{0}{5}
+\beamer@sectionintoc {6}{Artikulatorische Phonetik}{23}{0}{6}
+\beamer@subsectionintoc {6}{1}{Konsonanten}{25}{0}{6}
+\beamer@subsubsectionintoc {6}{1}{1}{Konsonantenklassifikation}{27}{0}{6}
+\beamer@subsectionintoc {6}{2}{Vokale}{41}{0}{6}
+\beamer@subsubsectionintoc {6}{2}{1}{Vokalklassifikation}{42}{0}{6}
+\beamer@subsubsectionintoc {6}{2}{2}{Vokalviereck}{47}{0}{6}
+\beamer@subsubsectionintoc {6}{2}{3}{Monophthong, Diphthong, Triphthong}{48}{0}{6}
+\beamer@sectionintoc {7}{Übungen}{52}{0}{7}
+\beamer@sectionintoc {8}{Elektronische Quellen}{60}{0}{8}

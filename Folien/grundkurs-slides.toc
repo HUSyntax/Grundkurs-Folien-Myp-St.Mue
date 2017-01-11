@@ -1,0 +1,125 @@
+\beamer@sectionintoc {1}{Kontakt}{2}{0}{1}
+\beamer@sectionintoc {2}{Sekretariat}{3}{0}{2}
+\beamer@sectionintoc {3}{Moodle}{4}{0}{3}
+\beamer@sectionintoc {4}{Tutorien}{5}{0}{4}
+\beamer@sectionintoc {5}{Zu erbringende Leistungen}{6}{0}{5}
+\beamer@sectionintoc {6}{Literatur}{7}{0}{6}
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {7}{Ziel des Kurses}{9}{0}{7}
+\beamer@sectionintoc {8}{Sprache und natürliche Sprache}{16}{0}{8}
+\beamer@subsectionintoc {8}{1}{Zeichensysteme}{30}{0}{8}
+\beamer@subsectionintoc {8}{2}{Merkmale natürlicher Sprachen}{37}{0}{8}
+\beamer@sectionintoc {9}{Grammatik}{59}{0}{9}
+\beamer@subsectionintoc {9}{1}{Grammatikbegriff}{61}{0}{9}
+\beamer@subsectionintoc {9}{2}{Modularität der Grammatik}{68}{0}{9}
+\beamer@subsubsectionintoc {9}{2}{1}{Lexikon}{73}{0}{9}
+\beamer@subsubsectionintoc {9}{2}{2}{Phonologische Komponente}{75}{0}{9}
+\beamer@subsubsectionintoc {9}{2}{3}{Morphologische Komponente}{79}{0}{9}
+\beamer@subsubsectionintoc {9}{2}{4}{Syntaktische Komponente}{83}{0}{9}
+\beamer@subsubsectionintoc {9}{2}{5}{Semantische Komponente}{87}{0}{9}
+\beamer@subsubsectionintoc {9}{2}{6}{Architektur des Sprachsystems}{92}{0}{9}
+\beamer@sectionintoc {10}{Linguistische Teildisziplinen}{97}{0}{10}
+\beamer@sectionintoc {11}{Linguistik als Geistes- und/oder Naturwissenschaft}{98}{0}{11}
+\beamer@sectionintoc {12}{Sprachwissenschaft vs. Linguistik}{103}{0}{12}
+\beamer@sectionintoc {13}{Einführung}{109}{0}{13}
+\beamer@sectionintoc {14}{Bereiche der Phonetik}{114}{0}{14}
+\beamer@sectionintoc {15}{Methodik}{117}{0}{15}
+\beamer@sectionintoc {16}{Probleme der Phonetik}{121}{0}{16}
+\beamer@sectionintoc {17}{IPA-Alphabet}{124}{0}{17}
+\beamer@sectionintoc {18}{Artikulatorische Phonetik}{130}{0}{18}
+\beamer@subsectionintoc {18}{1}{Konsonanten}{132}{0}{18}
+\beamer@subsubsectionintoc {18}{1}{1}{Konsonantenklassifikation}{134}{0}{18}
+\beamer@subsectionintoc {18}{2}{Vokale}{148}{0}{18}
+\beamer@subsubsectionintoc {18}{2}{1}{Vokalklassifikation}{149}{0}{18}
+\beamer@subsubsectionintoc {18}{2}{2}{Vokalviereck}{154}{0}{18}
+\beamer@subsubsectionintoc {18}{2}{3}{Monophthong, Diphthong, Triphthong}{155}{0}{18}
+\beamer@sectionintoc {19}{Übungen}{159}{0}{19}
+\beamer@sectionintoc {20}{Elektronische Quellen}{167}{0}{20}
+\beamer@sectionintoc {21}{Einführung}{169}{0}{21}
+\beamer@sectionintoc {22}{Phonem, Phon, Allophon}{174}{0}{22}
+\beamer@sectionintoc {23}{Phonetisch-phonologische Ebenen}{178}{0}{23}
+\beamer@subsectionintoc {23}{1}{Tiefenstruktur (TS)}{179}{0}{23}
+\beamer@subsectionintoc {23}{2}{Oberflächenstruktur (OS)}{181}{0}{23}
+\beamer@subsectionintoc {23}{3}{TS \& OS}{183}{0}{23}
+\beamer@sectionintoc {24}{Phonetisch/phonologische Prozesse}{186}{0}{24}
+\beamer@subsectionintoc {24}{1}{Tilgung von Segmenten}{187}{0}{24}
+\beamer@subsectionintoc {24}{2}{Hinzufügung von Segmenten}{189}{0}{24}
+\beamer@subsectionintoc {24}{3}{Veränderung von Segmenten (durch Assimilation)}{190}{0}{24}
+\beamer@subsectionintoc {24}{4}{Reihenfolge der Prozesse}{194}{0}{24}
+\beamer@sectionintoc {25}{Einführung}{196}{0}{25}
+\beamer@sectionintoc {26}{Silbenbestimmung}{203}{0}{26}
+\beamer@sectionintoc {27}{Silbenstruktur}{205}{0}{27}
+\beamer@subsectionintoc {27}{1}{Onset}{211}{0}{27}
+\beamer@subsectionintoc {27}{2}{Nukleus}{213}{0}{27}
+\beamer@subsectionintoc {27}{3}{Koda}{214}{0}{27}
+\beamer@sectionintoc {28}{Phonotaktik}{215}{0}{28}
+\beamer@subsectionintoc {28}{1}{Sonoritätshierarchie}{216}{0}{28}
+\beamer@subsectionintoc {28}{2}{Weitere phonotaktische Beschränkungen}{223}{0}{28}
+\beamer@sectionintoc {29}{Silbenmodelle}{224}{0}{29}
+\beamer@subsectionintoc {29}{1}{CV-Modell}{225}{0}{29}
+\beamer@subsectionintoc {29}{2}{Konstituentenmodell}{229}{0}{29}
+\beamer@sectionintoc {30}{Silbengelenk}{234}{0}{30}
+\beamer@sectionintoc {31}{Silbifizierung}{238}{0}{31}
+\beamer@sectionintoc {32}{Exkurs: Akzent}{242}{0}{32}
+\beamer@subsectionintoc {32}{1}{Exkurs: Wortakzent}{243}{0}{32}
+\beamer@subsectionintoc {32}{2}{Exkurs: Satzakzent}{245}{0}{32}
+\beamer@subsectionintoc {32}{3}{Exkurs: Intonation}{246}{0}{32}
+\beamer@sectionintoc {33}{Einführung}{251}{0}{33}
+\beamer@sectionintoc {34}{Graph, Graphem, Allograph}{256}{0}{34}
+\beamer@sectionintoc {35}{Graphematik vs. Orthographie}{260}{0}{35}
+\beamer@sectionintoc {36}{Schriftsysteme}{266}{0}{36}
+\beamer@sectionintoc {37}{Graphematische Prinzipien}{277}{0}{37}
+\beamer@subsectionintoc {37}{1}{Phonographisches Prinzip}{280}{0}{37}
+\beamer@subsectionintoc {37}{2}{Silbisches Prinzip}{287}{0}{37}
+\beamer@subsectionintoc {37}{3}{Morphologisches Prinzip}{292}{0}{37}
+\beamer@subsectionintoc {37}{4}{Homonymiedifferenzierungsprinzip}{293}{0}{37}
+\beamer@subsectionintoc {37}{5}{Etymologische Schreibung}{294}{0}{37}
+\beamer@subsectionintoc {37}{6}{Ästhetisches Prinzip}{295}{0}{37}
+\beamer@subsectionintoc {37}{7}{Syntaktische Schreibung}{296}{0}{37}
+\beamer@sectionintoc {39}{Morphologie}{297}{0}{39}
+\beamer@subsectionintoc {39}{1}{Der Wortbegriff}{304}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{1}{Die orthographisch-graphemische Ebene}{305}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{2}{Die phonetisch-phonologische Ebene}{314}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{3}{Die morphologische Ebene}{315}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{4}{Die lexikalisch-semantische Ebene}{317}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{5}{Die syntaktische Ebene}{319}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{6}{Ein Ausweg?}{321}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{7}{Lexem}{322}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{8}{Wortform}{325}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{9}{Morphem}{326}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{10}{Allomorphe}{330}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{11}{Suppletion}{331}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{12}{Freie und gebundene Morpheme, Affixe}{334}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{13}{Affixe}{336}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{14}{Stamm}{339}{0}{39}
+\beamer@subsubsectionintoc {39}{1}{15}{Simplizia und komplexe Lexeme}{341}{0}{39}
+\beamer@subsectionintoc {39}{2}{Wortbildung}{345}{0}{39}
+\beamer@subsubsectionintoc {39}{2}{1}{Komposition}{345}{0}{39}
+\beamer@subsubsectionintoc {39}{2}{2}{Köpfe, Rekursion, Fugen}{348}{0}{39}
+\beamer@subsubsectionintoc {39}{2}{3}{Komposition}{364}{0}{39}
+\beamer@subsubsectionintoc {39}{2}{4}{Derivation}{373}{0}{39}
+\beamer@subsubsectionintoc {39}{2}{5}{Nichtkonkatenative Prozesse}{382}{0}{39}
+\beamer@sectionintoc {38}{Morphologie}{297}{0}{38}
+\beamer@subsectionintoc {39}{3}{Flexion}{385}{0}{39}
+\beamer@subsubsectionintoc {39}{3}{1}{Wortarten}{393}{0}{39}
+\beamer@subsubsectionintoc {39}{3}{2}{Form und Funktion}{470}{0}{39}
+\beamer@subsectionintoc {39}{4}{Übung Derivation, Komposition, Flexion}{481}{0}{39}
+\beamer@sectionintoc {41}{Syntax}{486}{0}{41}
+\beamer@subsubsectionintoc {41}{0}{1}{Verbalphrasen}{494}{0}{41}
+\beamer@subsectionintoc {41}{1}{Die Struktur des deutschen Satzes}{497}{0}{41}
+\beamer@subsubsectionintoc {41}{1}{1}{Topologie des deutschen Satzes}{497}{0}{41}
+\beamer@subsubsectionintoc {41}{1}{2}{CP und VP im Deutschen}{537}{0}{41}
+\beamer@sectionintoc {40}{Syntax}{486}{0}{40}
+\beamer@subsectionintoc {41}{2}{Bemerkungen zum Spracherwerb}{555}{0}{41}
+\beamer@sectionintoc {42}{Semantik}{573}{0}{42}
+\beamer@subsectionintoc {42}{1}{Wörtliche Bedeutung}{574}{0}{42}
+\beamer@subsectionintoc {42}{2}{Lexikalische Semantik}{586}{0}{42}
+\beamer@subsectionintoc {42}{3}{Bedeutung von Ausdrücken}{601}{0}{42}
+\beamer@subsectionintoc {42}{4}{Bedeutungsbeziehungen}{612}{0}{42}
+\beamer@sectionintoc {43}{Pragmatik}{618}{0}{43}
+\beamer@subsectionintoc {43}{1}{Allgemeines}{619}{0}{43}
+\beamer@subsubsectionintoc {43}{1}{1}{Abgrenzung}{619}{0}{43}
+\beamer@subsubsectionintoc {43}{1}{2}{Überblick: Forschungsgegenstände}{642}{0}{43}
+\beamer@subsectionintoc {43}{2}{Zwei Forschungsbereiche der Pragmatik im Detail}{668}{0}{43}
+\beamer@subsubsectionintoc {43}{2}{1}{Sprechakte}{668}{0}{43}
+\beamer@subsubsectionintoc {43}{2}{2}{Kooperationsprinzip}{703}{0}{43}

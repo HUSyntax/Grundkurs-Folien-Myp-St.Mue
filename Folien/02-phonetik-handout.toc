@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Einführung}{2}{0}{1}
+\beamer@sectionintoc {2}{Bereiche der Phonetik}{6}{0}{2}
+\beamer@sectionintoc {3}{Methodik}{9}{0}{3}
+\beamer@sectionintoc {4}{Probleme der Phonetik}{13}{0}{4}
+\beamer@sectionintoc {5}{IPA-Alphabet}{16}{0}{5}

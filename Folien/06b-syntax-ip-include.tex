@@ -1,6 +1,6 @@
 %% -*- coding:utf-8 -*-
 \subsection{Bemerkungen zum Spracherwerb}
-\if 0
+
 
 
 \frame{
@@ -150,6 +150,7 @@ Menschen verfügen über ein vorangelegten Satz grammatischer Kategorien und syn
 
 Siehe \zb \citew{Pinker94a} und Kritik von \citew{Tomasello95a,Dabrowska2004a}.
 
+%Zusammengefasst in \citew{MuellerGTBuch2} bzw.\ \citew{MuellerGT-Eng1}.
 
 \nocite{Goldberg2003b,Goldberg2006a}
 }
@@ -165,8 +166,8 @@ Siehe \zb \citew{Pinker94a} und Kritik von \citew{Tomasello95a,Dabrowska2004a}.
 \item Viele Argumente sind nicht stichhaltig und inzwischen weiß man auch mehr darüber, was und wie
   etwas aus Daten gelernt werden kann.
 
-\item Biologen sagen uns, dass es unrealistisch ist, anzunehmen, dass reichhaltiges linguistisches
-  Wissen in unserem Genom kodiert ist.
+\item Biologen sagen uns, dass es unrealistisch ist, anzunehmen,\\
+      dass reichhaltiges linguistisches Wissen in unserem Genom kodiert ist.
 
 \item Die Diskussion können Sie in \citew{MuellerGTBuch2,MuellerGT-Eng1} nachlesen.
 
@@ -448,6 +449,49 @@ What will Ann read?
 
 }
 
+\frame{
+\frametitle{Englisch vs.\ Deutsch}
+  
+\vfill
+%% \hfill\scalebox{0.7}{%
+%% \begin{forest}
+%% sn edges
+%% [CP
+%%   [XP [what$_j$]]
+%%   [C$'$
+%%     [C [will$_k$]]
+%%     [TP
+%%       [NP   [Ann,triangle]]
+%%       [T$'$
+%%         [\tnull [\trace$_k$]]
+%%         [VP
+%%           [V$'$
+%%             [\vnull [read]]
+%%             [NP [\trace$_j$]]]]]]]]
+%% \end{forest}
+%% }
+\hfill
+\scalebox{0.7}{%
+\begin{forest}
+sn edges
+[CP
+  [XP [Was$_j$]]
+  [C$'$
+    [C [liest$_k$]]
+    [TP
+      [NP   [Ann,triangle]]
+      [T$'$
+        [\tnull [\trace$_k$]]
+        [VP
+          [V$'$
+            [NP [\trace$_j$]]
+            [\vnull [\trace$_k$]]]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+}
+
 \subsection{NP oder DP?}
 
 \frame{
@@ -471,9 +515,10 @@ Kopf spricht.
 
 \item Kopf bestimmt die Form der anderen Elemente
 
-In der Nominalgruppe liegt Kongruenz vor, weshalb dieses Kriterium nicht weiterhilft.
+In der Nominalgruppe liegt Kongruenz vor $\to$ Kriterium hilft nicht weiter.
 
-Genus ist eine inhärente Eigenschaft des Nomens, was eher für das Nomen als Kopf spricht.
+Genus ist eine inhärente Eigenschaft des Nomens,\\
+was eher für das Nomen als Kopf spricht.
 
 \end{itemize}
 \end{itemize}
@@ -873,7 +918,6 @@ sn edges
 \end{columns}
 }
 
-\fi
 
 \frame{
 \frametitle{Analyse mit Teilbäumen und Wahrscheinlichkeiten}

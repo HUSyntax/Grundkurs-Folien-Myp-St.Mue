@@ -31,11 +31,13 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
 
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,7 +124,7 @@ Sprechaktlautlehre}
 					\item<2> \textipa{[ f \textsci{} \textesh{} @ ]}
 					\item<2> \textipa{[ n \textsci{} k s @ ]}
 					\item<2> \textipa{[ l a N ]}
-					\item<2> \textipa{[ b @ P a \textscr b \t{aI} t U N ]}
+					\item<2> \textipa{[ b @ P a \textscr  b \t{aI} t \textupsilon N ]}
 				\end{enumerate} 
 			\column{.15\textwidth}
 				\begin{enumerate}
@@ -171,10 +173,12 @@ Sprechaktlautlehre}
 %
 \section{Bereiche der Phonetik}
 %
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -261,20 +265,25 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Methodik}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Methodik}
 
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		
-		\includegraphics[scale=0.07]{material/04proband}
-		\caption{Proband \citep{Pompino95a}}
+		\includegraphics[scale=0.1]{material/04RousselotsApparatzurAufzeichnungderSprache}
+		\caption{Rousselots Apparat zur Aufzeichnung der Sprache (Holzstich, um 1900). (https://de.wikipedia.org/wiki/Jean-Pierre$\_$Rousselot$\#$ /media/File:Rousselots$\_$Apparat$\_$zur$\_$Aufzeichnung$\_$der$\_$Sprache.jpg Stand: 09.12.16)
+}
+		%{material/04proband}
+		%\caption{Proband \citep{Pompino95a}}
 		%\label{Zeichen1}
 	\end{figure}
 	
@@ -343,10 +352,12 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Probleme der Phonetik}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -376,11 +387,12 @@ Sprechaktlautlehre}
 \frametitle{Probleme der Phonetik}
 
 	\begin{figure}[H]
-		\centering
-		
-		\includegraphics[scale=0.65]{material/04oszillogrammwiese}
-		\caption{Oszillogramm \citep{WieseR11a}}
-		%\label{Zeichen1}
+	\centering
+	
+	\includegraphics[scale=0.2]{material/04Pronouncing}
+	\caption{Spektrogramm \gqq{Pronouncing} (https://upload.wikimedia.org/wikipedia/commons/3/30/Pronouncing.PNG?uselang=de Autor: Rjanag; Stand: 20.12.16)}
+	%Die alte Version: \includegraphics[scale=0.50]{material/oszillogrammwiese} \caption{\citep{WieseR11a}}
+	%\label{Zeichen1}
 	\end{figure}	
 	
 \end{frame}
@@ -420,10 +432,12 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{IPA-Alphabet}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -447,32 +461,86 @@ Sprechaktlautlehre}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\begin{frame}
+%\frametitle{IPA-Alphabet}
+%
+%	\begin{figure}[H]
+%		\centering
+%		
+%		\includegraphics[scale=0.35]{material/04ipaconsonantpulmonic}
+%		\caption{Konsonanten (Pulmonal)}
+%		%\label{Zeichen1}
+%	\end{figure}	
+%	
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{IPA-Alphabet}
+\begin{table}
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|p{0.1\textwidth}|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+& \tiny{Bilabial} & \tiny{Labiodental} & \tiny{Dental} & \tiny{Alveolar} & \tiny{Postalveolar} & \tiny{Retroflex} & \tiny{Palatal} & \tiny{Velar} & \tiny{Uvular} & \multicolumn{2}{|c|}{\tiny{Pharyngal}} & \multicolumn{2}{|c|}{\tiny{Glottal}} \\
+\hline
+\tiny{Plosive} & \textipa{p b} & & \multicolumn{3}{|c|}{\textipa{t d}} & \textipa{\:d \:t} & \textipa{c \textbardotlessj} & \textipa{k g} & \textipa{q \textscg} &  & \cellcolor{lightgray} & \textipa{P} & \cellcolor{lightgray} \\
+\hline
+\tiny{Nasale} & \textipa{m} & \textipa{\textltailm} & \multicolumn{3}{|c|}{\textipa{n}} & \textipa{\textrtailn} & \textipa{\textltailn} & \textipa{\ng} & \textipa{\textscn} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} \\
+\hline
+\tiny{Vibranten} & \textipa{\textscb} & & \multicolumn{3}{|c|}{\textipa{r}} & & & \cellcolor{lightgray} & \textipa{\textscr} & \multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} \\
+\hline
+\tiny{Taps/ Flaps} & & &  \multicolumn{3}{|c|}{\textipa{\textfishhookr}} &  \textipa{\textrtailr} & & \cellcolor{lightgray} & & \multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} \\
+\hline
+\tiny{Frikative} & \textipa{\textphi \textbeta} & \textipa{f v} & \textipa{\texttheta \dh} & \textipa{s z} & \textipa{S Z} & \textipa{\:s \:z} & \textipa{\c{c} J} & \textipa{x G} & \textipa{X \textinvscr} & \multicolumn{2}{|c|}{\textipa{\textcrh \textrevglotstop}} & \multicolumn{2}{|c|}{\textipa{h \texthth}} \\
+\hline
+\tiny{Laterale Frikative} & \cellcolor{lightgray} & \cellcolor{lightgray} & \multicolumn{3}{|c|}{\textipa{\textbeltl \textlyoghlig}} & & & & &  \multicolumn{2}{|c|}{\cellcolor{lightgray}} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} \\
+\hline
+\tiny{Approximanten} & & \textipa{\textscriptv} & \multicolumn{3}{|c|}{\textipa{\textturnr}} & \textipa{\:R} & \textipa{j} & \textipa{\textturnmrleg} & & \multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} \\
+\hline
+\tiny{Laterale Approximanten} & \cellcolor{lightgray} & \cellcolor{lightgray} & \multicolumn{3}{|c|}{\textipa{l}} & \textipa{\:l} & \textipa{\textturny} & \textipa{\textscl} & & \multicolumn{2}{|c|}{\cellcolor{lightgray}} & \multicolumn{2}{|c|}{\cellcolor{lightgray}} \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Pulmonische Konsonanten, IPA. Bei Paaren ist der rechte Konsonant stimmhaft. Graue Flächen gelten als artikulatorisch unmöglich. 
+	 %https://www.internationalphoneticassociation.org/sites/default/files/pulmonic.gif Stand: 09.12.16
+ } 
+\end{table}
 
-	\begin{figure}[H]
-		\centering
-		
-		\includegraphics[scale=0.35]{material/04ipaconsonantpulmonic}
-		\caption{Konsonanten (Pulmonal)}
-		%\label{Zeichen1}
-	\end{figure}	
-	
 \end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{IPA-Alphabet}
 
-	\begin{figure}[H]
-		\centering
-		
-		\includegraphics[scale=0.45]{material/04ipaconsonantnonpulmonic}
-		\caption{Konsonanten (Nicht Pulmonal)}
-		%\label{Zeichen1}
-	\end{figure}
+\begin{table}
+	\centering
+	\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{|c c | c c | c c|}
+			\hline
+			\multicolumn{2}{|c|}{Clicks} & \multicolumn{2}{|c|}{Voiced implosives} & \multicolumn{2}{|c|}{Ejectives} \\
+			\hline
+			\textipa{\!o} & \tiny{Bilabial} & \textipa{\!b} & \tiny{Bilabial} & \textipa{'} & \tiny{Examples:} \\
+			\textipa{\textpipe} & \tiny{Dental} & \textipa{\!d} & \tiny{Dental/alveolar} & \textipa{p'} & \tiny{Bilabial} \\
+			\textipa{!} & \tiny{(Post)alveolar} & \textipa{\!j} & \tiny{Palatal} & \textipa{t'} & \tiny{Dental/alveolar} \\
+			\textipa{\textdoublebarpipe} & \tiny{Palatoalveolar} & \textipa{\!g} & \tiny{Velar} & \textipa{k'} & \tiny{Velar} \\
+			\textipa{\textdoublepipe} & \tiny{Alveolar lateral} & \textipa{\!G} & \tiny{Uvular} & \textipa{s'} & \tiny{Alveolar fricative} \\
+			\hline
+		\end{tabular}
+	\end{adjustbox}
+	\caption{Nichtpulmonale Konsonanten, IPA.
+		%https://www.internationalphoneticassociation.org/sites/default/files/pulmonic.gif Stand: 09.12.16
+	} 
+\end{table}
+
+%	\begin{figure}[H]
+%		\centering
+%		
+%		\includegraphics[scale=0.45]{material/04ipaconsonantnonpulmonic}
+%		\caption{Konsonanten (Nicht Pulmonal)}
+%		%\label{Zeichen1}
+%	\end{figure}
 	
 	\begin{itemize}
 		\item \textbf{VIDEO:} \href{run:material/04namaclicks.mp4}{!Nama Clicks}
@@ -490,8 +558,11 @@ Sprechaktlautlehre}
 	\begin{figure}[H]
 		\centering
 		
-		\includegraphics[scale=0.45]{material/04ipavowel}
-		\caption{Vokale}
+		\includegraphics[scale=0.27]{material/04ipavowelwikicommons}
+		\caption{CC BY-SA 3.0, https://en.wikipedia.org/w/index.php?curid=3368128}
+		%old picture
+		%\includegraphics[scale=0.45]{material/04ipavowel}
+		%\caption{Vokale}
 		%\label{Zeichen1}
 	\end{figure}
 	
@@ -503,7 +574,7 @@ Sprechaktlautlehre}
 \begin{frame}
 \frametitle{IPA-Alphabet}
 
-	\begin{figure}[H]
+	\begin{figure}[H] %%kein lizensfreies Bild gefunden%%
 		\centering
 		
 		\includegraphics[scale=0.5]{material/04ipatabellerepp11vokalviereck}
@@ -534,10 +605,12 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Artikulatorische Phonetik}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -610,13 +683,36 @@ Sprechaktlautlehre}
 \begin{frame}
 \frametitle{Konsonanten}
 
-	\begin{figure}[H]
-		\centering
-		
-		\includegraphics[scale=0.65]{material/04sagitalschnittaltmann}
-		\caption{Sagitalschnitt \citep{Altmann&Co07a}}
-		%\label{Zeichen1}
+\begin{minipage}{0.48\textwidth}
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.32]{material/04phonoatonomy}
+	\caption{Sagitalschnitt, By 아흔 - Own work, CC BY-SA 3.0, \url{https://commons.wikimedia.org/w/index.php?curid=2615572}}
 	\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.4\textwidth}
+	A -- Nasenraum\\
+	B -- Zahndamm \emph{Alveolen}\\
+	C -- (Ober)Lippe \\
+	D -- (obere) Zähne\\
+	E -- Zugenspitze \emph{Apex}\\
+	F -- Kehlkopf \emph{Larynx}\\
+	G -- Stimmlippen \emph{Glottis}\\
+	H -- harter Gaumen \emph{Palatum}\\
+	I -- Zungenrücken \emph{Dorsum}\\
+	J -- Gaumensegel \emph{Velum}\\
+	K -- Zäpfchen \emph{Uvula}\\
+	L -- Luftröhre\\ 
+	M -- Speiseröhre
+\end{minipage}
+	
+%	\begin{figure}[H] %%altes Bild%%
+%		\centering
+%		
+%		\includegraphics[scale=0.65]{material/04sagitalschnittaltmann}
+%		\caption{Sagitalschnitt \citep{Altmann&Co07a}}
+%		%\label{Zeichen1}
+%	\end{figure}
 	
 \end{frame}
 
@@ -960,10 +1056,12 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \subsection{Vokale}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1035,7 +1133,7 @@ Sprechaktlautlehre}
 		
 		\begin{itemize}
 			\item[]
-			\item Definition 1: \textipa{[ i:, y:, u:, o: ]} \textbf{mehr Muskelspannung} als \textipa{[ I, Y, U, O ]}\\
+			\item Definition 1: \textipa{[ i:, y:, u:, o: ]} \textbf{mehr Muskelspannung} als \textipa{[ I, Y, \textupsilon , O ]}\\
 			(von der experimentellen Phonetik weder bestätigt noch widerlegt)
 			\item[]
 			\item Definition 2: mit vorverlagerter Zungenwurzel
@@ -1130,7 +1228,7 @@ Sprechaktlautlehre}
 	\begin{figure}[H]
 		\centering
 		
-		\includegraphics[scale=0.45]{material/04ipatabellerepp11vokalviereck}
+		\includegraphics[scale=0.4]{material/04ipatabellerepp11vokalviereck} %%kein gutes lizensfreies Bild gefunden%%
 		\caption{Vokalviereck \citep{Repp&Co12a}}
 		%\label{Zeichen1}
 	\end{figure}	
@@ -1196,7 +1294,7 @@ Sprechaktlautlehre}
 			\item[]
 			\item \textbf{steigende} (oder öffnende) Diphthonge\\
 
-			\ea Im Bayrischen: \textipa{[ \t{Ia} , \t{Ua} ]} oder \textipa{[ \textsubarch{I}a , \textsubarch{U}a ]} (in \ab{liap} und \ab{guat})
+			\ea Im Bayrischen: \textipa{[ \t{Ia} , \t{Ua} ]} oder \textipa{[ \textsubarch{I}a , \textsubarch{\textupsilon}a ]} (in \ab{liap} und \ab{guat})
 			\z
 			
 			\ea In Fremdwörtern: \abe{Span\textit{ie}n}, \abe{Rit\textit{ua}l}, \abe{Stud\textit{iu}m}
@@ -1266,11 +1364,13 @@ Sprechaktlautlehre}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Übungen}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -30,21 +30,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
 
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 	}
-	
+	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \section{Ziel des Kurses}
+
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,10 +71,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Sprache und natürliche Sprache}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -209,7 +215,7 @@
 \begin{tabular}{lp{1em}l}
 \hline
 \multirow{4}*{
-\includegraphics[scale=0.04]{material/Hauskatze_an_einem_Scheunenfenster_in_Grossarl}
+\includegraphics[scale=0.04]{material/Hauskatze-an-einem-Scheunenfenster-in-Grossarl}
 }&  
 %fehlt noch im Material-Ordner
 \multirow{4}{6em}{{\LARGE $ \leftrightarrow $}} & / \textipa{k a \t{ts} \textschwa} / \\
@@ -245,11 +251,10 @@ Bedeutungsseite & & Formseite\\
 \begin{figure}[H]
 \centering
 
-\includegraphics[scale=0.15]{material/Bee_dance}
-\caption{\url{https://commons.wikimedia.org/wiki/File:Bee_dance.png?uselang=de}; GNU-Lizenz; Autor:Audriusa; Bee\_dance/ Schwänzeltanz}
+\includegraphics[scale=0.15]{material/Bee-dance}
+\caption{https://commons.wikimedia.org/wiki/File:Bee\_dance.png?uselang=de; GNU-Lizenz; Autor:Audriusa; Bee\_dance/ Schwänzeltanz}
 \label{Zeichen2}
 \end{figure}
-
 
 \begin{itemize}
 	\item<2-> Mit diesem Zeichensystem teilen Bienen die \textbf{Richtung} und \textbf{Entfernung} der nächsten Nahrungsquelle mit. 
@@ -296,7 +301,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \begin{frame}
 
 \begin{itemize}
-	\item<1-> \bf{Bidirektionalität:}
+	\item<1-> \textbf{Bidirektionalität:}
 
 	\begin{itemize}
 		\item[]
@@ -321,7 +326,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \begin{frame}
 
 \begin{itemize}
-	\item<1-> \bf{Situationelle Ungebundenheit:}
+	\item<1-> \textbf{Situationelle Ungebundenheit:}
 	
 	\begin{itemize}
 		\item[]

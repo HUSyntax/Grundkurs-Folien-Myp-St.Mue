@@ -1,0 +1,19 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Einführung}{2}{0}{1}
+\beamer@sectionintoc {2}{Silbenbestimmung}{7}{0}{2}
+\beamer@sectionintoc {3}{Silbenstruktur}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Onset}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Nukleus}{14}{0}{3}
+\beamer@subsectionintoc {3}{3}{Koda}{15}{0}{3}
+\beamer@sectionintoc {4}{Phonotaktik}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Sonoritätshierarchie}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{Weitere phonotaktische Beschränkungen}{23}{0}{4}
+\beamer@sectionintoc {5}{Silbenmodelle}{24}{0}{5}
+\beamer@subsectionintoc {5}{1}{CV-Modell}{25}{0}{5}
+\beamer@subsectionintoc {5}{2}{Konstituentenmodell}{29}{0}{5}
+\beamer@sectionintoc {6}{Silbengelenk}{34}{0}{6}
+\beamer@sectionintoc {7}{Silbifizierung}{36}{0}{7}
+\beamer@sectionintoc {8}{Exkurs: Akzent}{38}{0}{8}
+\beamer@subsectionintoc {8}{1}{Exkurs: Wortakzent}{39}{0}{8}
+\beamer@subsectionintoc {8}{2}{Exkurs: Satzakzent}{40}{0}{8}
+\beamer@subsectionintoc {8}{3}{Exkurs: Intonation}{41}{0}{8}

@@ -450,7 +450,7 @@ What will Ann read?
 }
 
 \frame{
-\frametitle{Englisch vs.\ Deutsch}
+\frametitle{Grundstruktur für das Deutsche parallel zum Englischen}
   
 \vfill
 %% \hfill\scalebox{0.7}{%
@@ -475,22 +475,93 @@ What will Ann read?
 \begin{forest}
 sn edges
 [CP
-  [XP [Was$_j$]]
   [C$'$
-    [C [liest$_k$]]
+    [C [dass]]
     [TP
       [NP   [Ann,triangle]]
       [T$'$
-        [\tnull [\trace$_k$]]
         [VP
           [V$'$
-            [NP [\trace$_j$]]
-            [\vnull [\trace$_k$]]]]]]]]
+            [NP [den Aufsatz,triangle]]
+            [\vnull [lies-]]]]
+        [\tnull [-t]]]]]]
 \end{forest}
 }
 \hfill\mbox{}
 
+\begin{itemize}
+\item Subjekt ist nicht mehr in der VP, sondern in der TP
+
+\pause
+\item Verbstamm steht in \vnull.
+\pause
+\item Verbstamm bewegt sich zu \tnull.
+
+
+\end{itemize}
+
 }
+
+
+\frame{
+\frametitle{Entscheidungsfragesätze im Deutschen (V1)}
+  
+\vfill
+\hfill
+\scalebox{0.7}{%
+\begin{forest}
+sn edges
+[CP
+  [C$'$
+    [C [lies-$_j$ -t$_k$]]
+    [TP
+      [NP   [Ann,triangle]]
+      [T$'$
+        [VP
+          [V$'$
+            [NP [den Aufsatz,triangle]]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+\begin{itemize}
+\item Das finite Verb geht von V zu T und wird dann samt Suffix nach C vorangestellt.
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Aussagesätze im Deutschen (V2)}
+  
+\vfill
+\hfill
+\scalebox{0.7}{%
+\begin{forest}
+sn edges
+[CP
+  [NP [Den Aufsatz$_i$,triangle]]
+  [C$'$
+    [C [lies-$_j$ -t$_k$]]
+    [TP
+      [NP   [Ann,triangle]]
+      [T$'$
+        [VP
+          [V$'$
+            [NP [\trace$_i$]]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+\begin{itemize}
+\item Eine beliebige Phrase wird vor das finite Verb (nach SpecCP) gestellt.
+\end{itemize}
+
+}
+
 
 \subsection{NP oder DP?}
 
@@ -510,7 +581,7 @@ der Mann
 
 Im Deutschen kann man sowohl Determinator als auch Nomen weglassen.
 
-Im Englischen kann des Nomen weniger gut weggelassen werden als im Deutschen, was für das Nomen asl
+Im Englischen kann des Nomen weniger gut weggelassen werden als im Deutschen, was für das Nomen als
 Kopf spricht.
 
 \item Kopf bestimmt die Form der anderen Elemente
@@ -533,9 +604,10 @@ was eher für das Nomen als Kopf spricht.
 \begin{itemize}
 \item Es gibt unterschiedliche Auffassungen. 
 \begin{itemize}
-\item 0--1980: N ist der Kopf
-\item 1985-heute: D ist der Kopf
-\item 2000-heute: vielleicht ist ja doch N der Kopf
+\item 0--1987: N ist der Kopf
+\item 1977-heute: D ist der Kopf \citep{VH77a-u,Hellan86a,Abney87a,Netter94,Netter98a}
+\item 2000-heute: vielleicht ist ja doch N der Kopf (\citealp{vanLangendonck94a}; \citealp[\page 49]{ps2}; \citealp{Demske2001a};
+\citealp[Section~6.6.1]{MuellerLehrbuch1}; \citealp{Hudson2004a}; \citealp{Bruening2009a})
 
 \end{itemize}
 \end{itemize}
@@ -563,13 +635,13 @@ sn edges
 \begin{forest}
 sn edges
 [TP
-  [NP   [Ann,triangle]]
+  [DP   [Ann,triangle]]
   [T$'$
     [\tnull [will]]
     [VP
       [V$'$
         [\vnull [read]]
-        [NP [the newspaper,triangle]]]]]]
+        [DP [the newspaper,triangle]]]]]]
 \end{forest}
 \hfill\mbox{}
 
@@ -1152,6 +1224,249 @@ $\circ$
 \item Wenn Sie sich jetzt ärgern, ist das gut.
 
 \end{itemize}
+
+
+}
+
+\subsection{Beispiele mit DP und TP}
+
+\frame{
+\frametitle{Deutsch mit DP und TP}
+
+\vfill
+\hfill
+\scalebox{0.6}{%
+\begin{forest}
+sn edges
+[CP
+  [DP$_i$ 
+    [D$'$
+      [\dnull [Den]]
+        [NP
+          [N$'$
+            [\nnull [Aufsatz]]]]]]
+  [C$'$
+    [C [lies-$_j$ -t$_k$]]
+    [TP
+      [DP 
+        [D$'$
+          [\dnull [der]]
+          [NP
+            [N$'$
+              [AP
+                [A$'$
+                  [\anull [kluge]]]]
+              [N$'$
+                [\nnull [Mann]]]]]]]
+      [T$'$
+        [VP
+          [V$'$
+            [DP [\trace$_i$]]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+
+}
+
+
+\frame{
+\frametitle{Eingebettete Sätze (abgekürzte Struktur)}
+
+
+\vfill
+\hfill
+\scalebox{0.4}{%
+\begin{forest}
+sn edges
+[CP
+  [DP$_i$ [Peter,triangle]]
+  [C$'$
+    [C [glaub-$_j$ -t$_k$]]
+    [TP
+      [DP [\trace$_i$]]
+      [T$'$
+        [VP
+          [V$'$
+            [CP 
+              [C$'$
+                [\cnull [dass]]
+                [TP
+                  [DP [der Mann, triangle]]
+                  [T$'$
+                    [VP
+                      [V$'$
+                        [DP [den Verbrecher,triangle]]
+                        [\vnull [verfolg-]]]]
+                    [\tnull [-t]]]]]]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+\begin{itemize}
+\item Genau wie \emph{Peter kennt den Mann}, nur dass \emph{glauben} CP als Objekt nimmt und
+  \emph{kennen} eine DP.
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitle{Eingebettete Sätze (komplette Struktur)}
+
+
+\vfill
+\hfill
+\scalebox{0.4}{%
+\begin{forest}
+sn edges
+[CP
+  [DP$_i$ 
+    [D$'$
+      [\dnull [\trace]]
+        [NP
+          [N$'$
+            [\nnull [Peter]]]]]]
+  [C$'$
+    [C [glaub-$_j$ -t$_k$]]
+    [TP
+      [DP [\trace$_i$]]
+      [T$'$
+        [VP
+          [V$'$
+            [CP 
+              [C$'$
+                [\cnull [dass]]
+                [TP
+                  [DP
+                    [D$'$
+                      [\dnull [der]]
+                      [NP
+                        [N$'$
+                          [\nnull [Mann]]]]]]
+                  [T$'$
+                    [VP
+                      [V$'$
+                        [DP
+                          [D$'$
+                            [\dnull [den]]
+                            [NP
+                              [N$'$
+                                [\nnull [Verbrecher]]]]]]
+                        [\vnull [verfolg-]]]]
+                    [\tnull [-t]]]]]]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+
+
+
+
+}
+
+
+\frame{
+\frametitle{Eingebettete Sätze (oder auch mal andersrum)}
+
+
+\vfill
+\hfill
+\scalebox{0.55}{%
+\begin{forest}
+sn edges
+[CP
+  [CP$_i$ 
+              [C$'$
+                [\cnull [dass]]
+                [TP
+                  [DP
+                    [D$'$
+                      [\dnull [der]]
+                      [NP
+                        [N$'$
+                          [\nnull [Mann]]]]]]
+                  [T$'$
+                    [VP
+                      [V$'$
+                        [DP
+                          [D$'$
+                            [\dnull [den]]
+                            [NP
+                              [N$'$
+                                [\nnull [Verbrecher]]]]]]
+                        [\vnull [verfolg-]]]]
+                    [\tnull [-t]]]]]]
+  [C$'$
+    [C [glaub-$_j$ -t$_k$]]
+    [TP
+      [DP 
+        [D$'$
+          [\dnull [\trace]]
+          [NP
+            [N$'$
+              [\nnull [Peter]]]]]]
+      [T$'$
+        [VP
+          [V$'$
+            [CP [\trace$_i$] ]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+
+
+
+
+}
+
+
+\frame{
+\frametitle{Eingebettete Sätze (übersichtlicher mit abgekürzten DPen)}
+
+
+\vfill
+\hfill
+\scalebox{0.7}{%
+\begin{forest}
+sn edges
+[CP
+  [CP$_i$ 
+              [C$'$
+                [\cnull [dass]]
+                [TP
+                  [DP [der Mann,triangle]]
+                  [T$'$
+                    [VP
+                      [V$'$
+                        [DP [den Verbrecher, triangle]]
+                        [\vnull [verfolg-]]]]
+                    [\tnull [-t]]]]]]
+  [C$'$
+    [C [glaub-$_j$ -t$_k$]]
+    [TP
+      [DP [Peter,triangle]]
+      [T$'$
+        [VP
+          [V$'$
+            [CP [\trace$_i$] ]
+            [\vnull [\trace$_j$]]]]
+        [\tnull [\trace$_k$]]]]]]
+\end{forest}
+}
+\hfill\mbox{}
+
+
+
 
 
 }

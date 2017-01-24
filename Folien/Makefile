@@ -11,11 +11,12 @@ SOURCE= 00-Organisatorisches-include.tex \
 	04a-graphematik-include.tex\
 	05a-wortbildung-include.tex\
 	05b-flexion-include.tex\
-	06a-syntax-stefan-include.tex
+	06a-syntax-stefan-include.tex\
+	06b-syntax-ip-include.tex
 
 
 
-check: germanisch-check-2x2.pdf
+check: check-grundkurs-handout-2x2.pdf
 
 %.pdf: %.tex $(SOURCE) 
 	xelatex $*
@@ -44,17 +45,25 @@ check: germanisch-check-2x2.pdf
 03b-phonologie-handout-2x2.pdf: 03b-phonologie-handout.pdf
 	beamer2handout $?
 
+07-semantik-handout-2x2.pdf: 07-semantik-handout.pdf
+	beamer2handout $?
+
 
 silben: 03b-phonologie-handout-2x2.pdf
 
 silben-slides: 03b-phonologie-slides.pdf
 silben-handout: 03b-phonologie-handout-2x2.pdf
 
+semantik-handout: 07-semantik-handout-2x2.pdf
+
 slides: grundkurs-slides.pdf
 handout: grundkurs-handout-2x2.pdf
 
 
 grundkurs-handout-2x2.pdf: grundkurs-handout.pdf
+	beamer2handout $?
+
+check-grundkurs-handout-2x2.pdf: check-grundkurs-handout.pdf
 	beamer2handout $?
 
 

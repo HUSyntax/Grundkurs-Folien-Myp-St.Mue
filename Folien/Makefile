@@ -12,7 +12,8 @@ SOURCE= 00-Organisatorisches-include.tex \
 	05a-wortbildung-include.tex\
 	05b-flexion-include.tex\
 	06a-syntax-stefan-include.tex\
-	06b-syntax-ip-include.tex
+	06b-syntax-ip-include.tex\
+	07-semantik-stefan-include.tex
 
 
 

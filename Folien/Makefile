@@ -13,7 +13,8 @@ SOURCE= 00-Organisatorisches-include.tex \
 	05b-flexion-include.tex\
 	06a-syntax-stefan-include.tex\
 	06b-syntax-ip-include.tex\
-	07-semantik-stefan-include.tex
+	07-semantik-stefan-include.tex\
+	08-pragmatik-stefan-include.tex
 
 
 
@@ -58,17 +59,12 @@ silben-handout: 03b-phonologie-handout-2x2.pdf
 semantik-handout: 07-semantik-handout-2x2.pdf
 
 slides: grundkurs-slides.pdf
-handout: grundkurs-handout-2x2.pdf
+handout: grundkurs-handout.pdf
+
+ma-handout: ma-uebung-handout-2x2.pdf
 
 
-grundkurs-handout-2x2.pdf: grundkurs-handout.pdf
-	beamer2handout $?
-
-check-grundkurs-handout-2x2.pdf: check-grundkurs-handout.pdf
-	beamer2handout $?
-
-
-o-public: grundkurs-handout-2x2.pdf
+o-public: grundkurs-handout.pdf dp-tp-handout.pdf
 	scp -p $? home.hpsg.fu-berlin.de:/home/stefan/public_html/PS/
 
 

@@ -73,6 +73,17 @@
 \usepackage{hu-beamer-includes-pdflatex}
 \huberlinlogon{0.86cm}
 
+% %% % use this definition, if you want to see the outlines in the handout
+\renewcommand{\outline}[1]{%
+%\beamertemplateemptyfootbar%
+\huberlinjustbarfootline
+\frame{\frametitle{\outlineheading}#1}%
+%\beamertemplatecopyrightfootframenumber%
+\huberlinnormalfootline 
+\huberlinpagedec
+}
+
+
 
 %% Last Packages
 %\usepackage{hyperref}	%URLs

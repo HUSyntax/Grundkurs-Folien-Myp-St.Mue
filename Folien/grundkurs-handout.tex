@@ -4,7 +4,7 @@
 
 %\documentclass[a4paper,11pt, bibtotoc]{beamer}
 %\documentclass[10pt,a4paper]{beamer}
-\documentclass[10pt,handout]{beamer}
+\documentclass[10pt,handout,t]{beamer}
 
 
 
@@ -16,12 +16,37 @@
 \input{localpackages}
 
 
+\usepackage{pgfpages}
 
+\pgfpagesuselayout{4 on 1}[a4paper, border shrink=5mm, landscape]
+
+\pgfpageslogicalpageoptions{1}{border code=\pgfusepath{stroke},
+% resized height=.65\pgfphysicalheight,
+% resized width=.65\pgfphysicalwidth, 
+  center = \pgfpoint{.275\pgfphysicalwidth}{.74\pgfphysicalheight}
+}
+\pgfpageslogicalpageoptions{2}{border code=\pgfusepath{stroke},
+% resized height=.65\pgfphysicalheight,
+% resized width=.65\pgfphysicalwidth,
+  center = \pgfpoint{.725\pgfphysicalwidth}{.74\pgfphysicalheight}
+}
+\pgfpageslogicalpageoptions{3}{border code=\pgfusepath{stroke},
+% resized height=.65\pgfphysicalheight,
+% resized width=.65\pgfphysicalwidth,
+  center = \pgfpoint{.275\pgfphysicalwidth}{.26\pgfphysicalheight}
+}
+\pgfpageslogicalpageoptions{4}{border code=\pgfusepath{stroke},
+% resized height=.65\pgfphysicalheight,
+% resized width=.65\pgfphysicalwidth,
+ center = \pgfpoint{.725\pgfphysicalwidth}{.26\pgfphysicalheight}
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                   %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%\includeonly{08-pragmatik-stefan-include}
 
 
 \begin{document}
@@ -34,6 +59,7 @@
 \toggletrue{loesung}
 \togglefalse{toc}
 %\toggletrue{toc}
+
 
 \input{grundkurs-include}
 

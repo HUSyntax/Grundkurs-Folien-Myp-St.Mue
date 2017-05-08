@@ -195,6 +195,11 @@
 %Tipa font:
 %\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}
 
+%Tipa sefifs fixed (requires 'computer modern unicode font family')
+\newfontfamily{\tipacm}[Scale=MatchUppercase]{CMU Serif}
+%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}}
+\renewcommand\useTIPAfont{\tipacm}
+
 
 \newtoggle{uebung}
 \newtoggle{loesung}

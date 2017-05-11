@@ -16,9 +16,9 @@
 \section{Phonologie II: Silbe}
 
 \author[aMyP]{Antonio Machicao y Priemer%
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize %\url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
+	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 %\institute{Institut für deutsche Sprache und Linguistik}
@@ -136,7 +136,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 
 Warum nimmt man Silben an?
@@ -175,7 +175,7 @@ Warum nimmt man Silben an?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 Warum nimmt man Silben an?
 
@@ -201,7 +201,7 @@ Silbe als \textbf{Domäne} \dots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 
 \begin{itemize}
@@ -214,7 +214,7 @@ Silbe als \textbf{Domäne} \dots
 \columnbreak
 		\item $\omega$ = phonol. Wort
 		\item F = phonol. Fuß
-		\item \alert{$\sigma$ = Silbe}
+		\item \alertred{$\sigma$ = Silbe}
 	\end{itemize}
 	\end{multicols}
 \end{itemize}
@@ -224,23 +224,27 @@ Silbe als \textbf{Domäne} \dots
 	\begin{forest} MyP edges,
 	[IP
 	[$\Phi$
-	[$\omega$[F[$\sigma$[Frau]]]]
-	[$\omega$[F[$\sigma$[Müll]][$\sigma$[er]]]]]
+	[$\omega$[F[\alertred{$\sigma$}[Frau]]]]
+	[$\omega$[F[\alertred{$\sigma$}[Müll, name=mueller]][\alertred{$\sigma$}, name=sigma[er]]]]]
 	[$\Phi$
-	[$\omega$[F[$\sigma$[kauft]]]]
-	[$\omega$[F[$\sigma$[Steck]]]
-			 [F[$\sigma$[rüb]]
-			   [$\sigma$[en]]]]]
+	[$\omega$[F[\alertred{$\sigma$}[kauft]]]]
+	[$\omega$[F[\alertred{$\sigma$}[Steck]]]
+			 [F[\alertred{$\sigma$}[rü]]
+			   [\alertred{$\sigma$}[ben]]]]]
 	[$\Phi$
-	[$\omega$[F[$\sigma$[auf]]]
-			 [F[$\sigma$[dem]]]]
-	[$\omega$[F[$\sigma$[Woch]]
-			   [$\sigma$[en]]]
-			 [F[$\sigma$[markt]]]]]
+	[$\omega$[F[\alertred{$\sigma$}[auf]]]
+			 [F[\alertred{$\sigma$}[dem]]]]
+	[$\omega$[F[\alertred{$\sigma$}[Woch, name=woch]]
+			   [\alertred{$\sigma$}, name=sigmab[en]]]
+			 [F[\alertred{$\sigma$}[markt]]]]]
 	]
+	{
+		\draw[black] (mueller.north)--(sigma.south);
+		\draw[black] (woch.north)--(sigmab.south);
+	}
 	\end{forest}
 }
-	\caption{Komplexe Silbe}
+	\caption{nach}
 	\label{Zeichen1}
 \end{figure}
 
@@ -257,7 +261,7 @@ Silbe als \textbf{Domäne} \dots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 
 \begin{itemize}
@@ -270,7 +274,7 @@ Silbe als \textbf{Domäne} \dots
 \columnbreak
 		\item $\omega$ = phonol. Wort
 		\item F = phonol. Fuß
-		\item \alert{$\sigma$ = Silbe}
+		\item \alertred{$\sigma$ = Silbe}
 	\end{itemize}
 	\end{multicols}
 \end{itemize}
@@ -287,7 +291,7 @@ Silbe als \textbf{Domäne} \dots
 		]]
 		\end{forest}
 	}
-		\caption{Hierarchie in der Äußerungsphrase}
+		\caption{\cite{Fuhrhop&Co13a}}
 	\end{figure}
 \end{minipage}\hfill%
 \begin{minipage}{0.6\textwidth}
@@ -303,6 +307,7 @@ Silbe als \textbf{Domäne} \dots
 	\\
 	(Man)\textsubscript{$\sigma$} (da)\textsubscript{$\sigma$} (ri)\textsubscript{$\sigma$} (nen)\textsubscript{$\sigma$} (o)\textsubscript{$\sigma$} (der)\textsubscript{$\sigma$} (Äp)\textsubscript{$\sigma$} (fel)\textsubscript{$\sigma$}
 }
+\vspace{1cm}
 \end{minipage}
 
 
@@ -334,29 +339,29 @@ Silbe als \textbf{Domäne} \dots
 \frametitle{Silbenbestimmung}
 
 \begin{itemize}
-	\item Wie viele Silben hat das folgende Wort?
+	\item<1-> Wie viele Silben hat das folgende Wort?
 	
 	  \ea
           Silbenbestimmung
           \z
           
-\pause	
-	\item Woher wissen Sie das?
+	
+	\item<2-> Woher wissen Sie das?
 	
 	\begin{itemize}
-		\item Staffeldt (2010: 133):\\
+		\item<2-> Staffeldt (2010: 133):\\
 		\gqq{Jeder kompetente Sprachteilhaber verfügt über die \textbf{Fähigkeit}, Silben identifizieren zu können.}
 		
-		\item \citet[600]{Bussmann02a}:\\
+		\item<2-> \citet[600]{Bussmann02a}:\\
 		\gqq{Silbe: Phonetisch- phonologische \textbf{Grundeinheit} des Wortes bzw. der Rede, die zwar \textbf{intuitiv} nachweisbar ist, wissenschaftlich aber \textbf{nicht einheitlich definiert} wird.}
 		
 	\end{itemize}
 
-	\item Silben können \textbf{betont} werden (tragen Akzent)
+	\item<2-> Silben können \textbf{betont} werden (tragen Akzent)
 	
-	\item Silbenspiele
+	\item<2-> Silbenspiele
 	
-	\item Intuitiv erkennbare Einheit
+	\item<2-> Intuitiv erkennbare Einheit
 
 \end{itemize}
 
@@ -465,7 +470,7 @@ Silbe als \textbf{Domäne} \dots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Silbenstruktur}
+%\frametitle{Silbenstruktur}
 
 Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
@@ -473,13 +478,13 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
 \begin{itemize}
 	\item[]
-	\item \alert{Onset}
+	\item \alertred{Onset}
 	
-	\item \alert{Reim}
+	\item \alertred{Reim}
 	
-	\item \alert{Nukleus}
+	\item \alertred{Nukleus}
 	
-	\item \alert{Koda}
+	\item \alertred{Koda}
 	\item[] 
 	\item C $:=$ Konsonantisch, d.\,h. nicht-silbisch ($\neq$Konsonant)
 	\item V $:=$ Vokalisch, d.\,h. silbisch ($\neq$Vokal)
@@ -526,7 +531,7 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Silbenstruktur}
+%\frametitle{Silbenstruktur}
 
 Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
@@ -534,13 +539,13 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
 \begin{itemize}
 	\item[]
-	\item \alert{Onset}
+	\item \alertred{Onset}
 	
-	\item \alert{Reim}
+	\item \alertred{Reim}
 	
-	\item \alert{Nukleus}
+	\item \alertred{Nukleus}
 	
-	\item \alert{Koda}
+	\item \alertred{Koda}
 	\item[] 
 	\item \textbf{Minimale Silbe} besteht nur aus einem V im  Nukleus
 	  \ea
@@ -581,12 +586,12 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Silbenstruktur}
+%\frametitle{Silbenstruktur}
 
 \begin{itemize}
-	\item Silbenanlaut/Silbenanfangsrand/\alert{Onset},
-	\item Silbengipfel/Silbenkern/\alert{Nukleus},
-	\item Silbenauslaut/Silbenendrand/\alert{Koda}
+	\item Silbenanlaut/Silbenanfangsrand/\alertred{Onset},
+	\item Silbengipfel/Silbenkern/\alertred{Nukleus},
+	\item Silbenauslaut/Silbenendrand/\alertred{Koda}
 	
 \end{itemize}
 
@@ -642,7 +647,7 @@ Im Deutschen sind
 	\begin{itemize}
 		\item \textbf{3 Cs} beschränkt möglich (nach \textipa{/S/} und \textipa{/s/}),
 		
-		\item \textbf{2 Cs} oft (\zB \textipa{/bl/}, \textipa{/kn/} \dots ), und
+		\item \textbf{2 Cs} oft (\zB \textipa{/bl/}, \textipa{/kn/} \dots\ ), und
 		\item \textbf{1 C} immer (bis auf \textipa{[N]})
 	\end{itemize}
 
@@ -685,7 +690,7 @@ Im Deutschen sind
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Onset}
+%\frametitle{Onset}
 
 \begin{itemize}
 	\item Bei Betrachtung aller (bekannten) Sprachen kann man die folgende Gesetzmäßigkeit feststellen \citep[cf.][212f.]{Hall00a}
@@ -885,7 +890,7 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+%\frametitle{Sonoritätshierarchie}
 
 \begin{enumerate}
 	\item \textbf{phonotaktischen Beschränkungen} \ras Onset
@@ -937,7 +942,7 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+%\frametitle{Sonoritätshierarchie}
 
 \begin{itemize}
 	\item Eine Silbe ist so aufgebaut, dass die Sonorität in der Silbe zum Nukleus hin steigt und dann abfällt.
@@ -963,7 +968,7 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+%\frametitle{Sonoritätshierarchie}
 
 \begin{itemize}
 	\item Es gibt verschiedene Ausformulierungen der Sonoritätshierachie.
@@ -1005,7 +1010,7 @@ $[-]$&							 &							  &								& $[-$sth$]$ Plosiv \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+%\frametitle{Sonoritätshierarchie}
 
 
 \begin{block}{Sonoritätsprinzip (Sonority Sequencing Generalization -- SSG)}
@@ -1031,7 +1036,7 @@ In jeder Silbe gibt es ein Segment, das den Silbengipfel bildet, und dem ein ode
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+%\frametitle{Sonoritätshierarchie}
 
 \begin{block}{Sonoritätshierarchie (für uns)}
 Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
@@ -1224,7 +1229,7 @@ MyP edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{CV-Modell (Einfaches Modell)}
+%\frametitle{CV-Modell (Einfaches Modell)}
 
 \begin{itemize}
 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
@@ -1286,7 +1291,7 @@ MyP edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{CV-Modell (Einfaches Modell)}
+%\frametitle{CV-Modell (Einfaches Modell)}
 
 \begin{itemize}
 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
@@ -1340,7 +1345,7 @@ MyP edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{CV-Modell (Einfaches Modell)}
+%\frametitle{CV-Modell (Einfaches Modell)}
 
 \begin{itemize}
 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
@@ -1469,7 +1474,7 @@ MyP edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Konstituentenmodell}
+%\frametitle{Konstituentenmodell}
 
 \textbf{Silbe} ($\sigma$) = Onset (O) + Reim (R)
 
@@ -1488,7 +1493,7 @@ MyP edges,
 	\begin{itemize}
 		\item Silbengewicht: Längenausgleich zwischen N und K 		
 		\item Gedichte
-		\item Typischerweise VCC oder VVC
+		\item Typischerweise VCC (oder VVC)
 	\end{itemize}
 	
 \end{itemize}
@@ -1515,7 +1520,7 @@ MyP edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Konstituentenmodell}
+%\frametitle{Konstituentenmodell}
 
 \textbf{Skelettschicht}
 
@@ -1607,7 +1612,7 @@ MyP edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Konstituentenmodell}
+%\frametitle{Konstituentenmodell}
 
 \textbf{Skelettschicht}
 
@@ -1821,6 +1826,7 @@ Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plo
 $x > y :=$ $x$ ist sonorer als $y$
 \end{block}
 
+\begin{multicols}{2}
 \eal 
 \ex sprechen
 \ex Obst
@@ -1830,6 +1836,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 \ex Mittagessen
 \ex Bierdeckel
 \zl
+\end{multicols}
 
 \end{frame}
 
@@ -2214,7 +2221,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Silbengelenk}
+%\frametitle{Silbengelenk}
 
 \begin{minipage}{.35\textwidth}
 %\input{localforestsyllables}
@@ -2266,10 +2273,10 @@ $x > y :=$ $x$ ist sonorer als $y$
 	\item \textbf{In der Schreibung} werden Silbengelenke häufig mit Doppelkonsonanten markiert (aber nicht immer!)
 	
 	\ea der \textipa{[\t{tS}Et]} \vs ich \textipa{[\t{tS}Et@]}\\
-	\pause der Cha\alert{t} \vs ich cha\alert{tt}e
+	\pause der Cha\alertred{t} \vs ich cha\alertred{tt}e
 	\z
 	\ea
-        abkli\alert{ng}en, zwi\alert{sch}en
+        abkli\alertred{ng}en, zwi\alertred{sch}en
         \z
 
 \pause
@@ -2335,7 +2342,7 @@ Bilde zuerst den größtmöglichen Silbenanlaut;\\ dann bilde den Silbenauslaut 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Silbifizierung}
+%\frametitle{Silbifizierung}
 
 \begin{block}{Onsetmaximierung}
 Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \citep[218]{Hall00a}
@@ -2417,7 +2424,7 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 
 
 \begin{frame}
-\frametitle{Übung}
+%\frametitle{Übung}
 
 \begin{itemize}
 	\item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
@@ -2597,7 +2604,7 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Exkurs: Intonation}
+%\frametitle{Exkurs: Intonation}
 
 \begin{itemize}
 	\item Ambige ($\approx$ mehrdeutige) Sätze können mittels Intonation \gs{durch die sog. Hutkontur} \textbf{disambiguiert} werden: 

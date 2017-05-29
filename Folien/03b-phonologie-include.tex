@@ -2765,6 +2765,213 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 }
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lösungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{loesung}{
+	
+	\subsection{Hausaufgabe}
+	\iftoggle{toc}{
+		\frame{
+			\frametitle{~}
+			\begin{multicols}{2}
+				\tableofcontents[currentsection]
+			\end{multicols}	
+		}
+	}
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}%[allowframebreaks]
+	\frametitle{Hausaufgabe}
+	\begin{itemize}
+			
+		\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbestruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
+			
+		\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+			Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+			$x > y :=$ $x$ ist sonorer als $y$
+		\end{block}
+			
+			\eal 
+			\ex Stimmenfang
+			\ex Mittagessen
+			\ex Bierdeckel
+			\zl
+			
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+
+%\begin{minipage}{.35\textwidth}
+			%\input{localforestsyllables}
+			\footnotesize
+			\centering
+			\ea
+			\begin{forest} MyP edges, GP1 [
+				[$\sigma$
+				[O [x [\textipa{S}]] [x [\textipa{t}]]]
+				[R [N [x [\textipa{I}]]] [K [x, name=x [\textipa{m}]]]]
+				]
+				[$\sigma$
+				[O, name=onset]
+				[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
+				]
+				[$\sigma$
+				[O [x [\textipa{f}]]]
+				[R [N [x [\textipa{a}]]] [K [x [\textipa{N}]]]]
+				]
+				]				
+				{
+					\draw[black] (x.north)--(onset.south);
+				}
+			\end{forest}
+			\z
+			
+%\end{minipage}%
+%\begin{minipage}{.35\textwidth}
+	\footnotesize
+	\centering
+	\ea
+	\begin{forest} MyP edges, GP1 [
+	[$\sigma$
+	[O [x [\textipa{m}]]] 
+	[R [N [x [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
+	]
+	[$\sigma$
+	[O, name=onset1]
+	[R [N [x [\textipa{a}]]] [K [x [\textipa{k}]]]]
+	]
+	[$\sigma$
+	[O [x [\textipa{P}]]]
+	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
+	]
+	[$\sigma$
+	[O, name=onset2]
+	[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
+	]
+	]
+	{
+		\draw[black] (x1.north)--(onset1.south);
+		\draw[black] (x2.north)--(onset2.south);
+	}
+	\end{forest}
+	\z
+%\end{minipage}
+	
+\end{frame}
+
+\begin{frame}
+
+%\begin{minipage}{.35\textwidth}
+	\footnotesize
+	\centering
+	\ea
+	\begin{forest} MyP edges, GP1 [
+	[$\sigma$
+	[O [x [\textipa{b}]]]
+	[R [N [x [\textipa{i}]] [x [\textipa{:}]]] [K [x [\textipa{5}]]]]
+	]
+	[$\sigma$
+	[O [x [\textipa{d}]]]
+	[R [N [x [\textipa{d}]]] [K [x, name=x [\textipa{k}]]]]
+	]
+	[$\sigma$
+	[O, name=onset]
+	[R [N [x [\textipa{@}]]] [K [x [\textipa{l}]]]]
+	]
+	]
+	{
+		\draw[black] (x.north)--(onset.south);
+	}
+	\end{forest}
+	\z
+%\end{minipage}
+%\scalebox{0.5}{
+
+%\begin{tikzpicture}[scale=0.5]
+%	\draw[black] (-1,0) -- (9.5,0) ; % x axis
+%	\draw[black] (-1,0) -- (-1,6.5); % y axis
+%	\node at (-2,1) {Plos.};
+%	\node at (-2,2) {Frik.};
+%	\node at (-2,3) {Nas.};
+%	\node at (-2,4) {\textipa{/l/}};
+%	\node at (-2,5) {\textipa{/\;R/}};
+%	\node at (-2,6) {Vok.};
+%	\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4);
+%	\draw[black] (4,4) -- (5,6) -- (6,4);
+%	\draw[black] (7,2) -- (8,6) -- (9,3);
+%	\node at (0,-1) {\textipa{S}};
+%	\node at (1,-1) {\textipa{t}};
+%	\node at (2,-1) {\textipa{I}};
+%	\node at (3.5,-1) {\textipa{m}};
+%	\node at (5,-1) {\textipa{@}};
+%	\node at (6,-1) {\textipa{n}};
+%	\node at (7,-1) {\textipa{f}};
+%	\node at (8,-1) {\textipa{a}};
+%	\node at (9,-1) {\textipa{N}};
+%	\fill (0,2) circle [radius=3pt];
+%	\fill (1,1) circle [radius=3pt];
+%	\fill (2,6) circle [radius=3pt];
+%	\fill (3,4) circle [radius=3pt];
+%	\fill (4,4) circle [radius=3pt];
+%	\fill (5,6) circle [radius=3pt];
+%	\fill (6,4) circle [radius=3pt];
+%	\fill (7,2) circle [radius=3pt];
+%	\fill (8,6) circle [radius=3pt];
+%	\fill (9,3) circle [radius=3pt];
+%\end{tikzpicture}
+%}
+\end{frame}
+	
+\begin{frame}
+	\begin{itemize}
+		\item[2.] Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
+			\begin{itemize}
+				\item Onsetmaximierungsprinzip
+				\item Sonoritätsprinzip
+			\end{itemize}
+			
+		Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
+		\ea
+		Urinstinkt
+		\z
+		
+		\eal
+		\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)
+		\ex \textipa{[Pu.\;RIn.(S)tInkt]} (Sonoritätsprinzip)
+		\ex \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
+		\zl 
+		\item Die Silbifizierung erfolgt auf der Ebene des phonologischen Wortes. Daher werden die phonologischen Wörter \ab{ur-} und \ab{Instinkt} einzeln silbifiziert.
+	
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\begin{itemize}	
+		\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
+			
+		\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\begin{itemize}
+					
+		\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/ phonologischen Gründen im Deutschen nicht möglich sind:
+			
+		\eal
+		\ex[*]{\textipa{['Napl.O:t]}} Onset Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang
+		\ex[*]{\textipa{[a\;R.'tUng]}} Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut
+		\zl
+			
+	\end{itemize}
+		
+\end{frame}
+	
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

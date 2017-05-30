@@ -2807,7 +2807,8 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 			%\input{localforestsyllables}
 			\footnotesize
 			\centering
-			\ea
+		\begin{exe}
+		\exi{(54)~a.}
 			\begin{forest} MyP edges, GP1 [
 				[$\sigma$
 				[O [x [\textipa{S}]] [x [\textipa{t}]]]
@@ -2826,13 +2827,49 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 					\draw[black] (x.north)--(onset.south);
 				}
 			\end{forest}
-			\z
-			
+		
+		\begin{tikzpicture}[scale=0.5]
+		\draw[black] (-1,0) -- (9.5,0) ; % x axis
+		\draw[black] (-1,0) -- (-1,6.5); % y axis
+		\node at (-2,1) {Plos.};
+		\node at (-2,2) {Frik.};
+		\node at (-2,3) {Nas.};
+		\node at (-2,4) {\textipa{/l/}};
+		\node at (-2,5) {\textipa{/\;R/}};
+		\node at (-2,6) {Vok.};
+		\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4);
+		\draw[black] (4,4) -- (5,6) -- (6,4);
+		\draw[black] (7,2) -- (8,6) -- (9,3);
+		\node at (0,-1) {\textipa{S}};
+		\node at (1,-1) {\textipa{t}};
+		\node at (2,-1) {\textipa{I}};
+		\node at (3.5,-1) {\textipa{m}};
+		\node at (5,-1) {\textipa{@}};
+		\node at (6,-1) {\textipa{n}};
+		\node at (7,-1) {\textipa{f}};
+		\node at (8,-1) {\textipa{a}};
+		\node at (9,-1) {\textipa{N}};
+		\fill (0,2) circle [radius=3pt];
+		\fill (1,1) circle [radius=3pt];
+		\fill (2,6) circle [radius=3pt];
+		\fill (3,4) circle [radius=3pt];
+		\fill (4,4) circle [radius=3pt];
+		\fill (5,6) circle [radius=3pt];
+		\fill (6,4) circle [radius=3pt];
+		\fill (7,2) circle [radius=3pt];
+		\fill (8,6) circle [radius=3pt];
+		\fill (9,3) circle [radius=3pt];
+		\end{tikzpicture}
+\end{exe}
+\end{frame}
+
+\begin{frame}			
 %\end{minipage}%
 %\begin{minipage}{.35\textwidth}
 	\footnotesize
 	\centering
-	\ea
+	\begin{exe}
+	\exi{(54)~b.}
 	\begin{forest} MyP edges, GP1 [
 	[$\sigma$
 	[O [x [\textipa{m}]]] 
@@ -2856,7 +2893,44 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 		\draw[black] (x2.north)--(onset2.south);
 	}
 	\end{forest}
-	\z
+
+\begin{tikzpicture}[scale=0.5]
+\draw[black] (-1,0) -- (11.5,0) ; % x axis
+\draw[black] (-1,0) -- (-1,6.5); % y axis
+\node at (-2,1) {Plos.};
+\node at (-2,2) {Frik.};
+\node at (-2,3) {Nas.};
+\node at (-2,4) {\textipa{/l/}};
+\node at (-2,5) {\textipa{/\;R/}};
+\node at (-2,6) {Vok.};
+\draw[black] (0,3) -- (1,6) -- (2,1);
+\draw[black] (3,1) -- (4,6) -- (5,1);
+\draw[black] (6,1) -- (7,6) -- (8,2);
+\draw[black] (9,2) -- (10,6) -- (11,1);
+\node at (0,-1) {\textipa{m}};
+\node at (1,-1) {\textipa{i}};
+\node at (2.5,-1) {\textipa{t}};
+\node at (4,-1) {\textipa{a}};
+\node at (5,-1) {\textipa{k}};
+\node at (6,-1) {\textipa{P}};
+\node at (7,-1) {\textipa{E}};
+\node at (8.5,-1) {\textipa{s}};
+\node at (10,-1) {\textipa{@}};
+\node at (11,-1) {\textipa{n}};
+\fill (0,3) circle [radius=3pt];
+\fill (1,6) circle [radius=3pt];
+\fill (2,1) circle [radius=3pt];
+\fill (3,1) circle [radius=3pt];
+\fill (4,6) circle [radius=3pt];
+\fill (5,1) circle [radius=3pt];
+\fill (6,1) circle [radius=3pt];
+\fill (7,6) circle [radius=3pt];
+\fill (8,2) circle [radius=3pt];
+\fill (9,2) circle [radius=3pt];
+\fill (10,6) circle [radius=3pt];
+\fill (11,1) circle [radius=3pt];
+\end{tikzpicture}
+\end{exe}
 %\end{minipage}
 	
 \end{frame}
@@ -2866,7 +2940,8 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 %\begin{minipage}{.35\textwidth}
 	\footnotesize
 	\centering
-	\ea
+\begin{exe}
+	\exi{(54)~c.}
 	\begin{forest} MyP edges, GP1 [
 	[$\sigma$
 	[O [x [\textipa{b}]]]
@@ -2874,7 +2949,7 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 	]
 	[$\sigma$
 	[O [x [\textipa{d}]]]
-	[R [N [x [\textipa{d}]]] [K [x, name=x [\textipa{k}]]]]
+	[R [N [x [\textipa{E}]]] [K [x, name=x [\textipa{k}]]]]
 	]
 	[$\sigma$
 	[O, name=onset]
@@ -2885,43 +2960,40 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 		\draw[black] (x.north)--(onset.south);
 	}
 	\end{forest}
-	\z
-%\end{minipage}
-%\scalebox{0.5}{
 
-%\begin{tikzpicture}[scale=0.5]
-%	\draw[black] (-1,0) -- (9.5,0) ; % x axis
-%	\draw[black] (-1,0) -- (-1,6.5); % y axis
-%	\node at (-2,1) {Plos.};
-%	\node at (-2,2) {Frik.};
-%	\node at (-2,3) {Nas.};
-%	\node at (-2,4) {\textipa{/l/}};
-%	\node at (-2,5) {\textipa{/\;R/}};
-%	\node at (-2,6) {Vok.};
-%	\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4);
-%	\draw[black] (4,4) -- (5,6) -- (6,4);
-%	\draw[black] (7,2) -- (8,6) -- (9,3);
-%	\node at (0,-1) {\textipa{S}};
-%	\node at (1,-1) {\textipa{t}};
-%	\node at (2,-1) {\textipa{I}};
-%	\node at (3.5,-1) {\textipa{m}};
-%	\node at (5,-1) {\textipa{@}};
-%	\node at (6,-1) {\textipa{n}};
-%	\node at (7,-1) {\textipa{f}};
-%	\node at (8,-1) {\textipa{a}};
-%	\node at (9,-1) {\textipa{N}};
-%	\fill (0,2) circle [radius=3pt];
-%	\fill (1,1) circle [radius=3pt];
-%	\fill (2,6) circle [radius=3pt];
-%	\fill (3,4) circle [radius=3pt];
-%	\fill (4,4) circle [radius=3pt];
-%	\fill (5,6) circle [radius=3pt];
-%	\fill (6,4) circle [radius=3pt];
-%	\fill (7,2) circle [radius=3pt];
-%	\fill (8,6) circle [radius=3pt];
-%	\fill (9,3) circle [radius=3pt];
-%\end{tikzpicture}
-%}
+\begin{tikzpicture}[scale=0.5]
+\draw[black] (-1,0) -- (8.5,0) ; % x axis
+\draw[black] (-1,0) -- (-1,6.5); % y axis
+\node at (-2,1) {Plos.};
+\node at (-2,2) {Frik.};
+\node at (-2,3) {Nas.};
+\node at (-2,4) {\textipa{/l/}};
+\node at (-2,5) {\textipa{/\;R/}};
+\node at (-2,6) {Vok.};
+\draw[black] (0,1) -- (1,6) -- (2,6);
+\draw[black] (3,1) -- (4,6) -- (5,1);
+\draw[black] (6,1) -- (7,6) -- (8,1);
+\node at (0,-1) {\textipa{b}};
+\node at (1,-1) {\textipa{i:}};
+\node at (2,-1) {\textipa{5}};
+\node at (3,-1) {\textipa{d}};
+\node at (4,-1) {\textipa{E}};
+\node at (5.5,-1) {\textipa{k}};
+\node at (7,-1) {\textipa{@}};
+\node at (8,-1) {\textipa{l}};
+\fill (0,1) circle [radius=3pt];
+\fill (1,6) circle [radius=3pt];
+\fill (2,6) circle [radius=3pt];
+\fill (3,1) circle [radius=3pt];
+\fill (4,6) circle [radius=3pt];
+\fill (5,1) circle [radius=3pt];
+\fill (6,1) circle [radius=3pt];
+\fill (7,6) circle [radius=3pt];
+\fill (8,1) circle [radius=3pt];
+\end{tikzpicture}
+
+\end{exe}
+
 \end{frame}
 	
 \begin{frame}

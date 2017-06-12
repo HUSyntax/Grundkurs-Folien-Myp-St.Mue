@@ -65,7 +65,7 @@ ma-handout: ma-uebung-handout-2x2.pdf
 
 
 o-public: grundkurs-handout.pdf dp-tp-handout.pdf
-	scp -p $? home.hpsg.fu-berlin.de:/home/stefan/public_html/PS/
+	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 
 

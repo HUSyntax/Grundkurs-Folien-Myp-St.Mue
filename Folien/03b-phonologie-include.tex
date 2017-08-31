@@ -291,11 +291,18 @@ Silbe als \textbf{Domäne} \dots
 	\centering
 	\scalebox{.65}{
 		\begin{forest} MyP edges,
-		[UP
-		[IP
-		[$\Phi$[$\omega$[F[$\sigma$][$\sigma$]][F[$\sigma$][$\sigma$]]]]
-		[$\Phi$[$\omega$[F[$\sigma$][$\sigma$]]][$\omega$[F[$\sigma$][$\sigma$]]]]
+		[UP, name=up
+		[IP, name=IP
+		[$\varphi$[$\omega$[F[$\sigma$][$\sigma$]][F[$\sigma$][$\sigma$]]]]
+		[$\varphi$, name=Phi[$\omega$[F[$\sigma$][$\sigma$]]][$\omega$, name=omega[F, name=F[$\sigma$][$\sigma$, name=sigma]]]]
 		]]
+		{\draw[black] (up.east)--(3.2,0);
+			\draw[black] (IP.east)--(3.2,-1);
+			\draw[black] (Phi.east)--(3.2,-2);
+			\draw[black] (omega.east)--(3.2,-3);
+			\draw[black] (F.east)--(3.2,-4);
+			\draw[black] (sigma.east)--(3.2,-5.2);
+	}
 		\end{forest}
 	}
 		\caption{\cite{Fuhrhop&Co13a}}
@@ -306,7 +313,7 @@ Silbe als \textbf{Domäne} \dots
 	\\
 	(Mandarinen oder Äpfel)\textsubscript{IP}\\
 	\\
-	(Mandarinen)\textsubscript{$\Phi$} (oder Äpfel)\textsubscript{$\Phi$}\\
+	(Mandarinen)\textsubscript{$\varphi$} (oder Äpfel)\textsubscript{$\varphi$}\\
 	\\
 	(Mandarinen)\textsubscript{$\omega$} (oder)\textsubscript{$\omega$} (Äpfel)\textsubscript{$\omega$}\\
 	\\
@@ -402,7 +409,10 @@ Silbe als \textbf{Domäne} \dots
 \ex Bildbar:\\
 	\textipa{[palt]}, \textipa{[alpt]}, \textipa{[lapt]}, \textipa{[talp]}, \textipa{[plat]}
 \ex Nicht bildbar:\\
-	*\textipa{[ltap]}, \dots\
+	*\textipa{[ltap]}, \\
+	*\textipa{[lpat]},\\
+	*\textipa{[ptla]}, \\
+	*\textipa{[tpal]}, \dots \\
 \zl
 \pause
 	\item Warum?
@@ -624,7 +634,7 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Onset}
+%\subsubsection{Onset}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -640,15 +650,15 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 Sprachbeispiele:
 	
 \ea
-Tschechisch \textipa{[fspla.nout]} `aufflammen'
+Tschechisch \textipa{[fspla.nout]} \gq{aufflammen}
 \z
 
 \ea
-Hawaianisch \textipa{[a.lo.ha]} `Liebe'
+Hawaianisch \textipa{[a.lo.ha]} \gq{Liebe}
 \z
 
 \ea
-Deutsch \textipa{[St\textscr aIt]} `Streit'
+Deutsch \textipa{[St\textscr aIt]} \gq{Streit}
 \z
 
 Im Deutschen sind
@@ -729,7 +739,7 @@ Im Deutschen sind
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Nukleus}
+%\subsubsection{Nukleus}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -778,7 +788,7 @@ Im Deutschen sind
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Koda}
+%\subsubsection{Koda}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -858,7 +868,7 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Sonoritätshierarchie}
+%\subsubsection{Sonoritätshierarchie}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -877,24 +887,24 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 		\item \dots\ welche \textbf{phonotaktischen Beschränkungen} für den Onset in deutschen Silben gelten könnten:
 
                   \ea
-                  \textipa{[k\textscr aNk]}, \textipa{[pla:n]}, \textipa{[f\textscr E\c{c}]},
-                  \textipa{[flo:]}, \textipa{[kni:]}, \textipa{[gna:d@]}
+                  \textipa{[\textcolor{red}{k\textscr}aNk]}, \textipa{[\textcolor{red}{pl}a:n]}, \textipa{[\textcolor{red}{f\textscr} E\c{c}]},
+                  \textipa{[\textcolor{red}{fl}o:]}, \textipa{[\textcolor{red}{kn}i:]}, \textipa{[\textcolor{red}{gn}a:d@]}
                   \z
 
                   \ea
-                  *\textipa{[lbat]}, *\textipa{[\textscr to:k]}, *\textipa{[nki:l]}, *\textipa{[ngak]}
+                  *\textipa{[\textcolor{red}{{\textscr}k}aNk]}, *\textipa{[\textcolor{red}{lp}a:n]}, *\textipa{[\textcolor{red}{{\textscr}f}E\c{c}]}, *\textipa{[\textcolor{red}{lf}o:]}, *\textipa{[\textcolor{red}{nk}i:]}, *\textipa{[\textcolor{red}{ng}a:d@]}
                   \z
                   
 \pause
 		\item \dots\ welche \textbf{phonotaktischen Beschränkungen} für die Koda in deutschen Silben gelten könnten:
 
                   \ea
-                  \textipa{[kalt]}, \textipa{[ha5t]}, \textipa{[lant]}, \textipa{[k\textscr aNk]}
+                  \textipa{[ka\textcolor{red}{lt}]}, \textipa{[ha\textcolor{red}{{\textscr}t}]}, \textipa{[la\textcolor{red}{nt}]}, \textipa{[k{\textscr}a\textcolor{red}{Nk}]}
                   \z
 
                   \ea
-                  *\textipa{[katl]}, *\textipa{[hat\textscr ]}, *\textipa{[latn]},
-                  *\textipa{[k\textscr akN]}
+                  *\textipa{[ka{tl}]}, *\textipa{[ha{t\textscr}]}, *\textipa{[la\textcolor{red}{tn}]},
+                  *\textipa{[k\textscr a\textcolor{red}{kN}]}
                   \z
 
 	\end{enumerate}
@@ -1120,7 +1130,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Weitere phonotaktische Beschränkungen}
+%\subsubsection{Weitere phonotaktische Beschränkungen}
 %\frame{
 %\frametitle{~}
 %\begin{multicols}{2}
@@ -1214,7 +1224,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{CV-Modell}
+%\subsubsection{CV-Modell}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1474,7 +1484,7 @@ MyP edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Konstituentenmodell}
+%\subsubsection{Konstituentenmodell}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -1867,15 +1877,15 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
 
 \iftoggle{uebung}{
 
-\subsection{Übung}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
+%\subsection{Übung}
+%\iftoggle{toc}{
+%\frame{
+%\frametitle{~}
+%\begin{multicols}{2}
+%	\tableofcontents[currentsection]
+%\end{multicols}	
+%}
+%}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2445,15 +2455,15 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Übung}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
+%\subsection{Übung}
+%\iftoggle{toc}{
+%\frame{
+%\frametitle{~}
+%\begin{multicols}{2}
+%	\tableofcontents[currentsection]
+%\end{multicols}	
+%}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -2569,7 +2579,7 @@ Blumentopferde
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exkurs: Wortakzent}
+%\subsubsection{Exkurs: Wortakzent}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2609,7 +2619,7 @@ Blumentopferde
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exkurs: Satzakzent}
+%\subsubsection{Exkurs: Satzakzent}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2642,7 +2652,7 @@ hervorgehoben \ras \textbf{Fokus des Satzes} (\gqq{Informationsstruktur})
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exkurs: Intonation}
+%\subsubsection{Exkurs: Intonation}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}

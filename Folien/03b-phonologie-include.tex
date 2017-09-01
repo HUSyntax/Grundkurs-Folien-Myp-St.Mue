@@ -1074,12 +1074,37 @@ Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plo
 $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{block}
 
-
 \begin{figure}
-\centering
-\includegraphics[scale=.3]{material/03bSonoritaetBsp}
-\caption{Nach \citet[225]{Hall00a}}
+	\centering
+	\begin{tikzpicture}
+	\draw[fill] (0,0) circle [radius=0.075];
+	\draw[black] (0,0)--(1,1.5);
+	\draw[fill] (1,1.5) circle [radius=0.075];
+	\draw[black] (1,1.5)--(2,2.2);
+	\draw[fill] (2,2.2) circle [radius=0.075];
+	\draw[black] (2,2.2)--(3,0.75);
+	\draw[fill] (3,0.75) circle [radius=0.075];
+	\draw[black] (3,0.75)--(4,0);
+	\draw[fill] (4,0) circle [radius=0.075];
+	\node[below] at (0,0){p};
+	\node[below] at (1,0){l};
+	\node[below] at (2,0){\textipa{U}};
+	\node[below] at (3,0){m};
+	\node[below] at (4,0){p};
+	\node at (5,2.2){{\small Vokal}};
+	\node at (5,1.5){{\small /l/}};
+	\node at (5,0.75){{\small Nasal}};
+	\node at (5,0){{\small Obstruent}};
+\end{tikzpicture}
+\caption{\citet[225]{Hall00a}}
 \end{figure}
+
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale=.3]{material/03bSonoritaetBsp}
+%\caption{\citet[225]{Hall00a}}
+%\end{figure}
 
 \begin{itemize}
 	\item Sonoritätshierarchie wird je nach Sprache leicht anders spezifiziert.
@@ -1090,7 +1115,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+\frametitle{Übung}
 
 \begin{itemize}
 	\item Geben Sie die Sonoritätsprofile der folgenden Silben an.
@@ -1108,15 +1133,14 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 	\item Erklären Sie die Ungramatikalität der folgenden Silben:
 	
 	  \ea
-          *\textipa{[lbat]}, *\textipa{[\textscr to:k]}, *\textipa{[nki:l]}, *\textipa{[ngak]}
+          *\textipa{[lbat]}, *\textipa{[blabl]}, *\textipa{[m{\textscr}apt]}, *\textipa{[ki:l\textscr]}, *\textipa{[ngang]}
           \z
 
 % hier Probleme im Onset
 % l sonorer als b
 
 
-	\ea *\textipa{[katl]}, *\textipa{[hat\textscr ]}, *\textipa{[latn]}, *\textipa{[k\textscr
-            akN]}
+	\ea *\textipa{[krafm]}, *\textipa{[elat]}, *\textipa{[plaml]}, *\textipa{[nfatl]}
 
 % hier auch Probleme in der Koda
 
@@ -1127,7 +1151,115 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{frame}
 }
 
+\iftoggle{loesung}{
+	\begin{frame}
+\frametitle{Lösung}
 
+\begin{minipage}{.4\textwidth}
+		\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0.3) circle [radius=0.075];
+		\draw[black] (0,0.3)--(1,0);
+		\draw[fill] (1,0) circle [radius=0.075];
+		\draw[black] (1,0)--(2,2.2);
+		\draw[fill] (2,2.2) circle [radius=0.075];
+		\draw[black] (2,2.2)--(3,0.3);
+		\draw[fill] (3,0.3) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{S}};
+		\node[below] at (1,0){\textipa{p}};
+		\node[below] at (2,0){\textipa{a}};
+		\node[below] at (3,0){\textipa{\t{ts}}};
+		\node at (4,0.3){{\small Frikativ}};
+		\node at (4,0){{\small Plosiv}};
+		\node at (4,2.2){{\small Vokal}};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.1\textwidth}
+	\hfill
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+		\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0) circle [radius=0.075];
+		\draw[black] (0,0)--(1,2.2);
+		\draw[fill] (1,2.2) circle [radius=0.075];
+		\draw[black] (1,2.2)--(2,0);
+		\draw[fill] (2,0) circle [radius=0.075];
+		\draw[black] (2,0)--(3,0.3);
+		\draw[fill] (3,0.3) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{d}};
+		\node[below] at (1,0){\textipa{a}};
+		\node[below] at (2,0){\textipa{k}};
+		\node[below] at (3,0){\textipa{s}};
+		\node at (4,0.3){{\small Frikativ}};
+		\node at (4,0){{\small Plosiv}};
+		\node at (4,2.2){{\small Vokal}};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+
+\begin{minipage}{.4\textwidth}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0) circle [radius=0.075];
+		\draw[black] (0,0)--(1,1.5);
+		\draw[fill] (1,1.5) circle [radius=0.075];
+		\draw[black] (1,1.5)--(2,2.2);
+		\draw[fill] (2,2.2) circle [radius=0.075];
+		\draw[black] (2,2.2)--(3,0.75);
+		\draw[fill] (3,0.75) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{k}};
+		\node[below] at (1,0){\textipa{l}};
+		\node[below] at (2,0){\textipa{\t{aU}}};
+		\node[below] at (3,0){\textipa{n}};
+		\node at (4,1.5){{\small /l/}};
+		\node at (4,0){{\small Plosiv}};
+		\node at (4,2.2){{\small Vokal}};
+		\node at (4,0.75){{\small Nasal}};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.1\textwidth}
+	\hfill
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0.75) circle [radius=0.075];
+		\draw[black] (0,0.75)--(1,2.2);
+		\draw[fill] (1,2.2) circle [radius=0.075];
+		\draw[black] (1,2.2)--(2,1.5);
+		\draw[fill] (2,1.5) circle [radius=0.075];
+		\draw[black] (2,1.5)--(3,0.3);
+		\draw[fill] (3,0.3) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{m}};
+		\node[below] at (1,0){\textipa{I}};
+		\node[below] at (2,0){\textipa{l}};
+		\node[below] at (3,0){\textipa{\c{c}}};
+		\node at (4,0.3){{\small Frikativ}};
+		\node at (4,1.5){{\small /l/}};
+		\node at (4,2.2){{\small Vokal}};
+		\node at (4, 0.75){\small Nasal};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Lösung}
+	\begin{itemize}
+		\item \textipa{[bla\textcolor{red}{bl}]} \ras + Auslautverhärtung
+		\item \textipa{[\textcolor{red}{ng}a\textcolor{red}{ng}]} \ras + Regressive velare Nasalassimilation + g-Tilgung
+		\item \textipa{[\textcolor{red}{el}at]} \ras + Knacklauteinsetzung
+	\end{itemize}
+\end{frame}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Weitere phonotaktische Beschränkungen}
@@ -1159,7 +1291,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 	\begin{itemize}
 		\item Dann ist der Onset leer.
 		  \ea
-                  \textipa{[\textprimstress PaI.5]} (Eier)
+                  \textipa{[\textprimstress P\t{aɪ}.5]} (Eier)
                   \z
 
 		  \ea
@@ -1262,8 +1394,8 @@ MyP edges,
 
 \begin{itemize}
 		\item $\sigma :=$ Silbe
-		\item C $:=$ nicht-silbisch, konsonantisch
-		\item V $:=$ silbisch, vokalisch
+		\item C $:=$ nicht-silbisch, \gqq{konsonantisch}
+		\item V $:=$ silbisch, \gqq{vokalisch}
 \end{itemize}
 % V bildet den Silbengipfel
 
@@ -1310,18 +1442,16 @@ MyP edges,
 
 \begin{forest}
 MyP edges,
+[,phantom
 [$\sigma$
 	[C [\textipa{k}]]
 	[V [\textipa{U}]]
-	[C [\textipa{m}]]	
+	[C [\textipa{m}]]
 ]
-\end{forest}
-%
-\begin{forest}
-MyP edges,
-[$\sigma$
+[$\sigma$	
 	[C [\textipa{p}]]
 	[V [\textipa{\textsyllabic{l}}]]
+]
 ]
 \end{forest}
 
@@ -1459,18 +1589,16 @@ MyP edges,
 
 \begin{forest}
 MyP edges,
+[,phantom
 [$\sigma$
 	[C [\textipa{k}]]
 	[V [\textipa{U}]]
 	[C [\textipa{m}]]	
 ]
-\end{forest}
-%
-\begin{forest}
-MyP edges,
 [$\sigma$
 	[C [\textipa{p}]]
 	[V [\textipa{\textsyllabic{l}}]]
+]
 ]
 \end{forest}
 
@@ -1617,12 +1745,11 @@ MyP edges,
 %\input{localforestsyllables}
 \small
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
+\begin{forest} MyP edges, GP1,
+[  [$\sigma$
     [O[x[\textipa{m}]]]
     [R[N[x[\textipa{I}]]][K[x[t]]]]
-  ]  
-]
+  ] ]
 \end{forest}
 
 \end{minipage}
@@ -1631,8 +1758,8 @@ MyP edges,
 %\input{localforestsyllables}
 \small
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
+\begin{forest} MyP edges, GP1,
+ [ [$\sigma$
     [O[x[\textipa{z}]]]
     [R
     	[N
@@ -1640,10 +1767,8 @@ MyP edges,
     			[\textipa{e:}, name=e]
     		]
     		[x, name=x]
-    	]
-    	[K []]]
-  ]  
-]
+    	] ]
+  ] ]
 {
 \draw[black] (e.north)--(x.south);
 }
@@ -1655,8 +1780,8 @@ MyP edges,
 %\input{localforestsyllables}
 \small
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
+\begin{forest} MyP edges, GP1,
+[  [$\sigma$
     [O[x[\textipa{P}]]]
     [R
     	[N
@@ -1666,8 +1791,7 @@ MyP edges,
     		[x, name=x]
     	]
     	[K[x[\textipa{x}]]]]
-  ]  
-]
+  ] ]
 {
 \draw[black] (aU.north)--(x.south);
 }
@@ -1819,7 +1943,7 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
     		]
     		[x, name=x]
     	]
-    	[K []]]
+	]
   ]  
 ]
 {
@@ -1916,272 +2040,284 @@ $x > y :=$ $x$ ist sonorer als $y$
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{loesung}{
-%\begin{frame}
-%\frametitle{Lösungen}
-%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%    [O	[x[\textipa{S}]
-%       	]
-%       	[x [\textipa{p}]
-%    	]
-%    	[x[\textipa{\textscr}]
-%    	]
-%    ]
-%    [R
-%    	[N	[x [\textipa{E}]
-%    		]
-%    	]
-%	    [K	[x  [\c{c}]
-%	    	]
-%	    ]
-%	]  
-%  ]
-%  [$\sigma$
-%  	[O]
-%  	[R
-%  		[N	[x[\textipa{@}]
-%  			]
-%  		]
-%  		[K	[x[\textipa{n}]
-%  			]
-%  		]
-%  	]
-%  ]
-%\end{forest}
-%
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%    [O	[x[\textipa{P}]
-%    	]
-%    ]
-%    [R
-%    	[N
-%    		[x[\textipa{O:}]
-%    		]
-%    		[x]{\draw[black] (.south)--++(-2.38em,-1.7ex);}
-%    	]
-%    	[K
-%    		[x[\textipa{p}]
-%    		]
-%    		[x[\textipa{s}]
-%    		]
-%    		[x[\textipa{t}]
-%    		]
-%    	]
-%    ]  
-%  ]
-%\end{forest}
-%
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%    [O	[x[\textipa{b}]
-%    	]
-%    	[x[\textipa{\textscr}]
-%    	]
-%    ]
-%    [R
-%    	[N	[x[\textipa{a}]
-%    		]
-%    	]
-%    	[K	[x[n]
-%    		]
-%    		[x[\textipa{t.}]
-%    		]
-%    	]
-%	]  
-%  ]
-%  [$\sigma$
-%  	[O	[x[\textipa{S}]
-%  		]
-%  	]
-%  	[R	
-%  		[N	[x[\textipa{U}]
-%  			]
-%  		]
-%  		[K	[x[\textipa{\t{ts}}]
-%  			]
-%  		]
-%  	]
-%  ]
-%\end{forest}
-%
-%\end{minipage}
-%\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{loesung}{
+	
+\begin{frame}
+\frametitle{Lösungen}
 
-%\begin{frame}
-%\frametitle{Lösungen}
+\begin{minipage}{.3\textwidth}
+\centering
+\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+  [$\sigma$
+    [O	[x, [\textipa{S}]
+       	]
+       	[x [\textipa{p}]
+    	]
+    	[x[\textipa{\textscr}]
+    	]
+    ]
+    [R
+    	[N	[x [\textipa{E}]
+    		]
+    	]
+	    [K, name=K	[x  [\textipa{\c{c}}]
+	    	]
+	    ]
+	]  
+  ]
+  [$\sigma$
+  	[O, name=O]
+  	[R
+  		[N	[x[\textipa{@}]
+  			]
+  		]
+  		[K	[x[\textipa{n}]
+  			]
+  		]
+  	]
+  ]
+  ]
+  \draw[black] (O.south)--(K.north);
+\end{forest}}
+\end{minipage}
 %
-%\begin{minipage}{.325\textwidth}
+\begin{minipage}{.3\textwidth}
 %%\input{localforestsyllables}
-%\tiny
+\centering
+\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+  [$\sigma$
+    [O	[x[\textipa{P}]
+    	]
+    ]
+    [R
+    	[N
+    		[x[\textipa{O:}, name=o]
+    		]
+    		[x, name=x]
+%    		{\draw[black] (.south)--++(-2.38em,-1.7ex);}
+    	]
+    	[K
+    		[x[\textipa{p}]
+    		]
+    		[x[\textipa{s}]
+    		]
+    		[x[\textipa{t}]
+    		]
+    	]
+    ]  
+  ] ]
+  \draw[black](x.south)--(o.north);
+\end{forest}}
+
+\end{minipage}
+%
+\begin{minipage}{.3\textwidth}
+\centering
+\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+  [$\sigma$
+    [O	[x[\textipa{b}]
+    	]
+    	[x[\textipa{\textscr}]
+    	]
+    ]
+    [R
+    	[N	[x[\textipa{a}]
+    		]
+    	]
+    	[K	[x[n]
+    		]
+    		[x[\textipa{t.}]
+    		]
+    	]
+	]  
+  ]
+  [$\sigma$
+  	[O	[x[\textipa{S}]
+  		]
+  	]
+  	[R	
+  		[N	[x[\textipa{U}]
+  			]
+  		]
+  		[K	[x[\textipa{\t{ts}}]
+  			]
+  		]
+  	]
+  ]
+  ]
+\end{forest}}
+
+\end{minipage}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Lösungen}
+
+\begin{minipage}{.27\textwidth}
+\centering
+\scalebox{0.75}{\begin{forest} MyP edges, [,phantom
+  [$\sigma$
+		[O
+			[x[\textipa{S}]]
+			[x[\textipa{t}]]
+		]
+	[R
+		[N
+			[x[\textipa{\textsci}]]
+		]
+		[K
+			[x[\textipa{m}]]
+		]
+	]]
+	[$\sigma$
+		[O]
+	[R
+		[N
+			[x[\textipa{@}]]
+		]
+		[K
+			[x[\textipa{n.}]]
+		]
+	]
+	]
+	[$\sigma$
+		[O
+			[x[\textipa{f}]]
+		]
+	[R
+		[O
+			[x[\textipa{a}]]
+		]
+		[K
+			[X[\textipa{\ng}]]
+		]
+	]
+	] ]
+\end{forest}}
+\end{minipage}
+\begin{minipage}{.1\textwidth}
+	\hfill
+\end{minipage}
+%
+\begin{minipage}{.45\textwidth}
+\centering
+\scalebox{.75}
+{\begin{forest}
+MyP edges, [, phantom
+[$ \sigma $
+	[O
+		[x[\textipa{P}]]
+	]
+	[R
+		[N
+		[x[\textipa{a}]]
+		]
+		[K
+		[x[\textipa{p}]]
+		]
+	]
+]
+[$ \sigma $
+	[O
+		[x[\textipa{S}]]
+		[x[\textipa{t}]]
+	]
+	[R
+		[N
+		[x[\textipa{a}]]
+		]
+		[K
+		[x[\textipa{n}]]
+		[x[\textipa{\t{ts}}]]
+		]
+	]
+]
+[$ \sigma $
+	[O
+		[x[\textipa{h}]]
+	]
+	[R
+		[N
+		[x[\textipa{a}]]
+		]
+		[K
+		[x[\textipa{l}]]
+		]
+	]
+]
+[$ \sigma $
+	[O
+		[x[t]]
+	]
+	[R	
+		[N
+		[x[\textipa{\textturna}]]
+		]
+	]
+]
+]
+\end{forest}
+}
+\end{minipage}
+%
+%\begin{minipage}{.3\textwidth}
 %\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%		[O
-%			[x[\textipa{S}]]
-%			[x[\textipa{t}]]
-%		]
+%\scalebox{.75}
+%{\begin{forest} MyP edges, [, phantom
+%[$ \sigma $
+%	[O
+%		[x[m]]
+%	]
 %	[R
 %		[N
 %			[x[\textipa{\textsci}]]
 %		]
 %		[K
-%			[x[\textipa{m}]]
+%			[x[\textipa{t}]]
 %		]
-%	]]
-%	[$\sigma$
-%		[O{\draw[black] (.south)--++(-2.38em,-1.7ex);}]
-%		]
+%	]
+%]
+%[$ \sigma $
+%	[O]
 %	[R
 %		[N
-%			[x[\textipa{@}]]
+%		[x[\textipa{a}]]
 %		]
 %		[K
-%			[x[\textipa{n.}]]
-%		]
-%	]
-%	[$\sigma$
-%		[O
-%			[x[\textipa{f}]]
-%		]
-%	[R
-%		[O
-%			[x[\textipa{a}]]
-%		]
-%		[K
-%			[X[\textipa{\ng}]]
-%		]
-%	]
-%	]]
-%\end{forest}
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest}
-%MyP edges, GP1 [
-%[$ \sigma $
-%	[O
-%		[x[\textipa{P}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{p}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[\textipa{S}]]
-%		[x[\textipa{t}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{n}]]
-%		[x[\textipa{\t{ts}}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[\textipa{h}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{l}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[t]]
-%[R	[N
-%		[x[\textipa{\textturna}]]
-%]]]
-%]
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%[$ \sigma $
-%	[O
-%		[x[m]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{\textsci}]]
-%	]
-%	[K
-%		[x[\textipa{t}]]
-%	]]
-%]
-%[$ \sigma $
-%	[O]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
 %		[x[\textipa{k}]]
-%	]]
+%		]
+%	]
 %]
 %[$ \sigma $
 %	[O
-%		[x[\textipa{P}]
+%		[x[\textipa{P}] ]
 %	]
-%[R
-%	[N
+%	[R
+%		[N
 %		[x[\textipa{E}]]
+%		]
+%		[K
+%		[x[\textipa{s}] ]
+%		]
 %	]
-%	[K
-%		[x[\textipa{s}]
-%	]]
 %]
 %[$ \sigma $
-%	[O]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
-%[R
-%	[N
+%	[O]
+%	[R
+%		[N
 %		[x[\textipa{\textschwa}]]
+%		]
+%		[K
+%			[x[\textipa{n}]]
+%		]
 %	]
-%	[K
-%		[x[\textipa{n}]]
-%	]]
-%]]
-%\end{forest}
+%]
+%]
+%\end{forest}}
 %\end{minipage}
-%
-%\end{frame}
+
+\end{frame}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
@@ -2212,7 +2348,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 %\end{forest}
 %
 %\end{frame}
-%}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Silbengelenk}
 \iftoggle{toc}{

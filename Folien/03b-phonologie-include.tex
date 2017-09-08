@@ -2869,8 +2869,6 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 \end{frame}
 
 
-\iftoggle{uebung}{
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Übung}
@@ -2893,23 +2891,39 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 	  \ea
           Fabrik, Imker, neblig, Falter, regnen
           \z
-	
+\end{itemize}	
 \pause
-\ea
-\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]}, \textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}\\
-	Koda: *Obstruent vor Sonorant\\
-	Onset: *Sonorant vor Obstruent
-\z
-	
+
+\iftoggle{loesung}{
+	\begin{itemize}
+		\item[] \textcolor{red}{\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]}, \textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}}
+	\item [] \textcolor{red}{Koda: *Obstruent vor Sonorant} 
+	\item [] \textcolor{red}{Onset: *Sonorant vor Obstruent}
+	\end{itemize}
+}
+
+\begin{itemize}
 	\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
+\end{itemize}
+
+\begin{minipage}{.4\textwidth}
 	\eal
 	\ex \textipa{[PE.b@]}
 	\ex \textipa{[PEb.@]}
 	\ex \textipa{[PEp.@]}
 	\ex \textipa{[PEp.b@]}
         \zl
-
-\end{itemize}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+	\pause	
+	\begin{itemize}
+	\item[] \textcolor{red}{\ras Kurzvokal}
+	\item[] \textcolor{red}{\ras Auslautverhärtung}
+	\item[] \textcolor{red}{\ras Onset-Maximierung}
+	\item[] \textcolor{red}{\ras keine Regelverletzung}
+	\end{itemize}
+	
+\end{minipage}
 
 \end{frame}
 
@@ -2920,7 +2934,7 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 
 
 \begin{frame}
-%\frametitle{Übung}
+\frametitle{Übung}
 
 \begin{itemize}
 	\item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
@@ -2929,31 +2943,97 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 		\item Sonoritätsprinzip
 	\end{itemize}
 
-Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen
+\item Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen
 	
 \ea
 \textipa{[o:tlIN5mSplag\textscr e:hOn]}
 \z
 
 % Otlingamsplagrehon
+	\ea
+	Blumentopferde
+	\z
 
-\ea
-Blumentopferde
-\z
+	\item Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
+\end{itemize}
+
 % blu.men.to.pfer.de
 
 %\ea
 %Urinstinkt
 %\z	
-	\item Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
-	
-\end{itemize}
 
-% ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Lösung}
+
+zu (43):
+
+\textcolor{red}{zuerst Onset"=Maximierung: \textipa{o:.tlI.\ng \textturna. mSpla .g\textscr e: .hOn}}\\
+\textcolor{red}{anschließend Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}}
+
+zu (44): 
+
+\textcolor{red}{1.~Onset-Maximierung: \textipa{blu: .m@ .nto: .pfE .{\textscr}d@}}\\
+\textcolor{red}{2.~Sonoritätsprinzip: \textipa{blu: .m@n .to: .pfE{\textscr} .d@}}
+
+\begin{minipage}{.2\textwidth}
+zu \ab{Stahltische}:
+\end{minipage}
+\begin{minipage}{.7\textwidth}
+	\begin{figure}
+	\scalebox{.8}{\begin{forest}
+			MyP edges [, phantom
+			[$\sigma$
+				[O 
+					[x[\textipa{S}]]
+					[x[\textipa{t}]]
+				]
+				[R
+					[N
+					[x[\textipa{a:}, name=a]]
+					[x, name=x]
+					]
+					[K[x[\textipa{l.}]]]
+				]
+			]
+		[$\sigma$
+			[O [x[\textipa{t}]]]
+			[R
+				[N
+				[x[\textipa{I}]]
+				]
+				[K
+				[x,name=S[\textipa{S}] ]
+				]
+			]
+		]
+		[$\sigma$
+			[O, name=o]
+			[R
+				[N
+				[x[\textipa{@}]]
+				]
+			]
+		]
+	]
+			\draw[black](o.south)--(S.north);
+			\draw[black](a.north)--(x.south);
+	\end{forest}}
+\end{figure}
+\end{minipage}
+
+
 
 
 \end{frame}
-}
+	
+
+
+% ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -2973,19 +2973,24 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 zu (43):
 
 \textcolor{red}{zuerst Onset"=Maximierung: \textipa{o:.tlI.\ng \textturna. mSpla .g\textscr e: .hOn}}\\
-\textcolor{red}{anschließend Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}}
+\textcolor{red}{dann Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}}
 
 zu (44): 
 
-\textcolor{red}{1.~Onset-Maximierung: \textipa{blu: .m@ .nto: .pfE .{\textscr}d@}}\\
-\textcolor{red}{2.~Sonoritätsprinzip: \textipa{blu: .m@n .to: .pfE{\textscr} .d@}}
+\textcolor{red}{zuerst Onset-Maximierung: \textipa{blu: .m@ .nto: .pfE .{\textscr}d@}}\\
+\textcolor{red}{dann Awendung des Sonoritätsprinzip: \textipa{blu: .m@n .to: .pfE{\textscr} .d@}}
 
-\begin{minipage}{.2\textwidth}
+\begin{minipage}{.45\textwidth}
 zu \ab{Stahltische}:
+\begin{itemize}
+	\item Onset-Maximierung
+	\item Sonoritätshierarchie im Onset: *Sonorant vor Obstruent (*[\textipa{lt}])
+	\item Silbengelenk nach ungespanntem, betonten Vokal
+\end{itemize}
 \end{minipage}
-\begin{minipage}{.7\textwidth}
+\begin{minipage}{.5\textwidth}
 	\begin{figure}
-	\scalebox{.8}{\begin{forest}
+	\scalebox{.7}{\begin{forest}
 			MyP edges [, phantom
 			[$\sigma$
 				[O 
@@ -3100,16 +3105,33 @@ zu \ab{Stahltische}:
 	\textbf{betont-unbetont (Trochäus)}
 	
 	\item Ausnahmen (die je nach Theorie verschieden erklärt werden):
-	
-	\eal 
-	\ex \textipa{["f\textscr aU]}
-	\ex \textipa{[mu.\textprimstress zi:k]}
-	\ex \textipa{["le:.b@n.d@]}
-	\ex \textipa{\originalTeX [pa.pa."g\t{aI}]}
-	\ex \textipa{[f\t{E5}.\textprimstress Pa5.b\t{aI}.t@n]}
-	\zl
 
 \end{itemize}
+
+\begin{minipage}{.4\textwidth}
+		
+	\eal 
+	\ex \textipa{['f\textscr aU]}
+	\ex \textipa{[mu.'zi:k]}
+	\ex \textipa{[le:.b@n.d@]}
+	\ex \textipa{[pa.pa.'g\t{aɪ}]}
+	\ex \textipa{[f\t{ɛɐ}.'Pa5.b\t{aɪ}.t@n]}
+	\zl
+
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+	
+	\iftoggle{loesung}{
+	\begin{itemize}
+		\item[] \textcolor{red}{\ras nur eine Silbe }
+		\item[] \textcolor{red}{\ras Fremdwort}
+		\item [] \textcolor{red}{\ras Flektierte Elemente \ab{-de}}
+		\item [] \textcolor{red}{\ras Fremdwort}
+		\item [] \textcolor{red}{\ras Derivation \ab{ver-}}
+	\end{itemize}
+}
+
+\end{minipage}
 
 \end{frame}
 
@@ -3542,10 +3564,19 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 		\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/ phonologischen Gründen im Deutschen nicht möglich sind:
 			
 		\eal
-		\ex[*]{\textipa{['Napl.O:t]}} Onset Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang
-		\ex[*]{\textipa{[a\;R.'tUng]}} Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut
+		\ex[*]{\textipa{['Napl.O:t]}}
+		\ex[*]{\textipa{[a\;R.'tUng]}} 
 		\zl
+
+		\iftoggle{loesung}{
 			
+			\begin{itemize}
+		\item \textcolor{red}{zu (59a): Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang}
+		\item \textcolor{red}{zu (59b): Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut}
+		\end{itemize}
+	
+	}	
+	
 	\end{itemize}
 		
 \end{frame}

@@ -291,11 +291,18 @@ Silbe als \textbf{Domäne} \dots
 	\centering
 	\scalebox{.65}{
 		\begin{forest} MyP edges,
-		[UP
-		[IP
-		[$\Phi$[$\omega$[F[$\sigma$][$\sigma$]][F[$\sigma$][$\sigma$]]]]
-		[$\Phi$[$\omega$[F[$\sigma$][$\sigma$]]][$\omega$[F[$\sigma$][$\sigma$]]]]
+		[UP, name=up
+		[IP, name=IP
+		[$\varphi$[$\omega$[F[$\sigma$][$\sigma$]][F[$\sigma$][$\sigma$]]]]
+		[$\varphi$, name=Phi[$\omega$[F[$\sigma$][$\sigma$]]][$\omega$, name=omega[F, name=F[$\sigma$][$\sigma$, name=sigma]]]]
 		]]
+		{\draw[black] (up.east)--(3.2,0);
+			\draw[black] (IP.east)--(3.2,-1);
+			\draw[black] (Phi.east)--(3.2,-2);
+			\draw[black] (omega.east)--(3.2,-3);
+			\draw[black] (F.east)--(3.2,-4);
+			\draw[black] (sigma.east)--(3.2,-5.2);
+	}
 		\end{forest}
 	}
 		\caption{\cite{Fuhrhop&Co13a}}
@@ -306,7 +313,7 @@ Silbe als \textbf{Domäne} \dots
 	\\
 	(Mandarinen oder Äpfel)\textsubscript{IP}\\
 	\\
-	(Mandarinen)\textsubscript{$\Phi$} (oder Äpfel)\textsubscript{$\Phi$}\\
+	(Mandarinen)\textsubscript{$\varphi$} (oder Äpfel)\textsubscript{$\varphi$}\\
 	\\
 	(Mandarinen)\textsubscript{$\omega$} (oder)\textsubscript{$\omega$} (Äpfel)\textsubscript{$\omega$}\\
 	\\
@@ -402,7 +409,10 @@ Silbe als \textbf{Domäne} \dots
 \ex Bildbar:\\
 	\textipa{[palt]}, \textipa{[alpt]}, \textipa{[lapt]}, \textipa{[talp]}, \textipa{[plat]}
 \ex Nicht bildbar:\\
-	*\textipa{[ltap]}, \dots\
+	*\textipa{[ltap]}, \\
+	*\textipa{[lpat]},\\
+	*\textipa{[ptla]}, \\
+	*\textipa{[tpal]}, \dots \\
 \zl
 \pause
 	\item Warum?
@@ -624,7 +634,7 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Onset}
+%\subsubsection{Onset}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -640,15 +650,15 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 Sprachbeispiele:
 	
 \ea
-Tschechisch \textipa{[fspla.nout]} `aufflammen'
+Tschechisch \textipa{[fspla.nout]} \gq{aufflammen}
 \z
 
 \ea
-Hawaianisch \textipa{[a.lo.ha]} `Liebe'
+Hawaianisch \textipa{[a.lo.ha]} \gq{Liebe}
 \z
 
 \ea
-Deutsch \textipa{[St\textscr aIt]} `Streit'
+Deutsch \textipa{[St\textscr aIt]} \gq{Streit}
 \z
 
 Im Deutschen sind
@@ -729,7 +739,7 @@ Im Deutschen sind
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Nukleus}
+%\subsubsection{Nukleus}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -778,7 +788,7 @@ Im Deutschen sind
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Koda}
+%\subsubsection{Koda}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -858,7 +868,7 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Sonoritätshierarchie}
+%\subsubsection{Sonoritätshierarchie}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -877,24 +887,24 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 		\item \dots\ welche \textbf{phonotaktischen Beschränkungen} für den Onset in deutschen Silben gelten könnten:
 
                   \ea
-                  \textipa{[k\textscr aNk]}, \textipa{[pla:n]}, \textipa{[f\textscr E\c{c}]},
-                  \textipa{[flo:]}, \textipa{[kni:]}, \textipa{[gna:d@]}
+                  \textipa{[\textcolor{red}{k\textscr}aNk]}, \textipa{[\textcolor{red}{pl}a:n]}, \textipa{[\textcolor{red}{f\textscr} E\c{c}]},
+                  \textipa{[\textcolor{red}{fl}o:]}, \textipa{[\textcolor{red}{kn}i:]}, \textipa{[\textcolor{red}{gn}a:d@]}
                   \z
 
                   \ea
-                  *\textipa{[lbat]}, *\textipa{[\textscr to:k]}, *\textipa{[nki:l]}, *\textipa{[ngak]}
+                  *\textipa{[\textcolor{red}{{\textscr}k}aNk]}, *\textipa{[\textcolor{red}{lp}a:n]}, *\textipa{[\textcolor{red}{{\textscr}f}E\c{c}]}, *\textipa{[\textcolor{red}{lf}o:]}, *\textipa{[\textcolor{red}{nk}i:]}, *\textipa{[\textcolor{red}{ng}a:d@]}
                   \z
                   
 \pause
 		\item \dots\ welche \textbf{phonotaktischen Beschränkungen} für die Koda in deutschen Silben gelten könnten:
 
                   \ea
-                  \textipa{[kalt]}, \textipa{[ha5t]}, \textipa{[lant]}, \textipa{[k\textscr aNk]}
+                  \textipa{[ka\textcolor{red}{lt}]}, \textipa{[ha\textcolor{red}{{\textscr}t}]}, \textipa{[la\textcolor{red}{nt}]}, \textipa{[k{\textscr}a\textcolor{red}{Nk}]}
                   \z
 
                   \ea
-                  *\textipa{[katl]}, *\textipa{[hat\textscr ]}, *\textipa{[latn]},
-                  *\textipa{[k\textscr akN]}
+                  *\textipa{[ka{tl}]}, *\textipa{[ha{t\textscr}]}, *\textipa{[la\textcolor{red}{tn}]},
+                  *\textipa{[k\textscr a\textcolor{red}{kN}]}
                   \z
 
 	\end{enumerate}
@@ -1064,12 +1074,37 @@ Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plo
 $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{block}
 
-
 \begin{figure}
-\centering
-\includegraphics[scale=.3]{material/03bSonoritaetBsp}
-\caption{Nach \citet[225]{Hall00a}}
+	\centering
+	\begin{tikzpicture}
+	\draw[fill] (0,0) circle [radius=0.075];
+	\draw[black] (0,0)--(1,1.5);
+	\draw[fill] (1,1.5) circle [radius=0.075];
+	\draw[black] (1,1.5)--(2,2.2);
+	\draw[fill] (2,2.2) circle [radius=0.075];
+	\draw[black] (2,2.2)--(3,0.75);
+	\draw[fill] (3,0.75) circle [radius=0.075];
+	\draw[black] (3,0.75)--(4,0);
+	\draw[fill] (4,0) circle [radius=0.075];
+	\node[below] at (0,0){p};
+	\node[below] at (1,0){l};
+	\node[below] at (2,0){\textipa{U}};
+	\node[below] at (3,0){m};
+	\node[below] at (4,0){p};
+	\node at (5,2.2){{\small Vokal}};
+	\node at (5,1.5){{\small /l/}};
+	\node at (5,0.75){{\small Nasal}};
+	\node at (5,0){{\small Obstruent}};
+\end{tikzpicture}
+\caption{\citet[225]{Hall00a}}
 \end{figure}
+
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale=.3]{material/03bSonoritaetBsp}
+%\caption{\citet[225]{Hall00a}}
+%\end{figure}
 
 \begin{itemize}
 	\item Sonoritätshierarchie wird je nach Sprache leicht anders spezifiziert.
@@ -1080,7 +1115,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Sonoritätshierarchie}
+\frametitle{Übung}
 
 \begin{itemize}
 	\item Geben Sie die Sonoritätsprofile der folgenden Silben an.
@@ -1098,15 +1133,14 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 	\item Erklären Sie die Ungramatikalität der folgenden Silben:
 	
 	  \ea
-          *\textipa{[lbat]}, *\textipa{[\textscr to:k]}, *\textipa{[nki:l]}, *\textipa{[ngak]}
+          *\textipa{[lbat]}, *\textipa{[blabl]}, *\textipa{[m{\textscr}apt]}, *\textipa{[ki:l\textscr]}, *\textipa{[ngang]}
           \z
 
 % hier Probleme im Onset
 % l sonorer als b
 
 
-	\ea *\textipa{[katl]}, *\textipa{[hat\textscr ]}, *\textipa{[latn]}, *\textipa{[k\textscr
-            akN]}
+	\ea *\textipa{[krafm]}, *\textipa{[elat]}, *\textipa{[plaml]}, *\textipa{[nfatl]}
 
 % hier auch Probleme in der Koda
 
@@ -1117,10 +1151,118 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{frame}
 }
 
+\iftoggle{loesung}{
+	\begin{frame}
+\frametitle{Lösung}
 
+\begin{minipage}{.4\textwidth}
+		\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0.3) circle [radius=0.075];
+		\draw[black] (0,0.3)--(1,0);
+		\draw[fill] (1,0) circle [radius=0.075];
+		\draw[black] (1,0)--(2,2.2);
+		\draw[fill] (2,2.2) circle [radius=0.075];
+		\draw[black] (2,2.2)--(3,0.3);
+		\draw[fill] (3,0.3) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{S}};
+		\node[below] at (1,0){\textipa{p}};
+		\node[below] at (2,0){\textipa{a}};
+		\node[below] at (3,0){\textipa{\t{ts}}};
+		\node at (4,0.3){{\small Frikativ}};
+		\node at (4,0){{\small Plosiv}};
+		\node at (4,2.2){{\small Vokal}};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.1\textwidth}
+	\hfill
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+		\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0) circle [radius=0.075];
+		\draw[black] (0,0)--(1,2.2);
+		\draw[fill] (1,2.2) circle [radius=0.075];
+		\draw[black] (1,2.2)--(2,0);
+		\draw[fill] (2,0) circle [radius=0.075];
+		\draw[black] (2,0)--(3,0.3);
+		\draw[fill] (3,0.3) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{d}};
+		\node[below] at (1,0){\textipa{a}};
+		\node[below] at (2,0){\textipa{k}};
+		\node[below] at (3,0){\textipa{s}};
+		\node at (4,0.3){{\small Frikativ}};
+		\node at (4,0){{\small Plosiv}};
+		\node at (4,2.2){{\small Vokal}};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+
+\begin{minipage}{.4\textwidth}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0) circle [radius=0.075];
+		\draw[black] (0,0)--(1,1.5);
+		\draw[fill] (1,1.5) circle [radius=0.075];
+		\draw[black] (1,1.5)--(2,2.2);
+		\draw[fill] (2,2.2) circle [radius=0.075];
+		\draw[black] (2,2.2)--(3,0.75);
+		\draw[fill] (3,0.75) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{k}};
+		\node[below] at (1,0){\textipa{l}};
+		\node[below] at (2,0){\textipa{\t{aU}}};
+		\node[below] at (3,0){\textipa{n}};
+		\node at (4,1.5){{\small /l/}};
+		\node at (4,0){{\small Plosiv}};
+		\node at (4,2.2){{\small Vokal}};
+		\node at (4,0.75){{\small Nasal}};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.1\textwidth}
+	\hfill
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		\draw[fill] (0,0.75) circle [radius=0.075];
+		\draw[black] (0,0.75)--(1,2.2);
+		\draw[fill] (1,2.2) circle [radius=0.075];
+		\draw[black] (1,2.2)--(2,1.5);
+		\draw[fill] (2,1.5) circle [radius=0.075];
+		\draw[black] (2,1.5)--(3,0.3);
+		\draw[fill] (3,0.3) circle [radius=0.075];
+		\node[below] at (0,0){\textipa{m}};
+		\node[below] at (1,0){\textipa{I}};
+		\node[below] at (2,0){\textipa{l}};
+		\node[below] at (3,0){\textipa{\c{c}}};
+		\node at (4,0.3){{\small Frikativ}};
+		\node at (4,1.5){{\small /l/}};
+		\node at (4,2.2){{\small Vokal}};
+		\node at (4, 0.75){\small Nasal};
+		\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Lösung}
+	\begin{itemize}
+		\item \textipa{[bla\textcolor{red}{bl}]} \ras + Auslautverhärtung
+		\item \textipa{[\textcolor{red}{ng}a\textcolor{red}{ng}]} \ras + Regressive velare Nasalassimilation + g-Tilgung
+		\item \textipa{[\textcolor{red}{el}at]} \ras + Knacklauteinsetzung
+	\end{itemize}
+\end{frame}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Weitere phonotaktische Beschränkungen}
+%\subsubsection{Weitere phonotaktische Beschränkungen}
 %\frame{
 %\frametitle{~}
 %\begin{multicols}{2}
@@ -1149,7 +1291,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 	\begin{itemize}
 		\item Dann ist der Onset leer.
 		  \ea
-                  \textipa{[\textprimstress PaI.5]} (Eier)
+                  \textipa{[\textprimstress P\t{aɪ}.5]} (Eier)
                   \z
 
 		  \ea
@@ -1214,7 +1356,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{CV-Modell}
+%\subsubsection{CV-Modell}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1252,8 +1394,8 @@ MyP edges,
 
 \begin{itemize}
 		\item $\sigma :=$ Silbe
-		\item C $:=$ nicht-silbisch, konsonantisch
-		\item V $:=$ silbisch, vokalisch
+		\item C $:=$ nicht-silbisch, \gqq{konsonantisch}
+		\item V $:=$ silbisch, \gqq{vokalisch}
 \end{itemize}
 % V bildet den Silbengipfel
 
@@ -1300,18 +1442,16 @@ MyP edges,
 
 \begin{forest}
 MyP edges,
+[,phantom
 [$\sigma$
 	[C [\textipa{k}]]
 	[V [\textipa{U}]]
-	[C [\textipa{m}]]	
+	[C [\textipa{m}]]
 ]
-\end{forest}
-%
-\begin{forest}
-MyP edges,
-[$\sigma$
+[$\sigma$	
 	[C [\textipa{p}]]
 	[V [\textipa{\textsyllabic{l}}]]
+]
 ]
 \end{forest}
 
@@ -1449,18 +1589,16 @@ MyP edges,
 
 \begin{forest}
 MyP edges,
+[,phantom
 [$\sigma$
 	[C [\textipa{k}]]
 	[V [\textipa{U}]]
 	[C [\textipa{m}]]	
 ]
-\end{forest}
-%
-\begin{forest}
-MyP edges,
 [$\sigma$
 	[C [\textipa{p}]]
 	[V [\textipa{\textsyllabic{l}}]]
+]
 ]
 \end{forest}
 
@@ -1474,7 +1612,7 @@ MyP edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Konstituentenmodell}
+%\subsubsection{Konstituentenmodell}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -1500,7 +1638,7 @@ MyP edges,
 %\input{localforestsyllables}
 \small
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [,phantom
   [$\sigma$
     [O[x[\textipa{f}]][x[\textipa{K}]]]
     [R[N[x[\textipa{\textopeno}]]][K[x[\textipa{s}]]]]
@@ -1605,63 +1743,66 @@ MyP edges,
 \begin{minipage}{.325\textwidth}
 
 %\input{localforestsyllables}
-\small
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
-    [O[x[\textipa{m}]]]
-    [R[N[x[\textipa{I}]]][K[x[t]]]]
-  ]  
-]
-\end{forest}
+\scalebox{.8}{
+\begin{forest} MyP edges, [,phantom 
+[$\sigma$
+    [O
+    	[x, tier=word[\textipa{m}]]
+    ]
+    [R
+    	[N
+    		[x[\textipa{I}]]
+    	]
+    	[K[x, tier=word[t]]
+    	]
+    ]
+]]
+\end{forest}}
 
 \end{minipage}
 %
 \begin{minipage}{.325\textwidth}
 %\input{localforestsyllables}
-\small
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
-    [O[x[\textipa{z}]]]
+\scalebox{.8}{
+\begin{forest} MyP edges, [,phantom
+[$\sigma$
+    [O[x, tier=word[\textipa{z}]]]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{e:}, name=e]
     		]
     		[x, name=x]
-    	]
-    	[K []]]
-  ]  
-]
+    	] ]
+  ] ]
 {
 \draw[black] (e.north)--(x.south);
 }
-\end{forest}
+\end{forest}}
 
 \end{minipage}
 %
 \begin{minipage}{.325\textwidth}
 %\input{localforestsyllables}
-\small
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
-    [O[x[\textipa{P}]]]
+\scalebox{.8}{\begin{forest} MyP edges, [,phantom 
+[$\sigma$
+    [O[x, tier=word[\textipa{P}]]]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{\t{aU}}, name=aU]
     		]
     		[x, name=x]
     	]
     	[K[x[\textipa{x}]]]]
-  ]  
-]
+  ] ]
 {
 \draw[black] (aU.north)--(x.south);
 }
-\end{forest}
+\end{forest}}
 
 \end{minipage}
 
@@ -1695,15 +1836,15 @@ MyP edges,
 %\input{localforestsyllables}
 \footnotesize
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [,phantom
   [$\sigma$
     [O
-    	[x[\textipa{f}]]
-    	[x[\textipa{\textscr }]]
+    	[x, tier=word[\textipa{f}]]
+    	[x, tier=word[\textipa{\textscr }]]
     ]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{E}]
     		]
     	]
@@ -1719,12 +1860,20 @@ MyP edges,
 %\input{localforestsyllables}
 \footnotesize
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
-    [O[x[\textipa{k}]]]
-    [R[N[x[\textipa{O}]]][K[x[\textipa{\t{pf}}]]]]
-  ]  
-]
+\begin{forest} MyP edges, [,phantom
+[$\sigma$
+    [O
+    	[x, tier=word[\textipa{k}]]
+    ]
+    [R
+    	[N
+    		[x, tier=word[\textipa{O}]]
+    	]
+    	[K
+    		[x[\textipa{\t{pf}}]]
+    	]
+    ]
+]]
 \end{forest}
 
 \end{minipage}
@@ -1733,16 +1882,16 @@ MyP edges,
 %\input{localforestsyllables}
 \footnotesize
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [,phantom
   [$\sigma$
     [O
-    	[x
+    	[x, tier=word
     		[\textipa{m}]
     	]
     ]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{I}]
     		]
     	]  		
@@ -1799,17 +1948,17 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
 %\input{localforestsyllables}
 \tiny
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [,phantom
   [$\sigma$
-    [O[x[\textipa{z}]]]
+    [O[x, tier=word[\textipa{z}]]]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{e:}, name=e]
     		]
     		[x, name=x]
     	]
-    	[K []]]
+	]
   ]  
 ]
 {
@@ -1823,12 +1972,12 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
 %\input{localforestsyllables}
 \tiny
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [,phantom
   [$\sigma$
-    [O[x[\textipa{P}]]]
+    [O[x, tier=word[\textipa{P}]]]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{\t{aU}}, name=aU]
     		]
     		[x, name=x]
@@ -1848,12 +1997,19 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
 %\input{localforestsyllables}
 \tiny
 \centering
-\begin{forest} MyP edges, GP1 [
-  [$\sigma$
-    [O[x[\textipa{m}]]]
-    [R[N[x[\textipa{I}]]][K[x[t]]]]
-  ]  
-]
+\begin{forest} MyP edges, [,phantom
+[$\sigma$
+    [O
+    	[x, tier=word[\textipa{m}]]
+    ]
+    [R
+    	[N
+    		[x, tier=word[\textipa{I}]]]
+    	[K
+    		[x[t]]
+    	]
+    ]
+]]
 \end{forest}
 
 \end{minipage}
@@ -1867,15 +2023,15 @@ In betonten Silben folgt auf einen ungespannten (kurzen) Vokal meistens ein Kons
 
 \iftoggle{uebung}{
 
-\subsection{Übung}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
+%\subsection{Übung}
+%\iftoggle{toc}{
+%\frame{
+%\frametitle{~}
+%\begin{multicols}{2}
+%	\tableofcontents[currentsection]
+%\end{multicols}	
+%}
+%}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1906,304 +2062,332 @@ $x > y :=$ $x$ ist sonorer als $y$
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{loesung}{
-%\begin{frame}
-%\frametitle{Lösungen}
-%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%    [O	[x[\textipa{S}]
-%       	]
-%       	[x [\textipa{p}]
-%    	]
-%    	[x[\textipa{\textscr}]
-%    	]
-%    ]
-%    [R
-%    	[N	[x [\textipa{E}]
-%    		]
-%    	]
-%	    [K	[x  [\c{c}]
-%	    	]
-%	    ]
-%	]  
-%  ]
-%  [$\sigma$
-%  	[O]
-%  	[R
-%  		[N	[x[\textipa{@}]
-%  			]
-%  		]
-%  		[K	[x[\textipa{n}]
-%  			]
-%  		]
-%  	]
-%  ]
-%\end{forest}
-%
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%    [O	[x[\textipa{P}]
-%    	]
-%    ]
-%    [R
-%    	[N
-%    		[x[\textipa{O:}]
-%    		]
-%    		[x]{\draw[black] (.south)--++(-2.38em,-1.7ex);}
-%    	]
-%    	[K
-%    		[x[\textipa{p}]
-%    		]
-%    		[x[\textipa{s}]
-%    		]
-%    		[x[\textipa{t}]
-%    		]
-%    	]
-%    ]  
-%  ]
-%\end{forest}
-%
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%    [O	[x[\textipa{b}]
-%    	]
-%    	[x[\textipa{\textscr}]
-%    	]
-%    ]
-%    [R
-%    	[N	[x[\textipa{a}]
-%    		]
-%    	]
-%    	[K	[x[n]
-%    		]
-%    		[x[\textipa{t.}]
-%    		]
-%    	]
-%	]  
-%  ]
-%  [$\sigma$
-%  	[O	[x[\textipa{S}]
-%  		]
-%  	]
-%  	[R	
-%  		[N	[x[\textipa{U}]
-%  			]
-%  		]
-%  		[K	[x[\textipa{\t{ts}}]
-%  			]
-%  		]
-%  	]
-%  ]
-%\end{forest}
-%
-%\end{minipage}
-%\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}
+\frametitle{Lösungen}
 
-%\begin{frame}
-%\frametitle{Lösungen}
+\begin{minipage}{.45\textwidth}
+\centering
+\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+  [$\sigma$
+    [O	[x, tier=word [\textipa{S}]
+       	]
+       	[x, tier=word [\textipa{p}]
+    	]
+    	[x, tier=word[\textipa{\textscr}]
+    	]
+    ]
+    [R
+    	[N	[x, tier=word [\textipa{E}]
+    		]
+    	]
+	    [K, name=K	[x  [\textipa{\c{c}}]
+	    	]
+	    ]
+	]  
+  ]
+  [$\sigma$
+  	[O, name=O]
+  	[R
+  		[N	[x[\textipa{@}]
+  			]
+  		]
+  		[K	[x[\textipa{n}]
+  			]
+  		]
+  	]
+  ]
+  ]
+  \draw[black] (O.south)--(K.north);
+\end{forest}}
+\end{minipage}
 %
-%\begin{minipage}{.325\textwidth}
+\begin{minipage}{.05\textwidth}
+	\hfill
+\end{minipage}
+%
+\begin{minipage}{.45\textwidth}
 %%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%  [$\sigma$
-%		[O
-%			[x[\textipa{S}]]
-%			[x[\textipa{t}]]
-%		]
-%	[R
-%		[N
-%			[x[\textipa{\textsci}]]
-%		]
-%		[K
-%			[x[\textipa{m}]]
-%		]
-%	]]
-%	[$\sigma$
-%		[O{\draw[black] (.south)--++(-2.38em,-1.7ex);}]
-%		]
-%	[R
-%		[N
-%			[x[\textipa{@}]]
-%		]
-%		[K
-%			[x[\textipa{n.}]]
-%		]
-%	]
-%	[$\sigma$
-%		[O
-%			[x[\textipa{f}]]
-%		]
-%	[R
-%		[O
-%			[x[\textipa{a}]]
-%		]
-%		[K
-%			[X[\textipa{\ng}]]
-%		]
-%	]
-%	]]
-%\end{forest}
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest}
-%MyP edges, GP1 [
-%[$ \sigma $
-%	[O
-%		[x[\textipa{P}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{p}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[\textipa{S}]]
-%		[x[\textipa{t}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{n}]]
-%		[x[\textipa{\t{ts}}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[\textipa{h}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{l}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[t]]
-%[R	[N
-%		[x[\textipa{\textturna}]]
-%]]]
-%]
-%\end{minipage}
-%%
-%\begin{minipage}{.325\textwidth}
-%%\input{localforestsyllables}
-%\tiny
-%\centering
-%\begin{forest} MyP edges, GP1 [
-%[$ \sigma $
-%	[O
-%		[x[m]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{\textsci}]]
-%	]
-%	[K
-%		[x[\textipa{t}]]
-%	]]
-%]
-%[$ \sigma $
-%	[O]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
-%[R
-%	[N
-%		[x[\textipa{a}]]
-%	]
-%	[K
-%		[x[\textipa{k}]]
-%	]]
-%]
-%[$ \sigma $
-%	[O
-%		[x[\textipa{P}]
-%	]
-%[R
-%	[N
-%		[x[\textipa{E}]]
-%	]
-%	[K
-%		[x[\textipa{s}]
-%	]]
-%]
-%[$ \sigma $
-%	[O]{\draw[black] (.south)--++(-1.6em,-6.2ex);}
-%[R
-%	[N
-%		[x[\textipa{\textschwa}]]
-%	]
-%	[K
-%		[x[\textipa{n}]]
-%	]]
-%]]
-%\end{forest}
-%\end{minipage}
+\centering
+\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+  [$\sigma$
+    [O	[x, tier=word[\textipa{P}]
+    	]
+    ]
+    [R
+    	[N
+    		[x, tier=word[\textipa{o:}, name=o]
+    		]
+    		[x, name=x]
+%    		{\draw[black] (.south)--++(-2.38em,-1.7ex);}
+    	]
+    	[K
+    		[x[\textipa{p}]
+    		]
+    		[x[\textipa{s}]
+    		]
+    		[x[\textipa{t}]
+    		]
+    	]
+    ]  
+  ] ]
+  \draw[black](x.south)--(o.north);
+\end{forest}}
+\end{minipage}
+
+
+\begin{minipage}{.45\textwidth}
+	\begin{figure}
+		\centering
+			\begin{tikzpicture}[scale=0.5]
+			\draw[black] (-1,0) -- (6.5,0) ; % x axis
+			\draw[black] (-1,0) -- (-1,6.5); % y axis
+			\node at (-2,1) {Plos.};
+			\node at (-2,2) {Frik.};
+			\node at (-2,3) {Nas.};
+			\node at (-2,4) {\textipa{/l/}};
+			\node at (-2,5) {\textipa{/\;R/}};
+			\node at (-2,6) {Vok.};
+			\draw[black] (0,2) -- (1,1) -- (2,5) -- (3,6) -- (4,2) -- (5,6) -- (6,3);
+			\node at (0,-1) {\textipa{S}};
+			\node at (1,-1) {\textipa{p}};
+			\node at (2,-1) {\textipa{\textscr}};
+			\node at (3,-1) {\textipa{E}};
+			\node at (4,-1) {\textipa{\c{c}}};
+			\node at (5,-1) {\textipa{@}};
+			\node at (6,-1) {\textipa{n}};
+			\fill (0,2) circle [radius=3pt];
+			\fill (1,1) circle [radius=3pt];
+			\fill (2,5) circle [radius=3pt];
+			\fill (3,6) circle [radius=3pt];
+			\fill (4,2) circle [radius=3pt];
+			\fill (5,6) circle [radius=3pt];
+			\fill (6,3) circle [radius=3pt];
+			\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.05\textwidth}
+	\hfill
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}[scale=0.5]
+			\draw[black] (-1,0) -- (4.5,0) ; % x axis
+			\draw[black] (-1,0) -- (-1,6.5); % y axis
+			\node at (-2,1) {Plos.};
+			\node at (-2,2) {Frik.};
+			\node at (-2,3) {Nas.};
+			\node at (-2,4) {\textipa{/l/}};
+			\node at (-2,5) {\textipa{/\;R/}};
+			\node at (-2,6) {Vok.};
+			\draw[black] (0,1) -- (1,6) -- (2,1) -- (3,2) -- (4,1);
+			\node at (0,-1) {\textipa{P}};
+			\node at (1,-1) {\textipa{o:}};
+			\node at (2,-1) {\textipa{p}};
+			\node at (3,-1) {\textipa{s}};
+			\node at (4,-1) {\textipa{t}};
+			\fill (0,1) circle [radius=3pt];
+			\fill (1,6) circle [radius=3pt];
+			\fill (2,1) circle [radius=3pt];
+			\fill (3,2) circle [radius=3pt];
+			\fill (4,1) circle [radius=3pt];
+			\end{tikzpicture}
+	\end{figure}
+\end{minipage}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Lösungen}
 %
-%\end{frame}
+\begin{minipage}{.3\textwidth}
+	\centering
+	\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+[$\sigma$
+	[O
+		[x, tier=word[\textipa{b}]]
+		[x, tier=word[\textipa{\textscr}]]
+	]
+	[R
+		[N	[x, tier=word[\textipa{a}]]
+		]
+		[K
+			[x[\textipa{n}]]
+			[x[\textipa{t.}]]
+		]
+	]  
+]
+[$\sigma$
+	[O	[x, tier=word[\textipa{S}]]
+	]
+	[R	
+		[N	
+			[x[\textipa{U}]]
+		]
+		[K	
+			[x[\textipa{\t{ts}}]]
+		]
+	]
+]]
+	\end{forest}}
+	
+\end{minipage}
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Lösungen}
+\begin{minipage}{.05\textwidth}
+	\hfill
+\end{minipage}
 %
-%\begin{forest} MyP edges, GP1 [
-%[$ \sigma $
-%	[O
-%	[x[\textipa{b}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{i:}]]
-%		[x]{\draw[black] (.south)--++(-2.38em,-1.7ex);}
-%		[x[\textipa{\textturna}]]
-%	]
-%]]
-%[$ \sigma $
-%	[O
-%		[x[\textipa{d}]]
-%	]
-%[R
-%	[N
-%		[x[\textipa{k}]]
-%		[x[\textipa{l}]]
-%	]
-%]]]
-%\end{forest}
-%
-%\end{frame}
-%}
+\begin{minipage}{.6\textwidth}
+\centering
+\scalebox{.75}{
+\begin{forest}
+	MyP edges, [, phantom
+[$ \sigma $
+	[O
+		[x, tier=word[\textipa{P}]]
+	]
+	[R
+		[N
+			[x, tier=word[\textipa{a}]]
+		]
+		[K
+			[x[\textipa{p}]]
+		]
+	]
+]
+[$ \sigma $
+	[O
+		[x, tier=word[\textipa{S}]]
+		[x, tier=word[\textipa{t}]]
+	]
+	[R
+		[N
+			[x[\textipa{a}]]
+		]
+		[K
+			[x[\textipa{n}]]
+			[x[\textipa{\t{ts}}]]
+		]
+	]
+]
+[$ \sigma $
+	[O
+		[x, tier=word[\textipa{h}]]
+	]
+	[R
+		[N
+			[x[\textipa{a}]]
+		]
+		[K
+			[x[\textipa{l}]]
+		]
+	]
+]
+[$ \sigma $
+	[O
+		[x, tier=word[t]]
+	]
+	[R	
+		[N
+			[x[\textipa{\textturna}]]
+		]
+	]
+]]
+\end{forest}}
+\end{minipage}
+
+\begin{minipage}{.3\textwidth}
+	\begin{figure}
+		\centering
+		\scalebox{.75}{
+			\begin{tikzpicture}[scale=0.5]
+			\draw[black] (-1,0) -- (7.5,0) ; % x axis
+			\draw[black] (-1,0) -- (-1,6.5); % y axis
+			\node at (-2,1) {Plos.};
+			\node at (-2,2) {Frik.};
+			\node at (-2,3) {Nas.};
+			\node at (-2,4) {\textipa{/l/}};
+			\node at (-2,5) {\textipa{/\;R/}};
+			\node at (-2,6) {Vok.};
+			\draw[black] (0,1) -- (1,5) -- (2,6) -- (3,3) -- (4,1);
+			\draw[black] (5,2) -- (6,6) -- (7,2);
+			\node at (0,-1) {\textipa{b}};
+			\node at (1,-1) {\textipa{\textscr}};
+			\node at (2,-1) {\textipa{a}};
+			\node at (3,-1) {\textipa{n}};
+			\node at (4,-1) {\textipa{t}};
+			\node at (5,-1) {\textipa{S}};
+			\node at (6,-1) {\textipa{U}};
+			\node at (7,-1) {\textipa{\t{ts}}};
+			\fill (0,1) circle [radius=3pt];
+			\fill (1,5) circle [radius=3pt];
+			\fill (2,6) circle [radius=3pt];
+			\fill (3,3) circle [radius=3pt];
+			\fill (4,1) circle [radius=3pt];
+			\fill (5,2) circle [radius=3pt];
+			\fill (6,6) circle [radius=3pt];
+			\fill (7,2) circle [radius=3pt];
+			\end{tikzpicture}}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.05\textwidth}
+	\hfill
+\end{minipage}
+\begin{minipage}{.6\textwidth}
+\begin{figure}
+			\centering
+			\scalebox{.75}{
+			\begin{tikzpicture}[scale=0.5]
+			\draw[black] (-1,0) -- (12.5,0) ; % x axis
+			\draw[black] (-1,0) -- (-1,6.5); % y axis
+			\node at (-2,1) {Plos.};
+			\node at (-2,2) {Frik.};
+			\node at (-2,3) {Nas.};
+			\node at (-2,4) {\textipa{/l/}};
+			\node at (-2,5) {\textipa{/\;R/}};
+			\node at (-2,6) {Vok.};
+			\draw[black] (0,1)--(1,6)--(2,1);
+			\draw[black](3,2)--(4,1)--(5,6)--(6,3)--(7,2);
+			\draw[black](8,1)--(9,6)--(10,4);
+			\draw[black](11,1)--(12,6);
+			\fill (0,1) circle [radius=3pt];
+			\fill (1,6) circle [radius=3pt];
+			\fill (2,1) circle [radius=3pt];
+			\fill (3,2) circle [radius=3pt];
+			\fill (4,1) circle [radius=3pt];
+			\fill (5,6) circle [radius=3pt];
+			\fill (6,3) circle [radius=3pt];
+			\fill (7,2) circle [radius=3pt];
+			\fill (8,1) circle [radius=3pt];
+			\fill (9,6) circle [radius=3pt];
+			\fill (10,4) circle [radius=3pt];
+			\fill (11,1) circle [radius=3pt];
+			\fill (12,6) circle [radius=3pt];
+			\node at (0,-1){\textipa{P}};
+			\node at (1,-1){\textipa{a}};
+			\node at (2,-1){\textipa{p}};
+			\node at (3,-1){\textipa{S}};
+			\node at (4,-1){\textipa{t}};
+			\node at (5,-1){\textipa{a}};
+			\node at (6,-1){\textipa{n}};
+			\node at (7,-1){\textipa{\t{ts}}};
+			\node at (8,-1){\textipa{h}};
+			\node at (9,-1){\textipa{a}};
+			\node at (10,-1){\textipa{l}};
+			\node at (11,-1){\textipa{t}};
+			\node at (12,-1){\textipa{\textturna}};
+			\end{tikzpicture}}
+	\end{figure}
+\end{minipage}
+
+
+\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Silbengelenk}
 \iftoggle{toc}{
 \frame{
@@ -2238,16 +2422,16 @@ $x > y :=$ $x$ ist sonorer als $y$
 %\input{localforestsyllables}
 \footnotesize
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [,phantom
   [$\sigma$
     [O
-    	[x
+    	[x, tier=word
     		[\textipa{t}]
     	]
     ]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{I}]
     		]
     	]  		
@@ -2290,17 +2474,17 @@ $x > y :=$ $x$ ist sonorer als $y$
 %\input{localforestsyllables}
 \footnotesize
 \centering
-\begin{forest} MyP edges, GP1 [
+\begin{forest} MyP edges, [, phantom
   [$\sigma$
     [O
-    	[x
+    	[x, tier=word
     		[\textipa{k}]
     	]
-    	[x	[\textipa{l}]]
+    	[x, tier=word	[\textipa{l}]]
     ]
     [R
     	[N
-    		[x
+    		[x, tier=word
     			[\textipa{I}]
     		]
     	]  		
@@ -2431,6 +2615,8 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 	  \ea
           kind\#lich: \textipa{[kInt.lI\c{c}]}
           \z
+          
+     \item \# := Morphemgrenze
 
 % Wenn man Morphmgrenzenbedingung weglassen würde, ergäbe sich Bra. ndschutz
 
@@ -2441,19 +2627,17 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 \end{frame}
 
 
-\iftoggle{uebung}{
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Übung}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
+%\subsection{Übung}
+%\iftoggle{toc}{
+%\frame{
+%\frametitle{~}
+%\begin{multicols}{2}
+%	\tableofcontents[currentsection]
+%\end{multicols}	
+%}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -2465,23 +2649,39 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 	  \ea
           Fabrik, Imker, neblig, Falter, regnen
           \z
-	
+\end{itemize}	
 \pause
-\ea
-\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]}, \textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}\\
-	Koda: *Obstruent vor Sonorant\\
-	Onset: *Sonorant vor Obstruent
-\z
-	
+
+\iftoggle{loesung}{
+	\begin{itemize}
+		\item[] \textcolor{red}{\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]}, \textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}}
+	\item [] \textcolor{red}{Koda: *Obstruent vor Sonorant} 
+	\item [] \textcolor{red}{Onset: *Sonorant vor Obstruent}
+	\end{itemize}
+}
+
+\begin{itemize}
 	\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
+\end{itemize}
+
+\begin{minipage}{.4\textwidth}
 	\eal
 	\ex \textipa{[PE.b@]}
 	\ex \textipa{[PEb.@]}
 	\ex \textipa{[PEp.@]}
 	\ex \textipa{[PEp.b@]}
         \zl
-
-\end{itemize}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+	\pause	
+	\begin{itemize}
+	\item[] \textcolor{red}{\ras Kurzvokal}
+	\item[] \textcolor{red}{\ras Auslautverhärtung}
+	\item[] \textcolor{red}{\ras Onset-Maximierung}
+	\item[] \textcolor{red}{\ras keine Regelverletzung}
+	\end{itemize}
+	
+\end{minipage}
 
 \end{frame}
 
@@ -2492,7 +2692,7 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 
 
 \begin{frame}
-%\frametitle{Übung}
+\frametitle{Übung}
 
 \begin{itemize}
 	\item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
@@ -2501,31 +2701,52 @@ Bilde zuerst den größtmöglichen Silbenanlaut; dann bilde den Silbenauslaut \c
 		\item Sonoritätsprinzip
 	\end{itemize}
 
-Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen
+\item Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen
 	
-\ea
+\ea\label{ex:Otling}
 \textipa{[o:tlIN5mSplag\textscr e:hOn]}
 \z
 
 % Otlingamsplagrehon
+	\ea\label{ex:Blumentopf}
+	Blumentopferde
+	\z
 
-\ea
-Blumentopferde
-\z
+\end{itemize}
+
 % blu.men.to.pfer.de
 
 %\ea
 %Urinstinkt
 %\z	
-	\item Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
-	
-\end{itemize}
 
-% ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Lösung}
+
+zu (\ref{ex:Otling}):
+
+\textcolor{red}{zuerst Onset"=Maximierung: \textipa{o:.tlI.\ng \textturna. mSpla .g\textscr e: .hOn}}\\
+\textcolor{red}{dann Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}}
+
+zu (\ref{ex:Blumentopf}): 
+
+\textcolor{red}{zuerst Onset-Maximierung: \textipa{blu: .m@ .nto: .pfE .{\textscr}d@}}\\
+\textcolor{red}{dann Awendung des Sonoritätsprinzip: \textipa{blu: .m@n .to: .pfE{\textscr} .d@}}
+
+
+
+
 
 
 \end{frame}
-}
+	
+
+
+% ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2569,7 +2790,7 @@ Blumentopferde
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exkurs: Wortakzent}
+%\subsubsection{Exkurs: Wortakzent}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2592,16 +2813,33 @@ Blumentopferde
 	\textbf{betont-unbetont (Trochäus)}
 	
 	\item Ausnahmen (die je nach Theorie verschieden erklärt werden):
-	
-	\eal 
-	\ex \textipa{["f\textscr aU]}
-	\ex \textipa{[mu.\textprimstress zi:k]}
-	\ex \textipa{["le:.b@n.d@]}
-	\ex \textipa{\originalTeX [pa.pa."g\t{aI}]}
-	\ex \textipa{[f\t{E5}.\textprimstress Pa5.b\t{aI}.t@n]}
-	\zl
 
 \end{itemize}
+
+\begin{minipage}{.4\textwidth}
+		
+	\eal 
+	\ex \textipa{['f\textscr aU]}
+	\ex \textipa{[mu.'zi:k]}
+	\ex \textipa{[le:.b@n.d@]}
+	\ex \textipa{[pa.pa.'g\t{aɪ}]}
+	\ex \textipa{[f\t{ɛɐ}.'Pa5.b\t{aɪ}.t@n]}
+	\zl
+
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+	
+	\iftoggle{loesung}{
+	\begin{itemize}
+		\item[] \textcolor{red}{\ras nur eine Silbe }
+		\item[] \textcolor{red}{\ras Fremdwort}
+		\item [] \textcolor{red}{\ras Flektierte Elemente \ab{-de}}
+		\item [] \textcolor{red}{\ras Fremdwort}
+		\item [] \textcolor{red}{\ras Derivation \ab{ver-}}
+	\end{itemize}
+}
+
+\end{minipage}
 
 \end{frame}
 
@@ -2609,7 +2847,7 @@ Blumentopferde
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exkurs: Satzakzent}
+%\subsubsection{Exkurs: Satzakzent}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2642,7 +2880,7 @@ hervorgehoben \ras \textbf{Fokus des Satzes} (\gqq{Informationsstruktur})
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exkurs: Intonation}
+%\subsubsection{Exkurs: Intonation}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2724,18 +2962,21 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 			
 	\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbestruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
 		
-	\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
-		Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
-		$x > y :=$ $x$ ist sonorer als $y$
-	\end{block}
-		
-		\eal 
-		\ex Stimmenfang
-		\ex Mittagessen
-		\ex Bierdeckel
+		\eal \label{ex:HA1}
+		\ex Stimmenfang \label{ex:HA1a}
+		\ex Mittagessen\label{ex:HA1b}
+		\ex Bierdeckel\label{ex:HA1c}
 		\zl
 \end{itemize}
+
+\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+	Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+	$x > y :=$ $x$ ist sonorer als $y$
+\end{block}
+
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \begin{itemize}
@@ -2746,14 +2987,14 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 	\end{itemize}
 	
 	Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
-	\ea
+	\ea\label{ex:HA2}
 	Urinstinkt
 	\z	
 	\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
 	
 	\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/ phonologischen Gründen im Deutschen nicht möglich sind:
 	
-	\eal
+	\eal\label{ex:HA3}
 	\ex[*]{\textipa{['Napl.O:t]}}
 	\ex[*]{\textipa{[a\;R.'tUng]}}
 	\zl
@@ -2767,9 +3008,9 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Lösungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\iftoggle{phonologie-loesung}{
+\iftoggle{loesung}{
 	
-	\subsection{Lösung der Hausaufgabe}
+	\subsection{Lösung}
 	\iftoggle{toc}{
 		\frame{
 			\frametitle{~}
@@ -2782,21 +3023,24 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}%[allowframebreaks]
-	\frametitle{Hausaufgabe}
+	\frametitle{Lösung}
 	\begin{itemize}
 			
 		\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbestruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
 			
-		\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
-			Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
-			$x > y :=$ $x$ ist sonorer als $y$
-		\end{block}
-			
-			\eal 
-			\ex Stimmenfang
-			\ex Mittagessen
-			\ex Bierdeckel
-			\zl
+			\begin{exe}
+				\exi{(\ref{ex:HA1})}
+				\begin{xlist}
+					\ex Stimmenfang
+					\ex Mittagessen
+					\ex Bierdeckel
+				\end{xlist}
+			\end{exe}
+
+			\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+		Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+		$x > y :=$ $x$ ist sonorer als $y$
+	\end{block}
 			
 	\end{itemize}
 \end{frame}
@@ -2805,21 +3049,26 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 
 %\begin{minipage}{.35\textwidth}
 			%\input{localforestsyllables}
-			\footnotesize
-			\centering
-		\begin{exe}
-		\exi{(54)~a.}
-			\begin{forest} MyP edges, GP1 [
+\begin{minipage}{.2\textwidth}
+	\centering
+Zu (\ref{ex:HA1a}):
+\end{minipage}
+%
+\begin{minipage}{.7\textwidth}
+	\begin{figure}
+\footnotesize
+\centering
+			\begin{forest} MyP edges, [, phantom
 				[$\sigma$
-				[O [x [\textipa{S}]] [x [\textipa{t}]]]
-				[R [N [x [\textipa{I}]]] [K [x, name=x [\textipa{m}]]]]
+				[O [x, tier=word [\textipa{S}]] [x, tier=word [\textipa{t}]]]
+				[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x [\textipa{m}]]]]
 				]
 				[$\sigma$
 				[O, name=onset]
 				[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
 				]
 				[$\sigma$
-				[O [x [\textipa{f}]]]
+				[O [x, tier=word [\textipa{f}]]]
 				[R [N [x [\textipa{a}]]] [K [x [\textipa{N}]]]]
 				]
 				]				
@@ -2828,7 +3077,7 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 				}
 			\end{forest}
 		
-		\begin{tikzpicture}[scale=0.5]
+		\begin{tikzpicture}[scale=0.4]
 		\draw[black] (-1,0) -- (9.5,0) ; % x axis
 		\draw[black] (-1,0) -- (-1,6.5); % y axis
 		\node at (-2,1) {Plos.};
@@ -2860,27 +3109,35 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 		\fill (8,6) circle [radius=3pt];
 		\fill (9,3) circle [radius=3pt];
 		\end{tikzpicture}
-\end{exe}
+\end{figure}
+
+\end{minipage}
 \end{frame}
 
-\begin{frame}			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}		
+
+\begin{minipage}{.2\textwidth}
+	\centering
+	Zu (\ref{ex:HA1b}):
+\end{minipage}	
 %\end{minipage}%
-%\begin{minipage}{.35\textwidth}
+\begin{minipage}{.7\textwidth}
+\begin{figure}
 	\footnotesize
 	\centering
-	\begin{exe}
-	\exi{(54)~b.}
-	\begin{forest} MyP edges, GP1 [
+	\begin{forest} MyP edges, [, phantom
 	[$\sigma$
-	[O [x [\textipa{m}]]] 
-	[R [N [x [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
+	[O [x, tier=word [\textipa{m}]]] 
+	[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
 	]
 	[$\sigma$
 	[O, name=onset1]
 	[R [N [x [\textipa{a}]]] [K [x [\textipa{k}]]]]
 	]
 	[$\sigma$
-	[O [x [\textipa{P}]]]
+	[O [x, tier=word [\textipa{P}]]]
 	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
 	]
 	[$\sigma$
@@ -2894,7 +3151,7 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 	}
 	\end{forest}
 
-\begin{tikzpicture}[scale=0.5]
+\begin{tikzpicture}[scale=0.4]
 \draw[black] (-1,0) -- (11.5,0) ; % x axis
 \draw[black] (-1,0) -- (-1,6.5); % y axis
 \node at (-2,1) {Plos.};
@@ -2903,98 +3160,101 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 \node at (-2,4) {\textipa{/l/}};
 \node at (-2,5) {\textipa{/\;R/}};
 \node at (-2,6) {Vok.};
-\draw[black] (0,3) -- (1,6) -- (2,1);
-\draw[black] (3,1) -- (4,6) -- (5,1);
-\draw[black] (6,1) -- (7,6) -- (8,2);
-\draw[black] (9,2) -- (10,6) -- (11,1);
+\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
+\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,6) -- (9,1);
 \node at (0,-1) {\textipa{m}};
 \node at (1,-1) {\textipa{i}};
-\node at (2.5,-1) {\textipa{t}};
-\node at (4,-1) {\textipa{a}};
-\node at (5,-1) {\textipa{k}};
-\node at (6,-1) {\textipa{P}};
-\node at (7,-1) {\textipa{E}};
-\node at (8.5,-1) {\textipa{s}};
-\node at (10,-1) {\textipa{@}};
-\node at (11,-1) {\textipa{n}};
+\node at (2,-1) {\textipa{t}};
+\node at (3,-1) {\textipa{a}};
+\node at (4,-1) {\textipa{k}};
+\node at (5,-1) {\textipa{P}};
+\node at (6,-1) {\textipa{E}};
+\node at (7,-1) {\textipa{s}};
+\node at (8,-1) {\textipa{@}};
+\node at (9,-1) {\textipa{n}};
 \fill (0,3) circle [radius=3pt];
 \fill (1,6) circle [radius=3pt];
 \fill (2,1) circle [radius=3pt];
-\fill (3,1) circle [radius=3pt];
-\fill (4,6) circle [radius=3pt];
+\fill (3,6) circle [radius=3pt];
+\fill (4,1) circle [radius=3pt];
 \fill (5,1) circle [radius=3pt];
-\fill (6,1) circle [radius=3pt];
-\fill (7,6) circle [radius=3pt];
-\fill (8,2) circle [radius=3pt];
-\fill (9,2) circle [radius=3pt];
-\fill (10,6) circle [radius=3pt];
-\fill (11,1) circle [radius=3pt];
+\fill (6,6) circle [radius=3pt];
+\fill (7,2) circle [radius=3pt];
+\fill (8,6) circle [radius=3pt];
+\fill (9,1) circle [radius=3pt];
 \end{tikzpicture}
-\end{exe}
-%\end{minipage}
+\end{figure}
+\end{minipage}
 	
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 
-%\begin{minipage}{.35\textwidth}
+\begin{minipage}{.2\textwidth}
+	\centering
+	Zu (\ref{ex:HA1c}):
+\end{minipage}	
+\begin{minipage}{.7\textwidth}
+
+	\begin{figure}
 	\footnotesize
 	\centering
-\begin{exe}
-	\exi{(54)~c.}
-	\begin{forest} MyP edges, GP1 [
+	\begin{forest} MyP edges, [, phantom
 	[$\sigma$
-	[O [x [\textipa{b}]]]
-	[R [N [x [\textipa{i}]] [x [\textipa{:}]]] [K [x [\textipa{5}]]]]
+	[O [x,tier=word [\textipa{b}]]]
+	[R [N [x, tier=word [\textipa{i:}, name=i]] [x,name=x1]] [K [x [\textipa{5}]]]]
 	]
 	[$\sigma$
-	[O [x [\textipa{d}]]]
+	[O [x, tier=word [\textipa{d}]]]
 	[R [N [x [\textipa{E}]]] [K [x, name=x [\textipa{k}]]]]
 	]
 	[$\sigma$
 	[O, name=onset]
-	[R [N [x [\textipa{@}]]] [K [x [\textipa{l}]]]]
+	[R [N [x, tier=word [\textipa{@}]]] [K [x [\textipa{l}]]]]
 	]
 	]
 	{
+		\draw[black] (x1.south)--(i.north);
 		\draw[black] (x.north)--(onset.south);
 	}
-	\end{forest}
+\end{forest}
 
-\begin{tikzpicture}[scale=0.5]
-\draw[black] (-1,0) -- (8.5,0) ; % x axis
-\draw[black] (-1,0) -- (-1,6.5); % y axis
-\node at (-2,1) {Plos.};
-\node at (-2,2) {Frik.};
-\node at (-2,3) {Nas.};
-\node at (-2,4) {\textipa{/l/}};
-\node at (-2,5) {\textipa{/\;R/}};
-\node at (-2,6) {Vok.};
-\draw[black] (0,1) -- (1,6) -- (2,6);
-\draw[black] (3,1) -- (4,6) -- (5,1);
-\draw[black] (6,1) -- (7,6) -- (8,1);
-\node at (0,-1) {\textipa{b}};
-\node at (1,-1) {\textipa{i:}};
-\node at (2,-1) {\textipa{5}};
-\node at (3,-1) {\textipa{d}};
-\node at (4,-1) {\textipa{E}};
-\node at (5.5,-1) {\textipa{k}};
-\node at (7,-1) {\textipa{@}};
-\node at (8,-1) {\textipa{l}};
-\fill (0,1) circle [radius=3pt];
-\fill (1,6) circle [radius=3pt];
-\fill (2,6) circle [radius=3pt];
-\fill (3,1) circle [radius=3pt];
-\fill (4,6) circle [radius=3pt];
-\fill (5,1) circle [radius=3pt];
-\fill (6,1) circle [radius=3pt];
-\fill (7,6) circle [radius=3pt];
-\fill (8,1) circle [radius=3pt];
-\end{tikzpicture}
-
-\end{exe}
-
+\scalebox{.85}{\begin{tikzpicture}[scale=0.5]
+	\draw[black] (-1,0) -- (8.5,0) ; % x axis
+	\draw[black] (-1,0) -- (-1,6.5); % y axis
+	\node at (-2,1) {Plos.};
+	\node at (-2,2) {Frik.};
+	\node at (-2,3) {Nas.};
+	\node at (-2,4) {\textipa{/l/}};
+	\node at (-2,5) {\textipa{/\;R/}};
+	\node at (-2,6) {Vok.};
+	\draw[black] (0,1) -- (1,6) -- (2,6);
+	\draw[black] (3,1) -- (4,6) -- (5,1) -- (6,6) -- (7,1);
+	\node at (0,-1) {\textipa{b}};
+	\node at (1,-1) {\textipa{i:}};
+	\node at (2,-1) {\textipa{5}};
+	\node at (3,-1) {\textipa{d}};
+	\node at (4,-1) {\textipa{E}};
+	\node at (5,-1) {\textipa{k}};
+	\node at (6,-1) {\textipa{@}};
+	\node at (7,-1) {\textipa{l}};
+	\fill (0,1) circle [radius=3pt];
+	\fill (1,6) circle [radius=3pt];
+	\fill (2,6) circle [radius=3pt];
+	\fill (3,1) circle [radius=3pt];
+	\fill (4,6) circle [radius=3pt];
+	\fill (5,1) circle [radius=3pt];
+	\fill (6,6) circle [radius=3pt];
+	\fill (7,1) circle [radius=3pt];
+	\end{tikzpicture}}
+\end{figure}
+\end{minipage}
+%
+%
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}
 	\begin{itemize}
@@ -3005,26 +3265,76 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 			\end{itemize}
 			
 		Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
-		\ea
-		Urinstinkt
-		\z
-		
-		\eal
-		\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)
-		\ex \textipa{[Pu.\;RIn.(S)tInkt]} (Sonoritätsprinzip)
-		\ex \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
-		\zl 
+	\begin{exe}
+		\exi{(\ref{ex:HA2})} Urinstinkt:
+		\begin{xlist}
+			\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)
+			\ex \textipa{[Pu.\;RIn.(S)tInkt]} (Sonoritätsprinzip)
+			\ex \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
+		\end{xlist}
+	\end{exe}
 		\item Die Silbifizierung erfolgt auf der Ebene des phonologischen Wortes. Daher werden die phonologischen Wörter \ab{ur-} und \ab{Instinkt} einzeln silbifiziert.
 	
 	\end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 	\begin{itemize}	
 		\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
-			
+	\end{itemize}
+		
+		\begin{minipage}{.5\textwidth}
+			\begin{figure}
+				\scalebox{.8}{\begin{forest}
+					MyP edges [, phantom
+[$\sigma$
+	[O 
+						[x, tier=word[\textipa{S}]]
+						[x, tier=word[\textipa{t}]]
+						]
+	[R
+		[N
+						[x, tier=word[\textipa{a:}, name=a]]
+						[x, name=x]
+						]
+		[K[x[\textipa{l.}]]]
+						]
+						]
+[$\sigma$
+	[O [x, tier=word[\textipa{t}]]]
+	[R
+		[N
+						[x[\textipa{I}]]
+						]
+		[K
+						[x,name=S[\textipa{S}] ]
+						]
+						]
+						]
+[$\sigma$
+	[O, name=o]
+	[R
+		[N
+						[x[\textipa{@}]]
+						]
+						]
+						]
+						]
+						\draw[black](o.south)--(S.north);
+						\draw[black](a.north)--(x.south);
+				\end{forest}}
+			\end{figure}
+		\end{minipage}
+	\begin{minipage}{.45\textwidth}
+		\begin{itemize}
+			\item Onset-Maximierung
+			\item Sonoritätshierarchie im Onset: *Sonorant vor Obstruent (*[\textipa{lt}])
+			\item Silbengelenk nach ungespanntem, betonten Vokal
 		\end{itemize}
+	\end{minipage}
+
 \end{frame}
 
 
@@ -3033,11 +3343,15 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 					
 		\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/ phonologischen Gründen im Deutschen nicht möglich sind:
 			
-		\eal
-		\ex[*]{\textipa{['Napl.O:t]}} Onset Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang
-		\ex[*]{\textipa{[a\;R.'tUng]}} Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut
-		\zl
-			
+		\begin{exe}
+			\exi{(\ref{ex:HA3})}
+			\begin{xlist}
+		\ex[*]{\textipa{['Napl.O:t]}: \textcolor{red}{Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang}}
+\ex[*]{\textipa{[a\;R.'tUng]}: \textcolor{red}{Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut}}
+			\end{xlist}
+
+		\end{exe}
+	
 	\end{itemize}
 		
 \end{frame}

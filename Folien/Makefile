@@ -13,7 +13,8 @@ SOURCE= grundkurs-handout.tex\
 	05a-wortbildung-include.tex\
 	05b-flexion-include.tex\
 	06a-syntax-stefan-include.tex\
-	06b-syntax-ip-include.tex\
+	06b-xbar-simple-include.tex\
+	06c-syntax-ip-include.tex\
 	06-syntax-ha2.tex\
 	07-semantik-stefan-include.tex\
 	08-pragmatik-stefan-include.tex
@@ -61,7 +62,7 @@ handout: grundkurs-handout.pdf
 ma-handout: ma-uebung-handout.pdf
 
 
-o-public: grundkurs-handout.pdf dp-tp-handout.pdf
+o-public: grundkurs-handout.pdf dp-tp-handout.pdf 01-sprache-sprachwissenschaft-handout.pdf 02-phonetik-handout.pdf
 	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 

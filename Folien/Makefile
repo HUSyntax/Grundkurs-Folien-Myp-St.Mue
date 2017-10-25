@@ -2,7 +2,8 @@
 STYLE-PATH= ${HOME}/Library/tex/texmf/latex/
 
 
-SOURCE= 00-Organisatorisches-include.tex \
+SOURCE= grundkurs-handout.tex\
+	00-Organisatorisches-include.tex \
         01a-sprache-sprachwissenschaft-include.tex\
         01b-sprache-sprachwissenschaft-include.tex\
         02-phonetik-include.tex\
@@ -12,7 +13,9 @@ SOURCE= 00-Organisatorisches-include.tex \
 	05a-wortbildung-include.tex\
 	05b-flexion-include.tex\
 	06a-syntax-stefan-include.tex\
-	06b-syntax-ip-include.tex\
+	06b-xbar-simple-include.tex\
+	06c-syntax-ip-include.tex\
+	06-syntax-ha2.tex\
 	07-semantik-stefan-include.tex\
 	08-pragmatik-stefan-include.tex
 
@@ -44,27 +47,22 @@ check: check-grundkurs-handout-2x2.pdf
 # 	latex 03bPhonologie-slides 
 
 
-03b-phonologie-handout-2x2.pdf: 03b-phonologie-handout.pdf
-	beamer2handout $?
-
-07-semantik-handout-2x2.pdf: 07-semantik-handout.pdf
-	beamer2handout $?
 
 
 silben: 03b-phonologie-handout-2x2.pdf
 
 silben-slides: 03b-phonologie-slides.pdf
-silben-handout: 03b-phonologie-handout-2x2.pdf
+silben-handout: 03b-phonologie-handout.pdf
 
-semantik-handout: 07-semantik-handout-2x2.pdf
+semantik-handout: 07-semantik-handout.pdf
 
 slides: grundkurs-slides.pdf
 handout: grundkurs-handout.pdf
 
-ma-handout: ma-uebung-handout-2x2.pdf
+ma-handout: ma-uebung-handout.pdf
 
 
-o-public: grundkurs-handout.pdf dp-tp-handout.pdf
+o-public: grundkurs-handout.pdf dp-tp-handout.pdf 01-sprache-sprachwissenschaft-handout.pdf 02-phonetik-handout.pdf
 	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 

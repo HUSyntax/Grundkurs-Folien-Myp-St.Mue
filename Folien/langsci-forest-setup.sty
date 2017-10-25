@@ -125,7 +125,9 @@
 % http://tex.stackexchange.com/questions/167983/getting-rid-of-a-default-where-specification
 \forestset{
 sm edges/.style={for tree={parent anchor=south, child anchor=north,base=bottom},
-                 where n children=0{tier=word,delay=with translation}{} %,delay=with translation
+                 where n children=0{tier=word,
+%                 	delay=with translation
+                 }{} %,delay=with translation
                  },
 sm edges without translation/.style={for tree={parent anchor=south, child anchor=north,base=bottom},
                  where n children=0{tier=word}{}

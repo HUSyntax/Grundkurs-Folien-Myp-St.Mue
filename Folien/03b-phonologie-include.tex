@@ -1636,23 +1636,21 @@ MyP edges,
 
 \begin{figure}
 %\input{localforestsyllables}
-\small
 \centering
+\scalebox{.8}{
 \begin{forest} MyP edges, [,phantom
   [$\sigma$
-    [O[x[\textipa{f}]][x[\textipa{K}]]]
-    [R[N[x[\textipa{\textopeno}]]][K[x[\textipa{s}]]]]
+    [O[x, tier=word[\textipa{f}]][x, tier=word[\textipa{K}]]]
+    [R[N[x, tier=word[\textipa{\textopeno}]]][K[x[\textipa{s}]]]]
   ]
   [$\sigma$
-    [O[x[\textipa{t}]]]
+    [O[x, tier=word[\textipa{t}]]]
     [R[N[x[\textipa{I}]]][K[x[\c{c}]]]]
   ]  
 ]
-\end{forest}
+\end{forest}}
 
 % frostig
-
-
 \caption{Konstituentenmodell}
 \end{figure}
 
@@ -2139,6 +2137,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 \begin{minipage}{.45\textwidth}
 	\begin{figure}
 		\centering
+		\scalebox{.75}{
 			\begin{tikzpicture}[scale=0.5]
 			\draw[black] (-1,0) -- (6.5,0) ; % x axis
 			\draw[black] (-1,0) -- (-1,6.5); % y axis
@@ -2163,7 +2162,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 			\fill (4,2) circle [radius=3pt];
 			\fill (5,6) circle [radius=3pt];
 			\fill (6,3) circle [radius=3pt];
-			\end{tikzpicture}
+			\end{tikzpicture}}
 	\end{figure}
 \end{minipage}
 \begin{minipage}{.05\textwidth}
@@ -2172,6 +2171,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 \begin{minipage}{.45\textwidth}
 	\begin{figure}
 		\centering
+		\scalebox{.75}{
 		\begin{tikzpicture}[scale=0.5]
 			\draw[black] (-1,0) -- (4.5,0) ; % x axis
 			\draw[black] (-1,0) -- (-1,6.5); % y axis
@@ -2192,7 +2192,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 			\fill (2,1) circle [radius=3pt];
 			\fill (3,2) circle [radius=3pt];
 			\fill (4,1) circle [radius=3pt];
-			\end{tikzpicture}
+			\end{tikzpicture}}
 	\end{figure}
 \end{minipage}
 

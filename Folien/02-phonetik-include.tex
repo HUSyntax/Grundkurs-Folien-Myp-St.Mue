@@ -718,7 +718,7 @@ Wie viele Laute haben die folgenden Wörter?
 	\node at (1,0){\textipa{a}};
 	\node[right] at (-1.5,3){\textipa{y}};
 	\node[left] at (-1.5,3){\textipa{i}};
-	\node at (-0.5,2.5){\textipa{I Y}};
+	\node at (-0.5,2.5){\textipa{I . Y}};
 	\node[right] at (-1,2){\textipa{\o}};
 	\node[left] at (-1,2){\textipa{e}};
 	\node[right] at (-0.5,1){\textipa{\oe}};
@@ -755,7 +755,8 @@ Wie viele Laute haben die folgenden Wörter?
 \begin{frame}
 \frametitle{Vokale im Deutschen}
 
-
+%\begin{figure}
+%	\centering
 	\centerline{
 	\begin{tikzpicture}
 	\draw[fill] (0,0) circle [radius=0.05];
@@ -807,7 +808,9 @@ Wie viele Laute haben die folgenden Wörter?
 	\node at (1,0){\rotul{\textipa{a}}};
 	\node[right] at (-1.5,3){\rotul{\textipa{y}}};
 	\node[left] at (-1.5,3){\rotul{\textipa{i}}};
-	\node at (-0.5,2.5){\rotul{\textipa{I}} \textipa{\underline{Y}}};
+	\node[left] at (-0.5,2.5){\rotul{\textipa{I}}};
+	\node[right] at (-0.5,2.5){\rotul{\textipa{Y}}};
+	\draw[fill] (-0.5,2.5) circle [radius=0.05];
 	\node[right] at (-1,2){\rotul{\textipa{\o}}};
 	\node[left] at (-1,2){\rotul{\textipa{e}}};
 	\node[right] at (-0.5,1){\rotul{\textipa{\oe}}};
@@ -818,10 +821,11 @@ Wie viele Laute haben die folgenden Wörter?
 	\draw[black] (0.85,2)--(1.6,2);
 	\draw[black] (0,1)--(0.45,1);
 	\draw[black] (1.1,1)--(1.5,1);
-        \end{tikzpicture}
+	        \end{tikzpicture}
 }
+%\end{figure}
         
-Deutsche Vokale sind \alt<handout>{unterstrichen}{rot}
+        Deutsche Vokale sind \alt<handout>{unterstrichen}{rot}
 
 
 %Dorenbuschs Vokalviereck:
@@ -1388,7 +1392,8 @@ Lösung:
 
   \frametitle{Übung}
 
-  Beschreiben Sie die Konsonanten in den folgenden Wörtern und geben Sie die entsprechenden phonetischen Symbole an:
+\begin{itemize}
+	\item [] Beschreiben Sie die Konsonanten in den folgenden Wörtern und geben Sie die entsprechenden phonetischen Symbole an:
 
 		 	\begin{enumerate}
 		 		\item Busch
@@ -1401,6 +1406,7 @@ Lösung:
 		 		\item Wald
 		 	\end{enumerate}
 
+\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1408,31 +1414,26 @@ Lösung:
 \begin{frame}
 \frametitle{Lösung}
 
-	\begin{columns}
-	 	\column{.20\textwidth}
-\begin{enumerate}
-	\item {[\textipa{bUS}]}
-	\item {[\textipa{\textprimstress ma:l@n}]}
-	\item {[\textipa{m\t{aU}s}]}
-	\item {[\textipa{\textprimstress aXtU\ng}]}
-	\item {[\textipa{Ze:\textprimstress i:}]}
-	\item {[\textipa{\t{ts}IKp@n}]}
-	\item {[\textipa{\textprimstress vI\c{c}tI\c{c}}]}
-	\item {[valt]}
-\end{enumerate}
-\column{.70\textwidth}
-\scriptsize
-\begin{enumerate}
-	\item[] b: bilabialer, stimmhafter Plosiv \textipa{S}:~postalveolarer, stimmloser Frikativ
-	\item[]  m:~bilabialer, stimmhafter Nasal; n:~alveolarer, stimmhafter Nasal, l:~alveolaer, stimmhafter Lateral
-	\item[]  m:~s.o.; s:~stimmloser, alveolarer Frikativ
-	\item[]  \textipa{X}:~velarer, stimmloser Frikativ
-	\item[]  \textipa{Z}: postalveolarer, stimmhafter Frikativ, n:~s.o.
-	\item[] \textipa{\t{ts}}: alveolare, stimmlose Affrikate; \textipa{K}:~uvularer, stimmhafter Frikativ; p:~bilabialer, stimmloser Plosiv; n: s.o.
-	\item[]  \textipa{v}: labiodentaler, stimmhafter Frikativ; \textipa{\c{c}}: palataler, stimmloser Frikativ; t: alveolarer, stimmloser Plosiv
-	\item[]  v, l, t: s.o.
-\end{enumerate}
-\end{columns}
+\begin{table}
+	\scalebox{.9}{
+		\begin{tabular}{llp{9cm}}
+1. Busch &{[\textipa{bUS}]} 								& b: bilabialer, stimmhafter Plosiv \textipa{S}:~postalveolarer, stimmloser Frikativ\\
+\pause
+2. malen & {[\textipa{\textprimstress ma:l@n}]} 	& m:~bilabialer, stimmhafter Nasal; n:~alveolarer, stimmhafter Nasal, l:~alveolaer, stimmhafter Lateral\\
+\pause
+3. Maus & {[\textipa{m\t{aU}s}]}							& m:~s.o.; s:~stimmloser, alveolarer Frikativ \\
+\pause
+4. Achtung &{[\textipa{\textprimstress aXtU\ng}]} & \textipa{X}:~velarer, stimmloser Frikativ; t:~alveolarer, stimmloser Plosiv \textipa{\ng}: velarer, stimmhafter Nasal\\
+\pause
+5. Genie	&{[\textipa{Ze:\textprimstress ni:}]}		& \textipa{Z}: postalveolarer, stimmhafter Frikativ, n:~s.o.\\
+\pause
+6. zirpen & {[\textipa{\t{ts}IKp@n}]}						& \textipa{\t{ts}}: alveolare, stimmlose Affrikate; \textipa{K}:~uvularer, stimmhafter Frikativ; p:~bilabialer, stimmloser Plosiv; n: s.o.\\
+\pause
+7. wichtig & {[\textipa{\textprimstress vI\c{c}tI\c{c}}]} & \textipa{v}: labiodentaler, stimmhafter Frikativ; \textipa{\c{c}}: palataler, stimmloser Frikativ t: s.o.\\
+\pause
+8. Wald 	&	{[\textipa{valt}]}									& v, l, t: s.o.\\
+\end{tabular}}
+\end{table}
 
 \end{frame}
 
@@ -1661,7 +1662,9 @@ Lösung:
 	\node at (1,0){\textipa{a}};
 	\node[right] at (-1.5,3){\textipa{y}};
 	\node[left] at (-1.5,3){\textipa{i}};
-	\node at (-0.5,2.5){\textipa{I Y}};
+	\node[left] at (-0.5,2.5){\textipa{I}};
+	\node[right] at (-0.5,2.5){\textipa{Y}};
+	\draw[fill] (-0.5,2.5) circle [radius=0.05];
 	\node[right] at (-1,2){\textipa{\o}};
 	\node[left] at (-1,2){\textipa{e}};
 	\node[right] at (-0.5,1){\textipa{\oe}};

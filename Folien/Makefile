@@ -62,7 +62,7 @@ handout: grundkurs-handout.pdf
 ma-handout: ma-uebung-handout.pdf
 
 
-o-public: grundkurs-handout.pdf dp-tp-handout.pdf 01a-sprache-sprachwissenschaft-handout.pdf 01b-sprache-sprachwissenschaft-handout.pdf 02-phonetik-handout.pdf 03a-phonologie-handout.pdf 03b-phonologie-handout.pdf 04a-graphematik-handout.pdf 05a-morphologie-handout.pdf
+o-public: grundkurs-handout.pdf dp-tp-handout.pdf 01-sprache-sprachwissenschaft-handout.pdf 02-phonetik-handout.pdf 03a-phonologie-handout.pdf 03b-phonologie-handout.pdf 04a-graphematik-handout.pdf 05a-morphologie-handout.pdf
 	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 

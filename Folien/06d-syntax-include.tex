@@ -69,10 +69,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
 
 \begin{itemize}
-
 	\item Topologisches Modell \ras nur grobe Gliederung des Satzes in 5 Felder
 	\item[]	
 	\item Neue feingliedrigere Modellierung \ras X-Bar-Schema
@@ -96,7 +94,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
 
 \begin{itemize}
 
@@ -152,7 +149,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
 
 \begin{itemize}
 
@@ -181,7 +177,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
 
 \begin{itemize}
 	\item Sehr starke Tradition und Verzweigung seit den 1950er Jahren
@@ -228,12 +223,33 @@
 	\item Strenge Modularität des Sprachsystems 
 \end{itemize}
 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
 \begin{figure}
 \centering
-
 	\includegraphics[scale=.3]{material/03ArchitekturSprachsystem}
-	%\caption{Architektur des Sprachsystems}
+	\caption{Architektur des Sprachsystems}
 \end{figure}
+
+%\begin{tikzpicture}
+%\node[above] at (0,0) {Architektur des Sprachsystems};
+%\node[below] at (0,0) {Lexikon};
+%\draw[->] (0,-0.5)--(0,-0.9);
+%\draw (0,-2.5) ellipse (110pt and 45 pt);
+%\draw[->] (0,-2.3)--(-2,-2.6);
+%\node[below] at (-2,-2.6) {Phonetische Form};
+%\draw[->] (0,-2.3)--(2,-2.6);
+%\node[below] at (2,-2.6) {Semantische Form};
+%\node at (0,-1.5) {Sprachliche Strukturbildung};
+%\node at (0,-2) {(Morpho-)Syntaktische Struktur};
+%\draw[<->] (-2,-4)--(-2,-4.5);
+%\draw[<->] (2,-4)--(2,-4.5);
+%\node[below] at (-2,-4.5) {Artikulatorisch-perzeptorischer Apparat};
+%\end{tikzpicture}
 
 \end{frame}
 
@@ -253,9 +269,7 @@
 
 \begin{itemize}
 	\item Explikation der syntaktischen Beziehungen zwischen einem Kopf und seinen modifizierenden (\textbf{Adjunkten}), spezifizierenden (\textbf{Spezifikatoren}), und ergänzenden (\textbf{Argumenten}) Einheiten
-	\item[]
 	\item Explikation endozentrischer Konstruktionen
-	\item[]
 	\item Bis dahin wurden Sätze als exozentrische Konstruktionen behandelt!
 \end{itemize}
 
@@ -307,13 +321,18 @@
 \end{enumerate}
 \end{multicols}
 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
 \begin{figure}[b]
 	\begin{minipage}[b]{0.05\textwidth}
 	\end{minipage} 
 	%
 	\begin{minipage}[b]{0.50\textwidth}
 	\centering
-	\tiny{
 		\begin{forest}
 		sm edges,
 		[XP [YP\\Spezifikator]
@@ -322,7 +341,6 @@
 			]
 		]
 		\end{forest}
-		}
 		\caption{X-bar Schema}	
   	\end{minipage}  
   	%  
@@ -434,7 +452,6 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Interpretation}}
 
 \begin{itemize}
 	\item Sehr intuitives (aber etwas unzuverlässiges) Kriterium, v.\,a. stark theorieabhängig
@@ -467,19 +484,19 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 	\item Welches Element in der Phrase\\
 	{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]\\
 	steuert die Interpretation?
-	\item[] \pause
+\pause
 	\item[\ra] \emph{Wasser} (Entität)
-	\item[] \pause
+\pause
 	\item Welches Element in der Phrase\\
 	Peter wartet \alert{[an der Ecke]}.\\
 	steuert die Interpretation?
-	\item[] \pause
+\pause
 	\item[\ra] \emph{an} (Lokation)
-	\item[] \pause
+\pause
 	\item Welches Element in der Phrase\\
 	Peter \alert{[wartet an der Ecke]}.\\
 	steuert die Interpretation?
-	\item[] \pause
+ \pause
 	\item[\ra] \emph{wartet} (Handlung)
 
 \end{itemize}
@@ -601,12 +618,12 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 \end{itemize}
 
 \begin{figure}[b]
-	\begin{minipage}[b]{0.05\textwidth}
-	\end{minipage} 
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
 	%
 	\begin{minipage}[b]{0.40\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.68}{
 		\begin{forest}
 		sm edges,
 		[VP [NP [Peter,roof]]
@@ -622,11 +639,12 @@ node[anchor=west,align=center]{Kopf};}
   	%  
   	\pause            
 	\begin{minipage}[b]{0.05\textwidth}
+		\hfill
   	\end{minipage}
   	%         
   	\begin{minipage}[b]{0.40\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.68}{
 		\begin{forest}
 		sm edges,
 		[NP [Det [Peters]]
@@ -640,8 +658,8 @@ node[anchor=east,align=center]{Kopf};}
 		\caption{NP}
   	\end{minipage}  
   	%              
-	\begin{minipage}[b]{0.05\textwidth}
-  	\end{minipage}
+%	\begin{minipage}[b]{0.05\textwidth}
+%  	\end{minipage}
   	
 \end{figure}
 
@@ -722,9 +740,9 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 
 \eal 
-\ex [Peter] schläft. \hfill (1 Argument)
-\ex [Peter] küsst [Maria]. \hfill (2 Argumente)
-\ex [Maria] schenkt [Peter] [die Blumen]. \hfill (3 Argumente)
+\ex {[Peter] schläft.} \hfill (1 Argument)
+\ex {[Peter] küsst [Maria].} \hfill (2 Argumente)
+\ex {[Maria] schenkt [Peter] [die Blumen].} \hfill (3 Argumente)
 \zl
 
 \pause
@@ -780,29 +798,17 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 \ea \textbf{Modalverb} verlangt Infinitiv\\
 \dots dass er es \alert{kaufen$_{\textsc{inf}}$ will}
-\z
-
 \pause
-
-\ea \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
+\ex \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
 \dots dass er es \alert{gekauft$_{\textsc{part}}$ hat}
-\z
-
 \pause
-
-\ea \textbf{Modalverb} verlangt Infinitiv\\
+\ex \textbf{Modalverb} verlangt Infinitiv\\
 \dots dass er es \alert{[gekauft haben]$_{\textsc{inf}}$ will}
-\z
-
 \pause
-
-\ea \textbf{Modalverb} verlangt Infinitiv\\
+\ex \textbf{Modalverb} verlangt Infinitiv\\
 \dots dass er es \alert{[gekauft haben wollen]$_{\textsc{inf}}$ muss}
-\z
-
 \pause
-
-\ea \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
+\ex \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
 \dots dass er es \alert{[gekauft haben wollen müssen/gemusst]$_{\textsc{inf}}$ hat}
 \z
 
@@ -961,7 +967,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Modifikatoren vs. Argumente}
 
 \textbf{Modifikatoren} sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 
@@ -997,7 +1002,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Modifikatoren vs. Argumente}
 
 \textbf{Modifikatoren} sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 
@@ -1017,7 +1021,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Modifikatoren vs. Argumente}
 
 \textbf{Modifikatoren} (syntaktisch: Adjunkte) sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 

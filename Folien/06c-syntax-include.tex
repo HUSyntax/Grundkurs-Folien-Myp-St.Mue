@@ -2,6 +2,7 @@
 %%%             Metadata                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
+
 \title{Grundkurs Linguistik}
 
 \subtitle{Syntax III: Topologie \& Satzmodus}
@@ -21,6 +22,13 @@
 
 %\hyphenation{nobreak}
 
+
+%\togglefalse{uebung}
+\toggletrue{uebung}
+\togglefalse{loesung}
+%\toggletrue{loesung}
+\togglefalse{toc}
+%\toggletrue{toc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                   %%%
@@ -46,7 +54,7 @@
 %\nocite{Brandt&Co06a}
 \nocite{Glueck05a} 
 %\nocite{Grewendorf&Co91a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009} 
 %\nocite{Meibauer&Co07a}
 \nocite{MuellerS13f} 
 \nocite{MuellerS15b}
@@ -187,13 +195,19 @@ Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\
 
 \begin{itemize}
 	\item Auch: Stellungsfeldermodell,  lineares Modell, Felderstrukturenmodell 
-	\item[]
 	\item 5-gliedriges Grundmodell
-	\item[]
 	\item Erfasst mehr Daten als das Dreifeldermodell \ras Alle Verbstellungs- bzw. Satztypen werden in einem \textbf{einheitlichen} Muster abgebildet
-	\item[]
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
 	\item Satz in topologische Abschnitte eingeteilt:
 	\begin{itemize}
+		\item []
 		\item \textbf{Vorfeld (VF):} Feld vor dem finiten Verb
 		\item \textbf{Linke Satzklammer (LSK):} Finites Verb oder Subjunktion
 		\item \textbf{Mittelfeld (MF):} Konstituente(n)
@@ -205,7 +219,7 @@ Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\
 
 \begin{table}
 \centering
-\scalebox{0.8}{
+\scalebox{0.85}{
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
@@ -219,7 +233,6 @@ Gestern & ist & Nathalie früh nach Hause & gegangen, & weil sie müde war. \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Uniformes Grundmodell}
 
 \begin{itemize}
 	\item Abschnitte bzw. Satzeinheiten resultieren aus der Stellung der finiten und/oder infiniten Verbform ($\approx$ aus dem Verbkomplex)
@@ -241,7 +254,6 @@ Nathalie & \alert{ist} & zu Hause & \alert{geblieben}, & weil sie krank ist. \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Uniformes Grundmodell}
 
 \begin{itemize}
 	\item Analyse von Haupt- und Nebensätzen und komplexen Satzstrukturen möglich!
@@ -462,7 +474,6 @@ Du & hast & uns alle & begeistert & \alert{mit deiner großartigen Präsentation
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Eigenschaften der Felder}
 
 \begin{itemize}
 	\item Im VF, MF, NF kann ein (oder mehrere) Satz enthalten sein, der selbst wieder nach dem Feldermodell analysiert werden kann. 
@@ -470,7 +481,7 @@ Du & hast & uns alle & begeistert & \alert{mit deiner großartigen Präsentation
 
 \begin{table}
 \centering
-\scalebox{0.75}{
+\scalebox{0.8}{
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
@@ -532,56 +543,47 @@ Anke & hat, & \alert{obwohl sie geschlafen hat}, & erwischt. &  \\
 %	\tableofcontents[currentsection]
 %}
 
-\iftoggle{uebung}{
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{uebung}{
+
 \begin{frame}
 \frametitle{Übung}
 
-\begin{enumerate}
-	\item Ordnen Sie die folgenden \textbf{Matrixsätze} in das topologische Modell ein:
+\begin{itemize}
+	\item[1.] Ordnen Sie die folgenden \textbf{Matrixsätze} in das topologische Modell ein:
 
 
-\ea Christiane schläft.
-\z
+\eal
+\ex Christiane schläft.
+\ex Schläft Christiane?
+\ex Ob Christiane schläft?
+\ex Schlaf!
+\ex Dass Christiane schläft, ist mir klar.
+\ex Ich wusste, dass Christiane schläft.
+\ex Er hat sich gedacht, dass Christiane wieder schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, dass Christiane schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, als wir gemerkt haben, dass Christiane schläft.
+\zl
 
-\ea Schläft Christiane?
-\z
-
-\ea Ob Christiane schläft?
-\z
-
-\ea Schlaf!
-\z
-
-\ea Dass Christiane schläft, ist mir klar.
-\z
-
-\ea Ich wusste, dass Christiane schläft.
-\z
-
-\ea Er hat sich gedacht, dass Christiane wieder schläft.
-\z
-
-\ea Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, dass Christiane schläft.
-\z
-
-\ea Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, als wir gemerkt haben, dass Christiane schläft.
-\z
-
-\end{enumerate}
+\end{itemize}
 
 \end{frame}
 
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{loesung}{
+
+\iftoggle{loesung}{
+	
 \begin{frame}
 \frametitle{Lösung}
 
 \begin{table}
 \centering
 \scalebox{0.75}{
-\begin{tabular}{l|l|l|l|l}
+\begin{tabular}{p{3.5cm}|l|p{2.5cm}|l|p{3.5cm}}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
 Christiane & schläft. & & & \\
@@ -607,46 +609,37 @@ Weil wir es uns nicht vorstellen konnten, & haben & wir uns & gewundert, & als w
 
 \end{frame}
 
-%}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \iftoggle{uebung}{
 
 \begin{frame}
 \frametitle{Übung}
 
-\begin{enumerate}
+\begin{itemize}
 
-	\item Ordnen Sie die folgenden \textbf{Sätze und ihre eingebetteten Nebensätze} in das topologische Modell ein:
-
-
-\ea Dass Christiane schläft, ist mir klar.
-\z
-
-\ea Ich wusste, dass Christiane schläft.
-\z
-
-\ea Er hat sich gedacht, dass Christiane wieder schläft.
-\z
-
-\ea Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, dass Christiane schläft.
-\z
-
-\ea Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, als wir gemerkt haben, dass Christiane schläft.
-\z
-
-\ea Die Frau, die die roten Schuhe trägt, schläft wieder.
-\z
-
-\ea Als Sophia in der Flüchtlingsunterkunft geholfen hat, hat sie dort den jungen Mann getroffen, mit dem sie sich ein Büro teilt.  	
-\z	
+	\item[2.] Ordnen Sie die folgenden \textbf{Sätze und ihre eingebetteten Nebensätze} in das topologische Modell ein:
+\eal
+\ex Dass Christiane schläft, ist mir klar.
+\ex Ich wusste, dass Christiane schläft.
+\ex Er hat sich gedacht, dass Christiane wieder schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, dass Christiane schläft.
+\ex Weil wir es uns nicht vorstellen konnten, haben wir uns gewundert, als wir gemerkt haben, dass Christiane schläft.
+\ex Die Frau, die die roten Schuhe trägt, schläft wieder.
+\ex Als Sophia in der Flüchtlingsunterkunft geholfen hat, hat sie dort den jungen Mann getroffen, mit dem sie sich ein Büro teilt.  	
+\zl
 	
-\end{enumerate}
+\end{itemize}
 
 \end{frame}
 
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{loesung}{
+
+\iftoggle{loesung}{
 
 
 \begin{frame}
@@ -654,35 +647,44 @@ Weil wir es uns nicht vorstellen konnten, & haben & wir uns & gewundert, & als w
 
 \begin{table}
 \centering
-\scalebox{0.75}{
-\begin{tabular}{l|l|l|l|l}
+\scalebox{0.63}{
+\begin{tabular}{p{5cm}|l|p{4cm}|p{1.5cm}|p{4cm}}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline
 Dass Christiane schläft, & ist & mir klar. & & \\
+\hline
 & Dass & Christiane & schläft & \\
 \hline
 Ich & wusste, & dass Christiane schläft. & & \\
+\hline
 & dass & Christiane & schläft. & \\
 \hline
 Er & hat & sich & gedacht, & dass Christiane wieder schläft. \\
+\hline
 & dass & Christiane wieder & schläft. & \\
 \hline
 Weil wir es uns nicht vorstellen konnten, & haben & wir uns & gewundert, & dass Christiane schläft.\\
+\hline
 & Weil & wir es uns nicht & vorstellen konnten & \\
+\hline
 & dass & Christiane & schläft. & \\
 \hline
 Die Frau, die die roten Schuhe trägt, & schläft & wieder. & & \\
+\hline
 Die Frau, die & & die roten Schuhe & trägt & \\
 \hline
 Als Sophia in der Flüchtlingsunterkunft geholfen hat, & hat & sie dort den jungen Mann & getroffen, & mit dem sie sich ein Büro teilt. \\
+\hline
 & Als & Sophia in der Flüchtlingsunterkunft & geholfen hat & \\
+\hline
 mit dem & & sie sich ein Büro & teilt. & \\
 \end{tabular}
 }
 \end{table}
 
 \end{frame}
- %}
+ }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Satztypen \& Satzmodi}
 %\frame{
@@ -726,7 +728,6 @@ mit dem & & sie sich ein Büro & teilt. & \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Satztypen \& Satzmodi}
 
 \begin{block}{Satzmodus (Auch: Satzart)}
 Satzmodus meint die Klassifikation von komplexen Zeichen (Sätzen) mit einer Form- und einer Funktionsseite. Der Sprecher wählt also eine bestimmte Form aus, um eine bestimmte Funktion zu erfüllen.
@@ -753,7 +754,6 @@ Satzmodus meint die Klassifikation von komplexen Zeichen (Sätzen) mit einer For
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Satztypen \& Satzmodi}
 
 Die wichtigsten Satzmodi des Deutschen:
 
@@ -767,9 +767,7 @@ Die wichtigsten Satzmodi des Deutschen:
 	
 	\item Interrogativ(-satz) \ras Fragesatz
 	\ea Verschenkt Uta ihr Auto?
-	\z
-	
-	\ea Ob Uta ihr Auto verschenkt?
+	\ex Ob Uta ihr Auto verschenkt?
 	\z
 	
 	\item Imperativ(-satz) \ras Aufforderungssatz
@@ -847,11 +845,10 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 		\item Eine Antwort wird verlangt.
 	\end{itemize}
 	
-	\ea Machst du heute deine Hausaufgaben?
-	\z
-	
-	\ea Ob du heute deine Hausaufgaben machst?
-	\z
+	\eal
+	\ex Machst du heute deine Hausaufgaben?
+	\ex Ob du heute deine Hausaufgaben machst?
+	\zl
 	
 \end{itemize}
 
@@ -885,11 +882,10 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 		\item Eine Antwort dem Fragewort entsprechend wird verlangt.
 	\end{itemize}
 	
-	\ea Was machst du heute?
-	\z
-	
-	\ea Wer macht heute seine Hausaufgaben?
-	\z
+	\eal
+	\ex Was machst du heute?
+	\ex Wer macht heute seine Hausaufgaben?
+	\zl
 	
 \end{itemize}
 
@@ -922,14 +918,11 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 		\item zum Ausdrücken von Aufforderungen, Bitten, Befehlen, Drohungen, \dots
 	\end{itemize}
 	
-	\ea Mach heute deine Hausaufgaben!
-	\z
-	
-	\ea Machen Sie heute Ihre Hausaufgaben!
-	\z
-	
-	\ea Jetzt macht doch eure Hausaufgaben!
-	\z
+	\eal
+	\ex Mach heute deine Hausaufgaben!
+	\ex Machen Sie heute Ihre Hausaufgaben!
+	\ex Jetzt macht doch eure Hausaufgaben!
+	\zl
 	
 \end{itemize}
 
@@ -962,17 +955,12 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 		\item zum Ausdrücken von Überraschungen (nicht dialogisch!)
 	\end{itemize}
 	
-	\ea Hat er (aber auch) tolle Hausaufgaben abgegeben!
-	\z
-	
-	\ea Er hat (aber auch) tolle Hausaufgaben abgegeben!
-	\z
-	
-	\ea Was für tolle Hausaufgaben er abgegeben hat!
-	\z
-
-	\ea Was für tolle Hausaufgaben hat er abgegeben!
-	\z
+	\eal
+	\ex Hat er (aber auch) tolle Hausaufgaben abgegeben!
+	\ex Er hat (aber auch) tolle Hausaufgaben abgegeben!
+	\ex Was für tolle Hausaufgaben er abgegeben hat!
+	\ex Was für tolle Hausaufgaben hat er abgegeben!
+	\zl
 		
 \end{itemize}
 
@@ -1005,11 +993,10 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 		\item zum Ausdrücken von irrealen Wünschen (nicht dialogisch!)
 	\end{itemize}
 	
-	\ea Hätte er (doch / nur) tolle Hausaufgaben abgegeben!
-	\z
-	
-	\ea Wenn er (doch / nur) tolle Hausaufgaben abgegeben hätte!
-	\z
+	\eal
+	\ex Hätte er (doch / nur) tolle Hausaufgaben abgegeben! 
+	\ex Wenn er (doch / nur) tolle Hausaufgaben abgegeben hätte!
+	\zl
 		
 \end{itemize}
 
@@ -1023,66 +1010,54 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 %\frametitle{~}
 %	\tableofcontents[currentsection]
 %}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Übungen}
 
-\begin{enumerate}
-	\item Bestimmen Sie den Satzmodus der folgenden Sätze, geben Sie dabei die Merkmale zur Bestimmung des Satztyps, sowie den möglichen Funktionstyp an. 
-\end{enumerate}
+\begin{itemize}
+	\item[3.] Bestimmen Sie den Satzmodus der folgenden Sätze, geben Sie dabei die Merkmale zur Bestimmung des Satztyps, sowie den möglichen Funktionstyp an. 
+\end{itemize}
 
-\ea \label{ex:Rechnung} Wir haben unsere Rechnungen bezahlt. 
-\z
-
-\ea \label{ex:Wagen} Er hätte einen Wagen kaufen können. 
-\z
-
-\ea \label{ex:Folien} Hast du endlich die Folien fertig? 
-\z
-
-\ea \label{ex:krank} Ob ich morgen noch krank bin? 
-\z
-
-\ea \label{ex:Iss} Iss!
-\z
-
-\ea \label{ex:Iss} Wenn ich nur Geld hätte!x
-\z
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übungen}
-
-\ea \label{ex:spät} Kannst du mir sagen, wie spät es ist? 
-\z
-
-\ea \label{ex:Baum} Was für einen tollen Baum hat er gemalt? 
-\z
-
-\ea \label{ex:leise} Sie sind jetzt aber leise!
-\z
-
-\ea \label{ex:Verständnis} Wir bitten um Verständnis.
-\z
-
-\ea \label{ex:Störung} Verzeihen Sie die Störung.
-\z
-
-\ea \label{ex:geschlagen} Wen hast du geschlagen?
-\z
-
-\ea \label{ex:Prüfung} Wenn ich doch die Prüfung bestehe, kaufe ich mir ein Auto.
-\z
+\eal
+\ex \label{ex:Rechnung} Wir haben unsere Rechnungen bezahlt. 
+\ex \label{ex:Wagen} Er hätte einen Wagen kaufen können. 
+\ex \label{ex:Folien} Hast du endlich die Folien fertig?
+\ex \label{ex:krank} Ob ich morgen noch krank bin? 
+\ex \label{ex:Iss} Iss!
+\ex \label{ex:Geld} Wenn ich nur Geld hätte!
+\zl
 
 \end{frame}
 
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{uebung}{
+
+\begin{frame}
+\frametitle{Übungen}
+
+\eal
+\ex \label{ex:spät} Kannst du mir sagen, wie spät es ist? 
+\ex \label{ex:Baum} Was für einen tollen Baum hat er gemalt? 
+\ex \label{ex:leise} Sie sind jetzt aber leise!
+\ex \label{ex:Verständnis} Wir bitten um Verständnis.
+\ex \label{ex:Störung} Verzeihen Sie die Störung.
+\ex \label{ex:geschlagen} Wen hast du geschlagen?
+\ex \label{ex:Prüfung} Wenn ich doch die Prüfung bestehe, kaufe ich mir ein Auto.
+\zl
+
+\end{frame}
+
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{loesung}{
+
+\iftoggle{loesung}{
 
 \begin{frame}
 \frametitle{Lösungsvorschlag}
@@ -1095,23 +1070,28 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 \item zu \ref{ex:Iss}: Imperativsatz, Aufforderung
 \item zu \ref{ex:Geld}: Optativ (VL + wenn), irrealer Wunsch
 \end{itemize}
+
 \end{frame}
+
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Lösungsvorschlag}
 
+\iftoggle{loesung}{
+
 \begin{itemize}
 \item zu \ref{ex:spät}: E-Interrogativ (V1) + K-Interrogativ (VL), wenn die erste Teilantwort \gqq{ja} ist, dann folgt eine Antwort auf das Fragewort (\gqq{Ja, es ist...Uhr.})
 \item zu \ref{ex:Baum}: K-Interrogativ, Verständnis-Nachfrage
-\item: zu\ref{ex:leise}: Imperativ (V2), Befehl/ Aufforderung
+\item zu \ref{ex:leise}: Imperativ (V2), Befehl/ Aufforderung
 \item zu \ref{ex:Verständnis}: Deklarativ (V2), Aufforderung
 \item zu \ref{ex:Störung}: Imperativ (V1), Bitte
 \item zu \ref{ex:geschlagen}: K-Interrogativ (V2), Antwort auf Fragewort wird verlangt
 \item zu \ref{ex:Prüfung}: Deklarativ (V2), an Bedingung geknüpfte Mitteilung
 \end{itemize}
 
-\end{frame}
+}
 
-%}
+\end{frame}

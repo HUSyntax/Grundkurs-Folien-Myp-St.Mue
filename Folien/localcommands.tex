@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%          Commands                            %%%
+%%%            MyP-Commands                      %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,8 +89,8 @@
 % Objekt language marking:
 %\newcommand{\obj}[1]{\glqq{}#1\grqq{}}	%German double quotes
 %\newcommand{\obj}[1]{``#1''}			%English double quotes
-\newcommand{\MyPobj}[1]{\emph{#1}}		%Emphasising
-
+%\newcommand{\MyPobj}[1]{\emph{#1}}		%Emphasising
+\newcommand{\MyPobj}[1]{\textit{#1}}		%Emphasising
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Semantic types (<e,t>), features, variables and graphemes in angled brackets 
@@ -110,6 +110,17 @@
 \newcommand{\ab}[1]{$\langle$#1$\rangle$}  %%same as \abu  
 \newcommand{\abu}[1]{$\langle$#1$\rangle$} %%Umlaute
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Marking text with colour:
+% package needed: xcolor
+% Command \alert{} in Beamer >> red
+\newcommand{\alertred}[1]{\textcolor{red}{#1}}
+\newcommand{\alertblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\alertgreen}[1]{\textcolor{green}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Notizen
 \renewcommand{\marginfont}{\singlespacing}
 \renewcommand{\marginfont}{\footnotesize}
@@ -123,9 +134,12 @@
 		\end{spacing}
 	}
 }
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Outputbox
 \newcommand{\outputbox}[1]{\noindent\fbox{\parbox[t][][t]{0.98\linewidth}{#1}}\vspace{0.5em}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% (Syntactic) Trees
@@ -171,7 +185,7 @@
 %%%%%%%%%%%%%%%%%%%%%
 % RED MARKING OF TEXT:
 %\alert{bis spätestens Mittwoch, 18 Uhr}
-\newcommand{\alertred}[1]{\textcolor{red}{#1}}
+%\newcommand{\alertred}[1]{\textcolor{red}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%
 %% RESCALE BIG TABLES:

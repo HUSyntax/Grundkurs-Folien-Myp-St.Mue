@@ -5,7 +5,7 @@
 
 \title{Grundkurs Linguistik}
 
-\subtitle{Syntax III: Topologie \& Satzmodus}
+\subtitle{Syntax III: Topologisches Feldermodell, Satztypen \& Satzmodi}
 
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
@@ -23,12 +23,12 @@
 %\hyphenation{nobreak}
 
 
-%\togglefalse{uebung}
-\toggletrue{uebung}
-\togglefalse{loesung}
-%\toggletrue{loesung}
-\togglefalse{toc}
-%\toggletrue{toc}
+%%\togglefalse{uebung}
+%\toggletrue{uebung}
+%\togglefalse{loesung}
+%%\toggletrue{loesung}
+%\togglefalse{toc}
+%%\toggletrue{toc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                   %%%
@@ -52,12 +52,12 @@
 %%%%%LITERATURE:
 
 %\nocite{Brandt&Co06a}
-\nocite{Glueck05a} 
+\nocite{Glueck&Roedel16a}
 %\nocite{Grewendorf&Co91a} 
 \nocite{Luedeling2009} 
 %\nocite{Meibauer&Co07a}
-\nocite{MuellerS13f} 
-\nocite{MuellerS15b}
+%\nocite{MuellerS13f} 
+%\nocite{MuellerS15b}
 \nocite{Repp&Co15a} 
 %\nocite{Stechow&Sternefeld88a}
 \nocite{Woellstein10a}
@@ -87,7 +87,7 @@
 	\item[]
 	\item Es erfasst alle möglichen deutschen Satztypen und macht sie vergleichbar.
 	\item[]
-	\item Syntaktische Strukturen können topologisch erfasst werden: ihre Elemente werden in ihren Positionen und Abfolgen beschrieben
+	\item Syntaktische Strukturen können \textbf{topologisch} erfasst werden, d.\,h.\ ihre Elemente werden in ihren Positionen und Abfolgen \textbf{beschrieben}.
 
 \end{itemize}
 
@@ -99,11 +99,20 @@
 \frametitle{Das topologische Modell}
 
 \begin{itemize}
-	\item Die toplogische Satzstrukturbetrachtung hat eine lange Tradition \ras Herling 1821, Erdmann 1886, \textbf{Drach 1937}
+	\item Die toplogische Satzstrukturbetrachtung hat eine lange Tradition.
+	
+	\ras Herling 1821; Erdmann 1886; \textbf{\citealt{Drach39a}}
+	
 	\item[]
-	\item Die Verfeinerung des Modells wurde in den 1980ern vorgenommen (Reis 1980, Höhle 1986)
+	\item Die \textbf{Verfeinerung} des Modells wurde in den 1980ern vorgenommen. 
+	
+	\ras Reis 1980; \citealt{Hoehle85a}
+	
 	\item[]
-	\item Topologisches Modell wird immer noch verwendet (Ramers 2006, Pafel 2009) 
+	
+	\item Topologisches Modell wird immer noch verwendet 
+	
+	\ras \citealt{Ramers06a}; Pafel 2009; \citealt{Woellstein10a} 
 
 
 \end{itemize}
@@ -122,10 +131,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Dreifeldermodell (Drach 1937/1963)}
+\frametitle{Dreifeldermodell (Drach 1937)}
 
 \begin{itemize}
-	\item Drachs Dreifeldermodell war ursprünglich für die Erfassung von \textbf{Aussagesätzen mit Verbzweitstellung} (V2-Sätze) gedacht
+	\item Drachs Dreifeldermodell war ursprünglich für die Erfassung von \textbf{Aussagesätzen mit Verbzweitstellung} (V2-Sätze) gedacht.
 	\item[]
 	\item \textbf{Vorfeld (VF):} Abschnitt vor dem finiten Verb
 	\item \textbf{Mitte:} Position für das finite Verb
@@ -140,13 +149,13 @@
 \begin{tabular}{l|l|l}
 \textbf{Vorfeld} & \textbf{Mitte} & \textbf{Nachfeld} \\ 
 \hline 
-Sophia & \alert{schreibt} & ihre Dissertation. \\ 
+Sophia & \alertred{schreibt} & ihre Dissertation. \\ 
 \hline
 \pause
-Sophia & \alert{hat}  & ihre Dissertation geschrieben. \\ 
+Sophia & \alertred{hat}  & ihre Dissertation geschrieben. \\ 
 \hline 
 \pause
-Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\ 
+Ihre Dissertation geschrieben & \alertred{hat} & Sophia längst!\\ 
 \end{tabular} 
 
 \end{table}
@@ -156,7 +165,7 @@ Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Dreifeldermodell (Drach 1937/1963)}
+\frametitle{Dreifeldermodell (Drach 1937)}
 
 \begin{itemize}
 	\item \textbf{Probleme:}
@@ -171,9 +180,9 @@ Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\
 \pause
 
 \eal
-\ex \alert{Hat} [Sophia] [ihre Dissertation] \alert{geschrieben}?
-\ex \alert{Schreib} endlich deine Diss!
-\ex	\alert{Ob} sie ihre Diss \alert{schreibt}?
+\ex \alertred{Hat} [Sophia] [ihre Dissertation] \alertred{geschrieben}?
+\ex \alertred{Schreib} endlich deine Diss!
+\ex	\alertred{Ob} sie ihre Diss \alertred{schreibt}?
 \zl
 
 
@@ -196,7 +205,9 @@ Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\
 \begin{itemize}
 	\item Auch: Stellungsfeldermodell,  lineares Modell, Felderstrukturenmodell 
 	\item 5-gliedriges Grundmodell
-	\item Erfasst mehr Daten als das Dreifeldermodell \ras Alle Verbstellungs- bzw. Satztypen werden in einem \textbf{einheitlichen} Muster abgebildet
+	\item Erfasst mehr Daten als das Dreifeldermodell 
+	
+	\ras Alle Verbstellungs- bzw. Satztypen werden in einem \textbf{einheitlichen} Muster abgebildet
 \end{itemize}
 
 \end{frame}
@@ -209,9 +220,13 @@ Ihre Dissertation geschrieben & \alert{hat} & Sophia längst!\\
 	\begin{itemize}
 		\item []
 		\item \textbf{Vorfeld (VF):} Feld vor dem finiten Verb
+		\item[]
 		\item \textbf{Linke Satzklammer (LSK):} Finites Verb oder Subjunktion
+		\item[]
 		\item \textbf{Mittelfeld (MF):} Konstituente(n)
+		\item[]		
 		\item \textbf{Rechte Satzklammer (RSK):} Verb(komplex)
+		\item[]		
 		\item \textbf{Nachfeld (NF):} Satzartige oder \gqq{schwere} Konstituenten
 	\end{itemize}
 \pause
@@ -228,7 +243,7 @@ Gestern & ist & Nathalie früh nach Hause & gegangen, & weil sie müde war. \\
 }
 \end{table}
 	
-\end{frame}
+ \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -244,7 +259,7 @@ Gestern & ist & Nathalie früh nach Hause & gegangen, & weil sie müde war. \\
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-Nathalie & \alert{ist} & zu Hause & \alert{geblieben}, & weil sie krank ist. \\ 
+Nathalie & \alertred{ist} & zu Hause & \alertred{geblieben}, & weil sie krank ist. \\ 
 \end{tabular} 
 }
 \end{table}
@@ -256,10 +271,10 @@ Nathalie & \alert{ist} & zu Hause & \alert{geblieben}, & weil sie krank ist. \\
 \begin{frame}
 
 \begin{itemize}
-	\item Analyse von Haupt- und Nebensätzen und komplexen Satzstrukturen möglich!
+	\item Analyse von \textbf{Haupt- und Nebensätzen} und \textbf{komplexen Satzstrukturen} möglich!
 	\item[]
-	\item Erfasst die Verbklammer (typisch für das Deutsche) und
-	die Komplementarität zwischen Verb und Complementizer in der LSK
+	\item Erfasst die \textbf{Verbklammer} (typisch für das Deutsche) und
+	die \textbf{Komplementarität} zwischen \textbf{Verb und Complementizer} in der LSK
 \end{itemize}
 
 \begin{table}
@@ -268,9 +283,9 @@ Nathalie & \alert{ist} & zu Hause & \alert{geblieben}, & weil sie krank ist. \\
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-Nathalie & ist & zu Hause & geblieben, & weil sie krank ist. \\ 
+Nathalie & \alertred{ist} & zu Hause & \alertgreen{geblieben}, & weil sie krank ist. \\ 
 \hline
-$\emptyset$ & weil & sie krank & ist & $\emptyset$. \\ 
+$\emptyset$ & \alertred{weil} & sie krank & \alertgreen{ist} & $\emptyset$. \\ 
 \end{tabular} 
 }
 \end{table}
@@ -293,13 +308,6 @@ $\emptyset$ & weil & sie krank & ist & $\emptyset$. \\
 
 \begin{itemize}
 	\item \textbf{VF:}
-	\begin{itemize}
-		\item Fakultativ besetzt
-		\item Platz für eine (beliebig komplexe) Konstituente 
-		\item Leer bei \\
-		sog. V1-Sätzen (Entscheidungsfragen, Imperativsätzen, \dots ) \\
-		Sätzen mit nebensatzeinleitender Konjunktion ($\approx$ Complementizer): dass, ob, weil, \dots \\
-	\end{itemize}
 
 \begin{table}
 \centering
@@ -307,17 +315,29 @@ $\emptyset$ & weil & sie krank & ist & $\emptyset$. \\
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-\alert{Marlijn} & ist & zu Hause. &  &  \\
+\alertred{Marlijn} & ist & zu Hause. &  &  \\
 \hline 
-\alert{Die Frau, die hier arbeitet,} & ist & sehr fleißig. & & \\  
-\alert{obwohl die Heizung ausgeschaltet ist,} & & & & \\
+\alertred{Die Frau, die hier arbeitet,} & ist & sehr fleißig. & & \\  
+\alertred{obwohl die Heizung ausgeschaltet ist,} & & & & \\
 \hline
-\alert{$\emptyset$} & ist & Marlijn zu Hause ? &  &  \\
+\alertred{$\emptyset$} & ist & Marlijn zu Hause ? &  &  \\
 \hline
-\alert{$\emptyset$} & weil & sie krank & ist. &  \\ 
+\alertred{$\emptyset$} & weil & sie krank & ist. &  \\ 
 \end{tabular} 
 }
+
 \end{table}
+
+\pause
+
+\begin{itemize}
+	\item \textbf{Fakultativ} besetzt
+	\item Platz für \textbf{eine} (beliebig komplexe) Konstituente 
+	\item \textbf{Leer} bei \\
+	sog. V1-Sätzen (Entscheidungsfragen, Imperativsätzen, \dots ) \\
+	Sätzen mit nebensatzeinleitender Konjunktion ($\approx$ Complementizer): dass, ob, weil, \dots \\
+\end{itemize}
+
 
 \end{itemize}
 
@@ -330,14 +350,6 @@ $\emptyset$ & weil & sie krank & ist & $\emptyset$. \\
 
 \begin{itemize}
 	\item \textbf{LSK:}
-	\begin{itemize}
-		\item Entweder finites Verb oder Complementizer
-		\item Leer bei \\
-		eingebetteten Konstituentenfragen, \\
-		Relativsätzen, \\
-		Infinitivsätzen, \dots
-	\end{itemize}
-\end{itemize}
 
 \begin{table}
 \centering
@@ -345,16 +357,29 @@ $\emptyset$ & weil & sie krank & ist & $\emptyset$. \\
 \begin{tabular}{l|l|l|l|l|l}
 & \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-& Petra & \alert{macht} & einen guten Kaffee. &  &  \\
+& Petra & \alertred{macht} & einen guten Kaffee. &  &  \\
 \hline 
-& & \alert{dass} & Petra einen guten Kaffee & macht & \\  
+& & \alertred{dass} & Petra einen guten Kaffee & macht & \\  
 \hline
-Ich weiß, & wer & \alert{$\emptyset$} & sie & ist. &  \\
+Ich weiß, & wer & \alertred{$\emptyset$} & sie & ist. &  \\
 \hline
-Die Dame, & die & \alert{$\emptyset$} & hier & arbeitet &  \\ 
+Die Dame, & die & \alertred{$\emptyset$} & hier & arbeitet &  \\ 
 \end{tabular} 
 }
 \end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Entweder finites Verb oder Complementizer
+	\item \textbf{Leer} bei \\
+	eingebetteten Konstituentenfragen, \\
+	Relativsätzen, \\
+	Infinitivsätzen, \dots
+\end{itemize}
+
+\end{itemize}
+
 	
 \end{frame}
 
@@ -365,11 +390,6 @@ Die Dame, & die & \alert{$\emptyset$} & hier & arbeitet &  \\
 
 \begin{itemize}
 	\item \textbf{MF:}
-	\begin{itemize}
-		\item Platz für beliebig viele Konstituenten
-		\item Fakultativ auch leer
-		\item Durch RSK können Konstituenten des MFs aufgebrochen werden.
-	\end{itemize}
 
 \begin{table}
 \centering
@@ -377,20 +397,29 @@ Die Dame, & die & \alert{$\emptyset$} & hier & arbeitet &  \\
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-Sophie & hat & \alert{gut} & geschlafen. & \\  
+Sophie & hat & \alertred{gut} & geschlafen. & \\  
 \hline 
-Sophie & soll & \alert{[trotz des Bahnchaos']} & bekommen haben. &  \\
-& & \alert{[nach ihrem Gespräch]} &  &  \\
-& & \alert{[in einer anderen Stadt]} &  &  \\
-& & \alert{[einen guten Job]} &  &  \\
+Sophie & soll & \alertred{[trotz des Bahnchaos']} & bekommen haben. &  \\
+& & \alertred{[nach ihrem Gespräch]} &  &  \\
+& & \alertred{[in einer anderen Stadt]} &  &  \\
+& & \alertred{[einen guten Job]} &  &  \\
 \hline 
-Sophie & hat & \alert{$\emptyset$} & geschlafen. & \\  
+Sophie & hat & \alertred{$\emptyset$} & geschlafen. & \\  
 \hline
-Sie & hat & \alert{die Frau} & eingestellt, & \alert{die am qualifiziertesten} \\
- &  &  & & \alert{war}. \\
+Sie & hat & \alertred{die Frau} & eingestellt, & \alertred{die am qualifiziertesten} \\
+ &  &  & & \alertred{war}. \\
 \end{tabular} 
 }
 \end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Platz für \textbf{beliebig viele} Konstituenten
+	\item Fakultativ auch leer
+	\item Durch RSK können Konstituenten des MFs aufgebrochen werden.
+\end{itemize}
+
 
 \end{itemize}
 
@@ -403,11 +432,6 @@ Sie & hat & \alert{die Frau} & eingestellt, & \alert{die am qualifiziertesten} \
 
 \begin{itemize}
 	\item \textbf{RSK:}
-	\begin{itemize}
-		\item Infinite Verben 
-		\item Finites Verb (falls nicht in LSK) \ras \zB in Neben- oder Relativsätzen
-		\item Fakultativ auch leer
-	\end{itemize}
 
 \begin{table}
 \centering
@@ -415,20 +439,28 @@ Sie & hat & \alert{die Frau} & eingestellt, & \alert{die am qualifiziertesten} \
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-Monika & mag &  & \alert{unterrichten}. & \\  
+Monika & mag &  & \alertred{unterrichten}. & \\  
 \hline 
- & Ob & Monika & \alert{unterrichtet}? &  \\
+ & Ob & Monika & \alertred{unterrichtet}? &  \\
 \hline
-mit dem & & Monika zur Arbeit & \alert{fährt} &  \\
+mit dem & & Monika zur Arbeit & \alertred{fährt} &  \\
 \hline
-& weil & Monika & \alert{angerufen haben will} &  \\
+& weil & Monika & \alertred{angerufen haben will} &  \\
 \hline
-Monika & hat &  & \alert{angerufen}. &  \\
+Monika & hat &  & \alertred{angerufen}. &  \\
 \hline 
-Monika & ruft &  & \alert{an}.&  \\
+Monika & ruft &  & \alertred{an}.&  \\
 \end{tabular} 
 }
 \end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Infinite Verben 
+	\item Finites Verb (falls nicht in LSK) \ras \zB in Neben- oder Relativsätzen
+	\item Fakultativ auch leer
+\end{itemize}
 
 \end{itemize}
 
@@ -441,12 +473,6 @@ Monika & ruft &  & \alert{an}.&  \\
 
 \begin{itemize}
 	\item \textbf{NF:}
-	\begin{itemize}
-		\item Kann eine oder mehrere Konstituenten enthalten
-		\item Fakultativ leer
-		\item Hauptsächlich besetzt bei Subjekt-, Objekt-, Adverbial- oder Relativsätzen (Extraposition)
-		\item Fakultativ auch bei \gqq{schweren} Konstituenten (PPs)
-	\end{itemize}
 
 \begin{table}
 \centering
@@ -454,18 +480,28 @@ Monika & ruft &  & \alert{an}.&  \\
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-Anke & hat &  & gesehen, & \alert{dass Peter schläft}.\\  
+Maria & hat &  & gesehen, & \alertred{dass Peter schläft}.\\  
 \hline 
-Anke & hat &  & gesehen, & \alert{als sie in die Küche kam}\\  
- &  &  & & \alert{dass Peter schläft}.\\  
+Maria & hat &  & gesehen, & \alertred{als sie in die Küche kam}\\  
+ &  &  & & \alertgreen{dass Peter schlief}.\\  
 \hline
-Sie & hat & \alert{die Frau} & eingestellt, & \alert{die am qualifiziertesten} \\
- &  &  & & \alert{war}. \\
+Sie & hat & \alertred{die Frau} & eingestellt, & \alertred{die am qualifiziertesten} \\
+ &  &  & & \alertred{war}. \\
 \hline
-Du & hast & uns alle & begeistert & \alert{mit deiner großartigen Präsentation}. \\
+Du & hast & uns alle & begeistert & \alertred{mit deiner großartigen Präsentation}. \\
 \end{tabular} 
 }
 \end{table}
+
+\pause 
+
+\begin{itemize}
+	\item Kann eine oder mehrere Konstituenten enthalten
+	\item Fakultativ leer
+	\item Hauptsächlich besetzt bei Subjekt-, Objekt-, Adverbial- oder Relativsätzen (Extraposition)
+	\item Fakultativ auch bei \gqq{schweren} Konstituenten (PPs)
+\end{itemize}
+
 
 \end{itemize}
 
@@ -476,7 +512,7 @@ Du & hast & uns alle & begeistert & \alert{mit deiner großartigen Präsentation
 \begin{frame}
 
 \begin{itemize}
-	\item Im VF, MF, NF kann ein (oder mehrere) Satz enthalten sein, der selbst wieder nach dem Feldermodell analysiert werden kann. 
+	\item Im VF, MF, NF kann ein Satz enthalten sein (oder mehrere), der selbst wieder nach dem Feldermodell analysiert werden kann. 
 
 
 \begin{table}
@@ -485,24 +521,24 @@ Du & hast & uns alle & begeistert & \alert{mit deiner großartigen Präsentation
 \begin{tabular}{l|l|l|l|l}
 \textbf{VF} & \textbf{LSK} & \textbf{MF} & \textbf{RSK} & \textbf{NF} \\ 
 \hline 
-Anke & hat &  & gesehen, & \alert{dass Peter schläft}.\\
+Maria & hat &  & gesehen, & \alertred{dass Peter schläft}.\\
 \hline
  & dass & Peter & schläft & \\  
 \hline
 \hline 
-Anke & hat &  & gemerkt, & \alert{dass Peter denkt},\\  
- &  &  & & \alert{dass sie schläft}.\\ 
+Maria & hat &  & gemerkt, & \alertred{dass Peter denkt},\\  
+ &  &  & & \alertred{dass sie schläft}.\\ 
 \hline
-   & dass & Peter & denkt, & dass sie schläft\\ 
+   & dass & Peter & denkt, & \alertgreen{dass sie schläft}\\ 
 \hline
    & dass & sie & schläft &  \\ 
 \hline   
 \hline
-\alert{Dass Peter denkt,} & hat & Anke sehr schnell & gemerkt. & \\
-\alert{dass sie schläft,} &  &  & & \\
+\alertred{Dass Peter denkt,} & hat & Maria sehr schnell & gemerkt. & \\
+\alertgreen{dass sie schläft,} &  &  & & \\
 \hline
 \hline
-Anke & hat, & \alert{obwohl sie geschlafen hat}, & erwischt. &  \\
+Maria & hat, & \alertred{obwohl sie geschlafen hat}, & erwischt. &  \\
 & & die Einbrecher & & \\
 \end{tabular} 
 }
@@ -527,9 +563,11 @@ Anke & hat, & \alert{obwohl sie geschlafen hat}, & erwischt. &  \\
 \frametitle{Fazit}
 
 \begin{itemize}
-	\item Das topologische Feldermodell eröffnet Möglichkeiten zur \textbf{Beschreibung} von strukturellen (linearen) Gesetzmäßigkeiten im Satzbau (\zB Satzklammer) und von grammatischen Konzepten (\zB Satztyp)
+	\item Das topologische Feldermodell eröffnet Möglichkeiten zur \textbf{Beschreibung} von \textbf{strukturellen (linearen) Gesetzmäßigkeiten} im Satzbau (\zB Satzklammer) und von grammatischen Konzepten (\zB Satztyp)
 	\item[]
-	\item Für eine intensive Beschäftigung mit der deutschen Syntax ist das Uniforme Modell allein allerdings nicht ausreichend. Die Unterteilung ist zu grob. Es sind Erweiterungen nötig (vgl. Dreifeldermodell \ras Uniformes Modell \ras Differenzmodell)
+	\item Für eine intensive Beschäftigung mit der deutschen Syntax ist das Uniforme Modell allein allerdings \textbf{nicht ausreichend}. Die Unterteilung ist zu grob. Es sind Erweiterungen nötig. 
+	
+	vgl. Dreifeldermodell \ras Uniformes Modell \ras Differenzmodell
 
 \end{itemize}
 
@@ -575,7 +613,7 @@ Anke & hat, & \alert{obwohl sie geschlafen hat}, & erwischt. &  \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\iftoggle{loesung}{
+%\iftoggle{loesung}{
 	
 \begin{frame}
 \frametitle{Lösung}
@@ -609,11 +647,11 @@ Weil wir es uns nicht vorstellen konnten, & haben & wir uns & gewundert, & als w
 
 \end{frame}
 
-}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\iftoggle{uebung}{
+%\iftoggle{uebung}{
 
 \begin{frame}
 \frametitle{Übung}
@@ -635,11 +673,11 @@ Weil wir es uns nicht vorstellen konnten, & haben & wir uns & gewundert, & als w
 
 \end{frame}
 
-}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\iftoggle{loesung}{
+%\iftoggle{loesung}{
 
 
 \begin{frame}
@@ -683,7 +721,7 @@ mit dem & & sie sich ein Büro & teilt. & \\
 \end{table}
 
 \end{frame}
- }
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Satztypen \& Satzmodi}
@@ -702,16 +740,16 @@ mit dem & & sie sich ein Büro & teilt. & \\
 	\begin{itemize}
 		\item \textbf{Verberststellung (V1)}
 		\eal 
-		\ex \label{ex:Frage} \alert{Schläft} Norbert?
-		\ex \label{ex:Imperat} \alert{Schlaf} endlich!
+		\ex \label{ex:Frage} \alertred{Schläft} Norbert?
+		\ex \label{ex:Imperat} \alertred{Schlaf} endlich!
 		\zl
 		
 		\item \textbf{Verbzweitstellung (V2)}
-		\ea \label{ex:Dekl} Norbert \alert{schläft} gerne nach dem Mittagessen.
+		\ea \label{ex:Dekl} Norbert \alertred{schläft} gerne nach dem Mittagessen.
 		\z
 		
 		\item \textbf{Verbletztstellung (VL)}
-		\ea \label{ObFrage} Ob Norbert \alert{schnarcht}?
+		\ea \label{ObFrage} Ob Norbert \alertred{schnarcht}?
 		\z
 		
 	\end{itemize}	
@@ -729,9 +767,15 @@ mit dem & & sie sich ein Büro & teilt. & \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
-\begin{block}{Satzmodus (Auch: Satzart)}
-Satzmodus meint die Klassifikation von komplexen Zeichen (Sätzen) mit einer Form- und einer Funktionsseite. Der Sprecher wählt also eine bestimmte Form aus, um eine bestimmte Funktion zu erfüllen.
+\begin{block}{Satzmodus}
+Klassifikation von komplexen Zeichen (Sätzen) \textbf{mit einer Form- und einer Funktionsseite}. Der Sprecher wählt also eine bestimmte Form aus, um eine bestimmte Funktion zu erfüllen. \citep[vgl.][]{Altmann93a}
 \end{block}
+
+
+\begin{block}{Satztyp}
+	Klassifikation von komplexen Zeichen (Sätzen) \textbf{mit einer Form- und einer Funktionsseite}. Der Sprecher wählt also eine bestimmte Form aus, um eine bestimmte Funktion zu erfüllen. \citep[vgl.][]{Altmann93a}
+\end{block}
+
 
 \begin{itemize}
 	\item \textbf{Satztyp} (auch: Formtyp) \ras Formseite
@@ -1057,7 +1101,7 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\iftoggle{loesung}{
+%\iftoggle{loesung}{
 
 \begin{frame}
 \frametitle{Lösungsvorschlag}
@@ -1073,14 +1117,14 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 
 \end{frame}
 
-}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Lösungsvorschlag}
 
-\iftoggle{loesung}{
+%\iftoggle{loesung}{
 
 \begin{itemize}
 \item zu \ref{ex:spät}: E-Interrogativ (V1) + K-Interrogativ (VL), wenn die erste Teilantwort \gqq{ja} ist, dann folgt eine Antwort auf das Fragewort (\gqq{Ja, es ist...Uhr.})
@@ -1092,6 +1136,6 @@ Exklamativ und Optativ gelten wegen des fehlenden eigenen Satztypen im Deutschen
 \item zu \ref{ex:Prüfung}: Deklarativ (V2), an Bedingung geknüpfte Mitteilung
 \end{itemize}
 
-}
+%}
 
 \end{frame}

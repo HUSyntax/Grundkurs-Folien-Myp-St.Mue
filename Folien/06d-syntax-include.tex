@@ -69,11 +69,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
+\frametitle{Einleitung}
 
 \begin{itemize}
-	\item Topologisches Modell \ras nur grobe Gliederung des Satzes in 5 Felder
+	\item Topologisches Modell: nur grobe Gliederung des Satzes in 5 Felder
 	\item[]	
-	\item Neue feingliedrigere Modellierung \ras X-Bar-Schema
+	\item feingliedrigere Modellierung: X-Bar-Schema; X-Bar-Modell
 	\item[]
 	\item Nicht nur für Satzpositionen, sondern auch für Relationen zwischen syntaktischen Einheiten innerhalb von Konstituenten.
 
@@ -82,7 +83,7 @@
 \ex[]{Peter hat gestern \alertred{[den Wagen]} gekauft.}
 \ex[]{\alertred{[Den Wagen]} hat Peter gestern gekauft.}
 \ex[]{\alertred{[Den Wagen gekauft]} hat Peter gestern.} \label{ex:KonstSatz}
-\ex[*]{\alertred{[Den]} hat Peter gestern \alertred{[Wagen]}} gekauft.
+\ex[*]{\alertred{[Den]} hat Peter gestern \alertred{[Wagen]} gekauft.}
 \zl
 
 	\item Konstituenten sind nicht immer mit Satzglied gleichzusetzen vgl.\ (\ref{ex:KonstSatz})
@@ -94,14 +95,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
+%\frametitle{Einleitung}
 
 \begin{itemize}
 
-	\item Intuitiv können wir sagen, dass die Struktur 1 grammatisch und 2 ungrammatisch ist.
+	\item \textbf{Intuitiv} können wir sagen, dass (\ref{ex:Klammer1}) grammatisch und (\ref{ex:Klammer2}) ungrammatisch ist.
 	\item[]
 	\eal
-	\ex Klammerstruktur 1: [$_{VP}$ [$_{NP}$ [$_{Det}$Das] [$_{NP}$Brot]][$_{V}$gekauft]]
-	\ex Klammerstruktur 1: [$_{??}$ [$_{Det}$Das] [$_{??}$ [$_{NP}$Brot][$_{V}$gekauft]]]
+	\ex \label{ex:Klammer1}Klammerstruktur: [$_{VP}$ [$_{NP}$ [$_{Det}$Das] [$_{NP}$Brot]][$_{V}$gekauft]]
+	\ex \label{ex:Klammer2}Klammerstruktur: [$_{??}$ [$_{Det}$Das] [$_{??}$ [$_{NP}$Brot][$_{V}$gekauft]]]
 	\zl
 
 \end{itemize}
@@ -115,11 +117,11 @@
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sm edges,
+		MyP edges,
 		[Das Brot gekauft [Das Brot [Das] [Brot]][gekauft]]
 		\end{forest}
 		}
-		\caption{Baumstruktur 1}	
+		\caption{Baumstruktur (\ref{ex:Klammer1})}	
   	\end{minipage}  
   	%  
 	\begin{minipage}[b]{0.05\textwidth}
@@ -129,11 +131,11 @@
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sm edges,
+		MyP edges,
 		[*Das Brot gekauft [Das][Brot gekauft [Brot] [gekauft]]]
 		\end{forest}
 		}
-		\caption{Baumstruktur 2}
+		\caption{Baumstruktur (\ref{ex:Klammer2})}
   	\end{minipage}  
   	%              
 	\begin{minipage}[b]{0.05\textwidth}
@@ -142,7 +144,7 @@
 \end{figure}
 
 \begin{itemize}
-	\item D.\,h., die Syntax befasst sich nicht nur mit der internen Struktur von Sätzen, sondern auch von Phrasen (machmal auch von Wörtern)
+	\item Syntax befasst sich \textbf{nicht nur mit der internen Struktur von Sätzen}, sondern \textbf{auch von Phrasen} (manchmal auch von Wörtern)
 \end{itemize}
 \end{frame}
 
@@ -152,25 +154,38 @@
 
 \begin{itemize}
 
-	\item Sub-Theorie der Generativen Grammatik (GG) seit den 1970er Jahren \citep{Chomsky70a, Jackendoff77a}
+	\item \textbf{X-Bar-Theorie}: Sub-Theorie der Generativen Grammatik (GG) seit den 1970er Jahren \citep{Chomsky70a, Jackendoff77a}
 	\item[]	
-	\item \textbf{GG:} Theoretische Richtung seit den 1950er Jahre \citep{Chomsky57a} (contra Strukturalismus)
+	\item \textbf{GG:} Theoretische Richtung seit den 1950er Jahren \citep{Chomsky57a} (contra Strukturalismus)
 	\item[]
-	\item \textbf{Strukturalismus:}
-	\begin{itemize}
-		\item Empirismus (Behaviourismus)
-		\item statische Theorie
-		\item Beschreibungsadäquat: \textbf{Beschreibung} der in der Sprache vorkommenden Strukturen
-	\end{itemize}
-	
-	\item \textbf{GG:}
-	\begin{itemize}
-		\item Rationalismus (UG)
-		\item dynamische (generative) Theorie
-		\item Erklärungsadäquat: \textbf{Explikation} der Kompetenz eines idealen Sprecher-Hörers
-	\end{itemize}
-
 \end{itemize}
+
+\begin{columns}
+	
+\begin{column}{.5\textwidth}
+
+\textbf{Strukturalismus:}
+\begin{itemize}
+	\item Empirismus (Behaviourismus)
+	\item statische Theorie
+	\item Beschreibungsadäquat: \textbf{Beschreibung} der in der Sprache vorkommenden Strukturen
+\end{itemize}
+
+\end{column}	
+%%
+%%
+\begin{column}{.5\textwidth}
+
+\textbf{GG:}
+\begin{itemize}
+	\item Rationalismus (UG)
+	\item dynamische (generative) Theorie
+	\item Erklärungsadäquat: \textbf{Explikation} der Kompetenz eines idealen Sprecher-Hörers
+\end{itemize}
+
+\end{column}
+
+\end{columns}
 
 \end{frame}
 
@@ -183,13 +198,13 @@
 	\item[]
 	\item Sehr verschiedene Richtungen (Mainstream Generative Grammatik):
 	\begin{itemize}
-		\item Phrasenstrukturgrammatiken (PSG, \citet{Chomsky57a})
-		\item Standardtheorie (ST, Auch Aspekte-Modell, \citet{Chomsky65a})
-		\item \alertred{Rektions-Bindungs-Theorie} (GB, \citet{Chomsky81a})
-		\item Minimalismus (MP, \citet{Chomsky95a})
+		\item Phrasenstrukturgrammatiken (PSG; \citealt{Chomsky57a})
+		\item Standardtheorie (ST; Auch Aspekte-Modell, \citealt{Chomsky65a})
+		\item \alertred{Rektions-Bindungs-Theorie} (GB; \citealt{Chomsky81a})
+		\item Minimalismus (MP; \citealt{Chomsky95a})
 	\end{itemize}
 	\item[]
-	\item Daraus entstanden andere GGen:
+	\item Daraus entstanden andere \gqq{GGen}:
 	\begin{itemize}
 		\item Generative Semantik \citep{Harris93a}
 		\item Lexical-Functional Grammar (LFG)
@@ -199,7 +214,7 @@
 	\end{itemize}
 \end{itemize}
 
-\citep[s.][]{MuellerS15b}
+\citep[vgl.][]{MuellerS15b}
 
 \end{frame}
 
@@ -339,7 +354,7 @@
 	\begin{minipage}[b]{0.50\textwidth}
 	\centering
 		\begin{forest}
-		sm edges,
+		MyP edges,
 		[XP [YP\\Spezifikator]
 			[\MyPxbar{X} [\zerobar{X}\\Kopf]
 				[ZP\\Komplement]

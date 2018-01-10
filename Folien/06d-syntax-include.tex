@@ -154,9 +154,9 @@
 
 \begin{itemize}
 
-	\item \textbf{X-Bar-Theorie}: Sub-Theorie der Generativen Grammatik (GG) seit den 1970er Jahren \citep{Chomsky70a, Jackendoff77a}
+	\item \textbf{X-Bar-Theorie}: Sub-Theorie der Generativen Grammatik (GG) seit den 1970er Jahren \citep{Chomsky70a, Jackendoff77x}
 	\item[]	
-	\item \textbf{GG:} Theoretische Richtung seit den 1950er Jahren \citep{Chomsky57a} (contra Strukturalismus)
+	\item \textbf{GG:} Theoretische Richtung seit den 1950er Jahren \citep{Chomsky57x} (contra Strukturalismus)
 	\item[]
 \end{itemize}
 
@@ -198,9 +198,9 @@
 	\item[]
 	\item Sehr verschiedene Richtungen (Mainstream Generative Grammatik):
 	\begin{itemize}
-		\item Phrasenstrukturgrammatiken (PSG; \citealt{Chomsky57a})
+		\item Phrasenstrukturgrammatiken (PSG; \citealt{Chomsky57x})
 		\item Standardtheorie (ST; Auch Aspekte-Modell, \citealt{Chomsky65a})
-		\item \alertred{Rektions-Bindungs-Theorie} (GB; \citealt{Chomsky81a})
+		\item \alertred{Rektions-Bindungs-Theorie} (GB; \citealt{Chomsky81x})
 		\item Minimalismus (MP; \citealt{Chomsky95a})
 	\end{itemize}
 	\item[]
@@ -209,7 +209,7 @@
 		\item Generative Semantik \citep{Harris93a}
 		\item Lexical-Functional Grammar (LFG)
 		\item Head-driven phrase Structure Grammar (HPSG)
-		\item Tree Adjoining Grammar (TAG)
+		\item Construction Grammar (CxG)
 		\item \dots
 	\end{itemize}
 \end{itemize}
@@ -325,49 +325,209 @@
 \begin{frame}
 \frametitle{X-Bar: Strukturelle Annahmen}
 
-\begin{multicols}{2}
+\citep[vgl.][]{Chomsky&Lasnik93a, Fries&MyP16a}
+
 \begin{enumerate}
-	\item Alle syntaktischen Phrasen haben \textbf{den gleichen syntaktischen Aufbau}.
-	\item Jede Phrase hat ein einziges, strukturell obligatorisches Element \ras \textbf{Kopf} der Phrase: \zerobar{X}, X.
-	\item Zwischen Phrase und Kopf gibt es syntaktisch relevante Zwischenstufen \ras \textbf{Zwischenprojektionen}: \MyPxbar{X}, \ibar{X}.
-
-\columnbreak
-
-	\item Alle Nicht-Köpfe sind \textbf{maximale Projektionen}: XP, \xxbar{X}, \iibar{X}, \maxbar{X} .
-	\item Maximale Projektionen haben die gleiche Bar-Anzahl (=2).
-	\item Nur Nicht-Köpfe sind optional.
+	\item[1] Alle syntaktischen Phrasen haben \textbf{den gleichen syntaktischen Aufbau}.
 \end{enumerate}
-\end{multicols}
 
-\citep[vgl.][]{Fries&MyP16a, MyP18b}
+
+\begin{columns}
+
+\begin{column}{.3\textwidth}
+{\footnotesize	
+\begin{itemize}
+	\item XP: Phrase
+	\item \MyPxbar{X}: Zwischenprojektion
+	\item \zerobar{X}: Kopf
+	\item YP: Spezifikator
+	\item ZP: Komplement
+\end{itemize}
+}
+\end{column}
+%%
+%%
+\begin{column}{.7\textwidth}
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[\alertred{XP} [\alertgreen{YP}]
+	[\alertred{\MyPxbar{X}} [\alertred{\zerobar{X}}]
+	[\alertgreen{ZP}]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+	
+\end{figure}
+\end{column}
+	
+\end{columns}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[2] Jede Phrase hat ein einziges, strukturell obligatorisches Element. 
+		
+		\ras \textbf{Kopf} der Phrase (Notation: \zerobar{X} oder X)
+	\end{enumerate}
 
 \begin{figure}[b]
-	\begin{minipage}[b]{0.05\textwidth}
-	\end{minipage} 
-	%
-	\begin{minipage}[b]{0.50\textwidth}
-	\centering
-		\begin{forest}
-		MyP edges,
-		[XP [YP\\Spezifikator]
-			[\MyPxbar{X} [\zerobar{X}\\Kopf]
-				[ZP\\Komplement]
-			]
-		]
-		\end{forest}
-		\caption{X-bar Schema}	
-  	\end{minipage}  
-  	%  
-	\begin{minipage}[b]{0.05\textwidth}
-  	\end{minipage}
-  	
+
+\centering
+\begin{forest}
+	MyP edges,
+	[XP [YP]
+	[\MyPxbar{X} [\zerobar{X}, draw, red]
+	[ZP]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+	
 \end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[3] Zwischen Phrase und Kopf gibt es syntaktisch relevante Zwischenstufen 
+		
+		\ras \textbf{Zwischenprojektionen} (Notation: \MyPxbar{X} oder \ibar{X})
+	\end{enumerate}
+
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+MyP edges,
+[XP 
+	[YP]
+	[\MyPxbar{X}, draw, red 
+		[\zerobar{X}]
+		[ZP]
+	]
+]
+\end{forest}
+\caption{X-bar Schema}	
+
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[4] Alle Nicht-Köpfe sind \textbf{maximale Projektionen} (bzw. Phrasen).
+		
+		\ras Notation: XP oder \xxbar{X} oder \iibar{X} oder \maxbar{X} oder  X$^2$
+	\end{enumerate}
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[XP [YP, draw, red]
+	[\MyPxbar{X} [\zerobar{X}]
+	[ZP, draw, red]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[5] Maximale Projektionen haben die gleiche Bar-Anzahl ($=2$).
+		
+		\ras Notation: XP oder \xxbar{X} oder \iibar{X} oder \maxbar{X} oder  X$^2$
+	\end{enumerate}
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[XP{$=$}X$^2$, draw, red
+		[YP{$=$}Y$^2$, draw, red]
+		[X$^1$ 
+			[\zerobar{X}]
+			[ZP{$=$}Z$^2$, draw, red]
+		]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+
+\end{figure}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+\begin{enumerate}
+	\item[6] Nur Nicht-Köpfe sind optional.
+\end{enumerate}
+
+\begin{columns}
+	
+\begin{column}{.5\textwidth}
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[*XP [YP]
+	[\MyPxbar{X} 
+	[ZP]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}
+\end{figure}
+	
+\end{column}
+%%
+%%
+\begin{column}{.5\textwidth}
+
+\begin{figure}[b]
+	\centering
+	\begin{forest}
+		MyP edges,
+		[XP 
+		[\MyPxbar{X} [\zerobar{X}, draw, red]
+		]
+		]
+	\end{forest}
+	\caption{X-bar Schema}
+\end{figure}
+	
+\end{column}
+
+\end{columns}
 
 \end{frame}
 
@@ -429,7 +589,7 @@ Der Kopf einer Wortgruppe/Konstituente/Phrase/Projektion ist dasjenige Element, 
 
 Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf verlangt die Anwesenheit bestimmter anderer Elemente in seiner Phrase.
 
-\citep{MuellerS13f}
+\citep[vgl.][]{Adger04a, MuellerS13f, MyP18b}
 \end{block}
 
 \pause
@@ -456,7 +616,6 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 	\end{itemize}
 \end{itemize}
 
-\citep[vgl.][]{Adger04a}
 \end{frame}
 
 
@@ -472,21 +631,24 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
+\frametitle{Interpretation}
 
 \begin{itemize}
 	\item Sehr intuitives (aber etwas unzuverlässiges) Kriterium, v.\,a. stark theorieabhängig
 	\item Durch Konstituententests wissen wir welche Wortfolgen \textbf{Konstituenten} sind.
 \end{itemize}
 \pause
-\eal Peter kauft \alertred{[das erfrischende Wasser, das ich dir letztens empfohlen habe]}.
-\pause
-\ex \textbf{Vorfeldtest}\\
-\alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} kauft Peter. 
-\pause
-\ex \textbf{Fragetest}\\
-\alertred{{[}Was]} kauft Peter? \ras \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]}
-\zl
 
+\ea Peter kauft \alertred{[das erfrischende Wasser, das ich dir letztens empfohlen habe]}.
+
+\pause
+
+\ex \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} kauft Peter.  \hfill [\textbf{Vorfeldtest}]
+
+\pause
+
+\ex \alertred{{[}Was]} kauft Peter? \ras \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} \hfill [\textbf{Fragetest}]
+\z
 
 \pause
 \begin{itemize}
@@ -498,29 +660,36 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Interpretation}}
+\frametitle{Interpretation}
 
 \begin{itemize}
-	\item Welches Element in der Phrase\\
-	{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]\\
-	steuert die Interpretation?
-\pause
-	\item[\ra] \emph{Wasser} (Entität)
-\pause
-	\item Welches Element in der Phrase\\
-	Peter wartet \alertred{[an der Ecke]}.\\
-	steuert die Interpretation?
-\pause
-	\item[\ra] \emph{an} (Lokation)
-\pause
-	\item Welches Element in der Phrase\\
-	Peter \alertred{[wartet an der Ecke]}.\\
-	steuert die Interpretation?
- \pause
-	\item[\ra] \emph{wartet} (Handlung)
-
+	\item Welches Element in den folgenden (markierten) Phrasen steuert die Interpretation?
 \end{itemize}
 
+\pause 
+	
+	\ea {[}das erfrischende Wasser, das ich dir letztens empfohlen habe]
+
+\pause
+	
+	\ras \emph{Wasser} (Entität)
+
+\pause
+	\ex Peter wartet \alertred{[an der Ecke]}.
+
+\pause
+	\ras \emph{an} (Lokation)
+
+\pause
+
+	\ex Peter \alertred{[wartet an der Ecke]}.
+	
+ \pause
+
+	\ra \emph{wartet} (Handlung)
+	
+	\z 
+	
 \end{frame}
 
 
@@ -1089,7 +1258,7 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 	\item Bestimmen Sie den Kopf der folgenden Phrase und begründen Sie Ihre Entscheidung:
 	
-	\ea Es geht um [\textbf{wirklich von dieser Sache überzeugte und engagierte junge Schüler, die sich dennoch über das übliche und akzeptable Ausmaß hinaus daneben benommen haben}].
+	\ea\label{ex:KopfSchueler} Es geht um [\textbf{wirklich von dieser Sache überzeugte und engagierte junge Schüler, die sich dennoch über das übliche und akzeptable Ausmaß hinaus daneben benommen haben}].
 	\z
 	
 	\ea Wir warteten auf [\textbf{den von sich sehr überzeugten Redner}].
@@ -1108,14 +1277,47 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 \frametitle{Hausaufgabe (Lösung)} 
 
 \begin{itemize}
-	
 	\item Bestimmen Sie den Kopf der folgenden Phrase und begründen Sie Ihre Entscheidung:
+\end{itemize}
 	
 	\ea Es geht um [\textbf{wirklich von dieser Sache überzeugte und engagierte junge Schüler, die sich dennoch über das übliche und akzeptable Ausmaß hinaus daneben benommen haben}].
 	\z
-	
-\end{itemize}	
 
+\pause 
+
+%{\textcolor{green}{	
+\begin{itemize}
+	\item Kopf: Schüler (vorläufig)
+	\item Interpretation: Es geht um \emph{Schüler}
+	\item Distribution: Innerhalb einer PP wird eine (DP/)NP selegiert. Der Kopf dieser NP ist das Nomen.
+	\item Phrasenaufbau: Alle anderen Modifikatoren beziehen sich auf das Nomen. 
+\end{itemize}
+%}	
+	
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+%
+%\begin{itemize}
+%	\item Bestimmen Sie den Kopf der folgenden Phrase und begründen Sie Ihre Entscheidung:
+%\end{itemize}
+%
+%\ea Wir warteten auf [\textbf{den von sich sehr überzeugten Redner}].
+%\z 
+%
+%\pause 
+%
+%{\textcolor{green}{	
+%		\begin{itemize}
+%			\item Kopf: Redner (vorläufig)
+%			\item Interpretation: Es geht um \emph{Redner}
+%			\item Distribution: Innerhalb einer PP wird eine (DP/)NP selegiert. Der Kopf dieser NP ist das Nomen.
+%			\item Phrasenaufbau: Alle anderen Modifikatoren beziehen sich auf das Nomen. 
+%		\end{itemize}
+%}	
+%	
 \end{frame}
 
 }
@@ -1130,18 +1332,18 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 \begin{itemize}
 
-	\item Geben Sie den Subkategorisierungsrahmen (in dem besprochenen Format) und einen Beispielsatz für die folgenden Wörter an:
+	\item Geben Sie für die folgenden Wörter den Subkategorisierungsrahmen (in dem besprochenen Format) und einen Beispielsatz, der den von Ihnen angegebenen Subkategorisierungsrahmen illustriert, an:
 	
 	\ea übergeben
 	\ex stolz
-	\ex regnen
+	\ex donnern
 	\ex glauben
 	\ex Frage
 	\ex erschrecken
 	\ex bemalen
 	\z 
 	
-%	wissen, donnern, scheinen, mit, erschrecken, ängstigen, fürchten, Banane, Tatsache, warten, Angst, wohnen, bewohnen, auf, malen, krank, bemalen, fragen
+%	wissen, regnen, scheinen, mit, ängstigen, fürchten, Banane, Tatsache, warten, Angst, wohnen, bewohnen, auf, malen, krank, bemalen, fragen
 
 \end{itemize}
 
@@ -1156,7 +1358,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 \frametitle{Hausaufgabe (Lösung)} 
 
 
-
 \end{frame}
 }
 
@@ -1168,6 +1369,19 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 \begin{frame}
 \frametitle{Hausaufgabe}
 
+\begin{itemize}
+	
+	\item Bestimmen Sie in den folgenden Sätzen, welche Phrasen Argumente und welche Modifikatoren des Verbs sind, und begründen Sie Ihre Entscheidung.
+
+
+\end{itemize}
+
+\ea Maria bearbeitete die Folien mit sehr viel Kreativität.
+
+\ex Maria arbeitete an den Folien den ganzen Tag.
+
+\ex Peter wirkte auf seinen Sohn stolz.
+\z 
 
 \end{frame}
 

@@ -1811,6 +1811,22 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 	\end{itemize}
 \end{itemize}
 
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} \\ 
+		\hline 
+		1 & 0 & \alertred{1}\\ 
+		\hline 
+		0 & 1 & \alertred{1} \\
+	\end{tabular} 
+	%	}
+\end{table}
+\begin{itemize}
+	\item[]  \alertred{Der Satz ist eine Tautologie, weil die Aussage immer wahr ist (immer Wahrheitswert 1).}
+\end{itemize}
+
 \end{frame}
 
 
@@ -1832,6 +1848,22 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 	
 \end{itemize}
 
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} & $\lnot$ \textbf{(p $\lor \lnot$p)}\\ 
+		\hline 
+		1 & 0 & 1& \alertred{0} \\ 
+		\hline 
+		0 & 1 & 1 & \alertred{0} \\
+	\end{tabular} 
+	%	}
+\end{table}
+\begin{itemize}
+	\item[] \alertred{Der Satz ist ein Kontradiktion, weil der Wahrheitswert immer 0 ist. Die Aussage ist immer falsch.}
+\end{itemize}
+
 \end{frame}
 
 
@@ -1851,6 +1883,27 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 		
 	\end{itemize}	
 	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c}
+		\textbf{p}& q & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
+		\hline 
+		1 & 0 & 1& \alertred{0} \\ 
+		\hline 
+		1 & 1 & 1 & \alertred{1} \\
+		\hline 
+		0 & 0 & 0 & \alertred{1}\\
+		\hline 
+		0 & 1 &  1 &  \alertred{1}\\
+	\end{tabular} 
+	%	}
+\end{table}
+
+\begin{itemize}
+\item \alertred{Der Satz ist kontingent, d.\,h., dass sich unterschiedliche Wahrheitwerte ergeben können, die von der Welt abhängig sind. }
 \end{itemize}
 
 \end{frame}
@@ -2181,7 +2234,7 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 	\eal 
 		\ex Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
 		\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
-		\ex Die Schrippe kostet 25 Cent. –- Das Brötchen kostet 25 Cent.
+		\ex Die Schrippe kostet 25 Cent. -- Das Brötchen kostet 25 Cent.
 	\zl
 		
 \end{frame}
@@ -2375,13 +2428,16 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 
 \ea 
 	\ea Auf dem Tisch liegt eine Rose.\\
-	Auf dem Tisch liegt eine Blume.
+	Auf dem Tisch liegt eine Blume.\\
+	\ras \alertred{Implikation}
 	
 	\ex Alle Vögel können fliegen.\\
-	Kein Vogel kann nicht fliegen.
+	Kein Vogel kann nicht fliegen.\\
+	\alertred{\ras Paraphrase (synonyme Sätze)}
 	
 	\ex Einige Tiere haben Federn.\\
-	Alle Tiere haben Federn.
+	Alle Tiere haben Federn.\\
+	\alertred{\ras} 
 	\z 	
 \z 
 
@@ -2485,6 +2541,19 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	
 \end{itemize}
 
+\begin{table}
+	\centering	
+		\begin{tabular}{c|c|c|c}
+			\textbf{p}& \textbf{$\lnot$ p} &\textbf{p $\land \lnot$ p} & $\lnot$ \textbf{(p $\land \lnot$ p)} \\ 
+			\hline 
+			0 & 1 & 0& \alertred{1}\\ 
+			\hline 
+			1 & 0 & 0& \alertred{1}\\
+		\end{tabular} 
+\end{table} 
+
+\alertred{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2505,6 +2574,23 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	\end{itemize}	
 	
 \end{itemize}
+
+\begin{table}
+	\centering	
+	\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
+		\textbf{p}& \textbf{q} & \textbf{p $\lor$ q} & \textbf{q $\lor$ p} & \textbf{(p $\lor$ q)} $\leftrightarrow$ \textbf{(q $\lor$ p)} & \textbf{$\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))} \\ 
+		\hline 
+		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
+		\hline 
+		1 & 0 & 1 & 1 & 1 & \alertred{0} \\
+		\hline
+		0 & 1 & 1 & 1 & 1 & \alertred{0} \\
+		\hline
+		0 & 0 & 0 & 0 & 1 & \alertred{0} \\
+	\end{tabular} }
+\end{table} 
+
+\alertred{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
 
 \end{frame}
 
@@ -2527,6 +2613,23 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	\end{itemize}	
 	
 \end{itemize}
+
+\begin{table}
+	\centering	
+	\begin{tabular}{c|c|c|c|c}
+		\textbf{p}& \textbf{q} & \textbf{p \ras q} & \textbf{q \ras p} & \textbf{(p \ras q)} $\leftrightarrow$ \textbf{(q \ras p)} \\ 
+		\hline 
+		1 & 1 & 1 & 1 & \alertred{1} \\ 
+		\hline 
+		1 & 0 & 0 & 1 & \alertred{0} \\
+		\hline
+		0 & 1 & 1 & 0 & \alertred{0} \\
+		\hline
+		0 & 0 & 1 & 1 & \alertred{1} \\
+	\end{tabular} 
+\end{table} 
+
+\alertred{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
 
 \end{frame}
 
@@ -2580,9 +2683,9 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \begin{exe}
-\exr{ex:Wert1} $(p \land q)$
-\exr{ex:Wert2} $(p \rightarrow (q \lor p))$
-\exr{ex:Wert1} $((q \land q) \lor (p \land q))$
+\exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
+\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
+\exr{ex:Wert1} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
 \end{exe}
 \end{frame}
 

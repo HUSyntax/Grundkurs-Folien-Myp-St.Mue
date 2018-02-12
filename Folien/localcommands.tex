@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%          Commands                            %%%
+%%%            MyP-Commands                      %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,13 +19,15 @@
 %\newcommand{\s}{s.~}
 %not possibel: \dh --> d.\,h.
 
+%rot unterstrichen
+%\newcommand{\rotul}[1]{\textcolor{red}{\underline{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Abbreviations in English
 \newcommand{\ao}{a.o.\ }	% among others
-\renewcommand{\cf}[1]{(cf.~#1)}	% confer = compare
+%\newcommand{\cf}[1]{(cf.~#1)}	% confer = compare
 \renewcommand{\ia}{i.a.}	% inter alia = among others
-\renewcommand{\ie}{i.e.~}	% id est = that is
+%\newcommand{\ie}{i.e.~}	% id est = that is
 \newcommand{\fe}{e.g.~}	% exempli gratia = for example
 %not possible: \eg --> e.g.~
 \newcommand{\vs}{vs.\ }	% versus
@@ -87,8 +89,8 @@
 % Objekt language marking:
 %\newcommand{\obj}[1]{\glqq{}#1\grqq{}}	%German double quotes
 %\newcommand{\obj}[1]{``#1''}			%English double quotes
-\newcommand{\MyPobj}[1]{\emph{#1}}		%Emphasising
-
+%\newcommand{\MyPobj}[1]{\emph{#1}}		%Emphasising
+\newcommand{\MyPobj}[1]{\textit{#1}}		%Emphasising
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Semantic types (<e,t>), features, variables and graphemes in angled brackets 
@@ -108,6 +110,17 @@
 \newcommand{\ab}[1]{$\langle$#1$\rangle$}  %%same as \abu  
 \newcommand{\abu}[1]{$\langle$#1$\rangle$} %%Umlaute
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Marking text with colour:
+% package needed: xcolor
+% Command \alert{} in Beamer >> red
+\newcommand{\alertred}[1]{\textcolor{red}{#1}}
+\newcommand{\alertblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\alertgreen}[1]{\textcolor{green}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Notizen
 \renewcommand{\marginfont}{\singlespacing}
 \renewcommand{\marginfont}{\footnotesize}
@@ -121,9 +134,12 @@
 		\end{spacing}
 	}
 }
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Outputbox
 \newcommand{\outputbox}[1]{\noindent\fbox{\parbox[t][][t]{0.98\linewidth}{#1}}\vspace{0.5em}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% (Syntactic) Trees
@@ -137,7 +153,7 @@
 %% this is taken from langsci-setup file
 %% Setting for complex trees
 %% \forestset{
-%% 	sn edges/.style={for tree={parent anchor=south, child anchor=north,align=center}}, 
+%% 	sm edges/.style={for tree={parent anchor=south, child anchor=north,align=center}}, 
 %% background tree/.style={for tree={text opacity=0.2,draw opacity=0.2,edge={draw opacity=0.2}}}
 %% }
 
@@ -169,6 +185,7 @@
 %%%%%%%%%%%%%%%%%%%%%
 % RED MARKING OF TEXT:
 %\alert{bis spätestens Mittwoch, 18 Uhr}
+%\newcommand{\alertred}[1]{\textcolor{red}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%
 %% RESCALE BIG TABLES:
@@ -190,10 +207,47 @@
 %Text
 %\end{exampleblock}
 
+%%%%%%%%%%%%%%%%%%%%%
+%% TOGGLES:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Hausaufgabe}
+%
+%\end{frame}
+%
+%} 
+%%% END uebung true = Q
+%%% BEGIN uebung false = A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Hausaufgabe}
+%
+%\end{frame}
+%
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Tipa font:
+%\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}
+
+%Tipa serif font fixed (requires package 'Linux Libertine B')
+\newfontfamily{\tipacm}[Scale=MatchUppercase]{Linux Libertine B}
+%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}}
+\renewcommand\useTIPAfont{\tipacm}
+
 
 \newtoggle{uebung}
-\newtoggle{loesung}
+\newtoggle{ha-loesung}\togglefalse{ha-loesung}
+\newtoggle{phonologie-loesung}
+\newtoggle{graphematik-loesung}
 \newtoggle{toc}
+\newtoggle{hausaufgabe}
 
 % The toc is not needed on Handouts. Safe trees.
 \mode<handout>{

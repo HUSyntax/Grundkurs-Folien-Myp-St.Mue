@@ -1,11 +1,14 @@
-%\togglefalse{uebung}
-%\toggletrue{uebung}
-%\togglefalse{loesung}
-%\toggletrue{loesung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Metadata                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+
 
 \title{Grundkurs Linguistik}
 
@@ -35,21 +38,42 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
 
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 }
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%\nocite{Brandt&Co06a} \nocite{Glueck05a} \nocite{Grewendorf&Co91a} 
-\nocite{Luedeling2009a} \nocite{Meibauer&Co07a} %\nocite{MuellerS15b}
+%\nocite{Brandt&Co06a} %% Syntax
+%\nocite{Glueck05a} 
+\nocite{Glueck&Roedel16a}
+%\nocite{Grewendorf&Co91a} 
+\nocite{Luedeling2009} 
+\nocite{Meibauer&Co07a} 
+\nocite{MyP16a} %% Biconditional
+\nocite{Loebner15a} %% Semantics
+\nocite{Loebner15b} %% Semantics
+\nocite{Lohnstein11} %% Semantics
+%\nocite{MuellerS15b} %%Syntax
+\nocite{Partee&Co93a} %% Semantics
 \nocite{Repp&Co15a}
+\nocite{ZimmermannT&Sternefeld13a} %% Semantics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Begleitlektüre}
+
+\begin{itemize}
+	\item AM S.~95--106
+	\item \citet{Lohnstein11}: Kapitel 4 (S.~34--49)
+\end{itemize}
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,29 +93,48 @@
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Semantik (Bedeutungslehre)
+	\item Semantik: Bedeutungslehre
 	\item []
-	\item Teildisziplin der \textbf{Linguistik} \ras \textbf{Bedeutung} von einfachen und zusammengesetzten \textbf{natürlichsprachlichen Ausdrücken}
-	\item []
-	\item Durch morphologische und syntaktische Kompetenz \ras Produktion von unendlich vielen Wörtern und Sätzen
+	\item Teildisziplin der \textbf{Linguistik} 
 	\item[]
-	\item Aufgabe der Semantik \ras Welche Kenntnisse besitzen wir, um diese unendlich vielen sprachlichen (einfachen oder komplexen) Ausdrücke zu verstehen (oder zu produzieren) \ras Wie muss unsere \textbf{semantische Kompetenz} aussehen, welche sind die \textbf{zugrunde liegenden Fähigkeiten}?
-\end{itemize}
+	\item Aufgabe: Erfassen der \textbf{Bedeutung} von einfachen und zusammengesetzten \textbf{natürlichsprachlichen Ausdrücken} 
 
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Einführung}
 
+\begin{itemize}
+	\item Durch morphologische und syntaktische Kompetenz \ras Produktion von unendlich vielen Wörtern und Sätzen
+	\item[]
+	\item Aufgabe der Semantik: 
+	
+	\begin{itemize}
+		\item Welche Kenntnisse besitzen wir, um diese unendlich vielen sprachlichen (einfachen oder komplexen) Ausdrücke zu \textbf{verstehen} (oder zu \textbf{produzieren})?
+		
+		\item Wie muss unsere \textbf{semantische Kompetenz} aussehen? (Welche sind ihre Restriktionen?)
+		
+		\item Welche sind die \textbf{zugrunde liegenden Fähigkeiten}?
+	\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Gegenstandsbereiche anderer Teilbereiche der Linguistik:
+	\item Gegenstandsbereiche anderer Teilbereiche der Linguistik sind \gqq{leichter} zu erfassen
 		
 		\begin{itemize}
-			\item Phonologie, die Morphologie und die Syntax \ras leichter erfassbar (Datensammlungen, wie Korpora oder in Tonaufnahmen)
+			\item Phonologie, die Morphologie und die Syntax \ras Datensammlungen (Korpora oder in Tonaufnahmen)
 		\end{itemize}
 	
 	\item []	
@@ -102,7 +145,14 @@
 		\end{itemize}
 		
 	\item[]	
-	\item Teildisziplin der \textbf{Semiotik} (Zeichenlehre) \ras Bedeutung von \textbf{Zeichen im Allgemeinen} (s. Symbol, Ikone, Index) und \textbf{Beziehung} zwischen Zeichen und seiner Bedeutung
+	\item Semantik als Teildisziplin der \textbf{Semiotik}:
+	
+	\begin{itemize}
+		\item Semiotik: Lehre der Zeichen
+		
+		\item \textbf{Semantik}: Disziplin, die sich mit der Bedeutung von \textbf{Zeichen im Allgemeinen} (vgl.\ Symbol, Ikone, Index) und mit der \textbf{Beziehung} zwischen der Form und der \textbf{Bedeutung} eines Zeichens befasst
+	\end{itemize} 
+	
 \end{itemize}
 
 \end{frame}
@@ -112,48 +162,83 @@
 %
 \section{Zeichen}
 %
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+		\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Zeichen}
+
+\begin{frame} \frametitle{Zeichen}
+
+\begin{columns}
+	
+\begin{column}{.5\textwidth}
 
 \begin{itemize}
 	\item Zeichen bestehen aus zwei Komponenten:
-		
-		\begin{itemize}
-			\item \textbf{Inhaltsseite}
-			\item \textbf{Ausdrucksseite}
-		\end{itemize}
-		
-	\item Untersuchung der Beziehung zwischen Inhalts- und Ausdrucksseite u.\,a. durch Ferdinand de Saussure und Karl Bühler (Organonmodell) zu Beginn des XX. Jh.
-	\item De Saussure: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
-	\item Bilaterale Zeichenkonzeption von de Saussure wurde ergänzt
-		
-		\begin{itemize}
-			\item Mit sprachlichen Zeichen beziehen wir uns nicht auf Begriffen, sondern auf \textbf{Referenten} auf der Welt, auf \gqq{Gegenstände}.
-		\end{itemize}
-		
+	
+	\begin{itemize}
+		\item \textbf{Inhaltsseite}
+		\item \textbf{Ausdrucksseite}
+	\end{itemize}
+	
+	\item[]
+	
+	\item Untersuchung der Beziehung zwischen Inhalts- und Ausdrucksseite u.\,a. durch Ferdinand de Saussure und Karl Bühler (Organonmodell) zu Beginn des XX. Jhs.
+	
 \end{itemize}
 
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Zeichen}
+\end{column}
+%%
+%%
+\begin{column}{.5\textwidth}
 
 \begin{figure}
-\centering
-\includegraphics[scale=0.5]{material/07SemiotischesDreieck}
+	\begin{center}
+		\includegraphics[scale=.3]{material/Ferdinand_de_Saussure}	
+	\end{center}
+	
+	\caption{Ferdinand de Saussure}	
 \end{figure}
+	
+\end{column}
+
+\end{columns}
 
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{Zeichen}
+
+\begin{itemize}
+	\item \citet{Saussure16a}: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
+\end{itemize}	
+
+\begin{center}
+	\includegraphics[scale=.2]{material/01SSZeichenKatze}	
+\end{center}
+
+\end{frame}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{Zeichen}
+
+\begin{itemize}
+	\item \textbf{Bilaterale Zeichenkonzeption} von de Saussure wurde ergänzt: Mit sprachlichen Zeichen beziehen wir uns \textbf{nicht auf Begriffe}, sondern \textbf{auf Referenten} in der Welt, auf \gqq{Gegenstände}.
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{material/07SemiotischesDreieck}
+\end{figure}
+	
+\end{frame}	
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,49 +247,61 @@
 \frametitle{Zeichen}
 
 \begin{itemize}
-	\item Sprachliches Zeichen (Ausdruck) hat \textbf{keinen direkten Bezug} auf einen Referenten
-	\item []	
-	\item Bezug zwischen Ausdruck und Referent \textbf{durch den Begriff} (in der aktuellen sprachlichen Welt)
-
-	\begin{itemize}
-		\item \textbf{Ausdruck} ist an einen \textbf{Begriff}/ Konzept gekoppelt, der schließlich die \textbf{Referenz} ermöglicht
-	\end{itemize}
+	\item Ein sprachlicher Ausdruck (Formseite des Zeichens) hat \textbf{keinen direkten Bezug} auf einen Referenten.
 	
+	\item []	
+	
+	\item Bezug zwischen dem Ausdruck und dem Referenten erfolgt \textbf{durch den Begriff} (in der aktuellen sprachlichen Welt)
+	
+	\item[]
+	
+	\item \textbf{Ausdruck} ist an einen \textbf{Begriff} (oder Konzept) gekoppelt, der schließlich die \textbf{Referenz} ermöglicht.
+		
 \end{itemize}
 	
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Zeichen}
 
 \begin{itemize}
-	\item Wichtige Eigenschaften von Zeichen (de Saussure):
+	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16a}:
+	
+	\item[]
+		
+	\item \textbf{Arbitrarität:} Verbindung zwischen Zeichenform und Zeicheninhalt ist willkürlich.
 	
 	\begin{itemize}
-		\item Verbindung zwischen Zeichenform und Zeicheninhalt $\rightarrow$ \textbf{arbiträr}
+		\item Derselbe Inhalt wird in unterschiedlichen Sprachen durch verschiedene (lautliche) Formen realisiert.
 		
-		\begin{itemize}
-			\item Derselbe Inhalt aber in unterschiedlichen Sprachen durch verschiedene (lautliche) Formen
-			\item \gq{KATZE}: Dt.: Katze, Sp.: gato, Frz.: chat
-			\item Von der Form eines sprachlichen Zeichens kann man nicht auf seinen Inhalt/ Referenten schließen (Ausnahme: Onomatopoesie).
-		\end{itemize}
+		\ea \gq{Katze}: Dt.: Katze, Sp.: gato, Frz.: chat
+		\z 
 		
-		\item []		
-		\item Verbindung zwischen Zeichenform und Zeicheninhalt \ras \textbf{konventionell}
-		
-		\begin{itemize}
-			\item Es muss in einer Sprachgemeinschaft \textbf{festgelegt} sein, welche Form mit welchem Inhalt verknüpft ist. Dies muss so \textbf{gelernt} werden und kann \textbf{nicht beliebig verändert} werden.
-		\end{itemize}
-		
+		\item Von der Form eines sprachlichen Zeichens kann man nicht auf seinen Inhalt/Referenten schließen (Ausnahme: onomatopoetische Ausdrücke).
 	\end{itemize}
+	
+
 	
 \end{itemize}
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Zeichen}
+
+\begin{itemize}
+	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16a}:
+
+	\item[]
+	
+	\item \textbf{Konventionalität:} Verbindung zwischen Zeichenform und Zeicheninhalt muss in einer Sprachgemeinschaft \textbf{festgelegt} sein, d.\,h. welche Form mit welchem Inhalt verknüpft ist. Dies muss so \textbf{gelernt} werden und kann \textbf{nicht beliebig verändert} werden.
+\end{itemize}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -218,9 +315,9 @@
 		\item \textbf{Konventionalität} als grundlegendere Eigenschaft
 		\item[]
 		\item Viele verwendete Zeichen in Gebärdensprachen haben ikonische oder semi-ikonische Eigenschaften.\\
-\ras Verbindung zwischen einer Gebärde und ihrem Inhalt nicht (immer) völlig arbiträr!
+\ras Verbindung zwischen einer Gebärde (Form) und ihrem Inhalt ist nicht immer völlig arbiträr!
 		\item[]		
-		\item Eine Gebärde kann aber nicht einfach durch eine andere ersetzt werden \ras Konventionalität
+		\item Eine Gebärde kann aber nicht einfach durch eine andere ersetzt werden \ras \textbf{Konventionalität}
 		\item[]
 		\item Der ikonische (oder semi-ikonische) Charakter von Gebärden geht mit der Zeit auch verloren, und somit werden diese Zeichen auch \textbf{arbiträr}.
 	\end{itemize}
@@ -234,11 +331,13 @@
 %
 \section{Bedeutung}
 %
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -253,20 +352,20 @@
 	\begin{itemize}
 		\item Semantik\\ \&
 		\item Pragmatik\\ 
-		\vspace{3mm}
-		Keine klare Trennung!
+		\hfill \dots\  keine klare Trennung!
 	\end{itemize}
+
+\pause 
 	
-	\item Semantik \ras kontextunabhängige Bedeutungsaspekte
+	\item Semantik: Untersuchung der kontext\textbf{unabhängigen} Bedeutungsaspekte natürlichsprachlicher Ausdrücke
 	\item[]
-	\item Pragmatik \ras kontextabhängige Bedeutungsaspekte
+	\item Pragmatik: Untersuchung der kontext\textbf{abhängigen} Bedeutungsaspekte  natürlichsprachlicher Ausdrücke
 \end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Bedeutung}
 
@@ -274,43 +373,115 @@
 	\item Drei Ebenen der Bedeutung:
 	
 	\begin{itemize}
-		\item Ausdrucksbedeutung (auch Satzbedeutung)
+		\item Ausdrucksbedeutung (auch Wort-/Satzbedeutung)
 		\item Äußerungsbedeutung
 		\item Sprecherbedeutung (Kommunikativer Sinn)
 	\end{itemize}
 	
-	\item[]
-	\item Ausdrucksbedeutung (Satzbedeutung)
-	
-	\begin{itemize}
-		\item Die wörtliche Bedeutung, die sich systematisch aus der Bedeutung der Elementen und der Art der Verknüpfung ableiten lässt.
-		\item Unabhängig vom Äußerungskontext
-	\end{itemize}
-
 \end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Ausdrucksbedeutung}
+%
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Bedeutung}
+	\frametitle{Ausdrucksbedeutung}
 
-\begin{itemize}
-	\item Ausdrucksbedeutung (Satzbedeutung)
-	
+
+	\begin{itemize}
+		\item \textbf{wörtliche Bedeutung}, die sich systematisch aus der Bedeutung der Elementen und der Art der Verknüpfung ableiten lässt
+		\item[]
+		\item unabhängig vom Äußerungskontext
+	\end{itemize} 
+
+\pause 
+
 	\ea \label{ex1}Peter hat das ganze Brot aufgegessen.
 	\z
+
+\begin{itemize}
+	\item Der Satz in \ref{ex1} hat demnach in etwa die Satzbedeutung:\\
+	Es gibt ein Individuum, das \textbf{Peter} genannt wird,
+	und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
+	\textbf{das Brot gänzlich} aufgegessen zu haben (\textbf{Vergangenheitsform}).
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Äußerungsbedeutung}
+%
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Äußerungsbedeutung}
+
+\begin{itemize}
+	\item Sie bezieht sich (im Vgl.\ zur Ausdrucksbedeutung) auf die \textbf{in einem bestimmten, situativen Kontext} weiter spezifizierte Bedeutung eines Ausdrucks.
+
+\pause 
 	
+	\ea \label{ex1b}Peter hat das ganze Brot aufgegessen.
+	\z
+
+	\item In (\ref{ex1b}): Wenn Peter an seinem 20.\ Geburtstag am 20.\ Oktober 2010 um 10 Uhr morgens das Brot aufgegessen hat, ist die Äußerung des Satzes um 11 Uhr morgens desselben Tages immer noch wahr.
+	\item[]
+	\item In diesem Fall redet man auch vom \textbf{Äußerungskontext}, der notwendig ist, um den Satz zu \textbf{disambiguieren} und seine Referenz zu bestimmen (vgl. auch deiktische Ausdrücke).
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Sprecherbedeutung}
+%
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Sprecherbedeutung}
+
+\begin{itemize}
+	\item Sie meint hingegen die Sprecherintention
+	\item[]
+	\item Was meint der Sprecher eigentlich mit der Äußerung des Satzes?
+
+	\ea \label{ex1b}Peter hat das ganze Brot aufgegessen.
+	\z
+
+\pause 
+
 	\begin{itemize}
-		\item Der Satz in \ref{ex1} hat demnach in etwa die Satzbedeutung:\\
-		\vspace{5mm}
-		Es gibt ein Individuum, das \textbf{Peter} genannt wird,
-und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
-\textbf{das Brot gänzlich} aufgegessen zu haben (\textbf{Vergangenheitsform}).
+		\item jemanden auffordern, Brot für das Frühstück zu kaufen, weil Peter alles aufgegessen hat.
 	\end{itemize}
 	
+	\item In einigen Äußerungskontexten kann die Satzbedeutung eines Ausdrucks stark von seiner Sprecherbedeutung abweichen.
 \end{itemize}
 
 \end{frame}
@@ -319,88 +490,48 @@ und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Bedeutung}
+\frametitle{Sprecherbedeutung}
 
-\begin{itemize}
-	\item Äußerungsbedeutung
+
+	\ea \label{ex2} Da ist die Tür!
+	\z
+	
+	\ea \label{ex3}Das hast du aber toll gemacht!
+	\z
+
+\pause 
 	
 	\begin{itemize}
-		\item Sie bezieht sich jedoch auf die in einem bestimmten, situativen Kontext weiter spezifizierte Bedeutung eines Ausdrucks.
+		\item (\ref{ex2}): Aufforderung, den Raum zu verlassen
 		\item[]
-		\item Wenn Peter an seinem 20. Geburtstag am 20. Oktober 2010 um 10 Uhr morgens das Brot aufgegessen hat, ist die Äußerung des Satzes um 11 Uhr morgens desselben Tages immer noch wahr.
-		\item[]
-		\item In diesem Fall redet man auch vom Äußerungskontext, der notwendig ist, um den Satz zu disambiguieren und seine Referenz zu bestimmen (s. deiktische Ausdrücke).
+		\item (\ref{ex3}): ironischer Kommentar zu jemandem, der etwas falsch gemacht hat
+		
 	\end{itemize}
 	
-\end{itemize}
-
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Bedeutung: Semantik vs.\ Pragmatik}
+%
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Bedeutung}
+\frametitle{Bedeutung: Semantik vs.\ Pragmatik}
 
 \begin{itemize}
-	\item Sprecherbedeutung (oder kommunikativer Sinn)
-	
-	\begin{itemize}
-		\item Sie meint hingegen die Sprecherintention
-		\item[]
-		\item Was meint der Sprecher eigentlich mit der Äußerung des Satzes?
-		\item[]
-		\item Sprecher von Satz \ref{ex1} kann z.B.:
-		
-		\begin{itemize}
-			\item jemanden auffordern, Brot für das Frühstück zu kaufen, weil Peter alles aufgegessen hat.
-		\end{itemize}
-		
-		\item In einigen Äußerungskontexten kann die Satzbedeutung eines Ausdrucks stark von seiner Sprecherbedeutung abweichen.
-	\end{itemize}
-
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Bedeutung}
-
-\begin{itemize}
-	\item Sprecherbedeutung (oder kommunikativer Sinn)
-	
-	\begin{itemize}
-		\item Beispiel \ref{ex2}: Aufforderung, den Raum zu verlassen
-		\item[]
-		\item Beispiel \ref{ex3}: ironischer Kommentar zu jemandem, der etwas falsch gemacht hat.\\
-		
-		\ea \label{ex2} Da ist die Tür!
-		\z
-		
-		\ea \label{ex3}Das hast du aber toll gemacht!
-		\z
-		
-	\end{itemize}
-	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Bedeutung}
-
-\begin{itemize}
-	\item Satzbedeutung \ras Gegenstand der Semantik
+	\item Ausdrucksbedeutung \ras Gegenstand der Semantik
 	\item[]
 	\item Sprecherbedeutung \ras Gegenstand der Pragmatik
 	\item[]
-	\item Äußerungsbedeutung \ras  sowohl in der Semantik (deiktische Elemente) als auch in der Pragmatik (Kontext) berücksichtigt
+	\item Äußerungsbedeutung \ras  sowohl in der Semantik (deiktische Elemente, Pronomina) als auch in der Pragmatik (Kontext, Ironie) berücksichtigt
 \end{itemize}
 
 \end{frame}
@@ -408,13 +539,15 @@ und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Lexikalische Semantik (Wortbedeutung)}
+\section{Lexikalische Semantik}
 %
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -422,19 +555,19 @@ und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
 \frametitle{Lexikalische Semantik (Wortbedeutung)}
 
 \begin{itemize}
-	\item Wortbedeutung \ras konventionalisierter und kontextunabhängiger Inhalt eines Ausdrucks
+	\item Wortbedeutung \ras \textbf{konventionalisierter} und \textbf{kontextunabhängiger} Inhalt eines Ausdrucks
 	\item[]
 	\item Lexikalische Semantik:
 	
 	\begin{itemize}
 		\item Erfassung des invariablen Inhalts eines Wortes
 		\item Repräsentation und Organisation des Inhalts
+		\item Relation zwischen den Bedeutungen verschiedener Ausdrücke
 	\end{itemize}
 	
 	\item[]
 	\item Siehe: Merkmalshypothese, Prototypentheorie, Wortfeldrelationen, etc.
 \end{itemize}
-
 
 \end{frame}
 
@@ -457,7 +590,7 @@ und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
 \begin{itemize}
 	\item Zusammenhang zwischen den Bedeutungen von Ausdrücken
 	\item[]
-	\item Systematisch erfassbare Relationen:
+	\item systematisch erfassbare Relationen:
 	
 \vspace{5mm}
 	
@@ -479,11 +612,14 @@ und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
+
+\begin{block}{Synonymie}
+Zwei Ausdrücke $X$ und $Y$ sind Synonyme, wenn der Austausch von $X$ durch $Y$ und umgekehrt in allen Kontexten bei Wahrung der Wahrheit (\emph{salva veritate}) erfolgt.
+\end{block}
 
 \begin{itemize}
-	\item \textbf{Synonymie}\\Zwei Ausdrücke X und Y sind Synonyme, wenn der Austausch von X durch Y und umgekehrt in allen Kontexten bei Wahrung der Wahrheit (salva veritate) erfolgt.
-	\item[]
+	\item $X$ ist ein $Y$ und $Y$ ist ein $X$
 	\item Bikonditional: $\leftrightarrow$
 	
 	\eal
@@ -503,78 +639,68 @@ und für dieses Individuum trifft die Eigenschaft zu (\textbf{Deklarativsatz}),
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
+
+\begin{block}{Hyperonymie / Hyponymie}
+Ein Ausdruck $X$ ist ein Hyperonym von $Y$, wenn die Bedeutung von $Y$ in der Bedeutung von $X$ enthalten ist. Ein Ausdruck $Y$ ist ein Hyponym von $X$, wenn die Bedeutung von $Y$ in der Bedeutung von X enthalten ist.
+\end{block}
 
 \begin{itemize}
-	\item \textbf{Hyperonymie / Hyponymie}\\
-Ein Ausdruck X ist ein Hyperonym von Y, wenn die Bedeutung von Y in der Bedeutung von X enthalten ist.
-Ein Ausdruck Y ist ein Hyponym von X, wenn die Bedeutung von Y in der Bedeutung von X enthalten ist.
-	\item[]	
-	\item Transitive Relation
-	\item[]
+	\item $Y$ ist ein $X$ (aber $X$ ist nicht notwendigerweise ein $Y$)		
+	\item transitive Relation
+%	\item[]
 	\item Implikation: \ras
 	
-	\begin{itemize}
-		\item Y ist ein X
-		
-		\eal 
+	\eal 
 		\ex Küchenstuhl \ras Stuhl \ras Sitzgelegenheit
 		\ex erschie\ss{}en \ras töten
-		\zl
+	\zl
 		
-	\end{itemize}
-	
 \end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
 
-\begin{itemize}
-	\item \textbf{Kohyponymie}\\
-Ein Ausdruck X ist ein Kohyponym von Z (und umgekehrt), wenn die Bedeutung von X und Z in der Bedeutung von Y enthalten ist. Kohyponyme schließen einander aus (Inkompatibilität)
+\begin{block}{Kohyponymie}
+Ein Ausdruck $X$ ist ein Kohyponym von $Z$ (und umgekehrt), wenn die Bedeutung von $X$ und $Z$ in der Bedeutung von $Y$ enthalten ist. Kohyponyme schließen einander aus (Inkompatibilität).
+\end{block}
 
 \eal
-\ex Drehstuhl $|$ Küchenstuhl \ras Stuhl \ras Sitzgelegenheit
+\ex Drehstuhl / Küchenstuhl \ras Stuhl \ras Sitzgelegenheit
 \ex erschießen / erwürgen / erdrosseln \ras töten
 \zl
 
-
-	\item[]
-	\item Hyperonymie $|$ Hyponymie: Basis für Taxonomien
-
+\begin{itemize}
+	\item Hyperonymie / Hyponymie: Basis für Taxonomien
 \end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
 
-\begin{itemize}
-	\item \textbf{Meronymie}\\
-Ein Ausdruck X ist ein Meronym von Y, wenn X ein Teil von Y ist.
+\begin{block}{Meronymie}
+Ein Ausdruck $X$ ist ein Meronym von $Y$, wenn $X$ ein Teil von $Y$ ist.
+\end{block}
 
-\vspace{5mm}
-	
 	\eal
 	\ex Finger > Hand > Arm > Oberkörper > Körper
 	\ex Rad > Auto
 	\zl
-	
-	\item[]
-	\item Transitiv: 
+
+\begin{itemize}	
+	\item transitiv: 
 		
 	\ea die Manschette des Ärmels, der Ärmel der Jacke \ras die Manschette der Jacke
 	\z
 		
-	\item Intransitiv: 
+	\item intransitiv: 
 		
 	\ea der Griff der Tür, die Tür des Hauses \ras \# der Griff des Hauses
 	\z
@@ -585,15 +711,15 @@ Ein Ausdruck X ist ein Meronym von Y, wenn X ein Teil von Y ist.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
+
+\begin{block}{Antonymie}
+Ein Ausdruck $X$ ist ein Antonym von $Y$, wenn $X$ in irgendeinem Sinne das Gegenteil von $Y$ ist.
+\end{block}
 
 \begin{itemize}
-	\item \textbf{Antonymie}\\
-Ein Ausdruck X ist ein Antonym von Y, wenn X in irgendeinem Sinne das Gegenteil von Y ist.
-	\item[]	
-	\item X \ras $\lnot$ Y
+	\item $X$ \ras $\lnot$ $Y$
 	
 	\eal 
 		\ex fleißig -- faul
@@ -608,14 +734,16 @@ Ein Ausdruck X ist ein Antonym von Y, wenn X in irgendeinem Sinne das Gegenteil 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
+
+\begin{block}{Kontradiktorische Antonymie}
+Ein Ausdruck $X$ ist ein kontradiktorisches Antonym von $Y$, wenn die Negation von $X$ die Bedeutung von $Y$ ergibt und umgekehrt. Eine drittes $Z$ ist ausgeschlossen.
+\end{block}
 
 \begin{itemize}
-	\item \textbf{Kontradiktorische Antonymie}\\
-Ein Ausdruck X ist ein kontradiktorisches Antonym von Y, wenn die Negation von X die Bedeutung von Y ergibt und umgekehrt. (Eine drittes Z ist ausgeschlossen)
-	\item Komplementarität: (X \ras $\lnot$ Y) \& ($\lnot$ X  \ras Y)
+	\item Komplementarität: $(X \ras \lnot Y) \& (\lnot X  \ras Y)$
 	\item Binär
-	\item Beide Aussagen können nicht gleichzeitig wahr sein und auch nicht gleichzeitig falsch sein.
+	\item Beide Aussagen können \textbf{nicht gleichzeitig wahr} sein und auch \textbf{nicht gleichzeitig falsch} sein.
 	
 	\eal
 		\ex krank -- gesund
@@ -631,17 +759,18 @@ Ein Ausdruck X ist ein kontradiktorisches Antonym von Y, wenn die Negation von X
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sinnrelationen}
+%\frametitle{Sinnrelationen}
+
+\begin{block}{Konträre Antonymie}
+Ein Ausdruck $X$ ist ein konträres Antonym von $Y$, wenn $X$ und $Y$ nicht zugleich wahr sein können, aber beide können zugleich nicht zutreffen.
+\end{block}
 
 \begin{itemize}
-	\item \textbf{Konträre Antonymie}\\
-Ein Ausdruck X ist ein konträres Antonym von Y, wenn X und Y nicht zugleich wahr sein können, aber beide können zugleich nicht zutreffen.
-	\item[]
 	\item Skalar: Antonymie mit Zwischenstufen
 	\item[]
-	\item Beide Aussagen können nicht gleichzeitig wahr sein, aber sie können gleichzeitig falsch sein.
+	\item Beide Aussagen können \textbf{nicht gleichzeitig wahr} sein, aber sie können \textbf{gleichzeitig falsch} sein.
 	\item[]
-	\item (X $\rightarrow \lnot$ Y) \& (Y $\rightarrow \lnot$ X)
+	\item $(X \rightarrow \lnot Y) \& (Y \rightarrow \lnot X)$
 	
 	\eal
 		\ex reich -- arm
@@ -654,160 +783,180 @@ Ein Ausdruck X ist ein konträres Antonym von Y, wenn X und Y nicht zugleich wah
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Ambiguität}
+%
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sinnrelationen}
+\frametitle{Ambiguität}
 
 \begin{itemize}
-	\item \textbf{Ambiguität (Lexikalische Mehrdeutigkeit)}
+	\item \textbf{Ambiguität}: (lexikalische) Mehrdeutigkeit
+\end{itemize}	
 
-\vspace{1em}
-
-	\begin{itemize}
-		\item \textbf{Homonymie}\\
-Ein Ausdruck X und ein Ausdruck Y sind gleich in deren Form (phonetische oder graphische) aber unterschiedlich in deren Bedeutung, wobei X und Y unterschiedliche Ursprünge haben.
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Sinnrelationen}
-
-\begin{itemize}
-	\item \textbf{Ambiguität (Lexikalische Mehrdeutigkeit)}
-
-\vspace{1em}
-
-	\begin{itemize}
-		\item \textbf{Homonymie:}
-		
-		\begin{itemize}
-			\item Homophonie:
-			
-			\eal
-			\ex mahlen vs. malen 
-			\ex sieben (7) vs. sieben
-			\ex laut vs. laut (Präp.)
-			\zl
-			
-			\item Homographie:
-					
-			\eal 
-			\ex 'modern vs. mo'dern
-			\ex Die Therapie des gebrochenen Beines beinhaltet das Fixieren in einer Beinhalterung.
-			\zl
-			
-		\end{itemize}
-		
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Sinnrelationen}
-
-\begin{itemize}
-	\item \textbf{Ambiguität (Lexikalische Mehrdeutigkeit)}
 	
-\vspace{1em}
+\begin{block}{Homonymie}
+Ein Ausdruck $X$ und ein Ausdruck $Y$ sind gleich in deren Form (phonetische oder graphische) aber unterschiedlich in deren Bedeutung, wobei $X$ und $Y$ unterschiedliche Ursprünge haben.
+\end{block}
 
-	\begin{itemize}
-		\item \textbf{Polysemie}\\
-Ein Ausdruck X und ein Ausdruck Y sind gleich in deren Form (phonetische und graphische) können aber unterschiedliche Bedeutungsvarianten voneinander sein. X und Y stehen in einem etymologischen Zusammenhang zueinander.
-
-		\ea Schule, Oper, Grammatik
-		\z
-
-	\end{itemize}
-	
-\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-
 \begin{frame}
-\frametitle{Sinnrelationen}
+\frametitle{Ambiguität}
+
 
 \begin{itemize}
-	\item \textbf{Übung:}
+	\item \textbf{Homophonie:}
 	
 	\eal
-	\ex Ballkleid -- Kleid
-	\ex Bank -- Bank
-	\ex Schraubenzieher -- Zange
-	\ex gro\ss{} -- klein
-	\ex Henkel -- Tasse
-	\ex Ahorn -- Baum
-	\ex essen -- verzehren
-	\ex gerade -- ungerade
+	\ex mahlen vs.\ malen 
+	\ex sieben (7) vs.\ sieben
+	\ex laut vs.\ laut (Präp.)
 	\zl
-		
+	
+	\item \textbf{Homographie:}
+			
+	\eal 
+	\ex 'modern vs.\ mo'dern
+
+\pause 
+	
+	\ex Die Therapie des gebrochenen Beines beinhaltet das Fixieren in einer Beinhalterung.
+	\zl
+	
 \end{itemize}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Ambiguität}
+
+\begin{block}{Polysemie}
+Ein Ausdruck $X$ und ein Ausdruck $Y$ sind gleich in deren Form (phonetische und graphische) können aber unterschiedliche Bedeutungsvarianten voneinander sein. $X$ und $Y$ stehen in einem etymologischen Zusammenhang zueinander.
+\end{block}
+
+\ea Schule, Oper, Grammatik
+\ex 
+	\ea Er ist doch krank. \hfill (\dots\ wie wir wissen)
+	\ex Er ist DOCH krank. \hfill (Wir hatten das Gegenteil erwartet.)
+	\z 
+\z
+
+\nocite{Enders17a}
 
 \end{frame}
 
-}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Relationen -- Übung}
+%
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Relationen -- Übung}
+
+\begin{itemize}
+	\item Bestimmen Sie die Sinnrelationen bzw.\ die Ambiguitätsarten in den folgenden Wortpaaren.
+\end{itemize}
+	
+\eal
+	\ex\label{ex:Rel1} Ballkleid -- Kleid
+	\ex\label{ex:Rel2} Bank -- Bank
+	\ex\label{ex:Rel3} Schraubenzieher -- Zange
+	\ex\label{ex:Rel4} gro\ss{} -- klein
+	\ex\label{ex:Rel5} Henkel -- Tasse
+	\ex\label{ex:Rel6} Ahorn -- Baum
+	\ex\label{ex:Rel7} essen -- verzehren
+	\ex\label{ex:Rel8} gerade -- ungerade
+\zl
+
+\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{loesung}{
-
 \begin{frame}
-\frametitle{Lösung}
+\frametitle{Relationen -- Lösung}
+
+\begin{itemize}
+	\item Bestimmen Sie die Sinnrelationen bzw.\ die Ambiguitätsarten in den folgenden Wortpaaren.
+\end{itemize}
+
+\begin{exe}	
+	\exr{ex:Rel1} Ballkleid -- Kleid \pause \hfill \alertred{Hyponym/ Hyperonym}
+	\exr{ex:Rel2} Bank -- Bank \pause \hfill \alertred{Homonymie (Homographie und -phonie)}
+	\exr{ex:Rel3} Schraubenzieher -- Zange \pause \hfill \alertred{Kohyponymie}
+	\exr{ex:Rel4} gro\ss{} -- klein \pause \hfill \alertred{Konträre Antonymie}
+	\exr{ex:Rel5} Henkel -- Tasse \pause \hfill \alertred{Meronymie}
+	\exr{ex:Rel6} Ahorn -- Baum \pause \hfill \alertred{Hyponym/ Hyperonym}
+	\exr{ex:Rel7} essen -- verzehren \pause \hfill \alertred{Synonymie}
+	\exr{ex:Rel8} gerade natürliche Zahl -- ungerade  natürliche Zahl 
 	
-	\eal
-	\ex Ballkleid -- Kleid: Hyponym/ Hyperonym
-	\ex Bank -- Bank: Homonymie (-graphie und -phonie)
-	\ex Schraubenzieher -- Zange: Kohyponymie
-	\ex gro\ss{} -- klein: Konträre Antonymie
-	\ex Henkel -- Tasse: Meronymie
-	\ex Ahorn -- Baum: Hyponym/ Hyperonym
-	\ex essen -- verzehren: Synonymie
-	\ex gerade -- ungerade: Kontradiktorische Antonymie
-	\zl
+	\pause \hfill \alertred{Kontradiktorische Antonymie}
+\end{exe}
 
 \end{frame}
-}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Satzsemantik (Satzbedeutung)}
 %
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Satzsemantik (Satzbedeutung)}
 
 \begin{itemize}
-	\item Wahrheitsbedingungen (Wittgenstein 1921)
-	\item[]
-	\item Die Bedeutung eines Satzes zu kennen, heißt, notwendige und hinreichende Bedingungen für die Wahrheit bzw. Falschheit des Satzes (= seine Wahrheitsbedingungen) zu kennen.
-	\item[]
-	\item Bedingungen in der aktuellen Welt (verschiedene Welten)
-	
-	
-		\ea Martin kauft Brötchen.
-		\z
-		
-	\begin{itemize}	
-		\item Wahr oder Falsch (1 oder 0) \ras abhängig von der Welt
-	\end{itemize}
+	\item \textbf{Wahrheitsbedingungssemantik} (truth-conditional semantics)
 	
 \end{itemize}
+
+\begin{minipage}{.3\textwidth}
+	
+	\begin{figure}
+		\begin{center}
+			\includegraphics[scale=1.2]{material/Ludwig_Wittgenstein}
+		\end{center}	
+		\caption{Ludwig Wittgenstein (1930)}
+	\end{figure}
+	
+\end{minipage}
+~
+\begin{minipage}{.65\textwidth}
+	
+	\begin{quote}
+		4.025 Einen Satz verstehen, heißt, wissen \textbf{was der Fall ist}, wenn er wahr ist. (Mann kann ihn also verstehen, \textbf{ohne zu wissen, ob er wahr ist}.) Man versteht ihn, wenn man seine \textbf{Bestandteile} versteht. 
+	\end{quote}
+	\hfill \citep{Wittgenstein72a}
+	
+\end{minipage}
 
 \end{frame}
 
@@ -818,9 +967,39 @@ Ein Ausdruck X und ein Ausdruck Y sind gleich in deren Form (phonetische und gra
 \frametitle{Satzsemantik (Satzbedeutung)}
 
 \begin{itemize}
-	\item \textbf{Kompositionalitätsprinzip}\\
-Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unmittelbaren syntaktischen Teile und der Art und Weise, wie sie sich syntaktisch zusammensetzen.
+	\item Die Bedeutung eines Satzes zu kennen, heißt also, \textbf{notwendige} und \textbf{hinreichende} Bedingungen für die Wahrheit bzw.\ Falschheit des Satzes ($=$ seine Wahrheitsbedingungen) zu kennen.
 	\item[]
+	\item Bedingungen in der aktuellen Welt (verschiedene Welten)
+\end{itemize}
+
+\pause 
+	
+	\ea Martin kauft Brötchen.
+	\z
+	
+\begin{itemize}	
+	\item Wahr oder Falsch (1 oder 0) \ras abhängig von der Welt
+\end{itemize}
+
+\pause 	
+	
+	\ea Verdaustig war's und glasse Wieben rotterten gorkicht im Gemank [\dots] \citep{SySt06a}
+	\z 
+	
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Satzsemantik (Satzbedeutung)}
+
+\begin{block}{Kompositionalitätsprinzip}
+Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung seiner unmittelbaren syntaktischen Teile} und der \textbf{Art und Weise}, wie sie sich syntaktisch \textbf{zusammensetzen}.
+\end{block}
+
+\begin{itemize}
 	\item Auch Fregeprinzip genannt
 \end{itemize}
 
@@ -838,23 +1017,47 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 %\end{multicols}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{frame}
 \frametitle{Aussagenlogik}
 
 \begin{itemize}
-	\item Basierend auf dem Kompositionalitätsprinzip
+	\item basierend auf dem Kompositionalitätsprinzip
 	\item[]
 	\item Teilgebiet der formalen Logik
 	\item[]
-	\item Verknüpfung von einfachen Aussagen
-	\item[]
-	\item Wie lässt sich der Wahrheitswert einer komplexen Aussage aus den Wahrheitswerten der in ihr enthaltenen einfachen Aussagen in Abhängigkeit der Verknüpfung errechnen?
+	\item Wie lässt sich der \textbf{Wahrheitswert einer komplexen Aussage} aus den Wahrheitswerten der in ihr enthaltenen \textbf{einfachen Aussagen} in Abhängigkeit der Verknüpfung errechnen?
 \end{itemize}
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{minipage}{.67\textwidth}
+	
+	\begin{itemize}
+		\item \textbf{Aussagenlogik:} Teil der formalen Logik, die sich mit der Bedeutung von Sätzen/Aussagen und ihrer Kombinatorik befasst
+		\item[] 
+		\item nach Aristoteles: Eine \textbf{Aussage} ist etwas, von dem man sagen kann, dass es \textbf{wahr} oder \textbf{falsch} ist.
+		
+	\end{itemize}	
+	
+	\begin{block}{Logik (Schlussfolgerungslehre)}
+		Sie untersucht die \textbf{Struktur von Argumenten} im Hinblick auf ihre Gültigkeit anhand einer \textbf{künstlichen Sprache}, die im Vgl. zur natürlichen Sprache \textbf{weder ambig noch vage} ist.
+	\end{block}
+	
+\end{minipage}
+%%
+\begin{minipage}{.30\textwidth}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[scale=.45]{material/Aristotle_Altemps}
+		\end{center}	
+		\caption{Aristoteles}
+	\end{figure}
+\end{minipage}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -892,8 +1095,8 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 	\item Negation (NICHT): $\lnot$
 	
 	\eal
-		\ex p: Es regnet.
-		\ex $\lnot$ p: Es regnet nicht.
+		\ex $p$: Es regnet.
+		\ex $\lnot p$: Es regnet nicht.
 	\zl
 	
 \end{itemize}
@@ -921,9 +1124,9 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 	\item Konjunktion (UND): $\land$
 	
 	\eal
-		\ex p: Es regnet.
-		\ex q: Es donnert.
-		\ex p $\land$ q: Es regnet und es donnert.
+		\ex $p$: Es regnet.
+		\ex $q$: Es donnert.
+		\ex $p \land q$: Es regnet und es donnert.
 	\zl
 
 \end{itemize}
@@ -958,9 +1161,9 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 	\item Disjunktion (UND/ODER): $\lor$
 
 	\eal
-		\ex p: Es regnet.
-		\ex q: Es schneit.
-		\ex p $\lor$ q : Es regnet oder es schneit.
+		\ex $p$: Es regnet.
+		\ex $q$: Es schneit.
+		\ex $p \lor q$: Es regnet oder es schneit.
 	\zl
 
 \end{itemize}
@@ -995,9 +1198,9 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 	\item Konditional (materiale Implikation) (WENN, DANN): \ras
 	
 	\eal
-		\ex p: Es regnet.
-		\ex q: Die Stra\ss{}e ist nass.
-		\ex p \ras q : Wenn es regnet, dann ist die Stra\ss{}e nass.
+		\ex $p$: Es regnet.
+		\ex $q$: Die Stra\ss{}e ist nass.
+		\ex $p \rightarrow q$ : Wenn es regnet, dann ist die Stra\ss{}e nass.
 	\zl
 
 \end{itemize}
@@ -1011,7 +1214,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 \hline
 1 & 0 & 0\\
 \hline
-0 & 1 & 1 (!)\\
+0 & 1 & 1\\
 \hline 
 0 & 0 & 1\\
 \end{tabular}
@@ -1030,9 +1233,9 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 	\item Bikonditional (GENAU DANN WENN): $\leftrightarrow$
 	
 	\eal
-		\ex p: Peter raucht.
-		\ex q: Maria trinkt.
-		\ex p $\leftrightarrow$ q : Genau dann wenn Peter raucht, trinkt Maria.
+		\ex $p$: Peter raucht.
+		\ex $q$: Maria trinkt.
+		\ex $p \leftrightarrow q$: Genau dann wenn Peter raucht, trinkt Maria.
 	\zl
 
 \end{itemize}
@@ -1058,544 +1261,944 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der Bedeutung seiner unm
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Aussagenlogik -- Übung}
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Aussagenlogik -- Übung}
+%
+%\begin{itemize}
+%	\item Geben Sie die folgenden Aussagen in aussagenlogischer Notation an:
+%\end{itemize}
+%
+%\ea Christiane schläft.
+%\ex Norbert raucht nicht.
+%\ex Norbert raucht und Christiane schläft nicht.
+%\ex Wenn Norbert nicht raucht, schläft Christiane nicht.
+%\ex Wenn ich schlafe, träume ich.
+%\ex Ich schlafe nicht oder ich träume.
+%\z 
+%
+%\end{frame}
+%
+%} 
+%%% END uebung true = Q
+%%% BEGIN uebung false = A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Aussagenlogik -- Übung}
+
+\begin{itemize}
+	\item Geben Sie die folgenden Aussagen in aussagenlogischer Notation an:
+\end{itemize}
+
+\ea\label{ex:Form1} Christiane schläft. 
+\ex\label{ex:Form2} Norbert raucht nicht. 
+\ex\label{ex:Form3} Norbert raucht und Christiane schläft nicht. 
+\ex\label{ex:Form4} Wenn Norbert nicht raucht, schläft Christiane nicht. 
+\ex\label{ex:Form5} Wenn ich schlafe, träume ich. 
+\ex\label{ex:Form6} Ich schlafe nicht oder ich träume.
+\z 
+
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Aussagenlogik -- Lösung}
+
+\begin{itemize}
+	\item Geben Sie die folgenden Aussagen in aussagenlogischer Notation an:
+\end{itemize}
+
+\begin{exe}
+	\exr{ex:Form1} Christiane schläft. \hfill \alertred{$p$}
+	\exr{ex:Form2} Norbert raucht nicht. \hfill \alertred{$\lnot p$}
+	\exr{ex:Form3} Norbert raucht und Christiane schläft nicht. \hfill \alertred{$(p \land \lnot q)$}
+	\exr{ex:Form4} Wenn Norbert nicht raucht, schläft Christiane nicht. \hfill \alertred{$(\lnot p \rightarrow \lnot q)$}
+	\exr{ex:Form5} Wenn ich schlafe, träume ich. \hfill \alertred{$(p \rightarrow q)$}
+	\exr{ex:Form6} Ich schlafe nicht oder ich träume. \hfill \alertred{$(\lnot p \lor q)$}
+\end{exe}
+
+\end{frame}
+
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%\begin{frame}
+%\frametitle{Aussagenlogik -- Übung}
+%
+%\begin{itemize}
+%	\item Geben Sie die Wahrheitswertetabellen für die folgenden Aussagen an:
+%\end{itemize}
+%
+%\ea Christiane schläft.
+%\ex Norbert raucht nicht.
+%\ex Norbert raucht und Christiane schläft nicht.
+%\ex Wenn Norbert nicht raucht, schläft Christiane nicht.
+%\ex Wenn ich schlafe, träume ich.
+%\ex Ich schlafe nicht oder ich träume.
+%\z 
+%
+%\end{frame}
+%} 
+%%% END uebung true = Q
+%%% BEGIN uebung false = A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
+\frametitle{Aussagenlogik -- Übung}
+
+\begin{itemize}
+	\item Geben Sie die Wahrheitswertetabellen für die folgenden Aussagen an:
+\end{itemize}
+
+\ea\label{ex:AL1} Christiane schläft.
+\ex\label{ex:AL2} Norbert raucht nicht.
+\ex\label{ex:AL3} Norbert raucht und Christiane schläft nicht.
+\ex\label{ex:AL4} Wenn Norbert nicht raucht, schläft Christiane nicht.
+\ex\label{ex:AL5} Wenn ich schlafe, träume ich.
+\ex\label{ex:AL6} Ich schlafe nicht oder ich träume.
+\z 
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
+\frametitle{Aussagenlogik -- Lösung}
+
+\begin{exe}
+\exr{ex:AL1} Christiane schläft.
+\exr{ex:AL2} Norbert raucht nicht.
+\end{exe}
+
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Christiane schläft.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l}
+			p\\
+			\hline
+			1\\
+			\hline
+			0\\
+		\end{tabular}
+	}
+\end{minipage}
+%	
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Norbert raucht.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}[b]{l|l}
+			p & $ \lnot $p \\
+			\hline
+			0 & 1 \\
+			\hline
+			1 & 0 \\
+	\end{tabular}
+	}
+
+\end{minipage}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
+\frametitle{Aussagenlogik -- Lösung}
+
+\begin{exe}
+	\exr{ex:AL3} Norbert raucht und Christiane schläft nicht.
+	\exr{ex:AL4} Wenn Norbert nicht raucht, schläft Christiane nicht.
+\end{exe}
+
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Norbert raucht.\\
+			q: Christiane schläft.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l|l|l|c}
+			p & q & $\lnot$ q & p $\land \lnot $q\\
+			\hline
+			1 & 1 & 0 & 0\\
+			\hline
+			1 & 0 & 1 & 1\\
+			\hline
+			0 & 1 & 0 & 0 \\
+			\hline
+			0 & 0 & 1 & 0 \\
+		\end{tabular}
+	}
+\end{minipage}
+%%
+%%
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Norbert raucht.\\
+			q: Christiane schläft.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l|l|c|c|c}
+			p & q & $ \lnot $p& $ \lnot $q &$ \lnot $p \ras $ \lnot $q\\
+			\hline
+			1 & 1 & 0 & 0 & 1 \\
+			\hline
+			1 & 0 & 0 & 1 & 1\\
+			\hline
+			0 & 1 & 1 & 0 & 0 \\
+			\hline
+			0 & 0 & 1 & 1 & 1 \\
+	\end{tabular}
+	}
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}
+\frametitle{Aussagenlogik -- Lösung}
+
+\begin{exe}
+	\exr{ex:AL5} Wenn ich schlafe, träume ich.
+	\exr{ex:AL6} Ich schlafe nicht oder ich träume.
+\end{exe}
+
+
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Ich schlafe.\\
+			q: Ich träume.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}[b]{c|c|c}
+			p & q & p \ras q \\
+			\hline
+			1 & 1 & 1 \\
+			\hline
+			1 & 0 & 0 \\
+			\hline
+			0 & 1 & 1 \\
+			\hline
+			0 & 0 & 1 \\
+	\end{tabular}
+	}
+\end{minipage}
+%%
+%%
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] \small{p: Ich schlafe.\\
+			q: Ich träume.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{c|c|c|c}
+			p & q & $\lnot $p & $\lnot $p $\lor$ q \\
+			\hline
+			1 & 1 & 0 & 1  \\
+			\hline
+			1 & 0 & 0 & 0  \\
+			\hline
+			0 & 1 & 1 & 1  \\
+			\hline
+			0 & 0 & 1 & 0  \\
+	\end{tabular}
+	}
+\end{minipage}
+
+\end{frame}
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Tautologien, Kontradiktionen, Kontingenzen}
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Tautologien, Kontradiktionen, Kontingenzen}
+
+\begin{itemize}
+	\item (komplexe) Aussagen, deren Wahrheitswert  \textbf{nicht vom Wahrheitswert der Teilaussagen abhängig} sind: \textbf{Tautologien} und \textbf{Kontradiktionen} 
+	
+	\item[]
+	
+	\item (komplexe) Aussagen, deren Wahrheitswert \textbf{vom Wahrheitswert der Teilaussagen abhängig} sind: \textbf{Kontingenzen} 
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Tautologie}
+
+\begin{itemize}
+	\item \textbf{logische Wahrheit} (aufgrund der Ausdrucksbedeutung)
+\end{itemize}
+
+\begin{block}{Tautologie}
+	Von Wittgenstein in die formale Logik eingeführter Terminus für Aussagen, die aufgrund ihrer semantischen Form analytisch und darum \textbf{in allen möglichen Welten wahr} sind \citep{Rehbock16a}
+\end{block}
+
+\ea Frösche sind Amphibien. 
+\ex Wir verstehen Semantik oder wir verstehen Semantik nicht.
+\z 
+
+\pause 
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p$\lor \lnot$p)} \\ 
+		\hline 
+		1 & 0 & \alertred{1}\\ 
+		\hline 
+		0 & 1 & \alertred{1}		
+		
+	\end{tabular} 
+	%	}
+\end{table}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Kontradiktion}
+
+\begin{itemize}
+	\item \textbf{logische Falschheit} (aufgrund der Ausdrucksbedeutung)
+\end{itemize}
+
+\begin{block}{Kontradiktion}
+	Logischer Terminus für Aussagen, die aufgrund ihrer semantischen Form \textbf{in allen möglichen Welten falsch} sind \citep{Rehbock16b}
+\end{block}
+
+\ea Frösche sind Reptilien. 
+\ex Die Sonne scheint, aber sie scheint nicht.
+\z 
+
+\pause
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p$\land \lnot$p)} \\ 
+		\hline 
+		1 & 0 & \alertred{0}\\ 
+		\hline 
+		0 & 1 & \alertred{0}		
+		
+	\end{tabular} 
+	%	}
+\end{table}
+
+\begin{itemize}
+	\item Beide Teilaussagen können nicht gleichzeitig wahr sein.
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Kontingenz}
+
+\begin{block}{(logische) Kontingenz}
+	Eine Aussage ist logisch kontingent, \textbf{wenn deren gegenteilige Aussage keinen Widerspruch einschließt}; ein Satz ist logisch kontingent, wenn er weder in seiner positiven noch in seiner negativen Bestimmung notwendig logisch wahr ist. Ein kontingenter Satz ist \textbf{logisch wahr in einigen, nicht aber in allen  möglichen Welten} (semantische Deutung) [\dots] \citep{Prechtl16b}
+\end{block}
+
+\ea Wir lieben Semantik und wir hassen Pragmatik.
+\z 
+
+\pause 
+
+\begin{table}
+	\centering	
+	\scalebox{0.7}{
+		\begin{tabular}{c|c|c}
+			\textbf{p}& \textbf{q} &\textbf{(p$\land$q)} \\ 
+			\hline 
+			1 & 1 & \alertred{1}\\ 
+			\hline 
+			1 & 0 & \alertred{0}\\ 
+			\hline 
+			0 & 1 & \alertred{0}\\ 
+			\hline 
+			0 & 0 & \alertred{0}				
+			
+		\end{tabular} 
+	}
+\end{table} 
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Aussagenlogik}
+%
+%\begin{itemize}
+%	\item \textbf{Tautologie}
+%	
+%	\begin{itemize}
+%		\item Aussage, die stets wahr ist (unabhängig von den
+%Ausgangswerten der beteiligten Aussagen)
+%		
+%		\ea Es regnet oder es regnet nicht.
+%		\z
+%		
+%	\end{itemize}
+%	
+%	\item \textbf{Kontradiktion}
+%	
+%	\begin{itemize}
+%		\item  Aussage, die stets falsch ist (unabhängig von den
+%Ausgangswerten der beteiligten Aussagen)
+%
+%		\ea Es regnet und es regnet nicht.
+%		\z
+%		
+%	\end{itemize}
+%	
+%	\item \textbf{Kontigenz}
+%	
+%	\begin{itemize}
+%		\item Aussage, die abhängig von den Ausgangswerten der beteiligten Aussage sowohl wahr als auch falsch sein kann.
+%
+%		\ea Es regnet oder es schneit.
+%		\z
+%
+%	\end{itemize}
+%	
+%\end{itemize}
+%
+%\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{uebung}{
-
-\begin{frame}
-\frametitle{Aussagenlogik}
-
-\begin{itemize}
-	\item Übungen:
-	
-	\vspace{1em}
-	
-	\begin{enumerate}
-		\item Christiane schläft.
-		\item []
-		\item Norbert raucht nicht.
-		\item[]
-		\item Norbert raucht und Christiane schläft nicht.
-		\item[]
-		\item Wenn Norbert nicht raucht, schläft Christiane nicht.
-		\item[]
-		\item Wenn ich schlafe, träume ich.
-		\item[]
-		\item Ich schlafe nicht oder ich träume.
-	\end{enumerate}
-	
-\end{itemize}
-
-\end{frame}
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{loesung}{
-
 \begin{frame}
-\frametitle{Lösungen}
-
-\begin{table}
-
-\begin{minipage}{0.4\textwidth}
-\centering
-\begin{itemize}
-\item[] \small{p: Christiane schläft.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l}
-p\\
-\hline
-1\\
-\hline
-0\\
-\end{tabular}
-}
-\end{minipage}
-%	
-\begin{minipage}{0.5\textwidth}
-\centering
-\begin{itemize}
-\item[] \small{p: Norbert raucht.\\
-q: Christiane schläft.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & p $\land \lnot $q\\
-\hline
-1 & 1 & 0\\
-\hline
-1 & 0 & 1\\
-\hline
-0 & 1 & 0 \\
-\hline
-0 & 0 & 0 \\
-\end{tabular}
-}
-\end{minipage}
-
-\vspace{1em}
-
-\begin{minipage}{0.4\textwidth}
-\centering
-\begin{itemize}
-\item[] \small{p: Norbert raucht.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}[b]{l|l}
-p & $ \lnot $p \\
-\hline
-0 & 1 \\
-\hline
-1 & 0 \\
-\end{tabular}}
-\end{minipage}
-%
-\begin{minipage}{0.5\textwidth}
-\centering
-\begin{itemize}
-\item[] \small{p: Norbert raucht.\\
-q: Christiane schläft.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & $ \lnot $p \ras $ \lnot $q\\
-\hline
-1 & 1 & 0 \\
-\hline
-1 & 0 & 0 \\
-\hline
-0 & 1 & 0 \\
-\hline
-0 & 0 & 1 \\
-\end{tabular}}
-\end{minipage}
-\end{table}
-
-\end{frame}
-
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Lösungen}
-
-\begin{table}
-
-\begin{minipage}{0.48\textwidth}
-\centering
-\begin{itemize}
-\item[] \small{p: Ich schlafe.\\
-q: Ich träume.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}[b]{l|l|l}
-p & q & p \ras q \\
-\hline
-1 & 1 & 1 \\
-\hline
-1 & 0 & 0 \\
-\hline
-0 & 1 & 1 \\
-\hline
-0 & 0 & 0 \\
-\end{tabular}}
-\end{minipage}
-%
-\begin{minipage}{0.48\textwidth}
-\centering
-\begin{itemize}
-\item[] \small{p: Ich schlafe.\\
-q: Ich träume.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & $ \lnot $p \ras $ \lor $q\\
-\hline
-1 & 1 & 1 \\
-\hline
-1 & 0 & 0 \\
-\hline
-0 & 1 & 1 \\
-\hline
-0 & 0 & 0 \\
-\end{tabular}}
-\end{minipage}
-\end{table}
-
-\end{frame}
-}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik}
+\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Übung}
 
 \begin{itemize}
-	\item Übungen:
-
-\vspace{1em}
-
-	\begin{enumerate}
-		\item Genau dann wenn ich Durst habe, trinke ich eine Cola.
-		\item[]
-		\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke -- oder -- Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke.
-		\item[]
-		\item Es regnet oder, es scheint die Sonne und ich bin froh.
-		\item[]
-		\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh.
-		\item[]
-		\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
-		\item[]
-		\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
-	\end{enumerate}
-		
-\end{itemize}
-
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\iftoggle{loesung}{
-
-\begin{frame}[shrink=20]
-\frametitle{Lösungen}
-
-\begin{table}
-
-\begin{minipage}{0.4\textwidth}
-\centering
-\begin{itemize}
-\item[] {\small p: Ich habe Durst.\\
-q: Ich trinke eine Cola.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & p $ \leftrightarrow $ q\\
-\hline
-1 & 1 & 1\\
-\hline
-1 & 0 & 0\\
-\hline
-0 & 1 & 0\\
-\hline
-0 & 0 & 1\\
-\end{tabular}
-}
-\end{minipage}
-%	
-\begin{minipage}{0.5\textwidth}
-\centering
-\begin{itemize}
-\item[] {\small
-p: Ich trinke Cola.\\
-q: Ich habe Durst.}
-\end{itemize}
-\scalebox{0.80}{
-\begin{tabular}{l|l|l|l|l}
-p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
-\hline
-1 & 1 & 0 & 1 & 1\\
-\hline
-1 & 0 & 0 & 0 & 0\\
-\hline
-0 & 1 & 0 & 0 & 0\\
-\hline
-0 & 0 & 1 & 0 & 1\\
-\end{tabular}}
-\end{minipage}
-
-\vspace{1em}
-
-\begin{minipage}{0.5\textwidth}
-\centering
-\begin{itemize}
-\item[] {\small p: Es regnet.\\
-q: Es scheint die Sonne.\\
-s: Ich bin froh.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l|l|l|l|l}
-p & q & s & q $\land $ s & p $\lor$ (q $\land $ s) \\
-\hline
-0 & 1 & 0 & 0 & 0\\
-\hline
-1 & 1 & 0 & 0 & 1\\
-\hline
-0 & 1 & 1 & 1 & 1\\
-\hline
-1 & 1 & 1 & 1 & 1\\
-\hline
-0 & 0 & 0 & 0 & 0\\
-\hline
-1 & 0 & 0 & 0 & 1\\
-\hline
-0 & 0 & 1 & 0 & 0\\
-\hline
-1 & 0 & 1 & 0 & 1\\
-\end{tabular}
-}
-\end{minipage}
-%
-\begin{minipage}{0.4\textwidth}
-\centering
-\begin{itemize}
-\item[] {\small p: Es regnet.\\
-q: Es scheint die Sonne.\\
-s: Ich bin froh.}
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}[b]{l|l|l|l|l|l}
-p & q & s & p $ \lor $ q & p $ \lor $ s & (p $ \lor $ q) $ \land $ (p $ \lor $ s) \\
-\hline
-1 & 0 & 0 & 1 & 1 & 1\\
-\hline
-1 & 0 & 1 & 1 & 1 & 1\\
-\hline
-1 & 1 & 0 & 1 & 1 & 1\\
-\hline
-1 & 1 & 1 & 1 & 1 & 1\\
-\hline
-0 & 0 & 0 & 0 & 0 & 0\\
-\hline
-0 & 0 & 1 & 0 & 1 & 0\\
-\hline
-0 & 1 & 0 & 1 & 0 & 0\\
-\hline
-0 & 1 & 1 & 1 & 1 & 1\\
-
-\end{tabular}}
-\end{minipage}
-\end{table}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösungen}
-
-\begin{table}
-
-\begin{minipage}{0.48\textwidth}
-\centering
-\begin{itemize}
-\item[] p: Norbert raucht.\\
-q: Christiane schläft.
-\end{itemize}
-\scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & $ \lnot $ (p $ \lor $q)\\
-\hline
-1 & 1 & 0 \\
-\hline
-1 & 0 & 0 \\
-\hline
-0 & 1 & 0 \\
-\hline
-0 & 0 & 1 \\
-\end{tabular}}
-\end{minipage}
-%
-\begin{minipage}{0.48\textwidth}
-\centering
-\begin{itemize}
-\item[] p: Norbert schläft.\\
-q: Christine schläft.
-\end{itemize}
-\begin{tabular}{l|l|l}
-p & q & $ \lnot $p $ \land $ $ \lnot $q\\
-\hline
-1 & 1 & 0\\
-\hline
-1 & 0 & 0\\
-\hline
-0 & 1 & 0\\
-\hline
-0 & 0 & 1\\
-\end{tabular}
-\end{minipage}
-
-\end{table}
-\end{frame}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik}
-	
-\begin{itemize}
-	\item Übungen:
-
-\vspace{1em}
-
-	\begin{enumerate}
-		\item Christiane schläft. (p)
-		\item[]
-		\item Norbert raucht nicht. ($\lnot$p)
-		\item[]
-		\item Norbert raucht und Christiane schläft nicht. (p $\land \lnot$ q)
-		\item[]
-		\item Wenn Norbert nicht raucht, schläft Christiane nicht. ($\lnot$ p \ras $\lnot$ q)
-	\end{enumerate}
-
-\item Konditional:
-
-	\begin{enumerate}\setcounter{enumi}{4}
-		\item Wenn ich schlafe, träume ich. ( p \ras q)
-		\item[]
-		\item Ich schlafe nicht oder ich träume. ($\lnot$ p $\lor$ q)
-	\end{enumerate}
-	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik}
-
-\begin{itemize}
-	\item Übungen: 
-	
-\vspace{1em}
-
-	\begin{itemize}
-		\item Bikonditional:
-	
-		\begin{enumerate}
-			\item Genau dann wenn ich Durst habe, trinke ich eine Cola. (p $\leftrightarrow$ q)
-			\item[]
-			\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke – oder – Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke. ($\lnot$ p $\leftrightarrow \lnot$ q) $\lor$ (p $\leftrightarrow$ q)
-		\end{enumerate}
-	
-		\item Distributivität:
-	
-		\begin{enumerate}\setcounter{enumi}{2}
-			\item Es regnet oder -- es scheint die Sonne und ich bin froh. (p  $\lor$ (q $\land$ r))
-			\item[]
-			\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh. ((p $\lor$ q) $\land$ (p $\lor$ r))
-		\end{enumerate}
-
-	\end{itemize}
-
-\end{itemize}
-
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik}
-
-\begin{itemize}
-\item Übungen:
-
-	\begin{itemize}
-		\item De Morgans Gesetze:
-	
-		\begin{enumerate}
-			\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft. $\lnot$ (p $\lor$ q)
-			\item[]
-			\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft. ($\lnot$ p $\land \lnot$ q)
-		\end{enumerate}
-		
-	\end{itemize}
-
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik}
-
-\begin{itemize}
-	\item \textbf{Tautologie}
-	
-	\begin{itemize}
-		\item Aussage, die stets wahr ist (unabhängig von den
-Ausgangswerten der beteiligten Aussagen)
-		
-		\ea Es regnet oder es regnet nicht.
-		\z
-		
-	\end{itemize}
-	
-	\item \textbf{Kontradiktion}
-	
-	\begin{itemize}
-		\item  Aussage, die stets falsch ist (unabhängig von den
-Ausgangswerten der beteiligten Aussagen)
-
-		\ea Es regnet und es regnet nicht.
-		\z
-		
-	\end{itemize}
-	
-	\item \textbf{Kontigenz}
-	
-	\begin{itemize}
-		\item Aussage, die abhängig von den Ausgangswerten der beteiligten Aussage sowohl wahr als auch falsch sein kann.
-
-		\ea Es regnet oder es schneit.
-		\z
-
-	\end{itemize}
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik}
-
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Beispiele:
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
 	
 	\vspace{1em}
 	
 	\begin{itemize}
-		\item Tautologien:
+		\item Die komplexen Aussagen (\ref{ex:Tau1}) und (\ref{ex:Tau2}) sind \textbf{Tautologien}:
 	
-		\eal
-			\ex (p $\lor \lnot$ p)
-			\ex (p $\rightarrow$ p)
-			\ex $\lnot$ (p $\land \lnot$ p)
-		\zl
+		\ea
+			\ea\label{ex:Tau1} (p $\lor \lnot$ p)
+			\ex\label{ex:Tau2} (p $\rightarrow$ p)
+			\z 
+		\z
 			
-		\item Kontradiktionen:
+		\item Die komplexe Aussagen (\ref{ex:Kon1}) ist eine \textbf{Kontradiktion}:
 		
-		\eal
-			\ex $\lnot$ (p $\lor \lnot$ p)
-			\ex $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-		\zl
+		\ea
+			\ea\label{ex:Kon1} $\lnot$ (p $\lor \lnot$ p)
+			\z 
+		\z
 
-		\item Kontingenzen:
+		\item Die komplexe Aussage (\ref{ex:Con1}) ist eine \textbf{Kontingenz}:
 		
-		\eal
-			\ex ((p $\lor$ q) $\rightarrow$ q)
-			\ex ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-		\zl
+		\ea
+			\ea\label{ex:Con1} ((p $\lor$ q) $\rightarrow$ q)
+			\z
+		\z
 			
 	\end{itemize}	
 	
 \end{itemize}
 
 \end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexen Aussagen (\ref{ex:Tau1}) und (\ref{ex:Tau2}) sind \textbf{Tautologien}:
+		
+		\eal
+		\ex\label{ex:Tau1} (p $\lor \lnot$ p)
+		\ex\label{ex:Tau2} (p $\rightarrow$ p)
+		\zl
+		
+		\item Die komplexe Aussagen (\ref{ex:Kon1}) ist eine \textbf{Kontradiktion}:
+		
+		\eal
+		\ex\label{ex:Kon1} $\lnot$ (p $\lor \lnot$ p)
+		\zl
+		
+		\item Die komplexe Aussage (\ref{ex:Con1}) ist eine \textbf{Kontingenz}:
+		
+		\eal
+		\ex\label{ex:Con1} ((p $\lor$ q) $\rightarrow$ q)
+		\zl
+		
+	\end{itemize}	
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\begin{itemize}
+		\item Die komplexen Aussagen (\ref{ex:Tau1}) und (\ref{ex:Tau2}) sind \textbf{Tautologien}:
+		
+		\begin{exe}
+		\exr{ex:Tau1} (p $\lor \lnot$ p)
+		\exr{ex:Tau2} (p $\rightarrow$ p)
+		\end{exe}
+		
+	\end{itemize}
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} \\ 
+		\hline 
+		1 & 0 & \alertred{1}\\ 
+		\hline 
+		0 & 1 & \alertred{1} \\
+	\end{tabular} 
+	%	}
+\end{table}
+\begin{itemize}
+	\item[]  \alertred{Der Satz ist eine Tautologie, weil die Aussage immer wahr ist (immer Wahrheitswert 1).}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\begin{itemize}
+		\item Die komplexe Aussagen (\ref{ex:Kon1}) ist eine \textbf{Kontradiktion}:
+		
+		\begin{exe}
+		\exr{ex:Kon1} $\lnot$ (p $\lor \lnot$ p)
+		\end{exe}
+		
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c}
+		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} & $\lnot$ \textbf{(p $\lor \lnot$p)}\\ 
+		\hline 
+		1 & 0 & 1& \alertred{0} \\ 
+		\hline 
+		0 & 1 & 1 & \alertred{0} \\
+	\end{tabular} 
+	%	}
+\end{table}
+\begin{itemize}
+	\item[] \alertred{Der Satz ist ein Kontradiktion, weil der Wahrheitswert immer 0 ist. Die Aussage ist immer falsch.}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Con1}) ist eine \textbf{Kontingenz}:
+		
+		\begin{exe}
+		\exr{ex:Con1} ((p $\lor$ q) $\rightarrow$ q)
+		\end{exe}
+		
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	%	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c}
+		\textbf{p}& q & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
+		\hline 
+		1 & 0 & 1& \alertred{0} \\ 
+		\hline 
+		1 & 1 & 1 & \alertred{1} \\
+		\hline 
+		0 & 0 & 0 & \alertred{1}\\
+		\hline 
+		0 & 1 &  1 &  \alertred{1}\\
+	\end{tabular} 
+	%	}
+\end{table}
+
+\begin{itemize}
+\item \alertred{Der Satz ist kontingent, d.\,h., dass sich unterschiedliche Wahrheitwerte ergeben können, die von der Welt abhängig sind. }
+\end{itemize}
+
+\end{frame}
+
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{(Einige) Äquivalenzen -- Extra}
+%%\frame{
+%%\begin{multicols}{2}
+%%\frametitle{~}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{(Einige) Äquivalenzen -- Extra}
+%
+%\begin{itemize}
+%	\item Geben Sie die Wahrheitswerte der folgenden Formeln an und vergleichen Sie die Ergebnisse beider Tabellen:
+%
+%	\ea Genau dann wenn ich Durst habe, trinke ich eine Cola.
+%	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke.
+%	\z 
+%	
+%	\ea Es regnet oder, es scheint die Sonne und ich bin froh.
+%	\ex Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh.
+%	\z 
+%	
+%	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+%	\ex Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
+%	\z 	
+%\end{itemize}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%\iftoggle{loesung}{
+%
+%\begin{frame}[shrink=20]
+%\frametitle{Lösungen}
+%
+%\begin{table}
+%
+%\begin{minipage}{0.4\textwidth}
+%	\centering
+%	\begin{itemize}
+%		\item[] {\small p: Ich habe Durst.\\
+%			q: Ich trinke eine Cola.}
+%	\end{itemize}
+%	\scalebox{0.8}{
+%		\begin{tabular}{l|l|l}
+%			p & q & p $ \leftrightarrow $ q\\
+%			\hline
+%			1 & 1 & 1\\
+%			\hline
+%			1 & 0 & 0\\
+%			\hline
+%			0 & 1 & 0\\
+%			\hline
+%			0 & 0 & 1\\
+%		\end{tabular}
+%	}
+%\end{minipage}
+%%	
+%\begin{minipage}{0.5\textwidth}
+%	\centering
+%	\begin{itemize}
+%		\item[] {\small
+%			p: Ich trinke Cola.\\
+%			q: Ich habe Durst.}
+%	\end{itemize}
+%	\scalebox{0.80}{
+%		\begin{tabular}{l|l|l|l|l}
+%			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
+%			\hline
+%			1 & 1 & 0 & 1 & 1\\
+%			\hline
+%			1 & 0 & 0 & 0 & 0\\
+%			\hline
+%			0 & 1 & 0 & 0 & 0\\
+%			\hline
+%			0 & 0 & 1 & 0 & 1\\
+%	\end{tabular}}
+%\end{minipage}
+%
+%\vspace{1em}
+%
+%\begin{minipage}{0.5\textwidth}
+%	\centering
+%	\begin{itemize}
+%		\item[] {\small p: Es regnet.\\
+%			q: Es scheint die Sonne.\\
+%			s: Ich bin froh.}
+%	\end{itemize}
+%	\scalebox{0.8}{
+%		\begin{tabular}{l|l|l|l|l}
+%			p & q & s & q $\land $ s & p $\lor$ (q $\land $ s) \\
+%			\hline
+%			0 & 1 & 0 & 0 & 0\\
+%			\hline
+%			1 & 1 & 0 & 0 & 1\\
+%			\hline
+%			0 & 1 & 1 & 1 & 1\\
+%			\hline
+%			1 & 1 & 1 & 1 & 1\\
+%			\hline
+%			0 & 0 & 0 & 0 & 0\\
+%			\hline
+%			1 & 0 & 0 & 0 & 1\\
+%			\hline
+%			0 & 0 & 1 & 0 & 0\\
+%			\hline
+%			1 & 0 & 1 & 0 & 1\\
+%		\end{tabular}
+%	}
+%\end{minipage}
+%%
+%\begin{minipage}{0.4\textwidth}
+%	\centering
+%	\begin{itemize}
+%		\item[] {\small p: Es regnet.\\
+%			q: Es scheint die Sonne.\\
+%			s: Ich bin froh.}
+%	\end{itemize}
+%	\scalebox{0.8}{
+%		\begin{tabular}[b]{l|l|l|l|l|l}
+%			p & q & s & p $ \lor $ q & p $ \lor $ s & (p $ \lor $ q) $ \land $ (p $ \lor $ s) \\
+%			\hline
+%			1 & 0 & 0 & 1 & 1 & 1\\
+%			\hline
+%			1 & 0 & 1 & 1 & 1 & 1\\
+%			\hline
+%			1 & 1 & 0 & 1 & 1 & 1\\
+%			\hline
+%			1 & 1 & 1 & 1 & 1 & 1\\
+%			\hline
+%			0 & 0 & 0 & 0 & 0 & 0\\
+%			\hline
+%			0 & 0 & 1 & 0 & 1 & 0\\
+%			\hline
+%			0 & 1 & 0 & 1 & 0 & 0\\
+%			\hline
+%			0 & 1 & 1 & 1 & 1 & 1\\
+%			
+%	\end{tabular}}
+%\end{minipage}
+%\end{table}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Lösungen}
+%
+%\begin{table}
+%
+%\begin{minipage}{0.48\textwidth}
+%\centering
+%\begin{itemize}
+%	\item[] p: Norbert raucht.\\
+%	q: Christiane schläft.
+%\end{itemize}
+%\scalebox{0.8}{
+%	\begin{tabular}{l|l|l}
+%		p & q & $ \lnot $ (p $ \lor $q)\\
+%		\hline
+%		1 & 1 & 0 \\
+%		\hline
+%		1 & 0 & 0 \\
+%		\hline
+%		0 & 1 & 0 \\
+%		\hline
+%		0 & 0 & 1 \\
+%\end{tabular}}
+%\end{minipage}
+%%
+%\begin{minipage}{0.48\textwidth}
+%\centering
+%\begin{itemize}
+%	\item[] p: Norbert schläft.\\
+%	q: Christine schläft.
+%\end{itemize}
+%\begin{tabular}{l|l|l}
+%	p & q & $ \lnot $p $ \land $ $ \lnot $q\\
+%	\hline
+%	1 & 1 & 0\\
+%	\hline
+%	1 & 0 & 0\\
+%	\hline
+%	0 & 1 & 0\\
+%	\hline
+%	0 & 0 & 1\\
+%\end{tabular}
+%\end{minipage}
+%
+%\end{table}
+%\end{frame}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Aussagenlogik}
+%
+%\begin{itemize}
+%\item Übungen:
+%
+%\vspace{1em}
+%
+%\begin{enumerate}
+%\item Christiane schläft. (p)
+%\item[]
+%\item Norbert raucht nicht. ($\lnot$p)
+%\item[]
+%\item Norbert raucht und Christiane schläft nicht. (p $\land \lnot$ q)
+%\item[]
+%\item Wenn Norbert nicht raucht, schläft Christiane nicht. ($\lnot$ p \ras $\lnot$ q)
+%\end{enumerate}
+%
+%\item Konditional:
+%
+%\begin{enumerate}\setcounter{enumi}{4}
+%\item Wenn ich schlafe, träume ich. ( p \ras q)
+%\item[]
+%\item Ich schlafe nicht oder ich träume. ($\lnot$ p $\lor$ q)
+%\end{enumerate}
+%
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Aussagenlogik}
+%
+%\begin{itemize}
+%\item Übungen: 
+%
+%\vspace{1em}
+%
+%\begin{itemize}
+%\item Bikonditional:
+%
+%\begin{enumerate}
+%\item Genau dann wenn ich Durst habe, trinke ich eine Cola. (p $\leftrightarrow$ q)
+%\item[]
+%\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke – oder – Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke. ($\lnot$ p $\leftrightarrow \lnot$ q) $\lor$ (p $\leftrightarrow$ q)
+%\end{enumerate}
+%
+%\item Distributivität:
+%
+%\begin{enumerate}\setcounter{enumi}{2}
+%\item Es regnet oder -- es scheint die Sonne und ich bin froh. (p  $\lor$ (q $\land$ r))
+%\item[]
+%\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh. ((p $\lor$ q) $\land$ (p $\lor$ r))
+%\end{enumerate}
+%
+%\end{itemize}
+%
+%\end{itemize}
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Aussagenlogik}
+%
+%\begin{itemize}
+%\item Übungen:
+%
+%\begin{itemize}
+%\item De Morgans Gesetze:
+%
+%\begin{enumerate}
+%\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft. $\lnot$ (p $\lor$ q)
+%\item[]
+%\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft. ($\lnot$ p $\land \lnot$ q)
+%\end{enumerate}
+%
+%\end{itemize}
+%
+%\end{itemize}
+%
+%
+%\end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1613,168 +2216,501 @@ Ausgangswerten der beteiligten Aussagen)
 \frametitle{Sinnrelationen zwischen Sätzen}
 
 \begin{itemize}
-	\item Sinnrelationen zwischen Sätzen bestehen unabhängig davon, ob die Sätze (in der realen Welt) wahr oder falsch sind.
+	\item Sinnrelationen zwischen Sätzen bestehen unabhängig davon, ob die Sätze (in der realen aktuellen Welt) wahr oder falsch sind.
 \end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Sinnrelationen zwischen Sätzen}
-
-\begin{itemize}
-	\item \textbf{Paraphrase (\gqq{Synonymie})}
-	
-	\vspace{1em}
-	
-	\begin{itemize}
-		\item In allen Welten, in denen p wahr ist, ist q auch wahr und umgekehrt.
-		
-		\eal 
-			\ex Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
-			\ex[]
-			\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
-			\ex[]
-			\ex Die Schrippe kostet 25 Cent. – Das Brötchen kostet 25 Cent.
-		\zl
-		
-	\end{itemize}
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Sinnrelationen zwischen Sätzen}
-
-\begin{itemize}
-	\item \textbf{Implikation (\gqq{Inklusion})}
-	
-	\vspace{1em}
-	
-	\begin{itemize}
-		\item \textit{p} impliziert \textit{q}, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} auch wahr ist (aber nicht unbedingt umgekehrt!).
-		
-\vspace{1em}
-		
-		\eal 
-			\ex Ich habe Grippe. -- Ich bin krank.
-			\ex[]
-			\ex Hans isst Gemüse. -- Hans isst.
-		\zl
-			
-		\end{itemize}
-	
-\end{itemize}
-
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Sinnrelationen zwischen Sätzen}
 
-\begin{itemize}
-	\item \textbf{Kompatibilität}
-	
-\vspace{1em}
-	
-	\begin{itemize}
-		\item p und q sind miteinander kompatibel, wenn  p und q 
-miteinander vereinbar sind und keine Widersprüche erzeugen.
+\begin{block}{Paraphrase (\gqq{Synonymie})}
+In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
+\end{block}
+
+
+	\eal 
+		\ex Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
+		\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
+		\ex Die Schrippe kostet 25 Cent. -- Das Brötchen kostet 25 Cent.
+	\zl
+		
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Sinnrelationen zwischen Sätzen}
+
+\begin{block}{Implikation (\gqq{Inklusion})}
+\textit{p} impliziert \textit{q}, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} auch wahr ist (aber nicht unbedingt umgekehrt!).
+\end{block}
+		
+\eal 
+	\ex Ich habe Grippe. -- Ich bin krank.
+	\ex Hans isst Gemüse. -- Hans isst.
+\zl
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Sinnrelationen zwischen Sätzen}
+
+\begin{block}{Kompatibilität}
+$p$ und $q$ sind miteinander kompatibel, wenn $p$ und $q$ miteinander vereinbar sind und keine Widersprüche erzeugen.
+\end{block}
 
 		\eal 
 			\ex Chomsky ist klug. -- Chomsky ist Linguist.
 			\ex Syntax ist toll. -- Semantik macht Spa\ss{}.
 		\zl
 		
-	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Sinnrelationen zwischen Sätzen}
 	
-	\item \textbf{Inkompatibilität (Kontrarität)}
-	
-\vspace{1em}
-	
-	\begin{itemize}
-		\item \textit{p} und \textit{q} sind miteinander inkompatibel, wenn \textit{p} und \textit{q}
-Widersprüche erzeugen (s. Kohyponymie).
+\begin{block}{Inkompatibilität (Kontrarität)}
+$p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ und $q$ Widersprüche erzeugen (vgl.\ Kohyponymie).
+
+\textit{p} und \textit{q} sind also imkompatibel (konträr), wenn \textbf{beide gleichzeitig nicht wahr} sein können, aber beide könnten gleichzeitig falsch sein.
+\end{block}
 
 		\eal 
 			\ex Das ist eine Rose. -- Das ist eine Nelke.
 			\ex Er wurde erstochen. -- Er wurde erschossen.
+			\ex Syntaktiker sind klüger als Morphologen. -- Morphologen sind klüger als Syntaktiker.		
+			\ex Das Wetter ist schön. -- Das Wetter ist mies.
 		\zl
+\end{frame}
 
-	\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Sinnrelationen zwischen Sätzen}
+
+\begin{block}{Kontradiktion}
+\textit{p} und \textit{q} sind kontradiktorisch zueinander, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} falsch ist, und in denen \textit{p} falsch ist, \textit{q} wahr ist.
+\end{block}
 	
-\end{itemize}
-
+\eal
+	\ex Alle Menschen sind sterblich. -- Manche Menschen sind unsterblich.
+	\ex X ist eine gerade Zahl (in der Menge der natürlichen Zahlen). -- X ist eine ungerade Zahl (in der Menge der natürlichen Zahlen).
+	\ex Maria ist ledig. -- Maria ist verheiratet.
+\zl
 
 \end{frame}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{Hausaufgabe}
+%
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Sinnrelationen zwischen Sätzen}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
-	\item \textbf{Kontradiktion}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+\end{itemize}
+
+\ea 
+\ea betrunken -- nüchtern
+\ex Orange -- Apfelsine
+\ex Vogel -- Feder
+\ex volljährig -- minderjährig
+\ex mehr -- Meer
+\z 	
+\z 
+\end{frame}
+
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+\item Welche Bedeutungsrelationen bzw.\ Ambiguitätsarten bestehen zwischen den folgenden Wortpaaren? Nennen Sie diese.
+\end{itemize}
+
+\ea 
+\ea betrunken -- nüchtern \pause 
+
+\hfill \alertred{konträre Antonymie}
+
+\ex Orange -- Apfelsine \pause 
+
+\hfill \alertred{Synonymie}
+
+\ex Vogel -- Feder \pause 
+
+\hfill \alertred{Meronymie (genauer: Feder ist ein Meronym zu Vogel)}
+
+
+\ex volljährig -- minderjährig \pause 
+
+\hfill \alertred{kontradiktorische Antonymie}
+
+\ex mehr -- Meer \pause 
+
+\hfill \alertred{Homonymie (genauer: Homophonie)}
+\z 
+\z 
+
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+\end{itemize}
+
+\ea 
+	\ea Auf dem Tisch liegt eine Rose.\\
+	Auf dem Tisch liegt eine Blume.
 	
-\vspace{1em}
+	\ex Alle Vögel können fliegen.\\
+	Kein Vogel kann nicht fliegen.
+	
+	\ex Einige Tiere haben Federn.\\
+	Alle Tiere haben Federn.
+	
+	\z 	
+\z 
+\end{frame}
 
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+\end{itemize}
+
+\ea 
+	\ea Auf dem Tisch liegt eine Rose.\\
+	Auf dem Tisch liegt eine Blume.\\
+	\ras \alertred{Implikation}
+	
+	\ex Alle Vögel können fliegen.\\
+	Kein Vogel kann nicht fliegen.\\
+	\alertred{\ras Paraphrase (synonyme Sätze)}
+	
+	\ex Einige Tiere haben Federn.\\
+	Alle Tiere haben Federn.\\
+	\alertred{\ras} 
+	\z 	
+\z 
+
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
 	\begin{itemize}
-		\item \textit{p} und \textit{q} sind kontradiktorisch zueinander, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} falsch ist, und wenn \textit{p} falsch ist, ist \textit{q} wahr.
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
-\vspace{1em}
-
 		\eal
-			\ex Alle Menschen sind sterblich. -- Manche Menschen sind unsterblich.
-			\ex X ist eine gerade Zahl. -- X ist eine ungerade Zahl.
-			\ex Maria ist ledig. -- Maria ist verheiratet.
+		\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
 		\zl
 		
-	\end{itemize}
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		
+		\eal
+		\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
+		\zl
+		
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		
+		\eal
+		\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
+		\zl
+		
+	\end{itemize}	
 	
 \end{itemize}
 
+\end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
+		
+		\eal
+		\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
+		\zl
+		
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		
+		\eal
+		\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
+		\zl
+		
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		
+		\eal
+		\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
+		\zl
+		
+	\end{itemize}	
+	
+\end{itemize}
 
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
+		
+		\begin{exe}
+		\exr{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
+		\end{exe}
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+		\begin{tabular}{c|c|c|c}
+			\textbf{p}& \textbf{$\lnot$ p} &\textbf{p $\land \lnot$ p} & $\lnot$ \textbf{(p $\land \lnot$ p)} \\ 
+			\hline 
+			0 & 1 & 0& \alertred{1}\\ 
+			\hline 
+			1 & 0 & 0& \alertred{1}\\
+		\end{tabular} 
+\end{table} 
+
+\alertred{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}	
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		
+		\begin{exe}
+			\exr{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
+		\end{exe}		
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
+		\textbf{p}& \textbf{q} & \textbf{p $\lor$ q} & \textbf{q $\lor$ p} & \textbf{(p $\lor$ q)} $\leftrightarrow$ \textbf{(q $\lor$ p)} & \textbf{$\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))} \\ 
+		\hline 
+		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
+		\hline 
+		1 & 0 & 1 & 1 & 1 & \alertred{0} \\
+		\hline
+		0 & 1 & 1 & 1 & 1 & \alertred{0} \\
+		\hline
+		0 & 0 & 0 & 0 & 1 & \alertred{0} \\
+	\end{tabular} }
+\end{table} 
+
+\alertred{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		
+		\begin{exe}
+			\exr{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
+		\end{exe}
+		
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{table}
+	\centering	
+	\begin{tabular}{c|c|c|c|c}
+		\textbf{p}& \textbf{q} & \textbf{p \ras q} & \textbf{q \ras p} & \textbf{(p \ras q)} $\leftrightarrow$ \textbf{(q \ras p)} \\ 
+		\hline 
+		1 & 1 & 1 & 1 & \alertred{1} \\ 
+		\hline 
+		1 & 0 & 0 & 1 & \alertred{0} \\
+		\hline
+		0 & 1 & 1 & 0 & \alertred{0} \\
+		\hline
+		0 & 0 & 1 & 1 & \alertred{1} \\
+	\end{tabular} 
+\end{table} 
+
+\alertred{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
+
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Sinnrelationen zwischen Sätzen}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
-	\item \textbf{Kontrarität (Inkompatibilität)}
-	
-\vspace{1em}
-
-	\begin{itemize}
-		\item \textit{p} und \textit{q }sind konträr (inkompatibel) zueinander, wenn beide gleichzeitig nicht wahr sein können, aber beide können gleichzeitig falsch sein.
-
-\vspace{1em}
-		
-	\eal
-		\ex Syntaktiker sind klüger als Morphologen. -- Morphologen sind klüger als Syntaktiker.		
-		\ex Das Wetter ist schön. -- Das Wetter ist mies.
-	\zl
-		
-	\end{itemize}
-	
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
 \end{itemize}
 
+\ea\label{ex:Wert1} $(p \land q)$
+\ex\label{ex:Wert2} $(p \rightarrow (q \lor p))$
+\ex\label{ex:Wert3} $((q \land q) \lor (p \land q))$
+\z 
 
 \end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
+\end{itemize}
+
+	\ea\label{ex:Wert1} $(p \land q)$
+	\ex\label{ex:Wert2} $(p \rightarrow (q \lor p))$
+	\ex\label{ex:Wert3} $((q \land q) \lor (p \land q))$
+	\z 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
+\end{itemize}
+
+\begin{exe}
+\exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
+\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
+\exr{ex:Wert1} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
+\end{exe}
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Hausaufgabe}
+%
+%\end{frame}
+%
+%} 
+%%% END uebung true = Q
+%%% BEGIN uebung false = A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Hausaufgabe -- Lösung}
+%
+%\end{frame}
+%
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

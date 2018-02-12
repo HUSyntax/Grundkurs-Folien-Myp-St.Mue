@@ -30,21 +30,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
 
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 	}
-	
+	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Sprache \& Sprachwissenschaft I}
 	
-\section{Ziel des Kurses}
+\subsection{Ziel des Kurses}
+
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -58,26 +64,38 @@
 		\item<4-> Was sind die \textbf{Minimaleinheiten} der verschiedenen sprachlichen Ebenen und wie können diese miteinander \textbf{kombiniert} werden?
 		\item<5-> Wie sehen linguistische \textbf{Fragestellungen} aus?
 		\item<6-> Mit welchen \textbf{Methoden} können wir uns den Fragestellungen nähern?
-		\item<7-> Außerdem: einige \textbf{Grammatiktheorien} (v.~a. in der Phonologie, Morphologie und Syntax) und einige linguistische Phänomene
+		\item<7-> Außerdem: einige \textbf{Grammatiktheorien} (v.\,a.\ in der Phonologie, Morphologie und Syntax) und einige linguistische Phänomene
 \end{itemize}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Begleitlektüre}
+	\begin{itemize}
+	\item AM S.~2--6
+	\item \citet{Luedeling2009}: Kapitel 1 (S.~8--17) \& 3 (S.~28--41)
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Sprache und natürliche Sprache}
+\subsection{Sprache und natürliche Sprache}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Sprache und natürliche Sprache}
 	
+
 \begin{itemize}
-	\item Welches ist das \textbf{Untersuchungsgegenstand} der Linguistik? D.~h.: Was wird sprachwissenschaftlich untersucht und was nicht?
+	\item Was ist der \textbf{Untersuchungsgegenstand} der Linguistik?\\
+              \dash: Was wird sprachwissenschaftlich untersucht und was nicht?
 	\item[]
 	\item Die Linguistik ist das Studium der \textbf{Sprache}, genauer der \textbf{natürlichen Sprachen}.
 	\item[]
@@ -89,6 +107,8 @@
 \end{frame}
 
 \begin{frame}
+
+\frametitle{Sprache: weite Definition}
 
 \begin{itemize}
 	\item<1-> Duden Universalwörterbuch $\rightarrow$ weite Definition (vgl. \citet{Duden13a}):
@@ -136,6 +156,8 @@
 
 \begin{frame}
 
+\frametitle{Sprache: enge Definition}
+
 \begin{itemize}
 	\item<1-> Eng gefasste Definition von Sprache (als Gegenstand der Linguistik) \ras nur ein kleiner Teil der \textbf{Definitionen 1} (Sprache als Fähigkeit) und \textbf{4.1} (Sprache als Kommunikationsmittel einer Sprachgemeinschaft)
 	\item[]
@@ -143,7 +165,7 @@
 \end{itemize}
 			
 \begin{block}<3->{Sprache}
-    	   Wichtigstes und artspezif. Kommunikationsmittel der Menschen, das dem Austausch von Informationen dient sowie epistem. (die Organisation des Denkens betreffende), kognitive und affektive Funktionen erfüllt {[}\dots]. \citep{Glueck00a}
+    	   Wichtigstes und artspezif. Kommunikationsmittel der Menschen, das dem Austausch von Informationen dient sowie epistem. (die Organisation des Denkens betreffende), kognitive und affektive Funktionen erfüllt {[}\ldots]. \citep{Glueck00a}
 \end{block}
 	
 \end{frame}
@@ -155,11 +177,15 @@
 \begin{itemize}
 	\item<1-> Demnach: Sprache (in erster Linie) \textbf{Kommunikationsmittel} zum Austausch von Informationen
 	\item[]
-	\item<2-> Sie ist \textbf{artspezifisch} ist, d.~h. dass nur Menschen eine Sprache (in dem oben genannten Sinne) haben\footnote{Vergleiche auch \citet{Bussmann83a}: \gqq{Sprache als eine {[}\dots] nur dem Menschen eigene Ausdrucksform {[}\dots]}.}.\\
+	\item<2-> Sie ist \textbf{artspezifisch} ist, \dash dass nur Menschen eine Sprache (in dem
+          oben genannten Sinne) haben.\\
+%\footnote{Vergleiche auch \citet{Bussmann83a}: \gqq{Sprache als eine {[}\ldots] nur dem Menschen eigene Ausdrucksform {[}\ldots]}.}.\\
 	Siehe \textbf{Nim Chimpsky}:\\
 	\url{http://www.npr.org/2011/07/20/138467156/project-nim-a-chimps-very-human-very-sad-life}
 	\item[]
-	\item<3-> Unterschied zwischen menschlicher Sprache, d.~h. der sog. \textbf{natürlichen Sprache}, und anderer Sprachformen wie Tiersprachen und Plansprachen (z.~B. Esperanto), formalen Sprachen (z.~B. C++), etc. (vgl. \citet{Thuemmel00a}).\
+	\item<3-> Unterschied zwischen menschlicher Sprache, \dash der sog. \textbf{natürlichen
+          Sprache}, und anderer Sprachformen wie Tiersprachen und Plansprachen\\
+ (\zb Esperanto), formalen Sprachen (\zb C++), etc. (vgl. \citet{Thuemmel00a}).\
 \end{itemize}		
 
 \end{frame}
@@ -168,7 +194,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Zeichensysteme}
+\subsubsection{Zeichensysteme}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -187,15 +213,42 @@
 	\item<3-> Die Formseite ist abstrakt und kann graphisch, lautlich oder gestisch (im Falle von Gebärdensprachen) sein.
 \end{itemize}			
 			
-\begin{figure}[H]
-\centering
+%\begin{figure}[H]
+%\centering
 				
-\includegraphics[scale=0.15]{material/01SSZeichenKatze}
-\caption{Beziehung zwischen Funktions-/Bedeutungs- und Formseite}
-\label{Zeichen1}
-\end{figure}
+%\includegraphics[scale=0.15]{material/01SSZeichenKatze}
+%\caption{Beziehung zwischen Funktions-/Bedeutungs- und Formseite}
+%\label{Zeichen1}
+%\end{figure}
 
 \end{frame}			
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Alternative zur Gelben Katze:
+
+\begin{frame}
+\begin{table}
+\huge
+\centering
+%\caption[Hauskatze]{https://commons.wikimedia.org/wiki/File:Hauskatze_an_einem_Scheunenfenster_in_Grossarl.JPG; Autor: Usien; GNU Free Documentation Licence}
+\begin{tabular}{lp{1em}l}
+\hline
+\multirow{4}*{
+\includegraphics[scale=0.04]{material/Hauskatze-an-einem-Scheunenfenster-in-Grossarl}
+}&  
+%fehlt noch im Material-Ordner
+\multirow{4}{6em}{{\LARGE $ \leftrightarrow $}} & / \textipa{k a \t{ts} \textschwa} / \\
+& &(lautlich)\\
+\cline{3-3}
+& & $\langle$Katze$\rangle$\\
+& &(graphisch)\\
+\hline
+Bedeutungsseite & & Formseite\\
+\hline \\
+\end{tabular}
+\end{table}
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -206,11 +259,20 @@
 	\item<1-> \textbf{Tiere} verwenden auch Zeichensysteme zur Kommunikation.
 \end{itemize}			
 			
+%\begin{figure}[H]
+%\centering
+
+%\includegraphics[scale=0.15]{material/01SSBienentanz}
+%\caption{\gqq{Rundtanz} und \gqq{Schwänzeltanz} der Bienen}
+%\label{Zeichen2}
+%\end{figure}
+
+
 \begin{figure}[H]
 \centering
 
-\includegraphics[scale=0.15]{material/01SSBienentanz}
-\caption{\gqq{Rundtanz} und \gqq{Schwänzeltanz} der Bienen}
+\includegraphics[scale=0.15]{material/Bee-dance}
+\caption{https://commons.wikimedia.org/wiki/File:Bee\_dance.png?uselang=de; GNU-Lizenz; Autor:Audriusa; Bee\_dance/ Schwänzeltanz}
 \label{Zeichen2}
 \end{figure}
 
@@ -235,7 +297,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Merkmale natürlicher Sprachen}
+\subsubsection{Merkmale natürlicher Sprachen}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -259,7 +321,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \begin{frame}
 
 \begin{itemize}
-	\item<1-> \bf{Bidirektionalität:}
+	\item<1-> \textbf{Bidirektionalität:}
 
 	\begin{itemize}
 		\item[]
@@ -284,7 +346,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \begin{frame}
 
 \begin{itemize}
-	\item<1-> \bf{Situationelle Ungebundenheit:}
+	\item<1-> \textbf{Situationelle Ungebundenheit:}
 	
 	\begin{itemize}
 		\item[]
@@ -316,7 +378,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 	\begin{itemize}
 		\item<1-> Menschen können ihre \textbf{eigenen Sprachsignale} wahrnehmen und darauf reagieren.
 		
-\ea Ich habe heute \dots ääähhhh GESTERN die Hausaufgaben abgegeben.
+\ea Ich habe heute \ldots ääähhhh GESTERN die Hausaufgaben abgegeben.
 \z
 
 		\item<2->[$\rightarrow$] Der dreistachlige Stichling kann z.\,B. nicht die Färbung seiner Augen und seines Bauches wahrnehmen, die im Balzverhalten eine große Rolle spielt.
@@ -330,7 +392,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 				
 		\begin{itemize}
 			\item[]
-			\item<4->[$\rightarrow$] Die Wörter\ab{Alben} und \ab{Alpen} unterscheiden sich nur in der Aussprache eines einzelnen Lautes.\\
+			\item<4->[$\rightarrow$] Die Wörter \ab{Alben} und \ab{Alpen} unterscheiden sich nur in der Aussprache eines einzelnen Lautes.\\
 					Vgl. \textipa{[\textglotstop{}alb@n]} vs. \textipa{[\textglotstop{}alp@n]}
 			\item[]
 			\item<4->[$\rightarrow$] Der Bienentanz ist eher kontinuierlich als diskret.						
@@ -354,7 +416,8 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 		\item[]				
 		\item<1-> Eins der wichtigsten Merkmale natürlicher Sprachen!
 		\item[]
-		\item<2-> Aus einer \textbf{begrenzten Menge} von \textbf{Lauten} wird eine \textbf{(halb)begrenzte Menge} von \textbf{Wörtern} und daraus eine \textbf{unbegrenzte Menge} von \textbf{Sätzen} produziert ($\rightarrow$ offenes oder produktives System).
+		\item<2-> Aus einer \textbf{begrenzten Menge} von \textbf{Lauten} wird eine von
+                  Menschen nicht überschaubare Menge von \textbf{Wörtern} und daraus eine unüberschaubare Menge von \textbf{Sätzen} produziert ($\rightarrow$ offenes oder produktives System).
 		\item[]
 		\item<2-> Menschen können noch nie gehörte Sätze verstehen und noch nie gesagte Sätze produzieren.
 
@@ -389,10 +452,10 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 
 \pause
 
-\ea dt. \ab{Stift}, engl. \ab{pen}, sp. \ab{bolígrafo}, frz. \ab{crayon}, \dots
+\ea dt. \ab{Stift}, engl. \ab{pen}, sp. \ab{bolígrafo}, frz. \ab{crayon}, \ldots
 \z
 
-		\item<4-> Benennung ist \textbf{konventionell}, d.\,h. in der Sprachgemeinschaft festgelegt.
+		\item<4-> Benennung ist \textbf{konventionell}, \dash in der Sprachgemeinschaft festgelegt.
 
 		\begin{itemize}
 			\item<5->[$\rightarrow$] Der Tanz der Bienen ist nicht arbiträr sondern motiviert!
@@ -416,7 +479,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \begin{frame}
 		
 	\begin{block}{Natürliche Sprache}
-			Insgesamt bildet die natürliche Sprache also ein \textbf{produktives}, \textbf{bidirektionales}, \textbf{arbiträres} und \textbf{diskretes} Symbolsystem (vgl. \citet{Luedeling2009a}).
+			Insgesamt bildet die natürliche Sprache also ein \textbf{produktives}, \textbf{bidirektionales}, \textbf{arbiträres} und \textbf{diskretes} Symbolsystem (vgl. \citet{Luedeling2009}).
 	\end{block}
 
 \end{frame}	

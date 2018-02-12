@@ -29,25 +29,31 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 	}
+	}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\nocite
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+\frametitle{Begleitlektüre}
 
+\begin{itemize}
+	\item AM S.~41--45
+\end{itemize}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -305,7 +311,7 @@
 		
 		\eal 
 			\ex Schriftsteller, Altsprachler
-			\ex Schriftsteller: \\ [V schriftstell-] + [-er] \vs [N Schrift-] + [N -steller]
+			\ex Schriftsteller: \\ {[}V schriftstell-{]} + {[}-er{]} \vs {[}N Schrift-{]} + {[}N -steller{]}
 		\zl
 			 
 	\end{itemize}
@@ -416,7 +422,7 @@
 \centering
 \scalebox{0.7}{
 \begin{forest} 
-sn edges,
+sm edges,
 	[Haustürschlüssel
 		[Haustür
 			[Haus] 
@@ -429,7 +435,7 @@ sn edges,
 \centering
 \scalebox{.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[Zugverbindung
 		[Zug]
 		[Verbindung
@@ -465,7 +471,7 @@ sn edges,
 \centering
 \scalebox{0.7}{
 \begin{forest} 
-sn edges,
+sm edges,
 	[N
 		[N
 			[N
@@ -481,7 +487,7 @@ sn edges,
 \centering
 \scalebox{.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[N
 		[N		
 			[Zug]]
@@ -521,7 +527,7 @@ sn edges,
 \centering
 \scalebox{.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[*N
 		[N
 			[Zug]]
@@ -607,11 +613,13 @@ sn edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Komposition}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 
 
@@ -673,7 +681,7 @@ sn edges,
 \centering
 \scalebox{0.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[A
 		[N
 			[welt]]
@@ -685,7 +693,7 @@ sn edges,
 \centering
 \scalebox{0.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[N
 		[A
 			[klein]]
@@ -701,7 +709,7 @@ sn edges,
 \centering
 \scalebox{0.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[N
 		[V
 			[N
@@ -747,13 +755,13 @@ sn edges,
 	
 	\eal 
 		\ex -es-Einsetzung: \\
-		 [N Landesvater] \ras [N Land] + es + [N Vater]
+		 {[N Landesvater] \ras [N Land] + es + [N Vater]}
 		\ex -e-Einsetzung: \\
-		 [N Haltestelle] \ras [V halt] + e + [N Stelle]
+		 {[N Haltestelle] \ras [V halt] + e + [N Stelle]}
 		\ex -s-Einsetzung: \\
-		 [N Leitungswasser] \ras [N Leitung] + s + [N Wasser]
+		 {[N Leitungswasser] \ras [N Leitung] + s + [N Wasser]}
 		\ex Schwa-Tilgung: \\
-		 [N Sprachkurs] \ras [N Sprache] – e + [N Kurs]
+		 {[N Sprachkurs] \ras [N Sprache] – e + [N Kurs]}
 	\zl
 		 
 \end{itemize}
@@ -878,7 +886,7 @@ sn edges,
 		
 		\ea 'Lichtre,klame vs. 'Lichter,kette ('= Primärakzent ,=Sekundärakzent)
 		\z
-\\
+		
 		aber:
 		
 		\ea 'Licht,schalter	
@@ -1089,7 +1097,7 @@ sn edges,
 
 \begin{figure}
 \centering
-\includegraphics[scale=.55]{material/05Morph-Kebab}
+\includegraphics[scale=.55]{material/05Morph-Kebap}
 \end{figure}
 
 \end{frame}
@@ -1235,13 +1243,13 @@ sn edges,
 	\item[]
 	\item Das Kompositum bezieht sich aber auf \textbf{eine dritte Entität}, sie sind \textbf{exozentrisch}
 	
-	\ea \emph{Rot$\cdot$kehlchen} = Vogel, kein Kehlchen
+	\ea \emph{Rot$\cdot$kehlchen} = Vogel, der ein rotes Kehlchen hat, nicht ein rotes Kehlchen ist
 	\z
 	
-	\ea \emph{Rot$\cdot$käppchen} = Märchenfigur, kein Käppchen
+	\ea \emph{Rot$\cdot$käppchen} = Person, die eine rote Kappe hat (Märchenfigur), kein Käppchen
 	\z
 	
-	\ea \emph{Lang$\cdot$finger} = Person, die stiehlt, kein Finger
+	\ea \emph{Lang$\cdot$finger} = Person, die lange Finger hat (= die stiehlt), kein Finger
 	\z
 	
 \end{itemize}
@@ -1300,7 +1308,8 @@ sn edges,
 		 ein 'blaugrünes 'Hemd - Determinativ
 	\z
 		 
-	\item Während bei Determinativkomposita der Nichtkopf betont wird, werden bei Kopulativkomposita alle Konstituenten betont.
+	\item Während bei Determinativkomposita der Nichtkopf betont wird,\\
+              werden bei Kopulativkomposita alle Konstituenten betont.
 	\item[]
 	\item[] \textbf{ÜB.5}
 \end{itemize}
@@ -1376,7 +1385,7 @@ sn edges,
 \begin{itemize}
 	\item Komposita können auch strukturell ambig sein (\ref{ex:Bsp6} und \ref{ex:Bsp7})
 	
-	\ea \label{ex:Bsp6} ((Bund$\cdot$es$\cdot$straße$\cdot$n)$\cdot$bau)} \vs \emph{(Bund$\cdot$es$\cdot$(straße$\cdot$n$\cdot$bau))
+	\ea\label{ex:Bsp6} ((Bund$\cdot$es$\cdot$straße$\cdot$n)$\cdot$bau) \vs \emph{(Bund$\cdot$es$\cdot$(straße$\cdot$n$\cdot$bau))}
 	\z
 	
 	\ea \label{ex:Bsp7} ((Frau$\cdot$en$\cdot$film)$\cdot$fest) \vs (Frau$\cdot$en$\cdot$(film$\cdot$fest))
@@ -1391,7 +1400,7 @@ sn edges,
 \centering
 \scalebox{.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[N
 		[N
 			[N
@@ -1410,7 +1419,7 @@ sn edges,
 \centering
 \scalebox{.7}{
 \begin{forest}
-sn edges,
+sm edges,
 	[N
 		[N
 			[Frau(en)]]

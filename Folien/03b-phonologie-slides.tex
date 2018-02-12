@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
+%% Compile: XeLaTeX BibTeX XeLaTeX(x2)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,10pt, bibtotoc]{beamer}
@@ -21,13 +21,16 @@
 \input{localcommands}
 
 %\togglefalse{uebung}
-%\toggletrue{uebung}
+\toggletrue{uebung}
 %\togglefalse{loesung}
-%\toggletrue{loesung}
+\toggletrue{ha-loesung}
 %\togglefalse{toc}
-%\toggletrue{toc}
-
+\toggletrue{toc}
+\toggletrue{hausaufgabe}
+%\togglefalse{hausaufgabe}
 
 \input{03b-phonologie-include}
+
+\input{gk-literatur}
 
 \end{document}

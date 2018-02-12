@@ -8,13 +8,14 @@
 
 \title{Grundkurs Linguistik}
 
-\subtitle{Phonologie\\Sprachgebildelautlehre}
+\subtitle{Phonologie I}
+\section{Phonologie}
 
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize %\url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
+	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
@@ -33,12 +34,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -46,12 +48,12 @@
 
 \nocite{Repp&Co12a} 
 \nocite{Hall00a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009} 
 \nocite{Ramers08a}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Einführung}
+\subsection{Einführung}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -61,12 +63,33 @@
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+\frametitle{Begleitlektüre}
+
+	\begin{itemize}
+		\item Phonologische Grundbegriffe:
+		\begin{itemize}
+			\item AM S.~13--18
+			\item \citet{Hall00a}: Kapitel 2 (S.~37--47; 62--72)  
+		\end{itemize}
+		\item Phonologische Prozesse/Phonotaktik: 
+		\begin{itemize}
+			\item AM S.~18--23
+			\item  \citet{Hall00a}: Kapitel 2 (S.47--62)   
+		\end{itemize}
+	\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}{Einführung}
 
 \begin{itemize}
+	\item  Phonologie, auch Sprachgebildelautlehre
+	\item  Phonteik, auch Sprechaktlehre
 	\item Trennung von Phonetik und Phonologie: Ende der 1920er Jahre
-	\item[]
-	\item Strukturalistische Lehre der Prager Schule (vgl. \cite{Trubetzkoy89a})
+	\item Strukturalistische Lehre der Prager Schule (vgl. \cite{Trubetzkoy89a-doppelt})
 	\item[]
 	\item Unterscheidung auf allen Ebenen zwischen
 	
@@ -88,21 +111,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 \begin{itemize}
-	\item Phonetik: Untersuchung der materiellen Seite des Sprechens (Phone)
+	\item \textbf{Phonetik:} Untersuchung der materiellen Seite des Sprechens (Phone)
 	\item[]
-	\item Phonologie: Systematik der Laute \ras Materielle (messbare) Daten der Phonetik werden in abstrakterer Art und Weise \textbf{systematisiert}
+	\item \textbf{Phonologie:} Systematik der Laute \ras Materielle (messbare) Daten der Phonetik werden in abstrakterer Art und Weise \textbf{systematisiert}
 	
 	\begin{itemize}
 		\item \textbf{Phoneminventar}: Bedeutungsunterscheidende Laute einer Sprache 
 
 	\eal		
-		\ex Im Dt. bedeutungsunterscheidend \textipa{[v]} und \textipa{[f]}: \textipa{[v\t{aI}n]} vs. \textipa{[f\t{aI}n]}
+		\ex Im Dt. bedeutungsunterscheidend \textipa{[v]} und \textipa{[f]}: \\
+		\textipa{[v\t{aI}n]} vs.\ \textipa{[f\t{aI}n]} (Wein, fein)
 		\ex Deutsch: 16 Vokale \& 20 Konsonanten
 		\ex Rotokas (Papua): 5 Vokale \& 6 Konsonanten
-		\ex Mittelwert: 23 Konsonanten \& 8 Vokale
+		\ex Mittelwert:  8 Vokale \& 23 Konsonanten
 	\zl
 	
 		\item \textbf{Allophonie}: Vorkommen vs. Nicht-Vorkommen (bzw. Variation) von Lauten in bestimmten Kontexten
@@ -121,12 +145,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 \begin{itemize}
 	\item \textbf{Phonologische Distribution}: An welchen Stellen kann ein Laut oder eine Lautfolge auftreten
 
-	\ea \textipa{[St\textscr]} am Wortanfang aber nicht am Wortende \textipa{[St{\textscr}\t{aU}x]} \vs *\textipa{[\ldots aSt\textscr]}
+	\ea \textipa{[St\textscr]} am Wortanfang aber nicht am Wortende:\\
+	\textipa{[St{\textscr}\t{aU}x]} \vs *\textipa{[\ldots aSt\textscr]}
 	\z
 
 	\item Phoneminventar, phonologische Distribution und Allophonie werden in der \textbf{strukturalistischen Phonologie} untersucht
@@ -141,7 +166,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 \begin{itemize}
 	\item \textbf{Phonologische Prozesse}: Welche Lautfolgen, die an der Oberfläche unterschiedlich klingen, werden durch die Sprachnutzer trotzdem als Varianten eines zugrunde liegenden Musters erkannt?
@@ -150,7 +175,8 @@
 \textipa{[ga:d\textsyllabic{n}]}
 \z
 
-	\item \textbf{Generative} Phonologie $\rightarrow$ Zugrundeliegende Form +  Regeln ($\rightarrow$ Schlüsse über die allgemeine Sprachfähigkeit!) 
+\item \textbf{Generative} Phonologie $\rightarrow$ Zugrundeliegende Form +  Regeln\\
+      ($\rightarrow$ Schlüsse über die allgemeine Sprachfähigkeit!) 
 	\item[]
 	\item Aufgaben des phonologischen Moduls:
 	
@@ -169,14 +195,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Einführung}
+%\frametitle{Einführung}
 
 \begin{itemize}
 	\item Weitere Untersuchungsgebiete der Phonologie:
 	
 	\begin{itemize}
 		\item[]
-		\item Eigenschaften von (lautlichen) Einheiten, die größer sind als ein Laut (\zB \textbf{Silbenphonologie})
+		\item Eigenschaften von (lautlichen) Einheiten, die größer sind als ein Laut (\zB~\textbf{Silbenphonologie})
 		\item[]
 		\item Wortakzent (\textbf{metrische Phonologie})
 		\item[]
@@ -196,12 +222,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Phonem, Phon, Allophon}
+\subsection{Phonem, Phon, Allophon}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -211,7 +239,7 @@
 	\item \textbf{Phon} (Notation \textipa{[ ]}):
 	
 	\begin{itemize}
-		\item[]
+		%\item[]
 		\item Minimaleinheit der Phonetik
 		\item Physikalisch messbare lautliche Einheit einer Sprache
 	\end{itemize}
@@ -220,9 +248,9 @@
 	\item \textbf{Phonem} (Notation \textipa{/ /}):
 	
 	\begin{itemize}
-		\item[]
+		%\item[]
 		\item Minimaleinheit der Phonologie
-		\item Abstraktes Konstrukt, das für eine \textbf{Menge} von möglichen Phonen (Allophonen) steht
+		\item Abstraktes Konstrukt, steht für eine \textbf{Menge} von möglichen Phonen (Allophonen)
 		\item Resultat von \textbf{Systematisierung}
 		\item Ermittelbar durch \textbf{Minimalpaarbildung} (strukturalistisches Kriterium)
 		
@@ -241,10 +269,9 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Phonem, Phon, Allophon}
+\frametitle{Phonem}
 
-\begin{itemize}
-	\item \textbf{Phonem} (Notation \textipa{/ /}):
+Phoneme werden durch Schrägstirche gekennzeichnet: \textipa{/ /}
 	
 	\begin{itemize}
 		\item Ermittelbar durch \textbf{Minimalpaarbildung} (strukturalistisches Kriterium)
@@ -269,7 +296,7 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 	
 	\end{itemize}
 	
-\end{itemize}
+
 
 \end{frame}
 
@@ -278,7 +305,7 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Phonem, Phon, Allophon}
+\frametitle{Phonem}
 
 \begin{block}{Phonem (strukturalistisch)}
 Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
@@ -290,8 +317,8 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 	\item Phoneme sind immer Phoneme \textbf{einer Sprache / eines Systems}
 
 	\eal
-		\ex Deutsch: \textipa{[papa]} = \textipa{[p\super{h}ap\super{h}a]}
-		\ex Hindi: \textipa{[pal]} ($\lsem$sich kümmern um$\rsem$) $\neq$ \textipa{[p\super{h}al]} ($\lsem$Messerblatt$\rsem$)
+		\ex Deutsch: \textipa{[papa]} \textbf{=} \textipa{[p\super{h}ap\super{h}a]}
+		\ex Hindi: \textipa{[pal]} (\gq{sich kümmern um}) \textbf{$\neq$} \textipa{[p\super{h}al]} (\gq{Messerblatt})
 	\zl
 
 \end{itemize}
@@ -302,24 +329,27 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{Phonem, Phon, Allophon}
+\begin{frame}%[allowframebreaks]
+\frametitle{Allophon}
 
-\begin{itemize}
-	\item \textbf{Allophone}:
-	
 	\begin{itemize}
 		\item Phonetische Realisierungsvarianten \textbf{eines} Phonems
 		
-		\ea \textipa{[Sp r a:xe]} = \textipa{[Sp \textscr a:xe]} = \textipa{[Sp K a:xe]} \ras kein Bedeutungsunterschied
+		\ea \textipa{[Sp \textcolor{red}{r} a:xe]} = \textipa{[Sp \textcolor{red}{\textscr} a:xe]} = \textipa{[Sp \textcolor{red}{K} a:xe]} \\ \ras kein Bedeutungsunterschied
 		\z
 
 		\item \textbf{Komplementäre} Allophonie
 
 	\eal
-		\ex \textipa{[x]} \vs \textipa{[\c{c}]}
-		\ex \textipa{[bax]} \vs \textipa{[mI\c{c}]}	
-		\ex *\textipa{[mIx]} \vs *\textipa{[ba\c{c}]}
+	\ex[]{
+          \textipa{[x]} \vs \textipa{[\c{c}]}
+          }
+	\ex[]{
+          \textipa{[bax]} \vs \textipa{[mI\c{c}]}
+          }
+	\ex[*]{
+          \textipa{[mIx]} \vs *\textipa{[ba\c{c}]}
+          }
 	\zl
 	
 		\item \textbf{Freie} Allophonie
@@ -333,8 +363,6 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 		\z
 		
 	\end{itemize}
-	
-\end{itemize}
 
 \end{frame}
 
@@ -343,13 +371,15 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Phonetisch-phonologische Ebenen}
+\subsection{Phonetisch-phonologische Ebenen}
 %
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -357,12 +387,12 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 
 	\begin{itemize}
 		\item Unterscheidung von mindestens zwei Ebenen
-		\item[$\rightarrow$] \textipa{[\textscr a: t]} und \textipa{[\textscr E: d 5]} (für \ab{Rad} und \abu{Räder})\\
+		\item[$\rightarrow$] \textipa{[\textscr a: \alertred{t}]} und \textipa{[\textscr E: \alertred{d} 5]} (für \ab{Rad} und \abu{Räder})\\
 		aber\\
-		\textipa{[\textscr a: t]} und \textipa{[\textscr E: t @]} (für \ab{Rat} und \abu{Räte})
+		\textipa{[\textscr a: \alertred{t}]} und \textipa{[\textscr E: \alertred{t} @]} (für \ab{Rat} und \abu{Räte})
 		\item[]
 		\item[$\rightarrow$] Warum verstehen wir dasselbe, wenn wir\\
-		\textipa{[h a: k @ n]} oder \textipa{[h a: k N]}\\
+		\textipa{[h a: k @ \alertred{n}]} oder \textipa{[h a: k \alertred{N}]}\\
 		hören?
 		\item[]
 		\item \textbf{Tiefenstruktur} (Deep Structure) vs. \textbf{Oberflächenstruktur} (Surface Structure)
@@ -375,7 +405,7 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Tiefenstruktur (TS)}
+%\subsubsection{Tiefenstruktur (TS)}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -391,13 +421,14 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 	\item \textbf{Zugrundeliegende abstrakte Repräsentation} $\rightarrow$ Phoneme \textipa{/ /}
 	\item[]
 	\item \textbf{Idiosynkratische} Form $\approx$ Nicht deriviert/abgeleitet
-	\item[$\rightarrow$] Die TS-Form kann nicht durch Regeln abgeleitet werden, sie ist im Lexikon gespeichert.
+	\item[$\rightarrow$] Die TS-Form kann nicht durch Regeln abgeleitet werden,\\
+                sie ist im Lexikon gespeichert.
 	\item[]
 	\item TS besteht aus Phonemen
 	
 	\eal
-		\ex \textipa{/\textscr a: t/}: TS-Form von \ab{Rat}
-		\ex \textipa{/\\textscr a: d/}: TS-Form von \ab{Rad}
+		\ex \textipa{/\textscr\ a: t/}: TS-Form von \ab{Rat}
+		\ex \textipa{/\textscr\ a: d/}: TS-Form von \ab{Rad}
 		\ex \textipa{/h a: k @ n/}: TS-Form von \ab{Haken}
 	\zl
 	
@@ -410,13 +441,13 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Tiefenstruktur (TS)}
+%\frametitle{Tiefenstruktur (TS)}
 
 \begin{itemize}
-	\item \textipa{[t]} in \textipa{[\textscr a: t]} (von \textipa{/\textscr a: d/}) ist ableitbar
-	\item \textipa{/d/} in \textipa{/\textscr a: d/} ist idiosynkratisch
+	\item \textipa{[t]} in \textipa{[\textscr\ a: \alertred{t}]} (von \textipa{/\textscr\ a: \alertred{d}/}) ist ableitbar
+	\item \textipa{/d/} in \textipa{/\textscr\ a: \alertred{d}/} ist idiosynkratisch
 	\item[]
-	\item \textipa{/t/} in \textipa{/\textscr a: t/} ist idiosynkratisch
+	\item \textipa{/t/} in \textipa{/\textscr\ a: \alertred{t}/} ist idiosynkratisch
 	\item[]
 	\item Wenn das Deutsche ein neues Wort wie \ab{Code} \textipa{[k @ U d]} entlehnen würde, würde dieses Wort früher oder später \gqq{eingedeutscht} werden.
 	
@@ -432,7 +463,7 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Oberflächenstruktur (OS)}
+%\subsubsection{Oberflächenstruktur (OS)}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -453,8 +484,8 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \textbf{kanonische Aussprache} ($\approx$ Standardaussprache) $\rightarrow$ \textipa{[P e: b @ n]},\\
 und die vielen möglichen\\
 \textbf{umgangssprachlichen Formen} $\rightarrow$ \textipa{[P e: b n]}, \textipa{[P e: b m]}, \textipa{[P e: m]}
-	\item[]
-	\item Häufig wird zwischen phonologischen und phonetischen Prozessen unterschieden.
+%	\item[]
+%	\item Häufig wird zwischen phonologischen und phonetischen Prozessen unterschieden.
 \end{itemize}
 
 \end{frame}
@@ -463,8 +494,8 @@ und die vielen möglichen\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{{Oberflächenstruktur (OS)}}
+\begin{frame}%[allowframebreaks]
+\frametitle{Phonetische und phonologische Prozesse}
 
 \begin{itemize}
 	\item Häufig wird zwischen phonologischen und phonetischen Prozessen unterschieden.
@@ -476,7 +507,7 @@ und die vielen möglichen\\
 	\item[$\rightarrow$] \textit{Ich}-/\textit{Ach}-Laut-Wechsel \textipa{[b u: x]} (von \textipa{/b u: \c{c}/}) ist ableitbar
 	\item[]
 	\item Einen klaren Schnitt zwischen phonetischen und phonologischen Prozessen gibt es nicht!
-	\item[$\rightarrow$] Sind g-Tilgung, Spirantisierung, Schwa-Tilgung, \dots phonetische oder phonologische Prozesse?
+	\item[$\rightarrow$] Sind g-Tilgung, Spirantisierung, Schwa-Tilgung, \dots\ phonetische oder phonologische Prozesse?
 \end{itemize}
 
 \end{frame}
@@ -486,7 +517,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{TS \& OS}
+%\subsubsection{TS \& OS}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\frame{
@@ -498,15 +529,16 @@ und die vielen möglichen\\
 \begin{frame}{TS \& OS}
 
 \begin{itemize}
-	\item TS \& OS sind \textbf{theoretische Abstraktionen} ($\approx$ keine Wahrheiten!), um die Regelhaftigkeiten auf der phonologischen Ebene erklären zu können.
+	\item TS \& OS sind \textbf{theoretische Abstraktionen} ($\approx$ keine Wahrheiten!),\\
+              um die Regelhaftigkeiten auf der phonologischen Ebene erklären zu können.
 	\item[]
-	\item Kind erhält als \textbf{Input im Spracherwerb} OS-Formen wie: \textipa{[\textscr a: t]} und \textipa{[\textscr E: t @]}, \textipa{[\textscr a: t]} und \textipa{[\textscr E: d 5]}, \textipa{[b E t]} und \textipa{[b E t @ n]}, \textipa{[b a: t]} und \textipa{[b E: d 5]}, \textipa{[k I n t]} und \textipa{[k I n d 5]}
+	\item Kind erhält als \textbf{Input im Spracherwerb} OS-Formen wie: \textipa{[\textscr\ a: t]} und \textipa{[\textscr~E:~t~@]}, \textipa{[\textscr\ a: t]} und \textipa{[\textscr\ E: d 5]}, \textipa{[b E t]} und \textipa{[b E t @ n]}, \textipa{[b a: t]} und \textipa{[b~E:~d~5]}, \textipa{[k I n t]} und \textipa{[k I n d 5]}
 	\item[]
 	\item Daraus erkennt das Kind,
 
 	\begin{itemize}
-		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden (\zB \ab{Rad}, \ab{Bad}, \ab{Kind}),
-		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird  (\zB \ab{Rat}, \ab{Bett}).
+		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden \\ (\zB \ab{Rad}, \ab{Bad}, \ab{Kind}),
+		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird  \\ (\zB \ab{Rat}, \ab{Bett}).
 	\end{itemize}
 		
 \end{itemize}
@@ -518,14 +550,14 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-	\frametitle{TS \& OS}
+	%\frametitle{TS \& OS}
 		
 \begin{itemize}
 	\item Daraus erkennt das Kind,
 	
 	\begin{itemize}
-		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden (z.~B. \ab{Rad}, \ab{Bad}, \ab{Kind}),
-		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird  (z.~B. \ab{Rat}, \ab{Bett}).
+		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden \\(z.~B. \ab{Rad}, \ab{Bad}, \ab{Kind}),
+		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird  \\(z.~B. \ab{Rat}, \ab{Bett}).
 		\item[]
 		\item Daraus leitet das Kind Folgendes ab:
 		\item[$\rightarrow$] \textipa{/d/} $\rightarrow$ \textipa{[t]} am Ende des Wortes (bzw. der Silbe)!
@@ -546,7 +578,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{TS \& OS}
+\frametitle{Phonologische und phonetische Prozesse und TS $\to$ OS}
 
 \begin{table}
 \centering 
@@ -565,11 +597,14 @@ und die vielen möglichen\\
 	\hline		
 \end{tabular}
 
-\caption{TS $\rightarrow$ OS} 
+%\caption{TS $\rightarrow$ OS} 
 \end{table}
 
 \begin{itemize}
-	\item Die Abstraktion (s. Tabelle) impliziert eine gewisse zeitliche Abfolge, die es in der Realität nicht gibt. Es handelt sich um eine theoretische Abstraktion, die notwendig ist, um Phänomene zu erfassen!	
+	\item Die Abstraktion (s. Tabelle) impliziert eine gewisse zeitliche Abfolge,\\
+              die es in der Realität nicht gibt.\\
+              Es handelt sich um eine theoretische Abstraktion, die notwendig ist,\\
+              um Phänomene zu erfassen!	
 \end{itemize}
 			
 \end{frame}
@@ -578,7 +613,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Phonetisch/phonologische Prozesse}
+\subsection{Phonetisch/phonologische Prozesse}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\frame{
@@ -607,7 +642,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Tilgung von Segmenten}
+%\subsubsection{Tilgung von Segmenten}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\frame{
@@ -616,7 +651,7 @@ und die vielen möglichen\\
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Tilgung von Segmenten}
+\begin{frame}{Tilgung von Segmenten: \textipa{/@/} und \textipa{/g/}-Tilgung}
 
 \begin{itemize}
 	\item \textbf{\textipa{/@/}-Tilgung}:
@@ -652,7 +687,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Tilgung von Segmenten}
+\frametitle{Tilgung von Segmenten: Geminatenreduktion}
 
 \begin{itemize}
 	\item \textbf{Geminatenreduktion}:
@@ -662,8 +697,8 @@ und die vielen möglichen\\
 		\item Regel: XX \ras X / A \underline{\quad} B
 
 	\eal
-		\ex \abu{Enttäuschung}: \textipa{/Ent.t\t{OI}.SUng/} \ras \textipa{[PEn\.t\t{OI}.SUN]}
-		\ex \ab{Schifffahrt}: \textipa{/SIf.fa:{\textscr}t/} \ras \textipa{[SI\.fa:{\textscr}t]}
+		\ex \abu{Enttäuschung}: \textipa{/Ent.t\t{ɔɪ}.SUng/} \ras \textipa{[PEn\.t\t{ɔɪ}.SUN]}
+		\ex \ab{Schifffahrt}: \textipa{/SIf.fa:{\textscr}t/} \ras \textipa{[SI\.{f}a:{\textscr}t]}
 		\ex ABER \ab{Zoooper}: \textipa{/\t{ts}o:.o.p@{\textscr}/} \ras \textipa{[\t{ts}o:.Po.p5]}
 	\zl
 	
@@ -678,7 +713,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Hinzufügung von Segmenten}
+%\subsubsection{Hinzufügung von Segmenten}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -688,7 +723,7 @@ und die vielen möglichen\\
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Hinzufügung von Segmenten}
+\begin{frame}{Hinzufügung von Segmenten: Plosiveinsetzung}
 
 \begin{itemize}
 	\item Allgemeine Regel: $\emptyset$ \ras X / A \underline{\quad} B
@@ -705,6 +740,13 @@ und die vielen möglichen\\
 	
 	\end{itemize}
 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Hinzufügung von Segmenten: Knacklauteinsetzung}
+
+\begin{itemize}
 	\item \textbf{Knacklauteinsetzung}:
 
 	\begin{itemize}
@@ -731,7 +773,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Veränderung von Segmenten (durch Assimilation)}
+%\subsubsection{Veränderung von Segmenten (durch Assimilation)}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -756,14 +798,21 @@ und die vielen möglichen\\
 		\ex ABER \ab{ungern}: \textipa{/Un.gE{\textscr}n/} \ras \textipa{[PUn.gE{\textscr}n]} oder fakulativ \textipa{[PUN.gE{\textscr}n]}
 	\zl
 	
-	\end{itemize}
-	
+ 	\end{itemize}
+%% \end{itemize}
+%% \end{frame}
+
+%% \begin{frame}
+%% \begin{itemize}
+
 	\item[]
 	\item \textbf{(Allgemeine) regressive Nasalassimilation}:
 
 	\begin{itemize}
 		\item Fakultativ
 		\item Regel: [nasal, Art.Ort: Y] \ras [nasal, Art.Ort: X] /  \underline{\quad} [obstruent, Art.Ort: X]
+		
+		vorausgesetzt X $\neq$ Y
 
 		\ea \abu{fünf}: \textipa{/fYnf/} \ras \textipa{[fYmf]}
 		\z
@@ -779,7 +828,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-{Veränderung von Segmenten (durch Assimilation)}
+\frametitle{Assimilation}
 
 \begin{itemize}
 	\item \textbf{Progressive Nasalassimilation}:
@@ -806,7 +855,7 @@ und die vielen möglichen\\
 
 	\eal
 		\ex \ab{mich}: \textipa{/mI\c{c}/} $\rightarrow$ \textipa{[mI\c{c}]}
-		\ex \ab{Buch}: \textipa{/bU\c{c}/} $\rightarrow$ \textipa{[bUx]}
+		\ex \ab{Buch}: \textipa{/bu:\c{c}/} $\rightarrow$ \textipa{[bu:x]}
 		\ex \ab{Elch}: \textipa{/El\c{c}/} $\rightarrow$ \textipa{[PEl\c{c}]}
 	\zl
 	
@@ -821,7 +870,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Veränderung von Segmenten (durch Assimilation)}
+%\frametitle{Veränderung von Segmenten (durch Assimilation)}
 
 \begin{itemize}
 	\item \textbf{\textipa{/g/}-Spirantisierung}
@@ -832,7 +881,7 @@ und die vielen möglichen\\
 
 \eal	
 	\ex \ab{sagst}: \textipa{/za:gst/} $\rightarrow$ \textipa{[za:xst]}
-	\ex \ab{freudig}: \textipa{/f{\textscr}\t{OI}.dIg/} $\rightarrow$ \textipa{[f{\textscr}\t{OI}.dI\c{c}]}
+	\ex \ab{freudig}: \textipa{/f{\textscr}\t{ɔɪ}.dIg/} $\rightarrow$ \textipa{[f{\textscr}\t{ɔɪ}.dI\c{c}]}
 \zl
 
 	\end{itemize}
@@ -847,7 +896,8 @@ und die vielen möglichen\\
 	\eal
 		\ex \ab{Ohr}: \textipa{/o:{\textscr}/} $\rightarrow$ \textipa{[Po:5]}
 		\ex \ab{fern}: \textipa{/fE{\textscr}n/} $\rightarrow$ \textipa{[fE5n]}
-		\ex \ab{Lehrer}: \textipa{/le:.{\textscr}@{\textscr}/} $\rightarrow$ \textipa{[le:.{\textscr}@5]} (nach Schwa-Tilgung $\rightarrow$ \textipa{[le:.{\textscr}5]}
+		\ex \ab{Lehrer}: \textipa{/le:.{\textscr}@{\textscr}/} $\rightarrow$ \textipa{[le:.{\textscr}@5]} (nach Schwa-Tilgung $\rightarrow$ \textipa{[le:.{\textscr}5]}\\
+		(vgl. \ab{Lehrerin})
 	\zl
 	
 	\end{itemize}
@@ -861,7 +911,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-{Veränderung von Segmenten (durch Assimilation)}
+%{Veränderung von Segmenten (durch Assimilation)}
 
 \begin{itemize}
 	\item \textbf{Auslautverhärtung}
@@ -890,7 +940,7 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Reihenfolge der Prozesse}
+%\subsubsection{Reihenfolge der Prozesse}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -902,11 +952,10 @@ und die vielen möglichen\\
 
 \begin{frame}{Reihenfolge der Prozesse}
 
-\begin{itemize}
-	\item Reihenfolge der Prozesse spielt eine wichtige Rolle!
+Die Reihenfolge der Prozesse spielt eine wichtige Rolle!
 
 	\begin{block}{Feeding}
-	Wenn ein Prozess die kontextuellen Bedingungen für einen weiteren Prozess \textbf{schafft}.	
+	Wenn Prozess die kontextuellen Bedingungen für einen weiteren Prozess \textbf{schafft}.	
 
 	\end{block}
 
@@ -914,13 +963,12 @@ und die vielen möglichen\\
 	\z
 
 	\begin{block}{Bleeding}
-	Wenn ein Prozess die kontextuellen Bedingungen für einen weiteren Prozess \textbf{zerstört}.
+	Wenn Prozess die kontextuellen Bedingungen für einen weiteren Prozess \textbf{zerstört}.
 	\end{block}
 
 	\ea \ab{Gesang}: \textipa{/g@.zang/} \ras \textipa{[g@.zaNg]} \ras \textipa{[g@.zaN]} $\nrightarrow$ \textipa{[g@.zaNk]}
 	\z
 	
-\end{itemize}
 
 \end{frame}
 

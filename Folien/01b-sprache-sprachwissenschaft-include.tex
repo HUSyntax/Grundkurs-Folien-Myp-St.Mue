@@ -7,6 +7,8 @@
 
 \subtitle{Sprache \& Sprachwissenschaft II}
 
+\section{Sprache \& Sprachwissenschaft II}
+
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
 %	\\
@@ -31,18 +33,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
 
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 	}
+	}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Grammatik}
+\subsection{Grammatik}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -69,7 +72,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	
-\subsection{Grammatikbegriff}
+\subsubsection{Grammatikbegriff}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -81,7 +84,7 @@
 \begin{frame}{Grammatikbegriff}
 
 \begin{itemize}
-	\item<1-> Grammatik im engeren Sinne als \textbf{Lehre} von morphologischen und syntaktischen Regularitäten einer Sprache. Unter dieser Auffassung bleiben die Phonologie und die Semantik als Teilbereiche der Sprachwissenschaft ausgeklammert (Traditionelle Definition).
+	\item<1-> Grammatik im engeren Sinne als \textbf{Lehre} von morphologischen und syntaktischen Regularitäten einer Sprache. Unter dieser Auffassung bleiben die Phonologie und die Semantik als Teilbereiche der Sprachwissenschaft ausgeklammert (traditionelle Definition).
 	\item[]
 	\item<2-> Grammatik als \textbf{präskriptive/normative} Grammatik, die Vorgaben für die \gqq{korrekte} Sprachverwendung einer einzelnen Sprache (\gqq{gutes Deutsch}) macht (z.~B. \citet{DudenGramm09d}).
 	\item[]
@@ -106,7 +109,10 @@
 
 	\begin{itemize}
 		\item<4-> System, das Laute und Bedeutungen regelhaft einander zuordnet und das gesamte Regelsystem einer Sprache umfasst.
-		\item<4-> Wir befassen uns mit Grammatik mit einer \textbf{deskriptiven} Methodik (d.\,h. nicht präskriptiv!) und verwenden dafür (bzw. bilden dadurch) \textbf{Grammatiktheorien} (z.\,B. Generative Grammatik).
+		\item<4-> Wir befassen uns mit Grammatik mit einer \textbf{deskriptiven} Methodik
+                  (d.\,h. nicht präskriptiv!) und verwenden dafür (bzw. bilden dadurch)
+                  \textbf{Grammatiktheorien}\\
+(z.\,B. Generative Grammatik).
 	\end{itemize}
 
 \end{itemize}
@@ -116,7 +122,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Modularität der Grammatik}
+\subsubsection{Modularität der Grammatik}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -166,7 +172,9 @@
 	\item<2-> Jedes sprachliche Modul besteht zugleich aus:
 	
 	\begin{enumerate}
-		\item<2-> einem Inventar von komponentenspezifisch kategorisierten \textbf{Minimaleinheiten} (z.~B. Morphem in der Morphologie)
+		\item<2-> einem Inventar von komponentenspezifisch kategorisierten
+                  \textbf{Minimaleinheiten}\\
+                         (z.~B. Morphem in der Morphologie)
 		\item<2->[] und
 		\item<2-> einer Menge von komponentenspezifischen \textbf{Regeln zur Kombination} dieser Minimaleinheiten zu wohlgeformten komplexen Einheiten. 
 	\end{enumerate}		  
@@ -179,7 +187,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %
-\subsubsection{Lexikon}
+\subsubsubsection{Lexikon}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -244,7 +252,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Phonologische Komponente}
+\subsubsubsection{Phonologische Komponente}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -274,7 +282,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Morphologische Komponente}
+\subsubsubsection{Morphologische Komponente}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -344,7 +352,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Syntaktische Komponente}
+\subsubsubsection{Syntaktische Komponente}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		
@@ -355,20 +363,20 @@
 
 	\begin{enumerate}
 		\item[]
-		\item<2->[$\rightarrow$] Wieso ist die Phrase \ref{ex1a} grammatisch und die Phrase \ref{ex1b} nicht?
+		\item<2->[$\rightarrow$] Wieso ist die Phrase (\ref{ex1a}) grammatisch und die Phrase (\ref{ex1b}) nicht?
 		
 \eal
 	\ex \label{ex1a} Die Königin von Schweden aus Deutschland 
 	\ex \label{ex1b} Die Königin aus Deutschland von Schweden
 	\zl
-		\item<3->[$\rightarrow$] Warum ist ein Satz wie \ref{ex2a} ungrammatisch (trotz alphabetischer Anordnung der Wörter), während \ref{ex2b} grammatisch ist?
+		\item<3->[$\rightarrow$] Warum ist ein Satz wie (\ref{ex2a}) ungrammatisch (trotz alphabetischer Anordnung der Wörter), während (\ref{ex2b}) grammatisch ist?
 
 \eal
 	\ex[*]{Buch Chomsky das ich kaufen morgen von werde.}\label{ex2a}
 	\ex[]{Das Buch von Chomsky werde ich morgen kaufen.}\label{ex2b}
 	\zl
 	
-		\item<4->[$\rightarrow$] Aus welchem Grund hat der Satz unter \ref{ex3} zwei Bedeutungen? 
+		\item<4->[$\rightarrow$] Aus welchem Grund hat der Satz unter (\ref{ex3}) zwei Bedeutungen? 
 
 \ea Maria hat Peter geschlagen.\label{ex3}
 \z
@@ -383,7 +391,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Semantische Komponente}
+\subsubsubsection{Semantische Komponente}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		
@@ -395,21 +403,21 @@
 		\item<2-> Wichtig bei der Herleitung $\rightarrow$ \textbf{Bedeutung der Bestandteile + Bedeutung der Struktur} (Kompositionalitäts- oder \textbf{Fregeprinzip})
 				
 		\begin{enumerate}
-			\item[]
 			\item<3->[$\rightarrow$] Worin besteht der Bedeutungsunterschied zwischen den Verben \ab{arbeiten} und \ab{bearbeiten}?
-			\item[]
-			\item<4->[$\rightarrow$] Wieso haben die Sätze \ref{ex4a} und \ref{ex4b} nicht die gleiche Bedeutung, wenn sie aus den gleichen Wörtern bestehen?
+			\item<4->[$\rightarrow$] Wieso haben die Sätze (\ref{ex4a}) und (\ref{ex4b})
+                          nicht die gleiche Bedeutung,\\
+wenn sie aus den gleichen Wörtern bestehen?
 
 \eal	
 	\ex Maria hat Peter gesehen. \label{ex4a}
 	\ex Hat Maria Peter gesehen? \label{ex4b}
 \zl
 
-			\item<5->[$\rightarrow$] Warum bedeutet \ab{sich} in \ref{ex5a} und \ref{ex5b} nicht dasselbe?
+			\item<5->[$\rightarrow$] Warum bedeutet \ab{sich} in (\ref{ex5a}) und (\ref{ex5b}) nicht dasselbe?
 	
 \eal
-	\ex Maria verspricht sich Mario zu treffen. \label{ex5a}
-	\ex Maria verspricht Mario sich zu treffen. \label{ex5b}
+	\ex Maria verspricht sich, Mario zu treffen. \label{ex5a}
+	\ex Maria verspricht Mario, sich zu treffen. \label{ex5b}
 \zl
 
 		\end{enumerate}
@@ -422,7 +430,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Architektur des Sprachsystems}
+\subsubsubsection{Architektur des Sprachsystems}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 		
@@ -448,24 +456,119 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Architektur des Sprachsystems}
+%\begin{frame}{Architektur des Sprachsystems}
 
-\begin{figure}[H]
-\centering
+%\begin{figure}[H]
+%\centering
 				
-	\includegraphics[width=\textwidth]{material/03ArchitekturSprachsystem.jpg}
-	\caption{Architektur des Sprachsystems \citep{Abramowski2016a}}
-	\label{Zeichen3}
+%	\includegraphics[width=\textwidth]{material/03ArchitekturSprachsystem.jpg}
+%	\caption{Architektur des Sprachsystems \citep{Abramowski2016a}}
+%	\label{Zeichen3}
 
+%\end{figure}
+
+%\end{frame}			
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{figure}
+\centering
+\small
+\begin{minipage}{0.55\textwidth}
+\centering
+\fbox{Lexikon}\\
+\Large
+$ \Downarrow $
+\end{minipage}
+%
+\begin{minipage}{0.1\textwidth}
+\centering
+\hfill
+\end{minipage}
+%
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\textit{Sprachliche Ebene}
+\end{minipage}
+
+\begin{minipage}[t]{0.55\textwidth}
+\centering
+\outputbox{\centering Sprachliche Strukturbildung\\
+\begin{forest}sm edges,
+[(Morpho-)Syntaktische Struktur
+[Phonetische Form]
+[Semantische Form]
+]
+\end{forest}}
+\begin{tabular}{cp{3cm}c}
+\Large
+$ \Updownarrow $ && \Large $ \Updownarrow $\\
+\end{tabular}
+\end{minipage}
+%
+\begin{minipage}[c]{0.1\textwidth}
+\centering
+\Large
+$ \Leftarrow $
+\end{minipage}
+%
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\small
+\outputbox{
+Grammatik
+\begin{itemize}
+\item Phonologische Komponente\\
+\item Morphologische K.\\
+\item Syntaktische K.\\
+\item Semantische K.
+\end{itemize}}
+\end{minipage}
+
+\begin{minipage}{0.24\textwidth}
+\centering
+\outputbox{\centering Artikularisch-perzeptorischer Apparat}
+\end{minipage}
+%
+\begin{minipage}[c]{0.05\textwidth}
+\hfill
+\end{minipage}
+%
+\begin{minipage}{0.24\textwidth}
+\centering
+\outputbox{\centering Konzeptuell-Intentionales System}
+\end{minipage}
+%
+\begin{minipage}{0.1\textwidth}
+\centering
+\Large
+$\Leftarrow$
+\end{minipage}
+%
+\begin{minipage}{0.3\textwidth}
+\outputbox{Begriffssystem
+\newline
+\small
+Weltwissen, Kontextwissen, analytisches Wissen}
+\end{minipage}
+
+\begin{minipage}{0.65\textwidth}
+\hfill
+\end{minipage}
+%
+\begin{minipage}{0.3\textwidth}
+\centering
+\small
+\textit{Außersprachliche Ebene}
+\end{minipage}
+\caption{Die Architektur des Sprachsystems \citep[vgl.]{Abramowski2016a}}
 \end{figure}
 
-\end{frame}			
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Linguistische Teildisziplinen}		
+\subsection{Linguistische Teildisziplinen}		
 
 \iftoggle{toc}{
 \frame{
@@ -502,7 +605,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Linguistik als Geistes- und/oder Naturwissenschaft}		
+\subsection{Linguistik als Geistes- und/oder Naturwissenschaft}		
 
 \iftoggle{toc}{
 \frame{
@@ -570,11 +673,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Sprachwissenschaft vs. Linguistik}
+\subsection{Sprachwissenschaft vs. Linguistik}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -1,7 +1,9 @@
-%\togglefalse{uebung}
-%\toggletrue{uebung}
-%\togglefalse{loesung}
-%\toggletrue{loesung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Metadata                         %%%
@@ -34,12 +36,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
+	}
 	}
 
 
@@ -52,7 +55,7 @@
 \nocite{Brandt&Co06a}
 \nocite{Glueck05a} 
 \nocite{Grewendorf&Co91a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009} 
 %\nocite{Meibauer&Co07a}
 \nocite{MuellerS13f} 
 \nocite{MuellerS15b}
@@ -60,6 +63,10 @@
 \nocite{Stechow&Sternefeld88a}
 %\nocite{Woellstein10a}
 
+\nocite{Fries&MyP16a} % X-bar-Theorie
+\nocite{Fries&MyP16c} % GG
+\nocite{MyP18a} % Konstituententests
+\nocite{MyP18c} % Phrase
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,9 +82,9 @@
 \frametitle{Begriffe: GG \vs Traditionell}
 
 \begin{itemize}
-	\item Die Begriffe in der \textbf{traditionellen Grammatik} (UE) und in anderen syntaktischen Theorien (Valenz, \textbf{GG}, \dots ) sind nicht gleich, weil sie auch nicht die gleichen Elemente bezeichnen!
+	\item Die Begriffe in der \textbf{traditionellen Grammatik} (UE) und in anderen syntaktischen Theorien (Valenz, \textbf{GG}, \dots ) sind nicht vollkommen gleichzusetzen, weil sie auch nicht die gleichen \textbf{Kategorien} bezeichnen!
 	\item[]
-	\item Es gibt Bereiche, in denen die Begriffe gleiches bezeichnen, aber häufig haben sie verschiedene Reichweiten.
+	\item Es gibt Bereiche, in denen die Begriffe Ähnliches bezeichnen, aber \idR  haben sie verschiedene Reichweiten.
 	\item[]
 	\item Kurze Gegenüberstellung zur begrifflichen Klärung \dots
 	\item[]
@@ -91,50 +98,51 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.47\textwidth}
+
 	\textbf{GG:}
+
+	\begin{itemize}
+		\item \alertred{\textbf{Argumente:}}
 		\begin{itemize}
-		\item \alert{\textbf{Argumente:}}\\
-		(aus der Semantik entlehnter Begriff)\\
-		Leerstellen einer Kategorie \zerobar{X}\\
-		\ras \textbf{Externes Argument + Komplemente}
-		\item[]	
-		\item \textbf{Komplemente:}\\
-		\ras interne Argumente
+			\item (aus der Semantik entlehnter Begriff)
+			
+			\item Leerstellen einer Kategorie \zerobar{X}
+			
+			\item \textbf{Externes Argument + Komplemente}
+		\end{itemize}
+
 		\item[]
-		\end{itemize}	
-  	\end{minipage}  
-  	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
-  	%  
-	\begin{minipage}[b]{0.48\textwidth}
+
+		\item \textbf{Komplemente:}
+		\begin{itemize}
+			\item interne Argumente
+		\end{itemize}
+
+	\end{itemize}	
+\end{minipage}  
+  	  %
+  	  %
+\begin{minipage}[b]{0.5\textwidth}
+	\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]],tikz={\node [draw,red,fit=()] {};} 
+		sm edges,
+		[?P [DP [Die Dame,roof]],tikz={\node [draw,red,fit=()] {};} 
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]]
-			[VP [DP [dem Jungen,triangle]],tikz={\node [draw,red,fit=()] {};}
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]],tikz={\node [draw,red,fit=()] {};}				
+		[VP [AdvP [schnell,roof]]
+			[VP [DP [dem Jungen,roof]],tikz={\node [draw,red,fit=()] {};}
+		    [\MyPxbar{V}	[DP [den Wagen,roof]],tikz={\node [draw,red,fit=()] {};}				
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
-		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+		}         
+	\end{figure}
+\end{minipage}
 
 \end{frame}
 
@@ -143,50 +151,52 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.47\textwidth}
+
 	\textbf{GG:}
+
+	\begin{itemize}
+		\item \textbf{Argumente:}
 		\begin{itemize}
-		\item \textbf{Argumente:}\\
-		(aus der Semantik entlehnter Begriff)\\
-		Leerstellen einer Kategorie \zerobar{X}\\
-		\ras \textbf{Externes Argument + Komplemente}
-		\item[]	
-		\item \alert{\textbf{Komplemente:}}\\
-		\ras interne Argumente
+			\item (aus der Semantik entlehnter Begriff)
+			
+			\item Leerstellen einer Kategorie \zerobar{X}
+			
+			\item \textbf{Externes Argument + Komplemente}
+		\end{itemize}
+		
 		\item[]
-		\end{itemize}	
-  	\end{minipage}  
+		
+		\item \alertred{\textbf{Komplemente:}}
+		\begin{itemize}
+			\item interne Argumente
+		\end{itemize}
+		
+	\end{itemize}	
+\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+\begin{minipage}[b]{0.48\textwidth}
+	\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]]
+		sm edges,
+		[?P [DP [Die Dame,roof]]
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]]
-			[\alert{VP} [DP [dem Jungen,triangle]],tikz={\node [draw,red,fit=()] {};}
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]],tikz={\node [draw,red,fit=()] {};}				
+		[VP [AdvP [schnell,roof]]
+			[\alertred{VP} [DP [dem Jungen,roof]],tikz={\node [draw,red,fit=()] {};}
+		    [\MyPxbar{V}	[DP [den Wagen,roof]],tikz={\node [draw,red,fit=()] {};}				
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+
+	\end{figure}
+\end{minipage}
 
 \end{frame}
 
@@ -195,47 +205,40 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.47\textwidth}
+
 	\textbf{GG:}
-		\begin{itemize}
-		\item \alert{\textbf{Externes Argument:}}\\
+
+	\begin{itemize}
+		\item \alertred{\textbf{Externes Argument:}}\\
 		Argument, dessen Basisposition \textbf{außerhalb} der XP ist, von dessen \zerobar{X} dieses ein Argument ist
 		\item[]
 		\item \textbf{Internes Argument:}\\
 		Argument, dessen Basisposition \textbf{innerhalb} der XP ist, von dessen \zerobar{X} dieses ein Argument ist
-		\end{itemize}	
-  	\end{minipage}  
+	\end{itemize}	
+\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+\begin{minipage}[b]{0.48\textwidth}
+	\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]],tikz={\node [draw,red,fit=()] {};}
+		sm edges,
+		[\alertred{?P} [DP [Die Dame,roof]],tikz={\node [draw,red,fit=()] {};}
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]]
-			[\alert{VP} [DP [dem Jungen,triangle]]
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]]
+		[VP [AdvP [schnell,roof]]
+			[\alert{VP} [DP [dem Jungen,roof]]
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+	\end{figure}
+\end{minipage}    
 
 \end{frame}
 
@@ -244,47 +247,39 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.47\textwidth}
+
 	\textbf{GG:}
-		\begin{itemize}
+	\begin{itemize}
 		\item \textbf{Externes Argument:}\\
 		Argument, dessen Basisposition \textbf{außerhalb} der XP ist, von dessen \zerobar{X} dieses ein Argument ist
 		\item[]
-		\item \alert{\textbf{Internes Argument:}}\\
+		\item \alertred{\textbf{Internes Argument:}}\\
 		Argument, dessen Basisposition \textbf{innerhalb} der XP ist, von dessen \zerobar{X} dieses ein Argument ist
-		\end{itemize}	
-  	\end{minipage}  
+	\end{itemize}	
+\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+\begin{minipage}[b]{0.48\textwidth}
+	\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]]
+		sm edges,
+		[?P [DP [Die Dame,roof]]
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]]
-			[\alert{VP} [DP [dem Jungen,triangle]],tikz={\node [draw,red,fit=()] {};}
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]],tikz={\node [draw,red,fit=()] {};}
+		[VP [AdvP [schnell,roof]]
+			[\alertred{VP} [DP [dem Jungen,roof]],tikz={\node [draw,red,fit=()] {};}
+		    [\MyPxbar{V}	[DP [den Wagen,roof]],tikz={\node [draw,red,fit=()] {};}
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+	\end{figure}	
+\end{minipage}
 
 \end{frame}
 
@@ -293,47 +288,39 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.4\textwidth}
+
 	\textbf{Traditionell (UE):}
 		\begin{itemize}
-		\item \alert{\textbf{Subjekt}}\\
+		\item \alertred{\textbf{Subjekt}}\\
 		$\approx$ Externes Argument in GG
 		\item[]
 		\item \textbf{Objekte}\\
-		$\approx$ Komplemente oder Interne Argumente in GG
+		$\approx$ Komplemente oder interne Argumente in GG
 		\end{itemize}	
-  	\end{minipage}  
+\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+\begin{minipage}[b]{0.55\textwidth}
+	\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.6}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]],tikz={\node [draw,red,fit=()] {};}
+		sm edges,
+		[\alertred{?P} [DP [Die Dame,roof]],tikz={\node [draw,red,fit=()] {};}
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]]
-			[\alert{VP} [DP [dem Jungen,triangle]]
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]]
+		[VP [AdvP [schnell,roof]]
+			[\alert{VP} [DP [dem Jungen,roof]]
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+	\end{figure}	
+\end{minipage}
 
 \end{frame}
 
@@ -342,47 +329,40 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.4\textwidth}
+	\footnotesize
 	\textbf{Traditionell (UE):}
 		\begin{itemize}
 		\item \textbf{Subjekt}\\
 		$\approx$ Externes Argument in GG
 		\item[]
-		\item \alert{\textbf{Objekte}}\\
-		$\approx$ Komplemente oder Interne Argumente in GG
+		\item \alertred{\textbf{Objekte}}\\
+		$\approx$ Komplemente oder interne Argumente in GG
 		\end{itemize}	
   	\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+	\begin{minipage}[b]{0.55\textwidth}
+		\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.6}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]]
+		sm edges,
+		[?P [DP [Die Dame,roof]]
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]]
-			[\alert{VP} [DP [dem Jungen,triangle]],tikz={\node [draw,red,fit=()] {};}
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]],tikz={\node [draw,red,fit=()] {};}
+		[VP [AdvP [schnell,roof]]
+			[\alertred{VP} [DP [dem Jungen,roof]],tikz={\node [draw,red,fit=()] {};}
+		    [\MyPxbar{V}	[DP [den Wagen,roof]],tikz={\node [draw,red,fit=()] {};}
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+	
+	\end{figure}
+\end{minipage}
 
 \end{frame}
 
@@ -391,46 +371,39 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 	\textbf{ABER!!}	\\
 	\textbf{GG vs. Traditionell}
 		\begin{itemize}
 		\item \textbf{Externes Argument}\\
-		$\neq$ Subjekt
-		\item<2>[\ra] \textbf{Genitivattribut}
+		$\neq$ Subjekt (in trad. Terminologie)
+		\item<2>[\ra] \alertred{\textbf{Genitivattribut}}
 		\item[]
 		\item \textbf{Komplement}\\
-		$\neq$ Objekt
-		\item<2>[\ra] \textbf{Genitivattribut}
+		$\neq$ Objekt (in trad. Terminologie)
+		\item<2>[\ra] \alertred{\textbf{Genitivattribut}}
 		\item[]
 		\end{itemize}	
   	\end{minipage}  
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+	\begin{minipage}[b]{0.46\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[?P
-		[DP [Peters,triangle]]	,tikz={\node [draw,red,fit=()] {};}	
+		[DP [Peters,roof]]	,tikz={\node [draw,red,fit=()] {};}	
 		[\MyPxbar{?} [\zerobar{?}]
-			[\alert{NP} 
+			[\alertred{NP} 
 		    [\MyPxbar{N}	[\zerobar{N} [Behandlung]]
-					 	[DP [des Patienten,triangle]],tikz={\node [draw,red,fit=()] {};}
+					 	[DP [des Patienten,roof]],tikz={\node [draw,red,fit=()] {};}
 			]]
 		]
 		]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+
+\end{minipage}
 
 \end{frame}
 
@@ -439,41 +412,33 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 	\textbf{ABER!!}	\\
 	\textbf{GG vs. Traditionell}
 		\begin{itemize}
-		\item \textbf{Traditionell:} Die Begriffe \gqq{Subjekt} und \gqq{Objekt} sind nur für \textbf{Satzglieder} definiert, nicht für Satzgliedteile (Attribute).
+		\item \textbf{Traditionell:} Die Begriffe \gqq{Subjekt} und \gqq{Objekt} sind \textbf{nur für Satzglieder} definiert, nicht für Satzgliedteile (Attribute).
 		\item[]
 		\item \textbf{GG:} Die Begriffe \gqq{Argument} und \gqq{Komplement} sind für \textbf{Relationen zwischen Phrasen} in allen Phrasentypen definiert.
 		\end{itemize}	
   	\end{minipage}  
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+	\begin{minipage}[b]{0.46\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[?P
-		[DP [Peters,triangle]]	,tikz={\node [draw,red,fit=()] {};}	
+		[DP [Peters,roof]]	,tikz={\node [draw,red,fit=()] {};}	
 		[\MyPxbar{?} [\zerobar{?}]
-			[\alert{NP} 
+			[\alertred{NP} 
 		    [\MyPxbar{N}	[\zerobar{N} [Behandlung]]
-					 	[DP [des Patienten,triangle]],tikz={\node [draw,red,fit=()] {};}
+					 	[DP [des Patienten,roof]],tikz={\node [draw,red,fit=()] {};}
 			]]
 		]
 		]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%  
-\end{figure}
+\end{minipage}
 
 \end{frame}
 
@@ -482,68 +447,57 @@
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
+%	\footnotesize
 	\textbf{GG:}
 		\begin{itemize}
-		\item \textbf{Modifikator}\\
-		(aus der Semantik entlehnter Begriff)\\
-		Syntaktischer Begriff: \textbf{Adjunkt}
-		\item[]
+		\item \textbf{Modifikator}
+		
+		\begin{itemize}
+			\item (aus der Semantik entlehnter Begriff)
+			
+			\item Synt. Begriff: \textbf{Adjunkt}
+		\end{itemize}
+
+%		\item[]
+
 		\item Adjunkte werden \textbf{traditionell}\\
-		\alert{\textbf{Adverbiale}}\\
-		($\approx$ bei Adjunkten, die Satzglieder sind)\\
-		oder,\\
-		\textbf{Attribute}\\
-		($\approx$ bei Adjunkten, die Satzgliedteile sind)\\
+		\alertred{\textbf{Adverbiale}} (Adjunkte, die Satzglieder sind)\\
+		oder\\
+		\textbf{Attribute} (Adjunkte, die Satzgliedteile sind)\\
 		genannt.
 		\end{itemize}	
   	\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+\begin{minipage}[b]{0.5\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-		[?P [DP [Die Dame,triangle]]
+		sm edges,
+		[?P [DP [Die Dame,roof]]
 			[\MyPxbar{?} 		
-		[VP [AdvP [schnell,triangle]],tikz={\node [draw,red,fit=()] {};}
-			[\alert{VP} [DP [dem Jungen,triangle]]
-		    [\MyPxbar{V}	[DP [den Wagen,triangle]]
+		[VP [AdvP [schnell,roof]],tikz={\node [draw,red,fit=()] {};}
+			[\alert{VP} [DP [dem Jungen,roof]]
+		    [\MyPxbar{V}	[DP [den Wagen,roof]]
 		    			[\zerobar{V} [schenken]]
 			]]
 		]
-			[\zerobar{?}]
+			[\zerobar{?} [~]]
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
-
+\end{minipage}
+  
 \end{frame}
-%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Begriffe: GG \vs Traditionell}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-%	%
-	\begin{minipage}[b]{0.47\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
+%	\footnotesize
 	\textbf{GG:}
 		\begin{itemize}
 		\item \textbf{Modifikator}\\
@@ -551,40 +505,35 @@
 		Syntaktischer Begriff: \textbf{Adjunkt}
 		\item[]
 		\item Adjunkte werden \textbf{traditionell}\\
-		\textbf{Adverbiale}\\
-		($\approx$ bei Adjunkten, die Satzglieder sind)\\
-		oder,\\
-		\alert{\textbf{Attribute}}\\
-		($\approx$ bei Adjunkten, die Satzgliedteile sind)\\
+		\textbf{Adverbiale}	(Adjunkte, die Satzglieder sind)\\
+		oder\\
+		\alertred{\textbf{Attribute}} (Adjunkte, die Satzgliedteile sind)\\
 		genannt.
 		\end{itemize}	
-  	\end{minipage}  
+\end{minipage}  
   	%  
-%	\begin{minipage}[b]{0.03\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%  
-	\begin{minipage}[b]{0.48\textwidth}
+\begin{minipage}[b]{0.5\textwidth}
+	\begin{figure}
 	\centering
-	\footnotesize{
+	\scalebox{.65}{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[?P
-		[DP [Peters,triangle]]	
+		[DP [Peters,roof]]	
 		[\MyPxbar{?} [\zerobar{?}]
-			[NP [AP [schnelle, triangle]],tikz={\node [draw,red,fit=()] {};}	 
-			[\alert{NP} 
+			[NP [AP [schnelle,roof]],tikz={\node [draw,red,fit=()] {};}	 
+			[\alertred{NP} 
 		    [\MyPxbar{N}	[\zerobar{N} [Behandlung]]
-					 	[DP [des Patienten,triangle]]
+					 	[DP [des Patienten,roof]]
 			]]]
 		]
 		]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
-\end{figure}
+
+	\end{figure}	
+\end{minipage}
 
 \end{frame}
 
@@ -592,11 +541,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Weiteres zum X-Bar-Schema}
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+		\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
 }
 
 
@@ -604,24 +555,21 @@
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+
+\begin{minipage}[b]{0.45\textwidth}
 	\begin{itemize}
 		\item \textbf{Mutter}
 		\item \textbf{Tochter}
 		\item Schwester
 	\end{itemize}
-  	\end{minipage}  
-  	%
-% 	\pause            
+\end{minipage}  
+%
+%
 	\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[\alert{XP} [\alert{YP}]{\draw[<-,red] (.north west)--++(0em,+3ex)--++(-2.5em,0pt)
 node[anchor=east,align=center]{Tochter};}
 			[\alert{\MyPxbar{X}}
@@ -633,10 +581,8 @@ node[anchor=west,align=center]{Tochter};}
 node[anchor=west,align=center]{Mutter};} 
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+
+\end{minipage}  
 
 \end{frame}
 
@@ -645,27 +591,24 @@ node[anchor=west,align=center]{Mutter};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+
+\begin{minipage}[b]{0.45\textwidth}
 	\begin{itemize}
 		\item Mutter
 		\item Tochter
 		\item \textbf{Schwester}
 		\item[]
-		\item Präferierte Position für \textbf{Komplemente} \ras Schwesterkonstituente des Kopfes
+		\item Präferierte Position für \textbf{Komplemente} \ras Schwesterkonstituente des Kopfes (s.\ ZP)
 		
 	\end{itemize}
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+% 
+\begin{minipage}[b]{0.5\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[XP [\alert{YP}]{\draw[<-,red] (.north west)--++(0em,+3ex)--++(-2.5em,0pt)
 node[anchor=east,align=center]{Schwester};}
 			[\alert{\MyPxbar{X}}
@@ -676,10 +619,9 @@ node[anchor=west,align=center]{Schwester};}
 		]
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
+
+\nocite{MyP17d}
 
 \end{frame}
 
@@ -688,51 +630,49 @@ node[anchor=west,align=center]{Schwester};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
+\begin{itemize}
+	\item Die \textbf{Position des Kopfes} (rechts oder links) ist sprach- und phrasenabhängig,
 	\begin{itemize}
-		\item Die \textbf{Position des Kopfes} (rechts oder links) ist sprach- und phrasenabhängig,
-		\begin{itemize}
-			\item VP im Deutschen \ras rechtsköpfig
-			\item VP im Englischen \ras linksköpfig			
-		\end{itemize}
+		\item VP im Deutschen \ras \alertred{rechts}köpfig
+		\item VP im Englischen \ras \alertred{links}köpfig			
 	\end{itemize}
+\end{itemize}
 	
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
+\begin{figure}	
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		sm edges,
 		[VP	[\MyPxbar{V}
-					[\alert{\zerobar{V}} [(to) buy]]
-					[DP [a car,triangle]]
+					[\alertred{\zerobar{V}} [(to) buy]]
+					[DP [a car,roof]]
 			]
 		]
 		\end{forest}
 		}
 		\caption{VP Englisch}
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{figure}	
+\end{minipage}  
+%
+%           
+\begin{minipage}[b]{0.45\textwidth}
+\begin{figure}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		sm edges,
 		[VP	[\MyPxbar{V}
-					[DP [einen Wagen,triangle]]
-					[\alert{\zerobar{V}} [(zu) kaufen]]					
+					[DP [einen Wagen,roof]]
+					[\alertred{\zerobar{V}} [(zu) kaufen]]					
 			]
 		]
 		\end{forest}
 		}
 		\caption{VP Deutsch}
-  	\end{minipage}  
-  	%                       
-\end{figure}
-
+\end{figure}	
+\end{minipage}  
+                     
 \end{frame}
 
 
@@ -740,38 +680,34 @@ node[anchor=west,align=center]{Schwester};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
+\begin{minipage}[b]{0.5\textwidth}
+Die Hinzufügung von \textbf{Argumenten} \alertred{erhöht die Projektionsstufe}.
 
-  	\begin{minipage}[b]{0.45\textwidth}
-	Die \textbf{Hinzufügung von Argumenten} erhöht die Projektionsstufe.
-	\begin{enumerate}
-		\item X$^2$ \ras YP + X$^1$
-		\item X$^1$ \ras X$^0$ + ZP
-		\item[]
-		\item X$^2$ = XP
-	\end{enumerate}
+\begin{enumerate}
+	\item X$^2$ \ras YP + X$^1$
+	\item X$^1$ \ras X$^0$ + ZP
+	\item[]
+	\item[] X$^2$ = XP
+\end{enumerate}
 	
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%    
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[\alert{XP} [YP [Argument-\\position, triangle]]
-			[\alert{\MyPxbar{X}}
-				[\alert{\zerobar{X}} [Kopf]]
-				[ZP [Argument-\\position, triangle]]
+		MyP edges,
+		[\alertred{XP} [YP [Argument-\\position,roof]]
+			[\alertred{\MyPxbar{X}}
+				[\alertred{\zerobar{X}} [Kopf]]
+				[ZP [Argument-\\position,roof]]
 			]
 		]
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
-
+\end{minipage}  
+  
 \end{frame}
 
 
@@ -779,42 +715,39 @@ node[anchor=west,align=center]{Schwester};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
+\begin{minipage}[b]{0.5\textwidth}
+%\footnotesize
+Die Hinzufügung von \textbf{Adjunkten} erhöht die Projektionsstufe nicht, sie \alertred{verdoppelt die Projektionsstufe}.
 
-  	\begin{minipage}[b]{0.45\textwidth}
-	Die \textbf{Hinzufügung von Adjunkten} erhöht die Projektionsstufe nicht, sie verdoppelt die Projektionsstufe.
 	\begin{enumerate}
 		\item X$^2$ \ras BP + X$^2$
 		\item X$^2$ \ras YP + X$^1$
 		\item X$^1$ \ras WP + X$^1$
 		\item X$^1$ \ras X$^0$ + ZP
 		\item[]
-		\item X$^2$ = XP
+		\item[] X$^2$ = XP
 	\end{enumerate}
 	
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
-	\scriptsize{
+	\scalebox{.65}{
 		\begin{forest}
-		sn edges,
-		[\alert{XP}	[BP [Adjunkt, triangle]]
-			[XP	[YP [Argument,triangle]]
-				[\alert{\MyPxbar{X}} 	[WP [Adjunkt, triangle]]
+		MyP edges,
+		[\alertred{XP}	[BP [Adjunkt,roof]]
+			[XP	[YP [Argument,roof]]
+				[\alertred{\MyPxbar{X}} 	[WP [Adjunkt,roof]]
 							[\MyPxbar{X} 	[\zerobar{X} [Kopf]]
-										[ZP [Argument,triangle]]
+										[ZP [Argument,roof]]
 							]
 				]
 			]
 		]
 		\end{forest}
 		}
-		%\caption{NP}
   	\end{minipage}  
-  	%                       
-\end{figure}
 
 \end{frame}
 
@@ -823,34 +756,27 @@ node[anchor=west,align=center]{Schwester};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
 	\textbf{Projektion:}\\
 	 Weitergabe der morphosyntaktischen Merkmale vom Kopf zur maximalen Projektion (Phrase), \zB Kategorie
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[XP [YP [Argument-\\position, triangle]]
+		MyP edges,
+		[XP [YP [Arg.pos.,roof]]
 			[\MyPxbar{X}
-				[\alert{\zerobar{X}} [Kopf]]{\draw[<-,red] (.south west)--++(0em,-3ex)--++(-2.5em,0pt)
+				[\alertred{\zerobar{X}} [Kopf]]{\draw[<-,red] (.south west)--++(0em,-3ex)--++(-2.5em,0pt)
 node[anchor=east,align=center]{Kat: X};} 
-				[ZP [Argument-\\position, triangle]]
+				[ZP [Arg.pos.,roof]]
 			]
 		]
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
@@ -859,35 +785,28 @@ node[anchor=east,align=center]{Kat: X};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
 	\textbf{Projektion:}\\
 	 Weitergabe der morphosyntaktischen Merkmale vom Kopf zur maximalen Projektion (Phrase), \zB Kategorie
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%           
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[XP [YP [Argument-\\position, triangle]]
-			[\alert{\MyPxbar{X}}
-				[\alert{\zerobar{X}} [Kopf]]{\draw[<-,red] (.south west)--++(0em,-3ex)--++(-2.5em,0pt)
+		MyP edges,
+		[XP [YP [Arg.pos.,roof]]
+			[\alertred{\MyPxbar{X}}
+				[\alertred{\zerobar{X}} [Kopf]]{\draw[<-,red] (.south west)--++(0em,-3ex)--++(-2.5em,0pt)
 node[anchor=east,align=center]{Kat: X};} 
-				[ZP [Argument-\\position, triangle]]
+				[ZP [Arg.pos.,roof]]
 			]{\draw[<-,red] (.north east)--++(-0em,+2ex)--++(+2.5em,0pt)
 node[anchor=west,align=center]{Kat: X};} 
 		]
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
@@ -896,34 +815,29 @@ node[anchor=west,align=center]{Kat: X};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
 	\textbf{Projektion:}\\
 	 Weitergabe der morphosyntaktischen Merkmale vom Kopf zur maximalen Projektion (Phrase), \zB Kategorie
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[\alert{XP} [YP [Argument-\\position, triangle]]
-			[\alert{\MyPxbar{X}}
-				[\alert{\zerobar{X}} [Kopf]]{\draw[<-,red] (.south west)--++(0em,-3ex)--++(-2.5em,0pt)
+		MyP edges,
+		[\alertred{XP} [YP [Arg.pos.,roof]]
+			[\alertred{\MyPxbar{X}}
+				[\alertred{\zerobar{X}} [Kopf]]{\draw[<-,red] (.south west)--++(0em,-3ex)--++(-2.5em,0pt)
 node[anchor=east,align=center]{Kat: X};} 
-				[ZP [Argument-\\position, triangle]]
+				[ZP [Arg.pos.,roof]]
 			]{\draw[<-,red] (.north east)--++(-0em,+2ex)--++(+2.5em,0pt)
 node[anchor=west,align=center]{Kat: X};} 
 		]{\draw[<-,red] (.north east)--++(-0em,+2ex)--++(+2.5em,0pt)
 node[anchor=west,align=center]{Kat: X};} 
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
@@ -932,42 +846,37 @@ node[anchor=west,align=center]{Kat: X};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.5\textwidth}
 	\textbf{Perkolation:}\\
 	 Weitergabe von Merkmalen von der maximalen Projektion (Phrase) zum Kopf, \zB Kasus
 	 \begin{itemize}
-	 	\item \obj{trinken} vergibt Akk. zum Komplement
+	 	\item \MyPobj{trinken} vergibt Akk. zum Komplement
 	 	\item Kasus perkoliert von der maximalen Projektion zu seinen Tochterkonstituenten
 	 \end{itemize}
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.75}{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[VP 
 			[\MyPxbar{V} 
 				[NP 
-					[AP [erfrischenden,triangle]]
+					[AP [erfrischenden,roof]]
 					[NP
 						[\MyPxbar{N} 
 							[\zerobar{N} [Saft]]
 						]
 					]
 				]
-				[\alert{\zerobar{V}} \\\alert{{[}Akk{]}} [trinken]]
+				[\alertred{\zerobar{V}} \\\alertred{{[}Akk{]}} [trinken]]
 			]
 		]
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
@@ -976,46 +885,39 @@ node[anchor=west,align=center]{Kat: X};}
 \begin{frame}
 \frametitle{Weiteres zum X-Bar-Schema}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.5\textwidth}
 	\textbf{Perkolation:}\\
 	 Weitergabe von Merkmalen von der maximalen Projektion (Phrase) zum Kopf, \zB Kasus
 	 \begin{itemize}
-	 	\item \obj{trinken} vergibt Akk. zum Komplement
+	 	\item \MyPobj{trinken} vergibt Akk. zum Komplement
 	 	\item Kasus perkoliert von der maximalen Projektion zum Kopf
 	 \end{itemize}
 
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%         
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.75}{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[VP 
 			[\MyPxbar{V} 
-				[\alert{NP}
-					[\alert{AP} [\alert{erfrischenden},triangle]]
-					[\alert{NP}
-						[\alert{\MyPxbar{N}}
-							[\alert{\zerobar{N}} [\alert{Saft}]]
+				[\alertred{NP}
+					[\alertred{AP} [\alertred{erfrischenden},roof]]
+					[\alertred{NP}
+						[\alertred{\MyPxbar{N}}
+							[\alertred{\zerobar{N}} [\alertred{Saft}]]
 						]
 					]
 				]{\draw[<-,red] (.north west)--++(0em,+3ex)--++(-2.5em,0pt)
 node[anchor=east,align=center]{Akk};} 
-					[\alert{\zerobar{V}} \\ \alert{{[}Akk{]}} [trinken]]
+					[\alertred{\zerobar{V}} \\ \alertred{{[}Akk{]}} [trinken]]
 			]
 		]
 		\end{forest}
 		}
-		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
@@ -1023,11 +925,13 @@ node[anchor=east,align=center]{Akk};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Funktionale Phrasen I}
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+		\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1038,12 +942,45 @@ node[anchor=east,align=center]{Akk};}
 	\item Maximale Projektionen, die eine \textbf{funktionale Kategorie als Kopf} haben
 	\item[]
 	\item Funktionale Kategorien haben eine abstrakte \textbf{(grammatische) Bedeutung} \ras Funktion.
-	\item Die Klasse ist nicht durch produktive Wortbildungsregeln erweiterbar (\textbf{geschlossense Klasse}).
-	\item Ihre \textbf{phonologische Struktur} ist stark reduziert (\ras auch viele leere Elemente).
-	\item (Funktionale Kategorien weisen keine \textbf{$\theta$-Rollen} zu.)
-	\item Sie selegieren nur ein \textbf{festgelegtes Argument}.
-	\item \alert{IP, DP, CP} (, PolP, ForceP, TopP, FocP, vP, NegP \dots )
+	\begin{itemize}
+		\item Tempus,
+		\item Modus,
+		\item Definitheit,
+		\item Kongruenz,
+		\item \dots
+	\end{itemize}
 		
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Funktionale Phrasen I}
+
+\begin{itemize}
+	
+	\item Die Klasse ist \textbf{nicht durch produktive Wortbildungsregeln} erweiterbar (\textbf{geschlossense Klasse}).
+	
+	\item[]
+	
+	\item Ihre \textbf{phonologische Struktur} ist stark reduziert. 
+	
+	(\ras auch viele leere Elemente).
+	
+	\item[]
+	
+	\item Funktionale Kategorien weisen keine \textbf{$\theta$-Rollen} zu.
+	
+	\item[]
+	
+	\item Sie selegieren nur ein \textbf{festgelegtes Argument}.
+	
+	\item[]
+	
+	\item \alertred{IP, DP, CP} (, PolP, ForceP, TopP, FocP, vP, AgrP, AgrOP, NegP \dots )
+	
 \end{itemize}
 
 \end{frame}
@@ -1056,12 +993,12 @@ node[anchor=east,align=center]{Akk};}
 \begin{itemize}
 	\item Generative Ziele: \citep[vgl.][]{Haegeman94a}
 	\begin{itemize}
+		\item[]
 		\item Nicht (nur) die \textbf{Beschreibung} von Phänomenen in einer spezifischen Sprache
 		\item[]
 		\item Formulieren von \textbf{zugrunde liegenden Prinzipien}, die die Grammatik natürlicher Sprachen bestimmen \ras \textbf{Erklärungsadäquatheit}
 		\item[]
-		\item Unterscheidung von für eine bestimmte Sprache spezifischen Regeln und \textbf{universellen Prinzipien}
-		\item[\ra] Sprachvergleich!
+		\item Unterscheidung von für eine bestimmte Sprache spezifischen Regeln (\textbf{Parametern}) und \textbf{universellen Prinzipien} \ras Sprachvergleich!
 	\end{itemize}
 	
 \end{itemize}
@@ -1081,30 +1018,49 @@ node[anchor=east,align=center]{Akk};}
 \begin{frame}
 \frametitle{Inflection Phrase}
 
+Abk.: \textbf{IP} (Flexionsphrase)
+
 \begin{itemize}
-	\item Abk.: \textbf{IP} (Flexionsphrase)
-	\begin{itemize}
-		\item VP \ras Objekte + Verb
-		\item VP bildet eine semantische Einheit \ras Proposition
-		\item VP bildet eine syntaktische Einheit \ras Konstituente
-		\eal
-		\ex $\lsem$ den Wagen kaufen $\rsem$
-		\ex \alert{Den Wagen kaufen} musste Peter gestern. 
-		\zl
+	\item VP \ras Komplemente + Verb
+
+	\item VP bildet eine \textbf{semantische Einheit} \ras Proposition (s.\ (\ref{ex:Prop}))
+
+	\item VP bildet eine \textbf{syntaktische Einheit} \ras Konstituente (s.\ (\ref{ex:VPKonst}))
+
+	\eal
+	\ex\label{ex:Prop} $\lsem$ den Wagen kaufen $\rsem$
+	\ex\label{ex:VPKonst} {[}$_{VP}$\alertred{Den Wagen kaufen}{]}$_{i}$ musste Peter gestern $t_i$. 
+	\zl
+	
+\end{itemize}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Inflection Phrase}
+
+\begin{itemize}
+		\item Subjekt \ras \textbf{externes Argument} (VP-extern)
+
+		\item Subjekt bildet \textbf{keine Einheit mit der VP}	
+
+		\ea[*]{\alertred{Peter kaufen} musste gestern den Wagen.}
+		\z
 
 \pause
-		\item Subjekt \ras externes Argument
-		\item Subjekt bildet keine Einheit mit der VP
-		\ea[*]{\alert{Peter kaufen} musste gestern den Wagen.}
-		\z
 
-		\item Wenn Subjekt \ras Flexion
-		\ea [Peter]$_{\textsc{nom}}$ schläft vs. *[Peter]$_{\textsc{nom}}$ schlafen
+		\item Wenn Subjekt \ras Flexion	(s. (\ref{ex:SubjKong1}) \vs (\ref{ex:SubjKong2}))	
+
+		\ea[]{[Peter]\alertred{$_{\textsc{3.sg}}$} schläft\alertred{$_{\textsc{3.sg}}$}}\label{ex:SubjKong1}
+			
+		\ex[*]{[Peter]\alertred{$_{\textsc{3.sg}}$} schlafen\alertred{$_{\textsc{inf}}$}}\label{ex:SubjKong2}
 		\z
 		
-		\item Es gibt verbale Elemente, die keine lexikalische, sondern nur funktionale Bedeutung haben \ras Auxiliare
+		\item Es gibt verbale Elemente, die keine lexikalische, sondern nur funktionale Bedeutung haben \ras Hilfsverben
 
-	\end{itemize}
 \end{itemize}
 
 \end{frame}
@@ -1126,37 +1082,31 @@ node[anchor=east,align=center]{Akk};}
 	\end{itemize}
 
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.48\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.8}{
 		\begin{forest}
-		sn edges,
-		[IP [SpecIP [Subjekt Position, triangle]],tikz={\node [draw,red,fit=()] {};} 
-					[\MyPxbar{I} [VP [Objekte+Verb, triangle]][\zerobar{I} [Flexion]],tikz={\node [draw,red,fit=()] {};} 
+		sm edges,
+		[\alertred{IP} [SpecIP [ext. Arg.,roof]],tikz={\node [draw,red,fit=()] {};} 
+					[\alertred{\MyPxbar{I}} [\alert{VP} [Komp.+Verb,roof]][\alertred{\zerobar{I}} [Flexion]],tikz={\node [draw,red,fit=()] {};} 
 		]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%
- 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+\pause            
+\begin{minipage}[b]{0.48\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.8}{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Maria,triangle]]
-					[\MyPxbar{I} [VP [Peter geschlagen, triangle]][\zerobar{I} [hat]]]]
+		sm edges,
+		[IP [DP [Maria,roof]]
+					[\MyPxbar{I} [VP [Peter geschlagen,roof]][\zerobar{I} [hat]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
@@ -1168,40 +1118,34 @@ node[anchor=east,align=center]{Akk};}
 	\begin{itemize}
 		\item \zerobar{V} \ras Position nur für Infinitive (reiner Infinitiv, Partizip)
 		\item \zerobar{I} \ras Position für flektierte Verben
-		\item IP im Deutschen \ras rechtsköpfig!		
+		\item IP und VP im Deutschen \ras rechtsköpfig!		
 	\end{itemize}
 
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.48\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.8}{
 		\begin{forest}
-		sn edges,
-		[IP [SpecIP [Subjekt Position, triangle]]
-					[\MyPxbar{I} [VP [Objekte+Verb, triangle]][\zerobar{I} [Flexion]]]]
+		sm edges,
+		[IP [SpecIP [Subjekt Position,roof]]
+					[\MyPxbar{I} [VP [Objekte+Verb,roof]][\zerobar{I} [Flexion]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%          
+\begin{minipage}[b]{0.48\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.8}{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Maria,triangle]]
-					[\MyPxbar{I} [VP [Peter geschlagen, triangle]][\zerobar{I} [hat]]]]
+		sm edges,
+		[IP [DP [Maria,roof]]
+					[\MyPxbar{I} [VP [Peter geschlagen,roof]][\zerobar{I} [hat]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+ \end{minipage}  
 
 \end{frame}
 
@@ -1218,23 +1162,31 @@ node[anchor=east,align=center]{Akk};}
 \begin{frame}
 \frametitle{Determinierer Phrase}
 
+Abk.: \textbf{DP} 
+
 \begin{itemize}
-	\item Abk.: \textbf{DP} 
-	\begin{itemize}
-		\item \zerobar{N} mit seinen Komplementen und Adjunkten bildet eine semantische Einheit \ras NP als Prädikat
-		\item NP kann nicht als Argument aber als Prädikat fungieren.
-		\eal 
-		\ex[]{$\lsem$roter Wagen$\rsem$}
-		\ex[*]{Ich fahre \alert{[roten Wagen]}.}
-		\ex[]{Hans ist \alert{[Lehrer]}. \hfill (Prädikat)}
-		\ex[]{Hans ist \alert{[der/ein Lehrer]}. \hfill (Argument)}
-		\ex[]{Hans ist \alert{[nett]}.}
-		\zl
-		
-		
-		\item \textbf{DP-Hypothese} (vgl. \citet{Abney87a}, \citet{Brame82a})
+	\item \zerobar{N} mit seinen Komplementen und Adjunkten bildet eine \textbf{semantische Einheit} \ras NP als (logisches) Prädikat
+	\item NP kann nicht als (logisches) Argument aber als (logisches) Prädikat fungieren.
+	\eal 
+	\ex[]{$\lsem$roter Wagen$\rsem$}
+	\ex[*]{Ich fahre \alertred{[roten Wagen]}.}
+	\ex[]{Hans ist \alertred{[Lehrer]}. \hfill (Prädikat)}
+	\ex[]{Hans ist \alertred{[nett]}.}
+	\ex[]{Hans ist \alertred{[der/ein Lehrer]}. \hfill (Argument)}
+	\zl
+
+\end{itemize}	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Determinierer Phrase}
+
+\textbf{DP-Hypothese} (vgl. \citealt{Abney87x}, \citealt{Brame82a})
 		\begin{itemize}
-			\item Paralleler Aufbau von Nominalkomplexen und Sätzen
+			\item \textbf{Paralleler Aufbau} von Nominalkomplexen und Sätzen
 			\item Satz \ras IP, NP \ras DP
 			\eal
 			\ex Peter behandelt den Patienten.
@@ -1242,9 +1194,6 @@ node[anchor=east,align=center]{Akk};}
 			\zl
 			
 		\end{itemize}
-					
-	\end{itemize}
-\end{itemize}
 
 \end{frame}
 
@@ -1253,46 +1202,40 @@ node[anchor=east,align=center]{Akk};}
 \begin{frame}
 \frametitle{Determinierer Phrase}
 
+\begin{itemize}
+	\item Aufbau der DP
 	\begin{itemize}
-		\item Aufbau der DP
-		\begin{itemize}
-			\item \zerobar{D} nimmt eine NP als Komplement
-		\end{itemize}
+		\item \zerobar{D} nimmt eine NP als Komplement
 	\end{itemize}
+\end{itemize}
 
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.48\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[DP [SpecDP]
-			[\MyPxbar{D} 	[\zerobar{D} [Determinierer]]
-						[NP [Nomen + Komplemente, triangle]]]]
+			[\MyPxbar{D} 	[\alertred{\zerobar{D}} [Determinierer]]
+						[\alertred{NP} [Nomen+Kompl.,roof]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%
-% 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\end{minipage}  
+%
+%            
+\begin{minipage}[b]{0.48\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[DP [\MyPxbar{D} 	[\zerobar{D} [die]]
-						[NP [Behandlung des Patienten, triangle]]]]
+						[NP [Behandlung des Patienten,roof]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
-
+\end{minipage}  
+ 
 \end{frame}
 
 
@@ -1312,14 +1255,14 @@ node[anchor=east,align=center]{Akk};}
 %	%
   	\begin{minipage}[b]{0.45\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.75}{
 		\begin{forest}
-		sn edges,
-		[DP [DP [Peter,triangle]],tikz={\node [draw,red,fit=()] {};}
+		sm edges,
+		[DP [DP [Peter,roof]],tikz={\node [draw,red,fit=()] {};}
 			[\MyPxbar{D} 	[\zerobar{D} [-s]]
 						[\alert{NP} [\MyPxbar{N} 
 									[\zerobar{N} [Behandlung]]
-									[DP [des Patienten,triangle]],tikz={\node [draw,red,fit=()] {};}
+									[DP [des Patienten,roof]],tikz={\node [draw,red,fit=()] {};}
 									]
 						]]]
 		\end{forest}
@@ -1330,13 +1273,13 @@ node[anchor=east,align=center]{Akk};}
 % 	\pause            
 	\begin{minipage}[b]{0.45\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.75}{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Peter,triangle]],tikz={\node [draw,red,fit=()] {};}
+		sm edges,
+		[IP [DP [Peter,roof]],tikz={\node [draw,red,fit=()] {};}
 			[\MyPxbar{I}
 					[\alert{VP}	[\MyPxbar{V}
-								[DP [den Patienten,triangle]],tikz={\node [draw,red,fit=()] {};}
+								[DP [den Patienten,roof]],tikz={\node [draw,red,fit=()] {};}
 								[\zerobar{V} [behandelt]]
 								]]
 					[\zerobar{I} [hat]]
@@ -1358,75 +1301,76 @@ node[anchor=east,align=center]{Akk};}
 	\begin{itemize}
 		\item DP ist zuständig für:
 		\begin{enumerate}
-			\item Referentielle Verankerung der NP in Definitheit und Referenz
-			\item Kongruenz zwischen Determinierer, Adjunkten und Nomen
+			\item Referentielle Verankerung der NP in \textbf{Definitheit} und \textbf{Referenz}
+			\item \textbf{Kongruenz} zwischen Determinierer, Adjunkten und Nomen
 		\end{enumerate}				
 	\end{itemize}
 
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-%	%
-  	\begin{minipage}[b]{0.45\textwidth}
+
+\begin{minipage}[b]{0.6\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[DP [SpecDP]
 			[\MyPxbar{D} 	[\zerobar{D} [Determinierer]]
-						[NP [Nomen + Komplemente, triangle]]]]
+						[NP [Nomen + Komplemente,roof]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
+\end{minipage}  
   	%
- 	\pause            
-	\begin{minipage}[b]{0.45\textwidth}
+\pause            
+\begin{minipage}[b]{0.35\textwidth}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
+		sm edges,
 		[DP [\MyPxbar{D} 	[\zerobar{D} [die]]
-						[NP [Behandlung des Patienten, triangle]]]]
+						[NP [Behandlung des Patienten,roof]]]]
 		\end{forest}
 		}
 		%\caption{NP}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+\end{minipage}  
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Determinierer Phrase}
 
-	\begin{itemize}
-		\item DP ist zuständig für:
-		\begin{enumerate}
-			\item NP \ras Prädikat, DP \ras Argument 
-			\eal 
-			\ex[*]{Ich kaufe \alert{[$_{NP}$ Tisch]}.}
-			\ex[]{Ich kaufe \alert{[$_{DP}$ einen Tisch]}.}
-			\zl
-			
-			\item Referentielle Verankerung der NP in Definitheit und Referenz
-			\eal
-			\ex \alert{[$_{DP}$ Der Idiot]} braucht noch Geld.
-			\ex \alert{[$_{DP}$ Ein Idiot]} braucht noch Geld.
-			\ex \alert{[$_{DP}$ Ich Idiot]} brauche noch Geld.
-			\zl
+\begin{itemize}
+\item DP ist zuständig für:
 
-			\item Kongruenz zwischen Determinierer, Adjunkten und Nomen (Kopf bestimmt Form des Komplements)
-			\eal 
-			\ex [$_{DP}$ Der [$_{NP}$ \alert{nette Nachbar}]] steht an der Ecke.
-			\ex Ich erschrecke [$_{DP}$ den [$_{NP}$ \alert{netten Nachbarn}]].
-			\zl
+	\begin{enumerate}
+		\item NP \ras (log.) Prädikat, DP \ras (log.) Argument 
+		\eal 
+		\ex[*]{Ich kaufe \alertred{[\MyPdown{NP} Tisch]}.}
+		\ex[]{Ich kaufe \alertred{[\MyPdown{DP} \emph{einen} Tisch]}.}
+		\zl
 
-		\end{enumerate}					
-	\end{itemize}
+\pause
+	
+		\item Referentielle Verankerung der NP in Definitheit und Referenz
+		\eal
+		\ex \alertred{[\MyPdown{DP} \emph{Der} Idiot]} braucht noch Geld.
+		\ex \alertred{[\MyPdown{DP} \emph{Ein} Idiot]} braucht noch Geld.
+		\ex \alertred{[\MyPdown{DP} \emph{Ich} Idiot]} brauche noch Geld.
+		\zl
+
+\pause
+
+		\item Kongruenz zwischen Determinierer, Adjunkten und Nomen (Kopf bestimmt Form des Komplements)
+		\eal 
+		\ex {[}\MyPdown{DP} Der [\MyPdown{NP} \alertred{nette Nachbar}]{]} steht an der Ecke.
+		\ex Ich erschrecke [\MyPdown{DP} den [\MyPdown{NP} \alertred{netten Nachbarn}]].
+		\ex {[}\MyPdown{DP} \alertred{Ein} [\MyPdown{NP} \alertred{netter} Nachbar]{]} steht an der Ecke.
+		\zl
+
+	\end{enumerate}		
+
+\end{itemize}			
 
 \end{frame}
 
@@ -1440,21 +1384,21 @@ node[anchor=east,align=center]{Akk};}
 	\begin{itemize}
 		\item Definite, indefinite Determinierer
 		\eal
-		\ex \alert{[$_{DP}$ Der Idiot]} braucht noch Geld.
-		\ex \alert{[$_{DP}$ Ein Idiot]} braucht noch 
+		\ex {[}\MyPdown{DP} \alertred{Der} Mann] braucht noch Geld.
+		\ex {[}\MyPdown{DP} \alertred{Ein} Mann] braucht noch Geld.
 		\zl
 
 \pause		
 		\item Null-Determinierer 
 		\eal 
-		\ex Ich habe \alert{den Apfel} gegessen.
-		\ex Ich habe \alert{die Äpfel} gegessen.
+		\ex Ich habe \alertred{den} Apfel gegessen.
+		\ex Ich habe \alertred{die} Äpfel gegessen.
 		\zl			
 
 \pause		
 		\eal
-		\ex Ich habe \alert{einen Apfel} gegessen.
-		\ex Ich habe \alert{$\emptyset$ Äpfel} gegessen.
+		\ex Ich habe \alertred{einen} Apfel gegessen.
+		\ex Ich habe \alertred{$\emptyset$} Äpfel gegessen.
 		\zl			
 		
 	\end{itemize}
@@ -1465,7 +1409,7 @@ node[anchor=east,align=center]{Akk};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Determinierer Phrase}
+%\frametitle{Determinierer Phrase}
 
 \begin{itemize}
 	\item Verschiedene Belegungen von \zerobar{D}:
@@ -1473,17 +1417,17 @@ node[anchor=east,align=center]{Akk};}
 		
 		\item Pronomina
 		\eal
-		\ex \alert{Die netten Kinder der Nachbarin} schlafen endlich.
-		\ex \alert{Sie} schlafen.
-		\ex \alert{Wir Linguisten} lieben Syntax.
+		\ex {[}\alertred{Die} netten Kinder der Nachbarin{]} schlafen endlich.
+		\ex {[}\alertred{Sie}{]} schlafen endlich.
+		\ex {[}\alertred{Wir} Linguisten{]} lieben Syntax.
 		\zl
 
 \pause
 		\item Pränominale Genitive
 		\eal 
-		\ex[]{\alert{Die} Behandlung des Patienten}
-		\ex[]{\alert{Peters} Behandlung des Patienten}
-		\ex[*]{\alert{Die Peters} Behandlung des Patienten}
+		\ex[]{\alertred{Die} Behandlung des Patienten}
+		\ex[]{\alertred{Peters} Behandlung des Patienten}
+		\ex[*]{\alertred{Die Peters} Behandlung des Patienten}
 		\zl
 		
 	\end{itemize}
@@ -1495,11 +1439,13 @@ node[anchor=east,align=center]{Akk};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Move $\alpha$}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 
 
@@ -1507,49 +1453,42 @@ node[anchor=east,align=center]{Akk};}
 \begin{frame}
 \frametitle{Move $\alpha$}
 
-	\begin{itemize}
-	\item Lexikalische Einheiten werden aus dem Lexikon entnommen und in die \textbf{Syntaktische Struktur} eingesetzt.
+\begin{itemize}
+	\item Lexikalische Einheiten werden aus dem Lexikon entnommen und in die \textbf{syntaktische Struktur} eingesetzt.
 	\item[]
 	\item Abhängig von der \textbf{Position}, die die lexikalischen Einheiten in der syntaktischen Struktur belegen, erfüllen sie eine \textbf{Funktion} (Position \ras Funktion).
-	\end{itemize}
+\end{itemize}
 
 \begin{block}{Basisposition}
-Position, an der eine Phrase basisgeneriert wird, d.\,h. an die sie in der syntaktischen Struktur eingefügt wird.\\
-Die Basisposition wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:\\
-\textbf{schenken:}\\
-DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ 
+Syntaktische Position, an der eine Phrase basisgeneriert wird, d.\,h. an die sie in der syntaktischen Struktur eingefügt wird.\\
+%Die Basisposition wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:\\
+%\textbf{schenken:}\\
+%DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ 
 \end{block}
 
 \end{frame}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Move $\alpha$}
 
-\begin{figure}[b]
-	%
-	\begin{minipage}[b]{0.45\textwidth}
-	Die Basisposition wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:\\
+\begin{itemize}
+	\item Die Basisposition wird von der Struktur bestimmt und ist im Subkategorisierungsrahmen kodiert:\\
+\textbf{schenken:} DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$
+\end{itemize} 
 
-	\begin{small}
-	\textbf{schenken:}\\
-	DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ 
-	\end{small}
-
-  	\end{minipage}  
-  	%  
-	\begin{minipage}[b]{0.52\textwidth}
+	\begin{figure}
 	\centering
-	\scriptsize{
+	\scalebox{.7}{
 		\begin{forest}
-		sn edges,
-		[IP [\alert{DP} [Die Dame,triangle]]{\draw[<-,red] (.south west)--++(0em,-1ex)--++(-1.5em,0pt)
+		sm edges,
+		[IP [\alert{DP} [Die Dame,roof]]{\draw[<-,red] (.south west)--++(0em,-1.3ex)--++(-5em,0pt)
 node[anchor=east,align=center]{\textsc{nom}\\ \textsc{agens}};}
 			[\MyPxbar{I} 		
-		[VP [AdvP [schnell,triangle]]
-			[VP [\alert{DP} [dem Jungen,triangle]]{\draw[<-,red] (.south west)--++(0em,-1ex)--++(-5em,0pt)
+		[VP [AdvP [schnell,roof]]
+			[VP [\alert{DP} [dem Jungen,roof]]{\draw[<-,red] (.south west)--++(0em,-1.3ex)--++(-15.5em,0pt)
 node[anchor=east,align=center]{\textsc{dat}\\ \textsc{ziel}};}
-		    [\MyPxbar{V}	[\alert{DP} [den Wagen,triangle]]{\draw[<-,red] (.south west)--++(0em,-1ex)--++(-6em,0pt)
+		    [\MyPxbar{V}	[\alert{DP} [den Wagen,roof]]{\draw[<-,red] (.south west)--++(0em,-1.3ex)--++(-21em,0pt)
 node[anchor=east,align=center]{\textsc{akk}\\ \textsc{thema}};}				
 		    			[\zerobar{V} [geschenkt]]
 			]]
@@ -1558,9 +1497,7 @@ node[anchor=east,align=center]{\textsc{akk}\\ \textsc{thema}};}
 		]]			 
 		\end{forest}
 		}
-		%\caption{Adjunkt und Komplement}	
-  	\end{minipage}
-  	%         
+		%\caption{Adjunkt und Komplement}     
 \end{figure}
 
 \end{frame}
@@ -1571,11 +1508,11 @@ node[anchor=east,align=center]{\textsc{akk}\\ \textsc{thema}};}
 \frametitle{Move $\alpha$}
 
 \begin{itemize}
-	\item Nach der Insertion der Lexikalischen Einheiten generiert die Syntaktische Komponente eine \textbf{Tiefenstruktur} (Deep Structure, Abk. DS)
+	\item Nach der \textbf{Insertion} der lexikalischen Einheiten generiert die syntaktische Komponente eine \textbf{Tiefenstruktur} (Deep Structure, Abk. DS)
 \end{itemize}
 
 \begin{block}{Tiefenstruktur}
-Zugrundeliegende Struktur, die die gesamte für den Satz / die Phrase benötigte Information enthält
+zugrundeliegende Struktur, die die (gesamte) für den Satz / die Phrase benötigte Information enthält
 \end{block}
 
 \end{frame}
@@ -1583,33 +1520,35 @@ Zugrundeliegende Struktur, die die gesamte für den Satz / die Phrase benötigte
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Move $\alpha$}
 
-\begin{figure}[b]
-  	\begin{minipage}[b]{0.70\textwidth}
-	\centering
-	\scriptsize{
-		\begin{forest}
-		sn edges,
-		[IP [DP [Maria,triangle]]
-			[\MyPxbar{I} 
-				[VP 
-					[\MyPxbar{V} 
-						[DP [Peter,triangle]]
-						[\zerobar{V} [geschlagen]]
-					]
+
+\begin{minipage}[b]{.45\textwidth}
+	Aus der DS können unterschiedliche \textbf{tatsächliche Realisierungen} generiert werden (vgl.\ Phonem -- Phon)
+\end{minipage}
+%%
+%%
+\begin{minipage}[b]{0.5\textwidth}
+\centering
+\scalebox{.8}{
+	\begin{forest}
+	sm edges,
+	[IP [DP [Maria,roof]]
+		[\MyPxbar{I} 
+			[VP 
+				[\MyPxbar{V} 
+					[DP [Peter,roof]]
+					[\zerobar{V} [geschlagen]]
 				]
-				[\zerobar{I} [hat]]
 			]
+			[\zerobar{I} [hat]]
 		]
-		\end{forest}
-		}
-		%\caption{DS}
-  	\end{minipage}  
-  	%                       
-\end{figure}
+	]
+	\end{forest}
+	}
+	%\caption{DS}
+\end{minipage}  
 
-Aus der DS können unterschiedliche \textbf{tatsächliche Realisierungen} generiert werden (vgl. Phonem -- Phon)
+
 \eal
 \ex Maria Peter geschlagen hat
 \ex Maria hat Peter geschlagen.
@@ -1624,7 +1563,7 @@ Aus der DS können unterschiedliche \textbf{tatsächliche Realisierungen} generi
 \frametitle{Move $\alpha$}
 
 \begin{itemize}
-	\item Von der Tiefenstruktur gelangt man mithilfe von Transformationen/Bewegungen zur \textbf{tatsächlichen Realisierung} des Satzes, genannt: \textbf{Oberflächenstruktur} (Surface Structure, Abk. SS).
+	\item Von der Tiefenstruktur gelangt man mithilfe von \textbf{Transformationen} / \textbf{Bewegungen} zur \textbf{tatsächlichen Realisierung} des Satzes, genannt: \textbf{Oberflächenstruktur} (Surface Structure, Abk. SS).
 	\item[]
 	\item Regel der Bewegung \ras \textbf{Move} $\alpha$
 \end{itemize}
@@ -1634,7 +1573,6 @@ Aus der DS können unterschiedliche \textbf{tatsächliche Realisierungen} generi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Move $\alpha$}
 
 \begin{block}{Move $\alpha$}
 Bewege irgendetwas irgendwohin.
@@ -1643,10 +1581,10 @@ Bewege irgendetwas irgendwohin.
 \begin{itemize}
 	\item \textbf{Beschränkungen für Move} $\alpha$
 	\begin{enumerate}
-		\item Köpfe können nur in Kopfpositionen bewegt werden;
-		\item Phrasen können nur in Phrasenpositionen bewegt werden;
-		\item wenn ein Element von A nach B bewegt wurde, hinterlässt es in A eine mit dem Element koindizierte Spur (\emph{t}, von \gqq{trace}), sodass die Basisposition besetzt ist;
-		\item die Spur muss von seinem Antezedens c-kommandiert werden; \dots
+		\item \textbf{Köpfe} können nur in Kopfpositionen bewegt werden;
+		\item \textbf{Phrasen} können nur in Phrasenpositionen bewegt werden;
+		\item wenn ein Element von \emph{A} nach \emph{B} bewegt wurde, hinterlässt es in \emph{A} eine mit dem Element koindizierte \textbf{Spur} (\emph{t}, von \gqq{trace}), sodass die Basisposition besetzt ist;
+		\item die Spur muss von seinem Antezedens \textbf{c-kommandiert} werden; \dots
 	\end{enumerate}
 	\item[]
 	\item Die \textbf{Spuren} sind wichtig, damit die Relation zwischen einem Kopf und seinen Argumenten auf allen Ebenen der Repräsentation zugänglich ist.
@@ -1672,11 +1610,11 @@ Bewege irgendetwas irgendwohin.
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Peter,triangle]]
+		sm edges,
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
-						[\zerobar{V} [\alert{kaufen}]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+						[\zerobar{V} [\alert{kaufen}]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2.5em,0pt)
 node[anchor=west,align=center]{infinit};}
 						]]
 				[\zerobar{I} [$\emptyset$]]
@@ -1697,14 +1635,14 @@ node[anchor=west,align=center]{infinit};}
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Peter,triangle]]
+		sm edges,
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [t$_{i}$,draw]{
 \draw[->,dotted] () to[out=south east,in=south] (IHead);}]
 						]]
-				[\zerobar{I} [\alert{kauft}$_{i}$,name=IHead]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+				[\zerobar{I} [\alert{kauft}$_{i}$,name=IHead]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+1.5em,0pt)
 node[anchor=west,align=center]{finit};}
 				]
 		]
@@ -1724,19 +1662,21 @@ node[anchor=west,align=center]{finit};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{T-Modell}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{T-Modell}
+%\frametitle{T-Modell}
 
 \begin{figure}
-	\includegraphics[scale=.45]{material/11tmodell}
+	\includegraphics[scale=.43]{material/11tmodell}
 	\caption{T-Modell \citep[vgl.][]{MuellerS15b}}
 \end{figure}
 	
@@ -1746,11 +1686,13 @@ node[anchor=west,align=center]{finit};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Funktionale Phrasen II}
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+		\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1762,14 +1704,14 @@ node[anchor=west,align=center]{finit};}
 	\item Wann kommt die NS-Stellung vor? \ras Complementizer!
 	
 	\eal
-	\ex[]{(Ich denke,) \alert{dass} Syntax Spaß machen sollte.}
-	\ex[]{Syntax \alert{sollte} Spaß machen.}
-	\ex[]{(Ich frage mich,) \alert{ob} der Winter jemals enden wird.}
-	\ex[]{Der Winter \alert{wird} niemals enden.}
-	\ex[*]{Der Winter \alert{ob wird} niemals enden.}
+	\ex[]{(Ich denke,) \alertred{dass} Syntax Spaß machen sollte.}
+	\ex[]{Syntax \alertred{sollte} Spaß machen.}
+	\ex[]{(Ich frage mich,) \alertred{ob} der Winter jemals enden wird.}
+	\ex[]{Der Winter \alertred{wird} niemals enden.}
+	\ex[*]{Der Winter \alertred{ob wird} niemals enden.}
 	\zl
 	
-	\item Complementizer und finite Verben in V2-Sätzen sind komplementär!
+	\item Complementizer und finite Verben (in V2- und V1-Sätzen) sind \textbf{komplementär}!
 	
 \end{itemize}
 
@@ -1786,26 +1728,21 @@ node[anchor=west,align=center]{finit};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Complementizer Phrase}
+\frametitle{Complementizer Phrase (CP)}
 
 \begin{itemize}
-	\item Abk.: CP
 	\item C nimmt eine IP als Komplement
 \end{itemize}
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
+\begin{figure}
 	\centering
-	\tiny{
+	\scalebox{.6}{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Peter,triangle]]
+		sm edges,
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen,triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [gekauft]]
 						]]
 				[I [hat]]
@@ -1814,24 +1751,24 @@ node[anchor=west,align=center]{finit};}
 		\end{forest}
 		}
 		\caption{NS als IP}	
-  	\end{minipage}  
+\end{figure}		
+\end{minipage}  
   	%  
-  	\begin{minipage}[b]{0.05\textwidth}
-	\hfill
-	\end{minipage}  
+\pause
 	%
-	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
+\begin{figure}
 	\centering
-	\tiny{
+	\scalebox{.6}{
 		\begin{forest}
-		sn edges,
-[CP	[\MyPxbar{C}	[\zerobar{C} [\alert{dass}\\ \alert{ob}\\ \alert{weil}]]	
-		[IP [DP [Peter,triangle]]
+		sm edges,
+[CP	[\MyPxbar{C}	[\zerobar{C} [\alertred{dass}\\ \alertred{ob}\\ \alertred{weil}]]	
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP
-					[\MyPxbar{V} [DP [den Wagen,triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [gekauft]]
 						]]
-				[\zerobar{I} [hat]]
+				[\zerobar{I} [\alert{hat}]]
 				]
 		]
 	]
@@ -1839,12 +1776,8 @@ node[anchor=west,align=center]{finit};}
 		\end{forest}
 		}
 		\caption{NS als CP}	
-  	\end{minipage}  
-  	%         
-%  	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage}  
-\end{figure}
+\end{figure}		
+\end{minipage}  
 
 \end{frame}
 
@@ -1868,27 +1801,24 @@ node[anchor=west,align=center]{finit};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Complementizer Phrase}
+%\frametitle{Complementizer Phrase}
 
 \begin{itemize}
 	\item CP bestimmt die \textbf{Form} der IP \ras Finit!
 \end{itemize}
 
 \begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-	%
+
 	\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\tiny{
 		\begin{forest}
-		sn edges,
+		sm edges,
 [*CP	[\MyPxbar{C}	[\zerobar{C} [dass]]
-		[IP [DP [Peter,triangle]]
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
-						[\zerobar{V} [\alert{kaufen}]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+					[\MyPxbar{V} [DP [den Wagen,roof]]
+						[\zerobar{V} [\alert{kaufen}]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+3em,0pt)
 node[anchor=west,align=center]{infinit};}
 						]]
 				[\zerobar{I} [$\emptyset$]]
@@ -1901,19 +1831,16 @@ node[anchor=west,align=center]{infinit};}
 		\caption{Ungrammatisch}	
   	\end{minipage}  
   	%  
-  	\begin{minipage}[b]{0.05\textwidth}
-	\hfill
-	\end{minipage}  
 	%
 	\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\tiny{
 		\begin{forest}
-		sn edges,
+		sm edges,
 [CP	[\MyPxbar{C}	[\zerobar{C} [dass]]	
-		[IP [DP [Peter,triangle]]
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [t$_{i}$]]
 						]]
 				[\zerobar{I} [\alert{kauft}$_{i}$]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
@@ -1926,10 +1853,7 @@ node[anchor=west,align=center]{finit};}
 		}
 		\caption{Grammatisch}	
   	\end{minipage}  
-  	%         
-%  	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage}  
+
 \end{figure}
 
 \end{frame}
@@ -1937,7 +1861,7 @@ node[anchor=west,align=center]{finit};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Complementizer Phrase}
+%\frametitle{Complementizer Phrase}
 
 \begin{itemize}
 	\item Korrelation zwischen \textbf{Verbzweit- und Verbletztstruktur}
@@ -1945,24 +1869,20 @@ node[anchor=west,align=center]{finit};}
 \end{itemize}
 
 
-\begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
+\begin{figure}
 	\centering
 	\tiny{
 		\begin{forest}
-		sn edges,
-[CP	[\MyPxbar{C}	[\zerobar{C} [dass]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+		sm edges,
+[CP	[\MyPxbar{C}	[\zerobar{C} [\alert{dass}]]{\draw[<-,red] (.south west)--++(0em,-2.5ex)--++(-1.5em,0pt)
 node[anchor=east,align=center]{besetzt! \ras \\ keine I-C-Bewegung};}
-		[IP [DP [Peter,triangle]]
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [t$_{i}$]]
 						]]
-				[\zerobar{I} [kauft$_{i}$]]
+				[\zerobar{I} [\alert{kauft$_{i}$}]]
 				]
 		]
 	]
@@ -1970,73 +1890,63 @@ node[anchor=east,align=center]{besetzt! \ras \\ keine I-C-Bewegung};}
 		\end{forest}
 		}
 		\caption{V-I-Bewegung}	
-  	\end{minipage}  
-  	%  
-  	\begin{minipage}[b]{0.05\textwidth}
-	\hfill
-	\end{minipage}  
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+\end{figure}		
+\end{minipage}  
+%  
+%
+\begin{minipage}[b]{0.49\textwidth}
+\begin{figure}
 	\centering
 	\tiny{
 		\begin{forest}
-		sn edges,
-[CP	[\MyPxbar{C}	[\zerobar{C} [kauft$_{i}$]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+		sm edges,
+[CP	[\MyPxbar{C}	[\zerobar{C} [\alert{kauft$_{i}$}]]{\draw[<-,red] (.south west)--++(0em,-2.5ex)--++(-1.5em,0pt)
 node[anchor=east,align=center]{frei! \ras \\ I-C-Bewegung};}
-		[IP [DP [Peter,triangle]]
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [t$_{i}$]]
 						]]
-				[\zerobar{I} [t$_{i}$]]
+				[\zerobar{I} [\alert{t$_{i}$}]]
 				]
 		]
 	]
 ]
 		\end{forest}
 		}
-		\caption{V-I-C-Bewegung}	
-  	\end{minipage}  
-  	%         
-%  	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage}  
-\end{figure}
+		\caption{V-I-C-Bewegung}
+\end{figure}			
+\end{minipage}  
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Complementizer Phrase}
 
 \begin{itemize}
-	\item \textbf{Weitere Position} für Verbzweitsätze
-	\item Phrasenposition \ras Aber \textbf{nur eine} Phrasenposition
+	\item \textbf{Weitere Position} für Verbzweitsätze \ras aber \textbf{nur eine} Phrasenposition
 \ea[*]{[Den Wagen] [Peter] kauft gestern.}
 \z
 
 \end{itemize}
 
 \begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage} 
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+
+	\begin{minipage}[b]{0.49\textwidth}
 	\centering
-	\tiny{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-[CP	[DP$_{i}$ [Peter,triangle]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+		sm edges,
+[CP	[\alert{DP$_{i}$} [Peter,roof]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Phrase};}
 	[\MyPxbar{C}	[\zerobar{C} [kauft$_{ii}$]]
-		[IP [t$_{i}$]
+		[IP [\alert{t$_{i}$}]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [DP [den Wagen, triangle]]
+					[\MyPxbar{V} [DP [den Wagen,roof]]
 						[\zerobar{V} [t$_{ii}$]]
 						]]
-				[I [t$_{ii}$]]
+				[\zerobar{I} [t$_{ii}$]]
 				]
 		]
 	]
@@ -2045,22 +1955,20 @@ node[anchor=east,align=center]{Phrase};}
 		}
 		\caption{Subjektbewegung}	
   	\end{minipage}  
-  	%  
-  	\begin{minipage}[b]{0.05\textwidth}
-	\hfill
-	\end{minipage}  
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+%%
+\pause
+%%
+	\begin{minipage}[b]{0.49\textwidth}
 	\centering
-	\tiny{
+	\scalebox{.55}{
 		\begin{forest}
-		sn edges,
-[CP	[DP$_{ii}$ [den Wagen,triangle]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+		sm edges,
+[CP	[\alert{DP$_{ii}$} [den Wagen,roof]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Phrase};}
 	[\MyPxbar{C}	[\zerobar{C} [kauft$_{i}$]]
-		[IP [DP [Peter,triangle]]
+		[IP [DP [Peter,roof]]
 			[\MyPxbar{I} [VP 
-					[\MyPxbar{V} [t$_{ii}$]
+					[\MyPxbar{V} [\alert{t$_{ii}$}]
 						[\zerobar{V} [t$_{i}$]]
 						]]
 				[\zerobar{I} [t$_{i}$]]
@@ -2072,10 +1980,7 @@ node[anchor=east,align=center]{Phrase};}
 		}
 		\caption{Objektbewegung}	
   	\end{minipage}  
-  	%         
-%  	\begin{minipage}[b]{0.05\textwidth}
-%	\hfill
-%	\end{minipage}  
+    
 \end{figure}
 
 \end{frame}
@@ -2086,50 +1991,42 @@ node[anchor=east,align=center]{Phrase};}
 \frametitle{Complementizer Phrase}
 
 \begin{itemize}
-	\item Die CP ist für den \textbf{Satzmodus} und die \textbf{illokutionäre Kraft} zuständig
+	\item Die CP ist für den \textbf{Satzmodus} und die \textbf{illokutionäre Kraft} zuständig.
 \end{itemize}
 
 \begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-	%
+
 	\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[CP [$\emptyset$]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{leer};}
 			[C' [C [dass]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Subjunktion};}
-				[IP [Peter den Wagen kauft,triangle]]]]
+				[IP [Peter den Wagen kauft,roof]]]]
 		\end{forest}
 		}
 		\caption{Eingebetteter Satz}	
   	\end{minipage}  
-  	%  
-  	\pause            
-	\begin{minipage}[c]{0.07\textwidth}
-	\hfill
-  	\end{minipage}
-  	%         
+%  
+\pause            
+%         
   	\begin{minipage}[b]{0.40\textwidth}
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[CP [$\emptyset$]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{leer};}
 			[C' [C [kauft$_{i}$]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Verb};}
-				[IP [Peter den Wagen t$_{i}$,triangle]]]]
+				[IP [Peter den Wagen t$_{i}$,roof]]]]
 		\end{forest}
 		}
 		\caption{Entscheidungsfrage}
   	\end{minipage}  
-  	%              
-%	\begin{minipage}[b]{0.05\textwidth}
-%  	\end{minipage}
   	
 \end{figure}
 
@@ -2141,51 +2038,43 @@ node[anchor=east,align=center]{Verb};}
 \frametitle{Complementizer Phrase}
 
 \begin{itemize}
-	\item Die CP ist für den \textbf{Satzmodus} und die \textbf{illokutionäre Kraft} zuständig
+	\item Die CP ist für den \textbf{Satzmodus} und die \textbf{illokutionäre Kraft} zuständig.
 \end{itemize}
 
 \begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-	%
+
 	\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
-		[CP [DP$_{ii}$ [was,triangle]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+		MyP edges,
+		[CP [DP$_{ii}$ [was,roof]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{W-Wort};}
 			[C' [C [kauft$_{i}$]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Verb};}
-				[IP [Peter t$_{ii}$ t$_{i}$,triangle]]]]
+				[IP [Peter t$_{ii}$ t$_{i}$,roof]]]]
 		\end{forest}
 		}
 		\caption{Konstituentenfrage}	
   	\end{minipage}  
   	%  
   	\pause            
-%	\begin{minipage}[c]{0.02\textwidth}
-%	\hfill
-%  	\end{minipage}
   	%         
   	\begin{minipage}[b]{0.49\textwidth}
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
-		[CP [DP$_{ii}$ [Den Wagen,triangle]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+		MyP edges,
+		[CP [DP$_{ii}$ [Den Wagen,roof]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Konstituente};}
 			[C' [C [kauft$_{i}$]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Verb};}
-				[IP [Peter t$_{ii}$ t$_{i}$,triangle]]]]
+				[IP [Peter t$_{ii}$ t$_{i}$,roof]]]]
 		\end{forest}
 		}
 		\caption{Aussagesatz}
   	\end{minipage}  
-  	%              
-%	\begin{minipage}[b]{0.05\textwidth}
-%  	\end{minipage}
-  	
+  
 \end{figure}
 
 \end{frame}
@@ -2194,11 +2083,13 @@ node[anchor=east,align=center]{Verb};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Erklärungspotential}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2208,17 +2099,17 @@ node[anchor=east,align=center]{Verb};}
 \begin{itemize}
 	\item Warum ist eine \textbf{VP mit Subjekt} nicht möglich?
 	\eal 
-	\ex[]{\dots\ (dass) [Peter den Wagen \alert{kauft}]$_{IP}$.}
-	\ex[*]{\dots\ (dass) [Peter den Wagen \alert{kaufen}]$_{VP}$.}
+	\ex[]{\dots\ (dass) [Peter den Wagen \alertred{kauft}]$_{IP}$.}
+	\ex[*]{\dots\ (dass) [Peter den Wagen \alertred{kaufen}]$_{VP}$.}
 	\zl
 
 \pause
 	\begin{itemize}
 		\item \textbf{Kasus} und \textbf{$\theta$-Rolle} werden \textbf{strukturell} vergeben.
 		\item[]
-		\item Erst durch die \textbf{Subjekt-Verb-Kongruenz} erhält das Subjekt \textsc{nom}-Kasus
+		\item Erst durch die \textbf{Subjekt-Verb-Kongruenz} erhält das Subjekt \textsc{nom}-Kasus.
 		\item[]
-		\item Subjekt-Verb-Kongruenz geschieht durch die \textbf{SpecIP-I$^{0}$-Relation} (strukturelle/lokale Relation)
+		\item Subjekt-Verb-Kongruenz geschieht durch die \textbf{SpecIP-I$^{0}$-Relation} (strukturelle/lokale Relation).
 	\end{itemize}
 \end{itemize}		
 
@@ -2227,30 +2118,29 @@ node[anchor=east,align=center]{Verb};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Erklärungspotential}
 
 \begin{itemize}
 	\item Warum ist eine \textbf{VP mit Subjekt} nicht möglich?
 	\eal 
-	\ex[]{\dots\ (dass) [Peter den Wagen \alert{kauft}]$_{IP}$.}
-	\ex[*]{\dots\ (dass) [Peter den Wagen \alert{kaufen}]$_{VP}$.}
+	\ex[]{\dots\ (dass) [Peter den Wagen \alertred{kauft}]$_{IP}$.}
+	\ex[*]{\dots\ (dass) [Peter den Wagen \alertred{kaufen}]$_{VP}$.}
 	\zl
 
 \end{itemize}
 
 \begin{figure}[b]
-	\begin{minipage}[b]{0.80\textwidth}
+%	\begin{minipage}[b]{0.80\textwidth}
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[IP 
-			[DP [Peter,triangle]]{\draw[<-,red] (.north west)--++(0em,+1.5ex)--++(-2em,0pt)
-node[anchor=east,align=center]{\textsc{nom}- \& \\ \textsc{akk}-Vergabe};}
+			[DP [Peter,roof]]{\draw[<-,red] (.north west)--++(0em,+1.5ex)--++(-2em,0pt)
+node[anchor=east,align=center]{\textsc{agens-}- \& \\ \textsc{akk}-Vergabe};}
 			[\MyPxbar{I} 
 				[VP 					
 					[\MyPxbar{V} 
-						[DP [den Wagen, triangle]]{\draw[<-,red] (.north west)--++(0em,+1.5ex)--++(-2em,0pt)
+						[DP [den Wagen,roof]]{\draw[<-,red] (.north west)--++(0em,+1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{\textsc{patiens}- \& \\ \textsc{akk}-Vergabe};}
 						[\zerobar{V} [gekauft]]
 					]
@@ -2261,12 +2151,8 @@ node[anchor=east,align=center]{\textsc{patiens}- \& \\ \textsc{akk}-Vergabe};}
 		\end{forest}
 		}
 	\caption{Position und Funktion im X-Bar-Schema} 
-  	\end{minipage}  
-  	%  
-%	\begin{minipage}[b]{0.02\textwidth}
-%	\hfill
-%  	\end{minipage}
-  	%   
+%  	\end{minipage}  
+ 
 \end{figure}
 
 \end{frame}
@@ -2280,18 +2166,19 @@ node[anchor=east,align=center]{\textsc{patiens}- \& \\ \textsc{akk}-Vergabe};}
 \begin{itemize}
 	\item Warum ist die \textbf{Vorfeldbesetzung durch VP mit Subjekt} nicht möglich?
 	\eal 
-	\ex[]{[Den Wagen \alert{gekauft}]$_{VP}$ hat Peter gestern.}
-	\ex[*]{[Peter den Wagen \alert{gekauft}]$_{VP}$ hat gestern.}
+	\ex[]{[Den Wagen \alertred{gekauft}]$_{VP}$ hat Peter gestern.}
+	\ex[*]{[Peter den Wagen \alertred{gekauft}]$_{VP}$ hat gestern.}
 	\zl
 
 \pause
-	\item Damit das Subjekt sichtbar (overt realisiert) wird, muss es \textbf{in SpecIP} \textsc{nom} \textbf{erhalten} \ras Es ist nicht mehr in der VP!
+	\item Damit das Subjekt sichtbar (overt realisiert) wird, muss es \textbf{in SpecIP} \textsc{nom} \textbf{erhalten} \ras Es ist nicht (mehr) in der VP!
 
 \end{itemize}		
 
 \pause
 \begin{itemize}
 	\item \textbf{Gewinn} \ras Elegante und restriktive Theorie \nocite{Haspelmath94a}
+
 	\begin{itemize}
 		\item Keine \textbf{Köpfe} ohne Phrasen
 		\item Keine \textbf{Phrasen} ohne Köpfe (exozentrische Phrasen)
@@ -2306,27 +2193,23 @@ node[anchor=east,align=center]{\textsc{patiens}- \& \\ \textsc{akk}-Vergabe};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Erklärungspotential}
 
 \begin{itemize}
 	\item \textbf{Grammatikalisierung} \ras ein seltenes Argument \citep{Haspelmath94a}
 	\item Hilfsverben, Tempus- und Aspektaffixe werden \textbf{aus Vollverben} grammatikalisiert \ras \textbf{Unterschied zwischen Wort oder Affix} ist nicht von Bedeutung
-	\item[]
 	\item Die \textbf{Kopf-Dependent-Relation} bleibt bei der Grammatikalisierung immer erhalten \ras Hilfsverben und weitere Affixe sind Köpfe 
 \end{itemize}
 
 
 \begin{figure}[b]
-%	\begin{minipage}[b]{0.05\textwidth}
-%	\end{minipage} 
-	%
+
 	\begin{minipage}[b]{0.40\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.8}{
 		\begin{forest}
-		sn edges,
-		[VP [DP [Julia,triangle]]
-			[\MyPxbar{V} [VP [cantare,triangle]]
+		MyP edges,
+		[VP [DP [Julia,roof]]
+			[\MyPxbar{V} [VP [cantare,roof]]
 				[\zerobar{V} [\alert{habet}]]		{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
 node[anchor=west,align=center]{Kopf};}
 			]
@@ -2337,17 +2220,14 @@ node[anchor=west,align=center]{Kopf};}
   	\end{minipage}  
   	%  
   	\pause            
-	\begin{minipage}[c]{0.07\textwidth}
-	\hfill
-  	\end{minipage}
   	%         
   	\begin{minipage}[b]{0.40\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.8}{
 		\begin{forest}
-		sn edges,
-		[IP [DP [Julia,triangle]]
-			[\MyPxbar{I} [VP [cant-,triangle]]
+		MyP edges,
+		[IP [DP [Julia,roof]]
+			[\MyPxbar{I} [VP [cant-,roof]]
 				[\zerobar{I} [\alert{-ará}]]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
 node[anchor=west,align=center]{Kopf};}
 			]
@@ -2356,9 +2236,6 @@ node[anchor=west,align=center]{Kopf};}
 		}
 		\caption{Spanisch}
   	\end{minipage}  
-  	%              
-%	\begin{minipage}[b]{0.05\textwidth}
-%  	\end{minipage}
   	
 \end{figure}
 
@@ -2369,39 +2246,34 @@ node[anchor=west,align=center]{Kopf};}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Mehr funktionale Kategorien}
-\only<presentation>{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+
+\iftoggle{toc}{
+	\frame{
+	\begin{multicols}{2}
+	\frametitle{~}
+		\tableofcontents[currentsection]
+	\end{multicols}
+	}
 }
-}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Mehr funktionale Kategorien}}
+\frametitle{Mehr funktionale Kategorien}
 \nocite{Lenerz93a}
 
 \begin{figure}[b]
 	\begin{minipage}[b]{0.48\textwidth}
-	\begin{figure}					
-		\includegraphics[scale=0.07]{material/Haftka95CP}
-		\caption{Struktur der CP (Haftka 95)}
+		\includegraphics[scale=0.06]{material/Haftka95CP}
+		\caption{CP-Struktur (Haftka 1995)}
 		%\label{Zeichen1}
-	\end{figure}
 	\end{minipage}
 	%
-%	\begin{minipage}[b]{0.20\textwidth}
-  	%	
-%	\end{minipage}
 	%				
 	\begin{minipage}[b]{0.48\textwidth}
-	\begin{figure}
-		\includegraphics[scale=0.07]{material/Lenerz93DP}
-		\caption{Struktur der DP (Lenerz 93)}
+		\includegraphics[scale=0.06]{material/Lenerz93DP}
+		\caption{DP-Struktur \citep{Lenerz93a}}
 		%\label{Zeichen2}
-	\end{figure}
 	\end{minipage}                        
 \end{figure}
 
@@ -2410,360 +2282,589 @@ node[anchor=west,align=center]{Kopf};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Übungen}
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+\section{Übung}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
 }
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Übungen}
+\frametitle{Übung}
 
 \begin{itemize}
-	\item Analysieren Sie die folgenden Phrasen nach dem X-Bar-Schema.
-
-
-\eal
-\ex Peter schläft.
-\ex Wer schläft?
-\ex Gebe ich dir ein großes Stück Kuchen?
-\ex die kurz vor dem Mittagessen aufgestellte Speisekarte
-\zl
- 
-
-\item Erklären Sie mithilfe des X-Bar-Schemas die Ambiguität im folgenden Satz:
-
-\ea Das Kind küsst die Mama.
-\z
-
-\item Erklären Sie mithilfe des X-Bar-Schemas, warum der folgende Satz ungrammatisch ist:
-
-\ea Im Auto ich habe heute geschlafen.
-\z
-
+		\item Erklären Sie mithilfe des X-Bar-Schemas die \textbf{Ambiguität} im folgenden Satz:
+	
+		\ea Das Kind küsst die Mama.
+		\z
 
 \end{itemize}
 \end{frame}
 
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{loesung}{
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Lösungen}
-\begin{figure}[b]
-	%
-	\begin{minipage}[b]{0.45\textwidth}
-	\centering
-	\scalebox{0.6}{
-		\begin{forest}
-		sn edges,
-		[CP 
-			[DP$_{k}$ [Peter,triangle]
-			]
-			[\MyPxbar{C}
-				[\zerobar{C} [schläft$_{i}$]
-				]
-				[TP [t$_{k}$]
-					[\MyPxbar{T}
-						[VP [\MyPxbar{V} [\zerobar{V} [t$_{i}$	]]]]
-						[\zerobar{T} [t$_{i}$]]
-					]
-				]
-			]
-		]
-		\end{forest}
-		}
-  	\end{minipage}  
-  	%            
-  	%         
-  	\begin{minipage}[b]{0.45\textwidth}
-	\centering
-	\scalebox{0.6}{
-		\begin{forest}
-		sn edges,
-		[CP 
-			[DP$_{k}$ [Wer,triangle]
-			]
-			[\MyPxbar{C}
-				[\zerobar{C} [schläft$_{i}$]
-				]
-				[TP [t$_{k}$]
-					[\MyPxbar{T}
-						[VP [\MyPxbar{V} [\zerobar{V} [t$_{i}$	]]]]
-						[\zerobar{T} [t$_{i}$]]
-					]
-				]
-			]
-		]
-		\end{forest}
-		}
-  	\end{minipage}  
-  	%              
-%	\begin{minipage}[b]{0.05\textwidth}
-%  	\end{minipage}
-  	
-\end{figure}
+\frametitle{Übung}
 
+\begin{itemize}
+	\item Erklären Sie mithilfe des X-Bar-Schemas die \textbf{Ambiguität} im folgenden Satz:
+	
+	\ea Das Kind küsst die Mama.
+	\z
+	
+\end{itemize}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Lösungen}
-\begin{figure}[b]
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+\frametitle{Übung (Lösung)}
+
+
+\begin{minipage}[b]{0.29\textwidth}
 	\centering
-	\scalebox{0.6}{
+	\scalebox{0.55}{
 		\begin{forest}
-		sn edges,
-		[CP 
-			[\MyPxbar{C}
-				[\zerobar{C} [Gebe$_{i}$]
-				]
-				[TP [ich]
-					[\MyPxbar{T}
-						[VP [\MyPxbar{V} 
-								[DP [dir,triangle]]								
-								[\xxbar{V}
-										[DP [ein großes Stück Kuchen,triangle]]		
-										[\zerobar{V} [t$_{i}$]]]]]
-						[\zerobar{T} [t$_{i}$]]
-					]
-				]
+			MyP edges,
+			[CP
+			[DP$ _{k} $[Das Kind,roof]]
+			[\MyPxbar{C} 
+			[\zerobar{C}[küsst$ _{i} $]]
+			[IP
+			[\alertred{t$_{k}$}]
+			[\MyPxbar{I}
+			[VP [\MyPxbar{V}
+			[DP[die Mama,roof]]
+			[\zerobar{V}[t$ _{i} $]]
 			]
-		]
+			]
+			[\zerobar{I}[t$ _{i} $]]
+			]
+			]
+			]
+			]
 		\end{forest}
 		}
-  	\end{minipage}  
-  	%            
-  	%         
-  	\begin{minipage}[b]{0.45\textwidth}
-	\centering
-	\scalebox{0.6}{
-		\begin{forest}
-		sn edges,
-		[DP
-			[\MyPxbar{D}
-				[\zerobar{D}[die]]
-				[NP
-					[AP
-						[PP 
-							[kurz vor dem Mittagessen, triangle]
-%							[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [kurz]]]]
-%							[PP [\MyPxbar{P}
-%									[\zerobar{Adv} [vor]]
-%									[DP [\MyPxbar{D} [\zerobar{D} [dem]]
-%										[NP [\MyPxbar{N} [\zerobar{N} [Mittagessen]]]]
-%										]
-%									]				
-%								]							
-%							]
-						]	
-						[AP [\MyPxbar{A} [\zerobar{A} [aufgestellte]]]]
-					]
-					[NP [\MyPxbar{N} [\zerobar{N} [Speisekarte]]]
-					]
-				]
-			]
-		]
-		\end{forest}
-		}
-  	\end{minipage}  
-  	%              
-%	\begin{minipage}[b]{0.05\textwidth}
-%  	\end{minipage}
-  	
-\end{figure}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Lösungen}
-
-\begin{figure}[b]
-%
-\begin{minipage}[b]{0.45\textwidth}
-\centering
-\scalebox{0.6}{
-\begin{forest}
-sn edges,
-[CP
-	[DP$ _{k} $[Das Kind, triangle]]
-	[\MyPxbar{C} 
-		[\zerobar{C}[küsst$ _{i} $]]
-		[TP
-			[t$ _{k} $]
-			[\MyPxbar{T}
-				[VP [\MyPxbar{V}
-						[DP[die Mama, triangle]]
-						[\zerobar{V}[t$ _{i} $]]
-					]
-				]
-				[\zerobar{T}[t$ _{i} $]]
-			]
-		]
-	]
-]
-\end{forest}
-(Das Kind ist Subjekt.)}
 \end{minipage}
 %
-\begin{minipage}[b]{0.45\textwidth}
-\centering
-\scalebox{0.6}{
-\begin{forest}
-sn edges,
-[CP
-	[DP$ _{k} $[Das Kind, triangle]]
-	[\MyPxbar{C} 
-		[\zerobar{C}[küsst$ _{i} $]]
-		[TP
-			[DP[die Mama, triangle]]
-			[\MyPxbar{T}
-				[VP [\MyPxbar{V}
-						[t$ _{k} $]
-						[\zerobar{V}[t$ _{i} $]]
-					]
-				]
-				[\zerobar{T}[t$ _{i} $]]
-			]
-		]
-	]
-]
-\end{forest}
-(Das Kind ist Objekt.)}
-\end{minipage}
 %
-\end{figure}
+\begin{minipage}[b]{0.31\textwidth}
+	\centering
+	\scalebox{0.55}{
+		\begin{forest}
+			MyP edges,
+			[CP
+			[DP$ _{k} $[Das Kind,roof]]
+			[\MyPxbar{C} 
+			[\zerobar{C}[küsst$ _{i} $]]
+			[IP
+			[DP[die Mama,roof]]
+			[\MyPxbar{I}
+			[VP [\MyPxbar{V}
+			[\alertred{t$_{k}$}]
+			[\zerobar{V}[t$ _{i} $]]
+			]
+			]
+			[\zerobar{I}[t$ _{i} $]]
+			]
+			]
+			]
+			]
+		\end{forest}
+		}
+\end{minipage}
+%%
+%%
+\begin{minipage}[b]{.38\textwidth}
+
+
+\begin{itemize*}
+	\item {\small \MyPobj{das Kind} und \MyPobj{die Mama} sind im Akkusativ und im Nominativ formgleich (Synkretismus).}
+	\item {\small Im Dt. kann eine Phrase in die SpecCP-Position bewegt werden.}
+	\item {\small Wegen des Synkretismus' ist nicht ersichtlich, ob \MyPobj{das Kind} sich aus der SpecIP- oder aus der Schwesterposition von V\MyPup{0} bewegt hat. }
+\end{itemize*}
+
+\end{minipage}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}%% END LOESUNG
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Lösungen}
-\begin{figure}[b]
-	%
-	\begin{minipage}[b]{0.45\textwidth}
+\frametitle{Übung}
+
+\begin{itemize}
+
+	\item Erklären Sie mithilfe des X-Bar-Schemas, warum der folgende Satz \textbf{ungrammatisch} ist:
+	
+	\ea Im Auto ich habe heute geschlafen.
+	\z
+	
+\end{itemize}
+\end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übung}
+
+\begin{itemize}
+	
+	\item Erklären Sie mithilfe des X-Bar-Schemas, warum der folgende Satz \textbf{ungrammatisch} ist:
+	
+	\ea Im Auto ich habe heute geschlafen.
+	\z
+	
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übung (Lösung)}
+
+\begin{minipage}[b]{0.45\textwidth}
 	\centering
 	\scalebox{0.6}{
 		\begin{forest}
-		sn edges,
-		[CP
-			[DP$_{k}$ [Ich,triangle]]
+			MyP edges,
+			[CP
+			[DP$_{k}$ [Ich,roof]]
 			[\MyPxbar{C} [\zerobar{C} [habe$_{i}$]]
-				[TP [t$_{k}$]
-					[\MyPxbar{T}
-						[VP	[AdVP [heute,triangle]]
-							[VP [PP	[im Auto,triangle]]{\draw[->,red] (.north west)--++(-7em,0em)--++(0em,14em)
-node[anchor=east,align=center]{SpecCP schon besetzt, \\PP kann sich nicht dahin bewegen};}
-								[\MyPxbar{V} [\zerobar{V} [geschlafen t$_{i}$]]]
-							]
-						]
-						[\zerobar{T} [t$_{i}$]]
-					]
-				]
+			[IP [t$_{k}$]
+			[\MyPxbar{I}
+			[VP	[AdVP [heute,roof]]
+			[VP [PP	[im Auto,roof]]{\draw[->,red] (.south west)--++(-7em,0em)--++(0em,14em)
+				node[anchor=east,align=center]{PP kann nicht \\ bewegt werden};}
+			[\MyPxbar{V} [\zerobar{V} [geschlafen t$_{i}$]]]
+			]
+			]
+			[\zerobar{I} [t$_{i}$]]
+			]
+			]
 			]	
-		]
+			]
 		\end{forest}
-		}
-  	\end{minipage}  
-  	%            
-  	%         
-  	\begin{minipage}[b]{0.45\textwidth}
-	\hfill
-  	\end{minipage}  
-  	%              
-%	\begin{minipage}[b]{0.05\textwidth}
-%  	\end{minipage}
-  	
-\end{figure}
+	}
+\end{minipage}  
+%            
+%         
+\begin{minipage}[b]{0.45\textwidth}
+{\small 
+	Nur eine Phrase, d.\,h.\ entweder die DP \MyPobj{ich} oder die PP \MyPobj{im Auto}, kann die SpecCP-Position belegen. Da die DP und die PP zusammen nicht eine Phrase bilden, können nicht \textbf{beide} Phrasen in diese Position bewegt werden.
+}
+\end{minipage}  
 
 \end{frame}
 
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
+}%% END LOESUNG
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Übungen}
+\frametitle{Übung}
 
 \begin{itemize}
-\item Geben Sie an, welches Wort sich in der Kopfposition der folgenden Phrasen befindet:
-
-\eal
-\ex viele besorgte Mütter
-\ex den Menschen in Not helfen
-\ex Wasser ohne Kohlensäure
-\ex auf Maria warten
-\ex ob sie heute kommen werden
-\ex Sophie ihren Traummann gefunden hat
-\zl
-
-\end{itemize}
-
-\end{frame}
-
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{loesung}{
-
-\begin{frame}
-\frametitle{Lösungen}
-
-\eal
-\ex viele besorgte \textbf{Mütter} (NP)
-\ex den Menschen in Not \textbf{helfen} (VP)
-\ex \textbf{Wasser} ohne Kohlensäure (NP)
-\ex auf Maria \textbf{warten} (VP)
-\ex \textbf{ob} sie heute kommen werden (CP)
-\ex Sophie ihren Traummann gefunden \textbf{hat} (TP)
-\zl
-
-\end{frame}
-
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-
-\begin{frame}
-\only<presentation>{\frametitle{Übungen}}
-
-\begin{itemize}
-	\item Was ist an dieser Struktur misslungen? Beziehen Sie sich in Ihrer Antwort auf die in der Sitzung behandelten Köpfigkeitsmerkmale und Strukturaufbaugesetzmäßigkeiten.
+	\item Was ist an dieser Struktur misslungen? Beziehen Sie sich in Ihrer Antwort \ua auf die in der Sitzung behandelten Köpfigkeitsmerkmale und Strukturaufbaugesetzmäßigkeiten.
 \end{itemize}
 
 \begin{figure}
-	\includegraphics[scale=.5]{material/wrongtree}
+	\includegraphics[scale=.45]{material/wrongtree}
 	\caption{\url{http://specgram.com/CLXV.1/05.cruz-ferreira.know22.html}}
 \end{figure}
 	
 \end{frame}
 
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{loesung}{
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Lösung}
+\frametitle{Übung}
 
 \begin{itemize}
-\item keine binäre Struktur (mehr als zwei Töchter)
-\item Konstituenten falsch bestimmt (\zB Tea = V?) 
-\item Köpfe nicht erkennbar
+	\item Was ist an dieser Struktur misslungen? Beziehen Sie sich in Ihrer Antwort \ua auf die in der Sitzung behandelten Köpfigkeitsmerkmale und Strukturaufbaugesetzmäßigkeiten.
 \end{itemize}
 
+\begin{figure}
+	\includegraphics[scale=.45]{material/wrongtree}
+	\caption{\url{http://specgram.com/CLXV.1/05.cruz-ferreira.know22.html}}
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übung (Lösung)}
+
+
+\begin{columns}
+
+\begin{column}{.45\textwidth}
+\begin{figure}
+	\includegraphics[scale=.35]{material/wrongtree}
+%	\caption{\url{http://specgram.com/CLXV.1/05.cruz-ferreira.know22.html}}
+\end{figure}
+\end{column}
+%%
+%%
+\begin{column}{.55\textwidth}
+
+\begin{itemize}
+	\item keine binäre Struktur (mehr als zwei Töchter)
+	\item falsche Kategorien bestimmt (\zB \MyPobj{Tea}: V?) 
+	\item Es gibt Köpfe ohne Phrasen
+	\item keine Zwischen Projektionen
+	\item Satz ist exozentrisch
+	\item \dots
+\end{itemize}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+}%% END LOESUNG
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hausaufgabe}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+		\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
 }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Geben Sie an, um welchen \textbf{Phrasentyp} es sich bei den folgenden Phrasen handelt, und \textbf{welches Wort} sich in der \textbf{Kopfposition} der Phrasen befindet:
+	
+	\eal
+	\ex viele besorgte Mütter
+	\ex den Menschen in Not helfen
+	\ex Wasser ohne Kohlensäure
+	\ex auf Maria warten
+	\ex ob sie heute kommen werden
+	\ex Peter seine Traumfrau gefunden hat
+	\zl
+	
+\end{itemize}
+
+\end{frame}
+
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösungen)}
+
+\begin{itemize}
+	\item Geben Sie an, um welchen \textbf{Phrasentyp} es sich bei den folgenden Phrasen handelt, und \textbf{welches Wort} sich in der \textbf{Kopfposition} der Phrasen befindet:
+\end{itemize}	
+
+\eal
+	\ex viele besorgte Mütter  \pause \hfill \alertred{Mütter} \& \alertred{NP} oder \alertred{viele} \& \alertred{DP} \pause 
+
+	\ex den Menschen in Not helfen \pause \hfill \alertred{helfen} \& \alertred{VP} \pause 
+	
+	\ex Wasser ohne Kohlensäure \pause \hfill \alertred{Wasser} \& \alertred{NP} oder \alertred{$\emptyset$} \& \alertred{DP} \pause 
+	
+	\ex auf Maria warten \pause \hfill \alertred{warten} \& \alertred{VP} \pause 
+	
+	\ex ob sie heute kommen werden \pause \hfill \alertred{ob} \& \alertred{CP} \pause 
+	
+	\ex Peter seine Traumfrau gefunden hat \pause \hfill \alertred{hat} \& \alertred{IP}
+\zl
+
+\end{frame}
+
+} %% END LOESUNG
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Analysieren Sie die folgenden Phrasen nach dem X-Bar-Schema (ohne Abkürzungen).
+
+	\ea Peter schläft.
+	\ex Wer schläft?
+	\ex Hat sie dir die schwierige Frage nach den Spuren gestellt?
+	\ex die fast vor dem Mittagessen erstellte Speisekarte
+	\z
+
+\end{itemize}
+\end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösungen)}
+
+\begin{minipage}[b]{0.45\textwidth}
+
+{\small Peter schläft.}
+
+\pause
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+		MyP edges,
+		[CP 
+			[DP$_{k}$ [Peter,roof]
+			]
+			[\MyPxbar{C}
+				[\zerobar{C} [schläft$_{i}$]
+				]
+				[IP [t$_{k}$]
+					[\MyPxbar{I}
+						[VP [\MyPxbar{V} [\zerobar{V} [t$_{i}$	]]]]
+						[\zerobar{I} [t$_{i}$]]
+					]
+				]
+			]
+		]
+		\end{forest}
+		}
+\end{minipage}  
+%            
+%         
+\begin{minipage}[b]{0.45\textwidth}
+
+\pause 
+
+{\small Wer schläft?}	
+
+\pause 
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+		MyP edges,
+		[CP 
+			[DP$_{k}$ [Wer,roof]
+			]
+			[\MyPxbar{C}
+				[\zerobar{C} [schläft$_{i}$]
+				]
+				[IP [t$_{k}$]
+					[\MyPxbar{I}
+						[VP [\MyPxbar{V} [\zerobar{V} [t$_{i}$	]]]]
+						[\zerobar{I} [t$_{i}$]]
+					]
+				]
+			]
+		]
+		\end{forest}
+		}
+\end{minipage}  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösungen)}
+
+{\small Hat sie dir die schwierige Frage nach den Spuren gestellt?}
+
+\pause
+	
+	\begin{minipage}[b]{0.45\textwidth}
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+		MyP edges,
+		[CP 
+			[\MyPxbar{C}
+				[\zerobar{C} [Hat$_{i}$]
+				]
+				[IP [DP [\MyPxbar{D} [\zerobar{D} [sie]]]
+					]
+					[\MyPxbar{I}
+						[VP 
+							[DP [\MyPxbar{D} [\zerobar{D} [dir]]]]
+							[\MyPxbar{V} 								
+								[DP, draw, red 
+									[die \dots\ Spuren,roof]
+								]		
+								[\zerobar{V} [gestellt]]
+							]
+						]
+						[\zerobar{I} [t$_{i}$]]
+					]
+				]
+			]
+		]
+		\end{forest}
+		}
+  	\end{minipage}  
+  	%      
+\pause  	      
+  	%         
+  	\begin{minipage}[b]{0.45\textwidth}
+  	
+	\centering
+	\scalebox{0.4}{
+		\begin{forest}
+		MyP edges,
+		[DP
+			[\MyPxbar{D}
+				[\zerobar{D}[die]]
+				[NP
+					[AP [\MyPxbar{A} [\zerobar{A} [schwierige]]]]
+					[NP 
+						[\MyPxbar{N} 
+							[\zerobar{N} [Frage]]
+							[PP
+								[\MyPxbar{P} 
+									[\zerobar{P} [nach]]
+									[DP
+										[\MyPxbar{D}
+											[\zerobar{D} [den]]
+											[NP [\MyPxbar{N} [\zerobar{N} [Spuren]]]]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+			]
+		]
+		\end{forest}
+		}
+  	\end{minipage}  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösungen)}
+
+{\small die fast vor dem Mittagessen erstellte Speisekarte}
+
+\pause 
+
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+	\begin{forest}
+		MyP edges,
+		[DP
+		[\MyPxbar{D}
+		[\zerobar{D}[die]]
+		[NP
+		[AP
+		[PP, draw, red 
+		[fast vor dem Mittagessen,roof]
+		%							[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [kurz]]]]
+		%							[PP [\MyPxbar{P}
+		%									[\zerobar{Adv} [vor]]
+		%									[DP [\MyPxbar{D} [\zerobar{D} [dem]]
+		%										[NP [\MyPxbar{N} [\zerobar{N} [Mittagessen]]]]
+		%										]
+		%									]				
+		%								]							
+		%							]
+		]	
+		[AP [\MyPxbar{A} [\zerobar{A} [erstellte]]]]
+		]
+		[NP [\MyPxbar{N} [\zerobar{N} [Speisekarte]]]
+		]
+		]
+		]
+		]
+	\end{forest}
+}
+\end{minipage}  
+%  
+\pause          
+%         
+\begin{minipage}[b]{0.45\textwidth}
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+			MyP edges,
+			[PP 
+				[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [fast]]]]
+				[PP 
+					[\MyPxbar{P}
+						[\zerobar{P} [vor]]
+						[DP [\MyPxbar{D} [\zerobar{D} [dem]]
+							[NP [\MyPxbar{N} [\zerobar{N} [Mittagessen]]]]
+							]
+						]				
+					]							
+				]
+			]	
+		\end{forest}
+	}
+\end{minipage}  
+
+\end{frame}
+
+
+}%% END LOESUNG
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Schluss!}
 
 \begin{figure}
 	\includegraphics[scale=.5]{material/11chomksy}

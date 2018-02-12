@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,11pt, bibtotoc]{beamer}
+%\documentclass[10pt,a4paper]{beamer}
+\documentclass[10pt,handout,t]{beamer}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localpackages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%\includeonly{08-pragmatik-stefan-include}
+
+
+\begin{document}
+
+\input{localcommands}
+
+%\togglefalse{uebung}
+\toggletrue{uebung}
+%\togglefalse{loesung}
+\toggletrue{loesung}
+\togglefalse{toc}
+%\toggletrue{toc}
+\toggletrue{hausaufgabe}
+%\togglefalse{hausaufgabe}
+
+
+\input{grundkurs-include-myp}
+%\input{test-include}
+

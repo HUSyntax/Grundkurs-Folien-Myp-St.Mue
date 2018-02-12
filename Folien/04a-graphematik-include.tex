@@ -8,6 +8,8 @@
 
 \subtitle{Graphematik}
 
+\section{Graphematik}
+
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
 %	\\
@@ -37,29 +39,39 @@
 
 \nocite{Brandt&Co06a}
 \nocite{Glueck05a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009} 
 \nocite{Repp&Co15a}
 
 \nocite{Altmann&Co07a}
-\nocite{Eisenberg00a}
+%\nocite{Eisenberg00a}
 \nocite{Fuhrhop08a}
 \nocite{Fuhrhop09a}
 \nocite{Fuhrhop&Co13a}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Begleitlektüre}
+	
+	\begin{itemize}
+		\item AM S.~30--40; \citet{Eisenberg04}: Kapitel 8 (S.~301--327)
+		\item \citet{Meibauer&Co07a}: Kapitel 2 (S.~29--36)
+	\end{itemize}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Einführung}
+\subsection{Einführung}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -92,15 +104,15 @@
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Sätze wie \ref{ex:Bsp1} und \ref{ex:Bsp2} können sehr unterschiedlich gelesen werden.
+	\item Sätze wie (\ref{ex-du-bist-schlau}) und (\ref{ex-nein}) können sehr unterschiedlich gelesen werden.
 	\item[]
 	\item[]
 		
-	  \ea\label{ex:Bsp1}
+	  \ea\label{ex-du-bist-schlau}
           Du bist schlau.
           \z
 
-	  \ea\label{ex:Bsp2}
+	  \ea\label{ex-nein}
           Nein.
           \z
 \pause		
@@ -172,14 +184,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Graph, Graphem, Allograph}
+\subsection{Graph, Graphem, Allograph}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -194,7 +207,8 @@
 		\item[]
 		\item Grapheme sollten \textbf{nicht mit Buchstaben verwechselt werden}.
 		\item[]
-		\item Grapheme sind \textbf{abstrakte} und \textbf{funktionale} Einheiten, die durch Buchstaben oder Buchstabenverbindungen realisiert werden können.
+		\item Grapheme sind \textbf{abstrakte} und \textbf{funktionale} Einheiten,\\
+                  die durch Buchstaben oder Buchstabenverbindungen realisiert werden können.
 	\end{itemize}
 
 
@@ -246,7 +260,7 @@
 		\item \textbf{Graph}: tatsächliche Realisierung von einem Graphem
 		\item \textbf{Allograph}: unterschiedliche Graphe, die mögliche Realisierung von einem Graphem sind
 		\item[]
-		\item Ein Graph, ein Allograph und ein Graphem notiert man mit den spitzen klammern \ab{}
+		\item Ein Graph, ein Allograph und ein Graphem notiert man mit den spitzen Klammern \ab{}
 	
 			Graphem: \ab{a}
 
@@ -263,14 +277,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Graphematik vs. Orthographie}
+\subsection{Graphematik vs. Orthographie}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}{2}
 }
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -327,7 +342,8 @@
 %	\item[]
 
 	Bsp. Wie wird das Wort \textipa{[\textscr a:t]} geschrieben?
-	
+
+        \pause
 	\begin{table}
 		\centering
 		%\scalebox{0.9}{
@@ -341,7 +357,7 @@
 			\hline
 			\ab{Rad} & d & vgl. \ab{Bad}\\ 
 			\hline
-			\ab{Rat} & t & vlg. \ab{Tat}\\ 
+			\ab{Rat} & t & vgl. \ab{Tat}\\ 
 		\end{tabular} 
 		%}
 	\end{table}
@@ -436,14 +452,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Schriftsysteme}
+\subsection{Schriftsysteme}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -477,11 +494,13 @@
 \begin{frame}
 \frametitle{Schriftsysteme}
 
+\begin{minipage}{.4\textwidth}
+
 \begin{itemize}
 	\item \textbf{Phonographische Schrifttypen}
 	
 	\begin{itemize}
-		\item[]
+		%\item[]
 		\item \textbf{Alphabetische Schrifttypen} \ras Korrespondenz zwischen Lauten und Buchstaben (Deutsch, Englisch, \dots)
 		
 		Deutsch: \ab{k} für Laut \textipa{[k]}
@@ -493,12 +512,25 @@
 	\end{itemize}
 \end{itemize}
 
-\begin{figure}
-\centering
+\end{minipage}\hfill%
+\begin{minipage}{.58\textwidth}
 
-\includegraphics[scale=.55]{material/04JapaneseSyll.pdf}
-\caption{Stiebner; Leonhard (1992): \textit{Bruckmann's Handbuch der Schrift}}
+
+\begin{figure}
+	\centering
+	
+	\includegraphics[scale=.114]{material/04japaneseroman}
+	\caption{Hiragana, Katakana, lat. Umschrift}
 \end{figure}
+
+%\begin{figure}
+%\centering
+%
+%\includegraphics[scale=.45]{material/04JapaneseSyll.pdf}
+%\caption{Stiebner; Leonhard (1992): \textit{Bruckmann's Handbuch der Schrift}}
+%\end{figure}
+
+\end{minipage}
 
 \end{frame}
 
@@ -525,8 +557,8 @@
 	
 	\begin{figure}
 	\centering
-	\includegraphics[scale=.1]{material/04ChineseMountain}
-	\caption[chinese]{https://s-media-cache-ak0.pinimg.com/736x/d9/59/15/ d9591559c5f3e80955089736152f1569.jpg}
+	\includegraphics[scale=.45]{material/Chinesemountain-Lee-Sau-Dan}
+	\caption[chinese]{\url{https://commons.wikimedia.org/wiki/File:Character\_Shan1\_Trad.svg}; Stand: 05.12.16, Autor: Lee Sau Dan}
 	\end{figure}
 	
 	\end{minipage}\hfill%
@@ -551,14 +583,15 @@
 	\item Vorteil von phonographischen Schrifttypen:
 	
 	\begin{itemize}
-		\item Mit einem \textbf{eher kleineren Inventar von Zeichen} (20--30) \ras unendliche Menge an Wörtern
+		\item Mit einem \textbf{eher kleineren Inventar von Zeichen} (20--30) \ras riesige Menge an Wörtern
 	\end{itemize}
 	
 	\item[]
 	\item Logographische Schrifttypen benötigen sehr viele Zeichen
 	
 	\begin{itemize}
-		\item Das chinesische Schriftsystem besteht aus ung. 87\,000 Zeichen, von denen zwischen 3\,000 und 5\,000 für den Alltag benötigt werden
+		\item Das chinesische Schriftsystem besteht aus ung. 87\,000 Zeichen,\\
+                  von denen zwischen 3\,000 und 5\,000 für den Alltag benötigt werden
 	\end{itemize}
 	
 	\item[]
@@ -597,9 +630,11 @@ MyP edges
 \frametitle{Schriftsysteme}
 
 \begin{itemize}
-	\item Trotz phonographischer/ alphabetischer Schriftsysteme \ras sehr verschiedene Schreibung in den unterschiedlichen Sprachen
+	\item Trotz phonographischer/ alphabetischer Schriftsysteme \ras\\
+              sehr verschiedene Schreibung in den unterschiedlichen Sprachen
 	\item[]
-	\item Unterschiedliche \textbf{graphematische (orthographische) Prinzipien}, die den unterschiedlichen Schreibungen zugrunde liegen
+	\item Unterschiedliche \textbf{graphematische (orthographische) Prinzipien},\\
+          die den unterschiedlichen Schreibungen zugrunde liegen
 	\item[]
 	\item Selten 1-zu-1-Korrespondenz zwischen Phonemen und Graphemen
 	
@@ -654,7 +689,8 @@ MyP edges
 			\item[]			
 			\item Englisch: \textbf{altes} und \textbf{gewachsenes} System mit sehr verschiedenen \textbf{Dialekten} in unterschiedlichen Ländern
 			\item[]
-			\item Schriftliche Verständigung zwischen den Varietäten ist nur gewährleistet, wenn die Phonem-Graphem-Korrespondenz nicht streng durchgezogen wird.
+			\item Schriftliche Verständigung zwischen den Varietäten ist nur gewährleistet,\\
+                          wenn die Phonem-Graphem-Korrespondenz nicht streng durchgezogen wird.
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
@@ -698,7 +734,8 @@ MyP edges
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.4]{material/04GraphEnglischPGK}
+	\includegraphics[scale=.3]{material/04GraphEnglischPGK}
+	\caption[EnglischPGK]{https://www.facebook.com/grammarly/photos/a.158139670871698.33824.139729956046003/942699349082389/; Autor: Grammarly; Stand: 05.12.16}
 \end{figure}
 
 \end{frame}
@@ -706,14 +743,15 @@ MyP edges
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Graphematische Prinzipien}
+\subsection{Graphematische Prinzipien}
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
 	\tableofcontents[currentsection]
 \end{multicols}
 }
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -727,8 +765,7 @@ Prinzipien
 	\begin{itemize}
 		\item Deutsch \ras alphabetischer Schrifttyp \ras Abbildung von
 Phonemen mithilfe von Graphemen
-		\item Abbildung von Phonemen auf Grapheme = \textbf{Phonem-Graphem-
-Korrespondenz} (PGK)
+		\item Abbildung von Phonemen auf Grapheme = \textbf{Phonem-Graphem-Korrespondenz} (PGK)
 		\item Weitere Prinzipien:
 		
 		\begin{itemize}
@@ -795,7 +832,7 @@ normativen Charakter \ras \textbf{Orthographische Herangehensweise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Phonographisches Prinzip}
+\subsubsection{Phonographisches Prinzip}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -978,6 +1015,8 @@ Phonem
 	}
 \end{table}
 
+Grapheme mit zwei Buchstaben heißen Digraph, solche mit drei Buchstaben Trigraph, \ldots
+
 \end{frame}
 
 \iftoggle{uebung}{
@@ -987,7 +1026,7 @@ Phonem
 \frametitle{Phonographisches Prinzip}
 
 \begin{itemize}
-	\item Geben Sie 10 Wörter an, die phonographisch geschrieben werden
+	\item Geben Sie 10 Wörter an, die phonographisch geschrieben werden.
 	\item[]	
 	\item Wie würden Sie die folgenden Wörter phonographisch schreiben?
 		
@@ -995,7 +1034,7 @@ Phonem
 		\item Philosophie, Handy, Balkon, Creme, Mutter, Streithahn
 	\end{itemize}
 	\item[]	
-	\item Versuchen Sie, graphematische Regularitäten und Prinzipien zu finden, die die Unterscheidung lang vs. kurz bei Vokalen anzeigen. Gibt es Ausnahmen?
+	\item Versuchen Sie, graphematische Regularitäten und Prinzipien zu finden, die die Unterscheidung lang vs.\ kurz bei Vokalen anzeigen. Gibt es Ausnahmen?
 		
 	\begin{itemize}
 		\item Mutter, Mehl, See, Nase, dehnen, gehen, Zoo, Bier, Moor, an, zum, Mann, man, Herbst, Laub, sehr, Bohrer
@@ -1010,7 +1049,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Silbisches Prinzip}
+\subsubsection{Silbisches Prinzip}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1049,7 +1088,7 @@ Phonem
 \frametitle{Silbisches Prinzip}
 
 \begin{itemize}
-	\item Vokalqualität und -quantität können phonographisch nicht abgebildet werden (PGK) – aber es gibt Regularitäten auf Silbenebene
+	\item Vokalqualität und -quantität können phonographisch nicht abgebildet werden (PGK) -- aber es gibt Regularitäten auf Silbenebene
 	\item[]
 	\item Für morphologisch einfache Wörter 
 	
@@ -1138,7 +1177,7 @@ Phonem
 		
 		  \ea
                   \ab{\textbf{See}}, \ab{\textbf{Armee}}, \ab{\textbf{Klischee}},
-                  \ab{\textbf{Allee}}, \ab{\textbf{Orchidee}}
+                  \ab{\textbf{Allee}}%, \ab{\textbf{Orchidee}}
                   \z
 		
 	\end{itemize}
@@ -1183,7 +1222,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Morphologisches Prinzip}
+\subsubsection{Morphologisches Prinzip}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1202,9 +1241,9 @@ Phonem
 		\item Wörter oder Wortformen, die in einer morphologischen Beziehung stehen, werden ähnlich oder gleich geschrieben.
 		
 		  \eal
-                  \ex \ab{Apfel} - \ab{Äpfel}, nicht \ab{Epfel}
-		  \ex \ab{Mutter} - \ab{Mütter}, nicht \ab{Mytter}
-		  \ex \ab{Ball} - \ab{Bälle}, nicht \ab{Bal} und \ab{Belle}
+                  \ex \ab{Apfel} -- \ab{Äpfel}, nicht \ab{Epfel}
+		  \ex \ab{Mutter} -- \ab{Mütter}, nicht \ab{Mytter}
+		  \ex \ab{Ball} -- \ab{Bälle}, nicht \ab{Bal} und \ab{Belle}
                   \zl
 			 
 	\end{itemize}
@@ -1218,7 +1257,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Übung}
+\subsubsection{Übung}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1246,7 +1285,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Homonymiedifferenzierungsprinzip}
+\subsubsection{Homonymiedifferenzierungsprinzip}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1263,13 +1302,13 @@ Phonem
 	\item Entsprechung:
 
 	  \ea
-          Leib – Laib; Seite – Saite; Lied – (Augen)Lid
+          Leib -- Laib; Seite -- Saite; Lied -- (Augen)Lid
           \z
 
 	\item Aber:
 	
 	  \ea
-          Kiefer – Kiefer; Bremse – Bremse; Ton – Ton
+          Kiefer -- Kiefer; Bremse -- Bremse; Ton -- Ton
           \z
 	
 	\item Möglichkeiten zur Homophonendifferenzierung werden also keineswegs konsequent ausgenutzt.
@@ -1281,7 +1320,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Etymologische Schreibung}
+\subsubsection{Etymologische Schreibung}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1309,7 +1348,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Ästhetisches Prinzip}
+\subsubsection{Ästhetisches Prinzip}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1337,9 +1376,9 @@ Phonem
 	\item Verbot von Doppelschreibung von Mehrgraphemen wie
 	
 	  \eal
-          \ex \ab{ng} in \ab{Bearbeitungngen}
-	  \ex \ab{ch} in \ab{Büchcher} 
-	  \ex \ab{sch} in \ab{graphischsch}
+          \ex \ab{ng} in \ab{Bearbeitu\textcolor{red}{ngng}en}
+	  \ex \ab{ch} in \ab{Bü\textcolor{red}{chch}er} 
+	  \ex \ab{sch} in \ab{graphi\textcolor{red}{schsch}e}
           \zl
 	
 \end{itemize}
@@ -1350,7 +1389,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Syntaktische Schreibung}
+\subsubsection{Syntaktische Schreibung}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1378,7 +1417,7 @@ Phonem
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Übungen}
+\subsection{Übungen}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -1409,6 +1448,246 @@ Phonem
 \end{frame}
 
 }
+
+\iftoggle{hausaufgabe}{
+	
+	\subsection{Hausaufgabe}
+	\iftoggle{toc}{
+		\frame{
+			\frametitle{~}
+			\begin{multicols}{2}
+				\tableofcontents[currentsection]
+			\end{multicols}	
+		}
+	}
+\begin{frame}%[allowframebreaks]
+	\frametitle{Hausaufgabe}
+	
+\begin{itemize}
+	
+	\item[1.] Kreuzen Sie die korrekten Aussagen an.
+	
+	\begin{itemize}
+		\item[$\circ$] Die Orthographie ist eine linguistische Teildisziplin, die beschreibt wie man schreibt. Die Graphematik ist dagegen keine Teildisziplin der Linguistik, sondern eine \gqq{willkürliche} (normierende) Festlegung.
+		\item[$\circ$] Die Graphematik sollte intuitiv beherrschbar sein und das Lesen und Schreiben vereinfachen.
+		\item[$\circ$] Das Wort \ab{kalt} ist eine graphematisch \gqq{nackte} Silbe.
+		\item[$\circ$] Es gibt im Deutschen eine eindeutige 1-zu-1-Korrespondenz zwischen Buchstaben und Lauten.
+		\item[$\circ$] Das Wort \ab{aufwändig} wird aufgrund des morphologischen Prinzips (auch Prinzip der Schemakonstanz, Stammprinzip oder Verwandtschaftsprinzip) mit \ab{ä} geschrieben (vgl. \ab{Aufwand}).
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item[2.] Ordnen Sie die graphematischen Prinzipien links den passenden Beispielen für die entsprechenden Prinzipien rechts zu.
+		\begin{table}[h!]
+			\begin{minipage}{0.45\textwidth}
+				\centering
+				\begin{tabular}{|l|}
+					\hline
+					(A) Etymologische Schreibung\\
+					\hline
+					(B) Homonymievermeidung\\
+					\hline
+					(C) Morphologisches Prinzip\\
+					\hline
+					(D) Silbische Prinzip\\
+					\hline
+					(E) Phonographisches Prinzip\\
+					\hline
+				\end{tabular}
+			\end{minipage}\hfill%
+			\begin{minipage}{0.45\textwidth}
+				\centering
+				\begin{tabular}{|p{0.075\textwidth}|l|}
+					\hline
+					& Bad, Bäder \\
+					\hline
+					& gehen \\
+					\hline
+					& Cello, *Tschello \\
+					\hline
+					& Wahl, Wal\\
+					\hline
+					& Flasche \\
+					\hline
+				\end{tabular}
+			\end{minipage}
+		\end{table}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item[3.] Betrachten Sie die unten angegebenen Kontexte. Diskutieren Sie kurz anhand dieser Beispiele, ob es sich bei der Groß- und Kleinschreibung des markierten Buchstabens um unterschiedliche Grapheme handeln kann oder nicht.
+\eal
+			\ex Dieser \underline{W}eg ist sehr steil.
+			\ex \underline{W}ege, die ich nicht bewandert habe, gibt es viele.
+			\ex Meine Schlüssel sind \underline{w}eg.
+			\ex \gqq{\underline{W}eg!}, schrie sie mich an und knallte mir die Tür vor der Nase zu.
+			\ex Geh \underline{w}eg!
+\zl
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item[4.] Erläutern Sie stichpunktartig, welche (graphematische) Funktionen der Buchstabe \gqq{h} in den folgenden Kontexten annimmt:
+	\eal
+			\ex Ha\underline{h}n:
+			\bigskip
+			\ex nä\underline{h}en:
+			\bigskip
+			\ex bein\underline{h}alten:
+			\bigskip
+			\ex Gesc\underline{h}ichte:
+			\bigskip
+			\ex Geschic\underline{h}te:
+			\bigskip
+			\ex Dip\underline{h}thong:
+			\bigskip
+			\ex Dipht\underline{h}ong:
+	\zl
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item[5.] Geben Sie die \textbf{phonologische} Transkription, die \textbf{phonetische} Transkription und die \textbf{phonographische} Schreibung (nach der Phonem-Graphem-Korrespondenz) des folgenden Wortes an.
+		
+		\ea Abstellkammer
+		\z
+		
+	\end{itemize}
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%% Hausaufgaben Loesung %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iftoggle{ha-loesung}{
+	
+	\subsection{Lösung der Hausaufgabe}
+	\iftoggle{toc}{
+		\frame{
+			\frametitle{~}
+			\begin{multicols}{2}
+				\tableofcontents[currentsection]
+			\end{multicols}	
+		}
+	}
+	\begin{frame}%[allowframebreaks]
+		\frametitle{Lösung der Hausaufgabe}
+		
+		\begin{itemize}
+			
+			\item[1.] Kreuzen Sie die korrekten Aussagen an.
+			
+			\begin{itemize}
+			\item[$\circ$] Die Orthographie ist eine linguistische Teildisziplin, die beschreibt wie man schreibt. Die Graphematik ist dagegen keine Teildisziplin der Linguistik, sondern eine \gqq{willkürliche} (normierende) Festlegung.
+			\item[$\checkmark$] Die Graphematik sollte intuitiv beherrschbar sein und das Lesen und Schreiben vereinfachen.
+			\item[$\circ$] Das Wort \ab{kalt} ist eine graphematisch \gqq{nackte} Silbe.
+			\item[$\circ$] Es gibt im Deutschen eine eindeutige 1-zu-1-Korrespondenz zwischen Buchstaben und Lauten.
+			\item[$\checkmark$] Das Wort \ab{aufwändig} wird aufgrund des morphologischen Prinzips (auch Prinzip der Schemakonstanz, Stammprinzip oder Verwandtschaftsprinzip) mit \ab{ä} geschrieben (vgl. \ab{Aufwand}).
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{itemize}
+			\item[2.] Ordnen Sie die graphematischen Prinzipien links den passenden Beispielen für die entsprechenden Prinzipien rechts zu.
+			\begin{table}[h!]
+				\begin{minipage}{0.45\textwidth}
+					\centering
+					\begin{tabular}{|l|}
+						\hline
+						(A) Etymologische Schreibung\\
+						\hline
+						(B) Homonymievermeidung\\
+						\hline
+						(C) Morphologisches Prinzip\\
+						\hline
+						(D) Silbische Prinzip\\
+						\hline
+						(E) Phonographisches Prinzip\\
+						\hline
+					\end{tabular}
+				\end{minipage}\hfill%
+				\begin{minipage}{0.45\textwidth}
+					\centering
+					\begin{tabular}{|p{0.075\textwidth}|l|}
+						\hline
+						C & Bad, Bäder \\
+						\hline
+						D & gehen \\
+						\hline
+						A & Cello, *Tschello \\
+						\hline
+						B & Wahl, Wal\\
+						\hline
+						E & Flasche \\
+						\hline
+					\end{tabular}
+				\end{minipage}
+			\end{table}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}[allowframebreaks]
+		\begin{itemize}
+			\item[3.] Betrachten Sie die unten angegebenen Kontexte. Diskutieren Sie kurz anhand dieser Beispiele, ob es sich bei der Groß- und Kleinschreibung des markierten Buchstabens um unterschiedliche Grapheme handeln kann oder nicht.
+			\eal
+			\ex Dieser \underline{W}eg ist sehr steil.
+			\ex \underline{W}ege, die ich nicht bewandert habe, gibt es viele.
+			\ex Meine Schlüssel sind \underline{w}eg.
+			\ex \gqq{\underline{W}eg!}, schrie sie mich an und knallte mir die Tür vor der Nase zu.
+			\ex Geh \underline{w}eg!
+			\zl
+			
+
+%			\textcolor{red}{
+				\item Graphem: Kleinste bedeutungsunterscheidende Einheit im schriftlichen System
+				\item \ab{Weg} und \ab{weg} kann als Minimalpaar angesehen werden, und \ab{W} und \ab{w} als unterschiedliche Grapheme, da sie bedeutungsunterscheidend sind. Es gibt darüber hinaus weitere Beispiele, die diese Tendenz zu belegen scheinen \ab{Reisen} \vs \ab{reisen}, \ab{Sie} \vs \ab{sie}, \ab{Gut} \vs \ab{gut}.
+				\item Andererseits kann die Großschreibung durch andere Prinzipien bedingt werden (\zB Satzanfang) und verliert somit den bedeutungsunterscheidenden Charakter.
+				\item Unter Berücksichtigung \underline{der gegebenen Beispiele} könnte man vermuten das \ab{W} und \ab{w} unterschiedliche Grapheme sind. An sich hat die Groß- und Kleinschreibung aber eine andere Funktion im Schriftsystem des Deutschen!
+%			}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{itemize}
+			\item[4.] Erläutern Sie stichpunktartig, welche (graphematische) Funktionen der Buchstabe \gqq{h} in den folgenden Kontexten annimmt:
+			\eal
+			\ex Ha\underline{h}n: Dehnungs-\ab{h}
+			\bigskip
+			\ex nä\underline{h}en: Silbentrennendes \ab{h}
+			\bigskip
+			\ex bein\underline{h}alten: Wiedergabe eines Phonems \textipa{[h]} nach den Phonem-Graphem-Korrespondenzen
+			\bigskip
+			\ex Gesc\underline{h}ichte: Teil eines Trigraphen \ab{sch}\\(Achtung! Nicht Teil eines Lauts sondern eines Graphems!)
+			\bigskip
+			\ex Geschic\underline{h}te: Teil eines Digraphen \ab{ch}\\(Achtung! Nicht Teil eines Lauts sondern eines Graphems!)
+			\bigskip
+			\ex Dip\underline{h}thong: Teil eines Fremddigraphen \ab{ph}
+			\bigskip
+			\ex Dipht\underline{h}ong: Teil eines Fremddigraphen \ab{th}
+			\zl
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{itemize}
+			\item[5.] Geben Sie die \textbf{phonologische} Transkription, die \textbf{phonetische} Transkription und die \textbf{phonographische} Schreibung (nach der Phonem-Graphem-Korrespondenz) des folgenden Wortes an.
+			
+			\ea Abstellkammer
+			\z
+			
+			\item[] Phonologisch: \textipa{/ a b S t E l k a m @ \textscr~/}
+			\item[] Phonetisch: \textipa{[ P a p S t E l k a m 5 ]}
+			\item[] Phonographisch: \ab{ a b sch t e l k a m e r } 
+			\item[] Hier erkennt man, dass es sich bei der phonographischen Trankskription um eine Phonem-Graphem-Korrespondenz (und nicht um eine Phon-Graphem-Korrespondenz) handelt.
+			
+		\end{itemize}
+	\end{frame}
+} %ha-loesung
 
 
 

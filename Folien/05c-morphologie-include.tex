@@ -30,20 +30,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
 
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 	}
+	}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\nocite
+\begin{frame}
+\frametitle{Begleitlektüre}
 
+\begin{itemize}
+	\item Derivation und andere Wortbildungsarten:
+\begin{itemize}
+		\item AM S.~46--51
+	\item \citet{Meibauer&Co07a}: Kapitel 2 (S.~48--66)
+\end{itemize}
+	\item Flexion:
+\begin{itemize}
+		\item AM S.~51--54
+	\item  \citet{Meibauer&Co07a}: Kapitel 2 (S.~21--29)
+\end{itemize}
+\end{itemize}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -304,7 +320,7 @@
 \begin{minipage}[c]{0.35\textwidth}
 
 \begin{forest}
-sn edges,
+sm edges,
 [Adj
 	[N
 		[glück]]
@@ -675,7 +691,7 @@ sn edges,
 	\item Im Baum sehen Präfixe wie folgt aus:
 	
 \begin{forest}
-sn edges,
+sm edges,
 [Adj
 	[Aaf
 		[erz]]
@@ -1040,7 +1056,8 @@ unterhaltsam)
 \begin{frame}
 \frametitle{Konversion}
 
-	\ex. grasen
+	\ea grasen
+	\z
 
 \begin{figure}
 \centering
@@ -1052,7 +1069,7 @@ unterhaltsam)
 \end{itemize}
 
 \begin{forest}
-sn edges,
+sm edges,
 [V
 	[V
 		[N
@@ -1071,7 +1088,7 @@ sn edges,
 \end{itemize}
 
 \begin{forest}
-sn edges,
+sm edges,
 [V
 	[V
 		[N

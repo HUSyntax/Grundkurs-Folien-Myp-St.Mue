@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[a4paper,11pt, bibtotoc]{beamer}
+%\documentclass[10pt,a4paper]{beamer}
+\documentclass[10pt,handout]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PACKAGES       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{localpackages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Preamble's End                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+
+\input{localcommands}
+
+%\togglefalse{uebung}
+%\toggletrue{uebung}
+%\togglefalse{loesung}
+%\toggletrue{loesung}
+\togglefalse{toc}
+%\toggletrue{toc}
+
+%\input{05a-morphologie-include}
+\include{05a-wortbildung-include}
+\include{05b-flexion-include}
+\include{05c-morphologie-ha}
+
+\input{gk-literatur}
+
+\end{document}
+
+

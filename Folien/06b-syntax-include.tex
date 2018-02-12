@@ -1,7 +1,8 @@
-%\togglefalse{uebung}
-%\toggletrue{uebung}
-%\togglefalse{loesung}
-%\toggletrue{loesung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Metadata                         %%%
@@ -21,7 +22,7 @@
 \institute{Institut für deutsche Sprache und Linguistik}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
-\date{22.\ Juni 2016}
+\date{19.\ Dezember 2017}
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
@@ -34,12 +35,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
+	}
 	}
 
 
@@ -47,7 +49,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%LITERATURE:
 
-\nocite{Brandt&Co06a} \nocite{Glueck05a} \nocite{Grewendorf&Co91a} \nocite{Luedeling2009a} \nocite{Meibauer&Co07a} \nocite{MuellerS13f} \nocite{MuellerS15b}\nocite{Repp&Co15a} \nocite{Stechow&Sternefeld88a}
+\nocite{Brandt&Co06a} 
+\nocite{Glueck&Roedel16a}
+\nocite{Grewendorf&Co91a} 
+\nocite{Luedeling2009} 
+\nocite{Meibauer&Co07a} 
+\nocite{MuellerS13f} 
+\nocite{MuellerS15b}
+\nocite{Repp&Co15a} 
+\nocite{Stechow&Sternefeld88a}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,7 +120,7 @@
 
 \begin{itemize}
 
-	\item Sprachliche Intuition \ras wesentlich in den sog. generativen Syntaxtheorien seit \citet{Chomsky57a}
+	\item Sprachliche Intuition \ras wesentlich in den sog. generativen Syntaxtheorien seit \citet{Chomsky57x}
 
 \begin{figure}
 \centering
@@ -129,7 +139,7 @@
 
 \begin{itemize}
 
-	\item Sprachliche Intuition \ras wesentlich in den sog. generativen Syntaxtheorien seit \citet{Chomsky57a}
+	\item Sprachliche Intuition \ras wesentlich in den sog. generativen Syntaxtheorien seit \citet{Chomsky57x}
 
 \begin{figure}
 \centering
@@ -147,9 +157,9 @@
 \frametitle{Generative Grammatik}
 
 \begin{itemize}
-	\item Was ist diese Generative Grammatik?
+	\item Was ist diese Generative Grammatik? \citep[vgl.][]{Fries&MyP16c}
 	\item[]
-	\item Seit \citet{Chomsky57a} und \citet{Chomsky65a}
+	\item Seit \citet{Chomsky57x} und \citet{Chomsky65a}
 	\item[]
 	\item \textbf{Dynamische Theorie} (vgl. Statische Theorie \ras \zB Strukturalismus)
 	\begin{itemize}
@@ -181,9 +191,11 @@
 	\begin{itemize}
 		\item Bruch mit behaviouristischer Vorgehensweise (Empirismus)
 		\item Rationalistische Sichtweise des Spracherwerbs
-		\item Universal Grammatik \ras genetisch verankerte Grundlage der menschlichen Sprachfähigkeit
+		\item Universalgrammatik \ras genetisch verankerte Grundlage der menschlichen Sprachfähigkeit
 	\end{itemize}
 \end{itemize}
+
+\nocite{Fries&MyP16d}
 
 \end{frame}
 
@@ -231,8 +243,8 @@ Durch eine \textbf{deskriptive} Vorgehensweise wird ein Regelapparat erstellt, u
 \begin{frame}
 \frametitle{Kompetenz \vs Performanz}
 
-\begin{block}{Kompetenz}
-Sprachfähigkeit. Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wissenssystem von Regeln}, das der Produktion und Rezeption unendlich vieler Sätzen zugrunde liegt (auch: I-Sprache für internalisierte Sprache).
+\begin{block}{Kompetenz (Sprachfähigkeit)}
+Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wissenssystem von Regeln}, das der Produktion und Rezeption unendlich vieler Sätzen zugrunde liegt (auch: I-Sprache für internalisierte Sprache). \citep[vgl.][]{Fries&MyP16d}
 \end{block}	
 
 
@@ -252,10 +264,10 @@ Sprachfähigkeit. Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wi
 
 \pause		
 \only<2>{
-		\ea \alert{Peter$_i$} rasiert \{\alert{*ihn$_i$/sich$_i$}\}.
+		\ea \alertred{Peter$_i$} rasiert \{\alertred{*ihn$_i$/sich$_i$}\}.
 		\z
 		
-		\ea \alert{Peter$_i$} freut sich, dass man \{\alert{ihn$_i$/*sich$_i$}\} gelobt hat.
+		\ea \alertred{Peter$_i$} freut sich, dass man \{\alertred{ihn$_i$/*sich$_i$}\} gelobt hat.
 		\z
 		}
 
@@ -276,10 +288,10 @@ Sprachfähigkeit. Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wi
 		\item \textbf{strukturelle und lexikalische Ambiguitäten} zu erkennen,
 \pause
 \only<6>{
-		\ea Peter traf \alert{die Frau mit dem roten Schuh}.
+		\ea Peter traf \alertred{die Frau mit dem roten Schuh}.
 		\z
 		
-		\ea Peter liebt die \alert{Schule}.
+		\ea Peter liebt die \alertred{Schule}.
 		\z
 		}
 
@@ -288,10 +300,10 @@ Sprachfähigkeit. Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wi
 		\item \textbf{syntaktisch wohlgeformte Äußerungen} zu erkennen, auch wenn der Inhalt unsinnig ist.
 \pause
 \only<8>{
-		\ea[]{Viele hartnäckig verheiratete Jungessellen stehen intensiv.}
+		\ea[]{Viele hartnäckig verheiratete Junggesellen stehen intensiv.}
 		\z
 		
-		\ea[*]{Hartnäckig intensiv Jungessellen stehen verheiratete viele.}
+		\ea[*]{Hartnäckig intensiv Junggesellen stehen verheiratete viele.}
 		\z
 		}
 		
@@ -317,8 +329,8 @@ Sprachfähigkeit. Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wi
 \begin{frame}
 \frametitle{Kompetenz vs. Performanz}
 
-\begin{block}{Performanz}
-Sprachverwendung. Anwendung der Sprachfähigkeit in einer konkreten Sprechsituation.
+\begin{block}{Performanz (Sprachverwendung)}
+Anwendung der Sprachfähigkeit in einer konkreten Sprechsituation \citep[vgl.][]{Fries&MyP16d}	
 \end{block}
 
 \end{frame}
@@ -326,63 +338,52 @@ Sprachverwendung. Anwendung der Sprachfähigkeit in einer konkreten Sprechsituat
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Kompetenz vs. Performanz}
 
-\begin{itemize}
-	\item Die Performanz weicht oft von der Kompetenz ab: 
+Die Performanz weicht oft von der Kompetenz ab: 
 	\begin{itemize}
-		\item[]
 		\item Sprecher versprechen sich, 
 		
 \pause		
 %\only<2>{
-		\ea Ich hätte gerne einen Kilchmaffee\dots\ Ähm! Ich meine einen MILCHKaffee.
+		\ea Ich hätte gerne einen \alertred{K}ilch\alertred{m}affee\dots\ Ähm! Ich meine einen \alertred{M}ILCH\alertred{K}affee.
 		\z
 %		}
 
-\pause
-		\item[]		
+\pause	
 		\item brechen mitten im Satz ab,
 \pause		
 %\only<4>{
-		\ea Ich wollte ja noch \dots\ Ach, nichts!
+		\ea Ich wollte ja noch \alertred{\dots } Ach, nichts!
 		\z
 %		}
-		 
-		\item[] 
+
 		\item wiederholen Wörter.
 \pause		
 %\only<6>{
-		\ea Ich hab ich hab ich hab gestern noch den Film geguckt.
+		\ea \alertred{Ich hab ich hab ich hab} gestern noch den Film geguckt.
 		\z
 %		}
-		
-		\item[]
+
 		\item[]	Aber niemand würde daraus schließen, dass sie ihre Muttersprache nicht beherrschen.
 	\end{itemize}
-
-\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Kompetenz vs. Performanz}
 
 \begin{itemize}
 
-	\item Die Unterscheidung grammatisch-ungrammatisch spiegelt die Kompetenz des \textbf{idealen Sprecher-Hörers} wider.
-\end{itemize}
-
-\begin{block}{Idealer Sprecher-Hörer}
-Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Grammatik, um die Sprachdaten, mit denen gearbeitet wird, von \gqq{Performanzeffekten zu bereinigen}. Notwendig für eine Abgrenzung des Untersuchungsgegenstandes der GG.
-\end{block}
-
-\begin{itemize}
+	\item Die Unterscheidung grammatisch-ungrammatisch spiegelt die Kompetenz des \textbf{idealen Sprecher"=Hörers} wider.
+	\begin{itemize}
+		\item [\ras] \textbf{Idealer Sprecher"=Hörer:}\\
+			Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Grammatik, um die Sprachdaten, mit denen gearbeitet wird, von \gqq{Performanzeffekten zu bereinigen}. Notwendig für eine Abgrenzung des Untersuchungsgegenstandes der GG. \citep[vgl.][]{Fries16b}
+	\end{itemize}
+\item []
 	\item Die verschiedenen Akzeptabilitätsgrade haben häufig mit Performanzeffekten zu tun.
-	\item[]
-	\item Die Kompetenz-Performanz-Dichotomie wird in einigen (gebrauchsbasierten) Frameworks (\zB Construction Grammar) abgelehnt \citep[vgl.][]{MuellerS15b, Nolda&Co14a}. 
+	\item []
+	\item Die Kompetenz"=Performanz"=Dichotomie wird in einigen (gebrauchsbasierten) Frameworks (\zB Construction Grammar) abgelehnt \citep[vgl.][]{MuellerS15b, Nolda&Co14a}. 
 \end{itemize}
 
 \end{frame}
@@ -403,15 +404,18 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 \begin{itemize}
 
-	\item Die (menschliche) natürliche Sprache unterscheidet sich von der Sprache anderer Tiere in vielerlei Hinsicht. \citep[vgl. \zB ][]{Hockett60a, Pinker95a}\\
-	(Gegenargumente und Diskussion: \citet{Evans&Levinson09a, MuellerS15b})
+	\item Die (menschliche) natürliche Sprache unterscheidet sich von der Sprache anderer Tiere in vielerlei Hinsicht. \citep[vgl. \zB][]{Hockett60x, Pinker95a}\\
+	(Gegenargumente und Diskussion: \citealt{Evans&Levinson09a, MuellerS15b})
 	\item[]
 	\item Welche sind die Merkmale, die eine \textbf{natürliche Sprache} von anderen Sprachen unterscheiden? 
 	\begin{itemize}
-		\item Produktivität, Bidirektionalität, Arbitrarität, Diskretheit, Rekursivität, \dots \citep[vgl.][]{Luedeling2009a}
+		\item Produktivität, Bidirektionalität, Arbitrarität, Diskretheit, Rekursivität, \dots\ \citep[vgl.][]{Hockett60x, Luedeling2009}
 	\end{itemize}
+
+%	Syntax von Vögeln! 
+
 	\item[]
-	\item Andere Primaten können bspw. lexikalische Einträge erwerben (25--125 lexikalische Einträge), aber keine abstrakten Regeln!
+	\item Andere Primaten können bspw. lexikalische Einträge erwerben (25--125 lexikalische Einträge), aber \textbf{keine abstrakten Regeln}.
 \end{itemize}
 
 \end{frame}
@@ -423,23 +427,24 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.3]{material/06nimchimpsky}
+	\includegraphics[scale=.26]{material/06nimchimpsky}
 	\caption{Nim Chimpsky}
 \end{figure}
 
 \begin{itemize}
 	\item Siehe \textbf{Nim Chimpsky}: \url{https://en.wikipedia.org/wiki/Nim_Chimpsky}
+\end{itemize}
+
 	\ea Give orange me give eat orange me eat orange give me eat orange give me you. \hfill (Nim Chimpsky)
 	\z
 
-\end{itemize}
+
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
 
 \begin{itemize}
 	\item \textbf{Erwerbbarkeit} von Regeln 
@@ -461,7 +466,6 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
 
 \begin{itemize}
 	\item \textbf{Argument vom defizienten Input} (Poverty-of-the-Stimulus Argument) beim Spracherwerb:
@@ -488,32 +492,31 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
 
 \begin{itemize}
-	\item \textbf{Argument vom defizienten Input} (Poverty-of-the-Stimulus Argument) beim Spracherwerb (vgl. \citet{Lasnik&Co02a} vs. \citet{Pullum&Scholz02a}):
+	\item \textbf{Argument vom defizienten Input} (Poverty-of-the-Stimulus Argument) beim Spracherwerb (vgl. \citealt{Lasnik&Co02a} vs. \citealt{Pullum&Scholz02a}):
 	\item[]
 	\item Prinzip der \textbf{Strukturabhängigkeit:}
 	\eal 
-	\ex[]{Der Hund \alert{ist} hungrig.}
+	\ex[]{Der Hund \alertred{ist} hungrig.}
 \pause
-	\ex[]{\alert{Ist} der Hund hungrig?}
+	\ex[]{\alertred{Ist} der Hund hungrig?}
 \pause
-	\ex[]{Der Hund, der an der Ecke \alert{ist}, \alert{ist} hungrig.}
+	\ex[]{Der Hund, der an der Ecke \alertred{ist}, \alertred{ist} hungrig.}
 \pause	
-	\ex[*]{\alert{Ist}$_{i}$ der Hund, der an der Ecke \alert{t}$_{i}$, \alert{ist} hungrig?}
+	\ex[*]{\alertred{Ist}$_{i}$ der Hund, der an der Ecke \alertred{t}$_{i}$, \alertred{ist} hungrig?}
 \pause
-	\ex[]{\alert{Ist}$_{i}$ der Hund, der an der Ecke \alert{ist}, \alert{t}$_{i}$ hungrig?}
+	\ex[]{\alertred{Ist}$_{i}$ der Hund, der an der Ecke \alertred{ist}, \alertred{t}$_{i}$ hungrig?}
 	\zl
 
 \pause	
 
 	\eal 
-	\ex \alert{Er}$_{\neq 1, =2}$ hat gesagt, dass \alert{Peter}$_1$ Maria mag.
+	\ex \alertred{Er}$_{\neq 1, =2}$ hat gesagt, dass \alertred{Peter}$_1$ Maria mag.
 \pause	
-	\ex \alert{Peter}$_1$ hat gesagt, dass \alert{er}$_{=1, =2}$ Maria mag.
+	\ex \alertred{Peter}$_1$ hat gesagt, dass \alertred{er}$_{=1, =2}$ Maria mag.
 \pause	
-	\ex Dass \alert{er}$_{=1, =2}$ Maria mag, hat \alert{Peter}$_1$ gesagt.
+	\ex Dass \alertred{er}$_{=1, =2}$ Maria mag, hat \alertred{Peter}$_1$ gesagt.
 	\zl
 	
 	
@@ -572,7 +575,6 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
 
 \begin{itemize}
 	\item Unterschiedliche Sprachen auf der Welt aber nur \textbf{eine UG}? \ras \textbf{Prinzipien vs. Parameter}
@@ -597,7 +599,6 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
 
 \begin{itemize}
 
@@ -610,9 +611,9 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 	\item \textbf{Kopfparameter:} Position des Kopfes einer Phrase (vgl. Prinzip der Rechtsköpfigkeit in der Morphologie)
 	
 	\eal
-	\ex Dt.: das grüne \alert{Haus}
+	\ex Dt.: das grüne \alertred{Haus}
 	\ex
-	\gll Sp.: la \alert{casa} verde\\
+	\gll Sp.: la \alertred{casa} verde\\
 		{} das Haus grün\\
 	\zl
 	
@@ -626,11 +627,9 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
 
 \begin{itemize}
 	\item Inventar an Prinzipien und Parametern ist beschränkt (aus Ökonomiegründen)
-	\item[]
 	\item Prinzipien und Parameter sind Teil unserer grammatischen Kompetenz.
 	\item[]
 	\item \textbf{Kerngrammatik} = UG + sprachspezifische Parameter
@@ -646,6 +645,8 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 	
 \end{itemize}
 
+\nocite{MyP17b}
+
 \end{frame}
 
 
@@ -654,10 +655,10 @@ Theoretisches (und nicht unumstrittenes) Konstrukt innerhalb der Generativen Gra
 \frametitle{Universalgrammatik}
 
 \begin{block}{Ziel generativer Theorien}
-In einer \textbf{deskriptiven} Vorgehensweise werden Phänomene adäquat \textbf{beobachtet} und deren \textbf{linearen} und \textbf{hierarchischen} Regelmäßigkeiten adäquat \textbf{beschrieben}, dabei werden die \textbf{Performanz}phänomene und die Elemente der \textbf{Peripherie} aus der Untersuchung ausgeschlossen. Aus den Phänomenen der \textbf{Kerngrammatik} wird versucht, allgemeine (\textbf{universelle}) Gesetzmäßigkeiten der menschlichen Sprachfähigkeit abzuleiten (\textbf{Prinzipien und Parameter \ras UG}), um somit die menschliche (Sprach)\textbf{Kompetenz} zu \textbf{erklären}.
+In einer \textbf{deskriptiven} Vorgehensweise werden Phänomene adäquat \textbf{beobachtet} und deren \textbf{linearen} und \textbf{hierarchischen} Regelmäßigkeiten adäquat \textbf{beschrieben}, dabei werden die \textbf{Performanz}phänomene und die Elemente der \textbf{Peripherie} aus der Untersuchung ausgeschlossen. Aus den Phänomenen der \textbf{Kerngrammatik} wird versucht, allgemeine (\textbf{universelle}) Gesetzmäßigkeiten der menschlichen Sprachfähigkeit abzuleiten (\textbf{Prinzipien und Parameter \ras UG}), um somit die menschliche (Sprach)\textbf{Kompetenz} zu \textbf{erklären}. \citep[vgl.][]{Fries16c}
 \end{block}
 
-Schlagen Sie \gqq{Adäquatheit} in \citet{Glueck05a} nach!
+Schlagen Sie \gqq{Adäquatheit} in \citet{Glueck&Roedel16a} nach!
 
 \end{frame}
 
@@ -776,7 +777,6 @@ Schlagen Sie \gqq{Adäquatheit} in \citet{Glueck05a} nach!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Wortarten}
-
 \begin{itemize}
 	\item \textbf{Schwierigkeiten} mit prototypischen Eigenschaften:
 
@@ -794,27 +794,33 @@ Präposition oder Präposition + Nomen (+ Nomen im Genitiv?)
 
 \pause	
 	nicht V2-fähig wie die \gqq{gewöhnlichen} Verben
-\pause
-
-	\ea Das \textbf{Schlafen}
-	\z
-
-\pause
-Verb oder Nomen?
-\pause
-
-	\eal
-	\ex Er \textbf{kauft} Brot. 
-	\ex Er hat das Brot \textbf{gekauft}.
-\pause
-	\ex Das \textbf{gekaufte} Brot
-	\zl
-	
-\pause
-Verb oder Adjektiv?
 
 \end{itemize}
 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Wortarten}
+
+	\begin{itemize}
+			\item \textbf{Schwierigkeiten} mit prototypischen Eigenschaften:
+				\ea Das \textbf{Schlafen}
+			\z
+			
+			\pause
+			Verb oder Nomen?
+				\eal
+			\ex Er \textbf{kauft} Brot. 
+			\ex Er hat das Brot \textbf{gekauft}.
+			\pause
+			\ex Das \textbf{gekaufte} Brot
+			\zl
+			
+			\pause
+			Verb oder Adjektiv?
+	\end{itemize}
 \end{frame}
 
 
@@ -875,7 +881,6 @@ Partikel & Part & ja, wohl, leider \\
 
 \begin{itemize}
 	\item Nicht nur Wörter, sondern auch größere Einheiten spielen in der Syntax eines Satzes eine wichtige Rolle.
-	\item[]
 	\item Pausen beim Vorlesen:
 	\ea Eine 16 Jahre alte Französin starb nach dem Verzehr eines Döners an Lebensmittelvergiftung.\jambox{(Quelle: \url{www.frauenzimmer.de})}
 	\z
@@ -883,9 +888,9 @@ Partikel & Part & ja, wohl, leider \\
 \pause	
 	\item Verschiebungen in einem Satz:
 	\eal 
-	\ex[]{Eine 16 Jahre alte Französin starb \alert{[nach dem Verzehr]} eines Döners an Lebensmittelvergiftung.}
-	\ex[]{\alert{[Nach dem Verzehr eines Döners]} starb eine 16 Jahre alte Französin an Lebensmittelvergiftung.}
-	\ex[*]{\alert{[Nach dem Verzehr]} starb eine 16 Jahre alte Französin \alert{[eines Döners]} an Lebensmittelvergiftung.}
+	\ex[]{Eine 16 Jahre alte Französin starb \alertred{[nach dem Verzehr]} eines Döners an Lebensmittelvergiftung.}
+	\ex[]{\alertred{[Nach dem Verzehr eines Döners]} starb eine 16 Jahre alte Französin an Lebensmittelvergiftung.}
+	\ex[*]{\alertred{[Nach dem Verzehr]} starb eine 16 Jahre alte Französin \alertred{[eines Döners]} an Lebensmittelvergiftung.}
 	\zl
 
 
@@ -918,15 +923,14 @@ Partikel & Part & ja, wohl, leider \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Konstituenten}
 
 \begin{itemize}
-	\item Die hierarchische Struktur des Satzes lässt sich in der Gehirnaktivität bei der Verarbeitung erkennen (Siehe \citet{Devitt15a} (Pro Chomsky) vs. \citet{Boutonnet15a} (Gegen Chomsky))	
+	\item Die hierarchische Struktur des Satzes lässt sich in der Gehirnaktivität bei der Verarbeitung erkennen (Siehe \citealt{Devitt15a} (pro Chomsky) vs.\ \citealt{Boutonnet15a} (contra Chomsky))	
 \end{itemize}
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.35]{material/10gehirnaktivitaet}
+	\includegraphics[scale=.33]{material/10gehirnaktivitaet}
 	\caption{\citep[Quelle:][]{Boutonnet15a}}
 \end{figure}
 
@@ -955,7 +959,7 @@ Partikel & Part & ja, wohl, leider \\
 
 \begin{itemize}
 
-	\item \textbf{Konstituententests} \citep[vgl.][4ff.]{MuellerS13f}
+	\item \textbf{Konstituententests} \citep[vgl.][]{MyP18a}
 	\begin{itemize}
 		\item Ersetzungstest (oder Substitutionstest)
 		\item Pronominalisierungstest
@@ -966,7 +970,7 @@ Partikel & Part & ja, wohl, leider \\
 		\item (Koordinationstest, Parenthesetest, \dots )
 	\end{itemize}
 	\item[]
-	\item (Phrasale) Konstituenten sollten sich in den meisten dieser Tests als Einheit verhalten.
+	\item (Phrasale) Konstituenten sollten sich \textbf{in den meisten} dieser Tests \textbf{als syntaktische Einheit verhalten}.
 
 \end{itemize}
 
@@ -989,15 +993,15 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich durch ein anderes Wort (/einer anderen Wortfolge) ersetzen lässt, so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal 
-	\ex[]{\alert{[Eine Frau]} starb nach dem Verzehr eines Döners.}
-	\ex[]{\alert{[Ein Mann]} starb nach dem Verzehr eines Döners.}
-	\ex[*]{\alert{[Ein Mann]} nach dem Verzehr eines Döners.}
+	\ex[]{\alertred{[Eine Frau]} starb nach dem Verzehr eines Döners.}
+	\ex[]{\alertred{[Ein Mann]} starb nach dem Verzehr eines Döners.}
+	\ex[*]{\alertred{[Ein Mann]} nach dem Verzehr eines Döners.}
 	\zl
 
 \pause	
 	\eal 
-	\ex Die Frau hat versucht, \alert{[den Döner zu genießen]}.
-	\ex Die Frau hat versucht, \alert{[uns allen Weihnachtsgeschenke zu geben]}.
+	\ex Die Frau hat versucht, \alertred{[den Döner zu genießen]}.
+	\ex Die Frau hat versucht, \alertred{[uns allen Weihnachtsgeschenke zu geben]}.
 	\zl
 	
 \end{itemize}
@@ -1023,16 +1027,16 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich durch ein Pronomen ersetzen lässt, so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal 
-	\ex[]{\alert{[Eine Frau]} starb \alert{[nach dem Verzehr eines Döners]}.}
-	\ex[]{\alert{[Sie]} starb \alert{[dann]}.}
-	\ex[*]{\alert{[Sie]} nach dem Verzehr eines Döners.}
-	\ex[*]{Eine Frau \alert{[dann]}.}
+	\ex[]{\alertred{[Eine Frau]} starb \alertred{[nach dem Verzehr eines Döners]}.}
+	\ex[]{\alertred{[Sie]} starb \alertred{[dann]}.}
+	\ex[*]{\alertred{[Sie]} nach dem Verzehr eines Döners.}
+	\ex[*]{Eine Frau \alertred{[dann]}.}
 	\zl
 
 \pause	
 	\eal 
-	\ex Die Frau versucht, \alert{[den Döner zu genießen]}.
-	\ex Peter versucht \alert{[das]} auch.
+	\ex Die Frau versucht, \alertred{[den Döner zu genießen]}.
+	\ex Peter versucht \alertred{[das]} auch.
 	\zl
 	
 \end{itemize}
@@ -1058,17 +1062,17 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich erfragen lässt (durch ein W-Wort ersetzen lässt), so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal 
-	\ex[]{\alert{[Eine Frau]} starb \alert{[nach dem Verzehr eines Döners]}.}
-	\ex[]{\alert{[Wer]} starb nach dem Verzehr eines Döners?}
-	\ex[]{\alert{[Wann]} starb eine Frau?}
-	\ex[*]{\alert{[Wer]} nach dem Verzehr eines Döners?}
-	\ex[*]{\alert{[Wann]} eine Frau?}
+	\ex[]{\alertred{[Eine Frau]} starb \alertred{[nach dem Verzehr eines Döners]}.}
+	\ex[]{\alertred{[Wer]} starb nach dem Verzehr eines Döners?}
+	\ex[]{\alertred{[Wann]} starb eine Frau?}
+	\ex[*]{\alertred{[Wer]} nach dem Verzehr eines Döners?}
+	\ex[*]{\alertred{[Wann]} eine Frau?}
 	\zl
 
 \pause	
 	\eal 
-	\ex Die Frau versucht, \alert{[den Döner zu genießen]}.
-	\ex \alert{[Was]} versucht die Frau?
+	\ex Die Frau versucht, \alertred{[den Döner zu genießen]}.
+	\ex \alertred{[Was]} versucht die Frau?
 	\zl
 	
 \end{itemize}
@@ -1092,16 +1096,16 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich innerhalb des Satzes verschieben lässt, so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal 
-	\ex[]{Nach dem Verzehr eines Döners starb \alert{[gestern]} \alert{[eine Frau]}.}
-	\ex[]{Nach dem Verzehr eines Döners starb \alert{[eine Frau]} \alert{[gestern]}.}
-	\ex[*]{Nach dem Verzehr eines Döners starb \alert{[eine]} [gestern] [Frau].}
+	\ex[]{Nach dem Verzehr eines Döners starb \alertred{[gestern]} \alertred{[eine Frau]}.}
+	\ex[]{Nach dem Verzehr eines Döners starb \alertred{[eine Frau]} \alertred{[gestern]}.}
+	\ex[*]{Nach dem Verzehr eines Döners starb \alertred{[eine]} [gestern] [Frau].}
 	\zl
 
 \pause	
 	\eal 
-	\ex Die Frau hat noch nicht versucht, \alert{[den Döner zu genießen]}.
-	\ex Die Frau hat \alert{[den Döner zu genießen]} noch nicht versucht.
-	\ex Die Frau hat noch nicht \alert{[den Döner zu genießen]} versucht.
+	\ex Die Frau hat noch nicht versucht, \alertred{[den Döner zu genießen]}.
+	\ex Die Frau hat \alertred{[den Döner zu genießen]} noch nicht versucht.
+	\ex Die Frau hat noch nicht \alertred{[den Döner zu genießen]} versucht.
 	\zl
 
 \end{itemize}
@@ -1142,12 +1146,12 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich in einem Aussagesatz vor das finite Verb verschieben lässt, so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal
-	\ex[]{\alert{[Nach dem Verzehr eines Döners]} starb [gestern] [eine Frau].}
-	\ex[]{\alert{[Gestern]} starb [eine Frau] [nach dem Verzehr eines Döners].}
-	\ex[]{\alert{[Eine Frau]} starb [gestern] [nach dem Verzehr eines Döners].}
-	\ex[*]{\alert{[Nach]} starb [eine Frau] [gestern] \alert{[dem Verzehr eines Döners]}.}
-	\ex[*]{\alert{[Eine]} starb \alert{[Frau]} [gestern] [nach dem Verzehr eines Döners].}
-	\ex[*]{\alert{[Eines Döners]} starb [eine Frau] [gestern] [nach dem Verzehr]}
+	\ex[]{\alertred{[Nach dem Verzehr eines Döners]} starb [gestern] [eine Frau].}
+	\ex[]{\alertred{[Gestern]} starb [eine Frau] [nach dem Verzehr eines Döners].}
+	\ex[]{\alertred{[Eine Frau]} starb [gestern] [nach dem Verzehr eines Döners].}
+	\ex[*]{\alertred{[Nach]} starb [eine Frau] [gestern] \alertred{[dem Verzehr eines Döners]}.}
+	\ex[*]{\alertred{[Eine]} starb \alertred{[Frau]} [gestern] [nach dem Verzehr eines Döners].}
+	\ex[*]{\alertred{[Eines Döners]} starb [eine Frau] [gestern] [nach dem Verzehr]}
 	\zl
 
 \end{itemize}
@@ -1163,10 +1167,10 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich in einem Aussagesatz vor das finite Verb verschieben lässt, so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal 
-	\ex[]{Die Frau hat noch nicht versucht, \alert{[den Döner zu genießen]}.}
-	\ex[]{\alert{[Den Döner zu genießen]} hat die Frau noch nicht versucht.}
-	\ex[]{\alert{[Auf den Döner warten]} wollte er nicht mehr.}
-	\ex[*]{\alert{[den Döner]} wollte er nicht mehr auf warten.}
+	\ex[]{Die Frau hat noch nicht versucht, \alertred{[den Döner zu genießen]}.}
+	\ex[]{\alertred{[Den Döner zu genießen]} hat die Frau noch nicht versucht.}
+	\ex[]{\alertred{[Auf den Döner warten]} wollte er nicht mehr.}
+	\ex[*]{\alertred{[den Döner]} wollte er nicht mehr auf warten.}
 	\zl
 
 \end{itemize}
@@ -1190,139 +1194,291 @@ Partikel & Part & ja, wohl, leider \\
 	\item Was sich in elliptischen Konstruktionen weglassen lässt, so dass der Satz grammatisch bleibt, ist (vermutlich) eine (phrasale) Konstituente.
 
 	\eal 
-	\ex[]{Maria liebt \sout{[Knoblauchsoße]} und Peter hasst \alert{[Knoblauchsoße]}.}
-	\ex[]{Maria chillt \sout{[an einem sonnigen Tag]} und schreibt Lieder \alert{[an einem sonnigen Tag]}.}
-	\ex[*]{Maria chillt \sout{[an einem]} \alert{sonnigen Tag} und schreibt Lieder \alert{[an einem sonnigen Tag]}.}
-	\eal
-
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Übungen}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übungen}
-
-\begin{itemize}
-	\item Geben Sie die Wortart der folgenden Einheiten an:
-\end{itemize}
-
-\begin{columns}
-\column{.40\textwidth}
-	\begin{enumerate}
-	\item Maria
-	\item Ach!
-	\item kauft
-	\item den
-	\item an
-	\item trotzdem
-	\item beachten
-	\item obwohl
-	\end{enumerate}
-\column{.40/textwidth}
-	\begin{enumerate}
-	\item<2> Nomen (Substantiv)
-	\item<2> Interjektion
-	\item<2> Verb
-	\item<2> Determinierer
-	\item<2> Präposition
-	\item<2> Adverb/ Konjunktion
-	%Er kam trotzdem nicht./ Er kam, trotzdem er krank war. 
-	\item<2> Verb
-	\item<2> Konjunktion
-	\end{enumerate}
-\end{columns}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übungen}
-
-\begin{itemize}
-	\item Testen Sie mithilfe der Konstituententests, ob die fettgedruckten Wortfolgen eine oder mehrere Konstituenten sind.
-	\eal 
-	\ex Maria \textbf{stolperte über} den Stein.
-	\ex Ob der Minister in \textbf{der nächsten Woche} die Aussage wiederholen wird.
-	\ex Die Besucher beobachteten \textbf{in der Werkstatt bemaltes Porzellan}.
-	\ex Erika traf \textbf{die Lehrerin} mit den roten Schuhen.
-	\ex Helmut hat sehr lange \textbf{auf Maria gewartet}.
-	\ex Helmut hat \textbf{sehr lange auf Maria gewartet}.
-	\ex \textbf{Jeder Student wird} nach diesem Semester Syntax lieben.
+	\ex[]{Maria liebt \sout{[Knoblauchsoße]} und Peter hasst \alertred{[Knoblauchsoße]}.}
+	\ex[]{Maria chillt \sout{[an einem sonnigen Tag]} und schreibt Lieder \alertred{[an einem sonnigen Tag]}.}
+	\ex[*]{Maria chillt \sout{[an einem]} \alertred{sonnigen Tag} und schreibt Lieder \alertred{[an einem sonnigen Tag]}.}
 	\zl
 
 \end{itemize}
 
 \end{frame}
 
-}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{loesung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hausaufgabe}
+%\frame{
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+%% TOGGLE uebung
+\iftoggle{uebung}{
+	%% BEGIN uebung true = Q
 
 \begin{frame}
-\frametitle{Lösungsvorschläge}
+\frametitle{Hausaufgabe}
 
-\eal
-\ex[*]{Maria den Stein [stolperte über].}
-\ex[*]{[Was] Maria den Stein? \ras Keine Konstituente!}
-\zl
+\begin{itemize}
+	\item Geben Sie die Wortart der folgenden Einheiten an:
+\end{itemize}
 
-\eal
-\ex[]{Ob der Minister in [dieser] die Aussage wiederholen wird.}
-\ex[]{Ob der Minister in [der nächsten Woche] und [dem nächsten Monat] die Aussage wiederholen wird.}
-\ex[*]{[Wann] wird der Minister in die Aussage wiederholen?
-\ex[*]{Ob [der nächsten Woche] der Minister in die Aussage wiederholen wird.}
-\zl
+\begin{columns}
+\column{.30\textwidth}
+	\begin{enumerate}
+	\item Maria
+	\item Ach!
+	\item kauft
+	\item den
+	\item an
+	\item weil
+	\item beachten
+	\item obwohl
+	\end{enumerate}
 
-\eal
-\ex Die Besucher beobachteten [bemaltes Porzellan] [in der Werkstatt]. 
-\ex [In der Werkstatt bemaltes Porzellan] beobachteten die Besucher. \ras 1 Konstituente!
-\ex Die Besucher beobachteten [(dort)] [es].
-\ea 
-\ex [Was] beobachteten die Besucher [in der Werkstatt]?
-\ex [Wo] beobachteten sie [bemaltes Porzellan]?\ras 2 Konstituenten!
-\z
-\zl
+\column{.50\textwidth}
+
+\end{columns}
 
 \end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)}
+
+\begin{itemize}
+	\item Geben Sie die Wortart der folgenden Einheiten an:
+\end{itemize}
+
+\begin{columns}
+	\column{.30\textwidth}
+	\begin{enumerate}
+		\item Maria
+		\item Ach!
+		\item kauft
+		\item den
+		\item an
+		\item weil
+		\item beachten
+		\item obwohl
+	\end{enumerate}
+	
+	\column{.50\textwidth}
+
+\pause
+	
+	\begin{enumerate}
+		\item[\ras] \alertred{Nomen (Substantiv)}
+		\item[\ras] \alertred{Interjektion}
+		\item[\ras] \alertred{Verb}
+		\item[\ras] \alertred{Determinierer}
+		\item[\ras] \alertred{Präposition}
+		\item[\ras] \alertred{Complementizer/Subjunktion}
+		\item[\ras] \alertred{Verb}
+		\item[\ras] \alertred{Complementizer/Subjunktion}
+	\end{enumerate}
+\end{columns}
+
+\end{frame}
+	
+} %% END uebung false = A
+%% END TOGGLE uebung
+%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%% TOGGLE uebung
+\iftoggle{uebung}{
+	%% BEGIN uebung true = Q
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Testen Sie mithilfe von mindestens zwei Konstituententests, ob die fettgedruckten Wortfolgen eine oder mehrere Konstituenten sind.
+\end{itemize}
+
+	\ea Maria \textbf{stolperte über} den Stein.
+
+	\ex Der Minister wird in \textbf{der nächsten Woche} die Aussage wiederholen.
+	
+	\ex Die Besucher beobachteten \textbf{in der Werkstatt bemaltes Porzellan}.
+	
+	\ex Die Besucher beobachteten \textbf{in der Werkstatt} bemaltes Porzellan.
+		
+	\ex Erika traf die \textbf{Lehrerin mit den roten Schuhen}.
+	
+	\ex Helmut hat sehr lange \textbf{auf Maria gewartet}.
+	
+	\ex Helmut hat sehr lange \textbf{auf Maria} gewartet.
+	
+	\ex \textbf{Maria wird} nach diesem Kurs Syntax lieben.
+	\z
+	
+\end{frame}
+	
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)}
+
+
+\begin{itemize}
+	\item Testen Sie mithilfe von mindestens zwei Konstituententests, ob die fettgedruckten Wortfolgen eine oder mehrere Konstituenten sind.
+
+\vspace{.5cm}
+	
+	\item[] Maria \textbf{stolperte über} den Stein.
+\end{itemize}
+
+\pause 
+
+\ea Weglasstest \& Fragetest \ras \alertred{keine Konstituente}
+	\ea[*]{Maria [stolperte über] den Stein und Peter [\sout{stolperte über}] den Ast.}
+	\ex[*]{[Was] Maria den Stein?}
+	\z 
+\z
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)}
+
+\begin{itemize}
+	\item[] Der Minister wird in \textbf{der nächsten Woche} die Aussage wiederholen.
+\end{itemize}
+
+\pause 
+
+\ea Ersetzungstest, Koordinationstest, Fragetest, Vorfeldtest \ras \alertred{keine Konstituente}
+
+	\ea[??]{Der Minister wird in [dieser] die Aussage wiederholen.}
+	\ex[?]{Der Minister wird in [der nächsten Woche] und [dem nächsten Treffen] die Aussage wiederholen.}
+	\ex[*]{[Wann] wird der Minister in die Aussage wiederholen?}
+	\ex[*]{[Der nächsten Woche] wird der Minister in die Aussage wiederholen.}
+	\z 
+\z
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)}
+
+\begin{itemize}
+	\item[] Die Besucher beobachteten \textbf{in der Werkstatt bemaltes Porzellan}.
+	
+	\item[] Die Besucher beobachteten \textbf{in der Werkstatt} bemaltes Porzellan.
+\end{itemize}
+
+\pause 
+
+\ea Vorfeldtest, Pronominalisierungstest \ras \alertred{1 Konstituente} 
+	\ea {[}In der Werkstatt bemaltes Porzellan{]} beobachteten die Besucher.
+	\ex Die Besucher beobachteten [es].
+	\z 
+
+\pause 
+	
+\ex Verschiebetest, Pronominalisierungstest, Fragetests \ras \alertred{2 Konstituenten}
+	\ea Die Besucher beobachteten [bemaltes Porzellan] [in der Werkstatt]. 
+	\ex Die Besucher beobachteten [es] [dort].
+	\ex {[}Was{]} beobachteten die Besucher [in der Werkstatt]?
+	\ex {[}Wo{]} beobachteten die Besucher [bemaltes Porzellan]?
+	\z
+\z
+
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Lösungsvorschläge}
+\frametitle{Hausaufgabe (Lösung)}
 
-\eal
-\ex Erika traf und begrüßte [die Lehrerin] mit den roten Schuhen.
-\ex [Die Lehrerin] traf Erika mit den roten Schuhen.
-\ex [Wen] traf Erika mit den roten Schuhen? \ras 1 Konsituente!
-\zl
+\begin{itemize}
+	\item[] Erika traf die \textbf{Lehrerin mit den roten Schuhen}.
+\end{itemize}
 
-\eal
-\ex[]{[Auf Maria gewartet] hat Helmut sehr lange.}
-\ex[]{[Was] hat Helmut sehr lange?}
-\ex[*]{Helmut hat [auf Maria gewartet] sehr lange.}
-\ex[]{Helmut hat [auf Maria] sehr lange [gewartet]. \ras 2 Konstituenten!}
-\zl
+\pause 
 
-\eal
-\ex[*]{Nach diesem Semester [jeder Student wird] Syntax lieben.}
-\ex[*]{[Wer] nach diesem Semester Syntax lieben?}
-\ex[]{Nach diesem Semester [wird][jeder Student] Syntax lieben \ras 2 Konstituenten!}
-\zl
+\ea Weglasstest, Vorfeldtest, Fragetest \ras \alertred{keine Konstituente}
+	\ea[*]{Erika traf die und begrüßte die [Lehrerin mit den roten Schuhen].}
+	\ex[*]{[Lehrerin mit den roten Schuhen] traf Erika die.}
+	\ex[*]{[Wen] traf Erika die?}
+	\z 
+\z
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)}
+
+\begin{itemize}
+	\item[] Helmut hat sehr lange \textbf{auf Maria gewartet}.
+	
+	\item[] Helmut hat sehr lange \textbf{auf Maria} gewartet.
+\end{itemize}
+
+\pause 
+
+\ea Vorfeldtest, Fragetest, Verschiebetest \ras \alertred{1 aber auch 2 Konstituenten}
+	\ea[]{[Auf Maria gewartet] hat Helmut sehr lange.}
+	\ex[]{[Was] hat Helmut sehr lange?}
+	\ex[??]{Helmut hat [auf Maria gewartet] sehr lange.}
+	\ex[]{Helmut hat [auf Maria] sehr lange [gewartet].}
+	\ex[]{[Auf Maria] hat Helmut sehr lange gewartet.} 
+	\z
+\z 
 
 \end{frame}
-}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)}
+
+\begin{itemize}
+	\item[] \textbf{Maria wird} nach diesem Kurs Syntax lieben.
+\end{itemize}
+
+\pause 
+
+\ea Verschiebetest, Fragetest, Weglasstest \ras \alertred{keine Konstituente}
+	\ea[*]{Nach diesem Kurs [Maria wird] Syntax lieben.}
+	\ex[*]{[Wer] nach diesem Semester Syntax lieben?}
+	\ex[]{[Maria wird] nach diesem Kurs Syntax lieben und [\sout{Maria wird}] nur noch an Bäume denken.}
+	\z 
+\z
+
+\end{frame}
+
+} %% END uebung false = A
+%% END TOGGLE uebung
+%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sonstiges}
 %\frame{
@@ -1336,13 +1492,13 @@ Partikel & Part & ja, wohl, leider \\
 \frametitle{Was Sie sich zu Weihnachten wünschen können\dots}
 
 \begin{itemize}
-	\item \citet{Glueck05a}
-	\item \citet{Luedeling2009a}
+	\item \citet{Glueck&Roedel16a} (auch über die HU-Bibliothek herunterladbar)
+	\item \citet{Luedeling2009}
 	\item \citet{Brandt&Co06a}
 	\item \citet{Grewendorf&Co91a}
 	\item \citet{Chomsky65a}
-	\item \citet{MuellerS15b} \ras Als PDF gratis
-	\item \citet{MuellerS13f} \ras Als PDF gratis
+	\item \citet{MuellerS15b} (auch über die Webseite herunterladbar)
+	\item \citet{MuellerS13f} (auch über die Webseite herunterladbar)
 	\item \citet{Pinker95a}
 
 \end{itemize}
@@ -1356,7 +1512,7 @@ Partikel & Part & ja, wohl, leider \\
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.6]{material/09xmastree}
+	\includegraphics[scale=.57]{material/09xmastree}
 	\caption{Frohe Weihnachten!}
 \end{figure}
 

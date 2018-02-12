@@ -1,3 +1,9 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Metadata                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
@@ -16,7 +22,7 @@
 \institute{Institut für deutsche Sprache und Linguistik}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
-\date{22.\ Juni 2016}
+\date{19.\ Dezember 2017}
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
@@ -29,19 +35,25 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 %\begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 %\end{multicols}
 	}
+	}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\nocite{Brandt&Co06a} \nocite{Glueck05a} \nocite{Grewendorf&Co91a} \nocite{Luedeling2009a} \nocite{Meibauer&Co07a} \nocite{MuellerS15b}\nocite{Repp&Co15a}
+\nocite{Brandt&Co06a} 
+\nocite{Glueck&Roedel16a}
+\nocite{Grewendorf&Co91a}
+\nocite{Luedeling2009}
+\nocite{Meibauer&Co07a}
+\nocite{Repp&Co15a}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,7 +161,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Was ist Syntax?}
 
 \begin{figure}
 \centering
@@ -164,19 +175,30 @@
 \frametitle{Was ist Syntax?}
 
 \begin{itemize}
-	\item Syntax = Zusammenstellung (griech. \emph{sýn}: \gq{zusammen}, \emph{tàxis}: \gq{Ordnung})
+	\item Syntax = Zusammenstellung (griech. \MyPobj{sýn}: \gq{zusammen}, \MyPobj{tàxis}: \gq{Ordnung})
 	\item[]
 	\item Zusammenstellung und Struktur von Phrasen (und Sätzen) aus kleineren Elementen (Wörtern).
-	\item[]
-	\item Dabei ist zu beachten:
+\end{itemize}
+
+\nocite{Roedel16a}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{itemize}
+
+	\item Dabei ist zu beachten,
+	
 	\begin{itemize}
-		\item dass Phrasen und Sätze \textbf{aus kleineren Teilen} zusammengesetzt sind (Konstituenten),
+		\item[\dots] dass Phrasen und Sätze \textbf{aus kleineren Teilen} zusammengesetzt sind (Konstituenten),
 		\item[]
-		\item dass diese Teile unterschiedlicher \textbf{Art} sein können (Kategorie / Wortart),
+		\item [\dots] dass diese Teile unterschiedlicher \textbf{Art} sein können (Kategorie/Wortart),
 		\item[]
-		\item dass diese Teile \textbf{regelhaft} zusammengesetzt werden,
+		\item [\dots] dass diese Teile \textbf{regelhaft} zusammengesetzt werden,
 		\item[]
-		\item dass diese Teile an der Stelle, wo sie stehen, eine bestimmte \textbf{Rolle} spielen (Subjekt / Objekt).
+		\item[\dots] dass diese Teile an der Stelle, wo sie stehen, eine bestimmte \textbf{Rolle} spielen (Subjekt/Objekt).
  		
 	\end{itemize}
 	
@@ -187,13 +209,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Was ist Syntax?}
 
 \begin{itemize}
 \item Dabei ist zu beachten, 
 
 \begin{itemize}
-	\item \dots dass Phrasen und Sätze aus \textbf{Konstituenten} zusammengesetzt sind,
+	\item [\dots] dass Phrasen und Sätze aus \textbf{Konstituenten} zusammengesetzt sind,
 
 	\ea
 	\gll {Ich schlafe.} = Ich + schlafe\\
@@ -202,7 +223,7 @@
 
 \pause
 
-	\item \dots dass diese Teile unterschiedlicher \textbf{Kategorien} sein können,
+	\item [\dots] dass diese Teile unterschiedlicher \textbf{Kategorien} sein können,
 
 	\ea 
 	\gll {Ich schlafe.} = Ich + schlafe\\
@@ -218,23 +239,24 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Was ist Syntax?}
 
 \begin{itemize}
 \item Dabei ist zu beachten, 
 
 \begin{itemize}
 
-	\item \dots dass diese Teile \textbf{regelhaft} zusammengesetzt werden,
+	\item [\dots] dass diese Teile \textbf{regelhaft} zusammengesetzt werden,
 
 	\eal 
 	\ex[]{Ich schlafe.}
-	\ex[*]{Schlafe ich.}
+	\ex[*]{Schlafe ich.\\ 	
+	S $=$ N $+$ V\\	
+	S $\neq$ V $+$ N}
 	\zl
 
 \pause
 
-	\item \dots dass diese Teile an der Stelle, wo sie stehen, eine bestimmte \textbf{Rolle} spielen.
+	\item [\dots] dass diese Teile an der Stelle, wo sie stehen, eine bestimmte \textbf{Rolle} spielen.
 			
 	\ea
 	\gll Ich schlafe.\\
@@ -250,7 +272,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Was ist Syntax?}
 
 \begin{itemize}
 	\item Eine Minigrammatik:
@@ -285,17 +306,21 @@
 	\ex S = Adv + V + N + N + N 
 	\zl
 
-\pause
+\end{itemize}
 
-	\item Aber: 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\textbf{Aber: }
 	\begin{itemize}
 		\item Wie ist S zu definieren?
 		\item Was sind die kleineren Bestandteile von S?
 		\item Welche Bestandteile sind notwendig und welche hinreichend?
 		\item Was ist die Regelmäßigkeit in der Bildung von S?
 	\end{itemize}	 	
-
-\end{itemize}
 
 \end{frame}
 
@@ -321,23 +346,42 @@
 	\ea [*]{Sitzt dem Hund unter Stuhl kleine der.}
 	\z
 
-\pause
+\end{itemize}
 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\begin{itemize}
 	\item ABER: \textbf{Struktur} $\neq$ Linearität
 	
-	\eal 
-	\ex Paul sah [den Mann mit dem Fernglas].\\ 
-	\vs 
-	\ex Paul sah [den 	Mann] [mit dem 	Fernglas].
-	\zl
-	
-	\eal 
-	\ex [Alte Frauen] und Männer\\
-	\vs
-	\ex Alte [Frauen und Männer]
-	\zl
+	\ea Paul sah den Mann mit dem Fernglas.
 
-	\item Die \textbf{Ambiguität} (Mehrdeutigkeit) der Phrasen liegt in den verschiedenen Möglichkeiten begründet, wie die Wörter sich zu größeren Einheiten kombinieren lassen.
+\pause 
+	
+		\ea Paul sah [den Mann mit dem Fernglas].\\ 
+		\vs 
+		
+		\ex Paul sah [den 	Mann] [mit dem 	Fernglas].
+		\z
+	\z 
+
+\pause 
+	
+	\ea Alte Frauen und Männer
+
+\pause 
+	
+		\ea {[Alte Frauen] und Männer}\\
+		\vs
+		\ex Alte [Frauen und Männer]
+		\z
+	\z 
+
+\pause 
+
+	\item Die \textbf{Ambiguität} (Mehrdeutigkeit) der Phrasen liegt in den verschiedenen Möglichkeiten begründet, wie sich die Wörter zu größeren Einheiten kombinieren lassen.
 
 \end{itemize}
 
@@ -346,7 +390,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Linearität und Struktur}
 
 \begin{itemize}
 	\item Auch andere Regel können nicht nur mit Bezug auf die Linearität formuliert werden:
@@ -358,14 +401,15 @@
 	\z
 	
 	\item \textbf{Entscheidungsfragen} (Ja-Nein-Fragen) können scheinbar gebildet werden, indem das zweite Wort im Satz nach vorne verschoben wird.\\
-	Aber:
 
 \pause
 	
-	\ea[]{Der Vater von Klaus kommt morgen.}
+	\item[] \textbf{Aber:}
+	
+	\ea[]{Der \alertred{Vater} von Klaus kommt morgen.}
 	\z
 	
-	\ea[*]{Vater der von Klaus kommt morgen?}
+	\ea[*]{\alertred{Vater} der von Klaus kommt morgen?}
 	\z
 	
 \end{itemize}
@@ -375,21 +419,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Linearität und Struktur}
 
 \begin{itemize}
 
 	\item Entscheidend:
 		\begin{itemize}
-			\item Manche Elemente gehören enger zusammen als andere: 
+			\item Manche Elemente gehören enger zusammen als andere (\ras \textbf{Konstituente}): 
 
-			\ea [Der Vater von Klaus] [kommt] [morgen].
+			\ea {[Der Vater von Klaus] [kommt] [morgen].}
 			\z
 			
 			\item Rolle der \textbf{Kategorie} von Konstituenten:\\
 			\ras Das \textbf{finite} (gebeugte) \textbf{Verb} im Satz muss nach vorne bewegt werden.
 			
-			\ea [Kommt]$_i$ der Vater von Klaus t$_i$ morgen?
+			\ea {[Kommt]$_i$ der Vater von Klaus t$_i$ morgen?}
 			\z
 			
 		\end{itemize}
@@ -401,36 +444,35 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Linearität und Struktur}
 
 \begin{itemize}
 
 	\item Weitere Beispiele (\textbf{Konstituentenfragen}):
 
 	\eal
-	\ex Peter liebt \alert{Maria}.
-	\ex \alert{Wen$_i$} liebt Peter t$_i$?
+	\ex Peter liebt \alertred{Maria}.
+	\ex \alertred{Wen$_i$} liebt Peter t$_i$?
 	\zl
 
 \pause
 
 	\eal 
-	\ex Peter behauptet, dass Maria \alert{Klaus} liebt. 
-	\ex \alert{Wen$_i$} behauptet Peter, dass Maria t$_i$ liebt? 
+	\ex Peter behauptet, dass Maria \alertred{Klaus} liebt. 
+	\ex \alertred{Wen$_i$} behauptet Peter, dass Maria t$_i$ liebt? 
 	\zl
 
 \pause
 
 	\eal
-	\ex []{Maria kennt den Schriftsteller, der \alert{Die Korrekturen} geschrieben	hat.} 
-	\ex [*]{\alert{Was$_i$} kennt Maria den Schriftsteller, der t$_i$ geschrieben hat?} 
+	\ex []{Maria kennt den Schriftsteller, der \alertred{Die Korrekturen} geschrieben	hat.} 
+	\ex [*]{\alertred{Was$_i$} kennt Maria den Schriftsteller, der t$_i$ geschrieben hat?} 
 	\zl
 
 \pause
 
 	\eal 
-	\ex Maria behauptet, dass Klaus gesagt hat, dass er gehört hat, 	dass Irene \alert{Die Korrekturen} gelesen hat. 
-	\ex \alert{Was$_i$} behauptet Maria, dass Klaus gesagt hat, dass er gehört hat, dass Irene t$_i$ gelesen hat?
+	\ex Maria behauptet, dass Klaus gesagt hat, dass er gehört hat, 	dass Irene \alertred{Die Korrekturen} gelesen hat. 
+	\ex \alertred{Was$_i$} behauptet Maria, dass Klaus gesagt hat, dass er gehört hat, dass Irene t$_i$ gelesen hat?
 	\zl
 
 \end{itemize}
@@ -461,7 +503,7 @@
 	\end{itemize}
 \end{itemize}
 
-Siehe den Eintrag \gqq{Syntax} in \citep{Glueck05a}
+Siehe den Eintrag \gqq{Syntax} in \citet{Glueck&Roedel16a}
 
 \end{frame}
 
@@ -483,7 +525,6 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Syntax definieren}
 
 \begin{figure}
 \centering
@@ -495,7 +536,6 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Syntax definieren}
 
 \begin{block}{Syntax (Regelsystem)}
 Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisch wohlgeformten Phrasen einer Sprache ableitet und die nicht wohlgeformten Sätze ausschließt.
@@ -534,7 +574,7 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 \frametitle{Grammatikalität}
 
 \begin{itemize}
-	\item Was bedeutet \gqq{(nicht-)wohlgeformt}
+	\item Was bedeutet \gqq{(nicht-)wohlgeformt}?
 	
 	\ea Schlafe ich
 	\z
@@ -547,6 +587,20 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 	
 	\ea Ich bin gestern gegangen ins Kino.
 	\z
+	
+	\nocite{Finkbeiner&Meibauer14a}
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Grammatikalität}
+
+\begin{itemize}
+	
+	\item Was bedeutet \gqq{(nicht-)wohlgeformt}?
 	
 	\ea Ich bin glücklich, weil die Studenten lieben Syntax!
 	\z
@@ -575,7 +629,7 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 	\item \textbf{Ungrammatische} (syntaktisch nicht wohlgeformte) Sätze (Notation:~*) sind zu unterscheiden von Sätzen, die zwar grammatisch, aber
 	
 	\begin{itemize}
-		\item \dots \textbf{inkorrekt verwendet} (Notation: \#) sind:
+		\item \dots\ \textbf{inkorrekt verwendet} (Notation: \#) sind:
 
 		\ea A: Hier ist überhaupt nichts langweilig!\\
 		B: \# Selbst langweilig ist diese Vorlesung nicht.
@@ -589,55 +643,51 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 	\end{itemize}
 
 \end{itemize}
+
 \nocite{Coseriu88a, Fries15a, Repp&Co15a}
+
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Grammatikalität vs. Akzeptabilität}
 
 \begin{itemize}
-	\item \textbf{Ungrammatische} (syntaktisch nicht wohlgeformte) Sätze (Notation:~*) sind zu unterscheiden von Sätzen, die zwar grammatisch, aber
+	\item[]
 	
 	\begin{itemize}
+	\item \dots\ aus \textbf{Verarbeitungsgründen} inakzeptabel (\#) sind:
 		
-		\item \dots aus \textbf{Verarbeitungsgründen} inakzeptabel (\#) sind:
-		
-		\ea \# Die, die die, die die, die die Brücken, die für den Verkehr unentbehrlich sind, bauen, unterstützen, belästigen, 		werden bestraft.
-		\z
+		\ea [\#]{Die, die die, die die, die die Brücken, die für den Verkehr unentbehrlich sind, bauen, unterstützen, belästigen, 		werden bestraft.\hfill \citep{Coseriu88a}} 
 \pause
-		
-		\ea 
 		\ex Die werden bestraft.
-		\ex Die, die die belästigen, werden bestraft.
-		\ex Die, die die, die die unterstützen, belästigen, werden bestraft.
-		\ex Die, die die, die die, die die Brücken bauen, unterstützen, belästigen, werden bestraft.
-		\ex Die, die die, die die, die die Brücken, die für den Verkehr unentbehrlich sind, bauen, unterstützen, belästigen, werden bestraft.
+		\ex \alertred{Die, die die belästigen}, werden bestraft.
+		\ex Die, die \alertred{die, die die unterstützen}, belästigen, werden bestraft.
+		\ex Die, die die, die \alertred{die, die die Brücken bauen}, unterstützen, belästigen, werden bestraft.
+		\ex Die, die die, die die, die die \alertred{Brücken, die für den Verkehr unentbehrlich sind}, bauen, unterstützen, belästigen, werden bestraft.
 		\z
-
-	\end{itemize}
+\end{itemize}
 
 \end{itemize}
-\nocite{Coseriu88a, Fries15a, Repp&Co15a}
+\nocite{Fries15a, Repp&Co15a}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Grammatikalität vs. Akzeptabilität}
 
 \begin{itemize}
-	\item \textbf{Ungrammatische} (syntaktisch nicht wohlgeformte) Sätze (Notation:~*) sind zu unterscheiden von Sätzen, die zwar grammatisch, aber
+	\item[]
 	
 	\begin{itemize}
 		
-		\item \dots aus \textbf{semantischen Gründen} inakzeptabel (\#) sind:
+		\item \dots\ aus \textbf{semantischen Gründen} inakzeptabel (\#) sind:
 		\ea \# Der Stuhl streichelt den Hund.\\
-		(\obj{streicheln} verlangt ein belebtes Subjekt)
+		(\MyPobj{streicheln} verlangt ein belebtes Subjekt)
 		\z
 		
-		\ea \# Farblose grüne Ideen schlafen wütend. \citep{Chomsky57a}
+		\ea \# Farblose grüne Ideen schlafen wütend. \hfill 
+		\citep{Chomsky57a}
 		\z
 		
 	\end{itemize}
@@ -652,12 +702,20 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 \frametitle{Grammatikalität \vs Akzeptabilität}
 
 \begin{block}{Akzeptabilität}
-Die Akzeptabilität einer Äußerung meint ihre \textbf{beurteilbare Annehmbarkeit} durch einen kundigen Sprecher in der \textbf{Performanz} (Sprachverwendung). Sie ist \textbf{graduierbar} und von verschiedenen Performanzfaktoren abhängig, wie \zB Gedächtnis, Bildungsstand, Alter, Normativität, \dots 
+Die Akzeptabilität einer Äußerung meint ihre \textbf{beurteilbare Annehmbarkeit} durch einen kundigen Sprecher in der \textbf{Performanz} (Sprachverwendung). Sie ist \textbf{graduierbar} und von verschiedenen Performanzfaktoren abhängig, wie \zB Gedächtnis, Bildungsstand, Alter, Normativität, \dots\ \citep[vgl.][]{Fries&MyP16b}
+
 \end{block}
 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Grammatikalität \vs Akzeptabilität}
+
 \begin{block}{Grammatikalität}
-Die Grammatikalität einer Struktur in einer Sprache meint ihre (Nicht-)\textbf{Generierbarkeit} durch den \textbf{Regelapparat} eines Sprach-Modells (einer Grammatik). Die (Un-)Grammatikalität sprachlicher Strukturen wird dementsprechend ist \textbf{theoriegebunden} und \idR \textbf{binär}. 
-Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher-Hörers ab.
+Die Grammatikalität einer Struktur in einer Sprache meint ihre (Nicht-)\textbf{Generierbarkeit} durch den \textbf{Regelapparat} eines Sprach-Modells (einer Grammatik). Die (Un-)Grammatikalität sprachlicher Strukturen ist dementsprechend \textbf{theoriegebunden} und \idR \textbf{binär}. 
+Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher-Hörers ab. \citep[vgl.][]{Fries16a}
 \end{block}
 
 \end{frame}
@@ -703,8 +761,8 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher-Hörers 
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.07]{material/05praeskriptiv}
-	\caption{Das ist präskriptiv.}
+	\includegraphics[scale=.065]{material/05praeskriptiv}
+	\caption{Das ist (unangemessen) präskriptiv.}
 \end{figure}
 
 \end{frame}
@@ -715,81 +773,96 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher-Hörers 
 
 \begin{itemize}
 	\item Arbeitsweise in der Linguistik \ras \textbf{Deskriptiv} (beschreibend)
-	\begin{itemize}
-		\item Ein Phänomen, das kompetente Sprecher produzieren, wird \textbf{beobachtet und beschrieben}. 	
-	\end{itemize}
+
+	\item Ein Phänomen, das kompetente Sprecher produzieren, wird \textbf{beobachtet und beschrieben}. 	
+
+\end{itemize}
 	
-	\ea Gestern, ich war im Kino und plötzlich hat es angefangen zu regnen.
+	\ea \alertred{Gestern, ich} war im Kino und plötzlich hat es angefangen zu regnen.
 	\z
 	
-	\ea Die theoretische Entwicklung und die praktische Programmierung solcher Betriebssysteme hat sich zu einem neuen Arbeitsgebiet innerhalb der Datenverarbeitung entwickelt. \citep{Goschler14a}
+	\ea Die theoretische Entwicklung und die praktische Programmierung solcher Betriebssysteme \alertred{hat} sich zu einem neuen Arbeitsgebiet innerhalb der Datenverarbeitung entwickelt. \hfill \citep{Goschler14a}
 	\z
 	
-	\item[]
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Deskriptiv \vs Präskriptiv}
+	
+\begin{itemize}
 	\item Vorgehensweise von (einigen) Schulgrammatiken und Sprachakademien \ras \textbf{Präskriptiv}
-	\begin{itemize}
-		\item Es wird \textbf{vorgeschrieben}, wie die Strukturen der Sprache gebildet werden \gqq{müssen}.
+
+	\item Es wird \textbf{vorgeschrieben}, wie die Strukturen der Sprache gebildet werden \gqq{müssen}.
 	\end{itemize}	
 		
-	\ea Es heißt nicht \obj{wegen dem Job}, sondern \obj{wegen des Jobs}.	
+	\ea Es heißt nicht \MyPobj{wegen dem Job}, sondern \MyPobj{wegen des Jobs}.	
 	\z
 	
-\end{itemize}
+
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Deskriptiv \vs Präskriptiv}
+
+\begin{columns}
+%%
+\begin{column}{.5\textwidth}
 
 \begin{itemize}
-	\item Arbeitsweise in der Linguistik \ras \textbf{Deskriptiv} (beschreibend)
-	\begin{itemize}
-		\item Ein Phänomen, das kompetente Sprecher produzieren, wird \textbf{beobachtet und beschrieben}. 	
-	\end{itemize}
+	\item Präskriptive Regeln:
 	
-	\ea \alert{Gestern, ich} war im Kino und plötzlich hat es angefangen zu regnen.
-	\z
+	\item[] \textbf{Stilistik} (\gqq{schöner} oder \gqq{weniger schön})\\
+	oder\\
 	
-	\ea Die theoretische Entwicklung und die praktische Programmierung solcher Betriebssysteme \alert{hat} sich zu einem neuen Arbeitsgebiet innerhalb der Datenverarbeitung entwickelt. \citep{Goschler14a}
-	\z
-		
-	\item[]
-	\item Vorgehensweise von (einigen) Schulgrammatiken und Sprachakademien \ras \textbf{Präskriptiv}
-	\begin{itemize}
-		\item Es wird \textbf{vorgeschrieben}, wie die Strukturen der Sprache gebildet werden \gqq{müssen}.
-	\end{itemize}		
-	
-	\ea Es heißt nicht \obj{wegen dem Job}, sondern \obj{wegen des Jobs}.	
-	\z
-	
+	\item[] Regeln für \gqq{\textbf{gutes/richtiges}} \textbf{Deutsch}
 \end{itemize}
 
+\pause 
+
+\end{column}
+%%
+\begin{column}{.5\textwidth}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=.4]{material/DudenRichtigesDeutsch}
+%	\caption{Duden}
+\end{figure}
+
+\end{column}
+
+\end{columns}
+	
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Deskriptiv \vs Präskriptiv}
 
 \begin{itemize}
 	\item Präskriptive Regeln \\
 	\ras Stilistik (\gqq{schöner} oder \gqq{weniger schön})\\
 	oder\\
-	\ras Regeln für \gqq{gutes Deutsch}
+	\ras Regeln für \gqq{gutes/richtiges} Deutsch
 	\item[]
+	
 	\item Linguistik \ras auf der Basis von deskriptiven Beobachtungen
 	\item[]
-	\item Kompetente Sprecher verwenden ständig Formulierungen wie \obj{wegen dem Job}, aber nie solche wie:
-
-	\ea[*]{Ich bin \alert{wegen der Job} gekommen.}
+	\item Kompetente Sprecher verwenden ständig Formulierungen wie \MyPobj{wegen dem Job}, aber nie solche wie:
+	
+	\ea[*]{Ich bin \alertred{wegen der Job} gekommen.}
 	\z
 	
-	\ea[*]{Ich bin \alert{dem wegen Job} gekommen.}
+	\ea[*]{Ich bin \alertred{dem wegen Job} gekommen.}
 	\z
 	
-	\ea[*]Ich bin \alert{wegen Job dem} gekommen.}
+	\ea[*]{Ich bin \alertred{wegen Job dem} gekommen.}
 	\z
 	
 \end{itemize}
@@ -799,26 +872,25 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher-Hörers 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Deskriptiv \vs Präskriptiv}
 
 \begin{itemize}
-	\item Kompetente Sprecher verwenden ständig Formulierungen wie \obj{wegen dem Job}, aber nie solche wie:
+	\item Kompetente Sprecher verwenden ständig Formulierungen wie \MyPobj{wegen dem Job}, aber nie solche wie:
 
-	\ea[*]{Ich bin \alert{wegen der Job} gekommen.}
+	\ea[*]{Ich bin \alertred{wegen der Job} gekommen.}
 	\z
 	
-	\ea[*]Ich bin \alert{dem wegen Job} gekommen.}
+	\ea[*]{Ich bin \alertred{dem wegen Job} gekommen.}
 	\z
 	
-	\ea[*]{Ich bin \alert{wegen Job dem} gekommen.}
+	\ea[*]{Ich bin \alertred{wegen Job dem} gekommen.}
 	\z
 	
 	\item[]
 	
 	\item Diese Formulierungen sind \textbf{ungrammatisch}, denn sie verletzen Regeln des deutschen grammatischen Systems:
 	\begin{itemize}
-		\item Präpositionen stehen \emph{vor} Nominalphrasen
-		\item Artikel stehen \emph{vor} dem Nominalkomplex
+		\item Präpositionen stehen \MyPobj{vor} Nominalphrasen
+		\item Artikel stehen \MyPobj{vor} dem Nominalkomplex
 	\end{itemize}	 
 \end{itemize}
 

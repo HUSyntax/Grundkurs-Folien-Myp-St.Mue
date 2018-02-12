@@ -29,21 +29,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%    
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
 }
-
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \nocite{Brandt&Co06a} 
 \nocite{Glueck05a} 
 \nocite{Grewendorf&Co91a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009} 
 \nocite{Meibauer&Co07a} 
 \nocite{MuellerS15b}
 \nocite{Repp&Co15a}
@@ -51,7 +51,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+\frametitle{Begleitlektüre}
 
+	\begin{itemize}
+	\item AM S.~107--116
+	\item \citet{Meibauer&Co07a}: Kapitel 6 (S.~210--240)
+\end{itemize}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -68,7 +76,7 @@
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Pragmatik \ras Jüngste sprachwissenschaftliche Disziplin
+	\item Pragmatik \ras jüngste sprachwissenschaftliche Disziplin
 	\item Schnittstellen zur Philosophie, Soziologie, Psychologie
 	\item Gegenstand \ras \textbf{Gebrauch} sprachlicher Ausdrücke in einer bestimmten Situation (Kontext)
 	\item[]

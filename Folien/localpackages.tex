@@ -27,22 +27,20 @@
 \usepackage{mdwlist}	
 
 \usepackage[noenc,safe]{tipa}
+\usepackage{vowel}
 
 % maybe define \textipa to use \originalTeX to avoid problems with `"'.
 %
 %	\ex \textipa{\originalTeX [pa.pa."g\t{aI}]}
 
-
-
-\usepackage{etex}		%For Forest bug
-
+%
 
 \usepackage{jambox}
 
 
 
 %\usepackage{forest-v105}
-\usepackage{modified-langsci-forest-setup}
+%\usepackage{langsci-forest-v105-setup}
 
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
@@ -54,8 +52,8 @@
 
 
 
-% for toggles
-\usepackage{etex}
+% for toggles, is loaded in hu-beamer-includes-pdflatex
+%\usepackage{etex}
 
 
 
@@ -73,6 +71,17 @@
 \usepackage{hu-beamer-includes-pdflatex}
 \huberlinlogon{0.86cm}
 
+% %% % use this definition, if you want to see the outlines in the handout
+\renewcommand{\outline}[1]{%
+%\beamertemplateemptyfootbar%
+\huberlinjustbarfootline
+\frame{\frametitle{\outlineheading}#1}%
+%\beamertemplatecopyrightfootframenumber%
+\huberlinnormalfootline 
+\huberlinpagedec
+}
+
+
 
 %% Last Packages
 %\usepackage{hyperref}	%URLs
@@ -82,6 +91,7 @@
 %\usepackage{linguex-cgloss}	%Linguistic examples (patched version that works with jambox
 
 \usepackage{multirow}  %Mehrere Zeilen in einer Tabelle
+\usepackage{adjustbox} %adjusting tables
 %\usepackage{array}
 \usepackage{marginnote}	%Notizen
 

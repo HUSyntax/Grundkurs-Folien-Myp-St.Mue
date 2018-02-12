@@ -1,3 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Metadata                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
@@ -29,12 +36,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage
-
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
 \end{multicols}
+	}
 	}
 
 
@@ -48,7 +56,7 @@
 \nocite{Brandt&Co06a}
 \nocite{Glueck05a} 
 \nocite{Grewendorf&Co91a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009} 
 %\nocite{Meibauer&Co07a}
 \nocite{MuellerS13f} 
 \nocite{MuellerS15b}
@@ -71,22 +79,21 @@
 \frametitle{Einleitung}
 
 \begin{itemize}
-
-	\item Topologisches Modell \ras nur grobe Gliederung des Satzes in 5 Felder
+	\item Topologisches Modell: nur grobe Gliederung des Satzes in 5 Felder
 	\item[]	
-	\item Neue feingliedrigere Modellierung \ras X-Bar-Schema
+	\item feingliedrigere Modellierung: X-Bar-Schema; X-Bar-Modell
 	\item[]
 	\item Nicht nur für Satzpositionen, sondern auch für Relationen zwischen syntaktischen Einheiten innerhalb von Konstituenten.
 
 
 \eal 
-\ex[]{Peter hat gestern \alert{[den Wagen]} gekauft.}
-\ex[]{\alert{[Den Wagen]} hat Peter gestern gekauft.}
-\ex[]{\alert{[Den Wagen gekauft]} hat Peter gestern.} \label{ex:KonstSatz}
-\ex[*]{\alert{[Den]} hat Peter gestern \alert{[Wagen]}} gekauft.
+\ex[]{Peter hat gestern \alertred{[den Wagen]} gekauft.}
+\ex[]{\alertred{[Den Wagen]} hat Peter gestern gekauft.}
+\ex[]{\alertred{[Den Wagen gekauft]} hat Peter gestern.} \label{ex:KonstSatz}
+\ex[*]{\alertred{[Den]} hat Peter gestern \alertred{[Wagen]} gekauft.}
 \zl
 
-	\item Konstituenten sind nicht immer mit Satzglied gleichzusetzen \cf{\ref{ex:KonstSatz}}
+	\item Konstituenten sind nicht immer mit Satzglied gleichzusetzen vgl.\ (\ref{ex:KonstSatz})
 	
 \end{itemize}
 
@@ -95,15 +102,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
+%\frametitle{Einleitung}
 
 \begin{itemize}
 
-	\item Intuitiv können wir sagen, dass die Struktur 1 grammatisch und 2 ungrammatisch ist.
+	\item \textbf{Intuitiv} können wir sagen, dass (\ref{ex:Klammer1}) grammatisch und (\ref{ex:Klammer2}) ungrammatisch ist.
 	\item[]
 	\eal
-	\ex Klammerstruktur 1: [$_{VP}$ [$_{NP}$ [$_{Det}$Das] [$_{NP}$Brot]][$_{V}$gekauft]]
-	\ex Klammerstruktur 1: [$_{??}$ [$_{Det}$Das] [$_{??}$ [$_{NP}$Brot][$_{V}$gekauft]]]
+	\ex \label{ex:Klammer1}Klammerstruktur: [$_{VP}$ [$_{NP}$ [$_{Det}$Das] [$_{NP}$Brot]][$_{V}$gekauft]]
+	\ex \label{ex:Klammer2}Klammerstruktur: [$_{??}$ [$_{Det}$Das] [$_{??}$ [$_{NP}$Brot][$_{V}$gekauft]]]
 	\zl
 
 \end{itemize}
@@ -117,11 +124,11 @@
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[Das Brot gekauft [Das Brot [Das] [Brot]][gekauft]]
 		\end{forest}
 		}
-		\caption{Baumstruktur 1}	
+		\caption{Baumstruktur (\ref{ex:Klammer1})}	
   	\end{minipage}  
   	%  
 	\begin{minipage}[b]{0.05\textwidth}
@@ -131,11 +138,11 @@
 	\centering
 	\scriptsize{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[*Das Brot gekauft [Das][Brot gekauft [Brot] [gekauft]]]
 		\end{forest}
 		}
-		\caption{Baumstruktur 2}
+		\caption{Baumstruktur (\ref{ex:Klammer2})}
   	\end{minipage}  
   	%              
 	\begin{minipage}[b]{0.05\textwidth}
@@ -144,66 +151,77 @@
 \end{figure}
 
 \begin{itemize}
-	\item D.\,h., die Syntax befasst sich nicht nur mit der internen Struktur von Sätzen, sondern auch von Phrasen (machmal auch von Wörtern)
+	\item Syntax befasst sich \textbf{nicht nur mit der internen Struktur von Sätzen}, sondern \textbf{auch von Phrasen} (manchmal auch von Wörtern)
 \end{itemize}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
 
 \begin{itemize}
 
-	\item Sub-Theorie der Generativen Grammatik (GG) seit den 1970er Jahren \citep{Chomsky70a, Jackendoff77a}
+	\item \textbf{X-Bar-Theorie}: Sub-Theorie der Generativen Grammatik (GG) seit den 1970er Jahren \citep{Chomsky70a, Jackendoff77x}
 	\item[]	
-	\item \textbf{GG:} Theoretische Richtung seit den 1950er Jahre \citep{Chomsky57a} (contra Strukturalismus)
+	\item \textbf{GG:} Theoretische Richtung seit den 1950er Jahren \citep{Chomsky57x} (contra Strukturalismus)
 	\item[]
-	\item \textbf{Strukturalismus:}
-	\begin{itemize}
-		\item Empirismus (Behaviourismus)
-		\item statische Theorie
-		\item Beschreibungsadäquat: \textbf{Beschreibung} der in der Sprache vorkommenden Strukturen
-	\end{itemize}
-	
-	\item \textbf{GG:}
-	\begin{itemize}
-		\item Rationalismus (UG)
-		\item dynamische (generative) Theorie
-		\item Erklärungsadäquat: \textbf{Explikation} der Kompetenz eines idealen Sprecher-Hörers
-	\end{itemize}
-
 \end{itemize}
+
+\begin{columns}
+	
+\begin{column}{.5\textwidth}
+
+\textbf{Strukturalismus:}
+\begin{itemize}
+	\item Empirismus (Behaviourismus)
+	\item statische Theorie
+	\item Beschreibungsadäquat: \textbf{Beschreibung} der in der Sprache vorkommenden Strukturen
+\end{itemize}
+
+\end{column}	
+%%
+%%
+\begin{column}{.5\textwidth}
+
+\textbf{GG:}
+\begin{itemize}
+	\item Rationalismus (UG)
+	\item dynamische (generative) Theorie
+	\item Erklärungsadäquat: \textbf{Explikation} der Kompetenz eines idealen Sprecher-Hörers
+\end{itemize}
+
+\end{column}
+
+\end{columns}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einleitung}
 
 \begin{itemize}
 	\item Sehr starke Tradition und Verzweigung seit den 1950er Jahren
 	\item[]
 	\item Sehr verschiedene Richtungen (Mainstream Generative Grammatik):
 	\begin{itemize}
-		\item Phrasenstrukturgrammatiken (PSG, \citet{Chomsky57a})
-		\item Standardtheorie (ST, Auch Aspekte-Modell, \citet{Chomsky65a})
-		\item \alert{Rektions-Bindungs-Theorie} (GB, \citet{Chomsky81a})
-		\item Minimalismus (MP, \citet{Chomsky95a})
+		\item Phrasenstrukturgrammatiken (PSG; \citealt{Chomsky57x})
+		\item Standardtheorie (ST; Auch Aspekte-Modell, \citealt{Chomsky65a})
+		\item \alertred{Rektions-Bindungs-Theorie} (GB; \citealt{Chomsky81x})
+		\item Minimalismus (MP; \citealt{Chomsky95a})
 	\end{itemize}
 	\item[]
-	\item Daraus entstanden andere GGen:
+	\item Daraus entstanden andere \gqq{GGen}:
 	\begin{itemize}
 		\item Generative Semantik \citep{Harris93a}
 		\item Lexical-Functional Grammar (LFG)
 		\item Head-driven phrase Structure Grammar (HPSG)
-		\item Tree Adjoining Grammar (TAG)
+		\item Construction Grammar (CxG)
 		\item \dots
 	\end{itemize}
 \end{itemize}
 
-\citep[s.][]{MuellerS15b}
+\citep[vgl.][]{MuellerS15b}
 
 \end{frame}
 
@@ -227,12 +245,33 @@
 	\item Strenge Modularität des Sprachsystems 
 \end{itemize}
 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
 \begin{figure}
 \centering
-
 	\includegraphics[scale=.3]{material/03ArchitekturSprachsystem}
-	%\caption{Architektur des Sprachsystems}
+	\caption{Architektur des Sprachsystems}
 \end{figure}
+
+%\begin{tikzpicture}
+%\node[above] at (0,0) {Architektur des Sprachsystems};
+%\node[below] at (0,0) {Lexikon};
+%\draw[->] (0,-0.5)--(0,-0.9);
+%\draw (0,-2.5) ellipse (110pt and 45 pt);
+%\draw[->] (0,-2.3)--(-2,-2.6);
+%\node[below] at (-2,-2.6) {Phonetische Form};
+%\draw[->] (0,-2.3)--(2,-2.6);
+%\node[below] at (2,-2.6) {Semantische Form};
+%\node at (0,-1.5) {Sprachliche Strukturbildung};
+%\node at (0,-2) {(Morpho-)Syntaktische Struktur};
+%\draw[<->] (-2,-4)--(-2,-4.5);
+%\draw[<->] (2,-4)--(2,-4.5);
+%\node[below] at (-2,-4.5) {Artikulatorisch-perzeptorischer Apparat};
+%\end{tikzpicture}
 
 \end{frame}
 
@@ -252,9 +291,7 @@
 
 \begin{itemize}
 	\item Explikation der syntaktischen Beziehungen zwischen einem Kopf und seinen modifizierenden (\textbf{Adjunkten}), spezifizierenden (\textbf{Spezifikatoren}), und ergänzenden (\textbf{Argumenten}) Einheiten
-	\item[]
 	\item Explikation endozentrischer Konstruktionen
-	\item[]
 	\item Bis dahin wurden Sätze als exozentrische Konstruktionen behandelt!
 \end{itemize}
 
@@ -266,9 +303,9 @@
 	\centering
 	\footnotesize{
 		\begin{forest}
-		sn edges,
-		[S	[NP [Stefan,triangle]]
-			[VP [schreibt ein Buch, triangle]]
+		sm edges,
+		[S	[NP [Stefan,roof]]
+			[VP [schreibt ein Buch,roof]]
 		]
 		\end{forest}
 		}
@@ -295,40 +332,209 @@
 \begin{frame}
 \frametitle{X-Bar: Strukturelle Annahmen}
 
-\begin{multicols}{2}
+\citep[vgl.][]{Chomsky&Lasnik93a, Fries&MyP16a}
+
 \begin{enumerate}
-	\item Alle syntaktischen Phrasen haben \textbf{den gleichen syntaktischen Aufbau}.
-	\item Jede Phrase hat ein einziges, strukturell obligatorisches Element \ras \textbf{Kopf} der Phrase: \zerobar{X}, X.
-	\item Zwischen Phrase und Kopf gibt es syntaktisch relevante Zwischenstufen \ras \textbf{Zwischenprojektionen}: \MyPxbar{X}, \ibar{X}.
-	\item Alle Nicht-Köpfe sind \textbf{maximale Projektionen}: XP, \xxbar{X}, \iibar{X}, \maxbar{X} .
-	\item Maximale Projektionen haben die gleiche Bar-Anzahl (=2).
-	\item Nur Nicht-Köpfe sind optional.
+	\item[1] Alle syntaktischen Phrasen haben \textbf{den gleichen syntaktischen Aufbau}.
 \end{enumerate}
-\end{multicols}
+
+
+\begin{columns}
+
+\begin{column}{.3\textwidth}
+{\footnotesize	
+\begin{itemize}
+	\item XP: Phrase
+	\item \MyPxbar{X}: Zwischenprojektion
+	\item \zerobar{X}: Kopf
+	\item YP: Spezifikator
+	\item ZP: Komplement
+\end{itemize}
+}
+\end{column}
+%%
+%%
+\begin{column}{.7\textwidth}
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[\alertred{XP} [\alertgreen{YP}]
+	[\alertred{\MyPxbar{X}} [\alertred{\zerobar{X}}]
+	[\alertgreen{ZP}]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+	
+\end{figure}
+\end{column}
+	
+\end{columns}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[2] Jede Phrase hat ein einziges, strukturell obligatorisches Element. 
+		
+		\ras \textbf{Kopf} der Phrase (Notation: \zerobar{X} oder X)
+	\end{enumerate}
 
 \begin{figure}[b]
-	\begin{minipage}[b]{0.05\textwidth}
-	\end{minipage} 
-	%
-	\begin{minipage}[b]{0.50\textwidth}
-	\centering
-	\tiny{
-		\begin{forest}
-		sn edges,
-		[XP [YP\\Spezifikator]
-			[\MyPxbar{X} [\zerobar{X}\\Kopf]
-				[ZP\\Komplement]
-			]
-		]
-		\end{forest}
-		}
-		\caption{X-bar Schema}	
-  	\end{minipage}  
-  	%  
-	\begin{minipage}[b]{0.05\textwidth}
-  	\end{minipage}
-  	
+
+\centering
+\begin{forest}
+	MyP edges,
+	[XP [YP]
+	[\MyPxbar{X} [\zerobar{X}, draw, red]
+	[ZP]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+	
 \end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[3] Zwischen Phrase und Kopf gibt es syntaktisch relevante Zwischenstufen 
+		
+		\ras \textbf{Zwischenprojektionen} (Notation: \MyPxbar{X} oder \ibar{X})
+	\end{enumerate}
+
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+MyP edges,
+[XP 
+	[YP]
+	[\MyPxbar{X}, draw, red 
+		[\zerobar{X}]
+		[ZP]
+	]
+]
+\end{forest}
+\caption{X-bar Schema}	
+
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[4] Alle Nicht-Köpfe sind \textbf{maximale Projektionen} (bzw. Phrasen).
+		
+		\ras Notation: XP oder \xxbar{X} oder \iibar{X} oder \maxbar{X} oder  X$^2$
+	\end{enumerate}
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[XP [YP, draw, red]
+	[\MyPxbar{X} [\zerobar{X}]
+	[ZP, draw, red]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+	\begin{enumerate}
+		\item[5] Maximale Projektionen haben die gleiche Bar-Anzahl ($=2$).
+		
+		\ras Notation: XP oder \xxbar{X} oder \iibar{X} oder \maxbar{X} oder  X$^2$
+	\end{enumerate}
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[XP{$=$}X$^2$, draw, red
+		[YP{$=$}Y$^2$, draw, red]
+		[X$^1$ 
+			[\zerobar{X}]
+			[ZP{$=$}Z$^2$, draw, red]
+		]
+	]
+\end{forest}
+\caption{X-bar Schema}	
+
+\end{figure}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{X-Bar: Strukturelle Annahmen}
+
+\begin{enumerate}
+	\item[6] Nur Nicht-Köpfe sind optional.
+\end{enumerate}
+
+\begin{columns}
+	
+\begin{column}{.5\textwidth}
+
+\begin{figure}[b]
+\centering
+\begin{forest}
+	MyP edges,
+	[*XP [YP]
+	[\MyPxbar{X} 
+	[ZP]
+	]
+	]
+\end{forest}
+\caption{X-bar Schema}
+\end{figure}
+	
+\end{column}
+%%
+%%
+\begin{column}{.5\textwidth}
+
+\begin{figure}[b]
+	\centering
+	\begin{forest}
+		MyP edges,
+		[XP 
+		[\MyPxbar{X} [\zerobar{X}, draw, red]
+		]
+		]
+	\end{forest}
+	\caption{X-bar Schema}
+\end{figure}
+	
+\end{column}
+
+\end{columns}
 
 \end{frame}
 
@@ -358,7 +564,7 @@
 	\centering
 	\small{
 		\begin{forest}
-		sn edges,
+		sm edges,
 		[Autofahrer {\ras} Fahrer!
 			[Auto] 
 			[Fahrer]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
@@ -390,7 +596,7 @@ Der Kopf einer Wortgruppe/Konstituente/Phrase/Projektion ist dasjenige Element, 
 
 Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf verlangt die Anwesenheit bestimmter anderer Elemente in seiner Phrase.
 
-\citep{MuellerS13f}
+\citep[vgl.][]{Adger04a, MuellerS13f, MyP18b}
 \end{block}
 
 \pause
@@ -417,7 +623,6 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 	\end{itemize}
 \end{itemize}
 
-\citep[vgl.][]{Adger04a}
 \end{frame}
 
 
@@ -433,22 +638,24 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Interpretation}}
+\frametitle{Interpretation}
 
 \begin{itemize}
 	\item Sehr intuitives (aber etwas unzuverlässiges) Kriterium, v.\,a. stark theorieabhängig
 	\item Durch Konstituententests wissen wir welche Wortfolgen \textbf{Konstituenten} sind.
 \end{itemize}
 \pause
-\eal Peter kauft \alert{[das erfrischende Wasser, das ich dir letztens empfohlen habe]}.
-\pause
-\ex \textbf{Vorfeldtest}\\
-\alert{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} kauft Peter. 
-\pause
-\ex \textbf{Fragetest}\\
-\alert{{[}Was]} kauft Peter? \ras \alert{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]}
-\zl
 
+\ea Peter kauft \alertred{[das erfrischende Wasser, das ich dir letztens empfohlen habe]}.
+
+\pause
+
+\ex \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} kauft Peter.  \hfill [\textbf{Vorfeldtest}]
+
+\pause
+
+\ex \alertred{{[}Was]} kauft Peter? \ras \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} \hfill [\textbf{Fragetest}]
+\z
 
 \pause
 \begin{itemize}
@@ -460,29 +667,36 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Interpretation}}
+\frametitle{Interpretation}
 
 \begin{itemize}
-	\item Welches Element in der Phrase\\
-	{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]\\
-	steuert die Interpretation?
-	\item[] \pause
-	\item[\ra] \emph{Wasser} (Entität)
-	\item[] \pause
-	\item Welches Element in der Phrase\\
-	Peter wartet \alert{[an der Ecke]}.\\
-	steuert die Interpretation?
-	\item[] \pause
-	\item[\ra] \emph{an} (Lokation)
-	\item[] \pause
-	\item Welches Element in der Phrase\\
-	Peter \alert{[wartet an der Ecke]}.\\
-	steuert die Interpretation?
-	\item[] \pause
-	\item[\ra] \emph{wartet} (Handlung)
-
+	\item Welches Element in den folgenden (markierten) Phrasen steuert die Interpretation?
 \end{itemize}
 
+\pause 
+	
+	\ea {[}das erfrischende Wasser, das ich dir letztens empfohlen habe]
+
+\pause
+	
+	\ras \emph{Wasser} (Entität)
+
+\pause
+	\ex Peter wartet \alertred{[an der Ecke]}.
+
+\pause
+	\ras \emph{an} (Lokation)
+
+\pause
+
+	\ex Peter \alertred{[wartet an der Ecke]}.
+	
+ \pause
+
+	\ra \emph{wartet} (Handlung)
+	
+	\z 
+	
 \end{frame}
 
 
@@ -600,16 +814,16 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h., der Kopf v
 \end{itemize}
 
 \begin{figure}[b]
-	\begin{minipage}[b]{0.05\textwidth}
-	\end{minipage} 
+%	\begin{minipage}[b]{0.05\textwidth}
+%	\end{minipage} 
 	%
 	\begin{minipage}[b]{0.40\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.68}{
 		\begin{forest}
-		sn edges,
-		[VP [NP [Peter,triangle]]
-			[\MyPxbar{V} [NP [den Patienten,triangle]]
+		MyP edges,
+		[VP [NP [Peter,roof]]
+			[\MyPxbar{V} [NP [den Patienten,roof]]
 				[V [behandelt]]		{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
 node[anchor=west,align=center]{Kopf};}
 			]
@@ -621,26 +835,27 @@ node[anchor=west,align=center]{Kopf};}
   	%  
   	\pause            
 	\begin{minipage}[b]{0.05\textwidth}
+		\hfill
   	\end{minipage}
   	%         
   	\begin{minipage}[b]{0.40\textwidth}
 	\centering
-	\footnotesize{
+	\scalebox{.68}{
 		\begin{forest}
-		sn edges,
+		MyP edges,
 		[NP [Det [Peters]]
-			[\MyPxbar{N} [AP [sanfte,triangle]]
+			[\MyPxbar{N} [AP [sanfte,roof]]
 				[\MyPxbar{N} [N [Behandlung]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Kopf};}
-					[NP [des Patienten,triangle]]]]
+					[NP [des Patienten,roof]]]]
 		]
 		\end{forest}
 		}
 		\caption{NP}
   	\end{minipage}  
   	%              
-	\begin{minipage}[b]{0.05\textwidth}
-  	\end{minipage}
+%	\begin{minipage}[b]{0.05\textwidth}
+%  	\end{minipage}
   	
 \end{figure}
 
@@ -721,9 +936,9 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 
 \eal 
-\ex [Peter] schläft. \hfill (1 Argument)
-\ex [Peter] küsst [Maria]. \hfill (2 Argumente)
-\ex [Maria] schenkt [Peter] [die Blumen]. \hfill (3 Argumente)
+\ex {[Peter] schläft.} \hfill (1 Argument)
+\ex {[Peter] küsst [Maria].} \hfill (2 Argumente)
+\ex {[Maria] schenkt [Peter] [die Blumen].} \hfill (3 Argumente)
 \zl
 
 \pause
@@ -749,12 +964,12 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 \end{itemize}
 
 \eal 
-\ex [Der Mann]$_{\textsc{nom}}$ schläft.
-\ex [Der Mann]$_{\textsc{nom}}$ küsst [den Elefanten]$_{\textsc{akk}}$.
-\ex [Der Mann]$_{\textsc{nom}}$ schenkt [dem Jungen]$_{\textsc{dat}}$ [den Elefanten]$_{\textsc{akk}}$.
-\ex [Der Mann]$_{\textsc{nom}}$ gedenkt [des Opfers]$_{\textsc{gen}}$.
-\ex [Der Mann]$_{\textsc{nom}}$ hilft [dem Opfer]$_{\textsc{dat}}$.
-\ex [Der Mann]$_{\textsc{nom}}$ wartet [auf den Jungen]$_{auf}$.
+\ex {[Der Mann]$_{\textsc{nom}}$ schläft.}
+\ex {[Der Mann]$_{\textsc{nom}}$ küsst [den Elefanten]$_{\textsc{akk}}$.}
+\ex {[Der Mann]$_{\textsc{nom}}$ schenkt [dem Jungen]$_{\textsc{dat}}$ [den Elefanten]$_{\textsc{akk}}$.}
+\ex {[Der Mann]$_{\textsc{nom}}$ gedenkt [des Opfers]$_{\textsc{gen}}$.}
+\ex {[Der Mann]$_{\textsc{nom}}$ hilft [dem Opfer]$_{\textsc{dat}}$.}
+\ex {[Der Mann]$_{\textsc{nom}}$ wartet [auf den Jungen]$_{auf}$.}
 \zl
 
 \pause
@@ -778,31 +993,19 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 \end{itemize}
 
 \ea \textbf{Modalverb} verlangt Infinitiv\\
-\dots dass er es \alert{kaufen$_{\textsc{inf}}$ will}
-\z
-
+\dots dass er es \alertred{kaufen$_{\textsc{inf}}$ will}
 \pause
-
-\ea \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
-\dots dass er es \alert{gekauft$_{\textsc{part}}$ hat}
-\z
-
+\ex \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
+\dots dass er es \alertred{gekauft$_{\textsc{part}}$ hat}
 \pause
-
-\ea \textbf{Modalverb} verlangt Infinitiv\\
-\dots dass er es \alert{[gekauft haben]$_{\textsc{inf}}$ will}
-\z
-
+\ex \textbf{Modalverb} verlangt Infinitiv\\
+\dots dass er es \alertred{[gekauft haben]$_{\textsc{inf}}$ will}
 \pause
-
-\ea \textbf{Modalverb} verlangt Infinitiv\\
-\dots dass er es \alert{[gekauft haben wollen]$_{\textsc{inf}}$ muss}
-\z
-
+\ex \textbf{Modalverb} verlangt Infinitiv\\
+\dots dass er es \alertred{[gekauft haben wollen]$_{\textsc{inf}}$ muss}
 \pause
-
-\ea \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
-\dots dass er es \alert{[gekauft haben wollen müssen/gemusst]$_{\textsc{inf}}$ hat}
+\ex \textbf{\emph{haben}-Hilfsverb} verlangt Partizip II\\
+\dots dass er es \alertred{[gekauft haben wollen müssen/gemusst]$_{\textsc{inf}}$ hat}
 \z
 
 \end{frame}
@@ -817,17 +1020,17 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\textbf{die Art} wie seine Argumente interpretiert werden (Theta-Rollen, $\theta$-Rollen).
 
 \eal 
-\ex [Der Elefant]$_{\textsc{agens}}$ tötet [den Mann]$_{\textsc{patiens}}$.
-\ex [Der Elefant]$_{\textsc{thema}}$ interessierte [den Mann]$_{\textsc{experiencer}}$.
+\ex {[Der Elefant]$_{\textsc{agens}}$ tötet [den Mann]$_{\textsc{patiens}}$.}
+\ex {[Der Elefant]$_{\textsc{thema}}$ interessierte [den Mann]$_{\textsc{experiencer}}$.}
 \zl
 
 \eal
-\ex [Peters]$_{\textsc{agens}}$ Behandlung [des Mannes]$_{\textsc{patiens}}$
-\ex [Peters]$_{\textsc{patiens}}$ Ermordung
+\ex {[Peters]$_{\textsc{agens}}$ Behandlung [des Mannes]$_{\textsc{patiens}}$}
+\ex {[Peters]$_{\textsc{patiens}}$ Ermordung}
 \zl
 
 
-	\item Einige Verben (\zB \obj{regnen, schneien}) vergeben ihrem Subjekt keine Theta-Rolle \ras semantisch gesehen 0-wertig
+	\item Einige Verben (\zB \MyPobj{regnen, schneien}) vergeben ihrem Subjekt keine Theta-Rolle \ras semantisch gesehen 0-wertig
 
 \end{itemize}
 
@@ -921,7 +1124,7 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 		\item[]
 		\item ihre \textbf{$\theta$-Rolle} (semantische Information),
 		\item[]
-		\item \textbf{weitere semantische Eigenschaften}, \zB das Objekt vom Verb \obj{trinken} muss \gqq{flüssig} sein (semantische Information \ras s-selektionales Merkmal oder 	Selektionsbeschränkung).
+		\item \textbf{weitere semantische Eigenschaften}, \zB das Objekt vom Verb \MyPobj{trinken} muss \gqq{flüssig} sein (semantische Information \ras s-selektionales Merkmal oder 	Selektionsbeschränkung).
 	\end{enumerate}
 	
 \end{itemize}
@@ -940,7 +1143,7 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\ea lesen: DP$_{\textsc{nom,ag}}$ (DP)$_{\textsc{akk,th}}$ $\underline{\qquad}$
 	\z
 	
-	\item[] \textbf{=} \obj{lesen} ist subkategorisiert für zwei Argumente, die beide syntaktisch NPn/DPn sind. Eine der NPn/DPn ist obligatorisch, wird im Nominativ realisiert und trägt die $\theta$-Rolle Agens, z.B. \obj{Uta} in \obj {Uta liest ein Buch}. Die andere NP/DP ist fakultativ, wird im Akkusativ realisiert und trägt die $\theta$-Rolle Thema (\zB \obj{ein Buch} in \obj{Uta liest ein Buch}).
+	\item[] \textbf{=} \MyPobj{lesen} ist subkategorisiert für zwei Argumente, die beide syntaktisch NPn/DPn sind. Eine der NPn/DPn ist obligatorisch, wird im Nominativ realisiert und trägt die $\theta$-Rolle Agens, z.B. \MyPobj{Uta} in \MyPobj{Uta liest ein Buch}. Die andere NP/DP ist fakultativ, wird im Akkusativ realisiert und trägt die $\theta$-Rolle Thema (\zB \MyPobj{ein Buch} in \MyPobj{Uta liest ein Buch}).
 
 	\ea schenken: DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ 
 	\z
@@ -960,7 +1163,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Modifikatoren vs. Argumente}
 
 \textbf{Modifikatoren} sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 
@@ -968,9 +1170,9 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\item \textbf{Anzahl}
 
 \eal 
-\ex Maria schläft \alert{[heute] [im Zimmer] [unruhig]}.
-\ex Maria küsst Peter \alert{[heute] [im Zimmer] [unruhig]}.
-\ex Maria schenkt Peter die Blumen \alert{[heute] [im Zimmer] [unruhig]}.
+\ex Maria schläft \alertred{[heute] [im Zimmer] [unruhig]}.
+\ex Maria küsst Peter \alertred{[heute] [im Zimmer] [unruhig]}.
+\ex Maria schenkt Peter die Blumen \alertred{[heute] [im Zimmer] [unruhig]}.
 \zl
 
 	\begin{itemize}
@@ -978,12 +1180,12 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 		\item Argumente können \textbf{obligatorisch} oder \textbf{fakultativ} sein (sie werden dann \gqq{mitverstanden}! \ras existentielle Interpretation)
 		
 		\eal 
-		\ex Maria schläft \alert{[heute] [im Zimmer]}.
-		\ex Maria schläft \alert{[im Zimmer]}. 
+		\ex Maria schläft \alertred{[heute] [im Zimmer]}.
+		\ex Maria schläft \alertred{[im Zimmer]}. 
 		\zl
 		
 		\eal 
-		\ex Peter isst \alert{[eine Schokolade]}.
+		\ex Peter isst \alertred{[eine Schokolade]}.
 		\ex Peter isst. 
 		\zl
 		
@@ -996,7 +1198,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Modifikatoren vs. Argumente}
 
 \textbf{Modifikatoren} sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 
@@ -1004,9 +1205,9 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	
 	\item \textbf{Form}
 \eal
-\ex Maria schläft \alert{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
-\ex Maria küsst Peter \alert{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
-\ex Maria schenkt Peter die Blumen \alert{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
+\ex Maria schläft \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
+\ex Maria küsst Peter \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
+\ex Maria schenkt Peter die Blumen \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
 \zl
 
 \end{itemize}
@@ -1016,7 +1217,6 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Modifikatoren vs. Argumente}
 
 \textbf{Modifikatoren} (syntaktisch: Adjunkte) sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 
@@ -1024,9 +1224,9 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\item \textbf{Art}
 
 \eal 
-\ex Der Ingenieur sprengte \alert{[die Brücke]$_{\textsc{pat}}$}. 
-\ex Der Ingenieur sah \alert{[die Brücke]$_{\textsc{th}}$}. 
-\ex Der Ingenieur verließ \alert{[die Brücke]$_{\textsc{quelle}}$}.
+\ex Der Ingenieur sprengte \alertred{[die Brücke]$_{\textsc{pat}}$}. 
+\ex Der Ingenieur sah \alertred{[die Brücke]$_{\textsc{th}}$}. 
+\ex Der Ingenieur verließ \alertred{[die Brücke]$_{\textsc{quelle}}$}.
 \zl
 
 	\begin{itemize}
@@ -1034,8 +1234,8 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 		\item Argumente der gleichen Art sind \textbf{nicht iterierbar}!
 		
 		\eal 
-		\ex[]{Maria schläft \alert{[heute]$_{\textsc{zeit}}$ [am frühen Morgen]$_{\textsc{zeit}}$}.}
-		\ex[*]{Peter isst \alert{[eine Schokolade]$_{\textsc{th}}$ [einen Kuchen]$_{\textsc{th}}$}.}
+		\ex[]{Maria schläft \alertred{[heute]$_{\textsc{zeit}}$ [am frühen Morgen]$_{\textsc{zeit}}$}.}
+		\ex[*]{Peter isst \alertred{[eine Schokolade]$_{\textsc{th}}$ [einen Kuchen]$_{\textsc{th}}$}.}
 		\zl
 
 		
@@ -1048,43 +1248,274 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Übungen}
+\section{Hausaufgabe}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
 %}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\iftoggle{uebung}{
+	
 \begin{frame}
-\frametitle{Übungen}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
 
+	\item Bestimmen Sie den Kopf der folgenden \textbf{markierten} Phrasen und begründen Sie Ihre Entscheidung:
+	
+	\ea\label{ex:KopfSchueler} Es geht um [\textbf{wirklich von dieser Sache überzeugte und engagierte junge Schüler, die sich dennoch über das übliche und akzeptable Ausmaß hinaus daneben benommen haben}].
+	\z
+	
+	\ea Wir warteten auf [\textbf{den von sich sehr überzeugten Redner}].
+	\z 
+	
+\end{itemize}
+
+\end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+
+\begin{itemize}
+	\item Bestimmen Sie den Kopf der folgenden \textbf{markierten} Phrasen und begründen Sie Ihre Entscheidung:
+\end{itemize}
+	
+	\ea Es geht um [\textbf{wirklich von dieser Sache überzeugte und engagierte junge Schüler, die sich dennoch über das übliche und akzeptable Ausmaß hinaus daneben benommen haben}].
+	\z
+
+\pause 
+
+	
+\begin{itemize}
+	\item \alertgreen{Kopf: Schüler (vorläufig)}
+	\item \alertgreen{Interpretation: Es geht um \emph{Schüler}}
+	\item \alertgreen{Distribution: Innerhalb einer PP wird eine (DP/)NP selegiert. Der Kopf dieser NP ist das Nomen.}
+	\item \alertgreen{Phrasenaufbau: Alle anderen Modifikatoren beziehen sich auf das Nomen. }
+\end{itemize}
+
+	
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+
+\begin{itemize}
 	\item Bestimmen Sie den Kopf der folgenden Phrase und begründen Sie Ihre Entscheidung:
-	
-		\ea Es geht um [\textbf{wirklich von dieser Sache überzeugte und engagierte junge Schüler, die sich dennoch über das übliche und akzeptable Ausmaß hinaus daneben benommen haben}].
-		\z
-	
-
-	\pause
-	\item[\ra] Nominalphrase/Substantivgruppe\\
-	Kopf: Nomen \emph{Schüler}\\
-	da Schüler sowohl die Genus-, Kasus- und Numerus-Eigenschaften der Gesamtphrase bestimmt, ihre mögliche interne Modifikation (\zB \emph{junge}, \emph{engagierte}), wie auch wesentliche ihrer semantischen Eigenschaften 
-	
 \end{itemize}
 
+\ea Wir warteten auf [\textbf{den von sich sehr überzeugten Redner}].
+\z 
+
+\pause 
+
+\begin{itemize}
+	\item \alertgreen{Kopf: Redner (vorläufig)}
+	\item \alertgreen{Interpretation: Es geht um \emph{Redner}}
+	\item \alertgreen{Distribution: Innerhalb einer PP wird eine (DP/)NP selegiert. Der Kopf dieser NP ist das Nomen.}
+	\item \alertgreen{Phrasenaufbau: Alle anderen Modifikatoren beziehen sich auf das Nomen.}
+\end{itemize}
+	
+	
 \end{frame}
 
+}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\iftoggle{uebung}{
+	
 \begin{frame}
-\frametitle{Übungen}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
 
-	\item Geben Sie die Argumentstruktur (in dem bekannten Format) und einen Beispielsatz der von Ihnen angegebenen AS für die folgenden Wörter an:\\
-	übergeben, stolz, regnen, glauben, Frage, wissen, donnern, scheinen, mit, erschrecken, ängstigen, fürchten, Banane, Tatsache, warten, Angst, wohnen, bewohnen, auf, malen, krank, bemalen, fragen
+	\item Geben Sie für die folgenden Wörter den Subkategorisierungsrahmen (in dem besprochenen Format) und ein(en) Beispiel(satz), der den von Ihnen angegebenen Subkategorisierungsrahmen illustriert, an:
+	
+	\ea übergeben
+	\ex stolz
+	\ex donnern
+	\ex glauben
+	\ex Frage
+	\ex erschrecken
+	\ex bemalen
+	\z 
+	
+%	wissen, regnen, scheinen, mit, ängstigen, fürchten, Banane, Tatsache, warten, Angst, wohnen, bewohnen, auf, malen, krank, bemalen, fragen
 
 \end{itemize}
 
 \end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+
+\begin{itemize}
+	
+	\item Geben Sie für die folgenden Wörter den Subkategorisierungsrahmen (in dem besprochenen Format) und ein(en) Beispiel(satz), der den von Ihnen angegebenen Subkategorisierungsrahmen illustriert, an:
+	
+	\ea übergeben: \pause \alertgreen{DP$_{\textsc{nom,quelle}}$ (DP$_{\textsc{dat,ziel}}$) DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ [Lesart 1]}
+
+	\alertgreen{(dass) ich Peter die Briefe \emph{übergebe}}
+	\pause 
+		
+	\ex stolz: \pause \alertgreen{PP$_{auf+\textsc{akk,th}}$ $\underline{\qquad}$ (DP$_{\textsc{exp}}$)}
+	
+	\alertgreen{die auf ihre Tochter \emph{stolze} Mutter}
+	\pause 
+	
+	\ex donnern: \pause \alertgreen{DP$_{(es),\textsc{nom}}$ $\underline{\qquad}$}
+	
+	\alertgreen{(dass) es \emph{donnert}}
+	\pause
+	\z 
+	
+	%	wissen, regnen, scheinen, mit, ängstigen, fürchten, Banane, Tatsache, warten, Angst, wohnen, bewohnen, auf, malen, krank, bemalen, fragen
+	
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+
+\begin{itemize}
+	
+	\item Geben Sie für die folgenden Wörter den Subkategorisierungsrahmen (in dem besprochenen Format) und ein(en) Beispiel(satz), der den von Ihnen angegebenen Subkategorisierungsrahmen illustriert, an:
+	
+	\ea Frage: \pause \alertgreen{DP$_{\textsc{gen,ag}}$ $\underline{\qquad}$ PP$_{nach+\textsc{dat,th}}$}
+	
+	\alertgreen{die Frage nach dem Schatz}
+	\pause 
+	
+	\ex erschrecken: \pause \alertgreen{DP$_{\textsc{nom,causer}}$ DP$_{\textsc{akk,exp}}$ $\underline{\qquad}$ [Lesart 1]}
+	
+	\alertgreen{(dass) Maria Peter erschreckt}
+	\pause 
+	
+	\ex bemalen: \pause \alertgreen{DP$_{\textsc{nom,ag}}$ DP$_{\textsc{akk,pat/th}}$ $\underline{\qquad}$}
+	
+	\alertgreen{(dass) ich die Wand bemale}
+	\z 
+	
+	%	wissen, regnen, scheinen, mit, ängstigen, fürchten, Banane, Tatsache, warten, Angst, wohnen, bewohnen, auf, malen, krank, bemalen, fragen
+	
+\end{itemize}
+
+\end{frame}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\iftoggle{uebung}{
+	
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	
+	\item Bestimmen Sie in den folgenden Sätzen, welche Phrasen Argumente und welche Modifikatoren des Verbs sind, und begründen Sie Ihre Entscheidung.
+
+\end{itemize}
+
+\ea Maria bearbeitete die Folien mit sehr viel Kreativität.
+
+\ex Maria arbeitete an den Folien den ganzen Tag.
+
+\ex Peter wirkte auf seinen Sohn stolz.
+\z 
+
+\end{frame}
+
+} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+{
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+
+\begin{itemize}
+	
+	\item Bestimmen Sie in den folgenden Sätzen, welche Phrasen Argumente und welche Modifikatoren des Verbs sind, und begründen Sie Ihre Entscheidung.
+	
+\end{itemize}
+
+\ea Maria bearbeitete die Folien mit sehr viel Kreativität.
+
+\pause 
+\alertgreen{Arg.: Maria, die Folien}
+
+\alertgreen{Mod.: mit sehr viel Kreatitvität}
+
+\alertgreen{Begründung: \dots }
+
+\pause 
+
+
+\ex Maria arbeitete an den Folien den ganzen Tag.
+
+\pause 
+\alertgreen{Arg.: Maria, an den Folien}
+
+\alertgreen{Mod.: den ganzen Tag}
+
+\alertgreen{Begründung: \dots }
+
+\z 
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Hausaufgabe (Lösung)} 
+
+\begin{itemize}
+	
+	\item Bestimmen Sie in den folgenden Sätzen, welche Phrasen Argumente und welche Modifikatoren des Verbs sind, und begründen Sie Ihre Entscheidung.
+	
+\end{itemize}
+
+\ea Peter wirkte auf seinen Sohn stolz.
+
+\pause 
+\alertgreen{Arg.: Peter, auf seinen Sohn stolz}
+
+\alertgreen{Mod.: $\emptyset$}
+
+\alertgreen{Begründung: \dots }
+
+\pause 
+
+
+\ex Peter wirkte auf seinen Sohn stolz.
+
+\pause 
+\alertgreen{Arg.: Peter, auf seinen Sohn, stolz}
+
+\alertgreen{Mod.: $\emptyset$}
+
+\alertgreen{Begründung: \dots }
+\z 
+
+
+\end{frame}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	

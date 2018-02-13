@@ -240,7 +240,7 @@ Bestimmen Sie die topologischen Felder in den Sätzen in (\mex{1}):
 
 }
 
-\iftoggle{ha-loesung}{
+%\iftoggle{loesung}{
 \frame{
 \frametitle{Lösung}
 
@@ -248,20 +248,29 @@ Bestimmen Sie die topologischen Felder in den Sätzen in (\mex{1}):
 	\begin{tabular}{@{}lllll@{}}
 		\rowcolor{structure!15}Vorfeld 	& linke Klammer & Mittelfeld                 & rechte Klammer 	& Nachfeld                 	\\ 
 		\\
-		\rowcolor{structure!10}Der Mann & hat      		&                            & gewonnen,        & den alle kennen.          \\
-								Er 		& gibt          & ihm das Buch,    			 &    				& das Klaus emphohlen hat. 	\\
-		\rowcolor{structure!10}Maria    & hat      		&                            & behauptet,       & dass das nicht stimmt.    \\
-								Peter   & hat        	& das Buch                   & gelesen,         &          					\\
-		\rowcolor{structure!10}    	das	& 		       	& Maria dem Schüler          & empfohlen hat,   &                           \\
-									der &		       	& neu in die Klasse  		 & gekommen ist.    &                           \\
-		\rowcolor{structure!10}     	& Komm!         &                            &         			&  							\\
+		\rowcolor{structure!10}Der Mann & hat           &                            & gewonnen,        & den alle kennen.          \\
+                                       den      &               & alle                       &
+                                       kennen\\
+                                       \\
+		\rowcolor{structure!10}		       Er 	& gibt          & ihm das Buch,              &                                    & das Klaus emphohlen hat. 	\\
+                                       das      &               & Klaus                & empfohlen hat &\\
+                \\
+		\rowcolor{structure!10} Maria    & hat      		&                            & behauptet,       & dass das nicht stimmt.    \\
+                                                & dass          & das nicht                   &               stimmt &\\
+                   \\
+		\rowcolor{structure!10}Peter   & hat        	& das Buch                   & gelesen,         & das  Maria dem Schüler empfohlen hat, der neu in die Klasse gekommen ist.         					\\
+		                       das	& 		       	& Maria dem Schüler          & empfohlen hat,   &  der neu in die Klasse gekommen ist.                         \\
+		\rowcolor{structure!10}der &		       	&                                                             neu in die Klasse & gekommen ist.    &
+                                                                        \\
+                                                                        \\
+		     	& Komm!         &                            &         			&  							\\
 	\end{tabular}
 }
 	
 
 	
 }	
-}
+%}
 
 \subsubsubsection{Deutsch als SOV-Sprache}
 

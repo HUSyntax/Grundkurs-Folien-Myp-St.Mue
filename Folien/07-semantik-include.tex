@@ -216,7 +216,7 @@
 \begin{frame} \frametitle{Zeichen}
 
 \begin{itemize}
-	\item \citet{Saussure16a}: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
+	\item \citet{Saussure16x}: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
 \end{itemize}	
 
 \begin{center}
@@ -267,7 +267,7 @@
 \frametitle{Zeichen}
 
 \begin{itemize}
-	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16a}:
+	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16x}:
 	
 	\item[]
 		
@@ -294,7 +294,7 @@
 	\frametitle{Zeichen}
 
 \begin{itemize}
-	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16a}:
+	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16x}:
 
 	\item[]
 	
@@ -1494,20 +1494,21 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \begin{minipage}{0.48\textwidth}
 \centering
 \begin{itemize}
-\item[] \small{p: Ich schlafe.\\
-q: Ich träume.}
+	\item[] \small{$p$: Ich schlafe.\\
+	$q$: Ich träume.}
 \end{itemize}
+
 \scalebox{0.8}{
-\begin{tabular}[b]{l|l|l}
-p & q & p \ras q \\
-\hline
-1 & 1 & 1 \\
-\hline
-1 & 0 & 0 \\
-\hline
-0 & 1 & 1 \\
-\hline
-0 & 0 & 1 \\
+\begin{tabular}[b]{c|c|c}
+	$p$ & $q$ & $p \ras q$ \\
+	\hline
+	1 & 1 & 1 \\
+	\hline
+	1 & 0 & 0 \\
+	\hline
+	0 & 1 & 1 \\
+	\hline
+	0 & 0 & 1 \\
 \end{tabular}}
 \end{minipage}
 %%
@@ -1515,20 +1516,21 @@ p & q & p \ras q \\
 \begin{minipage}{0.48\textwidth}
 \centering
 \begin{itemize}
-\item[] \small{p: Ich schlafe.\\
-q: Ich träume.}
+	\item[] \small{p: Ich schlafe.\\
+	q: Ich träume.}
 \end{itemize}
+
 \scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & $\lnot$ p & $ \lnot $p \ras $ \lor $q\\
-\hline
-1 & 1 & 0 & 1 \\
-\hline
-1 & 0 & 0 & 0 \\
-\hline
-0 & 1 & 1 & 1 \\
-\hline
-0 & 0 & 1& 1 \\
+\begin{tabular}{c|c|c|c}
+	$p$ & $q$ & $\lnot p$ & $ \lnot p \lor q$\\
+	\hline
+	1 & 1 & 0 & 1 \\
+	\hline
+	1 & 0 & 0 & 0 \\
+	\hline
+	0 & 1 & 1 & 1 \\
+	\hline
+	0 & 0 & 1& 1 \\
 \end{tabular}}
 \end{minipage}
 
@@ -1911,291 +1913,290 @@ p & q & $\lnot$ p & $ \lnot $p \ras $ \lor $q\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{(Einige) Äquivalenzen -- Extra}
-%%\frame{
-%%\begin{multicols}{2}
-%%\frametitle{~}
-%%	\tableofcontents[currentsection]
-%%\end{multicols}
-%%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{(Einige) Äquivalenzen -- Extra}
-%
-%\begin{itemize}
-%	\item Geben Sie die Wahrheitswerte der folgenden Formeln an und vergleichen Sie die Ergebnisse beider Tabellen:
-%
-%	\ea Genau dann wenn ich Durst habe, trinke ich eine Cola.
-%	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke.
-%	\z 
-%	
-%	\ea Es regnet oder, es scheint die Sonne und ich bin froh.
-%	\ex Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh.
-%	\z 
-%	
-%	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
-%	\ex Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
-%	\z 	
-%\end{itemize}
-%
-%\end{frame}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%%\iftoggle{loesung}{
-%
-%\begin{frame}[shrink=20]
-%\frametitle{Lösungen}
-%
-%\begin{table}
-%
-%\begin{minipage}{0.4\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small p: Ich habe Durst.\\
-%			q: Ich trinke eine Cola.}
-%	\end{itemize}
-%	\scalebox{0.8}{
-%		\begin{tabular}{l|l|l}
-%			p & q & p $ \leftrightarrow $ q\\
-%			\hline
-%			1 & 1 & 1\\
-%			\hline
-%			1 & 0 & 0\\
-%			\hline
-%			0 & 1 & 0\\
-%			\hline
-%			0 & 0 & 1\\
-%		\end{tabular}
-%	}
-%\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{(Einige) Äquivalenzen -- Extra}
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{(Einige) Äquivalenzen -- Extra}
+
+\begin{itemize}
+	\item Geben Sie die Wahrheitswerte der folgenden Formeln an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+	\ea Genau dann wenn ich Durst habe, trinke ich eine Cola.
+	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke.
+	\z 
+	
+	\ea Es regnet oder, es scheint die Sonne und ich bin froh.
+	\ex Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh.
+	\z 
+	
+	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+	\ex Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
+	\z 	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[shrink=20]
+\frametitle{Lösungen}
+
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] {\small p: Ich habe Durst.\\
+			q: Ich trinke eine Cola.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l|l|l}
+			p & q & p $ \leftrightarrow $ q\\
+			\hline
+			1 & 1 & 1\\
+			\hline
+			1 & 0 & 0\\
+			\hline
+			0 & 1 & 0\\
+			\hline
+			0 & 0 & 1\\
+		\end{tabular}
+	}
+\end{minipage}
 %%	
-%\begin{minipage}{0.5\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small
-%			p: Ich trinke Cola.\\
-%			q: Ich habe Durst.}
-%	\end{itemize}
-%	\scalebox{0.80}{
-%		\begin{tabular}{l|l|l|l|l}
-%			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
-%			\hline
-%			1 & 1 & 0 & 1 & 1\\
-%			\hline
-%			1 & 0 & 0 & 0 & 0\\
-%			\hline
-%			0 & 1 & 0 & 0 & 0\\
-%			\hline
-%			0 & 0 & 1 & 0 & 1\\
-%	\end{tabular}}
-%\end{minipage}
-%
-%\vspace{1em}
-%
-%\begin{minipage}{0.5\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small p: Es regnet.\\
-%			q: Es scheint die Sonne.\\
-%			s: Ich bin froh.}
-%	\end{itemize}
-%	\scalebox{0.8}{
-%		\begin{tabular}{l|l|l|l|l}
-%			p & q & s & q $\land $ s & p $\lor$ (q $\land $ s) \\
-%			\hline
-%			0 & 1 & 0 & 0 & 0\\
-%			\hline
-%			1 & 1 & 0 & 0 & 1\\
-%			\hline
-%			0 & 1 & 1 & 1 & 1\\
-%			\hline
-%			1 & 1 & 1 & 1 & 1\\
-%			\hline
-%			0 & 0 & 0 & 0 & 0\\
-%			\hline
-%			1 & 0 & 0 & 0 & 1\\
-%			\hline
-%			0 & 0 & 1 & 0 & 0\\
-%			\hline
-%			1 & 0 & 1 & 0 & 1\\
-%		\end{tabular}
-%	}
-%\end{minipage}
-%%
-%\begin{minipage}{0.4\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small p: Es regnet.\\
-%			q: Es scheint die Sonne.\\
-%			s: Ich bin froh.}
-%	\end{itemize}
-%	\scalebox{0.8}{
-%		\begin{tabular}[b]{l|l|l|l|l|l}
-%			p & q & s & p $ \lor $ q & p $ \lor $ s & (p $ \lor $ q) $ \land $ (p $ \lor $ s) \\
-%			\hline
-%			1 & 0 & 0 & 1 & 1 & 1\\
-%			\hline
-%			1 & 0 & 1 & 1 & 1 & 1\\
-%			\hline
-%			1 & 1 & 0 & 1 & 1 & 1\\
-%			\hline
-%			1 & 1 & 1 & 1 & 1 & 1\\
-%			\hline
-%			0 & 0 & 0 & 0 & 0 & 0\\
-%			\hline
-%			0 & 0 & 1 & 0 & 1 & 0\\
-%			\hline
-%			0 & 1 & 0 & 1 & 0 & 0\\
-%			\hline
-%			0 & 1 & 1 & 1 & 1 & 1\\
-%			
-%	\end{tabular}}
-%\end{minipage}
-%\end{table}
-%
-%\end{frame}
-%
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] {\small
+			p: Ich trinke Cola.\\
+			q: Ich habe Durst.}
+	\end{itemize}
+	\scalebox{0.80}{
+		\begin{tabular}{l|l|l|l|l}
+			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
+			\hline
+			1 & 1 & 0 & 1 & 1\\
+			\hline
+			1 & 0 & 0 & 0 & 0\\
+			\hline
+			0 & 1 & 0 & 0 & 0\\
+			\hline
+			0 & 0 & 1 & 0 & 1\\
+	\end{tabular}}
+\end{minipage}
+
+\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Lösungen}
+\begin{frame}[shrink=20]
+\frametitle{Lösungen}
 %
-%\begin{table}
-%
-%\begin{minipage}{0.48\textwidth}
-%\centering
-%\begin{itemize}
-%	\item[] p: Norbert raucht.\\
-%	q: Christiane schläft.
-%\end{itemize}
-%\scalebox{0.8}{
-%	\begin{tabular}{l|l|l}
-%		p & q & $ \lnot $ (p $ \lor $q)\\
-%		\hline
-%		1 & 1 & 0 \\
-%		\hline
-%		1 & 0 & 0 \\
-%		\hline
-%		0 & 1 & 0 \\
-%		\hline
-%		0 & 0 & 1 \\
-%\end{tabular}}
-%\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] {\small p: Es regnet.\\
+			q: Es scheint die Sonne.\\
+			s: Ich bin froh.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}{l|l|l|l|l}
+			p & q & s & q $\land $ s & p $\lor$ (q $\land $ s) \\
+			\hline
+			0 & 1 & 0 & 0 & 0\\
+			\hline
+			1 & 1 & 0 & 0 & 1\\
+			\hline
+			0 & 1 & 1 & 1 & 1\\
+			\hline
+			1 & 1 & 1 & 1 & 1\\
+			\hline
+			0 & 0 & 0 & 0 & 0\\
+			\hline
+			1 & 0 & 0 & 0 & 1\\
+			\hline
+			0 & 0 & 1 & 0 & 0\\
+			\hline
+			1 & 0 & 1 & 0 & 1\\
+		\end{tabular}
+	}
+\end{minipage}
 %%
-%\begin{minipage}{0.48\textwidth}
-%\centering
-%\begin{itemize}
-%	\item[] p: Norbert schläft.\\
-%	q: Christine schläft.
-%\end{itemize}
-%\begin{tabular}{l|l|l}
-%	p & q & $ \lnot $p $ \land $ $ \lnot $q\\
-%	\hline
-%	1 & 1 & 0\\
-%	\hline
-%	1 & 0 & 0\\
-%	\hline
-%	0 & 1 & 0\\
-%	\hline
-%	0 & 0 & 1\\
-%\end{tabular}
-%\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\begin{itemize}
+		\item[] {\small p: Es regnet.\\
+			q: Es scheint die Sonne.\\
+			s: Ich bin froh.}
+	\end{itemize}
+	\scalebox{0.8}{
+		\begin{tabular}[b]{l|l|l|l|l|l}
+			p & q & s & p $ \lor $ q & p $ \lor $ s & (p $ \lor $ q) $ \land $ (p $ \lor $ s) \\
+			\hline
+			1 & 0 & 0 & 1 & 1 & 1\\
+			\hline
+			1 & 0 & 1 & 1 & 1 & 1\\
+			\hline
+			1 & 1 & 0 & 1 & 1 & 1\\
+			\hline
+			1 & 1 & 1 & 1 & 1 & 1\\
+			\hline
+			0 & 0 & 0 & 0 & 0 & 0\\
+			\hline
+			0 & 0 & 1 & 0 & 1 & 0\\
+			\hline
+			0 & 1 & 0 & 1 & 0 & 0\\
+			\hline
+			0 & 1 & 1 & 1 & 1 & 1\\
+			
+	\end{tabular}}
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Lösungen}
+
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{itemize}
+	\item[] p: Norbert raucht.\\
+	q: Christiane schläft.
+\end{itemize}
+\scalebox{0.8}{
+	\begin{tabular}{l|l|l}
+		p & q & $ \lnot $ (p $ \lor $q)\\
+		\hline
+		1 & 1 & 0 \\
+		\hline
+		1 & 0 & 0 \\
+		\hline
+		0 & 1 & 0 \\
+		\hline
+		0 & 0 & 1 \\
+\end{tabular}}
+\end{minipage}
 %
-%\end{table}
-%\end{frame}
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{itemize}
+	\item[] p: Norbert schläft.\\
+	q: Christine schläft.
+\end{itemize}
+\begin{tabular}{l|l|l}
+	p & q & $ \lnot $p $ \land $ $ \lnot $q\\
+	\hline
+	1 & 1 & 0\\
+	\hline
+	1 & 0 & 0\\
+	\hline
+	0 & 1 & 0\\
+	\hline
+	0 & 0 & 1\\
+\end{tabular}
+\end{minipage}
+
+\end{frame}
 %%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{Aussagenlogik}
-%
-%\begin{itemize}
-%\item Übungen:
-%
-%\vspace{1em}
-%
-%\begin{enumerate}
-%\item Christiane schläft. (p)
-%\item[]
-%\item Norbert raucht nicht. ($\lnot$p)
-%\item[]
-%\item Norbert raucht und Christiane schläft nicht. (p $\land \lnot$ q)
-%\item[]
-%\item Wenn Norbert nicht raucht, schläft Christiane nicht. ($\lnot$ p \ras $\lnot$ q)
-%\end{enumerate}
-%
-%\item Konditional:
-%
-%\begin{enumerate}\setcounter{enumi}{4}
-%\item Wenn ich schlafe, träume ich. ( p \ras q)
-%\item[]
-%\item Ich schlafe nicht oder ich träume. ($\lnot$ p $\lor$ q)
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%\end{frame}
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{Aussagenlogik}
-%
-%\begin{itemize}
-%\item Übungen: 
-%
-%\vspace{1em}
-%
-%\begin{itemize}
-%\item Bikonditional:
-%
-%\begin{enumerate}
-%\item Genau dann wenn ich Durst habe, trinke ich eine Cola. (p $\leftrightarrow$ q)
-%\item[]
-%\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke – oder – Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke. ($\lnot$ p $\leftrightarrow \lnot$ q) $\lor$ (p $\leftrightarrow$ q)
-%\end{enumerate}
-%
-%\item Distributivität:
-%
-%\begin{enumerate}\setcounter{enumi}{2}
-%\item Es regnet oder -- es scheint die Sonne und ich bin froh. (p  $\lor$ (q $\land$ r))
-%\item[]
-%\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh. ((p $\lor$ q) $\land$ (p $\lor$ r))
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%\end{itemize}
-%\end{frame}
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{Aussagenlogik}
-%
-%\begin{itemize}
-%\item Übungen:
-%
-%\begin{itemize}
-%\item De Morgans Gesetze:
-%
-%\begin{enumerate}
-%\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft. $\lnot$ (p $\lor$ q)
-%\item[]
-%\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft. ($\lnot$ p $\land \lnot$ q)
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%\end{itemize}
-%
-%
-%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Aussagenlogik??}
+
+\begin{itemize}
+\item Übungen:
+
+\vspace{1em}
+
+\begin{enumerate}
+\item Christiane schläft. (p)
+\item[]
+\item Norbert raucht nicht. ($\lnot$p)
+\item[]
+\item Norbert raucht und Christiane schläft nicht. (p $\land \lnot$ q)
+\item[]
+\item Wenn Norbert nicht raucht, schläft Christiane nicht. ($\lnot$ p \ras $\lnot$ q)
+\end{enumerate}
+
+\item Konditional:
+
+\begin{enumerate}\setcounter{enumi}{4}
+\item Wenn ich schlafe, träume ich. ( p \ras q)
+\item[]
+\item Ich schlafe nicht oder ich träume. ($\lnot$ p $\lor$ q)
+\end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Aussagenlogik??}
+
+\begin{itemize}
+\item Übungen: 
+
+\vspace{1em}
+
+\begin{itemize}
+\item Bikonditional:
+
+\begin{enumerate}
+\item Genau dann wenn ich Durst habe, trinke ich eine Cola. (p $\leftrightarrow$ q)
+\item[]
+\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke – oder – Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke. ($\lnot$ p $\leftrightarrow \lnot$ q) $\lor$ (p $\leftrightarrow$ q)
+\end{enumerate}
+
+\item Distributivität:
+
+\begin{enumerate}\setcounter{enumi}{2}
+\item Es regnet oder -- es scheint die Sonne und ich bin froh. (p  $\lor$ (q $\land$ r))
+\item[]
+\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh. ((p $\lor$ q) $\land$ (p $\lor$ r))
+\end{enumerate}
+
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Aussagenlogik??}
+
+\begin{itemize}
+\item Übungen:
+
+\begin{itemize}
+\item De Morgans Gesetze:
+
+\begin{enumerate}
+\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft. $\lnot$ (p $\lor$ q)
+\item[]
+\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft. ($\lnot$ p $\land \lnot$ q)
+\end{enumerate}
+
+\end{itemize}
+
+\end{itemize}
+
+
+\end{frame}
 
 
 

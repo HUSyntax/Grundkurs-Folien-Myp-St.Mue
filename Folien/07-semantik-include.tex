@@ -1927,16 +1927,151 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \begin{frame}
 \frametitle{(Einige) Äquivalenzen -- Extra}
 
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+	\ea Genau dann wenn ich Durst habe, trinke ich Wasser.
+
+	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+	\z 
+
+\pause 
+
+{\small $p$: Ich habe Durst.\\
+$q$: Ich trinke eine Cola.}
+
+\pause 
+
+\begin{minipage}{0.35\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}{l|l|l}
+			p & q & p $ \leftrightarrow $ q\\
+			\hline
+			1 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & \alertred{0}\\
+			\hline
+			0 & 1 & \alertred{0}\\
+			\hline
+			0 & 0 & \alertred{1}\\
+		\end{tabular}
+	}
+\end{minipage}
+%%
+\pause
+%%	
+\begin{minipage}{0.55\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}{l|l|l|l|l}
+			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
+			\hline
+			1 & 1 & 0 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & 0 & 0 & \alertred{0}\\
+			\hline
+			0 & 1 & 0 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 1 & 0 & \alertred{1}\\
+	\end{tabular}}
+\end{minipage}
+
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{(Einige) Äquivalenzen -- Extra}
+
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+	
+	\ea Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+	\ex Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+	\z 
+	 	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}%[shrink=20]
+%\frametitle{Lösungen}
+
+\ea Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+\ex Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+\z 
+
+{\small 
+	$p$: Es regnet.\\
+	$q$: Es scheint die Sonne.\\
+	$s$: Ich bin froh.}
+
+%
+\begin{minipage}{0.45\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}{c|c|c|c|c}
+			$p$ & $q$ & $s$ & $q \land s$ & $p \lor (q \land s)$ \\
+			\hline
+			1 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 1 & 0 & 0 & \alertred{1}\\
+			\hline
+			1 & 0 & 1 & 0 & \alertred{1}\\
+			\hline
+			1 & 0 & 0 & 0 & \alertred{1}\\
+			\hline
+			0 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			0 & 1 & 0 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 1 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 0 & 0 & \alertred{0}\\
+		\end{tabular}
+	}
+\end{minipage}
+%%
+\begin{minipage}{0.5\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}[b]{c|c|c|c|c|c}
+			$p$ & $q$ & $s$ & $p \lor q$ & $p \lor s$ & $(p \lor q) \land (p \lor s)$ \\
+			\hline
+			1 & 1 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 1 & 0 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & 0 & 1 & 1 & \alertred{1}\\
+			\hline
+			0 & 1 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			0 & 1 & 0 & 1 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 1 & 0 & 1 & \alertred{0}\\
+			\hline
+			0 & 0 & 0 & 0 & 0 & \alertred{0}\\
+			
+	\end{tabular}}
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{(Einige) Äquivalenzen -- Extra}
+
 \begin{itemize}
 	\item Geben Sie die Wahrheitswerte der folgenden Formeln an und vergleichen Sie die Ergebnisse beider Tabellen:
-
-	\ea Genau dann wenn ich Durst habe, trinke ich eine Cola.
-	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke.
-	\z 
-	
-	\ea Es regnet oder, es scheint die Sonne und ich bin froh.
-	\ex Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh.
-	\z 
 	
 	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
 	\ex Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
@@ -1944,123 +2079,6 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \end{itemize}
 
 \end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink=20]
-\frametitle{Lösungen}
-
-\begin{minipage}{0.4\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] {\small p: Ich habe Durst.\\
-			q: Ich trinke eine Cola.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}{l|l|l}
-			p & q & p $ \leftrightarrow $ q\\
-			\hline
-			1 & 1 & 1\\
-			\hline
-			1 & 0 & 0\\
-			\hline
-			0 & 1 & 0\\
-			\hline
-			0 & 0 & 1\\
-		\end{tabular}
-	}
-\end{minipage}
-%%	
-\begin{minipage}{0.5\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] {\small
-			p: Ich trinke Cola.\\
-			q: Ich habe Durst.}
-	\end{itemize}
-	\scalebox{0.80}{
-		\begin{tabular}{l|l|l|l|l}
-			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
-			\hline
-			1 & 1 & 0 & 1 & 1\\
-			\hline
-			1 & 0 & 0 & 0 & 0\\
-			\hline
-			0 & 1 & 0 & 0 & 0\\
-			\hline
-			0 & 0 & 1 & 0 & 1\\
-	\end{tabular}}
-\end{minipage}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink=20]
-\frametitle{Lösungen}
-%
-\begin{minipage}{0.5\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] {\small p: Es regnet.\\
-			q: Es scheint die Sonne.\\
-			s: Ich bin froh.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}{l|l|l|l|l}
-			p & q & s & q $\land $ s & p $\lor$ (q $\land $ s) \\
-			\hline
-			0 & 1 & 0 & 0 & 0\\
-			\hline
-			1 & 1 & 0 & 0 & 1\\
-			\hline
-			0 & 1 & 1 & 1 & 1\\
-			\hline
-			1 & 1 & 1 & 1 & 1\\
-			\hline
-			0 & 0 & 0 & 0 & 0\\
-			\hline
-			1 & 0 & 0 & 0 & 1\\
-			\hline
-			0 & 0 & 1 & 0 & 0\\
-			\hline
-			1 & 0 & 1 & 0 & 1\\
-		\end{tabular}
-	}
-\end{minipage}
-%%
-\begin{minipage}{0.4\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] {\small p: Es regnet.\\
-			q: Es scheint die Sonne.\\
-			s: Ich bin froh.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}[b]{l|l|l|l|l|l}
-			p & q & s & p $ \lor $ q & p $ \lor $ s & (p $ \lor $ q) $ \land $ (p $ \lor $ s) \\
-			\hline
-			1 & 0 & 0 & 1 & 1 & 1\\
-			\hline
-			1 & 0 & 1 & 1 & 1 & 1\\
-			\hline
-			1 & 1 & 0 & 1 & 1 & 1\\
-			\hline
-			1 & 1 & 1 & 1 & 1 & 1\\
-			\hline
-			0 & 0 & 0 & 0 & 0 & 0\\
-			\hline
-			0 & 0 & 1 & 0 & 1 & 0\\
-			\hline
-			0 & 1 & 0 & 1 & 0 & 0\\
-			\hline
-			0 & 1 & 1 & 1 & 1 & 1\\
-			
-	\end{tabular}}
-\end{minipage}
-
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}

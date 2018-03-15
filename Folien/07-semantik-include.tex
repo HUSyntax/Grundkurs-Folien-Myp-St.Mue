@@ -1937,7 +1937,7 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 \pause 
 
 {\small $p$: Ich habe Durst.\\
-$q$: Ich trinke eine Cola.}
+$q$: Ich trinke Wasser.}
 
 \pause 
 
@@ -2068,15 +2068,57 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{(Einige) Äquivalenzen -- Extra}
+%\frametitle{(Einige) Äquivalenzen -- Extra}
 
-\begin{itemize}
-	\item Geben Sie die Wahrheitswerte der folgenden Formeln an und vergleichen Sie die Ergebnisse beider Tabellen:
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
 	
 	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
-	\ex Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
+	\ex Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.
 	\z 	
-\end{itemize}
+
+\pause
+
+{\small 
+	$p$: Norbert raucht.\\
+	$q$: Christiane schläft.
+}
+
+\begin{minipage}{0.48\textwidth}
+	\centering
+	
+	\scalebox{0.8}{
+		\begin{tabular}{c|c|c|c}
+			$p$ & $q$ & $p \lor q$ & $ \lnot  (p  \lor q)$\\
+			\hline
+			1 & 1 & 1 & \alertred{0} \\
+			\hline
+			1 & 0 & 1 & \alertred{0} \\
+			\hline
+			0 & 1 & 1 & \alertred{0} \\
+			\hline
+			0 & 0 & 0 & \alertred{1} \\
+	\end{tabular}}
+\end{minipage}
+%%
+\pause
+%%
+\begin{minipage}{0.48\textwidth}
+	\centering
+	
+	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c|c}
+		$p$ & $q$ & $\lnot p$ & $\lnot q$ & $(\lnot p \land \lnot q)$\\
+		\hline
+		1 & 1 & 0 & 0 & \alertred{0}\\
+		\hline
+		1 & 0 & 0 & 1 & \alertred{0}\\
+		\hline
+		0 & 1 & 1 & 0 & \alertred{0}\\
+		\hline
+		0 & 0 & 1 & 1 & \alertred{1}\\
+	\end{tabular}}
+
+\end{minipage}
 
 \end{frame}
 
@@ -2086,10 +2128,7 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 
 \begin{minipage}{0.48\textwidth}
 \centering
-\begin{itemize}
-	\item[] p: Norbert raucht.\\
-	q: Christiane schläft.
-\end{itemize}
+
 \scalebox{0.8}{
 	\begin{tabular}{l|l|l}
 		p & q & $ \lnot $ (p $ \lor $q)\\
@@ -2106,10 +2145,7 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 %
 \begin{minipage}{0.48\textwidth}
 \centering
-\begin{itemize}
-	\item[] p: Norbert schläft.\\
-	q: Christine schläft.
-\end{itemize}
+
 \begin{tabular}{l|l|l}
 	p & q & $ \lnot $p $ \land $ $ \lnot $q\\
 	\hline

@@ -1889,7 +1889,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 	\centering	
 	%	\scalebox{0.8}{
 	\begin{tabular}{c|c|c|c}
-		\textbf{p}& q & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
+		\textbf{p}& \textbf{q} & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
 		\hline 
 		1 & 0 & 1& \alertred{0} \\ 
 		\hline 
@@ -1927,14 +1927,45 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \begin{frame}
 \frametitle{(Einige) Äquivalenzen -- Extra}
 
+\begin{itemize}
+	\item Einige komplexe aussagenlogische Formeln sind formal unterschiedlich, zeigen jedoch die gleichen Wahrheitswerte unter den gleichen Wahrheitsbedingungen (d.\,h. in den gleichen Welten). 
+
+	\item Solche Formeln nennt man \textbf{äquivalent}. 
+	
+	\item Es gibt mehrere komplexe aussagenlogische Formeln, die äquivalent sind. Man kennt sie unter dem Namen \alertred{aussagenlogische Gesetze} (\textit{Laws of statement logic})  \citep[vgl.][]{Partee&Co93a}.
+	
+	\item Genau dann wenn zwei komplexe Aussagen äquivalent sind, ist deren Verbindung mittels eines Bikonditionalen eine \textbf{Tautologie}.
+
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Bikonditional}
+
 Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
 
-	\ea Genau dann wenn ich Durst habe, trinke ich Wasser.
+\ea\label{ex:Equi1} Genau dann wenn ich Durst habe, trinke ich Wasser.
 
-	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
-	\z 
+\ex\label{ex:Equi2} Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+\z 
 
-\pause 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Bikonditional}
+
+\begin{exe}
+\exr{ex:Equi1} Genau dann wenn ich Durst habe, trinke ich Wasser.
+
+\exr{ex:Equi2} Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+\end{exe}
+
 
 {\small $p$: Ich habe Durst.\\
 $q$: Ich trinke Wasser.}
@@ -1945,8 +1976,8 @@ $q$: Ich trinke Wasser.}
 	\centering
 
 	\scalebox{0.7}{
-		\begin{tabular}{l|l|l}
-			p & q & p $ \leftrightarrow $ q\\
+		\begin{tabular}{c|c|c}
+			$p$ & $q$ & $p \leftrightarrow q$\\
 			\hline
 			1 & 1 & \alertred{1}\\
 			\hline
@@ -1965,8 +1996,8 @@ $q$: Ich trinke Wasser.}
 	\centering
 
 	\scalebox{0.7}{
-		\begin{tabular}{l|l|l|l|l}
-			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
+		\begin{tabular}{c|c|c|c|c}
+			$p$ & $q$ & $\lnot p \land \lnot q$ & $p \land q$ & $( \lnot p \land \lnot q) \lor (p \land q)$\\
 			\hline
 			1 & 1 & 0 & 1 & \alertred{1}\\
 			\hline
@@ -1978,20 +2009,40 @@ $q$: Ich trinke Wasser.}
 	\end{tabular}}
 \end{minipage}
 
+\end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Bikonditional}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+
+	\exr{ex:Equi1} $P := p \leftrightarrow q$
+	
+	Genau dann wenn ich Durst habe, trinke ich Wasser.
+	
+	\exr{ex:Equi2} $Q := ( \lnot p \land \lnot q) \lor (p \land q)$
+	
+	Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+\end{exe}
+	
+Diese Äquivalenz ist eines der \alertred{Gesetze des Bikonditionals} in der Aussagenlogik.
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{(Einige) Äquivalenzen -- Extra}
+%\frametitle{Distributivität}
 
 Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
 
 	
-	\ea Es regnet -- oder -- es scheint die Sonne und ich bin froh.
-	\ex Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+	\ea\label{ex:Equi3} Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+	\ex\label{ex:Equi4} Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
 	\z 
 	 	
 \end{frame}
@@ -1999,18 +2050,20 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}%[shrink=20]
-%\frametitle{Lösungen}
+%\frametitle{Distributivität}
 
-\ea Es regnet -- oder -- es scheint die Sonne und ich bin froh.
-\ex Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
-\z 
+\begin{exe}
+\exr{ex:Equi3} Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+\exr{ex:Equi4} Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+\end{exe}
 
 {\small 
 	$p$: Es regnet.\\
 	$q$: Es scheint die Sonne.\\
 	$s$: Ich bin froh.}
 
-%
+\pause
+
 \begin{minipage}{0.45\textwidth}
 	\centering
 
@@ -2036,6 +2089,8 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 		\end{tabular}
 	}
 \end{minipage}
+%%
+\pause
 %%
 \begin{minipage}{0.5\textwidth}
 	\centering
@@ -2068,20 +2123,54 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{(Einige) Äquivalenzen -- Extra}
+%\frametitle{Distributivität}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+	
+	\exr{ex:Equi3} $P := p \lor (q \land s)$
+	
+	Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+	
+	\exr{ex:Equi4} $Q := (p \lor q) \land (p \lor s)$
+	
+	Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+\end{exe}
+
+Diese Äquivalenz ist eines der \alertred{Distributivitätsgesetze} in der Aussagenlogik.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{DeMorgan}
 
 Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
-	
-	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
-	\ex Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.
-	\z 	
 
-\pause
+\ea\label{ex:Equi5} Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+\ex\label{ex:Equi6} Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.
+\z 	
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{DeMorgan}
+
+\begin{exe}
+	\exr{ex:Equi5} Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+	\exr{ex:Equi6} Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.
+\end{exe} 
 
 {\small 
 	$p$: Norbert raucht.\\
 	$q$: Christiane schläft.
 }
+
+\pause 
 
 \begin{minipage}{0.48\textwidth}
 	\centering
@@ -2122,136 +2211,119 @@ Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergle
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{DeMorgan}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+	
+	\exr{ex:Equi5} $P := \lnot (p \lor q)$
+
+	Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+	
+	\exr{ex:Equi6} $Q := (\lnot p \land \lnot q)$
+	
+	Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.	
+
+\end{exe}
+
+Diese Äquivalenz ist eines der \alertred{DeMorgans Gesetze} in der Aussagenlogik.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Konditional}
+
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+\ea\label{ex:Equi7} Wenn ich schlafe, träume ich.
+\ex\label{ex:Equi8} Ich schlafe nicht oder ich träume.
+\z 	
+
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Lösungen}
+%\frametitle{Konditional}
+
+\begin{exe}
+	\exr{ex:Equi7} Wenn ich schlafe, träume ich.
+	\exr{ex:Equi8} Ich schlafe nicht oder ich träume.
+\end{exe}
+
+{\small 
+	$p$: Ich schlafe.\\
+	$q$: Ich träume.
+}
+
+\pause 
 
 \begin{minipage}{0.48\textwidth}
 \centering
 
 \scalebox{0.8}{
-	\begin{tabular}{l|l|l}
-		p & q & $ \lnot $ (p $ \lor $q)\\
+	\begin{tabular}{c|c|c}
+		$p$ & $q$ & $p \rightarrow q$\\
 		\hline
-		1 & 1 & 0 \\
+		1 & 1 & \alertred{1} \\
 		\hline
-		1 & 0 & 0 \\
+		1 & 0 & \alertred{0} \\
 		\hline
-		0 & 1 & 0 \\
+		0 & 1 & \alertred{1} \\
 		\hline
-		0 & 0 & 1 \\
+		0 & 0 & \alertred{1} \\
 \end{tabular}}
 \end{minipage}
-%
+%%
+\pause
+%%
 \begin{minipage}{0.48\textwidth}
 \centering
 
-\begin{tabular}{l|l|l}
-	p & q & $ \lnot $p $ \land $ $ \lnot $q\\
+\scalebox{0.8}{
+\begin{tabular}{c|c|c|c}
+	$p$ & $q$ & $\lnot p$ & $ \lnot p \lor q$\\
 	\hline
-	1 & 1 & 0\\
+	1 & 1 & 0 & \alertred{1}\\
 	\hline
-	1 & 0 & 0\\
+	1 & 0 & 0 & \alertred{0}\\
 	\hline
-	0 & 1 & 0\\
+	0 & 1 & 1 & \alertred{1}\\
 	\hline
-	0 & 0 & 1\\
-\end{tabular}
+	0 & 0 & 1 & \alertred{1}\\
+\end{tabular}}
+
 \end{minipage}
 
 \end{frame}
-%%}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik??}
-
-\begin{itemize}
-\item Übungen:
-
-\vspace{1em}
-
-\begin{enumerate}
-\item Christiane schläft. (p)
-\item[]
-\item Norbert raucht nicht. ($\lnot$p)
-\item[]
-\item Norbert raucht und Christiane schläft nicht. (p $\land \lnot$ q)
-\item[]
-\item Wenn Norbert nicht raucht, schläft Christiane nicht. ($\lnot$ p \ras $\lnot$ q)
-\end{enumerate}
-
-\item Konditional:
-
-\begin{enumerate}\setcounter{enumi}{4}
-\item Wenn ich schlafe, träume ich. ( p \ras q)
-\item[]
-\item Ich schlafe nicht oder ich träume. ($\lnot$ p $\lor$ q)
-\end{enumerate}
-
-\end{itemize}
-
-\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
-\frametitle{Aussagenlogik??}
+%\frametitle{Konditional}
 
-\begin{itemize}
-\item Übungen: 
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
 
-\vspace{1em}
+\begin{exe}
+	
+	\exr{ex:Equi7} $P := p \rightarrow q$
+	
+	Wenn ich schlafe, träume ich.
+	
+	\exr{ex:Equi8} $Q := \lnot p \lor q$
+	
+	Ich schlafe nicht oder ich träume.
+		
+\end{exe}
 
-\begin{itemize}
-\item Bikonditional:
-
-\begin{enumerate}
-\item Genau dann wenn ich Durst habe, trinke ich eine Cola. (p $\leftrightarrow$ q)
-\item[]
-\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke – oder – Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke. ($\lnot$ p $\leftrightarrow \lnot$ q) $\lor$ (p $\leftrightarrow$ q)
-\end{enumerate}
-
-\item Distributivität:
-
-\begin{enumerate}\setcounter{enumi}{2}
-\item Es regnet oder -- es scheint die Sonne und ich bin froh. (p  $\lor$ (q $\land$ r))
-\item[]
-\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh. ((p $\lor$ q) $\land$ (p $\lor$ r))
-\end{enumerate}
-
-\end{itemize}
-
-\end{itemize}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Aussagenlogik??}
-
-\begin{itemize}
-\item Übungen:
-
-\begin{itemize}
-\item De Morgans Gesetze:
-
-\begin{enumerate}
-\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft. $\lnot$ (p $\lor$ q)
-\item[]
-\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft. ($\lnot$ p $\land \lnot$ q)
-\end{enumerate}
-
-\end{itemize}
-
-\end{itemize}
-
+Diese Äquivalenz ist eines der \alertred{Gesetze des Konditionals} in der Aussagenlogik.
 
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2284,11 +2356,10 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 \end{block}
 
 
-	\eal 
-		\ex Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
-		\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
-		\ex Die Schrippe kostet 25 Cent. -- Das Brötchen kostet 25 Cent.
-	\zl
+	\ea Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
+	\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
+	\ex Die Schrippe kostet 25 Cent. -- Das Brötchen kostet 25 Cent.
+	\z
 		
 \end{frame}
 
@@ -2301,10 +2372,9 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 \textit{p} impliziert \textit{q}, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} auch wahr ist (aber nicht unbedingt umgekehrt!).
 \end{block}
 		
-\eal 
-	\ex Ich habe Grippe. -- Ich bin krank.
-	\ex Hans isst Gemüse. -- Hans isst.
-\zl
+\ea Ich habe Grippe. -- Ich bin krank.
+\ex Hans isst Gemüse. -- Hans isst.
+\z
 
 \end{frame}
 
@@ -2317,10 +2387,9 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 $p$ und $q$ sind miteinander kompatibel, wenn $p$ und $q$ miteinander vereinbar sind und keine Widersprüche erzeugen.
 \end{block}
 
-		\eal 
-			\ex Chomsky ist klug. -- Chomsky ist Linguist.
-			\ex Syntax ist toll. -- Semantik macht Spa\ss{}.
-		\zl
+	\ea Chomsky ist klug. -- Chomsky ist Linguist.
+	\ex Syntax ist toll. -- Semantik macht Spa\ss{}.
+	\z
 		
 \end{frame}
 
@@ -2329,18 +2398,17 @@ $p$ und $q$ sind miteinander kompatibel, wenn $p$ und $q$ miteinander vereinbar 
 \begin{frame}
 \frametitle{Sinnrelationen zwischen Sätzen}
 	
-\begin{block}{Inkompatibilität (Kontrarität)}
+\begin{block}{Inkompatibilität (\gqq{Kontrarität})}
 $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ und $q$ Widersprüche erzeugen (vgl.\ Kohyponymie).
 
-\textit{p} und \textit{q} sind also imkompatibel (konträr), wenn \textbf{beide gleichzeitig nicht wahr} sein können, aber beide könnten gleichzeitig falsch sein.
+\textit{p} und \textit{q} sind also imkompatibel (konträr), wenn \textbf{beide gleichzeitig nicht wahr} sein können, aber beide gleichzeitig falsch sein können.
 \end{block}
 
-		\eal 
-			\ex Das ist eine Rose. -- Das ist eine Nelke.
-			\ex Er wurde erstochen. -- Er wurde erschossen.
-			\ex Syntaktiker sind klüger als Morphologen. -- Morphologen sind klüger als Syntaktiker.		
-			\ex Das Wetter ist schön. -- Das Wetter ist mies.
-		\zl
+	\ea Das ist eine Rose. -- Das ist eine Nelke.
+	\ex Er wurde erstochen. -- Er wurde erschossen.
+	\ex Syntaktiker sind klüger als Morphologen. -- Morphologen sind klüger als Syntaktiker.		
+	\ex Das Wetter ist schön. -- Das Wetter ist mies.
+	\z
 \end{frame}
 
 
@@ -2352,11 +2420,14 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \textit{p} und \textit{q} sind kontradiktorisch zueinander, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} falsch ist, und in denen \textit{p} falsch ist, \textit{q} wahr ist.
 \end{block}
 	
-\eal
-	\ex Alle Menschen sind sterblich. -- Manche Menschen sind unsterblich.
-	\ex X ist eine gerade Zahl (in der Menge der natürlichen Zahlen). -- X ist eine ungerade Zahl (in der Menge der natürlichen Zahlen).
-	\ex Maria ist ledig. -- Maria ist verheiratet.
-\zl
+\ea Alle Menschen sind sterblich. -- Manche Menschen sind unsterblich.
+
+\ex $X$ ist eine gerade Zahl (aus der Menge der natürlichen Zahlen). -- 
+
+$X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
+
+\ex Maria ist ledig. -- Maria ist verheiratet.
+\z
 
 \end{frame}
 
@@ -2412,27 +2483,22 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \ea 
-\ea betrunken -- nüchtern \pause 
-
-\hfill \alertred{konträre Antonymie}
-
-\ex Orange -- Apfelsine \pause 
-
-\hfill \alertred{Synonymie}
-
-\ex Vogel -- Feder \pause 
-
-\hfill \alertred{Meronymie (genauer: Feder ist ein Meronym zu Vogel)}
-
-
-\ex volljährig -- minderjährig \pause 
-
-\hfill \alertred{kontradiktorische Antonymie}
-
-\ex mehr -- Meer \pause 
-
-\hfill \alertred{Homonymie (genauer: Homophonie)}
-\z 
+	\ea betrunken -- nüchtern \pause 
+	\hfill \alertred{konträre Antonymie}
+	
+	\ex Orange -- Apfelsine \pause 
+	\hfill \alertred{Synonymie}
+	
+	\ex Vogel -- Feder \pause 
+	\hfill \alertred{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
+	
+	
+	\ex volljährig -- minderjährig \pause 
+	\hfill \alertred{kontradiktorische Antonymie}
+	
+	\ex mehr -- Meer \pause 
+	\hfill \alertred{Homonymie (genauer: Homophonie)}
+	\z 
 \z 
 
 \end{frame}
@@ -2453,15 +2519,16 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \ea 
-	\ea Auf dem Tisch liegt eine Rose.\\
-	Auf dem Tisch liegt eine Blume.
+	\ea Auf dem Tisch liegt eine Rose.
+	\ex Auf dem Tisch liegt eine Blume.
+	\z 
 	
-	\ex Alle Vögel können fliegen.\\
-	Kein Vogel kann nicht fliegen.
+	\ea Alle Vögel können fliegen.
+	\ex Kein Vogel kann nicht fliegen.
+	\z 
 	
-	\ex Einige Tiere haben Federn.\\
-	Alle Tiere haben Federn.
-	
+	\ea Einige Tiere haben Federn.
+	\ex Alle Tiere haben Federn.
 	\z 	
 \z 
 \end{frame}
@@ -2480,17 +2547,34 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \ea 
-	\ea Auf dem Tisch liegt eine Rose.\\
-	Auf dem Tisch liegt eine Blume.\\
-	\ras \alertred{a impliziert b}
-	
-	\ex Alle Vögel können fliegen.\\
-	Kein Vogel kann nicht fliegen.\\
-	\alertred{\ras Paraphrase (synonyme Sätze)}
-	
-	\ex Einige Tiere haben Federn.\\
-	Alle Tiere haben Federn.\\
-	\alertred{\ras} b impliziert a
+	\ea Auf dem Tisch liegt eine Rose.
+	\ex Auf dem Tisch liegt eine Blume.
+
+\pause 
+
+	\hfill \alertred{a impliziert b}
+	\z 
+
+\pause 
+
+\ex 	
+	\ea Alle Vögel können fliegen.
+	\ex Kein Vogel kann nicht fliegen.
+
+\pause 
+
+	\hfill \alertred{Paraphrase (synonyme Sätze)}
+	\z 
+
+\pause 
+
+\ex 	
+	\ea Einige Tiere haben Federn.
+	\ex Alle Tiere haben Federn.
+
+\pause 
+
+	\hfill \alertred{b impliziert a}
 	\z 	
 \z 
 
@@ -2514,21 +2598,18 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	\begin{itemize}
 		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
-		\eal
-		\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-		\zl
+		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
 		
-		\eal
-		\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-		\zl
+		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
 		
-		\eal
-		\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-		\zl
+		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\z
 		
 	\end{itemize}	
 	
@@ -2552,21 +2633,18 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	\begin{itemize}
 		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
-		\eal
-		\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-		\zl
+		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
 		
-		\eal
-		\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-		\zl
+		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
 		
-		\eal
-		\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-		\zl
+		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\z
 		
 	\end{itemize}	
 	
@@ -2588,7 +2666,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
 		\begin{exe}
-		\exr{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
+		\exr{ex:Tau3} $\lnot (p \land \lnot p)$
 		\end{exe}
 	\end{itemize}	
 	
@@ -2597,7 +2675,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{table}
 	\centering	
 		\begin{tabular}{c|c|c|c}
-			\textbf{p}& \textbf{$\lnot$ p} &\textbf{p $\land \lnot$ p} & $\lnot$ \textbf{(p $\land \lnot$ p)} \\ 
+			$p$& $\lnot p$ & $p \land \lnot p$ & $\lnot (p \land \lnot p)$ \\ 
 			\hline 
 			0 & 1 & 0& \alertred{1}\\ 
 			\hline 
@@ -2622,7 +2700,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
 		
 		\begin{exe}
-			\exr{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
+			\exr{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
 		\end{exe}		
 	\end{itemize}	
 	
@@ -2631,7 +2709,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{table}
 	\centering	
 	\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
-		\textbf{p}& \textbf{q} & \textbf{p $\lor$ q} & \textbf{q $\lor$ p} & \textbf{(p $\lor$ q)} $\leftrightarrow$ \textbf{(q $\lor$ p)} & \textbf{$\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))} \\ 
+		$p$ & $q$ & $p \lor q$ & $q \lor p$ & $(p \lor q) \leftrightarrow (q \lor p)$ & $\lnot ((p \lor q) \leftrightarrow (q \lor p))$ \\ 
 		\hline 
 		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
 		\hline 
@@ -2660,7 +2738,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
 		
 		\begin{exe}
-			\exr{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
+			\exr{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
 		\end{exe}
 		
 	\end{itemize}	
@@ -2670,7 +2748,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{table}
 	\centering	
 	\begin{tabular}{c|c|c|c|c}
-		\textbf{p}& \textbf{q} & \textbf{p \ras q} & \textbf{q \ras p} & \textbf{(p \ras q)} $\leftrightarrow$ \textbf{(q \ras p)} \\ 
+		$p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\ 
 		\hline 
 		1 & 1 & 1 & 1 & \alertred{1} \\ 
 		\hline 
@@ -2738,7 +2816,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{exe}
 \exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
 \exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
-\exr{ex:Wert1} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
+\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
 \end{exe}
 \end{frame}
 

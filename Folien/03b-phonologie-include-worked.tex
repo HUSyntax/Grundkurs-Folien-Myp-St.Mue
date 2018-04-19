@@ -219,8 +219,38 @@ Silbe als \textbf{Domäne} \dots
 	\end{multicols}
 \end{itemize}
 
-\begin{figure}[b]
-	\includegraphics[scale=0.32]{material/03bHierarchieIntonationsphrase}
+%\begin{figure}[b]
+%	\includegraphics[scale=0.32]{material/03bHierarchieIntonationsphrase}
+%	\caption{Hierarchie in der Intonationsphrase (Darstellung von C. Féry)}
+%	\label{Zeichen1}
+%\end{figure}
+
+\begin{figure} %%rote Box einfügen
+	\centering
+	\scalebox{.65}{
+		\begin{forest} MyP edges,
+			[IP
+			[$\Phi$
+			[$\omega$[F[\alertred{$\sigma$}[Frau]]]]
+			[$\omega$[F[\alertred{$\sigma$}[Müll, name=mueller]][\alertred{$\sigma$}, name=sigma[er]]]]]
+			[$\Phi$
+			[$\omega$[F[\alertred{$\sigma$}[kauft]]]]
+			[$\omega$[F[\alertred{$\sigma$}[Steck]]]
+			[F[\alertred{$\sigma$}[rü]]
+			[\alertred{$\sigma$}[ben]]]]]
+			[$\Phi$
+			[$\omega$[F[\alertred{$\sigma$}[auf]]]
+			[F[\alertred{$\sigma$}[dem]]]]
+			[$\omega$[F[\alertred{$\sigma$}[Woch, name=woch]]
+			[\alertred{$\sigma$}, name=sigmab[en]]]
+			[F[\alertred{$\sigma$}[markt]]]]]
+			]
+			{
+				\draw[black] (mueller.north)--(sigma.south);
+				\draw[black] (woch.north)--(sigmab.south);
+			}
+		\end{forest}
+	}
 	\caption{Hierarchie in der Intonationsphrase (Darstellung von C. Féry)}
 	\label{Zeichen1}
 \end{figure}
@@ -250,12 +280,39 @@ Silbe als \textbf{Domäne} \dots
 	\end{multicols}
 \end{itemize}
 
-\begin{figure}[b]
+%\begin{figure}[b]
+%	\centering
+%	
+%	\includegraphics[scale=0.28]{material/03bHierarchieUP}
+%	\caption{Hierarchie in der Äußerungsphrase \citep[8]{Fuhrhop&Co13a}}
+%	%\label{Zeichen1}
+%\end{figure}
+
+	\begin{figure}
 	\centering
-	
-	\includegraphics[scale=0.28]{material/03bHierarchieUP}
+	\scalebox{.65}{
+		\begin{forest} MyP edges,
+			[UP, name=up
+			[IP, name=IP
+			[$\varphi$[$\omega$[F[$\sigma$][$\sigma$]][F[$\sigma$][$\sigma$]]]]
+			[$\varphi$, name=Phi[$\omega$[F[$\sigma$][$\sigma$]]][$\omega$, name=omega[F, name=F[$\sigma$][$\sigma$, name=sigma]]]]
+			]]
+			{\draw[black] (up.east)--(3,0);
+				\draw[black] (IP.east)--(3,-1);
+				\draw[black] (Phi.east)--(3,-2);
+				\draw[black] (omega.east)--(3,-3);
+				\draw[black] (F.east)--(3,-4);
+				\draw[black] (sigma.east)--(3,-5.3);
+				\node[right] at (3,0) {(Mandarinen oder Äpfel)\textsubscript{UP}};
+				\node[right] at (3,-1) {(Mandarinen oder Äpfel)\textsubscript{IP}};
+				\node[right] at (3,-2) {(Mandarinen)\textsubscript{$\varphi$} (oder Äpfel)\textsubscript{$\varphi$}};
+				\node[right] at (3,-3) {(Mandarinen)\textsubscript{$\omega$} (oder)\textsubscript{$\omega$} (Äpfel)\textsubscript{$\omega$}};
+				\node[right] at (3,-4) {(Manda)\textsubscript{F} (rinen)\textsubscript{F} (oder)\textsubscript{F} (Äpfel)\textsubscript{F}};
+				\node[right] at (3,-5.3) {(Man)\textsubscript{$\sigma$} (da)\textsubscript{$\sigma$} (ri)\textsubscript{$\sigma$} (nen)\textsubscript{$\sigma$} (o)\textsubscript{$\sigma$} (der)\textsubscript{$\sigma$} (Äp)\textsubscript{$\sigma$} (fel)\textsubscript{$\sigma$}};
+			}
+		\end{forest}
+	}
 	\caption{Hierarchie in der Äußerungsphrase \citep[8]{Fuhrhop&Co13a}}
-	%\label{Zeichen1}
 \end{figure}
 
 
@@ -892,9 +949,18 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 \end{itemize}
 
 \begin{figure}
-\centering
-\includegraphics[scale=.2]{material/03bSonoritaetRamers}
-\caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
+	\centering
+	\begin{tikzpicture}
+	\draw[dashed] (-3,0)--(-3,2);
+	\draw[dashed] (3,0)--(3,2);
+	\draw[black] (-3,1)--(0,2)--(3,1)--(0,0)--(-3,1);
+	\node at (-3,-0.3){\$};
+	\node at (3,-0.3){\$};
+	\node[left] at (-3.3,-0.3){(Silbengrenze)};
+	\node[left] at (-4,1){Sonorität};
+	\node[below] at (0,0){Silbengipfel};
+	\end{tikzpicture}
+	\caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
 \end{figure}
 
 \begin{itemize}
@@ -964,9 +1030,18 @@ In jeder Silbe gibt es ein Segment, das den Silbengipfel bildet, und dem ein ode
 \end{itemize}
 
 \begin{figure}
-\centering
-\includegraphics[scale=.2]{material/03bSonoritaetRamers}
-\caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
+	\centering
+	\begin{tikzpicture}
+	\draw[dashed] (-3,0)--(-3,2);
+	\draw[dashed] (3,0)--(3,2);
+	\draw[black] (-3,1)--(0,2)--(3,1)--(0,0)--(-3,1);
+	\node at (-3,-0.3){\$};
+	\node at (3,-0.3){\$};
+	\node[left] at (-3.3,-0.3){(Silbengrenze)};
+	\node[left] at (-4,1){Sonorität};
+	\node[below] at (0,0){Silbengipfel};
+	\end{tikzpicture}
+	\caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
 \end{figure}
 
 \end{frame}

@@ -219,9 +219,26 @@
 	\item \citet{Saussure16x}: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
 \end{itemize}	
 
-\begin{center}
-	\includegraphics[scale=.2]{material/01SSZeichenKatze}	
-\end{center}
+%\begin{center}
+%	\includegraphics[scale=.2]{material/01SSZeichenKatze}	
+%\end{center}
+
+\begin{figure}
+	\centering
+\scalebox{.75}{\begin{tikzpicture}
+\draw[black] (-1,0)--(6,0);
+\draw[black](-1,0.5)--(6,0.5);
+\draw[black](-1,4.5)--(6,4.5);
+\draw[black](4,2.5)--(6,2.5);
+\node at (1,2.5){\includegraphics[scale=0.22]{material/gelbe-katze}};
+\node[align=center] at (5,3.5){/\textipa{ka\t{ts}@}/ \\ (lautlich)};
+\node[align=center] at (5,1.5){\abe{Katze} \\ (graphisch)};
+\node[above] at (1,-0.1){Bedeutungsseite};
+\node[above] at (5,0){Formseite};
+\node at (3,2.5){{\huge $\leftrightarrow$}};
+\end{tikzpicture}}
+\caption{Zeichenmodell nach Saussure (1916/1967)}
+\end{figure}
 
 \end{frame}	
 
@@ -233,10 +250,25 @@
 	\item \textbf{Bilaterale Zeichenkonzeption} von de Saussure wurde ergänzt: Mit sprachlichen Zeichen beziehen wir uns \textbf{nicht auf Begriffe}, sondern \textbf{auf Referenten} in der Welt, auf \gqq{Gegenstände}.
 \end{itemize}
 
-\begin{figure}
+	\begin{figure}
 	\centering
-	\includegraphics[scale=0.4]{material/07SemiotischesDreieck}
+	\small
+	\scalebox{.74}{\begin{tikzpicture}
+		\draw[dashed] (-4,0)--(4,0);
+		\draw[black] (4,0)--(0,3)--(-4,0);
+		\node[above, align=center] at (-4.5,0){/\textipa{ka\t{ts}@}/ \\ \abe{Katze}}; 
+		\node[below, align=center] at (-4.5,0){\textbf{AUSDRUCK} \\Signifiant (Saussure), Zeichen (Peirce), \\ Symbol (Odgen/Richards)};
+		\node[below] at (0,0){\emph{steht für}};
+		\node[left] at (-1.9,1.8){\emph{geknüpft an}};
+		\node[right] at (1.9,1.8){\emph{bezieht sich auf}};
+		\node[above, align=center] at (0,3){\textbf{BEGRIFF} \\ Signifié (Saussure), Sinn (Frege), Interpretant (Peirce),\\ Intension (Carnap), Idee, Gedanke \ldots \\ {[KATZE]}};
+		\node[above] at (4.8,0){\includegraphics[scale=0.1]{material/gelbe-katze}};
+		\node[below, align=center] at (4.5,0){ \textbf{REFERENT}\\ Gegenstand (Frege, Peirce) \\ Extension (Carnap), Denotation (Russell)};
+		\end{tikzpicture}}
+	\caption{Das Semiotische Dreieck nach Odgen/""Richards (1923)}
 \end{figure}
+
+
 	
 \end{frame}	
 

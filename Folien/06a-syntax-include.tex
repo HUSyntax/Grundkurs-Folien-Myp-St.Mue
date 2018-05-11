@@ -163,8 +163,22 @@
 \begin{frame}
 
 \begin{figure}
-\centering
-	\includegraphics[scale=.3]{material/01colorless}
+	\centering
+\scalebox{.8}{\begin{forest} MyP edges,
+	[S
+		[NP [N$'$
+			[AdjP [Adj$'$ [\zerobar{Adj} [\textcolor{red}{Colorless}] ] ]]
+			[N$'$
+				[AdjP [Adj$'$ [\zerobar{Adj} [\textcolor{red}{green}] ] ] ]
+				[N$'$ [\zerobar{N} [\textcolor{red}{ideas}] ] ]
+			]
+		]]
+		[VP [V$'$
+			[V$'$ [\zerobar{V} [\textcolor{red}{sleep}] ] ]
+			[AdvP [Adv$'$ [\zerobar{Adv} [\textcolor{red}{furiously}] ] ] ]
+		] ]
+	]
+\end{forest}}
 \end{figure}
 
 \end{frame}
@@ -528,7 +542,9 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.7]{material/02syntaxerror}
+	\includegraphics[scale=.2]{material/error}
+	\caption{Glowing blue binary code on screen with word error background concept, Stock-Foto
+		https://www.colourbox.de/bild/bild-26254540, Zugriff: 11.05.18}
 \end{figure}
 
 \end{frame}

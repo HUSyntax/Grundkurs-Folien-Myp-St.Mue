@@ -115,22 +115,22 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Generative Grammatik}
-
-\begin{itemize}
-
-	\item Sprachliche Intuition \ras wesentlich in den sog. generativen Syntaxtheorien seit \citet{Chomsky57x}
-
-\begin{figure}
-\centering
-	\includegraphics[scale=.17]{material/03chomsky}
-\end{figure}
-
-	
-\end{itemize}
-
-\end{frame}
+%\begin{frame}
+%\frametitle{Generative Grammatik}
+%
+%\begin{itemize}
+%
+%	\item Sprachliche Intuition \ras wesentlich in den sog. generativen Syntaxtheorien seit \citet{Chomsky57x}
+%
+%\begin{figure}
+%\centering
+%	\includegraphics[scale=.17]{material/03chomsky}
+%\end{figure}
+%
+%	
+%\end{itemize}
+%
+%\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -143,7 +143,7 @@
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.3]{material/04chomsky}
+	\includegraphics[scale=.5]{material/chomsky01}\label{Abb1}
 \end{figure}
 
 	
@@ -314,13 +314,22 @@ Ein mental (\gqq{im Geist}) verankertes \textbf{unbewusstes Wissenssystem von Re
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Kompetenz \vs Performanz}
+\frametitle{Kompetenz \vs Performanz (Ambiguität)}
 
-\begin{figure}
-\centering
-	\includegraphics[scale=.5]{material/08ambiguity}
-	\caption{Ambiguität}
-\end{figure}
+%\begin{figure}
+%\centering
+%	\includegraphics[scale=.5]{material/08ambiguity}
+%	\caption{Ambiguität}
+%\end{figure}
+
+{\LARGE
+
+I'm a linguist.
+
+\vspace{2em}
+
+I love ambiguity more than most people.}
+
 
 \end{frame}
 
@@ -423,21 +432,20 @@ Die Performanz weicht oft von der Kompetenz ab:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Universalgrammatik}
+%\frametitle{Universalgrammatik}
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.26]{material/06nimchimpsky}
-	\caption{Nim Chimpsky}
+	\includegraphics[scale=.26]{material/schimpansen}
+	\caption{Schimpansen}
 \end{figure}
 
 \begin{itemize}
 	\item Siehe \textbf{Nim Chimpsky}: \url{https://en.wikipedia.org/wiki/Nim_Chimpsky}
-\end{itemize}
 
 	\ea Give orange me give eat orange me eat orange give me eat orange give me you. \hfill (Nim Chimpsky)
 	\z
-
+\end{itemize}
 
 
 \end{frame}
@@ -763,11 +771,44 @@ Schlagen Sie \gqq{Adäquatheit} in \citet{Glueck&Roedel16a} nach!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortarten}
+%\frametitle{Wortarten}
 
 \begin{figure}
-\centering
-	\includegraphics[scale=.4]{material/07wortartenklassifikation}
+%\centering
+%	\includegraphics[scale=.4]{material/07wortartenklassifikation}
+
+	
+\scalebox{.6}{\begin{forest}MyP edges,
+		[Wort
+			[flektierbar
+				[{nach Tempus\\(konjugierbar)}
+				[\textbf{Verb}]
+				]
+				[{nach Kasus \\(deklinierbar)}
+					[{mit festem \\ Genus}
+					[{\textbf{Nomen}\\ (\textbf{Substantiv})}]
+					]
+					[{mit variablem \\Genus}
+						[{steigerbar \\(komparierbar)} [\textbf{Adjektiv}] ]
+						[{nicht \\steigerbar }
+							[funktionsfähig [\textbf{Pronomen}] ]
+							[{nicht \\ funktionsfähig} [\textbf{Artikel}] ]
+						]
+					]
+				]
+			]
+			[{nicht \\flektierbar}
+				[funktionsfähig [\textbf{Adverb}] ]
+				[{nicht \\funktionsfähig }
+					[kasusbestimmend [\textbf{Adposition}] ]
+					[{nicht \\kasusbestimmend}
+						[{ko-/ \\subordinierungs-\\fähig} [\textbf{Konjunktion}] ]
+						[{nicht \\ ko-/subordinierungs-\\fähig} [\textbf{Partikel}] ]
+					]
+				]
+			]
+		]
+	\end{forest}}
 	\caption{Wortartenklassifikation \citep{Repp&Co15a}}
 \end{figure}
 
@@ -930,8 +971,33 @@ Partikel & Part & ja, wohl, leider \\
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.33]{material/10gehirnaktivitaet}
-	\caption{\citep[Quelle:][]{Boutonnet15a}}
+%	\includegraphics[scale=.33]{material/10gehirnaktivitaet}
+	
+\begin{tikzpicture}[scale=.48]
+	\draw[black](9,0)--(0,0)--(0,1.5);
+	\draw[black](9,2)--(0,2)--(0,3.5);
+	\draw[black](9,4)--(0,4)--(0,5.5);
+	\draw[black](1.5,6.5)--(1.5,7)--(3.5,7)--(3.5,6.5);
+	\draw[black](6,6.5)--(6,7)--(8,7)--(8,6.5);
+	\draw[black](2.5,8)--(2.5,8.5)--(7,8.5)--(7,8);	
+	\node[rotate=90,right] (brain activity) at (-0.6,0) {\scriptsize Gehirnaktivität};
+	\node[right] (time) at (2.5,-0.6) {\scriptsize Zeit};
+	\node[above] (sentence) at (4.25,8.3) {\scriptsize \textcolor{red}{sentence}};
+	\node[below] (noun) at (2.5,8) {\scriptsize \textcolor{green}{noun phrase}};
+	\node[below] (verb) at (7,8) {\scriptsize \textcolor{green}{verbal phrase}};
+	\node[below] (new) at (1.5,6.4) {\scriptsize \textcolor{blue}{new}};
+	\node[below] (plans) at (3.5,6.5) {\scriptsize \textcolor{blue}{plans}};
+	\node[below] (gave) at (6,6.4) {\scriptsize \textcolor{blue}{gave}};
+	\node[below] (hope) at (8,6.5) {\scriptsize \textcolor{blue}{hope}};	
+	\draw[blue] (0.75,4.4) sin (1,4.3) cos (1.25,5) sin (1.5,5.5) cos (1.75,5) sin (2,4.3) cos (2.25, 4.4);
+	\draw[blue] (2.75,4.4) sin (3,4.3) cos (3.25,5) sin (3.5,5.5) cos (3.75,5) sin (4,4.3) cos (4.25, 4.4);
+	\draw[blue] (5.25,4.4) sin (5.5,4.3) cos (5.75,5) sin (6,5.5) cos (6.25,5) sin (6.5,4.3) cos (6.75, 4.4);
+	\draw[blue] (7.25,4.4) sin (7.5,4.3) cos (7.75,5) sin (8,5.5) cos (8.25,5) sin (8.5,4.3) cos (8.75,4.4);
+	\draw[green] (7.25,2.4) sin (7.5,2.3) cos (7.75,3) sin (8,3.5) cos (8.25,3) sin (8.5,2.3) cos (8.75,2.4);
+	\draw[green] (2.75,2.4) sin (3,2.3) cos (3.25,3) sin (3.5,3.5) cos (3.75,3) sin (4,2.3) cos (4.25, 2.4);
+	\draw[red] (7.25,0.4) sin (7.5,0.3) cos (7.75,1) sin (8,1.5) cos (8.25,1) sin (8.5,0.3) cos (8.75,0.4);
+\end{tikzpicture}
+\caption{\citep[Nach:][]{Boutonnet15a}}
 \end{figure}
 
 \end{frame}
@@ -1454,7 +1520,7 @@ Partikel & Part & ja, wohl, leider \\
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Hausaufgabe (Lösung)}
@@ -1512,9 +1578,45 @@ Partikel & Part & ja, wohl, leider \\
 
 \begin{figure}
 \centering
-	\includegraphics[scale=.57]{material/09xmastree}
-	\caption{Frohe Weihnachten!}
+\scalebox{.7}{
+	\begin{forest}MyP edges,
+[TP
+	[DP [\zerobar{D} [\textcolor{orange}{\textbf{this}} ] ] ]
+	[\MyPxbar{T}
+		[\zerobar{T} [\textcolor{violet}{\textbf{is\textsubscript{i}}}] ]
+		[VP 
+			[\zerobar{V} [\textcolor{blue}{\textbf{t\textsubscript{i}}}] ]
+			[DP
+				[\zerobar{D} [\textcolor{magenta}{\textbf{my}}] ]
+				[NP
+				[AP [\zerobar{A} [\textcolor{red}{\textbf{christmas}} ] ] ]
+					[\zerobar{N} [\textcolor{green}{\textbf{tree}}] ]
+				]
+			]
+		]
+	]
+]
+\end{forest}
+}
+\caption{Weihnachtsbaum}
 \end{figure}
+%\begin{figure}
+%\centering
+%	\includegraphics[scale=.57]{material/09xmastree}
+%	\caption{Frohe Weihnachten!}
+%\end{figure}
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Abbildungen}
+\begin{frame}{Abbildungen}
+\small
+
+\begin{itemize}
+	\item ABBILDUNG -- \gqq{Noam Chomsky. Aufgenommen von John Soares, 2005} (Stevertigo, Zugriff: 18.07.2018) \url{https://upload.wikimedia.org/wikipedia/commons/8/86/Noam_chomsky.jpg}
+	\item ABBILDUNG -- \gqq{Schimpansenfamilie} (Stock-Foto, Zugriff: 18.07.2018) \url{https://www.colourbox.de/bild/familie-auf-der-oberseite-des-baumes-bild-2566359}
+\end{itemize}	
+
+\end{frame}

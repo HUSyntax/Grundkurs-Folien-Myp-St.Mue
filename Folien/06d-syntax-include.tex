@@ -249,34 +249,57 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+%\begin{frame}
+%
+%\begin{figure}
+%\centering
+%	\includegraphics[scale=.3]{material/03ArchitekturSprachsystem}
+%	\caption{Architektur des Sprachsystems}
+%\end{figure}
+%
+%\end{frame}
 
+\begin{frame}
 \begin{figure}
-\centering
-	\includegraphics[scale=.3]{material/03ArchitekturSprachsystem}
+	\centering
+	
+\scalebox{.72}{\begin{tikzpicture}
+\node[above] at (0,0.3) {Architektur des Sprachsystems};
+\node[below] at (0,0.3) [rectangle,draw]{\textbf{Lexikon}};
+\node at (7.5,-0.3) {\textit{Sprachliche Ebene}};
+\node at (7.5, -8) {\textit{Außersprachliche Ebene}};
+\draw[->, thick] (0,-0.3)--(0,-0.8);
+\draw (0,-2.5) ellipse (110pt and 45 pt);
+\draw[->, thick] (0,-2.3)--(-2,-2.6);
+\node[below] at (-2,-2.6) {Phonetische Form};
+\draw[->, thick] (0,-2.3)--(2,-2.6);
+\node[below] at (2,-2.6) {Semantische Form};
+\node at (0,-1.5) {\textbf{Sprachliche Strukturbildung}};
+\node at (0,-2) {(Morpho-)Syntaktische Struktur};
+\draw[<->, thick] (-2,-4.3)--(-2,-5.2);
+\draw[<->, thick] (2,-4.3)--(2,-5.2);
+\draw[<-, thick] (4,-2.5)--(4.5,-2.5);
+\draw[<-, thick] (4,-6)--(4.5,-6);
+\node[below,text width=3.4 cm, align=center] (A) at (-2,-5.5) [rectangle, draw] {\textbf{Artikulatorisch-perzeptorischer Apparat}};
+\node[below,text width=3.5 cm, align=center] (B) at (2,-5.5) [rectangle, draw] {\textbf{Konzeptuell-intentionales System}};
+\node (C) at (7.4, -2.5) {\framebox
+		{\begin{varwidth}{\linewidth}\begin{itemize}
+			\item[] \textbf{Grammatik}
+			\item[] Phonologische Komponente
+			\item[] Morphologische Komponente
+			\item[] Syntaktische Komponente
+			\item[] Semantische Komponente
+			\end{itemize}\end{varwidth}}
+};
+\node (D) at (7.3, -6.4) {\framebox
+	{\begin{varwidth}{6.5cm}\begin{itemize}
+		\item[] \textbf{Begriffssystem}
+		\item[] Weltwissen, Kontextwissen, analytisches Wissen
+		\end{itemize}\end{varwidth}}
+};
+\end{tikzpicture}}
 	\caption{Architektur des Sprachsystems}
 \end{figure}
-
-\end{frame}
-
-\begin{frame}
-\begin{tikzpicture}
-\node[above] at (0,0) {Architektur des Sprachsystems};
-\node[below] at (0,0) [rectangle,draw]{Lexikon};
-\draw[->] (0,-0.5)--(0,-0.9);
-\draw (0,-2.5) ellipse (110pt and 45 pt);
-\draw[->] (0,-2.3)--(-2,-2.6);
-\node[below] at (-2,-2.6) {Phonetische Form};
-\draw[->] (0,-2.3)--(2,-2.6);
-\node[below] at (2,-2.6) {Semantische Form};
-\node at (0,-1.5) {Sprachliche Strukturbildung};
-\node at (0,-2) {(Morpho-)Syntaktische Struktur};
-\draw[<->] (-2,-4)--(-2,-4.5);
-\draw[<->] (2,-4)--(2,-4.5);
-\node[below,text width=3.4 cm, align=center] (A) at (-2,-4.5) [rectangle, draw] {Artikulatorisch-perzeptorischer Apparat};
-\node[below,text width=3.5 cm, align=center] (B) at (2,-4.5) [rectangle, draw] {Konzeptuell-intentionales System};
-\node[text width=5 cm, align=center] (C) at (7,-2.5) [rectangle, draw] {Grammatik Phonologische Komponente Morphologische Komponente Syntaktische Komponente Semantische Komponente};
-\end{tikzpicture}
 
 \end{frame}
 

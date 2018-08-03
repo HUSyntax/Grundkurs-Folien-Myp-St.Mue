@@ -1672,14 +1672,38 @@ node[anchor=west,align=center]{finit};}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%%\frametitle{T-Modell}
+%
+%\begin{figure}
+%	\includegraphics[scale=.43]{material/11tmodell}
+%	\caption{T-Modell \citep[vgl.][]{MuellerS15b}}
+%\end{figure}
+%	
+%\end{frame}
+
 \begin{frame}
 %\frametitle{T-Modell}
 
 \begin{figure}
-	\includegraphics[scale=.43]{material/11tmodell}
+%\begin{tikzpicture}
+%\node at (0,0) {D-structure};
+%\draw[->] (0,-0.3)--(0,-1.5);
+%\node[right] at (0,-0.9) {move $\alpha$};
+%\node at (0,-1.8) {S-structure};
+%\draw[->] (0,-2.1)--(-1.5-3);
+%\draw[->] (0,-2.1)--(1.5,-3);
+%\end{tikzpicture}
+\begin{forest}
+	sm edges,
+	[D-structure, [S-structure,edge label={node[midway,right]{move $\alpha$} }
+		[{Deletion rules,}\\{Filter, phonol. rules} [Phonetic Form (PF)], align=center]
+		[{Anaphoric rules,}\\{rules of quantification and control}, align=center [Logical Form (LF)] ]
+	]]
+\end{forest}
 	\caption{T-Modell \citep[vgl.][]{MuellerS15b}}
 \end{figure}
-	
+
 \end{frame}
 
 
@@ -2258,27 +2282,139 @@ node[anchor=west,align=center]{Kopf};}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Mehr funktionale Kategorien}
+%\nocite{Lenerz93a}
+%
+%\begin{figure}[b]
+%	\begin{minipage}[b]{0.48\textwidth}
+%		\includegraphics[scale=0.06]{material/Haftka95CP}
+%		\caption{CP-Struktur (Haftka 1995)}
+%		%\label{Zeichen1}
+%	\end{minipage}
+%	%
+%	%				
+%	\begin{minipage}[b]{0.48\textwidth}
+%		\includegraphics[scale=0.06]{material/Lenerz93DP}
+%		\caption{DP-Struktur \citep{Lenerz93a}}
+%		%\label{Zeichen2}
+%	\end{minipage}                        
+%\end{figure}
+%
+%\end{frame}
+
+
 \begin{frame}
-\frametitle{Mehr funktionale Kategorien}
 \nocite{Lenerz93a}
 
-\begin{figure}[b]
-	\begin{minipage}[b]{0.48\textwidth}
-		\includegraphics[scale=0.06]{material/Haftka95CP}
-		\caption{CP-Struktur (Haftka 1995)}
-		%\label{Zeichen1}
+	\begin{minipage}[c]{0.48\textwidth}
+\begin{figure}
+	\centering
+	\scalebox{.45}{\begin{forest}MyP edges,
+			[DP
+			[]
+			[D'
+				[\zerobar{D} [d-, name=d] ]
+				[DAGRP
+					[]
+					[DAGRP'
+						[\zerobar{DAGRP} [-er, name=er] ]
+						[{AAGRP}\\{AP}, align=center [NAGRP, edge=dotted
+						[]
+						[NAGR'
+							[\zerobar{NAGR} [-en, name=en] ]
+							[NP
+								[]
+								[N' [\zerobar{N} [Frau, name=Frau] ] ]
+							]
+						]
+						] ]
+					]
+			]
+			] ]{
+			\draw[->] (Frau) to [out=south west, in=south] (en.south);
+			\draw[->] (er) to [out=south west, in=south] (d.south);}
+		\end{forest}}
+	\caption{DP-Struktur \citep{Lenerz93a}}
+\end{figure}
 	\end{minipage}
 	%
 	%				
-	\begin{minipage}[b]{0.48\textwidth}
-		\includegraphics[scale=0.06]{material/Lenerz93DP}
-		\caption{DP-Struktur \citep{Lenerz93a}}
-		%\label{Zeichen2}
+	\begin{minipage}[c]{0.48\textwidth}
+\begin{figure}
+			\centering 
+			\scalebox{.21}{	\begin{forest}
+				[CP
+					[SpecCP]
+					[C'
+						[{\zerobar{C}}\\{dass}, align=center]
+						[TopP
+							[SpecTop \\ \textit{der Mann\textsubscript{i}}, align=center, name=Mann]
+							[Top'
+								[\zerobar{Top}]
+								[AgrSP
+									[SpecAgrSP \\ t\textsubscript{i}, align=center, name=Agr]
+									[AgrS'
+										[\zerobar{AgrS}]
+										[AgrOP
+											[SpecAgrOP \\ \textit{ihr\textsubscript{j}}, align=center, name=ihr]
+											[AgrO'
+												[\zerobar{AgrO}]
+												[TP
+													[SpecTP \\ t\textsubscript{i}, align=center, name=i1]
+													[T'
+														[\zerobar{T}]
+														[Foc\textsubscript{c}P
+															[SAdvP\\ \textit{offenbar}, align=center]
+															[Foc\textsubscript{c}P
+															[SpecFoc\textsubscript{c}P \\ \textit{einen TEUeren Ring\textsubscript{k}}, align=center, name=ring]
+															[Foc\textsubscript{c}'
+																[\zerobar{Foc\textsubscript{c}}]
+																[PosP
+																	[PosAdvP \\ \textit{tatsächlich}, align=center]
+																	[PosP
+																		[SpecPosP]
+																		[Pos'
+																			[\zerobar{Pos}\\nicht, align=center]
+																			[VP	
+																				[VPAdvP]
+																				[VP
+																					[SpecVP\\ t\textsubscript{i}, align=center, name=i2]
+																					[V'
+																						[DP\textsubscript{IO} \\ t\textsubscript{j}, align=center, name=j]
+																						[V'
+																							[DP\textsubscript{DO} \\ t\textsubscript{k}, align=center, name=k]
+																							[\zerobar{V}\\\textit{gegönnt hätte}, align=center]
+																						]
+																					]
+																				]
+																			]
+																		]
+																	]
+																]
+																]
+															]	
+															]
+														]
+													]			
+												]
+											]
+										]
+									]
+								]
+							]
+						]
+					]
+					{\draw (i2) to [out=south west, in=south] (i1) to [out=south west, in=south] (Agr) to [out=south west, in=south] (Mann);
+				\draw[dashed, thick] (j) to [out=south west, in=south] (ihr);
+					\draw[dotted, thick] (k) to [out=south west, in=south] (ring);
+				}
+			\end{forest}}
+		\caption{CP-Struktur (Haftka 1995)}
+		\end{figure}
 	\end{minipage}                        
-\end{figure}
 
 \end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2492,8 +2628,22 @@ node[anchor=west,align=center]{Kopf};}
 \end{itemize}
 
 \begin{figure}
-	\includegraphics[scale=.45]{material/wrongtree}
-	\caption{\url{http://specgram.com/CLXV.1/05.cruz-ferreira.know22.html}}
+\scalebox{.75}{\begin{forest} sm edges,
+		[S
+			[VP [V [Tea] ] ]
+			[NP
+				[P [with]]
+				[Det [some]]
+				[N [lemon]]
+			]
+			[PP
+				[P [tastes]]
+				[NP [Adj [really] ] [N [nice]] ]
+			]
+		]
+	\end{forest}}
+%	\includegraphics[scale=.45]{material/wrongtree}
+	\caption{vgl.\ \url{http://specgram.com/CLXV.1/05.cruz-ferreira.know22.html}}
 \end{figure}
 	
 \end{frame}

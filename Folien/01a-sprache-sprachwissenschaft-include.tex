@@ -1,5 +1,12 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
+%%%             Metadata                         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 \title{Grundkurs Linguistik}
@@ -8,22 +15,23 @@
 
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
 \date{ }
+
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
@@ -38,21 +46,88 @@
 \end{multicols}
 	}
 	}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Schierholz&Co18}
+\nocite{Luedeling2009}
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%% Morphologie
+%\nocite{Eisenberg04}
+
+%% Syntax
+%\nocite{Adger04a}
+%\nocite{Altmann&Hofmann08a} % Satztypen & Satzmodi
+%\nocite{Altmann93a} % Satztypen & Satzmodi
+%\nocite{Brandt&Co06a} 
+%\nocite{Fanselow&Sascha87a}
+%\nocite{Fanselow&Sascha93a}
+%\nocite{Fries&MyP16b} % Akzeptabilität
+%\nocite{Fries16a} % Grammatikalität
+%\nocite{Fries&MyP16d} % Kompetenz vs Performanz
+%\nocite{Fries&MyP16c} % GG
+%\nocite{Fries&MyP16a} % X-Bar-Theorie
+%\nocite{Fries16e} % Satztyp
+%\nocite{Fries16d} % Satzmodus 
+%\nocite{Grewendorf&Co91a} 
+%\nocite{MyP17b} % Kerngrammatik
+%\nocite{MyP18a} % Konstituententest
+%\nocite{MyP18b} % Kopf
+%\nocite{MyP18c} % Phrase
+%\nocite{MyP18s} % Funktionale Kategorie
+%\nocite{MyP18t} % Argumentstruktur
+%\nocite{MuellerS13f} 
+%\nocite{MuellerS15b}
+%\nocite{Stechow&Sternefeld88a}
+%\nocite{Sternefeld06a}
+%\nocite{Sternefeld06b}
+%\nocite{Woellstein10a} % Topologisches Feldermodell
+
+%% Semantik & Pragmatik
+%\nocite{Loebner15a} %% Semantics
+%\nocite{Loebner15b} %% Semantics
+%\nocite{Lohnstein11} %% Semantics
+%\nocite{MyP16a} %% Bikonditional
+%\nocite{Partee&Co93a} %% Semantics
+%\nocite{ZimmermannT&Sternefeld13a} %% Semantics
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Begleitlektüre}
+
+\begin{itemize}
+	\item AM S.~2--6
+	\item \citet{Luedeling2009}: Kapitel 1 (S.~8--17) \& Kapitel 3 (S.~28-41)
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sprache \& Sprachwissenschaft I}
-	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \subsection{Ziel des Kurses}
 
 \iftoggle{toc}{
 \frame{
-\begin{multicols}{2}
+%\begin{multicols}{2}
 	\tableofcontents[currentsection]
-\end{multicols}
+%\end{multicols}
 }
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Ziel des Kurses}
 		In diesem Kurs werden wir den folgenden Fragen nachgehen:
@@ -70,16 +145,8 @@
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Begleitlektüre}
-	\begin{itemize}
-	\item AM S.~2--6
-	\item \citet{Luedeling2009}: Kapitel 1 (S.~8--17) \& 3 (S.~28--41)
-	\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \subsection{Sprache und natürliche Sprache}
 \iftoggle{toc}{
 \frame{
@@ -88,7 +155,7 @@
 \end{multicols}
 }
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Sprache und natürliche Sprache}
 	
@@ -111,7 +178,7 @@
 \frametitle{Sprache: weite Definition}
 
 \begin{itemize}
-	\item<1-> Duden Universalwörterbuch $\rightarrow$ weite Definition (vgl. \citet{Duden13a}):
+	\item<1-> Duden Universalwörterbuch $\rightarrow$ weite Definition \citep[vgl.][]{Duden13a}:
 	
 	\begin{enumerate}
 		\item<2->\label{DefSprache1} Die Sprache als \textbf{Fähigkeit} des Menschen zu sprechen.
@@ -143,10 +210,8 @@
 \begin{itemize}
 	\item<1-> Weit gefasste Definition von Sprache $\rightarrow$ alle vier Punkte (von einem Universalwörterbuch zu erwarten!).
 	\item[]
-	\item<2-> ABER!: nicht \textit{nur} die menschliche Sprache, sondern auch \textbf{andere Arten von Kommunikationsmitteln} wie Tiersprachen, Körpersprache, künstliche Sprachen, etc. (s. Definition \ref{DefSprache4}) und ebenso \textbf{übertragene Bedeutungen} wie Sprache als Stil (s. Definition 	\ref{DefSprache3}), Sprache als \textbf{Handlung} (s. Definition \ref{DefSprache2}) oder Sprache als \textbf{Fähigkeit} (s. Definition \ref{DefSprache1}).
-%	\item[]
-%	\item<3-> Eng gefasste Definition von Sprache (als Gegenstand der Linguistik) \ras nur ein kleiner Teil der \textbf{Definitionen 1} (Sprache als Fähigkeit) und \textbf{4.1} (Sprache als Kommunikationsmittel einer Sprachgemeinschaft) 
-%%Kommt auf nächster Folie noch mal! %%
+	\item<2-> ABER: nicht \textit{nur} die menschliche Sprache, sondern auch \textbf{andere Arten von Kommunikationsmitteln} wie Tiersprachen, Körpersprache, künstliche Sprachen, etc. (s. Definition \ref{DefSprache4}) und ebenso \textbf{übertragene Bedeutungen} wie Sprache als Stil (s. Definition 	\ref{DefSprache3}), Sprache als \textbf{Handlung} (s. Definition \ref{DefSprache2}) oder Sprache als \textbf{Fähigkeit} (s. Definition \ref{DefSprache1}).
+
 \end{itemize}
 		
 \end{frame}
@@ -185,14 +250,15 @@
 	\item[]
 	\item<3-> Unterschied zwischen menschlicher Sprache, \dash der sog. \textbf{natürlichen
           Sprache}, und anderer Sprachformen wie Tiersprachen und Plansprachen\\
- (\zb Esperanto), formalen Sprachen (\zb C++), etc. (vgl. \citet{Thuemmel00a}).\
+ (\zb Esperanto), formalen Sprachen (\zb C++), etc. \citep[vgl.][]{Thuemmel00a}.\
 \end{itemize}		
 
+\nocite{Bussmann83a-removed}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \subsubsection{Zeichensysteme}
 %\frame{
@@ -201,7 +267,7 @@
 %	\tableofcontents[currentsection]
 %\end{multicols}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Zeichensysteme}
 			
@@ -223,8 +289,8 @@
 
 \end{frame}			
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Alternative zur Gelben Katze:
 
 \begin{frame}
@@ -251,8 +317,7 @@ Bedeutungsseite & & Formseite\\
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \begin{itemize}
@@ -271,7 +336,7 @@ Bedeutungsseite & & Formseite\\
 \begin{figure}[H]
 \centering
 
-\includegraphics[scale=0.15]{material/Bee-dance}
+\includegraphics[scale=0.14]{material/Bee-dance}
 \caption{https://commons.wikimedia.org/wiki/File:Bee\_dance.png?uselang=de; GNU-Lizenz; Autor:Audriusa; Bee\_dance/ Schwänzeltanz}
 \label{Zeichen2}
 \end{figure}
@@ -284,19 +349,18 @@ Bedeutungsseite & & Formseite\\
 		
 \end{frame}			
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Schwänzeltanz}
 
 Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 
-
-
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Merkmale natürlicher Sprachen}
 %\frame{
 %\begin{multicols}{2}
@@ -304,20 +368,18 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %	\tableofcontents[currentsection]
 %\end{multicols}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Merkmale natürlicher Sprachen}
 
 \begin{itemize}
-	\item Die menschliche (natürliche) Sprache unterscheidet sich jedoch von anderen Zeichensystemen, wie der \gqq{Bienensprache} oder den Verkehrszeichen, \textbf{nicht in einem einzelnen Merkmal}, sondern \textbf{in einem Bündel von Merkmalen}, welche alle zusammen vorhanden sein müssen (vgl. \citet{Hockett60a}).
+	\item Die menschliche (natürliche) Sprache unterscheidet sich jedoch von anderen Zeichensystemen, wie der \gqq{Bienensprache} oder den Verkehrszeichen, \textbf{nicht in einem einzelnen Merkmal}, sondern \textbf{in einem Bündel von Merkmalen}, welche alle zusammen vorhanden sein müssen (vgl. \citealp{Hockett60a}).
 \end{itemize}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \begin{itemize}
@@ -392,9 +454,8 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 				
 		\begin{itemize}
 			\item[]
-			\item<4->[$\rightarrow$] Die Wörter \ab{Alben} und \ab{Alpen} unterscheiden sich nur in der Aussprache eines einzelnen Lautes.\\
+			\item<4->[$\rightarrow$] \ab{Alben} und \ab{Alpen} unterscheiden sich nur in der Aussprache eines einzelnen Lautes.\\
 					Vgl. \textipa{[\textglotstop{}alb@n]} vs. \textipa{[\textglotstop{}alp@n]}
-			\item[]
 			\item<4->[$\rightarrow$] Der Bienentanz ist eher kontinuierlich als diskret.						
 		\end{itemize}
 	
@@ -405,8 +466,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \begin{itemize}
@@ -421,14 +481,13 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 		\item[]
 		\item<2-> Menschen können noch nie gehörte Sätze verstehen und noch nie gesagte Sätze produzieren.
 
-
 \pause
 
 \ea Meine Freundin hat gestern einen Wasserkocher mit Treueherzen von Kaiser's gekauft.
 \ex Meine Freundin von Kaiser's hat gestern Treueherzen mit einem Wasserkocher gekauft.
 \z
 				
-	\item<4-> Der Gibbon (kleiner Menschenaffe) hat ein geschlossenes Rufsystem mit einem kleinen \textbf{endlichen Inventar} an bekannten Lauten. 
+	\item<3-> Der Gibbon (kleiner Menschenaffe) hat ein geschlossenes Rufsystem mit einem kleinen \textbf{endlichen Inventar} an bekannten Lauten. 
 	
 	\end{itemize}
 	
@@ -437,8 +496,7 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \begin{itemize}
@@ -474,12 +532,11 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 		
 	\begin{block}{Natürliche Sprache}
-			Insgesamt bildet die natürliche Sprache also ein \textbf{produktives}, \textbf{bidirektionales}, \textbf{arbiträres} und \textbf{diskretes} Symbolsystem (vgl. \citet{Luedeling2009}).
+			Insgesamt bildet die natürliche Sprache also ein \textbf{produktives}, \textbf{bidirektionales}, \textbf{arbiträres} und \textbf{diskretes} Symbolsystem (vgl. \citealp{Luedeling2009}).
 	\end{block}
 
 \end{frame}	

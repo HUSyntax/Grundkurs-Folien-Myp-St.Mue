@@ -67,12 +67,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Grammatik}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+\iftoggle{toc}{
+\frame{
+\begin{multicols}{2}
+\frametitle{~}
+	\tableofcontents[currentsection]
+\end{multicols}
+}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Grammatik}
@@ -92,13 +94,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Grammatikbegriff}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+\subsection{Grammatikbegriff}
+
+\iftoggle{toc}{
+\frame{
+\begin{multicols}{2}
+\frametitle{~}
+	\tableofcontents[currentsection]
+\end{multicols}
+}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Grammatikbegriff}
@@ -106,9 +111,9 @@
 \begin{itemize}
 	\item<1-> Grammatik im engeren Sinne als \textbf{Lehre} von morphologischen und syntaktischen Regularitäten einer Sprache. Unter dieser Auffassung bleiben die Phonologie und die Semantik als Teilbereiche der Sprachwissenschaft ausgeklammert (traditionelle Definition).
 	\item[]
-	\item<2-> Grammatik als \textbf{präskriptive/normative} Grammatik, die Vorgaben für die \gqq{korrekte} Sprachverwendung einer einzelnen Sprache (\gqq{gutes Deutsch}) macht (z.~B. \citet{DudenGramm09d}).
+	\item<2-> Grammatik als \textbf{präskriptive/normative} Grammatik, die Vorgaben für die \gqq{korrekte} Sprachverwendung einer einzelnen Sprache (\gqq{gutes Deutsch}) macht (\zB \citealp{DudenGramm09d}).
 	\item[]
-	\item<3-> Grammatik als \textbf{deskriptive} Grammatik, die eine wertungsfreie Beschreibung einer einzelnen Sprache gibt (z.~B. \citet{Eisenberg00a}, auch \gqq{Problemgrammatik} genannt).
+	\item<3-> Grammatik als \textbf{deskriptive} Grammatik, die eine wertungsfreie Beschreibung einer einzelnen Sprache gibt (\zB \citealp{Eisenberg00a}, auch \gqq{Problemgrammatik} genannt).
 \end{itemize}
 
 \end{frame}
@@ -120,9 +125,9 @@
 \begin{itemize}
 	\item<1-> Grammatik als \textbf{Lehrbuch} oder \textbf{Nachschlagewerk}
 	\item[]
-	\item<2-> Grammatik für den Fremdsprachenunterricht (z.~B. \citet{Helbig&Buscha05a})
+	\item<2-> Grammatik für den Fremdsprachenunterricht (\zB \citealp{Helbig&Buscha05a})
 	\item[]
-	\item<3-> Grammatik als \textbf{Sprachtheorie} (z.~B. Generative Grammatik (vgl. \citet{Philippi&Tewes10a}) oder Dependenzgrammatik (vgl. \citet{Agel00a}))
+	\item<3-> Grammatik als \textbf{Sprachtheorie}, \zB Generative Grammatik (vgl. \citealp{Philippi&Tewes10a}) oder Dependenzgrammatik (vgl. \citealp{Agel00a})
 	\item[]
 	\item<4-> In diesem Seminar verstehen wir Grammatik als:
 
@@ -141,13 +146,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Modularität der Grammatik}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+\subsection{Modularität der Grammatik}
+
+\iftoggle{toc}{
+\frame{
+\begin{multicols}{2}
+\frametitle{~}
+	\tableofcontents[currentsection]
+\end{multicols}
+}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Modularität der Grammatik}
@@ -171,29 +179,27 @@
 \begin{frame}
 
 \begin{itemize}
-	\item Folgende Module werden angenommen (vgl. \citet{Abramowski2016}):
+	\item Folgende Module werden angenommen (vgl. \citealp{Abramowski2016}):
 		
 	\begin{itemize}
-		\item[]
+%		\item[]
 		\item Lexikon
-		\item[]
+%		\item[]
 		\item Phonologische Komponente
-		\item[]
+%		\item[]
 		\item Morphologische Komponente
-		\item[]
+%		\item[]
 		\item Syntaktische Komponente
-		\item[]
+%		\item[]
 		\item Semantische Komponente
-		\item[]
+%		\item[]
 	\end{itemize}
 		
 	\item<2-> Jedes sprachliche Modul besteht zugleich aus:
 	
 	\begin{enumerate}
-		\item<2-> einem Inventar von komponentenspezifisch kategorisierten
-                  \textbf{Minimaleinheiten}\\
-                         (z.~B. Morphem in der Morphologie)
-		\item<2->[] und
+		\item<2-> einem Inventar von komponentenspezifisch kategorisierten \textbf{Minimaleinheiten}\\
+                         (\zB Morphem in der Morphologie) und
 		\item<2-> einer Menge von komponentenspezifischen \textbf{Regeln zur Kombination} dieser Minimaleinheiten zu wohlgeformten komplexen Einheiten. 
 	\end{enumerate}		  
 		
@@ -204,7 +210,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsubsection{Lexikon}
+\subsubsection{Lexikon}
 
 %\iftoggle{toc}{
 %	\frame{
@@ -274,7 +280,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsubsection{Phonologische Komponente}
+\subsubsection{Phonologische Komponente}
 
 %\iftoggle{toc}{
 %	\frame{
@@ -310,8 +316,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsubsection{Morphologische Komponente}
-
+\subsubsection{Morphologische Komponente}
+%\iftoggle{toc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\tableofcontents[currentsection]
+%		%\end{multicols}
+%	}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Morphologische Komponente}
@@ -378,8 +390,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsubsection{Syntaktische Komponente}
-
+\subsubsection{Syntaktische Komponente}
+%\iftoggle{toc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\tableofcontents[currentsection]
+%		%\end{multicols}
+%	}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Syntaktische Komponente}
@@ -416,8 +434,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsubsection{Semantische Komponente}
-
+\subsubsection{Semantische Komponente}
+%\iftoggle{toc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\tableofcontents[currentsection]
+%		%\end{multicols}
+%	}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		
 \begin{frame}{Semantische Komponente}
@@ -454,8 +478,14 @@ wenn sie aus den gleichen Wörtern bestehen?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsubsection{Architektur des Sprachsystems}
-
+\subsubsection{Architektur des Sprachsystems}
+%\iftoggle{toc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\tableofcontents[currentsection]
+%		%\end{multicols}
+%	}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		
 \begin{frame}{Architektur des Sprachsystems}
@@ -592,6 +622,7 @@ Weltwissen, Kontextwissen, analytisches Wissen}
 
 \end{frame}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Linguistische Teildisziplinen}		
@@ -676,7 +707,7 @@ Weltwissen, Kontextwissen, analytisches Wissen}
 		
 		\begin{itemize}
 			\item[]
-			\item \textbf{Beobachtung} und \textbf{Analyse} von Gesetzen natürlicher Sprachen mit dem Ziel ihre \textbf{Systematik} aufzudecken (z.~B. Syntax)
+			\item \textbf{Beobachtung} und \textbf{Analyse} von Gesetzen natürlicher Sprachen mit dem Ziel ihre \textbf{Systematik} aufzudecken (\zB Syntax)
 			\item[]
 			\item<2-> Arbeit mit \textbf{empirischen} Verfahren wie Experimenten (\zB Psycholinguistik) oder wie Ansammlungen von Daten (\zB Korpuslinguistik)) als Evidenz $\rightarrow$ \textbf{Naturwissenschaft}
 			\item[]
@@ -693,6 +724,7 @@ Weltwissen, Kontextwissen, analytisches Wissen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sprachwissenschaft vs. Linguistik}
+
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}

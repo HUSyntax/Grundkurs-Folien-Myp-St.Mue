@@ -59,6 +59,13 @@
 \nocite{Meibauer&Co07a} 
 \nocite{Repp&Co15a} 
 
+%%% Sprache & Sprachwissenschaft
+%\nocite{Fries16c} %Adäquatheit
+%\nocite{Fries16a} %Grammatikalität
+%\nocite{Fries&MyP16c} %GG
+\nocite{Fries&MyP16b} %Akzeptabilität
+%\nocite{Fries&MyP16d} %Kompetenz vs. Performanz
+
 %% Morphologie
 %\nocite{Eisenberg04}
 
@@ -122,9 +129,9 @@
 
 \iftoggle{toc}{
 \frame{
-%\begin{multicols}{2}
-	\tableofcontents[currentsection]
-%\end{multicols}
+\begin{multicols}{2}
+	\tableofcontents%[currentsection]
+\end{multicols}
 }
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -151,7 +158,7 @@
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
-	\tableofcontents[currentsection]
+	\tableofcontents%[currentsection]
 \end{multicols}
 }
 }
@@ -173,6 +180,8 @@
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \frametitle{Sprache: weite Definition}
@@ -208,7 +217,7 @@
 \begin{frame}
 		
 \begin{itemize}
-	\item<1-> Weit gefasste Definition von Sprache $\rightarrow$ alle vier Punkte (von einem Universalwörterbuch zu erwarten!).
+	\item<1-> Weit gefasste Definition von Sprache $\rightarrow$ alle vier Punkte (von einem \textbf{Universal}wörterbuch erwartbar).
 	\item[]
 	\item<2-> ABER: nicht \textit{nur} die menschliche Sprache, sondern auch \textbf{andere Arten von Kommunikationsmitteln} wie Tiersprachen, Körpersprache, künstliche Sprachen, etc. (s. Definition \ref{DefSprache4}) und ebenso \textbf{übertragene Bedeutungen} wie Sprache als Stil (s. Definition 	\ref{DefSprache3}), Sprache als \textbf{Handlung} (s. Definition \ref{DefSprache2}) oder Sprache als \textbf{Fähigkeit} (s. Definition \ref{DefSprache1}).
 
@@ -226,11 +235,11 @@
 \begin{itemize}
 	\item<1-> Eng gefasste Definition von Sprache (als Gegenstand der Linguistik) \ras nur ein kleiner Teil der \textbf{Definitionen 1} (Sprache als Fähigkeit) und \textbf{4.1} (Sprache als Kommunikationsmittel einer Sprachgemeinschaft)
 	\item[]
-	\item<2-> Auszug aus der Definition von \gqq{Sprache} aus dem \textit{Metzler Lexikon Sprache}:
+	\item<2-> Auszug aus der Definition von \gqq{Sprache} aus dem \textit{Metzler Lexikon Sprache} \citep{Glueck&Roedel16a}:
 \end{itemize}
 			
 \begin{block}<3->{Sprache}
-    	   Wichtigstes und artspezif. Kommunikationsmittel der Menschen, das dem Austausch von Informationen dient sowie epistem. (die Organisation des Denkens betreffende), kognitive und affektive Funktionen erfüllt {[}\ldots]. \citep{Glueck00a}
+    	   Wichtigstes und artspezif. Kommunikationsmittel der Menschen, das dem Austausch von Informationen dient sowie epistem. (die Organisation des Denkens betreffende), kognitive und affektive Funktionen erfüllt {[}\ldots].
 \end{block}
 	
 \end{frame}
@@ -240,9 +249,9 @@
 \begin{frame}
 
 \begin{itemize}
-	\item<1-> Demnach: Sprache (in erster Linie) \textbf{Kommunikationsmittel} zum Austausch von Informationen
+	\item<1-> Demnach: Sprache (in erster Linie) als \textbf{Kommunikationsmittel} zum Austausch von Informationen
 	\item[]
-	\item<2-> Sie ist \textbf{artspezifisch} ist, \dash dass nur Menschen eine Sprache (in dem
+	\item<2-> Sie ist \textbf{artspezifisch}, \dash dass nur Menschen eine Sprache (in dem
           oben genannten Sinne) haben.\\
 %\footnote{Vergleiche auch \citet{Bussmann83a}: \gqq{Sprache als eine {[}\ldots] nur dem Menschen eigene Ausdrucksform {[}\ldots]}.}.\\
 	Siehe \textbf{Nim Chimpsky}:\\
@@ -260,13 +269,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Zeichensysteme}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+\subsection{Zeichensysteme}
+\frame{
+\begin{multicols}{2}
+\frametitle{~}
+	\tableofcontents%[currentsection]
+\end{multicols}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Zeichensysteme}
@@ -305,15 +314,18 @@
 }&  
 %fehlt noch im Material-Ordner
 \multirow{4}{6em}{{\LARGE $ \leftrightarrow $}} & / \textipa{k a \t{ts} \textschwa} / \\
-& &(lautlich)\\
+& &{\normalsize (lautlich)}\\
 \cline{3-3}
 & & $\langle$Katze$\rangle$\\
-& &(graphisch)\\
+& &{\normalsize (graphisch)}\\
 \hline
-Bedeutungsseite & & Formseite\\
+{\Large Bedeutungsseite} & & {\Large Formseite}\\
 \hline \\
 \end{tabular}
 \end{table}
+
+\hfill \dots vgl. \citet{Saussure16x}
+
 \end{frame}
 
 
@@ -343,8 +355,8 @@ Bedeutungsseite & & Formseite\\
 
 \begin{itemize}
 	\item<2-> Mit diesem Zeichensystem teilen Bienen die \textbf{Richtung} und \textbf{Entfernung} der nächsten Nahrungsquelle mit. 
-	\item<2-> Rundtanz: Trachtgebiet in der Nähe (weniger als 25m)
-	\item<2-> Schwänzeltanz: Trachtgebiet bis zu 10km weit entfernt, weitere Bewegungen zeigen die Richtung an.
+	\item<2-> \textbf{Rundtanz:} Trachtgebiet in der Nähe (weniger als 25\,m)
+	\item<2-> \textbf{Schwänzeltanz:} Trachtgebiet bis zu 10\,km weit entfernt, weitere Bewegungen zeigen die Richtung an.
 \end{itemize}		
 		
 \end{frame}			
@@ -361,13 +373,13 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Merkmale natürlicher Sprachen}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+\subsection{Merkmale natürlicher Sprachen}
+\frame{
+\begin{multicols}{2}
+\frametitle{~}
+	\tableofcontents%[currentsection]
+\end{multicols}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Merkmale natürlicher Sprachen}
@@ -380,10 +392,17 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Bidirektionalität}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{itemize}
-	\item<1-> \textbf{Bidirektionalität:}
+\begin{frame}{Bidirektionalität:}
 
 	\begin{itemize}
 		\item[]
@@ -398,17 +417,21 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 			
 	\end{itemize}
 
-\end{itemize}
-
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Situationelle Ungebundenheit}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-
-\begin{itemize}
-	\item<1-> \textbf{Situationelle Ungebundenheit:}
+\begin{frame}{Situationelle Ungebundenheit:}
 	
 	\begin{itemize}
 		\item[]
@@ -425,17 +448,21 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 		\item<3-> Einige Primaten sind jedoch nur in der Lage über das Hier und Jetzt zu kommunizieren.
 	\end{itemize}
 		
-\end{itemize}
-
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Rückkopplung}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-	
-\begin{itemize}
-	\item<1-> \textbf{Rückkopplung:}
+\begin{frame}{Rückkopplung:}
 	
 	\begin{itemize}
 		\item<1-> Menschen können ihre \textbf{eigenen Sprachsignale} wahrnehmen und darauf reagieren.
@@ -446,39 +473,62 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 		\item<2->[$\rightarrow$] Der dreistachlige Stichling kann z.\,B. nicht die Färbung seiner Augen und seines Bauches wahrnehmen, die im Balzverhalten eine große Rolle spielt.
 			\item[]
 		\end{itemize}
-			
-	\item<3-> \textbf{Diskretheit:}
-			
-	\begin{itemize}
-		\item<3-> Zeichen in natürlichen Sprachen können in kleine, diskrete (\textbf{von einander unterscheidbare}) \textbf{Einheiten} zerlegt werden.
-				
-		\begin{itemize}
-			\item[]
-			\item<4->[$\rightarrow$] \ab{Alben} und \ab{Alpen} unterscheiden sich nur in der Aussprache eines einzelnen Lautes.\\
-					Vgl. \textipa{[\textglotstop{}alb@n]} vs. \textipa{[\textglotstop{}alp@n]}
-			\item<4->[$\rightarrow$] Der Bienentanz ist eher kontinuierlich als diskret.						
-		\end{itemize}
-	
-	\end{itemize}
-
-\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Diskretheit}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{itemize}
-	\item<1-> \textbf{Produktivität:}
+\begin{frame}{Diskretheit}
+			
+	\begin{itemize}
+		\item Zeichen in natürlichen Sprachen können in kleine, diskrete (\textbf{von einander unterscheidbare}) \textbf{Einheiten} zerlegt werden.
+
+\pause
+				
+		\begin{itemize}
+			\item[]
+			\item[$\rightarrow$] \ab{Alben} und \ab{Alpen} unterscheiden sich nur in der Aussprache eines einzelnen Lautes.
+			
+			\ea \textipa{[\textglotstop{}alb@n]} vs. \textipa{[\textglotstop{}alp@n]}
+			\z 
+			
+			\item[$\rightarrow$] Der Bienentanz ist eher kontinuierlich als diskret.						
+		\end{itemize}
+	
+	\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Produktivität}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Produktivität}
 	
 	\begin{itemize}
-		\item[]				
 		\item<1-> Eins der wichtigsten Merkmale natürlicher Sprachen!
-		\item[]
+%		\item[]
 		\item<2-> Aus einer \textbf{begrenzten Menge} von \textbf{Lauten} wird eine von
                   Menschen nicht überschaubare Menge von \textbf{Wörtern} und daraus eine unüberschaubare Menge von \textbf{Sätzen} produziert ($\rightarrow$ offenes oder produktives System).
-		\item[]
+%		\item[]
 		\item<2-> Menschen können noch nie gehörte Sätze verstehen und noch nie gesagte Sätze produzieren.
 
 \pause
@@ -490,42 +540,46 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 	\item<3-> Der Gibbon (kleiner Menschenaffe) hat ein geschlossenes Rufsystem mit einem kleinen \textbf{endlichen Inventar} an bekannten Lauten. 
 	
 	\end{itemize}
-	
-\end{itemize}
-
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Arbitrarität}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Arbitrarität}
 
 \begin{itemize}
-	\item<1-> \textbf{Arbitrarität:}
-
-	\begin{itemize}
-		\item[]
-		\item<1-> \textbf{Bezeichnendes} (Signifikant, frz. signifiant) ist nicht durch \textbf{Bezeichnetes} (Signifikat, frz. signifié) bestimmt!
-		\item[]
-		\item<2-> Verschiedene Sprachen haben unterschiedliche Namen (Bezeichendes) für das gleiche Objekt (Bezeichnetes):
+	\item<1-> \textbf{Bezeichnendes} (Signifikant, frz. signifiant) ist nicht durch \textbf{Bezeichnetes} (Signifikat, frz. signifié) bestimmt!
+	\item[]
+	\item<2-> Verschiedene Sprachen haben unterschiedliche Namen (Bezeichendes) für das gleiche Objekt (Bezeichnetes):
 
 \pause
 
 \ea dt. \ab{Stift}, engl. \ab{pen}, sp. \ab{bolígrafo}, frz. \ab{crayon}, \ldots
 \z
 
-		\item<4-> Benennung ist \textbf{konventionell}, \dash in der Sprachgemeinschaft festgelegt.
+\pause 
 
-		\begin{itemize}
-			\item<5->[$\rightarrow$] Der Tanz der Bienen ist nicht arbiträr sondern motiviert!
-		\end{itemize}
-			
-		\item[]
-		\item<6-> Es gibt in natürlichen Sprachen \textbf{auch motivierte} Zeichen:
-	
+	\item Benennung ist \textbf{konventionell}, \dash in der Sprachgemeinschaft festgelegt.
+
+	\begin{itemize}
+		\item[$\rightarrow$] Der Tanz der Bienen ist nicht arbiträr sondern motiviert!
+	\end{itemize}
+
+\pause
+		
+	\item Es gibt in natürlichen Sprachen \textbf{auch motivierte} Zeichen:
+
 \ea Deutsch und Dänisch \textipa{[va\textupsilon{} va\textupsilon{}]}, Griechisch \textipa{[gav gav]}, Russisch \textipa{[gaf gaf]}, Spanisch \textipa{[g\textupsilon{}au g\textupsilon{}au]}, Französisch \textipa{[g\textupsilon{}af g\textupsilon{}af]}, Englisch \textipa{[w\textopeno{}f w\textopeno{}f]}, Litauisch \textipa{[a\textupsilon{} a\textupsilon{}]}, Koreanisch \textipa{[m\textopeno{}N m\textopeno{}N]}
 \z
-	
-	\end{itemize}
 
 \end{itemize}
 
@@ -533,7 +587,16 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fazit}
+%\frame{
+%	\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents%[currentsection]
+%	\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Fazit}
 		
 	\begin{block}{Natürliche Sprache}
 			Insgesamt bildet die natürliche Sprache also ein \textbf{produktives}, \textbf{bidirektionales}, \textbf{arbiträres} und \textbf{diskretes} Symbolsystem (vgl. \citealp{Luedeling2009}).

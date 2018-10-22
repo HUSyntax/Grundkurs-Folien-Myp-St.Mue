@@ -236,10 +236,19 @@
 %Tipa font:
 %\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}
 
-%Tipa serif font fixed (requires package 'Linux Libertine B')
-\newfontfamily{\tipacm}[Scale=MatchUppercase]{Linux Libertine B}
-%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}}
-\renewcommand\useTIPAfont{\tipacm}
+%%Tipa serif font fixed (requires package 'Linux Libertine B')
+
+%%% works for texlive 2018
+\newfontfamily{\ipafont}[Scale=MatchUppercase]{Linux Libertine B}
+\def\useTIPAfont{\ipafont}
+
+%%% older code for texlive 2017?
+%\newfontfamily{\tipacm}[Scale=MatchUppercase]{Linux Libertine B}
+%\renewcommand\useTIPAfont{\tipacm}
+
+%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}} %% not needed anymore
+
+
 
 
 \newtoggle{uebung}

@@ -276,7 +276,6 @@ Silbe als \textbf{Domäne} \ldots
 \end{frame}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -979,9 +978,18 @@ Die Phonotaktik untersucht die syntagmatischen Beziehungen zwischen Lauten inner
 \end{itemize}
 
 \begin{figure}
-\centering
-\includegraphics[scale=.2]{material/03bSonoritaetRamers}
-\caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
+	\centering
+	\begin{tikzpicture}
+	\draw[dashed] (-3,0)--(-3,2);
+	\draw[dashed] (3,0)--(3,2);
+	\draw[black] (-3,1)--(0,2)--(3,1)--(0,0)--(-3,1);
+	\node at (-3,-0.3){\$};
+	\node at (3,-0.3){\$};
+	\node[left] at (-3.3,-0.3){(Silbengrenze)};
+	\node[left] at (-4,1){Sonorität};
+	\node[below] at (0,0){Silbengipfel};
+	\end{tikzpicture}
+	\caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
 \end{figure}
 % Vokale sind sonorste Elemente
 % m > p
@@ -1052,15 +1060,24 @@ In jeder Silbe gibt es ein Segment, das den Silbengipfel bildet, und dem ein ode
 
 \end{itemize}
 
+
 \begin{figure}
-\centering
-\includegraphics[scale=.2]{material/03bSonoritaetRamers}
+	\centering
+	\begin{tikzpicture}
+	\draw[dashed] (-3,0)--(-3,2);
+	\draw[dashed] (3,0)--(3,2);
+	\draw[black] (-3,1)--(0,2)--(3,1)--(0,0)--(-3,1);
+	\node at (-3,-0.3){\$};
+	\node at (3,-0.3){\$};
+	\node[left] at (-3.3,-0.3){(Silbengrenze)};
+	\node[left] at (-4,1){Sonorität};
+	\node[below] at (0,0){Silbengipfel};
+\end{tikzpicture}
 \caption{Nach \citet[93]{Ramers08a} (apud Lenerz 1985)}
 \end{figure}
 
+
 \end{frame}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1723,7 +1740,7 @@ MyP edges,
 
 %\input{localforestsyllables}
 \centering
-\scalebox{.8}{
+\scalebox{.6}{
 \begin{forest} MyP edges, [,phantom 
 [$\sigma$
     [O
@@ -1744,7 +1761,7 @@ MyP edges,
 \begin{minipage}{.325\textwidth}
 %\input{localforestsyllables}
 \centering
-\scalebox{.8}{
+\scalebox{.6}{
 \begin{forest} MyP edges, [,phantom
 [$\sigma$
     [O[x, tier=word[\textipa{z}]]]
@@ -1766,7 +1783,7 @@ MyP edges,
 \begin{minipage}{.325\textwidth}
 %\input{localforestsyllables}
 \centering
-\scalebox{.8}{\begin{forest} MyP edges, [,phantom 
+\scalebox{.6}{\begin{forest} MyP edges, [,phantom 
 [$\sigma$
     [O[x, tier=word[\textipa{P}]]]
     [R

@@ -6,32 +6,32 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
+%%%             Metadata                         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
-
 
 \title{Grundkurs Linguistik}
 
-\subtitle{Semantik}
+\subtitle{Semantik I}
 
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
 %	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
 %	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
 \date{ }
+
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
@@ -46,25 +46,59 @@
 \end{multicols}
 }
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\nocite{Brandt&Co06a} %% Syntax
-%\nocite{Glueck05a} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%% Allgemein
 \nocite{Glueck&Roedel16a}
-%\nocite{Grewendorf&Co91a} 
-\nocite{Luedeling2009a} 
+\nocite{Luedeling2009a}
 \nocite{Meibauer&Co07a} 
-\nocite{MyP16a} %% Biconditional
+\nocite{Repp&Co15a} 
+
+%% Morphologie
+%\nocite{Eisenberg04}
+
+%% Syntax
+%\nocite{Adger04a}
+%\nocite{Altmann&Hofmann08a} % Satztypen & Satzmodi
+%\nocite{Altmann93a} % Satztypen & Satzmodi
+%\nocite{Brandt&Co06a} 
+%\nocite{Fanselow&Sascha87a}
+%\nocite{Fanselow&Sascha93a}
+%\nocite{Fries&MyP16b} % Akzeptabilität
+%\nocite{Fries16a} % Grammatikalität
+%\nocite{Fries&MyP16d} % Kompetenz vs Performanz
+%\nocite{Fries&MyP16c} % GG
+%\nocite{Fries&MyP16a} % X-Bar-Theorie
+%\nocite{Fries16e} % Satztyp
+%\nocite{Fries16d} % Satzmodus 
+\nocite{Grewendorf&Co91a} 
+%\nocite{MyP17b} % Kerngrammatik
+%\nocite{MyP18a} % Konstituententest
+\nocite{MyP18b} % Kopf
+%\nocite{MyP18c} % Phrase
+%\nocite{MyP18s} % Funktionale Kategorie
+\nocite{MyP18t} % Argumentstruktur
+%\nocite{MuellerS13f} 
+%\nocite{MuellerS15b}
+%\nocite{Stechow&Sternefeld88a}
+%\nocite{Sternefeld06a}
+%\nocite{Sternefeld06b}
+%\nocite{Woellstein10a} % Topologisches Feldermodell
+
+%% Semantik & Pragmatik
 \nocite{Loebner15a} %% Semantics
 \nocite{Loebner15b} %% Semantics
 \nocite{Lohnstein11} %% Semantics
-%\nocite{MuellerS15b} %%Syntax
+\nocite{MyP16a} %% Bikonditional
 \nocite{Partee&Co93a} %% Semantics
-\nocite{Repp&Co15a}
 \nocite{ZimmermannT&Sternefeld13a} %% Semantics
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Begleitlektüre}
@@ -87,7 +121,7 @@
 %	\tableofcontents[currentsection]
 %\end{multicols}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Einführung}
@@ -216,12 +250,29 @@
 \begin{frame} \frametitle{Zeichen}
 
 \begin{itemize}
-	\item \citet{Saussure16a}: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
+	\item \citet{Saussure16x}: Ein linguistisches Zeichen ist nicht eine Verbindung zwischen einem Ding und einem Namen, sondern zwischen einem \textbf{Konzept} (frz. signifié/ dt. Signifikat) und einem \textbf{Lautmuster} (frz. signifiant/ dt. Signifikant).
 \end{itemize}	
 
-\begin{center}
-	\includegraphics[scale=.2]{material/01SSZeichenKatze}	
-\end{center}
+%\begin{center}
+%	\includegraphics[scale=.2]{material/01SSZeichenKatze}	
+%\end{center}
+
+\begin{figure}
+	\centering
+\scalebox{.75}{\begin{tikzpicture}
+\draw[black] (-1,0)--(6,0);
+\draw[black](-1,0.5)--(6,0.5);
+\draw[black](-1,4.5)--(6,4.5);
+\draw[black](4,2.5)--(6,2.5);
+\node at (1,2.5){\includegraphics[scale=0.12]{material/gelbe-katze2}};
+\node[align=center] at (5,3.5){/\textipa{ka\t{ts}@}/ \\ (lautlich)};
+\node[align=center] at (5,1.5){\abe{Katze} \\ (graphisch)};
+\node[above] at (1,-0.1){Bedeutungsseite};
+\node[above] at (5,0){Formseite};
+\node at (3,2.5){{\huge $\leftrightarrow$}};
+\end{tikzpicture}}
+\caption{Zeichenmodell nach Saussure (1916/1967)}
+\end{figure}
 
 \end{frame}	
 
@@ -233,10 +284,25 @@
 	\item \textbf{Bilaterale Zeichenkonzeption} von de Saussure wurde ergänzt: Mit sprachlichen Zeichen beziehen wir uns \textbf{nicht auf Begriffe}, sondern \textbf{auf Referenten} in der Welt, auf \gqq{Gegenstände}.
 \end{itemize}
 
-\begin{figure}
+	\begin{figure}
 	\centering
-	\includegraphics[scale=0.4]{material/07SemiotischesDreieck}
+	\small
+	\scalebox{.74}{\begin{tikzpicture}
+		\draw[dashed] (-4,0)--(4,0);
+		\draw[black] (4,0)--(0,3)--(-4,0);
+		\node[above, align=center] at (-4.5,0){/\textipa{ka\t{ts}@}/ \\ \abe{Katze}}; 
+		\node[below, align=center] at (-4.5,0){\textbf{AUSDRUCK} \\Signifiant (Saussure), Zeichen (Peirce), \\ Symbol (Odgen/Richards)};
+		\node[below] at (0,0){\emph{steht für}};
+		\node[left] at (-1.9,1.8){\emph{geknüpft an}};
+		\node[right] at (1.9,1.8){\emph{bezieht sich auf}};
+		\node[above, align=center] at (0,3){\textbf{BEGRIFF} \\ Signifié (Saussure), Sinn (Frege), Interpretant (Peirce),\\ Intension (Carnap), Idee, Gedanke \ldots \\ {[KATZE]}};
+		\node[above] at (4.8,0){\includegraphics[scale=0.04]{material/gelbe-katze2}};
+		\node[below, align=center] at (4.5,0){ \textbf{REFERENT}\\ Gegenstand (Frege, Peirce) \\ Extension (Carnap), Denotation (Russell)};
+		\end{tikzpicture}}
+	\caption{Das Semiotische Dreieck nach Odgen/""Richards (1923)}
 \end{figure}
+
+
 	
 \end{frame}	
 
@@ -267,7 +333,7 @@
 \frametitle{Zeichen}
 
 \begin{itemize}
-	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16a}:
+	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16x}:
 	
 	\item[]
 		
@@ -294,7 +360,7 @@
 	\frametitle{Zeichen}
 
 \begin{itemize}
-	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16a}:
+	\item Wichtige Eigenschaften von Zeichen \citep[vgl.][]{Saussure16x}:
 
 	\item[]
 	
@@ -806,6 +872,7 @@ Ein Ausdruck $X$ ist ein konträres Antonym von $Y$, wenn $X$ und $Y$ nicht zugl
 Ein Ausdruck $X$ und ein Ausdruck $Y$ sind gleich in deren Form (phonetische oder graphische) aber unterschiedlich in deren Bedeutung, wobei $X$ und $Y$ unterschiedliche Ursprünge haben.
 \end{block}
 
+\nocite{MyP18n} % Skopus
 
 \end{frame}
 
@@ -1494,20 +1561,21 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \begin{minipage}{0.48\textwidth}
 \centering
 \begin{itemize}
-\item[] \small{p: Ich schlafe.\\
-q: Ich träume.}
+	\item[] \small{$p$: Ich schlafe.\\
+	$q$: Ich träume.}
 \end{itemize}
+
 \scalebox{0.8}{
-\begin{tabular}[b]{l|l|l}
-p & q & p \ras q \\
-\hline
-1 & 1 & 1 \\
-\hline
-1 & 0 & 0 \\
-\hline
-0 & 1 & 1 \\
-\hline
-0 & 0 & 1 \\
+\begin{tabular}[b]{c|c|c}
+	$p$ & $q$ & $p \ras q$ \\
+	\hline
+	1 & 1 & 1 \\
+	\hline
+	1 & 0 & 0 \\
+	\hline
+	0 & 1 & 1 \\
+	\hline
+	0 & 0 & 1 \\
 \end{tabular}}
 \end{minipage}
 %%
@@ -1515,20 +1583,21 @@ p & q & p \ras q \\
 \begin{minipage}{0.48\textwidth}
 \centering
 \begin{itemize}
-\item[] \small{p: Ich schlafe.\\
-q: Ich träume.}
+	\item[] \small{p: Ich schlafe.\\
+	q: Ich träume.}
 \end{itemize}
+
 \scalebox{0.8}{
-\begin{tabular}{l|l|l}
-p & q & $\lnot$ p & $ \lnot $p \ras $ \lor $q\\
-\hline
-1 & 1 & 0 & 1 \\
-\hline
-1 & 0 & 0 & 0 \\
-\hline
-0 & 1 & 1 & 1 \\
-\hline
-0 & 0 & 1& 1 \\
+\begin{tabular}{c|c|c|c}
+	$p$ & $q$ & $\lnot p$ & $ \lnot p \lor q$\\
+	\hline
+	1 & 1 & 0 & 1 \\
+	\hline
+	1 & 0 & 0 & 0 \\
+	\hline
+	0 & 1 & 1 & 1 \\
+	\hline
+	0 & 0 & 1& 1 \\
 \end{tabular}}
 \end{minipage}
 
@@ -1887,7 +1956,7 @@ p & q & $\lnot$ p & $ \lnot $p \ras $ \lor $q\\
 	\centering	
 	%	\scalebox{0.8}{
 	\begin{tabular}{c|c|c|c}
-		\textbf{p}& q & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
+		\textbf{p}& \textbf{q} & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
 		\hline 
 		1 & 0 & 1& \alertred{0} \\ 
 		\hline 
@@ -1911,292 +1980,417 @@ p & q & $\lnot$ p & $ \lnot $p \ras $ \lor $q\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{(Einige) Äquivalenzen -- Extra}
-%%\frame{
-%%\begin{multicols}{2}
-%%\frametitle{~}
-%%	\tableofcontents[currentsection]
-%%\end{multicols}
-%%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{(Einige) Äquivalenzen -- Extra}
-%
-%\begin{itemize}
-%	\item Geben Sie die Wahrheitswerte der folgenden Formeln an und vergleichen Sie die Ergebnisse beider Tabellen:
-%
-%	\ea Genau dann wenn ich Durst habe, trinke ich eine Cola.
-%	\ex Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke.
-%	\z 
-%	
-%	\ea Es regnet oder, es scheint die Sonne und ich bin froh.
-%	\ex Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh.
-%	\z 
-%	
-%	\ea Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
-%	\ex Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft.
-%	\z 	
-%\end{itemize}
-%
-%\end{frame}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%%\iftoggle{loesung}{
-%
-%\begin{frame}[shrink=20]
-%\frametitle{Lösungen}
-%
-%\begin{table}
-%
-%\begin{minipage}{0.4\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small p: Ich habe Durst.\\
-%			q: Ich trinke eine Cola.}
-%	\end{itemize}
-%	\scalebox{0.8}{
-%		\begin{tabular}{l|l|l}
-%			p & q & p $ \leftrightarrow $ q\\
-%			\hline
-%			1 & 1 & 1\\
-%			\hline
-%			1 & 0 & 0\\
-%			\hline
-%			0 & 1 & 0\\
-%			\hline
-%			0 & 0 & 1\\
-%		\end{tabular}
-%	}
-%\end{minipage}
-%%	
-%\begin{minipage}{0.5\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small
-%			p: Ich trinke Cola.\\
-%			q: Ich habe Durst.}
-%	\end{itemize}
-%	\scalebox{0.80}{
-%		\begin{tabular}{l|l|l|l|l}
-%			p & q & $ \lnot $p $ \land \lnot $q & p $ \land $ q & ($ \lnot $p $ \land \lnot $q) $ \lor $ (p $ \land $ q)\\
-%			\hline
-%			1 & 1 & 0 & 1 & 1\\
-%			\hline
-%			1 & 0 & 0 & 0 & 0\\
-%			\hline
-%			0 & 1 & 0 & 0 & 0\\
-%			\hline
-%			0 & 0 & 1 & 0 & 1\\
-%	\end{tabular}}
-%\end{minipage}
-%
-%\vspace{1em}
-%
-%\begin{minipage}{0.5\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small p: Es regnet.\\
-%			q: Es scheint die Sonne.\\
-%			s: Ich bin froh.}
-%	\end{itemize}
-%	\scalebox{0.8}{
-%		\begin{tabular}{l|l|l|l|l}
-%			p & q & s & q $\land $ s & p $\lor$ (q $\land $ s) \\
-%			\hline
-%			0 & 1 & 0 & 0 & 0\\
-%			\hline
-%			1 & 1 & 0 & 0 & 1\\
-%			\hline
-%			0 & 1 & 1 & 1 & 1\\
-%			\hline
-%			1 & 1 & 1 & 1 & 1\\
-%			\hline
-%			0 & 0 & 0 & 0 & 0\\
-%			\hline
-%			1 & 0 & 0 & 0 & 1\\
-%			\hline
-%			0 & 0 & 1 & 0 & 0\\
-%			\hline
-%			1 & 0 & 1 & 0 & 1\\
-%		\end{tabular}
-%	}
-%\end{minipage}
-%%
-%\begin{minipage}{0.4\textwidth}
-%	\centering
-%	\begin{itemize}
-%		\item[] {\small p: Es regnet.\\
-%			q: Es scheint die Sonne.\\
-%			s: Ich bin froh.}
-%	\end{itemize}
-%	\scalebox{0.8}{
-%		\begin{tabular}[b]{l|l|l|l|l|l}
-%			p & q & s & p $ \lor $ q & p $ \lor $ s & (p $ \lor $ q) $ \land $ (p $ \lor $ s) \\
-%			\hline
-%			1 & 0 & 0 & 1 & 1 & 1\\
-%			\hline
-%			1 & 0 & 1 & 1 & 1 & 1\\
-%			\hline
-%			1 & 1 & 0 & 1 & 1 & 1\\
-%			\hline
-%			1 & 1 & 1 & 1 & 1 & 1\\
-%			\hline
-%			0 & 0 & 0 & 0 & 0 & 0\\
-%			\hline
-%			0 & 0 & 1 & 0 & 1 & 0\\
-%			\hline
-%			0 & 1 & 0 & 1 & 0 & 0\\
-%			\hline
-%			0 & 1 & 1 & 1 & 1 & 1\\
-%			
-%	\end{tabular}}
-%\end{minipage}
-%\end{table}
-%
-%\end{frame}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Lösungen}
-%
-%\begin{table}
-%
-%\begin{minipage}{0.48\textwidth}
-%\centering
-%\begin{itemize}
-%	\item[] p: Norbert raucht.\\
-%	q: Christiane schläft.
-%\end{itemize}
-%\scalebox{0.8}{
-%	\begin{tabular}{l|l|l}
-%		p & q & $ \lnot $ (p $ \lor $q)\\
-%		\hline
-%		1 & 1 & 0 \\
-%		\hline
-%		1 & 0 & 0 \\
-%		\hline
-%		0 & 1 & 0 \\
-%		\hline
-%		0 & 0 & 1 \\
-%\end{tabular}}
-%\end{minipage}
-%%
-%\begin{minipage}{0.48\textwidth}
-%\centering
-%\begin{itemize}
-%	\item[] p: Norbert schläft.\\
-%	q: Christine schläft.
-%\end{itemize}
-%\begin{tabular}{l|l|l}
-%	p & q & $ \lnot $p $ \land $ $ \lnot $q\\
-%	\hline
-%	1 & 1 & 0\\
-%	\hline
-%	1 & 0 & 0\\
-%	\hline
-%	0 & 1 & 0\\
-%	\hline
-%	0 & 0 & 1\\
-%\end{tabular}
-%\end{minipage}
-%
-%\end{table}
-%\end{frame}
-%%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{Aussagenlogik}
-%
-%\begin{itemize}
-%\item Übungen:
-%
-%\vspace{1em}
-%
-%\begin{enumerate}
-%\item Christiane schläft. (p)
-%\item[]
-%\item Norbert raucht nicht. ($\lnot$p)
-%\item[]
-%\item Norbert raucht und Christiane schläft nicht. (p $\land \lnot$ q)
-%\item[]
-%\item Wenn Norbert nicht raucht, schläft Christiane nicht. ($\lnot$ p \ras $\lnot$ q)
-%\end{enumerate}
-%
-%\item Konditional:
-%
-%\begin{enumerate}\setcounter{enumi}{4}
-%\item Wenn ich schlafe, träume ich. ( p \ras q)
-%\item[]
-%\item Ich schlafe nicht oder ich träume. ($\lnot$ p $\lor$ q)
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%\end{frame}
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{Aussagenlogik}
-%
-%\begin{itemize}
-%\item Übungen: 
-%
-%\vspace{1em}
-%
-%\begin{itemize}
-%\item Bikonditional:
-%
-%\begin{enumerate}
-%\item Genau dann wenn ich Durst habe, trinke ich eine Cola. (p $\leftrightarrow$ q)
-%\item[]
-%\item Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich eine Cola trinke – oder – Es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich eine Cola trinke. ($\lnot$ p $\leftrightarrow \lnot$ q) $\lor$ (p $\leftrightarrow$ q)
-%\end{enumerate}
-%
-%\item Distributivität:
-%
-%\begin{enumerate}\setcounter{enumi}{2}
-%\item Es regnet oder -- es scheint die Sonne und ich bin froh. (p  $\lor$ (q $\land$ r))
-%\item[]
-%\item Es regnet oder es scheint die Sonne, und es regnet oder ich bin froh. ((p $\lor$ q) $\land$ (p $\lor$ r))
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%\end{itemize}
-%\end{frame}
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}
-%\frametitle{Aussagenlogik}
-%
-%\begin{itemize}
-%\item Übungen:
-%
-%\begin{itemize}
-%\item De Morgans Gesetze:
-%
-%\begin{enumerate}
-%\item Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft. $\lnot$ (p $\lor$ q)
-%\item[]
-%\item Es ist nicht der Fall, dass Norbert raucht und es ist nicht der Fall dass Christiane schläft. ($\lnot$ p $\land \lnot$ q)
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%\end{itemize}
-%
-%
-%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{(Einige) Äquivalenzen -- Extra}
+%\frame{
+%\begin{multicols}{2}
+%\frametitle{~}
+%	\tableofcontents[currentsection]
+%\end{multicols}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+\frametitle{(Einige) Äquivalenzen -- Extra}
+
+\begin{itemize}
+	\item Einige komplexe aussagenlogische Formeln sind formal unterschiedlich, zeigen jedoch die gleichen Wahrheitswerte unter den gleichen Wahrheitsbedingungen (d.\,h. in den gleichen Welten). 
+
+	\item Solche Formeln nennt man \textbf{äquivalent}. 
+	
+	\item Es gibt mehrere komplexe aussagenlogische Formeln, die äquivalent sind. Man kennt sie unter dem Namen \alertred{aussagenlogische Gesetze} (\textit{Laws of statement logic})  \citep[vgl.][]{Partee&Co93a}.
+	
+	\item Genau dann wenn zwei komplexe Aussagen äquivalent sind, ist deren Verbindung mittels eines Bikonditionalen eine \textbf{Tautologie}.
+
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Bikonditional}
+
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+\ea\label{ex:Equi1} Genau dann wenn ich Durst habe, trinke ich Wasser.
+
+\ex\label{ex:Equi2} Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+\z 
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Bikonditional}
+
+\begin{exe}
+\exr{ex:Equi1} Genau dann wenn ich Durst habe, trinke ich Wasser.
+
+\exr{ex:Equi2} Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+\end{exe}
+
+
+{\small $p$: Ich habe Durst.\\
+$q$: Ich trinke Wasser.}
+
+\pause 
+
+\begin{minipage}{0.35\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}{c|c|c}
+			$p$ & $q$ & $p \leftrightarrow q$\\
+			\hline
+			1 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & \alertred{0}\\
+			\hline
+			0 & 1 & \alertred{0}\\
+			\hline
+			0 & 0 & \alertred{1}\\
+		\end{tabular}
+	}
+\end{minipage}
+%%
+\pause
+%%	
+\begin{minipage}{0.55\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}{c|c|c|c|c}
+			$p$ & $q$ & $\lnot p \land \lnot q$ & $p \land q$ & $( \lnot p \land \lnot q) \lor (p \land q)$\\
+			\hline
+			1 & 1 & 0 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & 0 & 0 & \alertred{0}\\
+			\hline
+			0 & 1 & 0 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 1 & 0 & \alertred{1}\\
+	\end{tabular}}
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Bikonditional}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+
+	\exr{ex:Equi1} $P := p \leftrightarrow q$
+	
+	Genau dann wenn ich Durst habe, trinke ich Wasser.
+	
+	\exr{ex:Equi2} $Q := ( \lnot p \land \lnot q) \lor (p \land q)$
+	
+	Es ist nicht der Fall, dass ich Durst habe, und es ist nicht der Fall, dass ich Wasser trinke -- oder -- es ist der Fall, dass ich Durst habe und es ist der Fall, dass ich Wasser trinke.
+\end{exe}
+	
+Diese Äquivalenz ist eines der \alertred{Gesetze des Bikonditionals} in der Aussagenlogik.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Distributivität}
+
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+	
+	\ea\label{ex:Equi3} Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+	\ex\label{ex:Equi4} Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+	\z 
+	 	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}%[shrink=20]
+%\frametitle{Distributivität}
+
+\begin{exe}
+\exr{ex:Equi3} Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+\exr{ex:Equi4} Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+\end{exe}
+
+{\small 
+	$p$: Es regnet.\\
+	$q$: Es scheint die Sonne.\\
+	$s$: Ich bin froh.}
+
+\pause
+
+\begin{minipage}{0.45\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}{c|c|c|c|c}
+			$p$ & $q$ & $s$ & $q \land s$ & $p \lor (q \land s)$ \\
+			\hline
+			1 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 1 & 0 & 0 & \alertred{1}\\
+			\hline
+			1 & 0 & 1 & 0 & \alertred{1}\\
+			\hline
+			1 & 0 & 0 & 0 & \alertred{1}\\
+			\hline
+			0 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			0 & 1 & 0 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 1 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 0 & 0 & \alertred{0}\\
+		\end{tabular}
+	}
+\end{minipage}
+%%
+\pause
+%%
+\begin{minipage}{0.5\textwidth}
+	\centering
+
+	\scalebox{0.7}{
+		\begin{tabular}[b]{c|c|c|c|c|c}
+			$p$ & $q$ & $s$ & $p \lor q$ & $p \lor s$ & $(p \lor q) \land (p \lor s)$ \\
+			\hline
+			1 & 1 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 1 & 0 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			1 & 0 & 0 & 1 & 1 & \alertred{1}\\
+			\hline
+			0 & 1 & 1 & 1 & 1 & \alertred{1}\\
+			\hline
+			0 & 1 & 0 & 1 & 0 & \alertred{0}\\
+			\hline
+			0 & 0 & 1 & 0 & 1 & \alertred{0}\\
+			\hline
+			0 & 0 & 0 & 0 & 0 & \alertred{0}\\
+			
+	\end{tabular}}
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Distributivität}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+	
+	\exr{ex:Equi3} $P := p \lor (q \land s)$
+	
+	Es regnet -- oder -- es scheint die Sonne und ich bin froh.
+	
+	\exr{ex:Equi4} $Q := (p \lor q) \land (p \lor s)$
+	
+	Es regnet oder es scheint die Sonne -- und -- es regnet oder ich bin froh.
+\end{exe}
+
+Diese Äquivalenz ist eines der \alertred{Distributivitätsgesetze} in der Aussagenlogik.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{DeMorgan}
+
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+\ea\label{ex:Equi5} Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+\ex\label{ex:Equi6} Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.
+\z 	
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{DeMorgan}
+
+\begin{exe}
+	\exr{ex:Equi5} Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+	\exr{ex:Equi6} Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.
+\end{exe} 
+
+{\small 
+	$p$: Norbert raucht.\\
+	$q$: Christiane schläft.
+}
+
+\pause 
+
+\begin{minipage}{0.48\textwidth}
+	\centering
+	
+	\scalebox{0.8}{
+		\begin{tabular}{c|c|c|c}
+			$p$ & $q$ & $p \lor q$ & $ \lnot  (p  \lor q)$\\
+			\hline
+			1 & 1 & 1 & \alertred{0} \\
+			\hline
+			1 & 0 & 1 & \alertred{0} \\
+			\hline
+			0 & 1 & 1 & \alertred{0} \\
+			\hline
+			0 & 0 & 0 & \alertred{1} \\
+	\end{tabular}}
+\end{minipage}
+%%
+\pause
+%%
+\begin{minipage}{0.48\textwidth}
+	\centering
+	
+	\scalebox{0.8}{
+	\begin{tabular}{c|c|c|c|c}
+		$p$ & $q$ & $\lnot p$ & $\lnot q$ & $(\lnot p \land \lnot q)$\\
+		\hline
+		1 & 1 & 0 & 0 & \alertred{0}\\
+		\hline
+		1 & 0 & 0 & 1 & \alertred{0}\\
+		\hline
+		0 & 1 & 1 & 0 & \alertred{0}\\
+		\hline
+		0 & 0 & 1 & 1 & \alertred{1}\\
+	\end{tabular}}
+
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{DeMorgan}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+	
+	\exr{ex:Equi5} $P := \lnot (p \lor q)$
+
+	Es ist nicht der Fall, dass Norbert raucht oder Christiane schläft.
+	
+	\exr{ex:Equi6} $Q := (\lnot p \land \lnot q)$
+	
+	Es ist nicht der Fall, dass Norbert raucht -- und -- es ist nicht der Fall dass Christiane schläft.	
+
+\end{exe}
+
+Diese Äquivalenz ist eines der \alertred{DeMorgans Gesetze} in der Aussagenlogik.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Konditional}
+
+Geben Sie die Wahrheitswerte für die folgenden komplexen Aussagen an und vergleichen Sie die Ergebnisse beider Tabellen:
+
+\ea\label{ex:Equi7} Wenn ich schlafe, träume ich.
+\ex\label{ex:Equi8} Ich schlafe nicht oder ich träume.
+\z 	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Konditional}
+
+\begin{exe}
+	\exr{ex:Equi7} Wenn ich schlafe, träume ich.
+	\exr{ex:Equi8} Ich schlafe nicht oder ich träume.
+\end{exe}
+
+{\small 
+	$p$: Ich schlafe.\\
+	$q$: Ich träume.
+}
+
+\pause 
+
+\begin{minipage}{0.48\textwidth}
+\centering
+
+\scalebox{0.8}{
+	\begin{tabular}{c|c|c}
+		$p$ & $q$ & $p \rightarrow q$\\
+		\hline
+		1 & 1 & \alertred{1} \\
+		\hline
+		1 & 0 & \alertred{0} \\
+		\hline
+		0 & 1 & \alertred{1} \\
+		\hline
+		0 & 0 & \alertred{1} \\
+\end{tabular}}
+\end{minipage}
+%%
+\pause
+%%
+\begin{minipage}{0.48\textwidth}
+\centering
+
+\scalebox{0.8}{
+\begin{tabular}{c|c|c|c}
+	$p$ & $q$ & $\lnot p$ & $ \lnot p \lor q$\\
+	\hline
+	1 & 1 & 0 & \alertred{1}\\
+	\hline
+	1 & 0 & 0 & \alertred{0}\\
+	\hline
+	0 & 1 & 1 & \alertred{1}\\
+	\hline
+	0 & 0 & 1 & \alertred{1}\\
+\end{tabular}}
+
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%\frametitle{Konditional}
+
+Die komplexe Formeln $P$ und $Q$ sind \textbf{äquivalent} ($P \Leftrightarrow Q$), denn $P \leftrightarrow Q$ ist eine Tautologie. (Testen Sie dies!)
+
+\begin{exe}
+	
+	\exr{ex:Equi7} $P := p \rightarrow q$
+	
+	Wenn ich schlafe, träume ich.
+	
+	\exr{ex:Equi8} $Q := \lnot p \lor q$
+	
+	Ich schlafe nicht oder ich träume.
+		
+\end{exe}
+
+Diese Äquivalenz ist eines der \alertred{Gesetze des Konditionals} in der Aussagenlogik.
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2229,11 +2423,10 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 \end{block}
 
 
-	\eal 
-		\ex Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
-		\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
-		\ex Die Schrippe kostet 25 Cent. -- Das Brötchen kostet 25 Cent.
-	\zl
+	\ea Man hat ein Fahrrad gekauft. -- Ein Fahrrad wurde gekauft.
+	\ex Alle Fahrräder wurden gekauft. -- Kein Fahrrad wurde nicht gekauft.
+	\ex Die Schrippe kostet 25 Cent. -- Das Brötchen kostet 25 Cent.
+	\z
 		
 \end{frame}
 
@@ -2246,10 +2439,9 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 \textit{p} impliziert \textit{q}, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} auch wahr ist (aber nicht unbedingt umgekehrt!).
 \end{block}
 		
-\eal 
-	\ex Ich habe Grippe. -- Ich bin krank.
-	\ex Hans isst Gemüse. -- Hans isst.
-\zl
+\ea Ich habe Grippe. -- Ich bin krank.
+\ex Hans isst Gemüse. -- Hans isst.
+\z
 
 \end{frame}
 
@@ -2262,10 +2454,9 @@ In allen Welten, in denen $p$ wahr ist, ist $q$ auch wahr und umgekehrt.
 $p$ und $q$ sind miteinander kompatibel, wenn $p$ und $q$ miteinander vereinbar sind und keine Widersprüche erzeugen.
 \end{block}
 
-		\eal 
-			\ex Chomsky ist klug. -- Chomsky ist Linguist.
-			\ex Syntax ist toll. -- Semantik macht Spa\ss{}.
-		\zl
+	\ea Chomsky ist klug. -- Chomsky ist Linguist.
+	\ex Syntax ist toll. -- Semantik macht Spa\ss{}.
+	\z
 		
 \end{frame}
 
@@ -2274,18 +2465,17 @@ $p$ und $q$ sind miteinander kompatibel, wenn $p$ und $q$ miteinander vereinbar 
 \begin{frame}
 \frametitle{Sinnrelationen zwischen Sätzen}
 	
-\begin{block}{Inkompatibilität (Kontrarität)}
+\begin{block}{Inkompatibilität (\gqq{Kontrarität})}
 $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ und $q$ Widersprüche erzeugen (vgl.\ Kohyponymie).
 
-\textit{p} und \textit{q} sind also imkompatibel (konträr), wenn \textbf{beide gleichzeitig nicht wahr} sein können, aber beide könnten gleichzeitig falsch sein.
+\textit{p} und \textit{q} sind also imkompatibel (konträr), wenn \textbf{beide gleichzeitig nicht wahr} sein können, aber beide gleichzeitig falsch sein können.
 \end{block}
 
-		\eal 
-			\ex Das ist eine Rose. -- Das ist eine Nelke.
-			\ex Er wurde erstochen. -- Er wurde erschossen.
-			\ex Syntaktiker sind klüger als Morphologen. -- Morphologen sind klüger als Syntaktiker.		
-			\ex Das Wetter ist schön. -- Das Wetter ist mies.
-		\zl
+	\ea Das ist eine Rose. -- Das ist eine Nelke.
+	\ex Er wurde erstochen. -- Er wurde erschossen.
+	\ex Syntaktiker sind klüger als Morphologen. -- Morphologen sind klüger als Syntaktiker.		
+	\ex Das Wetter ist schön. -- Das Wetter ist mies.
+	\z
 \end{frame}
 
 
@@ -2297,11 +2487,14 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \textit{p} und \textit{q} sind kontradiktorisch zueinander, wenn in allen Welten, in denen \textit{p} wahr ist, \textit{q} falsch ist, und in denen \textit{p} falsch ist, \textit{q} wahr ist.
 \end{block}
 	
-\eal
-	\ex Alle Menschen sind sterblich. -- Manche Menschen sind unsterblich.
-	\ex X ist eine gerade Zahl (in der Menge der natürlichen Zahlen). -- X ist eine ungerade Zahl (in der Menge der natürlichen Zahlen).
-	\ex Maria ist ledig. -- Maria ist verheiratet.
-\zl
+\ea Alle Menschen sind sterblich. -- Manche Menschen sind unsterblich.
+
+\ex $X$ ist eine gerade Zahl (aus der Menge der natürlichen Zahlen). -- 
+
+$X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
+
+\ex Maria ist ledig. -- Maria ist verheiratet.
+\z
 
 \end{frame}
 
@@ -2357,27 +2550,22 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \ea 
-\ea betrunken -- nüchtern \pause 
-
-\hfill \alertred{konträre Antonymie}
-
-\ex Orange -- Apfelsine \pause 
-
-\hfill \alertred{Synonymie}
-
-\ex Vogel -- Feder \pause 
-
-\hfill \alertred{Meronymie (genauer: Feder ist ein Meronym zu Vogel)}
-
-
-\ex volljährig -- minderjährig \pause 
-
-\hfill \alertred{kontradiktorische Antonymie}
-
-\ex mehr -- Meer \pause 
-
-\hfill \alertred{Homonymie (genauer: Homophonie)}
-\z 
+	\ea betrunken -- nüchtern \pause 
+	\hfill \alertred{konträre Antonymie}
+	
+	\ex Orange -- Apfelsine \pause 
+	\hfill \alertred{Synonymie}
+	
+	\ex Vogel -- Feder \pause 
+	\hfill \alertred{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
+	
+	
+	\ex volljährig -- minderjährig \pause 
+	\hfill \alertred{kontradiktorische Antonymie}
+	
+	\ex mehr -- Meer \pause 
+	\hfill \alertred{Homonymie (genauer: Homophonie)}
+	\z 
 \z 
 
 \end{frame}
@@ -2398,15 +2586,16 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \ea 
-	\ea Auf dem Tisch liegt eine Rose.\\
-	Auf dem Tisch liegt eine Blume.
+	\ea Auf dem Tisch liegt eine Rose.
+	\ex Auf dem Tisch liegt eine Blume.
+	\z 
 	
-	\ex Alle Vögel können fliegen.\\
-	Kein Vogel kann nicht fliegen.
+	\ea Alle Vögel können fliegen.
+	\ex Kein Vogel kann nicht fliegen.
+	\z 
 	
-	\ex Einige Tiere haben Federn.\\
-	Alle Tiere haben Federn.
-	
+	\ea Einige Tiere haben Federn.
+	\ex Alle Tiere haben Federn.
 	\z 	
 \z 
 \end{frame}
@@ -2425,17 +2614,34 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \end{itemize}
 
 \ea 
-	\ea Auf dem Tisch liegt eine Rose.\\
-	Auf dem Tisch liegt eine Blume.\\
-	\ras \alertred{Implikation}
-	
-	\ex Alle Vögel können fliegen.\\
-	Kein Vogel kann nicht fliegen.\\
-	\alertred{\ras Paraphrase (synonyme Sätze)}
-	
-	\ex Einige Tiere haben Federn.\\
-	Alle Tiere haben Federn.\\
-	\alertred{\ras} 
+	\ea Auf dem Tisch liegt eine Rose.
+	\ex Auf dem Tisch liegt eine Blume.
+
+\pause 
+
+	\hfill \alertred{a impliziert b}
+	\z 
+
+\pause 
+
+\ex 	
+	\ea Alle Vögel können fliegen.
+	\ex Kein Vogel kann nicht fliegen.
+
+\pause 
+
+	\hfill \alertred{Paraphrase (synonyme Sätze)}
+	\z 
+
+\pause 
+
+\ex 	
+	\ea Einige Tiere haben Federn.
+	\ex Alle Tiere haben Federn.
+
+\pause 
+
+	\hfill \alertred{b impliziert a}
 	\z 	
 \z 
 
@@ -2459,21 +2665,18 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	\begin{itemize}
 		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
-		\eal
-		\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-		\zl
+		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
 		
-		\eal
-		\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-		\zl
+		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
 		
-		\eal
-		\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-		\zl
+		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\z
 		
 	\end{itemize}	
 	
@@ -2497,21 +2700,18 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 	\begin{itemize}
 		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
-		\eal
-		\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-		\zl
+		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
 		
-		\eal
-		\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-		\zl
+		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\z
 		
 		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
 		
-		\eal
-		\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-		\zl
+		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\z
 		
 	\end{itemize}	
 	
@@ -2533,7 +2733,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
 		
 		\begin{exe}
-		\exr{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
+		\exr{ex:Tau3} $\lnot (p \land \lnot p)$
 		\end{exe}
 	\end{itemize}	
 	
@@ -2542,7 +2742,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{table}
 	\centering	
 		\begin{tabular}{c|c|c|c}
-			\textbf{p}& \textbf{$\lnot$ p} &\textbf{p $\land \lnot$ p} & $\lnot$ \textbf{(p $\land \lnot$ p)} \\ 
+			$p$& $\lnot p$ & $p \land \lnot p$ & $\lnot (p \land \lnot p)$ \\ 
 			\hline 
 			0 & 1 & 0& \alertred{1}\\ 
 			\hline 
@@ -2567,7 +2767,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
 		
 		\begin{exe}
-			\exr{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
+			\exr{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
 		\end{exe}		
 	\end{itemize}	
 	
@@ -2576,7 +2776,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{table}
 	\centering	
 	\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
-		\textbf{p}& \textbf{q} & \textbf{p $\lor$ q} & \textbf{q $\lor$ p} & \textbf{(p $\lor$ q)} $\leftrightarrow$ \textbf{(q $\lor$ p)} & \textbf{$\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))} \\ 
+		$p$ & $q$ & $p \lor q$ & $q \lor p$ & $(p \lor q) \leftrightarrow (q \lor p)$ & $\lnot ((p \lor q) \leftrightarrow (q \lor p))$ \\ 
 		\hline 
 		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
 		\hline 
@@ -2605,7 +2805,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
 		
 		\begin{exe}
-			\exr{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
+			\exr{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
 		\end{exe}
 		
 	\end{itemize}	
@@ -2615,7 +2815,7 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{table}
 	\centering	
 	\begin{tabular}{c|c|c|c|c}
-		\textbf{p}& \textbf{q} & \textbf{p \ras q} & \textbf{q \ras p} & \textbf{(p \ras q)} $\leftrightarrow$ \textbf{(q \ras p)} \\ 
+		$p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\ 
 		\hline 
 		1 & 1 & 1 & 1 & \alertred{1} \\ 
 		\hline 
@@ -2683,12 +2883,24 @@ $p$ und $q$ sind miteinander inkompatibel (bzw. zueinander konträr), wenn $p$ u
 \begin{exe}
 \exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
 \exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
-\exr{ex:Wert1} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
+\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
 \end{exe}
 \end{frame}
 
 }%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[allowframebreaks]{Elektronische Quellen}
+\small
+
+\begin{itemize}
+	\item ABBILDUNG -- \gqq{Gelbe Katze} (\url{www.colourbox.de})
+	\item ABBILDUNG -- \gqq{Ferdinand de Saussure} (Zugriff: 03.08.2018) \url{https://commons.wikimedia.org/wiki/File:Ferdinand_de_Saussure.jpg}
+	\item ABBILDUNG -- \gqq{Aristoteles} (Zugriff: 03.08.2018) \url{https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg}
+	\item ABBILDUNG -- \gqq{Ludwig Wittgenstein, 1930} (Zugriff: 03.08.2018), \url{https://commons.wikimedia.org/wiki/File:Ludwig_Wittgenstein.jpg}
+\end{itemize}
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

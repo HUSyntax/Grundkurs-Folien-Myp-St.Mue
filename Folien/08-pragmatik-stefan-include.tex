@@ -88,6 +88,8 @@
 %   \tableofcontents
 % \end{frame}
 
+\toggletrue{uebung}
+
 \section{Pragmatik}
 
 \author{Felix Bildhauer}
@@ -895,7 +897,7 @@ Dazu einige Beispiele.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{uebung}{
 	
-	\begin{frame}[shrink]
+	\begin{frame}[shrink=5]
 	\frametitle{Übungen}
 	
 	\begin{enumerate}
@@ -935,11 +937,12 @@ Dazu einige Beispiele.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-}
+%}
 %END Uebung
 %BEGIN Loesung
-{
-\begin{frame}[shrink]
+%\iftoggle{loesung}
+%{
+\begin{frame}[shrink=5]
 \frametitle{Lösungen}
 
 \begin{enumerate}

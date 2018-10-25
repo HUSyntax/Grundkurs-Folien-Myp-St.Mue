@@ -1870,7 +1870,23 @@ Determinatoren: \zb Quantoren (ein, alle), definite Artikel
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Hausaufgabe}
+\subsection{Hausaufgabe}
+%
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Hausaufgabe}
 %
 \iftoggle{toc}{
 	\frame{
@@ -1885,197 +1901,204 @@ Determinatoren: \zb Quantoren (ein, alle), definite Artikel
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}
-	\frametitle{Hausaufgabe}
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+\end{itemize}
+
+\ea 
+\ea betrunken -- nüchtern
+\ex Orange -- Apfelsine
+\ex Vogel -- Feder
+\ex volljährig -- minderjährig
+\ex mehr -- Meer
+\z 	
+\z 
+\end{frame}
+
+
+%} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+\iftoggle{ha-loesung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+\item Welche Bedeutungsrelationen bzw.\ Ambiguitätsarten bestehen zwischen den folgenden Wortpaaren? Nennen Sie diese.
+\end{itemize}
+
+\ea 
+	\ea betrunken -- nüchtern \pause 
+	\hfill \alertred{konträre Antonymie}
+	
+	\ex Orange -- Apfelsine \pause 
+	\hfill \alertred{Synonymie}
+	
+	\ex Vogel -- Feder \pause 
+	\hfill \alertred{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
+	
+	
+	\ex volljährig -- minderjährig \pause 
+	\hfill \alertred{kontradiktorische Antonymie}
+	
+	\ex mehr -- Meer \pause 
+	\hfill \alertred{Homonymie (genauer: Homophonie)}
+	\z 
+\z 
+
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+\begin{itemize}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+\end{itemize}
+
+\ea 
+	\ea Auf dem Tisch liegt eine Rose.
+	\ex Auf dem Tisch liegt eine Blume.
+	\z 
+	
+	\ea Alle Vögel können fliegen.
+	\ex Kein Vogel kann nicht fliegen.
+	\z 
+	
+	\ea Einige Tiere haben Federn.
+	\ex Alle Tiere haben Federn.
+	\z 	
+\z 
+\end{frame}
+
+
+%} 
+%% END uebung true = Q
+%% BEGIN uebung false = A
+\iftoggle{ha-loesung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+\end{itemize}
+
+\ea 
+	\ea Auf dem Tisch liegt eine Rose.
+	\ex Auf dem Tisch liegt eine Blume.
+
+\pause 
+
+	\hfill \alertred{a impliziert b}
+	\z 
+
+\pause 
+
+\ex 	
+	\ea Alle Vögel können fliegen.
+	\ex Kein Vogel kann nicht fliegen.
+
+\pause 
+
+	\hfill \alertred{Paraphrase (synonyme Sätze)}
+	\z 
+
+\pause 
+
+\ex 	
+	\ea Einige Tiere haben Federn.
+	\ex Alle Tiere haben Federn.
+
+\pause 
+
+	\hfill \alertred{b impliziert a}
+	\z 	
+\z 
+
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{uebung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+\begin{itemize}
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
 	
 	\begin{itemize}
-		\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
-	\end{itemize}
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
+		
+		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
+		\z
+		
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		
+		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\z
+		
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		
+		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\z
+		
+	\end{itemize}	
 	
-	\ea 
-	\ea betrunken -- nüchtern
-	\ex Orange -- Apfelsine
-	\ex Vogel -- Feder
-	\ex volljährig -- minderjährig
-	\ex mehr -- Meer
-	\z 	
-	\z 
+\end{itemize}
+
 \end{frame}
 
-
-} 
+%} 
 %% END uebung true = Q
 %% BEGIN uebung false = A
-{
+\iftoggle{ha-loesung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-	\item Welche Bedeutungsrelationen bzw.\ Ambiguitätsarten bestehen zwischen den folgenden Wortpaaren? Nennen Sie diese.
-\end{itemize}
-
-\ea 
-\ea betrunken -- nüchtern \pause 
-
-\hfill \alertred{konträre Antonymie}
-
-\ex Orange -- Apfelsine \pause 
-
-\hfill \alertred{Synonymie}
-
-\ex Vogel -- Feder \pause 
-
-\hfill \alertred{Meronymie (genauer: Feder ist ein Meronym zu Vogel)}
-
-
-\ex volljährig -- minderjährig \pause 
-
-\hfill \alertred{kontradiktorische Antonymie}
-
-\ex mehr -- Meer \pause 
-
-\hfill \alertred{Homonymie (genauer: Homophonie)}
-\z 
-\z 
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe}
-
-\begin{itemize}
-\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
-\end{itemize}
-
-\ea 
-\ea Auf dem Tisch liegt eine Rose.\\
-Auf dem Tisch liegt eine Blume.
-
-\ex Alle Vögel können fliegen.\\
-Kein Vogel kann nicht fliegen.
-
-\ex Einige Tiere haben Federn.\\
-Alle Tiere haben Federn.
-
-\z 	
-\z 
-\end{frame}
-
-
-} 
-%% END uebung true = Q
-%% BEGIN uebung false = A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
-\end{itemize}
-
-\ea 
-\ea Auf dem Tisch liegt eine Rose.\\
-Auf dem Tisch liegt eine Blume.\\
-\ras \alertred{a impliziert b}
-
-\ex Alle Vögel können fliegen.\\
-Kein Vogel kann nicht fliegen.\\
-\alertred{\ras Paraphrase (synonyme Sätze)}
-
-\ex Einige Tiere haben Federn.\\
-Alle Tiere haben Federn.\\
-\alertred{\ras} b impliziert a
-\z 	
-\z 
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe}
-\begin{itemize}
-\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
-
-\vspace{1em}
-
-\begin{itemize}
-\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
-
-\eal
-\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-\zl
-
-\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
-
-\eal
-\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-\zl
-
-\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
-
-\eal
-\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-\zl
-
-\end{itemize}	
-
-\end{itemize}
-
-\end{frame}
-
-} 
-%% END uebung true = Q
-%% BEGIN uebung false = A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
-
-\vspace{1em}
-
-\begin{itemize}
-\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
-
-\eal
-\ex\label{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-\zl
-
-\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
-
-\eal
-\ex\label{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-\zl
-
-\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
-
-\eal
-\ex\label{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-\zl
-
-\end{itemize}	
-
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
+		
+		\ea\label{ex:Tau3} $\lnot (p \land \lnot p)$
+		\z
+		
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		
+		\ea\label{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\z
+		
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		
+		\ea\label{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\z
+		
+	\end{itemize}	
+	
 \end{itemize}
 
 \end{frame}
@@ -2086,29 +2109,29 @@ Alle Tiere haben Federn.\\
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
-
-\vspace{1em}
-
-\begin{itemize}
-\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
-
-\begin{exe}
-\exr{ex:Tau3} $\lnot$ (p $\land \lnot$ p)
-\end{exe}
-\end{itemize}	
-
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}:
+		
+		\begin{exe}
+		\exr{ex:Tau3} $\lnot (p \land \lnot p)$
+		\end{exe}
+	\end{itemize}	
+	
 \end{itemize}
 
 \begin{table}
-\centering	
-\begin{tabular}{c|c|c|c}
-\textbf{p}& \textbf{$\lnot$ p} &\textbf{p $\land \lnot$ p} & $\lnot$ \textbf{(p $\land \lnot$ p)} \\ 
-\hline 
-0 & 1 & 0& \alertred{1}\\ 
-\hline 
-1 & 0 & 0& \alertred{1}\\
-\end{tabular} 
+	\centering	
+		\begin{tabular}{c|c|c|c}
+			$p$& $\lnot p$ & $p \land \lnot p$ & $\lnot (p \land \lnot p)$ \\ 
+			\hline 
+			0 & 1 & 0& \alertred{1}\\ 
+			\hline 
+			1 & 0 & 0& \alertred{1}\\
+		\end{tabular} 
 \end{table} 
 
 \alertred{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
@@ -2120,33 +2143,33 @@ Alle Tiere haben Federn.\\
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
-
-\vspace{1em}
-
-\begin{itemize}	
-\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
-
-\begin{exe}
-\exr{ex:Kon2} $\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))
-\end{exe}		
-\end{itemize}	
-
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}	
+		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}:
+		
+		\begin{exe}
+			\exr{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
+		\end{exe}		
+	\end{itemize}	
+	
 \end{itemize}
 
 \begin{table}
-\centering	
-\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
-\textbf{p}& \textbf{q} & \textbf{p $\lor$ q} & \textbf{q $\lor$ p} & \textbf{(p $\lor$ q)} $\leftrightarrow$ \textbf{(q $\lor$ p)} & \textbf{$\lnot$ ((p $\lor$ q) $\leftrightarrow$ (q $\lor$ p))} \\ 
-\hline 
-1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
-\hline 
-1 & 0 & 1 & 1 & 1 & \alertred{0} \\
-\hline
-0 & 1 & 1 & 1 & 1 & \alertred{0} \\
-\hline
-0 & 0 & 0 & 0 & 1 & \alertred{0} \\
-\end{tabular} }
+	\centering	
+	\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
+		$p$ & $q$ & $p \lor q$ & $q \lor p$ & $(p \lor q) \leftrightarrow (q \lor p)$ & $\lnot ((p \lor q) \leftrightarrow (q \lor p))$ \\ 
+		\hline 
+		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
+		\hline 
+		1 & 0 & 1 & 1 & 1 & \alertred{0} \\
+		\hline
+		0 & 1 & 1 & 1 & 1 & \alertred{0} \\
+		\hline
+		0 & 0 & 0 & 0 & 1 & \alertred{0} \\
+	\end{tabular} }
 \end{table} 
 
 \alertred{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
@@ -2158,34 +2181,34 @@ Alle Tiere haben Federn.\\
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
-
-\vspace{1em}
-
-\begin{itemize}
-\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
-
-\begin{exe}
-\exr{ex:Con2} ((p $\rightarrow$ q) $\leftrightarrow$ (q $\rightarrow$ p))
-\end{exe}
-
-\end{itemize}	
-
+	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen:
+	
+	\vspace{1em}
+	
+	\begin{itemize}
+		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}:
+		
+		\begin{exe}
+			\exr{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
+		\end{exe}
+		
+	\end{itemize}	
+	
 \end{itemize}
 
 \begin{table}
-\centering	
-\begin{tabular}{c|c|c|c|c}
-\textbf{p}& \textbf{q} & \textbf{p \ras q} & \textbf{q \ras p} & \textbf{(p \ras q)} $\leftrightarrow$ \textbf{(q \ras p)} \\ 
-\hline 
-1 & 1 & 1 & 1 & \alertred{1} \\ 
-\hline 
-1 & 0 & 0 & 1 & \alertred{0} \\
-\hline
-0 & 1 & 1 & 0 & \alertred{0} \\
-\hline
-0 & 0 & 1 & 1 & \alertred{1} \\
-\end{tabular} 
+	\centering	
+	\begin{tabular}{c|c|c|c|c}
+		$p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\ 
+		\hline 
+		1 & 1 & 1 & 1 & \alertred{1} \\ 
+		\hline 
+		1 & 0 & 0 & 1 & \alertred{0} \\
+		\hline
+		0 & 1 & 1 & 0 & \alertred{0} \\
+		\hline
+		0 & 0 & 1 & 1 & \alertred{1} \\
+	\end{tabular} 
 \end{table} 
 
 \alertred{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
@@ -2198,13 +2221,13 @@ Alle Tiere haben Federn.\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
+%\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
 
 \begin{itemize}
-\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
 \end{itemize}
 
 \ea\label{ex:Wert1} $(p \land q)$
@@ -2214,22 +2237,23 @@ Alle Tiere haben Federn.\\
 
 \end{frame}
 
-} 
+%} 
 %% END uebung true = Q
 %% BEGIN uebung false = A
-{
+
+\iftoggle{ha-loesung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
 \end{itemize}
 
-\ea\label{ex:Wert1} $(p \land q)$
-\ex\label{ex:Wert2} $(p \rightarrow (q \lor p))$
-\ex\label{ex:Wert3} $((q \land q) \lor (p \land q))$
-\z 
+	\ea\label{ex:Wert1} $(p \land q)$
+	\ex\label{ex:Wert2} $(p \rightarrow (q \lor p))$
+	\ex\label{ex:Wert3} $((q \land q) \lor (p \land q))$
+	\z 
 \end{frame}
 
 
@@ -2238,18 +2262,19 @@ Alle Tiere haben Federn.\\
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
+	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
 \end{itemize}
 
 \begin{exe}
 \exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
 \exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
-\exr{ex:Wert1} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
+\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
 \end{exe}
 \end{frame}
 
 }%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \subsection{Abbildungen}
 \begin{frame}{Abbildungen}

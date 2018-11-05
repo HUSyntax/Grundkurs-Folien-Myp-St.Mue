@@ -1,34 +1,37 @@
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
+%%%             Metadata                         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 \title{Grundkurs Linguistik}
 
 \subtitle{Phonologie I}
-\section{Phonologie}
 
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
 	\\
-	{\footnotesize %\url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
 \date{ }
+
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
@@ -37,31 +40,68 @@
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
-	\frametitle{Inhaltsverzeichnis}\tableofcontents
+	\frametitle{Inhaltsverzeichnis}
+	\tableofcontents
 	%[pausesections]
 \end{multicols}
 }
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
 
-\nocite{Repp&Co12a} 
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Schierholz&Co18}
+\nocite{Luedeling2009a}
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%%% Sprache & Sprachwissenschaft
+%\nocite{Fries16c} %Adäquatheit
+%\nocite{Fries16a} %Grammatikalität
+%\nocite{Fries&MyP16c} %GG
+%\nocite{Fries&MyP16b} %Akzeptabilität
+%\nocite{Fries&MyP16d} %Kompetenz vs. Performanz
+
+%% Phonetik & Phonologie
+\nocite{Altmann&Co07a}
+\nocite{DudenAussprache00a}
 \nocite{Hall00a} 
-\nocite{Luedeling2009a} 
+\nocite{Kohler99a}
+\nocite{Krech&Co09a}
+\nocite{Pompino95a}
 \nocite{Ramers08a}
+\nocite{Ramers&Vater92a}
+\nocite{Rues&Co07a}
+\nocite{WieseR11a}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-\subsection{Einführung}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Phonologie}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Einführung}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Begleitlektüre}
@@ -81,15 +121,15 @@
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Einführung}
 
 \begin{itemize}
-	\item  Phonologie, auch Sprachgebildelautlehre
-	\item  Phonteik, auch Sprechaktlehre
+	\item  Phonologie, auch \textbf{Sprachgebilde}lautlehre
+	\item  Phonetik, auch \textbf{Sprechakt}lehre
 	\item Trennung von Phonetik und Phonologie: Ende der 1920er Jahre
-	\item Strukturalistische Lehre der Prager Schule (vgl. \cite{Trubetzkoy89a-doppelt})
+	\item Strukturalistische Lehre der Prager Schule \citep[vgl.][]{Trubetzkoy89a-doppelt}
 	\item[]
 	\item Unterscheidung auf allen Ebenen zwischen
 	
@@ -108,8 +148,7 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 %\frametitle{Einführung}
 
@@ -141,9 +180,7 @@
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 %\frametitle{Einführung}
 
@@ -163,8 +200,7 @@
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 %\frametitle{Einführung}
 
@@ -191,9 +227,7 @@
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 %\frametitle{Einführung}
 
@@ -219,9 +253,8 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonem, Phon, Allophon}
 \iftoggle{toc}{
 \frame{
@@ -231,7 +264,7 @@
 \end{multicols}
 }
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Phonem, Phon, Allophon}
 
@@ -265,9 +298,7 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Phonem}
 
@@ -295,15 +326,11 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 	\zl			
 	
 	\end{itemize}
-	
-
 
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Phonem}
 
@@ -326,9 +353,7 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}%[allowframebreaks]
 \frametitle{Allophon}
 
@@ -367,12 +392,9 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonetisch-phonologische Ebenen}
-%
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
@@ -381,7 +403,7 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \end{multicols}
 }
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Phonetisch-phonologische Ebenen}
 
@@ -402,18 +424,18 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Tiefenstruktur (TS)}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Tiefenstruktur (TS)}
 	
@@ -437,9 +459,7 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 %\frametitle{Tiefenstruktur (TS)}
 
@@ -459,19 +479,18 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Oberflächenstruktur (OS)}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Oberflächenstruktur (OS)}
 
@@ -491,22 +510,20 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}%[allowframebreaks]
 \frametitle{Phonetische und phonologische Prozesse}
 
 \begin{itemize}
 	\item Häufig wird zwischen phonologischen und phonetischen Prozessen unterschieden.
 	\item[]
-	\item \textbf{Phonetische Prozesse} $\rightarrow$ vom Sprachtempo und Stil abhängige Veränderungen
+	\item \textbf{Phonetische Prozesse} $\rightarrow$ vom Sprachtempo und Stil abhängig
 	\item[$\rightarrow$] Plosiveinsetzung: \textipa{/a m t/} $\rightarrow$ \textipa{[P a m p t]}
-	\item[]
-	\item \textbf{Phonologische Prozessen} $\rightarrow$ systematisch und obligatorisch auftretende Veränderungen
+
+	\item \textbf{Phonologische Prozessen} $\rightarrow$ systematisch und obligatorisch
 	\item[$\rightarrow$] \textit{Ich}-/\textit{Ach}-Laut-Wechsel \textipa{[b u: x]} (von \textipa{/b u: \c{c}/}) ist ableitbar
 	\item[]
-	\item Einen klaren Schnitt zwischen phonetischen und phonologischen Prozessen gibt es nicht!
+	\item Einen klaren Schnitt zwischen phonetischen und phonologischen Prozessen gibt es nicht:
 	\item[$\rightarrow$] Sind g-Tilgung, Spirantisierung, Schwa-Tilgung, \dots\ phonetische oder phonologische Prozesse?
 \end{itemize}
 
@@ -514,31 +531,45 @@ und die vielen möglichen\\
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{TS \& OS}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{TS \& OS}
 
 \begin{itemize}
-	\item TS \& OS sind \textbf{theoretische Abstraktionen} ($\approx$ keine Wahrheiten!),\\
+	\item TS \& OS sind \textbf{theoretische Abstraktionen},
               um die Regelhaftigkeiten auf der phonologischen Ebene erklären zu können.
-	\item[]
-	\item Kind erhält als \textbf{Input im Spracherwerb} OS-Formen wie: \textipa{[\textscr\ a: t]} und \textipa{[\textscr~E:~t~@]}, \textipa{[\textscr\ a: t]} und \textipa{[\textscr\ E: d 5]}, \textipa{[b E t]} und \textipa{[b E t @ n]}, \textipa{[b a: t]} und \textipa{[b~E:~d~5]}, \textipa{[k I n t]} und \textipa{[k I n d 5]}
-	\item[]
+
+\pause 
+
+	\item Kind erhält als \textbf{Input im Spracherwerb} OS-Formen wie: 
+	
+	\ea \textipa{[\textscr\ a: t]} und \textipa{[\textscr~E:~t~@]}, \textipa{[\textscr\ a: t]} und \textipa{[\textscr\ E: d 5]}, \textipa{[b E t]} und \textipa{[b E t @ n]}, \textipa{[b a: t]} und \textipa{[b~E:~d~5]}, \textipa{[k I n t]} und \textipa{[k I n d 5]}
+	\z 
+
+\pause 
+
 	\item Daraus erkennt das Kind,
 
 	\begin{itemize}
-		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden \\ (\zB \ab{Rad}, \ab{Bad}, \ab{Kind}),
-		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird  \\ (\zB \ab{Rat}, \ab{Bett}).
+		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden,
+		
+		\ea  \ab{Rad}, \ab{Bad}, \ab{Kind}
+		\z 
+		
+		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird.  
+		\ea \ab{Rat}, \ab{Bett}
+		\z 
 	\end{itemize}
 		
 \end{itemize}
@@ -546,26 +577,19 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	%\frametitle{TS \& OS}
 		
-\begin{itemize}
-	\item Daraus erkennt das Kind,
-	
 	\begin{itemize}
-		\item dass in einigen Wörtern \textipa{[d]} und \textipa{[t]} \textbf{systematisch} ausgetauscht werden \\(z.~B. \ab{Rad}, \ab{Bad}, \ab{Kind}),
-		\item dass aber in anderen Wörtern \textipa{[t]} immer als \textipa{[t]} ausgesprochen wird  \\(z.~B. \ab{Rat}, \ab{Bett}).
+		\item \textbf{systematischer Wechsel} \textipa{[d]} und \textipa{[t]}: \zB \ab{Rad}, \ab{Bad}, \ab{Kind}
+		\item \textbf{idiosynkratisch} \textipa{[t]} immer als \textipa{[t]}: \zB \ab{Rat}, \ab{Bett}
 		\item[]
 		\item Daraus leitet das Kind Folgendes ab:
-		\item[$\rightarrow$] \textipa{/d/} $\rightarrow$ \textipa{[t]} am Ende des Wortes (bzw. der Silbe)!
+		\item[] \textipa{/d/} $\rightarrow$ \textipa{[t]} am Ende des Wortes (bzw. der Silbe)!
 		\item[]
 		\item[] Aber nicht:
-		\item[]
-		\item[$\rightarrow$] \textipa{/t/} $\rightarrow$ \textipa{[d]}\\ (Andernfalls müsste der Plural von \ab{Rat} \gqq{die \textipa{[\textscr E: d @]}} heißen.)
-	\end{itemize}
+		\item[] \textipa{/t/} $\rightarrow$ \textipa{[d]}\\ (Andernfalls müsste der Plural von \ab{Rat} \gqq{die \textipa{[\textscr E: d @]}} heißen.)
 	
 	\item[]
 	\item Diese Regelhaftigkeit erweitert das Kind auf weitere Lauteinheiten bei weiterem Input $\rightarrow$ \textipa{/b d g z v Z/}	(sog. stimmhafte Obstruenten)
@@ -574,9 +598,7 @@ und die vielen möglichen\\
 \end{frame}
 	
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Phonologische und phonetische Prozesse und TS $\to$ OS}
 
@@ -601,55 +623,56 @@ und die vielen möglichen\\
 \end{table}
 
 \begin{itemize}
-	\item Die Abstraktion (s. Tabelle) impliziert eine gewisse zeitliche Abfolge,\\
-              die es in der Realität nicht gibt.\\
-              Es handelt sich um eine theoretische Abstraktion, die notwendig ist,\\
+	\item Diese Abstraktion impliziert eine gewisse zeitliche Abfolge, \\
+	die es in der Realität nicht gibt.\\
+              Es handelt sich um eine \textbf{theoretische Abstraktion}, die \textbf{notwendig} ist,\\
               um Phänomene zu erfassen!	
 \end{itemize}
 			
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonetisch/phonologische Prozesse}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Phonetisch/phonologische Prozesse}
 
 \begin{itemize}
-	\item Tilgung von Segmenten
+	\item \textbf{Tilgung} von Segmenten
 	\item[]
-	\item Hinzufügung von Segmenten
+	\item \textbf{Hinzufügung} von Segmenten
 	\item[]
-	\item Veränderung von Segmenten
+	\item \textbf{Veränderung} von Segmenten
 	\item[]
 	\item Allgemeine Notation: A \ras B / C \underline{\quad} D
-	\item[] Ein Segment A im Input wird zu einem Segment B im Output in einem Kontext (\gqq{/}), in dem C \textit{vor} und D \textit{nach} A vorkommt. 
+	\item[] \gq{Ein Segment \emph{A} im Input wird zu einem Segment \emph{B} im Output in einem Kontext (\gqq{/}), in dem \emph{C} \textit{vor} und \emph{D} \textit{nach} \emph{A} vorkommt.} 
 \end{itemize}
 
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Tilgung von Segmenten}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Tilgung von Segmenten: \textipa{/@/} und \textipa{/g/}-Tilgung}
 
@@ -684,8 +707,7 @@ und die vielen möglichen\\
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Tilgung von Segmenten: Geminatenreduktion}
 
@@ -710,18 +732,18 @@ und die vielen möglichen\\
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Hinzufügung von Segmenten}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Hinzufügung von Segmenten: Plosiveinsetzung}
 
@@ -769,21 +791,20 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Veränderung von Segmenten (durch Assimilation)}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Veränderung von Segmenten (durch Assimilation)}
+\begin{frame}{Veränderung von Segmenten: Assimilation}
 
 \begin{itemize}
 	\item \textbf{Regressive velare Nasalassimilation}
@@ -799,13 +820,16 @@ und die vielen möglichen\\
 	\zl
 	
  	\end{itemize}
-%% \end{itemize}
-%% \end{frame}
+ \end{itemize}
+ \end{frame}
 
-%% \begin{frame}
-%% \begin{itemize}
 
-	\item[]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Veränderung von Segmenten: Assimilation}
+ 
+\begin{itemize}
+
+%	\item[]
 	\item \textbf{(Allgemeine) regressive Nasalassimilation}:
 
 	\begin{itemize}
@@ -824,11 +848,9 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Assimilation}
+\frametitle{Veränderung von Segmenten: Assimilation}
 
 \begin{itemize}
 	\item \textbf{Progressive Nasalassimilation}:
@@ -866,11 +888,9 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Veränderung von Segmenten (durch Assimilation)}
+\frametitle{Veränderung von Segmenten: \textipa{/g/}-Spirantisierung}
 
 \begin{itemize}
 	\item \textbf{\textipa{/g/}-Spirantisierung}
@@ -885,8 +905,16 @@ und die vielen möglichen\\
 \zl
 
 	\end{itemize}
+\end{itemize}
 
-	\item[]
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Veränderung von Segmenten: \textipa{/\textscr /}-Vokalisierung}
+
+\begin{itemize}
 	\item \textbf{\textipa{/{\textscr}/}-Vokalisierung}
 	
 	\begin{itemize}
@@ -897,7 +925,7 @@ und die vielen möglichen\\
 		\ex \ab{Ohr}: \textipa{/o:{\textscr}/} $\rightarrow$ \textipa{[Po:5]}
 		\ex \ab{fern}: \textipa{/fE{\textscr}n/} $\rightarrow$ \textipa{[fE5n]}
 		\ex \ab{Lehrer}: \textipa{/le:.{\textscr}@{\textscr}/} $\rightarrow$ \textipa{[le:.{\textscr}@5]} (nach Schwa-Tilgung $\rightarrow$ \textipa{[le:.{\textscr}5]}\\
-		(vgl. \ab{Lehrerin})
+		(vgl. \ab{Lehrerin} \textipa{[le:.{\textscr}@.\alertred{\textscr}In]})
 	\zl
 	
 	\end{itemize}
@@ -907,11 +935,8 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-%{Veränderung von Segmenten (durch Assimilation)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Veränderung von Segmenten: Auslautverhärtung}
 
 \begin{itemize}
 	\item \textbf{Auslautverhärtung}
@@ -936,19 +961,18 @@ und die vielen möglichen\\
 \end{frame}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Reihenfolge der Prozesse}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Reihenfolge der Prozesse}
 

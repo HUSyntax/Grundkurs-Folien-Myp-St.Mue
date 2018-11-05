@@ -1,32 +1,35 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Slides: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,11pt, bibtotoc]{beamer}
-%\documentclass[10pt,a4paper]{beamer}
-%\documentclass[10pt,handout]{beamer}
+%\documentclass[11pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES       %%
+%%     PACKAGES      
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{document}
-
-\input{localcommands}
-
-%\togglefalse{uebung}
-%\toggletrue{uebung}
-%\togglefalse{loesung}
-%\toggletrue{loesung}
-\togglefalse{toc}
-%\toggletrue{toc}
-
+	
+	\input{localcommands}
+	
+	%	\togglefalse{uebung}
+	%	\toggletrue{uebung}
+	
+	%	\togglefalse{loesung}
+	%	\toggletrue{loesung}
+	
+	%	\togglefalse{toc}
+	\toggletrue{toc}
+	
 \input{02-phonetik-include}
 
 \input{gk-literatur}

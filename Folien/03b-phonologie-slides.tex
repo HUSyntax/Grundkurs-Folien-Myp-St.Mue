@@ -1,33 +1,34 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Compile: XeLaTeX BibTeX XeLaTeX(x2)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Slides: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,10pt, bibtotoc]{beamer}
-%\documentclass[10pt,a4paper]{beamer}
-%\documentclass[10pt,handout]{beamer}
+\documentclass[a4paper,11pt, bibtotoc]{beamer}
+%\documentclass[11pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES       %%
+%%     PACKAGES      
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{document}
+	
+	\input{localcommands}
 
-\input{localcommands}
-
-%\togglefalse{uebung}
-\toggletrue{uebung}
-%\togglefalse{loesung}
-%\toggletrue{ha-loesung}
-%\togglefalse{toc}
-\toggletrue{toc}
-\toggletrue{hausaufgabe}
-%\togglefalse{hausaufgabe}
+	%\togglefalse{uebung}
+	\toggletrue{uebung}
+	%\togglefalse{loesung}
+	%\toggletrue{ha-loesung}
+	%\togglefalse{toc}
+	\toggletrue{toc}
+	\toggletrue{hausaufgabe}
+	%\togglefalse{hausaufgabe}
 
 \input{03b-phonologie-include}
 

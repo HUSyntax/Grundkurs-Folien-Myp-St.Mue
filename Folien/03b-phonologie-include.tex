@@ -1,12 +1,18 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Slides: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
 %\exewidth{(35)} im übergeordneten File
 
 % sollte zentral geladen werden. St. Mü. 04.11.2016 (in localcommands?)
 \input{localforestsyllables}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
 \title{Grundkurs Linguistik}
@@ -15,77 +21,72 @@
 
 \section{Phonologie II: Silbe}
 
-\author[aMyP]{Antonio Machicao y Priemer%
+\author[aMyP]{
+	{\small Antonio Machicao y Priemer}
 	\\
-	{\footnotesize %\url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
-%\institute{Institut für deutsche Sprache und Linguistik}
+\institute{Institut für deutsche Sprache und Linguistik}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
+
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
 %\date{ }
+
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%   
 \huberlintitlepage[22pt]
-
-%\frame{\titlepage}
-
-%% %%%%%%%%%%%%%%%%%%%%%%%%%      
-%% \begin{frame}
-%%   \HUtitle
-%% \end{frame}
-
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
-	\frametitle{Inhaltsverzeichnis}\tableofcontents
+	\frametitle{Inhaltsverzeichnis}
+	\tableofcontents
 	%[pausesections]
 \end{multicols}
 }
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%\subsection{Kontakt}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
 
-%% \begin{frame}
-%% \frametitle{Kontakt}
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Schierholz&Co18}
+\nocite{Luedeling2009a}
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
 
+%%% Sprache & Sprachwissenschaft
+%\nocite{Fries16c} %Adäquatheit
+%\nocite{Fries16a} %Grammatikalität
+%\nocite{Fries&MyP16c} %GG
+%\nocite{Fries&MyP16b} %Akzeptabilität
+%\nocite{Fries&MyP16d} %Kompetenz vs. Performanz
 
-%% \scalebox{0.95}{
-
-%% \begin{tabular}{ll}
-%% \textbf{Dozent:} & Antonio Machicao y Priemer \\ 
-%% 			     & \textipa{[ma.\t{tS}i."ka.o.\textprimstress Pi."p\textscr i:.m5]}\\
-%% \textbf{E-Mail:} & \href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de} \\ 
-%% \textbf{Webseite:} & \url{http://www.linguistik.hu-berlin.de/staff/amyp} \\ 
-%% \textbf{Büro:} & Dorotheenstraße 24, Raum: 3.305 \\ 
-%% \textbf{Telefonnummer:} & +49(30)-2093-9702 \\
-%% \textbf{Sprechstunde:} & Mittwochs 10--12 (Anmeldung per E-Mail erforderlich!) \\ 
-%%  & \\
-%% \textbf{Sekretariat:} & Anina Klein \\	
-%% \textbf{E-Mail:} & \href{mailto:Anina.Klein@cms.hu-berlin.de}{Anina.Klein@cms.hu-berlin.de} \\
-%% \textbf{Büro:} & Dorotheenstraße 24, Raum: 3.306 \\
-%% \textbf{Telefonnummer:} & +49(30)-2093-9639 \\
-%% \end{tabular} 
-
-%% }
-%% \end{frame}
+%% Phonetik & Phonologie
+\nocite{Altmann&Co07a}
+\nocite{DudenAussprache00a}
+\nocite{Hall00a} 
+\nocite{Kohler99a}
+\nocite{Krech&Co09a}
+\nocite{Pompino95a}
+\nocite{Ramers08a}
+\nocite{Ramers&Vater92a}
+\nocite{Rues&Co07a}
+\nocite{WieseR96a}
+\nocite{WieseR11a}
 
 
 
@@ -99,22 +100,17 @@
 %\end{multicols}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% LITERATUR
-\nocite{Altmann&Co07a} \nocite{Hall00a} \nocite{Pompino95a} \nocite{Ramers08a} \nocite{Repp&Co12a} \nocite{WieseR96a} \nocite{WieseR11a}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Begleitlektüre}
 \begin{itemize}
 	\item AM S.~24--28
-	\item \citet[Kapitel~8]{Hall00a}:  S.~205--230; 238--254)
+	\item \citet[Kapitel~8]{Hall00a}:  S.~205--230; 238--254
 \end{itemize}
 \end{frame}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \begin{frame}
 \frametitle{Einführung: Notation}
 
@@ -150,48 +146,93 @@
 \begin{frame}
 \frametitle{Einführung: Silben}
 
-
 Warum nimmt man Silben an?
 
 \begin{itemize}
 	\item Die Auslautverhärtung mit Bezug auf das Wort (vorläufig):
 	
-	  \ea
-             {}[$-$son] $\rightarrow$ [$-$sth] /\_\_ \#
-	     \z
-	     
+	\ea {}[$-$son] $\rightarrow$ [$-$sth] /\_\_ \#
+             
 	{\small (ein nicht-sonoranter Laut -- d.\,h.\ Obstruent -- wird am Wortende nicht-stimmhaft)}
-	
-	     
+	\z
+     
 	\item Transkribieren Sie: (\emph{sie}) \emph{siegte}
 
 % Auslautverhärtung auch bei Silben
 \pause	
-\ea
-\textipa{[zi:k . t@]} (\gqq{.} steht für Silbengrenze)
-\z
 
-\pause
-	\eal 
-	\ex \textipa{[St\textscr e:p.za:m]} \vs \textipa{[St\textscr e:.b5]}
-	\ex \textipa{[bYnt.nIs]} \vs \textipa{[bUn.d@s]}
-	\ex \textipa{[bi:k.za:m]} \vs \textipa{[bi:.g@n]}
-	\ex \textipa{[le:s.b5]} \vs \textipa{[le:.z@n]}
-        \zl
-        
-	\item Auslautverhärtung mit Bezug auf die \textbf{Silbe}:
-	  \ea
-             {}[$-$son] $\rightarrow$ [$-$sth] /\_\_ $]_{\sigma}$
-	  \z	
+	\ea
+	\textipa{[zi:k . t@]} (\gqq{.} steht für Silbengrenze)
+	\z
+
+%\pause
+%
+%	\eal 
+%	\ex \textipa{[St\textscr e:p.za:m]} \vs \textipa{[St\textscr e:.b5]}
+%	\ex \textipa{[bYnt.nIs]} \vs \textipa{[bUn.d@s]}
+%	\ex \textipa{[bi:k.za:m]} \vs \textipa{[bi:.g@n]}
+%	\ex \textipa{[le:s.b5]} \vs \textipa{[le:.z@n]}
+%    \zl
+%        
+%	\item Auslautverhärtung mit Bezug auf die \textbf{Silbe}:
+%	  \ea
+%             {}[$-$son] $\rightarrow$ [$-$sth] /\_\_ $]_{\sigma}$
+%	  \z	
 \end{itemize}
-
 
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Silben}
+
+\begin{itemize}
+	\item Vergleichen Sie:
+\end{itemize}
+
+\begin{columns}
+\begin{column}[t]{.5\textwidth}
+\eal 
+	\ex \ab{stre\alertred{b}sam} \vs \ab{Stre\alertred{b}er}
+	\ex \ab{Bün\alertred{d}nis} \vs \ab{Bun\alertred{d}es} 
+	\ex \ab{bie\alertred{g}sam} \vs \ab{bie\alertred{g}en}
+	\ex \ab{le\alertred{s}bar} \vs \ab{le\alertred{s}en}
+\zl	
+\end{column}
+
+\pause 
+
+\begin{column}[t]{.5\textwidth}
+\begin{itemize}
+%\eal 
+%\ex 
+	\item[] \textipa{[St\textscr e:\alertred{p}.za:m]} \vs \textipa{[St\textscr e:.\alertred{b}5]}
+%\ex 
+	\item[] \textipa{[bYn\alertred{t}.nIs]} \vs \textipa{[bUn.\alertred{d}@s]}
+%\ex 
+	\item[] \textipa{[bi:\alertred{k}.za:m]} \vs \textipa{[bi:.\alertred{g}@n]}
+%\ex 
+	\item[] \textipa{[le:\alertred{s}.b5]} \vs \textipa{[le:.\alertred{z}@n]}
+%\zl
+\end{itemize}
+\end{column}
+
+\end{columns}	
+
+\pause
+
+\begin{itemize}
+	\item Auslautverhärtung mit Bezug auf die \textbf{Silbe}:
+	\ea
+	{}[$-$son] $\rightarrow$ [$-$sth] /\_\_ $]_{\sigma}$
+	\z	
+\end{itemize}
+
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Silben}
 
@@ -222,7 +263,7 @@ Silbe als \textbf{Domäne} \ldots
 \frametitle{Prosodische Konstituenten}
 
 	\begin{multicols}{2}
-	\begin{itemize}
+	\begin{itemize*}
 		\item UP = Äußerungsphrase
 		\item IP = Intonationsphrase
 		\item $\phi$ = phonol. Phrase
@@ -230,12 +271,12 @@ Silbe als \textbf{Domäne} \ldots
 		\item $\omega$ = phonol. Wort
 		\item F = phonol. Fuß
 		\item \alertred{$\sigma$ = Silbe}
-	\end{itemize}
+	\end{itemize*}
 	\end{multicols}
 
 \begin{figure} %%rote Box einfügen
 	\centering
-	\scalebox{.65}{
+	\scalebox{.55}{
 	\begin{forest} MyP edges,
 	[IP
 	[$\Phi$
@@ -277,12 +318,11 @@ Silbe als \textbf{Domäne} \ldots
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Prosodische Konstituenten}
 
 	\begin{multicols}{2}
-	\begin{itemize}
+	\begin{itemize*}
 		\item UP = Äußerungsphrase
 		\item IP = Intonationsphrase
 		\item $\varphi$ = phonol. Phrase
@@ -290,13 +330,13 @@ Silbe als \textbf{Domäne} \ldots
 		\item $\omega$ = phonol. Wort
 		\item F = phonol. Fuß
 		\item \alertred{$\sigma$ = Silbe}
-	\end{itemize}
+	\end{itemize*}
 	\end{multicols}
 
 
 	\begin{figure}
 	\centering
-	\scalebox{.65}{
+	\scalebox{.5}{
 		\begin{forest} MyP edges,
 		[UP, name=up
 		[IP, name=IP
@@ -321,7 +361,6 @@ Silbe als \textbf{Domäne} \ldots
 		\caption{\cite{Fuhrhop&Co13a}}
 	\end{figure}
 
-
 %\begin{figure}[b]
 %	\centering
 %	
@@ -330,9 +369,7 @@ Silbe als \textbf{Domäne} \ldots
 %	%\label{Zeichen1}
 %\end{figure}
 
-
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -352,20 +389,16 @@ Silbe als \textbf{Domäne} \ldots
 \begin{itemize}
 	\item<1-> Wie viele Silben hat das folgende Wort?
 	
-	  \ea
-          Silbenbestimmung
-          \z
-          
+	\ea Silbenbestimmung
+	\z
 	
 	\item<2-> Woher wissen Sie das?
 	
 	\begin{itemize}
-		\item<2-> Staffeldt (2010: 133):\\
-		\gqq{Jeder kompetente Sprachteilhaber verfügt über die \textbf{Fähigkeit},\\
- Silben identifizieren zu können.}
+		\item<2-> \gqq{Jeder kompetente Sprachteilhaber verfügt über die \textbf{Fähigkeit},\\
+ Silben identifizieren zu können.}  (Staffeldt 2010: 133)
 		
-		\item<2-> \citet[600]{Bussmann02a}:\\
-		\gqq{Silbe: Phonetisch-phonologische \textbf{Grundeinheit} des Wortes bzw.\ der Rede, die zwar \textbf{intuitiv} nachweisbar ist, wissenschaftlich aber \textbf{nicht einheitlich definiert} wird.}
+		\item<2-> \gqq{Silbe: Phonetisch-phonologische \textbf{Grundeinheit} des Wortes bzw.\ der Rede, die zwar \textbf{intuitiv} nachweisbar ist, wissenschaftlich aber \textbf{nicht einheitlich definiert} wird.} \citep[600]{Bussmann02a}
 		
 	\end{itemize}
 

@@ -7,6 +7,7 @@
 %\usepackage[utf8]{inputenc}
 %\usepackage[vietnamese, english,ngerman]{babel}   % seems incompatible with german.sty
 %\usepackage[T3,T1]{fontenc} breaks xelatex
+
 \usepackage{lmodern}
 
 \usepackage{amsmath}
@@ -29,7 +30,17 @@
 \usepackage[
 %noenc,
 safe]{tipa}
-\usepackage{vowel}
+
+%\DeclareFontSubstitution{T3}{cmss}{m}{n}
+
+%\DeclareFontSubstitution{T3}{ptm}{m}{n}
+
+%Das hilft nicht, Vorsicht bei dem "U"
+%\usepackage{tipx}
+
+
+
+%\usepackage{vowel}
 
 % maybe define \textipa to use \originalTeX to avoid problems with `"'.
 %

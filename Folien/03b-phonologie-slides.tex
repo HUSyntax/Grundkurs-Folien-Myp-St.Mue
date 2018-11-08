@@ -4,8 +4,8 @@
 %% Course: GK Linguistik
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,11pt, bibtotoc]{beamer}
-%\documentclass[11pt,handout]{beamer}
+\documentclass[a4paper,10pt, bibtotoc]{beamer}
+%\documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%     PACKAGES      
@@ -21,14 +21,24 @@
 	
 	\input{localcommands}
 
-	%\togglefalse{uebung}
-	\toggletrue{uebung}
+%%	 Nur Fragen bei Übungen
+%	\toggletrue{uebung}
+
+%%	 Fragen & Antwort bei Übungen
+	\togglefalse{uebung}
+
+%%	 Nur Fragen bei Hausaufgaben
+	\toggletrue{hausaufgabe}
+
+%%	 Fragen & Antwort bei Hausaufgaben
+%	\togglefalse{hausaufgabe}	
+
+	
 	%\togglefalse{loesung}
 	%\toggletrue{ha-loesung}
 	%\togglefalse{toc}
 	\toggletrue{toc}
-	\toggletrue{hausaufgabe}
-	%\togglefalse{hausaufgabe}
+
 
 \input{03b-phonologie-include}
 

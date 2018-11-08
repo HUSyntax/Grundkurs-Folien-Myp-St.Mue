@@ -215,23 +215,42 @@
 %\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
-%\frametitle{Hausaufgabe}
+%\frametitle{Übung}
 %
 %\end{frame}
 %
 %} 
 %%% END uebung true = Q
-%%% BEGIN uebung false = A
+%%% BEGIN uebung false = Q + A
 %{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Übung}
+%
+%\end{frame}
+%
+%}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{ha}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
 %\frametitle{Hausaufgabe}
 %
 %\end{frame}
 %
+%} 
+%%% END ha true = Q
+%%% BEGIN ha false = Q + A
+%{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Lösung}
+%
+%\end{frame}
+%
 %}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %Tipa font:
 %\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}

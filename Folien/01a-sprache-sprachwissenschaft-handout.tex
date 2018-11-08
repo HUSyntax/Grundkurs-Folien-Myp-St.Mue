@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\documentclass[a4paper,11pt, bibtotoc]{beamer}
-\documentclass[11pt,handout]{beamer}
+\documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%     PACKAGES      
@@ -21,14 +21,18 @@
 	
 	\input{localcommands}
 
-	%\togglefalse{uebung}
-	\toggletrue{uebung}
-
-	%\togglefalse{loesung}
-	%\toggletrue{loesung}
-	
-	%\togglefalse{toc}
-	\toggletrue{toc}
+%%%%Nur Fragen:
+%\toggletrue{uebung}
+%%%%Fragen+Antworten:
+%\togglefalse{uebung}
+%%%%%%%%%%%%%%%%%%
+%%%%Nur Aufgaben:
+%\toggletrue{ha}
+%%%%Aufgaben+Lösung:
+%\togglefalse{ha}
+%%%%%%%%%%%%%%%%%%
+%\togglefalse{toc}
+\toggletrue{toc}
 
 \input{01a-sprache-sprachwissenschaft-include}
 

@@ -105,27 +105,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Einführung}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+\frame{
+\begin{multicols}{2}
+\frametitle{~}
+	\tableofcontents[currentsection]
+\end{multicols}
+}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
 
 \outline{
-
 \begin{itemize}
 
-\item Einführung
+\item \blaubf{Einführung}
 \item Bereiche der Phonetik
-\item  Methodik
-\item  Probleme der Phonetik
-\item  IPA-Alphabet
+\item Methodik
+\item Probleme der Phonetik
+\item IPA-Alphabet
 \item Artikulatorische Phonetik
 %% Konsonanten
-%% Konsonantenklassi kation
+%% Konsonantenklassikation
 %% Vokale
 %% Vokalklassi kation
 %% Vokalviereck
@@ -133,6 +137,7 @@
 \item Übungen
   
   \end{itemize}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -198,12 +203,12 @@
 		\small
 		\outputbox{
 			Grammatik
-			\begin{itemize}
+			\begin{itemize*}
 				\item Phonologische Komponente\\
 				\item Morphologische K.\\
 				\item Syntaktische K.\\
 				\item Semantische K.
-		\end{itemize}}
+		\end{itemize*}}
 	\end{minipage}
 	
 	\begin{minipage}{0.24\textwidth}
@@ -274,7 +279,6 @@
 \frametitle{Übung}
 
 Wie viele Laute haben die folgenden Wörter?
-<<<<<<< HEAD
 
 	\begin{enumerate}
 		\item \ab{Fische}
@@ -309,7 +313,7 @@ Wie viele Laute haben die folgenden Wörter?
 		\item<4-> \textipa{[ n \textsci{} k s @ ]}
 		\item<6-> \textipa{[ l a N ]}
 		\item<8-> \textipa{[ b @ P a \textscr\  b \t{aI} t U N ]}
-		\item<10->[] \textipa{[ b @ P a  b \t{aI} t U N ]}
+		\item<10->[] \textipa{[ b @ P a:  b \t{aI} t U N ]}
 	\end{enumerate} 
 	\column{.15\textwidth}
 	\begin{enumerate}
@@ -326,46 +330,8 @@ Wie viele Laute haben die folgenden Wörter?
 
 \bigskip
 \begin{itemize}
-	\item[]<11-> \textipa{\t{aI}} kann man als einen oder als zwei Laute zählen.
+	\item[]<11-> \textipa{[\t{aI}]} kann man als einen oder als zwei Laute zählen.
 \end{itemize}         
-=======
-		
-		\begin{columns}
-			\column{.30\textwidth}
-				\begin{enumerate}
-					\item \ab{Fische}
-					\item \ab{Nixe}
-					\item \ab{lang}
-					\item \ab{Bearbeitung}
-                                        \item[]
-				\end{enumerate} 				
-			\column{.35\textwidth}
-				\begin{enumerate}
-					\item<2> \textipa{[ f \textsci{} \textesh{} @ ]}
-					\item<2> \textipa{[ n \textsci{} k s @ ]}
-					\item<2> \textipa{[ l a N ]}
-					\item<2> \textipa{[ b @ P a \textscr\  b \texttoptiebar{aI} t U N ]}
-					\item<2>[] \textipa{[ b @ P a  b \texttoptiebar{aI} t U N ]}
-				\end{enumerate} 
-			\column{.15\textwidth}
-				\begin{enumerate}
-					\item<2>[] 4
-					\item<2>[] 5
-					\item<2>[] 3
-					\item<2>[] 10--11 % bearbeitung ai als ein
-                                          % Laut oder als zwei gezählt
-					\item<2>[] 9--10 % beabeitung ai als ein
-                                          % Laut oder als zwei gezählt
-                \end{enumerate}
-		\end{columns}
-
-
-                \bigskip
-       \begin{itemize}
-       	\item[]<2> \textipa{\texttoptiebar{aI}} kann man als einen oder als zwei Laute zählen.
-       \end{itemize}         
->>>>>>> 43c0faa3f2513fe4c5261e67d5fa523f53bdfedd
-
 
 \end{frame}
 
@@ -1049,26 +1015,36 @@ Deutsche Vokale sind \alt<handout>{unterstrichen}{rot}
 \frametitle{Suprasegmentalia}
 
 \begin{tabular}{l|p{6cm}|p{3cm}}
-	\textbf{Zeichen} 		&	\textbf{Erklärung}				& \textbf{Beispiel} \\
-	\hline
-\textipa{\textprimstress} & Hauptbetonung 				&[\textipa{Papo\textprimstress te:k@}]\\
-\textipa{\textsecstress} 	&Nebenbetonung 	& [\textipa{\textprimstress ba:nho:fs\textsecstress hal@}]\\
-\textipa{:} 						& lang 										& [\textipa{ba:n}] (vs. [\textipa{ban}])\\
-\textipa{;} 						&	halblang 											& \\
-\textipa{\u{}} 					&extra-kurz/unsilbischer Vokal 			& [\textipa{stu:d\u{i}@}] \\
-\textipa{\textvertline} 			&untergeordnete Intonationsgruppe &\\
- \textipa{\textdoublevertline} &	übergeordnete Intonationsgruppe		&	\\
-  \textipa{.} 						&		Silbengrenze							&[\textipa{\textprimstress zIl.bEn.\textsecstress gKEn.\t{ts}@}]\\
-  \textipa{\t{}} &				Doppelartikulation& [\textipa{P\t{aU}to}],  [\textipa{nE\t{ts}}] \\
+\textbf{Zeichen} &	\textbf{Erklärung} & \textbf{Beispiel} \\
+\hline
+\alertred{\textipa{\textprimstress}} & Hauptbetonung &[\textipa{Pa.po.\textprimstress te:.k@}]\\
+
+\alertred{\textipa{\textsecstress}} & Nebenbetonung & [\textipa{\textprimstress ba:n.ho:fs.\textsecstress plE:.n@}]\\
+
+\alertred{\textipa{:}} & lang & [\textipa{ba:n}] (vs. [\textipa{ban}])\\
+
+\textipa{;} & halblang & \\
+
+\textipa{\u{}} \textipa{\alertred{\textsubarch{ }}} & extra-kurz/unsilbischer Vokal & [\textipa{stu:d\u{i}@}] [\textipa{stu:d\textsubarch{i}@}]\\
+
+\textipa{\textvertline} & untergeordnete Intonationsgruppe &\\
+
+\textipa{\textdoublevertline} &	übergeordnete Intonationsgruppe & \\
+
+\alertred{\textipa{.}} & Silbengrenze & [\textipa{\textprimstress zIl.bEn.\textsecstress gKEn.\t{ts}@}]\\
+
+\alertred{\textipa{\t{}}} & Doppelartikulation & [\textipa{P\t{aU}to}],  [\textipa{nE\t{ts}}] \\
+
+\alertred{\textipa{\.}} & Silbengelenkmarker & \textipa{[ka\.f@]}\\
+
+\alertred{\textipa{\textsyllabic{ }}} & silbische Konsonanten & \textipa{[kUm.p\textsyllabic{l}]}\\
 \end{tabular}
 
-%	\item 
-%	\item 
-%	\item 
-%	\item
-%	\item
-%	\item  	
-	\end{frame}
+\medskip
+
+Die rot-markierten Zeichen werden Sie häufiger in diesem und in zukünftigen Seminaren sehen.
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1276,11 +1252,11 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 \z
 
 \pause
-Lösung:
+%Lösung:
 
 \begin{multicols}{2}
 \begin{itemize}
-	\item stimmhaft: \textipa{[ d, z, v, g ]}
+	\item \textbf{stimmhaft:} \textipa{[ d, z, v, g ]}
 	
 	\ea \textipa{[ d ]}: \ab{Dampf}
 	
@@ -1296,7 +1272,7 @@ Lösung:
 \columnbreak
 
 \begin{itemize}
-	\item stimmlos: \textipa{[ f, k, P ]}
+	\item \textbf{stimmlos:} \textipa{[ f, k, P ]}
 	
 	\ea \textipa{[ f ]}: \ab{Fass}
 	
@@ -1427,10 +1403,10 @@ Lösung:
 \begin{frame}
 \frametitle{Konsonantenklassifikation: Artikulationsart}
 
-	\begin{itemize}
-	\item \textbf{Artikulationsart} (Artikulationsmodus):\\
-               Art der Behinderung des Luftstroms durch die Artikulationsorgane
-	\end{itemize}
+	\begin{block}{Artikulationsart}
+	(auch Artikulationsmodus)\\
+	Art der Behinderung des Luftstroms durch die Artikulationsorgane
+	\end{block}	
 
 \end{frame}
 
@@ -1602,7 +1578,7 @@ Lösung:
 \frametitle{Übung}
 
 \begin{itemize}
-	\item [] Beschreiben Sie die Konsonanten in den folgenden Wörtern und geben Sie die entsprechenden phonetischen Symbole an:
+	\item[] Beschreiben Sie die Konsonanten in den folgenden Wörtern und geben Sie die entsprechenden phonetischen Symbole an:
 	
 	\begin{enumerate}
 		\item Busch
@@ -1665,8 +1641,8 @@ Lösung:
 		\only<16->{6. zirpen}  & \only<17->{[\textipa{\texttoptiebar{ts}IKp@n}]}                    & \only<18->{\textipa{\texttoptiebar{ts}}: alveolare, stimmlose Affrikate; \textipa{K}:~uvularer, stimmhafter Frikativ; \textipa{p}:~bilabialer, stimmloser Plosiv; \textipa{n}: s.\,o.}                         \\
 
 		\only<19->{7. wichtig} & \only<20->{[\textipa{\textprimstress vI\c{c}tI\c{c}}]} & \only<21->{\textipa{v}: labiodentaler, stimmhafter Frikativ; \textipa{\c{c}}: palataler, stimmloser Frikativ \textipa{t}: s.\,o.}                                                        \\
-%		
-%		\only<22->{8. Wald}    & \only<23->{[\textipa{valt}]}                           & \only<24->{\textipa{v, l, t}: s.\,o.}
+
+		\only<22->{8. Wald}    & \only<23->{[\textipa{valt}]}                           & \only<24->{\textipa{v, l, t}: s.\,o.}
 \end{tabular}
 }
 \end{table}
@@ -1769,11 +1745,11 @@ Lösung:
 \frametitle{Vokalklassifikation: Gespanntheit}
 
 \begin{description}
-	\item[Definition 1] \textipa{[ i:, y:, u:, o: ]} mit mehr Muskelspannung als \textipa{[ i:, y:, u:, o: ]} 
+	\item[Definition 1] \textipa{[ i:, y:, u:, o: ]} mit \textbf{mehr Muskelspannung} als \textipa{[ i:, y:, u:, o: ]} 
 	
 	(von der experimentellen Phonetik weder bestätigt noch widerlegt)
 	
-	\item[Definition 2] \textipa{[ i:, y:, u:, o: ]}  mit vorverlagerter Zungenwurzel
+	\item[Definition 2] \textipa{[ i:, y:, u:, o: ]}  mit \textbf{vorverlagerter Zungenwurzel}
 
 
 	\begin{multicols}{2}
@@ -1789,7 +1765,7 @@ Lösung:
 			
 			\z 
 		
-		\columnbreak
+\columnbreak
 		
 		\textbf{ungespannt:}
 			\ea \textipa{[ I ]}: \ab{Kiste}
@@ -2089,7 +2065,7 @@ Lösung:
 \frametitle{Triphthong (Dreilaut)}
 	
 	\begin{itemize}
-		\item Abfolge von drei Vokalen im Silbenkern (?)
+		\item Abfolge von drei Vokalen im Silbenkern (umstritten)
 			\item Anzahl der Silben unsicher
 
 \pause 
@@ -2100,14 +2076,14 @@ Lösung:
 
 \pause
 			
-			\item \textbf{linear steigende}: 
+			\item \textbf{linear steigende}
 			\item \textbf{linear fallende}
 			\item mit \textbf{Umkehrpunkt}
 	\end{itemize}
 	
-	\ea {[}\textipa{\t{aI5}}]: \ab{Eier}
-	\ex {[}\textipa{\t{OI5}}]: \ab{Steuer}
-	\ex {[}\textipa{\t{aU5}}]: \ab{Bauer}
+	\ea {[}\textipa{\t{aI}5}]: \ab{Eier}
+	\ex {[}\textipa{\texttoptiebar{O}I5}]: \ab{Steuer}
+	\ex {[}\textipa{\t{aU}5}]: \ab{Bauer}
 	\z	
 
 \end{frame}
@@ -2275,9 +2251,10 @@ Lösung:
 \begin{itemize}
 \item Geben Sie die orthographische Transkription des folgenden Textes an:		
 \item []
-\item [] \textbf{Transcription of recorded passage}
+\item [] \textbf{Enge Transkription einer aufgenommenen Passage}
 
 \textipa{aIns 'StKItn zI\c{c} \textprimstress nO5tvInt Un \textprimstress zOn@, v@5 f@n im \textprimstress baIdn vol d5 \textprimstress StE5k@K@ veK@, als aIn \textprimstress vand@K5, dE5 In aIn \textprimstress va5m \textprimstress mantl g@\textsecstress hylt va5, d@s \textprimstress veg@s da\textprimstress he5ka:m. zI vU5dn \textprimstress aInI\c{c}, das \textprimstress de5jenIg@ fy5 d@n \textprimstress StE5k@K@n \textsecstress gEltn zOlt@, dE5 d@n \textprimstress vand@K5 \textprimstress {tsvI\ng \ng}  {vy5d@}, zaIm \textprimstress mantl \textprimstress aptsU\textsecstress nemm. dE5 \textprimstress nO5tvIm \textprimstress blis mIt \textprimstress al5 \textprimstress maXt, ab5 je \textprimstress me5 E5 \textprimstress blis, dEsto \textprimstress fEst5 \textprimstress hylt@ zI\c{c} d5 \textprimstress vand@K5 In zaIm \textprimstress mantl aIn. \textprimstress EntlI\c{c} ga:p d5 \textprimstress nO5tvIn {d@\ng} \textprimstress kampf \textprimstress aUf. nun E5\textprimstress vE5mt@ dI \textprimstress zOn@ dI \textprimstress lUfp mIt i5n \textprimstress fKOIntlI\c{c}n \textprimstress StKa:ln, Un SonaX {\textprimstress venIg\ng} {\textprimstress aUg\ng \textsecstress blIk\ng} tsok d5 \textprimstress vand@K5 zaIm \textprimstress mantl aUs. da mUst@ d5 \textprimstress nO5tvIn \textprimstress tsugebm, das dI \textprimstress zOn@ f@n im \textprimstress baIdn d5 \textprimstress StE5k@K@ va5.}
+
 %	\begin{figure}[H]
 %		\includegraphics[scale=0.22]{material/04einststrittentranspompino}		
 %	\end{figure}
@@ -2287,30 +2264,87 @@ Lösung:
 \item \href{run:material/04einststrittenaudio/narrative_complete.mp3}{\textbf{SOUND}}
 \end{itemize}
 
-
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übungen: Text in IPA lesen}
+
+\begin{itemize}
+	\item {\footnotesize \textipa{aIns 'StKItn zI\c{c} \textprimstress nO5tvInt Un \textprimstress zOn@, v@5 f@n im \textprimstress baIdn vol d5 \textprimstress StE5k@K@ veK@, als aIn \textprimstress vand@K5, dE5 In aIn \textprimstress va5m \textprimstress mantl g@\textsecstress hylt va5, d@s \textprimstress veg@s da\textprimstress he5ka:m. zI vU5dn \textprimstress aInI\c{c}, das \textprimstress de5jenIg@ fy5 d@n \textprimstress StE5k@K@n \textsecstress gEltn zOlt@, dE5 d@n \textprimstress vand@K5 \textprimstress {tsvI\ng \ng}  {vy5d@}, zaIm \textprimstress mantl \textprimstress aptsU\textsecstress nemm. dE5 \textprimstress nO5tvIm \textprimstress blis mIt \textprimstress al5 \textprimstress maXt, ab5 je \textprimstress me5 E5 \textprimstress blis, dEsto \textprimstress fEst5 \textprimstress hylt@ zI\c{c} d5 \textprimstress vand@K5 In zaIm \textprimstress mantl aIn. \textprimstress EntlI\c{c} ga:p d5 \textprimstress nO5tvIn {d@\ng} \textprimstress kampf \textprimstress aUf. nun E5\textprimstress vE5mt@ dI \textprimstress zOn@ dI \textprimstress lUfp mIt i5n \textprimstress fKOIntlI\c{c}n \textprimstress StKa:ln, Un SonaX {\textprimstress venIg\ng} {\textprimstress aUg\ng \textsecstress blIk\ng} tsok d5 \textprimstress vand@K5 zaIm \textprimstress mantl aUs. da mUst@ d5 \textprimstress nO5tvIn \textprimstress tsugebm, das dI \textprimstress zOn@ f@n im \textprimstress baIdn d5 \textprimstress StE5k@K@ va5.}}
+	
+	\item {\footnotesize Einst stritten sich Nordwind und Sonne, wer von ihnen beiden wohl der Stärkere wäre, als ein Wanderer, der in einen warmen Mantel gehüllt war, des Weges daherkam. Sie wurden einig, dass derjenige für den Stärkeren gelten sollte, der den Wanderer zwingen würde, seinen Mantel abzunehmen. Der Nordwind blies mit aller Macht, aber je mehr er blies, desto fester hüllte sich der Wanderer in seinen Mantel ein. Endlich gab der Nordwind den Kampf auf. Nun erwärmte die Sonne die Luft mit ihrem freundlichen Strahlen, und schon nach wenigen Augenblicken zog der Wanderer seinen Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der Stärkere war.}
+	
+	\hfill	(\citealp{Pompino95a}; \citealp[88--89]{Kohler99a})
+
+\end{itemize}
+
+\end{frame}
 
 }%% END LOESUNG	
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{ha-loesung}{
-	\begin{frame}
-\frametitle{Lösung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hausaufgabe}
+%\iftoggle{toc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Einst stritten sich Nordwind und Sonne, wer von ihnen beiden wohl der Stärkere wäre, als ein
-Wanderer, der in einen warmen Mantel gehüllt war, des Weges daherkam. Sie wurden einig, dass
-derjenige für den Stärkeren gelten sollte, der den Wanderer zwingen würde, seinen Mantel
-abzunehmen. Der Nordwind blies mit aller Macht, aber je mehr er blies, desto fester hüllte sich der
-Wanderer in seinen Mantel ein. Endlich gab der Nordwind den Kampf auf. Nun erwärmte die Sonne die
-Luft mit ihrem freundlichen Strahlen, und schon nach wenigen Augenblicken zog der Wanderer seinen
-Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der Stärkere war.
-
-\citep{Pompino95a}, \citep{Kohler99a}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{hausaufgabe}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
 
 \end{frame}
-}
+
+} 
+%% END true = Q
+%% BEGIN false = Q + A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+
+HIER DIE LÖSUNG
+
+\begin{enumerate}
+	\item Transkribieren Sie folgende Wörter des Deutschen mit dem IPA.
+	
+	\ea arbeiten
+	\ex Giebel
+	\ex sagen
+	\ex fröhlich
+	\ex Enge
+	\ex Dampfschiff
+	\z 
+
+	\item Schreiben Sie für folgenden Lautbeschreibungen das passende IPA-Symbol auf.
+
+	\ea bilabialer stimmloser Plosiv
+	\ex hoher vorderer ungerundeter gespannter Vokal
+	\ex velarer dorsaler stimmloser Frikativ
+	\ex  glottaler stimmloser Plosiv
+	\ex  halbhoher fast vorderer ungerundeter ungespannter Vokal
+	\ex  postalveolarer stimmhafter Frikativ
+	\ex  halbtiefer zentraler ungerundeter ungespannter Vokal
+	\ex  obermittelhoher hinterer gerundeter gespannter Vokal
+	\ex  alveolare koronale stimmlosere Affrikate
+	\ex  mittlerer zentraler ungerundeter Vokal
+	\z 
+\end{enumerate}
+\end{frame}
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2325,7 +2359,7 @@ Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abbildungen}
+\subsection*{Abbildungen}
 %\iftoggle{toc}{
 %	\frame{
 %		\begin{multicols}{2}
@@ -2337,12 +2371,15 @@ Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[allowframebreaks]{Abbildungen}
-	\small
+	\footnotesize
 		
 		\begin{itemize}
 			\item ABBILDUNG -- \gqq{Rousselots Apparat zur Aufzeichnung der Sprache} (Zugriff: 09.12.16): \url{https://de.wikipedia.org/wiki/Jean-Pierre\_Rousselot\#/media/File:Rousselots\_Apparat\_zur\_Aufzeichnung\_der\_Sprache.jpg}
+
 			\item ABBILDUNG -- \gqq{Spektogramm \gq{Pronouncing}} (Autor: Rjanag, Zugriff: 20.12.16) \url{https://upload.wikimedia.org/wikipedia/commons/3/30/Pronouncing.PNG?uselang=de}
+
 			\item ABBILDUNG -- Abbildung \gqq{IPA vowel chart} (CC BY-SA 3.0, Zugriff: 09.12.16) \url{https://en.wikipedia.org/w/index.php?curid=3368128}
+
 			\item ABBILDUNG -- \gqq{Sagittalschnitt} (CC BY-SA 3.0, Zugriff: 09.12.16) \url{https://commons.wikimedia.org/w/index.php?curid=2615572}
 		\end{itemize}	
 	
@@ -2351,7 +2388,7 @@ Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Elektronische Quellen}
+\subsection*{Elektronische Quellen}
 %\iftoggle{toc}{
 %	\frame{
 %		\begin{multicols}{2}
@@ -2363,16 +2400,25 @@ Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[allowframebreaks]{Elektronische Quellen}
-	\small
+
+	\footnotesize
 	
 	\begin{itemize}
+	
 		\item VIDEO -- \gqq{Spoken Pirahã with subtitles} (Zugriff: 24.10.2013): \url{http://www.youtube.com/watch?v=SHv3-U9VPAs}
+
 		\item LINK -- \gqq{Webseite der IPA} (Zugriff: 24.10.2013): \url{http://internationalphoneticassociation.org}
+
 		\item LINK -- \gqq{Peter Ladefoged -- A Course in Phonetics} (Alle Laute zum Testen) (Zugriff: 24.10.2013):\\ \url{http://phonetics.ucla.edu/course/chapter1/chapter1.html}
 		\item VIDEO -- \gqq{!Nama Clicks} (Zugriff: 24.10.2013): \url{http://www.youtube.com/watch?v=Ophrf64fxgA&list=PL6rcWnFnBuT7BEAex2IvI6l_bjLLycxaU}
+
 		\item VIDEO -- \gqq{Anatomical Tutorial During Trans-Nasal Endoscopy} (Zugriff: 24.10.2012): \url{http://www.youtube.com/watch?v=wjRsa77u6OU}
+
 		\item LINK -- \gqq{Interactive Sagittal Section} (Zugriff: 27.04.2016): \url{http://smu-facweb.smu.ca/~s0949176/sammy/}
+
 		\item VIDEO -- \gqq{Vocal Cords up close while singing} (Zugriff: 24.10.2012): \url{http://www.youtube.com/watch?v=-XGds2GAvGQ}
+		
+		\item SOUND -- \gqq{Enge Transkription} fehlt
 	\end{itemize}
 	
 \end{frame}

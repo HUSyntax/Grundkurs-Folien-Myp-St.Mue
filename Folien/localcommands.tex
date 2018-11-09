@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%            MyP-Commands                      %%%
+%%%            MyP-Commands                     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,22 +121,6 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Notizen
-\renewcommand{\marginfont}{\singlespacing}
-\renewcommand{\marginfont}{\footnotesize}
-\renewcommand{\marginfont}{\color{black}}
-
-\newcommand{\myp}[1]{%
-	\marginnote{%
-		\begin{spacing}{1}
-			\vspace{-\baselineskip}%
-			\color{red}\footnotesize#1
-		\end{spacing}
-	}
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Outputbox
 \newcommand{\outputbox}[1]{\noindent\fbox{\parbox[t][][t]{0.98\linewidth}{#1}}\vspace{0.5em}}
 
@@ -162,9 +146,71 @@
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%          Useful commands                     %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TIPA Lösungen           
+
+%%Tipa serif font fixed (requires package 'Linux Libertine B')
+
+%% Solution 1 (RF)
+%% Tipa font:
+%\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}
+
+%% Solution 2 (RF): older code for texlive 2017?
+%\newfontfamily{\tipacm}[Scale=MatchUppercase]{Linux Libertine B}
+%\renewcommand\useTIPAfont{\tipacm}
+
+%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}} %% not needed anymore
+
+%% Solution 3 (RF): this solution is working but with problems with ligatures
+%%% works for texlive 2018
+\newfontfamily{\ipafont}[Scale=MatchUppercase]{Linux Libertine B}
+\def\useTIPAfont{\ipafont}
+
+%% Solution 4 (Kopecky & MyP): Test package: tipx (s. localpackages) and comment "Solution 3" 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toggles                  
+
+\newtoggle{uebung}
+
+\newtoggle{hausaufgabe}
+\newtoggle{ha-loesung}\togglefalse{ha-loesung}
+\newtoggle{phonologie-loesung}
+\newtoggle{graphematik-loesung}
+
+\newtoggle{toc}
+\newtoggle{sectoc}
+\newtoggle{gliederung}
+
+
+% The toc is not needed on Handouts. Safe trees.
+\mode<handout>{
+\togglefalse{toc}
+}
+
+\newtoggle{hpsgvorlesung}\togglefalse{hpsgvorlesung}
+\newtoggle{syntaxvorlesungen}\togglefalse{syntaxvorlesungen}
+
+%\includecomment{psgbegriffe}
+%\excludecomment{konstituentenprobleme}
+%\includecomment{konstituentenprobleme-hinweis}
+
+\newtoggle{konstituentenprobleme}\togglefalse{konstituentenprobleme}
+\newtoggle{konstituentenprobleme-hinweis}\toggletrue{konstituentenprobleme-hinweis}
+
+%\includecomment{einfsprachwiss-include}
+%\excludecomment{einfsprachwiss-exclude}
+\newtoggle{einfsprachwiss-include}\toggletrue{einfsprachwiss-include}
+\newtoggle{einfsprachwiss-exclude}\togglefalse{einfsprachwiss-exclude}
+
+\newtoggle{psgbegriffe}\toggletrue{psgbegriffe}
+
+\newtoggle{gb-intro}\togglefalse{gb-intro}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Useful commands                    
 
 %%%%%%%%%%%%%%%%%%%%%
 %% FOR ITEMS:
@@ -209,7 +255,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%
 %% TOGGLES:
-%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\iftoggle{uebung}{
@@ -220,32 +266,30 @@
 %\end{frame}
 %
 %} 
-%%% END uebung true = Q
-%%% BEGIN uebung false = Q + A
+%%% END true = Q
+%%% BEGIN false = Q + A
 %{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
-<<<<<<< HEAD
 %\frametitle{Übung}
 %
 %\end{frame}
 %
 %}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{ha}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{hausaufgabe}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
 %\frametitle{Hausaufgabe}
-=======
-%\frametitle{Übung \& Lösung}
->>>>>>> 43c0faa3f2513fe4c5261e67d5fa523f53bdfedd
 %
 %\end{frame}
 %
 %} 
-%%% END ha true = Q
-%%% BEGIN ha false = Q + A
+%%% END true = Q
+%%% BEGIN false = Q + A
 %{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
@@ -255,55 +299,3 @@
 %
 %}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%Tipa font:
-%\renewcommand\textipa[1]{{\fontfamily{cmr}\tipaencoding #1}}
-
-%%Tipa serif font fixed (requires package 'Linux Libertine B')
-
-
-%% MyP: Test package: tipx and comment the following lines 
-
-%%% works for texlive 2018
-\newfontfamily{\ipafont}[Scale=MatchUppercase]{Linux Libertine B}
-\def\useTIPAfont{\ipafont}
-
-%%% older code for texlive 2017?
-%\newfontfamily{\tipacm}[Scale=MatchUppercase]{Linux Libertine B}
-%\renewcommand\useTIPAfont{\tipacm}
-
-%\NewEnviron{IPA}{\expandafter\textipa\expandafter{\BODY}} %% not needed anymore
-
-
-
-
-\newtoggle{uebung}
-\newtoggle{ha-loesung}\togglefalse{ha-loesung}
-\newtoggle{phonologie-loesung}
-\newtoggle{graphematik-loesung}
-\newtoggle{toc}
-\newtoggle{hausaufgabe}
-
-% The toc is not needed on Handouts. Safe trees.
-\mode<handout>{
-\togglefalse{toc}
-}
-
-\newtoggle{hpsgvorlesung}\togglefalse{hpsgvorlesung}
-\newtoggle{syntaxvorlesungen}\togglefalse{syntaxvorlesungen}
-
-%\includecomment{psgbegriffe}
-%\excludecomment{konstituentenprobleme}
-%\includecomment{konstituentenprobleme-hinweis}
-
-\newtoggle{konstituentenprobleme}\togglefalse{konstituentenprobleme}
-\newtoggle{konstituentenprobleme-hinweis}\toggletrue{konstituentenprobleme-hinweis}
-
-%\includecomment{einfsprachwiss-include}
-%\excludecomment{einfsprachwiss-exclude}
-\newtoggle{einfsprachwiss-include}\toggletrue{einfsprachwiss-include}
-\newtoggle{einfsprachwiss-exclude}\togglefalse{einfsprachwiss-exclude}
-
-\newtoggle{psgbegriffe}\toggletrue{psgbegriffe}
-
-\newtoggle{gb-intro}\togglefalse{gb-intro}

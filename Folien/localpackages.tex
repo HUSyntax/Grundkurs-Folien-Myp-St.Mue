@@ -27,26 +27,32 @@
 %% mdwlist: Special lists
 \usepackage{mdwlist}	
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TIPA & Phonetics
+
 \usepackage[
 %noenc,
 safe]{tipa}
 
+%% TIPA Problems/Solutions:
+%% Problems with U, serif fonts and ligatures
+
+%%Test 1
 %\DeclareFontSubstitution{T3}{cmss}{m}{n}
 
+%%Test 2
 %\DeclareFontSubstitution{T3}{ptm}{m}{n}
 
-%Das hilft nicht, Vorsicht bei dem "U"
+%%Test 3
 %\usepackage{tipx}
-
 
 
 %\usepackage{vowel}
 
-% maybe define \textipa to use \originalTeX to avoid problems with `"'.
-%
-%	\ex \textipa{\originalTeX [pa.pa."g\t{aI}]}
 
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Examples
 
 \usepackage{jambox}
 
@@ -54,6 +60,10 @@ safe]{tipa}
 
 %\usepackage{forest-v105}
 %\usepackage{langsci-forest-v105-setup}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts for Chinese, Vietnamese, etc. (s. Graphematik)
 
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
@@ -63,14 +73,13 @@ safe]{tipa}
 %\setcitestyle{notesep={:~}}
 
 
-
-
 % for toggles, is loaded in hu-beamer-includes-pdflatex
 %\usepackage{etex}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts for Fraktur
 
-% Fraktur!
 \usepackage{yfonts}
 
 \usepackage{url}

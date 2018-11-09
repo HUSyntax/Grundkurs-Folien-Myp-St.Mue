@@ -19,26 +19,35 @@
 
 \begin{document}
 	
-	\input{localcommands}
+\input{localcommands}
 
-%%%%%%%%%%%%%%%%%%	
-%%%% Nur Fragen:
+
+%%%% uebung
+%%%% true: nur Fragen / false: Fragen & Lösungen
 %	\toggletrue{uebung}
-
-%%%% Fragen+Antworten:
 	\togglefalse{uebung}
 
-%%%%%%%%%%%%%%%%%%
-%%%% Nur Aufgaben:
-%	\toggletrue{ha}
+%%%% hausaufgabe
+%%%% true: nur Fragen / false: Fragen & Lösungen
+%	\toggletrue{hausaufgabe}
+	\togglefalse{hausaufgabe}
 
-%%%% Aufgaben+Lösung:
-%	\togglefalse{ha}
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: TOC nicht am Anfang von Slides
+	\toggletrue{toc}
+%	\togglefalse{toc}
 
-%%%%%%%%%%%%%%%%%%
-%\togglefalse{toc}
-\toggletrue{toc}
-	
+%%%% sectoc
+%%%% true: TOC für Sections (MyP) / false: TOC für Sections (MyP)
+	\toggletrue{sectoc}
+%	\togglefalse{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections (StM) / false: Gliederung für Sections (StM)
+	\toggletrue{gliederung}
+%	\togglefalse{gliederung}
+
+
 \input{02-phonetik-include}
 
 \input{gk-literatur}

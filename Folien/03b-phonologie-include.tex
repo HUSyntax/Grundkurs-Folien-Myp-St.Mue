@@ -1359,860 +1359,9 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Silbenmodelle}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Silbenmodelle}
-
-\begin{itemize}
-	\item Bisher (hauptsächlich) nur \textbf{lineare Betrachtung} mit allen Segmenten auf einer Schicht
-	  \ea
-          \textipa{/pe:.t@\textscr /} (Peter)
-          \z
-	
-	  \ea
-          \textipa{/vE\.t@\textscr /} (Vetter)
-          \z
-
-	\item \textbf{Nicht-lineare Phonologie} (Autosegmentale Phonologie)
-	
-	\begin{itemize}
-		\item verschiedene Repräsentationsebenen bzw. Schichten
-		
-		\item hierarchische Strukturierung
-		
-		\item Vorteil: Beschreibung von \textbf{Merkmalsausbreitung} und \textbf{segmentunabhängigen Prozessen}
-		
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{CV-Modell}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink]
-\frametitle{CV-Modell (einfaches Modell)}
-
-\begin{itemize}
-	\item Silben und Segmente auf unterschiedlichen Schichten
-		
-	\item Verbunden durch Assoziationslinien
-		
-	\item Charakterisierung der Silbenstruktur durch C und V 
-\end{itemize}
-
-
-\begin{figure}
-\centering
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{b}]]
-	[C [\textipa{l}]]
-	[V [\textipa{I}]]
-	[C [\textipa{n}]]
-	[C [\textipa{t}]]
-]
-\end{forest}
-\caption{CV-Modell}
-\end{figure}
-
-
-\begin{itemize}
-		\item $\sigma :=$ Silbe
-		\item C $:=$ nicht-silbisch, \gqq{konsonantisch}
-		\item V $:=$ silbisch, \gqq{vokalisch}
-\end{itemize}
-% V bildet den Silbengipfel
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Verteilung von Segmenten in der Silbe}
-
-\begin{itemize}
-	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
-\end{itemize}
-
-\begin{minipage}{.59\textwidth}
-\begin{itemize}
-	\item C $\neq$ Konsonant, sondern \textbf{nicht-silbisch}
-	\item[]
-	\item V $\neq$ Vokal, sondern \textbf{silbisch}
-	\item[]
-	\item Jede Silbe enthält einen \textbf{Kern} (V)
-\end{itemize}
-\end{minipage}
-%
-\begin{minipage}{.4\textwidth}
-
-\begin{figure}
-%\tiny
-\small
-\centering
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{g}]]
-	[C [\textipa{l}]]
-	[V [\textipa{a}]]	
-	[C [\textipa{U}]]
-	[C [\textipa{p}]]
-	[C [\textipa{t}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[,phantom
-[$\sigma$
-	[C [\textipa{k}]]
-	[V [\textipa{U}]]
-	[C [\textipa{m}]]
-]
-[$\sigma$	
-	[C [\textipa{p}]]
-	[V [\textipa{\textsyllabic{l}}]]
-]
-]
-\end{forest}
-
-\end{figure}
-
-\end{minipage}
-
-% u bei glaubt ist ein C, weil nur a der Silbengipfel ist, u ist weniger sonor, und Diphtonge gelten
-% als zwei Zeiteinheiten, bei langen Vokalen wird auch auf zwei geteilt. Der Doppelpunkt ist dann
-% ein C
-
-% Bei Beirisch guot geht der SOnoritätsgipfel aufs o und dann ist das o V und davor ein C
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Verteilung von Segmenten in der Silbe}
-
-%% \begin{itemize}
-%% 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
-%% \end{itemize}
-
-\begin{minipage}{.59\textwidth}
-\begin{itemize}
-	\item \textbf{Maximale Anzahl an Cs} vor und nach V
-
-% Aber strumpfst. Es kommt ein weiteres verbessertes Modell
-	\item[]
-	\item Korrelation zwischen Anzahl an Cs nach V und der \textbf{Länge}/(Un-)Gespanntheit des Vokals
-\end{itemize}
-\end{minipage}
-%
-\begin{minipage}{.4\textwidth}
-
-\begin{figure}
-%\tiny
-\small
-\centering
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{g}]]
-	[C [\textipa{l}]]
-	[V [\textipa{a}]]	
-	[C [\textipa{U}]]
-	[C [\textipa{p}]]
-	[C [\textipa{t}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{k}]]
-	[C [\textipa{\textscr }]]
-	[V [\textipa{a}]]
-	[C [\textipa{N}]]
-	[C [\textipa{k}]]	
-]
-\end{forest}
-
-\end{figure}
-
-\end{minipage}
-
-% Kopf pf ist ein C
-% Kumpel fällt das e weg und wir haben einen vokalischen Konsonant l
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Verteilung von Segmenten in der Silbe}
-
-
-%% \begin{itemize}
-%% 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
-%% \end{itemize}
-
-\begin{minipage}{.59\textwidth}
-\begin{itemize}
-	\item Diphthonge \ras VC (bzw. CV \textipa{[g\textsubarch{U}Ot]})
-	\item[]
-	\item Lange Vokale \ras VC
-	\item[]
-	\item Affrikate \ras C
-	\item[]
-	\item Silbische Konsonanten \ras V
-\end{itemize}
-\end{minipage}
-%
-\begin{minipage}{.4\textwidth}
-
-\begin{figure}
-\tiny
-%\scriptsize
-\centering
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{g}]]
-	[C [\textipa{l}]]
-	[V [\textipa{a}]]	
-	[C [\textipa{U}]]
-	[C [\textipa{p}]]
-	[C [\textipa{t}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{k}]]
-	[V [\textipa{a}]]
-	[C [\textipa{:}]]	
-	[C [\textipa{l}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[$\sigma$
-	[C [\textipa{k}]]
-	[V [\textipa{O}]]
-	[C [\textipa{\t{pf}}]]	
-	[C [\textipa{s}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[,phantom
-[$\sigma$
-	[C [\textipa{k}]]
-	[V [\textipa{U}]]
-	[C [\textipa{m}]]	
-]
-[$\sigma$
-	[C [\textipa{p}]]
-	[V [\textipa{\textsyllabic{l}}]]
-]
-]
-\end{forest}
-
-\end{figure}
-
-\end{minipage}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{Konstituentenmodell}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Konstituentenmodell}
-
-\begin{itemize}
-	\item Zerlegung in \textbf{silbische Konstituenten}
-	\item Silbe ($\sigma$) = Onset (O) + Reim (R)
-	\item Reim (R) = Nukleus (N) + Koda (K)
-	\item + Skelettschicht (X)
-\end{itemize}
-
-% nur x, C und V braucht man nicht mehr, weil N das V (vokalische Element) ist
-% x sind die Zeiteinheiten
-
-\begin{figure}
-%\input{localforestsyllables}
-\centering
-\scalebox{.8}{
-\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O[x, tier=word[\textipa{f}]][x, tier=word[\textipa{K}]]]
-    [R[N[x, tier=word[\textipa{\textopeno}]]][K[x[\textipa{s}]]]]
-  ]
-  [$\sigma$
-    [O[x, tier=word[\textipa{t}]]]
-    [R[N[x[\textipa{I}]]][K[x[\c{c}]]]]
-  ]  
-]
-\end{forest}}
-
-% frostig
-%\caption{Konstituentenmodell}
-\end{figure}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Silbe, Onset und Reim}
-
-\textbf{Silbe} ($\sigma$) = Onset (O) + Reim (R)
-
-\begin{itemize}
-	\item \textbf{Onset}: 
-	\begin{itemize}
-		\item Versprecher
-	
-	          \ea
-                  \textipa{kIl\c{c}.ma\.f@} vs. \textipa{mIl\c{c}.ka\.f@}
-                  \z
-% Versprecher: Kilchmafe für   Milchkafe
-% Aber keinen Versprecher * Kalchmife
-
-	\end{itemize}	
-			
-	\item \textbf{Reim}: 
-	\begin{itemize}
-		\item Silbengewicht: Längenausgleich zwischen N und K 		
-% Onset ist für den Längenausgleich irrelevant. wenn Koda lang, dann Nukleus kurz. Findet alles
-% innerhalb des Reims statt
-
-% Auch Auslautverhärtung findet in der Koda statt:
-% sagst -> sakst, d.h. g ist in der Koda
-
-
-		\item Gedichte
-		\item Typischerweise VCC (oder VVC)
-	\end{itemize}
-	
-\end{itemize}
-
-\textbf{Reim} (R) = Nukleus (N) + Koda (K)
-
-\begin{itemize}
-	\item \textbf{Nukleus}: 
-	\begin{itemize}
-		\item Obligatorisch
-	\end{itemize}	
-			
-	\item \textbf{Koda}: 
-	\begin{itemize}
-		\item Regeln, die sich nur auf die Konsonanten in der Koda beziehen
-	\end{itemize}
-	
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[shrink]
-\frametitle{Skelettschicht}
-
-\begin{itemize}
-	\item Ebene zwischen den Segmenten und den Silbenkonstituenten
-	
-	\item X $:=$ abstrakte Zeiteinheit (\zB für Darstellung des Längenausgleichs)
-	
-	\item X \ras vergleichbar mit C und V
-
-	\item \textbf{Nukleus}:
-	
-	\begin{itemize}
-		\item 1 X: Kurzvokal
-		\item 2 X: Langvokal, Diphthong
-		\item (3 X: Langvokal + vokalisiertes \textipa{/\textscr /})
-	\end{itemize}
-	
-\end{itemize}
-
-
-\begin{minipage}{.325\textwidth}
-
-%\input{localforestsyllables}
-\centering
-\scalebox{.6}{
-\begin{forest} MyP edges, [,phantom 
-[$\sigma$
-    [O
-    	[x, tier=word[\textipa{m}]]
-    ]
-    [R
-    	[N
-    		[x[\textipa{I}]]
-    	]
-    	[K[x, tier=word[t]]
-    	]
-    ]
-]]
-\end{forest}}
-
-\end{minipage}
-%
-\begin{minipage}{.325\textwidth}
-%\input{localforestsyllables}
-\centering
-\scalebox{.6}{
-\begin{forest} MyP edges, [,phantom
-[$\sigma$
-    [O[x, tier=word[\textipa{z}]]]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{e:}, name=e]
-    		]
-    		[x, name=x]
-    	] ]
-  ] ]
-{
-\draw[black] (e.north)--(x.south);
-}
-\end{forest}}
-
-\end{minipage}
-%
-\begin{minipage}{.325\textwidth}
-%\input{localforestsyllables}
-\centering
-\scalebox{.6}{\begin{forest} MyP edges, [,phantom 
-[$\sigma$
-    [O[x, tier=word[\textipa{P}]]]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{\t{aU}}, name=aU]
-    		]
-    		[x, name=x]
-    	]
-    	[K[x[\textipa{x}]]]]
-  ] ]
-{
-\draw[black] (aU.north)--(x.south);
-}
-\end{forest}}
-
-\end{minipage}
-
-% Bei bar kann nach dem langen a das r noch zum Nukleus gerechnet werden, als drittes x. Oder in
-% eben in der Koda.
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Skelettschicht}
-
-\begin{itemize}
-
-	\item \textbf{Onset} und \textbf{Koda}:
-	
-	\begin{itemize}
-		\item Pro C ein X
-		\item<2-> Achtung: Affrikate \ras 1 X (eine Zeiteinheit!)
-		\item<3-> Ausnahme: Silbengelenk (s.u.)
-	
-	\end{itemize}
-\end{itemize}
-
-\hfill
-\footnotesize
-\visible<1->{
-\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O
-    	[x, tier=word[\textipa{f}]]
-    	[x, tier=word[\textipa{\textscr }]]
-    ]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{E}]
-    		]
-    	]
-    	[K [x[\textipa{\c{c}}]]]]
-  ]  
-]
-\end{forest}
-}
-\hfill
-\visible<2->{%
-\begin{forest} MyP edges, [,phantom
-[$\sigma$
-    [O
-    	[x, tier=word[\textipa{k}]]
-    ]
-    [R
-    	[N
-    		[x, tier=word[\textipa{O}]]
-    	]
-    	[K
-    		[x[\textipa{\t{pf}}]]
-    	]
-    ]
-]]
-\end{forest}}
-\hfill
-\visible<3->{\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O
-    	[x, tier=word
-    		[\textipa{m}]
-    	]
-    ]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{I}]
-    		]
-    	]  		
-    	[K 
-    		[x, name=x
-    			[\textipa{t}]
-    		]
-    	]
-    ]
-  ]
-  [$\sigma$
-    [O, name=O
-    ]
-    [R
-    	[N
-    		[x
-    			[\textipa{@}]
-    		]
-    	]
-    	[K [x[\textipa{n}]]]]
-  ]  
-]
-{
-\draw[black] (x.north)--(O.south);
-}
-\end{forest}}
-\hfill\mbox{}
-
-\end{frame}
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Vokallänge und Besetzung der Koda \ras Reim}
-
-%Zusammenhang zwischen Vokallänge und Besetzung der Koda \ras Reim
-
-\begin{block}{Lange Vokale}
-Nach einem langen Vokal oder einem Diphthong steht in monomorphemischen Silben kein Konsonantencluster. 
-
-Es gibt wenige Ausnahmen: \emph{Mond}, \emph{Obst}
-\end{block}
-
-
-\begin{block}{Kurze Vokale}
-In betonten Silben folgt auf ungespannten (kurzen) Vokal meistens ein Konsonant.
-\end{block}	
-
-
-\begin{minipage}{.325\textwidth}
-%\input{localforestsyllables}
-\tiny
-\centering
-\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O[x, tier=word[\textipa{z}]]]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{e:}, name=e]
-    		]
-    		[x, name=x]
-    	]
-	]
-  ]  
-]
-{
-\draw[black] (e.north)--(x.south);
-}
-\end{forest}
-
-\end{minipage}
-%
-\begin{minipage}{.325\textwidth}
-%\input{localforestsyllables}
-\tiny
-\centering
-\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O[x, tier=word[\textipa{P}]]]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{\t{aU}}, name=aU]
-    		]
-    		[x, name=x]
-    	]
-    	[K[x[\textipa{x}]]]]
-  ]  
-]
-{
-\draw[black] (aU.north)--(x.south);
-}
-\end{forest}
-
-\end{minipage}
-%
-\begin{minipage}{.325\textwidth}
-
-%\input{localforestsyllables}
-\tiny
-\centering
-\begin{forest} MyP edges, [,phantom
-[$\sigma$
-    [O
-    	[x, tier=word[\textipa{m}]]
-    ]
-    [R
-    	[N
-    		[x, tier=word[\textipa{I}]]]
-    	[K
-    		[x[t]]
-    	]
-    ]
-]]
-\end{forest}
-
-\end{minipage}
-
-\end{frame}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Silbengelenk}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Silbengelenk}
-
-
-\begin{minipage}{.63\textwidth}
-
-\begin{itemize}
-	\item \textbf{ambisyllabischer Konsonant}
-	
-	\item[]
-	\item Ein Konsonant,\\
-               der zugleich \textbf{zu zwei Silben} gehört. 
-	
-	\item[]
-	\item Nur \textbf{eine X Position} (nur eine Zeiteinheit, vgl. echte Geminaten)
-	
-\end{itemize}
-\end{minipage}
-%
-\begin{minipage}{.35\textwidth}
-%\input{localforestsyllables}
-\footnotesize
-\centering
-\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O
-    	[x, tier=word
-    		[\textipa{t}]
-    	]
-    ]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{I}]
-    		]
-    	]  		
-    	[K 
-    		[x, name=x
-    			[\textipa{k}]
-    		]
-    	]
-    ]
-  ]
-  [$\sigma$
-    [O, name=onset 
-    ]
-    [R
-    	[N
-    		[x
-    			[\textipa{@}]
-    		]
-    	]
-    	[K [x[\textipa{n}]]]]
-  ]  
-]
-{
-\draw[black] (x.north)--(onset.south);
-}
-\end{forest}
-
-\end{minipage}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Silbengelenk}
-
-\begin{minipage}{.35\textwidth}
-%\input{localforestsyllables}
-\footnotesize
-\centering
-\begin{forest} MyP edges, [, phantom
-  [$\sigma$
-    [O
-    	[x, tier=word
-    		[\textipa{k}]
-    	]
-    	[x, tier=word	[\textipa{l}]]
-    ]
-    [R
-    	[N
-    		[x, tier=word
-    			[\textipa{I}]
-    		]
-    	]  		
-    	[K 
-    		[x, name=x
-    			[\textipa{N}]
-    		]
-    	]
-    ]
-  ]
-  [$\sigma$
-    [O, name=onset
-    ]
-    [R
-    	[N
-    		[x
-    			[\textipa{@}]
-    		]
-    	]
-    	[K [x[\textipa{n}]]]]
-  ]  
-]
-{
-\draw[black] (x.north)--(onset.south);
-}
-\end{forest}
-
-\end{minipage}
-%
-\begin{minipage}{.63\textwidth}
-
-\begin{itemize}
-	\item \textbf{In der Schreibung} werden Silbengelenke häufig mit Doppelkonsonanten markiert (aber nicht immer!)
-	
-	\ea der \textipa{[\t{tS}Et]} \vs ich \textipa{[\t{tS}Et@]}\\
-	\pause der Cha\alertred{t} \vs ich cha\alertred{tt}e
-	\z
-	\ea
-        abkli\alertred{ng}en, zwi\alertred{sch}en
-        \z
-% abklingngen, zwischschen durch ästhetisches Prinzip verboten
-
-\pause
-	
-	\item \textbf{Silbengelenke kommen nach betonten ungespannten Vokalen vor. }
-	
-	Ungespannte betonte Vokale kommen nicht in offenen Silben vor.
-
-	\item Linear: \textbf{Markierung} durch Punkt
-	
-	  \ea
-          \textipa{[Pap.klI\.N@n]}
-          \z
-	
-\end{itemize}
-
-\end{minipage}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\iftoggle{uebung}{
-
-%\subsection{Übung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Silbenmodelle}
 %\iftoggle{toc}{
 %\frame{
 %\frametitle{~}
@@ -2221,455 +1370,687 @@ In betonten Silben folgt auf ungespannten (kurzen) Vokal meistens ein Konsonant.
 %\end{multicols}	
 %}
 %}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übung}
-
-Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbenstruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
-
-\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
-Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
-$x > y :=$ $x$ ist sonorer als $y$
-\end{block}
-
-\begin{multicols}{2}
-\eal 
-\ex sprechen
-\ex Obst
-\ex Brandschutz
-%\ex Stimmenfang
-\ex Abstandshalter
-%\ex Mittagessen
-%\ex Bierdeckel
-\zl
-\end{multicols}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-\begin{frame}
-\frametitle{Lösungen}
-
-\begin{minipage}{.45\textwidth}
-\centering
-\scalebox{.75}{\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O	[x, tier=word [\textipa{S}]
-       	]
-       	[x, tier=word [\textipa{p}]
-    	]
-    	[x, tier=word[\textipa{\textscr}]
-    	]
-    ]
-    [R
-    	[N	[x, tier=word [\textipa{E}]
-    		]
-    	]
-	    [K, name=K	[x,name=x  [\textipa{\c{c}}]
-	    	]
-	    ]
-	]  
-  ]
-  [$\sigma$
-  	[O, name=O]
-  	[R
-  		[N	[x[\textipa{@}]
-  			]
-  		]
-  		[K	[x[\textipa{n}]
-  			]
-  		]
-  	]
-  ]
-  ]
-  \draw[black] (O.south)--(x.north);
-\end{forest}}
-\end{minipage}
-\pause
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\begin{minipage}{.05\textwidth}
-	\hfill
-\end{minipage}
+%\begin{frame}
+%\frametitle{Silbenmodelle}
 %
-\begin{minipage}{.45\textwidth}
+%\begin{itemize}
+%	\item Bisher (hauptsächlich) nur \textbf{lineare Betrachtung} mit allen Segmenten auf einer Schicht
+%	  \ea
+%          \textipa{/pe:.t@\textscr /} (Peter)
+%          \z
+%	
+%	  \ea
+%          \textipa{/vE\.t@\textscr /} (Vetter)
+%          \z
+%
+%	\item \textbf{Nicht-lineare Phonologie} (Autosegmentale Phonologie)
+%	
+%	\begin{itemize}
+%		\item verschiedene Repräsentationsebenen bzw. Schichten
+%		
+%		\item hierarchische Strukturierung
+%		
+%		\item Vorteil: Beschreibung von \textbf{Merkmalsausbreitung} und \textbf{segmentunabhängigen Prozessen}
+%		
+%	\end{itemize}
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsubsection{CV-Modell}
+%%\frame{
+%%\frametitle{~}
+%%	\tableofcontents[currentsection]
+%%}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[shrink]
+%\frametitle{CV-Modell (einfaches Modell)}
+%
+%\begin{itemize}
+%	\item Silben und Segmente auf unterschiedlichen Schichten
+%		
+%	\item Verbunden durch Assoziationslinien
+%		
+%	\item Charakterisierung der Silbenstruktur durch C und V 
+%\end{itemize}
+%
+%
+%\begin{figure}
+%\centering
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{b}]]
+%	[C [\textipa{l}]]
+%	[V [\textipa{I}]]
+%	[C [\textipa{n}]]
+%	[C [\textipa{t}]]
+%]
+%\end{forest}
+%\caption{CV-Modell}
+%\end{figure}
+%
+%
+%\begin{itemize}
+%		\item $\sigma :=$ Silbe
+%		\item C $:=$ nicht-silbisch, \gqq{konsonantisch}
+%		\item V $:=$ silbisch, \gqq{vokalisch}
+%\end{itemize}
+%% V bildet den Silbengipfel
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Verteilung von Segmenten in der Silbe}
+%
+%\begin{itemize}
+%	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
+%\end{itemize}
+%
+%\begin{minipage}{.59\textwidth}
+%\begin{itemize}
+%	\item C $\neq$ Konsonant, sondern \textbf{nicht-silbisch}
+%	\item[]
+%	\item V $\neq$ Vokal, sondern \textbf{silbisch}
+%	\item[]
+%	\item Jede Silbe enthält einen \textbf{Kern} (V)
+%\end{itemize}
+%\end{minipage}
+%%
+%\begin{minipage}{.4\textwidth}
+%
+%\begin{figure}
+%%\tiny
+%\small
+%\centering
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{g}]]
+%	[C [\textipa{l}]]
+%	[V [\textipa{a}]]	
+%	[C [\textipa{U}]]
+%	[C [\textipa{p}]]
+%	[C [\textipa{t}]]
+%]
+%\end{forest}
+%
+%\begin{forest}
+%MyP edges,
+%[,phantom
+%[$\sigma$
+%	[C [\textipa{k}]]
+%	[V [\textipa{U}]]
+%	[C [\textipa{m}]]
+%]
+%[$\sigma$	
+%	[C [\textipa{p}]]
+%	[V [\textipa{\textsyllabic{l}}]]
+%]
+%]
+%\end{forest}
+%
+%\end{figure}
+%
+%\end{minipage}
+%
+%% u bei glaubt ist ein C, weil nur a der Silbengipfel ist, u ist weniger sonor, und Diphtonge gelten
+%% als zwei Zeiteinheiten, bei langen Vokalen wird auch auf zwei geteilt. Der Doppelpunkt ist dann
+%% ein C
+%
+%% Bei Beirisch guot geht der SOnoritätsgipfel aufs o und dann ist das o V und davor ein C
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Verteilung von Segmenten in der Silbe}
+%
+%%% \begin{itemize}
+%%% 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
+%%% \end{itemize}
+%
+%\begin{minipage}{.59\textwidth}
+%\begin{itemize}
+%	\item \textbf{Maximale Anzahl an Cs} vor und nach V
+%
+%% Aber strumpfst. Es kommt ein weiteres verbessertes Modell
+%	\item[]
+%	\item Korrelation zwischen Anzahl an Cs nach V und der \textbf{Länge}/(Un-)Gespanntheit des Vokals
+%\end{itemize}
+%\end{minipage}
+%%
+%\begin{minipage}{.4\textwidth}
+%
+%\begin{figure}
+%%\tiny
+%\small
+%\centering
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{g}]]
+%	[C [\textipa{l}]]
+%	[V [\textipa{a}]]	
+%	[C [\textipa{U}]]
+%	[C [\textipa{p}]]
+%	[C [\textipa{t}]]
+%]
+%\end{forest}
+%
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{k}]]
+%	[C [\textipa{\textscr }]]
+%	[V [\textipa{a}]]
+%	[C [\textipa{N}]]
+%	[C [\textipa{k}]]	
+%]
+%\end{forest}
+%
+%\end{figure}
+%
+%\end{minipage}
+%
+%% Kopf pf ist ein C
+%% Kumpel fällt das e weg und wir haben einen vokalischen Konsonant l
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Verteilung von Segmenten in der Silbe}
+%
+%
+%%% \begin{itemize}
+%%% 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
+%%% \end{itemize}
+%
+%\begin{minipage}{.59\textwidth}
+%\begin{itemize}
+%	\item Diphthonge \ras VC (bzw. CV \textipa{[g\textsubarch{U}Ot]})
+%	\item[]
+%	\item Lange Vokale \ras VC
+%	\item[]
+%	\item Affrikate \ras C
+%	\item[]
+%	\item Silbische Konsonanten \ras V
+%\end{itemize}
+%\end{minipage}
+%%
+%\begin{minipage}{.4\textwidth}
+%
+%\begin{figure}
+%\tiny
+%%\scriptsize
+%\centering
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{g}]]
+%	[C [\textipa{l}]]
+%	[V [\textipa{a}]]	
+%	[C [\textipa{U}]]
+%	[C [\textipa{p}]]
+%	[C [\textipa{t}]]
+%]
+%\end{forest}
+%
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{k}]]
+%	[V [\textipa{a}]]
+%	[C [\textipa{:}]]	
+%	[C [\textipa{l}]]
+%]
+%\end{forest}
+%
+%\begin{forest}
+%MyP edges,
+%[$\sigma$
+%	[C [\textipa{k}]]
+%	[V [\textipa{O}]]
+%	[C [\textipa{\t{pf}}]]	
+%	[C [\textipa{s}]]
+%]
+%\end{forest}
+%
+%\begin{forest}
+%MyP edges,
+%[,phantom
+%[$\sigma$
+%	[C [\textipa{k}]]
+%	[V [\textipa{U}]]
+%	[C [\textipa{m}]]	
+%]
+%[$\sigma$
+%	[C [\textipa{p}]]
+%	[V [\textipa{\textsyllabic{l}}]]
+%]
+%]
+%\end{forest}
+%
+%\end{figure}
+%
+%\end{minipage}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsubsection{Konstituentenmodell}
+%%\frame{
+%%\begin{multicols}{2}
+%%\frametitle{~}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Konstituentenmodell}
+%
+%\begin{itemize}
+%	\item Zerlegung in \textbf{silbische Konstituenten}
+%	\item Silbe ($\sigma$) = Onset (O) + Reim (R)
+%	\item Reim (R) = Nukleus (N) + Koda (K)
+%	\item + Skelettschicht (X)
+%\end{itemize}
+%
+%% nur x, C und V braucht man nicht mehr, weil N das V (vokalische Element) ist
+%% x sind die Zeiteinheiten
+%
+%\begin{figure}
 %%\input{localforestsyllables}
-\centering
-%\visible<3->
-{\scalebox{.75}{\begin{forest} MyP edges, [,phantom
-  [$\sigma$
-    [O	[x, tier=word[\textipa{P}]
-    	]
-    ]
-    [R
-    	[N
-    		[x, tier=word[\textipa{o:}, name=o]
-    		]
-    		[x, name=x]
-%    		{\draw[black] (.south)--++(-2.38em,-1.7ex);}
-    	]
-    	[K
-    		[x[\textipa{p}]
-    		]
-    		[x[\textipa{s}]
-    		]
-    		[x[\textipa{t}]
-    		]
-    	]
-    ]  
-  ] ]
-  \draw[black](x.south)--(o.north);
-\end{forest}}}
-\end{minipage}
-\pause
-\begin{minipage}{.45\textwidth}
-	\begin{figure}
-		\centering
-%		\visible<2->
-{\scalebox{.75}{
-			\begin{tikzpicture}[scale=0.5]
-			\draw[black] (-1,0) -- (6.5,0) ; % x axis
-			\draw[black] (-1,0) -- (-1,6.5); % y axis
-			\node at (-2,1) {Plos.};
-			\node at (-2,2) {Frik.};
-			\node at (-2,3) {Nas.};
-			\node at (-2,4) {\textipa{/l/}};
-			\node at (-2,5) {\textipa{/\;R/}};
-			\node at (-2,6) {Vok.};
-			\draw[black] (0,2) -- (1,1) -- (2,5) -- (3,6) -- (4,2) -- (5,6) -- (6,3);
-			\node at (0,-1) {\textipa{S}};
-			\node at (1,-1) {\textipa{p}};
-			\node at (2,-1) {\textipa{\textscr}};
-			\node at (3,-1) {\textipa{E}};
-			\node at (4,-1) {\textipa{\c{c}}};
-			\node at (5,-1) {\textipa{@}};
-			\node at (6,-1) {\textipa{n}};
-			\fill (0,2) circle [radius=3pt];
-			\fill (1,1) circle [radius=3pt];
-			\fill (2,5) circle [radius=3pt];
-			\fill (3,6) circle [radius=3pt];
-			\fill (4,2) circle [radius=3pt];
-			\fill (5,6) circle [radius=3pt];
-			\fill (6,3) circle [radius=3pt];
-			\end{tikzpicture}}}
-	\end{figure}
-\end{minipage}
-\pause
-\begin{minipage}{.05\textwidth}
-	\hfill
-\end{minipage}
-\begin{minipage}{.45\textwidth}
-	\begin{figure}
-		\centering
-		%\visible<4->
-{\scalebox{.75}{
-		\begin{tikzpicture}[scale=0.5]
-			\draw[black] (-1,0) -- (4.5,0) ; % x axis
-			\draw[black] (-1,0) -- (-1,6.5); % y axis
-			\node at (-2,1) {Plos.};
-			\node at (-2,2) {Frik.};
-			\node at (-2,3) {Nas.};
-			\node at (-2,4) {\textipa{/l/}};
-			\node at (-2,5) {\textipa{/\;R/}};
-			\node at (-2,6) {Vok.};
-			\draw[black] (0,1) -- (1,6) -- (2,1) -- (3,2) -- (4,1);
-			\node at (0,-1) {\textipa{P}};
-			\node at (1,-1) {\textipa{o:}};
-			\node at (2,-1) {\textipa{p}};
-			\node at (3,-1) {\textipa{s}};
-			\node at (4,-1) {\textipa{t}};
-			\fill (0,1) circle [radius=3pt];
-			\fill (1,6) circle [radius=3pt];
-			\fill (2,1) circle [radius=3pt];
-			\fill (3,2) circle [radius=3pt];
-			\fill (4,1) circle [radius=3pt];
-			\end{tikzpicture}}}
-	\end{figure}
-\end{minipage}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Lösungen}
+%\centering
+%\scalebox{.8}{
+%\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O[x, tier=word[\textipa{f}]][x, tier=word[\textipa{K}]]]
+%    [R[N[x, tier=word[\textipa{\textopeno}]]][K[x[\textipa{s}]]]]
+%  ]
+%  [$\sigma$
+%    [O[x, tier=word[\textipa{t}]]]
+%    [R[N[x[\textipa{I}]]][K[x[\c{c}]]]]
+%  ]  
+%]
+%\end{forest}}
 %
-\begin{minipage}{.3\textwidth}
-	\centering
-	\scalebox{.75}{\begin{forest} MyP edges, [,phantom
-[$\sigma$
-	[O
-		[x, tier=word[\textipa{b}]]
-		[x, tier=word[\textipa{\textscr}]]
-	]
-	[R
-		[N	[x, tier=word[\textipa{a}]]
-		]
-		[K
-			[x[\textipa{n}]]
-			[x[\textipa{t.}]]
-		]
-	]  
-]
-[$\sigma$
-	[O	[x, tier=word[\textipa{S}]]
-	]
-	[R	
-		[N	
-			[x[\textipa{U}]]
-		]
-		[K	
-			[x[\textipa{\t{ts}}]]
-		]
-	]
-]]
-	\end{forest}}
-	
-\end{minipage}
-\pause
+%% frostig
+%%\caption{Konstituentenmodell}
+%\end{figure}
 %
-\begin{minipage}{.05\textwidth}
-	\hfill
-\end{minipage}
+%\end{frame}
 %
-\begin{minipage}{.6\textwidth}
-\centering
-\scalebox{.75}{
-\begin{forest}
-	MyP edges, [, phantom
-[$ \sigma $
-	[O
-		[x, tier=word[\textipa{P}]]
-	]
-	[R
-		[N
-			[x, tier=word[\textipa{a}]]
-		]
-		[K
-			[x[\textipa{p}]]
-		]
-	]
-]
-[$ \sigma $
-	[O
-		[x, tier=word[\textipa{S}]]
-		[x, tier=word[\textipa{t}]]
-	]
-	[R
-		[N
-			[x[\textipa{a}]]
-		]
-		[K
-			[x[\textipa{n}]]
-			[x[\textipa{\t{ts}}]]
-		]
-	]
-]
-[$ \sigma $
-	[O
-		[x, tier=word[\textipa{h}]]
-	]
-	[R
-		[N
-			[x[\textipa{a}]]
-		]
-		[K
-			[x[\textipa{l}]]
-		]
-	]
-]
-[$ \sigma $
-	[O
-		[x, tier=word[t]]
-	]
-	[R	
-		[N
-			[x[\textipa{\textturna}]]
-		]
-	]
-]]
-\end{forest}}
-\end{minipage}
-\pause
-\begin{minipage}{.3\textwidth}
-	\begin{figure}
-		\centering
-		\scalebox{.75}{
-			\begin{tikzpicture}[scale=0.5]
-			\draw[black] (-1,0) -- (7.5,0) ; % x axis
-			\draw[black] (-1,0) -- (-1,6.5); % y axis
-			\node at (-2,1) {Plos.};
-			\node at (-2,2) {Frik.};
-			\node at (-2,3) {Nas.};
-			\node at (-2,4) {\textipa{/l/}};
-			\node at (-2,5) {\textipa{/\;R/}};
-			\node at (-2,6) {Vok.};
-			\draw[black] (0,1) -- (1,5) -- (2,6) -- (3,3) -- (4,1);
-			\draw[black] (5,2) -- (6,6) -- (7,2);
-			\node at (0,-1) {\textipa{b}};
-			\node at (1,-1) {\textipa{\textscr}};
-			\node at (2,-1) {\textipa{a}};
-			\node at (3,-1) {\textipa{n}};
-			\node at (4,-1) {\textipa{t}};
-			\node at (5,-1) {\textipa{S}};
-			\node at (6,-1) {\textipa{U}};
-			\node at (7,-1) {\textipa{\t{ts}}};
-			\fill (0,1) circle [radius=3pt];
-			\fill (1,5) circle [radius=3pt];
-			\fill (2,6) circle [radius=3pt];
-			\fill (3,3) circle [radius=3pt];
-			\fill (4,1) circle [radius=3pt];
-			\fill (5,2) circle [radius=3pt];
-			\fill (6,6) circle [radius=3pt];
-			\fill (7,2) circle [radius=3pt];
-			\end{tikzpicture}}
-	\end{figure}
-\end{minipage}
-\pause
-\begin{minipage}{.05\textwidth}
-	\hfill
-\end{minipage}
-\begin{minipage}{.6\textwidth}
-\begin{figure}
-			\centering
-			\scalebox{.75}{
-			\begin{tikzpicture}[scale=0.5]
-			\draw[black] (-1,0) -- (12.5,0) ; % x axis
-			\draw[black] (-1,0) -- (-1,6.5); % y axis
-			\node at (-2,1) {Plos.};
-			\node at (-2,2) {Frik.};
-			\node at (-2,3) {Nas.};
-			\node at (-2,4) {\textipa{/l/}};
-			\node at (-2,5) {\textipa{/\;R/}};
-			\node at (-2,6) {Vok.};
-			\draw[black] (0,1)--(1,6)--(2,1);
-			\draw[black](3,2)--(4,1)--(5,6)--(6,3)--(7,2);
-			\draw[black](8,1)--(9,6)--(10,4);
-			\draw[black](11,1)--(12,6);
-			\fill (0,1) circle [radius=3pt];
-			\fill (1,6) circle [radius=3pt];
-			\fill (2,1) circle [radius=3pt];
-			\fill (3,2) circle [radius=3pt];
-			\fill (4,1) circle [radius=3pt];
-			\fill (5,6) circle [radius=3pt];
-			\fill (6,3) circle [radius=3pt];
-			\fill (7,2) circle [radius=3pt];
-			\fill (8,1) circle [radius=3pt];
-			\fill (9,6) circle [radius=3pt];
-			\fill (10,4) circle [radius=3pt];
-			\fill (11,1) circle [radius=3pt];
-			\fill (12,6) circle [radius=3pt];
-			\node at (0,-1){\textipa{P}};
-			\node at (1,-1){\textipa{a}};
-			\node at (2,-1){\textipa{p}};
-			\node at (3,-1){\textipa{S}};
-			\node at (4,-1){\textipa{t}};
-			\node at (5,-1){\textipa{a}};
-			\node at (6,-1){\textipa{n}};
-			\node at (7,-1){\textipa{\t{ts}}};
-			\node at (8,-1){\textipa{h}};
-			\node at (9,-1){\textipa{a}};
-			\node at (10,-1){\textipa{l}};
-			\node at (11,-1){\textipa{t}};
-			\node at (12,-1){\textipa{\textturna}};
-			\end{tikzpicture}}
-	\end{figure}
-\end{minipage}
-
-
-\end{frame}
-
-}
-
-
-
-
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Silbe, Onset und Reim}
+%
+%\textbf{Silbe} ($\sigma$) = Onset (O) + Reim (R)
+%
+%\begin{itemize}
+%	\item \textbf{Onset}: 
+%	\begin{itemize}
+%		\item Versprecher
+%	
+%	          \ea
+%                  \textipa{kIl\c{c}.ma\.f@} vs. \textipa{mIl\c{c}.ka\.f@}
+%                  \z
+%% Versprecher: Kilchmafe für   Milchkafe
+%% Aber keinen Versprecher * Kalchmife
+%
+%	\end{itemize}	
+%			
+%	\item \textbf{Reim}: 
+%	\begin{itemize}
+%		\item Silbengewicht: Längenausgleich zwischen N und K 		
+%% Onset ist für den Längenausgleich irrelevant. wenn Koda lang, dann Nukleus kurz. Findet alles
+%% innerhalb des Reims statt
+%
+%% Auch Auslautverhärtung findet in der Koda statt:
+%% sagst -> sakst, d.h. g ist in der Koda
+%
+%
+%		\item Gedichte
+%		\item Typischerweise VCC (oder VVC)
+%	\end{itemize}
+%	
+%\end{itemize}
+%
+%\textbf{Reim} (R) = Nukleus (N) + Koda (K)
+%
+%\begin{itemize}
+%	\item \textbf{Nukleus}: 
+%	\begin{itemize}
+%		\item Obligatorisch
+%	\end{itemize}	
+%			
+%	\item \textbf{Koda}: 
+%	\begin{itemize}
+%		\item Regeln, die sich nur auf die Konsonanten in der Koda beziehen
+%	\end{itemize}
+%	
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}[shrink]
+%\frametitle{Skelettschicht}
+%
+%\begin{itemize}
+%	\item Ebene zwischen den Segmenten und den Silbenkonstituenten
+%	
+%	\item X $:=$ abstrakte Zeiteinheit (\zB für Darstellung des Längenausgleichs)
+%	
+%	\item X \ras vergleichbar mit C und V
+%
+%	\item \textbf{Nukleus}:
+%	
+%	\begin{itemize}
+%		\item 1 X: Kurzvokal
+%		\item 2 X: Langvokal, Diphthong
+%		\item (3 X: Langvokal + vokalisiertes \textipa{/\textscr /})
+%	\end{itemize}
+%	
+%\end{itemize}
+%
+%
+%\begin{minipage}{.325\textwidth}
+%
+%%\input{localforestsyllables}
+%\centering
+%\scalebox{.6}{
+%\begin{forest} MyP edges, [,phantom 
+%[$\sigma$
+%    [O
+%    	[x, tier=word[\textipa{m}]]
+%    ]
+%    [R
+%    	[N
+%    		[x[\textipa{I}]]
+%    	]
+%    	[K[x, tier=word[t]]
+%    	]
+%    ]
+%]]
+%\end{forest}}
+%
+%\end{minipage}
+%%
+%\begin{minipage}{.325\textwidth}
+%%\input{localforestsyllables}
+%\centering
+%\scalebox{.6}{
+%\begin{forest} MyP edges, [,phantom
+%[$\sigma$
+%    [O[x, tier=word[\textipa{z}]]]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{e:}, name=e]
+%    		]
+%    		[x, name=x]
+%    	] ]
+%  ] ]
+%{
+%\draw[black] (e.north)--(x.south);
+%}
+%\end{forest}}
+%
+%\end{minipage}
+%%
+%\begin{minipage}{.325\textwidth}
+%%\input{localforestsyllables}
+%\centering
+%\scalebox{.6}{\begin{forest} MyP edges, [,phantom 
+%[$\sigma$
+%    [O[x, tier=word[\textipa{P}]]]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{\t{aU}}, name=aU]
+%    		]
+%    		[x, name=x]
+%    	]
+%    	[K[x[\textipa{x}]]]]
+%  ] ]
+%{
+%\draw[black] (aU.north)--(x.south);
+%}
+%\end{forest}}
+%
+%\end{minipage}
+%
+%% Bei bar kann nach dem langen a das r noch zum Nukleus gerechnet werden, als drittes x. Oder in
+%% eben in der Koda.
+%
+%\end{frame}
+%
+%
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Silbifizierung}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Silbifizierung}
-
-\begin{itemize}
-	\item Silbifizierung, Syllabierung $:=$ in Silben einteilen
-	\item[]
-	\item Wie würden Sie folgende Lautsequenzen silbifizieren?
-
-	  \ea
-          ata, odo, eke
-          \z
-
-\pause
-
-	\item Ein einziger intervokalischer Konsonant wird immer als Silbenanlaut silbifiziert (universelles Prinzip: \textbf{Onset-Maximierung})
-	
-	
-\end{itemize}
-
-\begin{block}{Onsetmaximierung}
-Bilde zuerst den größtmöglichen Silbenanlaut;\\ dann bilde den Silbenauslaut \citep[218]{Hall00a}
-\end{block}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Onset-Maximierung}
-
-\begin{block}{Onset-Maximierung}
-Bilde zuerst den größtmöglichen Silbenanlaut;\\
-dann bilde den Silbenauslaut \citep[218]{Hall00a}.
-\end{block}
-
-
-\begin{itemize}
-	\item Onset-Maximierung herleitbar aus:
-	\begin{enumerate}
-		\item Silbenanlautgesetz (CV häufiger als V), und
-		\item Silbenauslautgesetz (CVC$^{n} >$ CVC$^{n+1}$)
-	\end{enumerate}
-
-\pause
-	\item Silbifizierung nicht über Morphemgrenzen hinweg! 
-	\item Ausnahme: Suffixe mit vokalischem Onset:
-	
-	  \ea
-          kind\#isch: \textipa{[kIn.dIS]}
-          \z
-	
-	  \ea
-          kind\#lich: \textipa{[kInt.lI\c{c}]}
-          \z
-          
-     \item \# := Morphemgrenze
-
-% Wenn man Morphmgrenzenbedingung weglassen würde, ergäbe sich Bra. ndschutz
-
-% rek.nen vs. re.gnen
-	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{Übung}
+%
+%\begin{frame}
+%\frametitle{Skelettschicht}
+%
+%\begin{itemize}
+%
+%	\item \textbf{Onset} und \textbf{Koda}:
+%	
+%	\begin{itemize}
+%		\item Pro C ein X
+%		\item<2-> Achtung: Affrikate \ras 1 X (eine Zeiteinheit!)
+%		\item<3-> Ausnahme: Silbengelenk (s.u.)
+%	
+%	\end{itemize}
+%\end{itemize}
+%
+%\hfill
+%\footnotesize
+%\visible<1->{
+%\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O
+%    	[x, tier=word[\textipa{f}]]
+%    	[x, tier=word[\textipa{\textscr }]]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{E}]
+%    		]
+%    	]
+%    	[K [x[\textipa{\c{c}}]]]]
+%  ]  
+%]
+%\end{forest}
+%}
+%\hfill
+%\visible<2->{%
+%\begin{forest} MyP edges, [,phantom
+%[$\sigma$
+%    [O
+%    	[x, tier=word[\textipa{k}]]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word[\textipa{O}]]
+%    	]
+%    	[K
+%    		[x[\textipa{\t{pf}}]]
+%    	]
+%    ]
+%]]
+%\end{forest}}
+%\hfill
+%\visible<3->{\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O
+%    	[x, tier=word
+%    		[\textipa{m}]
+%    	]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{I}]
+%    		]
+%    	]  		
+%    	[K 
+%    		[x, name=x
+%    			[\textipa{t}]
+%    		]
+%    	]
+%    ]
+%  ]
+%  [$\sigma$
+%    [O, name=O
+%    ]
+%    [R
+%    	[N
+%    		[x
+%    			[\textipa{@}]
+%    		]
+%    	]
+%    	[K [x[\textipa{n}]]]]
+%  ]  
+%]
+%{
+%\draw[black] (x.north)--(O.south);
+%}
+%\end{forest}}
+%\hfill\mbox{}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Vokallänge und Besetzung der Koda \ras Reim}
+%
+%%Zusammenhang zwischen Vokallänge und Besetzung der Koda \ras Reim
+%
+%\begin{block}{Lange Vokale}
+%Nach einem langen Vokal oder einem Diphthong steht in monomorphemischen Silben kein Konsonantencluster. 
+%
+%Es gibt wenige Ausnahmen: \emph{Mond}, \emph{Obst}
+%\end{block}
+%
+%
+%\begin{block}{Kurze Vokale}
+%In betonten Silben folgt auf ungespannten (kurzen) Vokal meistens ein Konsonant.
+%\end{block}	
+%
+%
+%\begin{minipage}{.325\textwidth}
+%%\input{localforestsyllables}
+%\tiny
+%\centering
+%\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O[x, tier=word[\textipa{z}]]]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{e:}, name=e]
+%    		]
+%    		[x, name=x]
+%    	]
+%	]
+%  ]  
+%]
+%{
+%\draw[black] (e.north)--(x.south);
+%}
+%\end{forest}
+%
+%\end{minipage}
+%%
+%\begin{minipage}{.325\textwidth}
+%%\input{localforestsyllables}
+%\tiny
+%\centering
+%\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O[x, tier=word[\textipa{P}]]]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{\t{aU}}, name=aU]
+%    		]
+%    		[x, name=x]
+%    	]
+%    	[K[x[\textipa{x}]]]]
+%  ]  
+%]
+%{
+%\draw[black] (aU.north)--(x.south);
+%}
+%\end{forest}
+%
+%\end{minipage}
+%%
+%\begin{minipage}{.325\textwidth}
+%
+%%\input{localforestsyllables}
+%\tiny
+%\centering
+%\begin{forest} MyP edges, [,phantom
+%[$\sigma$
+%    [O
+%    	[x, tier=word[\textipa{m}]]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word[\textipa{I}]]]
+%    	[K
+%    		[x[t]]
+%    	]
+%    ]
+%]]
+%\end{forest}
+%
+%\end{minipage}
+%
+%\end{frame}
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection{Silbengelenk}
 %\iftoggle{toc}{
 %\frame{
 %\frametitle{~}
@@ -2678,804 +2059,1423 @@ dann bilde den Silbenauslaut \citep[218]{Hall00a}.
 %\end{multicols}	
 %}
 %}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Übung}
-
-\begin{itemize}
-	\item Was bedeutet die Annahme des Sonoritätsprinzips und der Onset-Maximierung für die folgenden Beispielwörter:
-	
-	  \ea
-          Fabrik, Imker, neblig, Falter, regnen
-          \z
-\end{itemize}	
-\pause
-
-%\iftoggle{loesung}{
-	\begin{itemize}
-		\item[] \textcolor{red}{\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]},
-                  \textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}} 
-	\item [] \textcolor{red}{Koda: *Obstruent vor Sonorant} 
-	\item [] \textcolor{red}{Onset: *Sonorant vor Obstruent}
-
-          \item Onset-Maximierung ist nicht strikt. Alternativ ginge auch \textipa{[ne:p.lI\c{c}]}, \textipa{[\textscr e:k.n@n]}.
-
-	\end{itemize}
-%}
-
-\begin{itemize}
-	\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
-\end{itemize}
-
-\begin{minipage}{.3\textwidth}
-	\eal
-	\ex \textipa{[PE.b@]}
-	\ex \textipa{[PEb.@]}
-	\ex \textipa{[PEp.@]}
-	\ex \textipa{[PEp.b@]}
-        \zl
-\end{minipage}
-\pause
-\begin{minipage}{.6\textwidth}
-	\pause	
-	\begin{itemize}
-	\item[] \textcolor{red}{\ras Kurzvokal} Lösung \zb Silbengelenk \textipa{[PE\textsubdot{b}@]}
-	\item[] \textcolor{red}{\ras Auslautverhärtung}
-	\item[] \textcolor{red}{\ras Onset-Maximierung}
-	\item[] \textcolor{red}{\ras keine Regelverletzung}
-	\end{itemize}
-	
-\end{minipage}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{frame}
-\frametitle{Übung}
-
-\begin{itemize}
-	\item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
-	\begin{itemize}
-		\item Onsetmaximierungsprinzip
-		\item Sonoritätsprinzip
-	\end{itemize}
-
-\item Stellen Sie fest, ob alle Silben wohlgeformt sind.\\
-      Falls nicht, benennen Sie die Verletzungen
-	
-\ea\label{ex:Otling}
-\textipa{[o:tlIN5mSplag\textscr e:hOn]}
-\z
-
-% Otlingamsplagrehon
-	\ea\label{ex:Blumentopf}
-	Blumentopferde
-	\z
-
-\end{itemize}
-
-% blu.men.to.pfer.de
-
-%\ea
-%Urinstinkt
-%\z	
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-
-zu (\ref{ex:Otling}):
-
-zuerst Onset"=Maximierung: \textipa{o:.tlI.\ng \textturna. mSpla .g\textscr e: .hOn}\\
-dann Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}
-
-zu (\ref{ex:Blumentopf}): 
-
-zuerst Onset-Maximierung: \textipa{blu: .m@ .ntO .pfE .{\textscr}d@}\\
-dann Awendung des Sonoritätsprinzip: \textipa{blu: .m@n .tO .pfE{\textscr} .d@}
-
-
-
-
-
-
-\end{frame}
-	
-
-
-% ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Exkurs: Akzent}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
-}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Exkurs: Akzent}
-
-\begin{itemize}
-	\item Silben können \textbf{betont} oder \textbf{unbetont} sein, d.\,h. sie können einen Akzent tragen oder nicht
-	\item[]
-
-\begin{block}{Akzent}
-\textbf{Auditiver Eindruck der Prominenz eines Vokals} gegenüber einem anderen durch (relational, nicht absolut!):
-\begin{itemize}
-	\item Lautstärke
-	\item Dauer
-	\item Höhere Tonlage
-	\item Ausgeprägtere Artikulationsbewegungen
-\end{itemize}
-\end{block}	 
-	
-	\item[]
-	\item Man unterscheidet zwischen \textbf{Wort-} und \textbf{Satzakzent} (engl. \emph{stress} und \emph{accent})
-
-\end{itemize}
-
-\end{frame}
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{Exkurs: Wortakzent}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Exkurs: Wortakzent}
-
-\begin{itemize}
-	\item Was scheint die häufigste Betonung im Deutschen zu sein?
-	
-	  \ea
-          Mutter, Männer, Autos, Hühner, Lehrer, Kinder, alle \ldots
-          \z
-	
-\pause
-	\textbf{betont-unbetont (Trochäus)}
-	
-	\item Ausnahmen (die je nach Theorie verschieden erklärt werden):
-
-\end{itemize}
-
-\begin{minipage}{.4\textwidth}
-		
-	\eal 
-	\ex \textipa{['f\textscr aU]}
-	\ex \textipa{[mu.'zi:k]}
-	\ex \textipa{[le:.b@n.d@]}
-	\ex \textipa{[pa.pa.'g\t{aɪ}]}
-	\ex \textipa{[f\t{ɛɐ}.'Pa5.b\t{aɪ}.t@n]}
-	\zl
-
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-	
-%	\iftoggle{loesung}{
-	\begin{itemize}
-		\item[] \textcolor{red}{\ras nur eine Silbe }
-		\item[] \textcolor{red}{\ras Fremdwort}
-		\item [] \textcolor{red}{\ras Flektierte Elemente \ab{-de}}
-		\item [] \textcolor{red}{\ras Fremdwort}
-		\item [] \textcolor{red}{\ras Derivation \ab{ver-}}
-	\end{itemize}
-%}
-
-\end{minipage}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{Exkurs: Satzakzent}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Exkurs: Satzakzent}
-
-\begin{itemize}
-	\item In einem Satz können betonte Silben \textbf{noch weiter hervorgehoben} werden (dabei meist durch die Tonhöhe):
-	
-	\eal 
-	\ex Géstern hat BAyern gewónnen.
-	\ex GÉStern hat Báyern gewónnen.
-	\ex Géstern hat Báyern geWONnen.
-	\zl
-	\item Die prominenteste Silbe im Satz wird meist mit \textbf{Großbuchstaben} dargestellt, sie trägt den Satzakzent
-
-	\item Durch diese Akzentuierung wird das gesamte Wort
-hervorgehoben \ras\\ \textbf{Fokus des Satzes} (\gqq{Informationsstruktur})
-	
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{Exkurs: Intonation}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Exkurs: Intonation}
-
-\begin{block}{Intonation}
-Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
-\end{block}
-
-\begin{itemize}
-	\item \textbf{Satztypen} können mittels Intonation unterschieden werden.
-	
-	\item Sprechen Sie die folgenden Äußerungen mit fallender und steigender Intonation
-	\eal 
-	\ex Heute gewinnen die Bayern.
-	\ex Schon Schluss.
-        \zl
-\pause
-	\textbf{Aussage-} \vs \textbf{Interrogativsatz}	
-	
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Disambiguierung}
-
-Ambige ($\approx$ mehrdeutige) Sätze können mittels Intonation \gs{durch die sog. Hutkontur} \textbf{disambiguiert} werden: 
-	
-	  \ea
-          Alle Studenten haben die Klausur nicht bestanden.
-          \z
-        \eal
-	\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
-	\ex Für alle Studenten gilt, dass sie die Klausur nicht bestanden haben. \hfill $\lsem \forall \neg \rsem$
-        \zl
-\pause 
-
-\ea
-/Alle Studenten haben die Klausur  nicht\textbackslash\ bestanden.
-\z
-\eal
-\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
-	\zl
-
-
-\end{frame}
-
-
-\iftoggle{hausaufgabe}{
-	
-\subsection{Hausaufgabe}
-	%% \iftoggle{toc}{
-	%% 	\frame{
-	%% 		\frametitle{~}
-	%% 		\begin{multicols}{2}
-	%% 			\tableofcontents[currentsection]
-	%% 		\end{multicols}	
-	%% 	}
-	%% }
-	
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}%[allowframebreaks]
-	\frametitle{Hausaufgabe}
-\begin{itemize}
-			
-	\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbenstruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
-		
-		\eal\label{ex:HA1}
-		\ex Stimmenfang \label{ex:HA1a}
-		\ex Mittagessen\label{ex:HA1b}
-		\ex Bierdeckel\label{ex:HA1c}
-		\zl
-\end{itemize}
-
-\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
-	Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
-	$x > y :=$ $x$ ist sonorer als $y$
-\end{block}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\begin{itemize}
-	\item[2.] Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
-	\begin{itemize}
-		\item Onsetmaximierungsprinzip
-		\item Sonoritätsprinzip
-	\end{itemize}
-	
-	Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
-	\ea\label{ex:HA2}
-	Urinstinkt
-	\z	
-	\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
-	
-	\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/""phonologischen Gründen im Deutschen nicht möglich sind:
-	
-	\eal\label{ex:HA3}
-	\ex[*]{\textipa{['Napl.O:t]}}
-	\ex[*]{\textipa{[a\;R.'tUng]}}
-	\zl
-	
-\end{itemize}
-
-\end{frame}
-	
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lösungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\iftoggle{ha-loesung}{
-	
-	%% \subsection{Lösung}
-	%% \iftoggle{toc}{
-	%% 	\frame{
-	%% 		\frametitle{~}
-	%% 		\begin{multicols}{2}
-	%% 			\tableofcontents[currentsection]
-	%% 		\end{multicols}	
-	%% 	}
-	%% }
-	
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}%[allowframebreaks]
-	\frametitle{Lösung}
-	\begin{itemize}
-			
-		\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbestruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
-			
-			\begin{exe}
-				\exi{(\ref{ex:HA1})}
-				\begin{xlist}
-					\ex Stimmenfang
-					\ex Mittagessen
-					\ex Bierdeckel
-				\end{xlist}
-			\end{exe}
-
-			\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
-		Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
-		$x > y :=$ $x$ ist sonorer als $y$
-	\end{block}
-			
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-
+%
+%\begin{frame}
+%\frametitle{Silbengelenk}
+%
+%
+%\begin{minipage}{.63\textwidth}
+%
+%\begin{itemize}
+%	\item \textbf{ambisyllabischer Konsonant}
+%	
+%	\item[]
+%	\item Ein Konsonant,\\
+%               der zugleich \textbf{zu zwei Silben} gehört. 
+%	
+%	\item[]
+%	\item Nur \textbf{eine X Position} (nur eine Zeiteinheit, vgl. echte Geminaten)
+%	
+%\end{itemize}
+%\end{minipage}
+%%
 %\begin{minipage}{.35\textwidth}
-			%\input{localforestsyllables}
-\begin{minipage}{.2\textwidth}
-	\centering
-Zu (\ref{ex:HA1a}):
-\end{minipage}
+%%\input{localforestsyllables}
+%\footnotesize
+%\centering
+%\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O
+%    	[x, tier=word
+%    		[\textipa{t}]
+%    	]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{I}]
+%    		]
+%    	]  		
+%    	[K 
+%    		[x, name=x
+%    			[\textipa{k}]
+%    		]
+%    	]
+%    ]
+%  ]
+%  [$\sigma$
+%    [O, name=onset 
+%    ]
+%    [R
+%    	[N
+%    		[x
+%    			[\textipa{@}]
+%    		]
+%    	]
+%    	[K [x[\textipa{n}]]]]
+%  ]  
+%]
+%{
+%\draw[black] (x.north)--(onset.south);
+%}
+%\end{forest}
 %
-\begin{minipage}{.7\textwidth}
-	\begin{figure}
-\footnotesize
-\centering
-			\begin{forest} MyP edges, [, phantom
-				[$\sigma$
-				[O [x, tier=word [\textipa{S}]] [x, tier=word [\textipa{t}]]]
-				[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x [\textipa{m}]]]]
-				]
-				[$\sigma$
-				[O, name=onset]
-				[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
-				]
-				[$\sigma$
-				[O [x, tier=word [\textipa{f}]]]
-				[R [N [x [\textipa{a}]]] [K [x [\textipa{N}]]]]
-				]
-				]				
-				{
-					\draw[black] (x.north)--(onset.south);
-				}
-			\end{forest}
-		
-		\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (9.5,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,6.5); % y axis
-		\node at (-2,1) {Plos.};
-		\node at (-2,2) {Frik.};
-		\node at (-2,3) {Nas.};
-		\node at (-2,4) {\textipa{/l/}};
-		\node at (-2,5) {\textipa{/\;R/}};
-		\node at (-2,6) {Vok.};
-		\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4);
-		\draw[black] (4,4) -- (5,6) -- (6,4);
-		\draw[black] (7,2) -- (8,6) -- (9,3);
-		\node at (0,-1) {\textipa{S}};
-		\node at (1,-1) {\textipa{t}};
-		\node at (2,-1) {\textipa{I}};
-		\node at (3.5,-1) {\textipa{m}};
-		\node at (5,-1) {\textipa{@}};
-		\node at (6,-1) {\textipa{n}};
-		\node at (7,-1) {\textipa{f}};
-		\node at (8,-1) {\textipa{a}};
-		\node at (9,-1) {\textipa{N}};
-		\fill (0,2) circle [radius=3pt];
-		\fill (1,1) circle [radius=3pt];
-		\fill (2,6) circle [radius=3pt];
-		\fill (3,4) circle [radius=3pt];
-		\fill (4,4) circle [radius=3pt];
-		\fill (5,6) circle [radius=3pt];
-		\fill (6,4) circle [radius=3pt];
-		\fill (7,2) circle [radius=3pt];
-		\fill (8,6) circle [radius=3pt];
-		\fill (9,3) circle [radius=3pt];
-		\end{tikzpicture}
-\end{figure}
-
-\end{minipage}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{frame}		
-
-\begin{minipage}{.2\textwidth}
-	\centering
-	Zu (\ref{ex:HA1b})
-\end{minipage}	
-\begin{minipage}{.7\textwidth}
-	\footnotesize
-	\centering
-	\begin{forest} MyP edges, [, phantom
-	[$\sigma$
-	[O [x, tier=word [\textipa{m}]]] 
-	[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
-	]
-	[$\sigma$
-	[O, name=onset1]
-	[R [N [x [\textipa{a:}, name=a]]
-              [x, name=ax]] [K [x [\textipa{k}]]]]
-	]
-	[$\sigma$
-	[O [x, tier=word [\textipa{P}]]]
-	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
-	]
-	[$\sigma$
-	[O, name=onset2]
-	[R [N [x [\textipa{\textsyllabic{n}}]]]
-	]
-	]]
-	{
-		\draw[black] (x1.north)--(onset1.south);
-		\draw[black] (x2.north)--(onset2.south);
-		\draw[black] (a.north)--(ax.south);
-	}
-	\end{forest}
-\vfill
-\begin{tikzpicture}[scale=0.4]
-\draw[black] (-1,0) -- (11.5,0) ; % x axis
-\draw[black] (-1,0) -- (-1,6.5); % y axis
-\node at (-2,1) {Plos.};
-\node at (-2,2) {Frik.};
-\node at (-2,3) {Nas.};
-\node at (-2,4) {\textipa{/l/}};
-\node at (-2,5) {\textipa{/\;R/}};
-\node at (-2,6) {Vok.};
-\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
-\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,3);
-\node at (0,-1) {\textipa{m}};
-\node at (1,-1) {\textipa{i}};
-\node at (2,-1) {\textipa{t}};
-\node at (3,-1) {\textipa{a:}};
-\node at (4,-1) {\textipa{k}};
-\node at (5,-1) {\textipa{P}};
-\node at (6,-1) {\textipa{E}};
-\node at (7,-1) {\textipa{s}};
-\node at (8,-1) {\textipa{\textsyllabic{n}}};
-\fill (0,3) circle [radius=3pt];
-\fill (1,6) circle [radius=3pt];
-\fill (2,1) circle [radius=3pt];
-\fill (3,6) circle [radius=3pt];
-\fill (4,1) circle [radius=3pt];
-\fill (5,1) circle [radius=3pt];
-\fill (6,6) circle [radius=3pt];
-\fill (7,2) circle [radius=3pt];
-\fill (8,3) circle [radius=3pt];
-\end{tikzpicture}
-\end{minipage}
-	
-\end{frame}
-
-
-\begin{frame}		
-
-\begin{minipage}{.2\textwidth}
-	\centering
-	Zu (\ref{ex:HA1b})  (alternative Lösung):
-\end{minipage}	
-%\end{minipage}%
-\begin{minipage}{.7\textwidth}
-	\footnotesize
-	\centering
-	\begin{forest} MyP edges, [, phantom
-	[$\sigma$
-	[O [x, tier=word [\textipa{m}]]] 
-	[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
-	]
-	[$\sigma$
-	[O, name=onset1]
-	[R [N [x [\textipa{a:}, name=a]]
-              [x, name=ax]] [K [x [\textipa{k}]]]]
-	]
-	[$\sigma$
-	[O [x, tier=word [\textipa{P}]]]
-	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
-	]
-	[$\sigma$
-	[O, name=onset2]
-	[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
-	]
-	]
-	{
-		\draw[black] (x1.north)--(onset1.south);
-		\draw[black] (x2.north)--(onset2.south);
-		\draw[black] (a.north)--(ax.south);
-	}
-	\end{forest}
-\vfill
-\begin{tikzpicture}[scale=0.4]
-\draw[black] (-1,0) -- (11.5,0) ; % x axis
-\draw[black] (-1,0) -- (-1,6.5); % y axis
-\node at (-2,1) {Plos.};
-\node at (-2,2) {Frik.};
-\node at (-2,3) {Nas.};
-\node at (-2,4) {\textipa{/l/}};
-\node at (-2,5) {\textipa{/\;R/}};
-\node at (-2,6) {Vok.};
-\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
-\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,6) -- (9,3);
-\node at (0,-1) {\textipa{m}};
-\node at (1,-1) {\textipa{i}};
-\node at (2,-1) {\textipa{t}};
-\node at (3,-1) {\textipa{a:}};
-\node at (4,-1) {\textipa{k}};
-\node at (5,-1) {\textipa{P}};
-\node at (6,-1) {\textipa{E}};
-\node at (7,-1) {\textipa{s}};
-\node at (8,-1) {\textipa{@}};
-\node at (9,-1) {\textipa{n}};
-\fill (0,3) circle [radius=3pt];
-\fill (1,6) circle [radius=3pt];
-\fill (2,1) circle [radius=3pt];
-\fill (3,6) circle [radius=3pt];
-\fill (4,1) circle [radius=3pt];
-\fill (5,1) circle [radius=3pt];
-\fill (6,6) circle [radius=3pt];
-\fill (7,2) circle [radius=3pt];
-\fill (8,6) circle [radius=3pt];
-\fill (9,3) circle [radius=3pt];
-\end{tikzpicture}
-\end{minipage}
-	
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-
-\begin{minipage}{.2\textwidth}
-	\centering
-	Zu (\ref{ex:HA1c}):
-\end{minipage}	
-\begin{minipage}{.7\textwidth}
-
-	\begin{figure}
-	\footnotesize
-	\centering
-	\begin{forest} MyP edges, [, phantom
-	[$\sigma$
-	[O [x,tier=word [\textipa{b}]]]
-	[R [N [x, tier=word [\textipa{i:}, name=i]] [x,name=x1]] [K [x [\textipa{5}]]]]
-	]
-	[$\sigma$
-	[O [x, tier=word [\textipa{d}]]]
-	[R [N [x [\textipa{E}]]] [K [x, name=x [\textipa{k}]]]]
-	]
-	[$\sigma$
-	[O, name=onset]
-	[R [N [x, tier=word [\textipa{@}]]] [K [x [\textipa{l}]]]]
-	]
-	]
-	{
-		\draw[black] (x1.south)--(i.north);
-		\draw[black] (x.north)--(onset.south);
-	}
-\end{forest}
-
-\scalebox{.85}{\begin{tikzpicture}[scale=0.5]
-	\draw[black] (-1,0) -- (8.5,0) ; % x axis
-	\draw[black] (-1,0) -- (-1,6.5); % y axis
-	\node at (-2,1) {Plos.};
-	\node at (-2,2) {Frik.};
-	\node at (-2,3) {Nas.};
-	\node at (-2,4) {\textipa{/l/}};
-	\node at (-2,5) {\textipa{/\;R/}};
-	\node at (-2,6) {Vok.};
-	\draw[black] (0,1) -- (1,6) -- (2,6);
-	\draw[black] (3,1) -- (4,6) -- (5,1) -- (6,6) -- (7,1);
-	\node at (0,-1) {\textipa{b}};
-	\node at (1,-1) {\textipa{i:}};
-	\node at (2,-1) {\textipa{5}};
-	\node at (3,-1) {\textipa{d}};
-	\node at (4,-1) {\textipa{E}};
-	\node at (5,-1) {\textipa{k}};
-	\node at (6,-1) {\textipa{@}};
-	\node at (7,-1) {\textipa{l}};
-	\fill (0,1) circle [radius=3pt];
-	\fill (1,6) circle [radius=3pt];
-	\fill (2,6) circle [radius=3pt];
-	\fill (3,1) circle [radius=3pt];
-	\fill (4,6) circle [radius=3pt];
-	\fill (5,1) circle [radius=3pt];
-	\fill (6,6) circle [radius=3pt];
-	\fill (7,1) circle [radius=3pt];
-	\end{tikzpicture}}
-\end{figure}
-\end{minipage}
+%\end{minipage}
+%
+%\end{frame}
 %
 %
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-\begin{frame}
-	\begin{itemize}
-		\item[2.] Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
-			\begin{itemize}
-				\item Onsetmaximierungsprinzip
-				\item Sonoritätsprinzip
-			\end{itemize}
-			
-		Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
-	\begin{exe}
-		\exi{(\ref{ex:HA2})} Urinstinkt (einfach nach Lautfolge):
-		\begin{xlist}
-			\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)
-			\ex \textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch)
-		\end{xlist}
-	\end{exe}
-      \item Die Silbifizierung erfolgt auf der Ebene des phonologischen Wortes.\\
-        Daher werden die phonologischen Wörter \ab{ur-} und \ab{Instinkt} einzeln silbifiziert.
-                  \ea
-                  \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
-	          \z
-	\end{itemize}
-\end{frame}
-
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Silbengelenk}
+%
+%\begin{minipage}{.35\textwidth}
+%%\input{localforestsyllables}
+%\footnotesize
+%\centering
+%\begin{forest} MyP edges, [, phantom
+%  [$\sigma$
+%    [O
+%    	[x, tier=word
+%    		[\textipa{k}]
+%    	]
+%    	[x, tier=word	[\textipa{l}]]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word
+%    			[\textipa{I}]
+%    		]
+%    	]  		
+%    	[K 
+%    		[x, name=x
+%    			[\textipa{N}]
+%    		]
+%    	]
+%    ]
+%  ]
+%  [$\sigma$
+%    [O, name=onset
+%    ]
+%    [R
+%    	[N
+%    		[x
+%    			[\textipa{@}]
+%    		]
+%    	]
+%    	[K [x[\textipa{n}]]]]
+%  ]  
+%]
+%{
+%\draw[black] (x.north)--(onset.south);
+%}
+%\end{forest}
+%
+%\end{minipage}
+%%
+%\begin{minipage}{.63\textwidth}
+%
+%\begin{itemize}
+%	\item \textbf{In der Schreibung} werden Silbengelenke häufig mit Doppelkonsonanten markiert (aber nicht immer!)
+%	
+%	\ea der \textipa{[\t{tS}Et]} \vs ich \textipa{[\t{tS}Et@]}\\
+%	\pause der Cha\alertred{t} \vs ich cha\alertred{tt}e
+%	\z
+%	\ea
+%        abkli\alertred{ng}en, zwi\alertred{sch}en
+%        \z
+%% abklingngen, zwischschen durch ästhetisches Prinzip verboten
+%
+%\pause
+%	
+%	\item \textbf{Silbengelenke kommen nach betonten ungespannten Vokalen vor. }
+%	
+%	Ungespannte betonte Vokale kommen nicht in offenen Silben vor.
+%
+%	\item Linear: \textbf{Markierung} durch Punkt
+%	
+%	  \ea
+%          \textipa{[Pap.klI\.N@n]}
+%          \z
+%	
+%\end{itemize}
+%
+%\end{minipage}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\iftoggle{uebung}{
+%
+%%\subsection{Übung}
+%%\iftoggle{toc}{
+%%\frame{
+%%\frametitle{~}
+%%\begin{multicols}{2}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}	
+%%}
+%%}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Übung}
+%
+%Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbenstruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
+%
+%\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+%Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+%$x > y :=$ $x$ ist sonorer als $y$
+%\end{block}
+%
+%\begin{multicols}{2}
+%\eal 
+%\ex sprechen
+%\ex Obst
+%\ex Brandschutz
+%%\ex Stimmenfang
+%\ex Abstandshalter
+%%\ex Mittagessen
+%%\ex Bierdeckel
+%\zl
+%\end{multicols}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	
+%\begin{frame}
+%\frametitle{Lösungen}
+%
+%\begin{minipage}{.45\textwidth}
+%\centering
+%\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O	[x, tier=word [\textipa{S}]
+%       	]
+%       	[x, tier=word [\textipa{p}]
+%    	]
+%    	[x, tier=word[\textipa{\textscr}]
+%    	]
+%    ]
+%    [R
+%    	[N	[x, tier=word [\textipa{E}]
+%    		]
+%    	]
+%	    [K, name=K	[x,name=x  [\textipa{\c{c}}]
+%	    	]
+%	    ]
+%	]  
+%  ]
+%  [$\sigma$
+%  	[O, name=O]
+%  	[R
+%  		[N	[x[\textipa{@}]
+%  			]
+%  		]
+%  		[K	[x[\textipa{n}]
+%  			]
+%  		]
+%  	]
+%  ]
+%  ]
+%  \draw[black] (O.south)--(x.north);
+%\end{forest}}
+%\end{minipage}
+%\pause
+%%
+%\begin{minipage}{.05\textwidth}
+%	\hfill
+%\end{minipage}
+%%
+%\begin{minipage}{.45\textwidth}
+%%%\input{localforestsyllables}
+%\centering
+%%\visible<3->
+%{\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+%  [$\sigma$
+%    [O	[x, tier=word[\textipa{P}]
+%    	]
+%    ]
+%    [R
+%    	[N
+%    		[x, tier=word[\textipa{o:}, name=o]
+%    		]
+%    		[x, name=x]
+%%    		{\draw[black] (.south)--++(-2.38em,-1.7ex);}
+%    	]
+%    	[K
+%    		[x[\textipa{p}]
+%    		]
+%    		[x[\textipa{s}]
+%    		]
+%    		[x[\textipa{t}]
+%    		]
+%    	]
+%    ]  
+%  ] ]
+%  \draw[black](x.south)--(o.north);
+%\end{forest}}}
+%\end{minipage}
+%\pause
+%\begin{minipage}{.45\textwidth}
+%	\begin{figure}
+%		\centering
+%%		\visible<2->
+%{\scalebox{.75}{
+%			\begin{tikzpicture}[scale=0.5]
+%			\draw[black] (-1,0) -- (6.5,0) ; % x axis
+%			\draw[black] (-1,0) -- (-1,6.5); % y axis
+%			\node at (-2,1) {Plos.};
+%			\node at (-2,2) {Frik.};
+%			\node at (-2,3) {Nas.};
+%			\node at (-2,4) {\textipa{/l/}};
+%			\node at (-2,5) {\textipa{/\;R/}};
+%			\node at (-2,6) {Vok.};
+%			\draw[black] (0,2) -- (1,1) -- (2,5) -- (3,6) -- (4,2) -- (5,6) -- (6,3);
+%			\node at (0,-1) {\textipa{S}};
+%			\node at (1,-1) {\textipa{p}};
+%			\node at (2,-1) {\textipa{\textscr}};
+%			\node at (3,-1) {\textipa{E}};
+%			\node at (4,-1) {\textipa{\c{c}}};
+%			\node at (5,-1) {\textipa{@}};
+%			\node at (6,-1) {\textipa{n}};
+%			\fill (0,2) circle [radius=3pt];
+%			\fill (1,1) circle [radius=3pt];
+%			\fill (2,5) circle [radius=3pt];
+%			\fill (3,6) circle [radius=3pt];
+%			\fill (4,2) circle [radius=3pt];
+%			\fill (5,6) circle [radius=3pt];
+%			\fill (6,3) circle [radius=3pt];
+%			\end{tikzpicture}}}
+%	\end{figure}
+%\end{minipage}
+%\pause
+%\begin{minipage}{.05\textwidth}
+%	\hfill
+%\end{minipage}
+%\begin{minipage}{.45\textwidth}
+%	\begin{figure}
+%		\centering
+%		%\visible<4->
+%{\scalebox{.75}{
+%		\begin{tikzpicture}[scale=0.5]
+%			\draw[black] (-1,0) -- (4.5,0) ; % x axis
+%			\draw[black] (-1,0) -- (-1,6.5); % y axis
+%			\node at (-2,1) {Plos.};
+%			\node at (-2,2) {Frik.};
+%			\node at (-2,3) {Nas.};
+%			\node at (-2,4) {\textipa{/l/}};
+%			\node at (-2,5) {\textipa{/\;R/}};
+%			\node at (-2,6) {Vok.};
+%			\draw[black] (0,1) -- (1,6) -- (2,1) -- (3,2) -- (4,1);
+%			\node at (0,-1) {\textipa{P}};
+%			\node at (1,-1) {\textipa{o:}};
+%			\node at (2,-1) {\textipa{p}};
+%			\node at (3,-1) {\textipa{s}};
+%			\node at (4,-1) {\textipa{t}};
+%			\fill (0,1) circle [radius=3pt];
+%			\fill (1,6) circle [radius=3pt];
+%			\fill (2,1) circle [radius=3pt];
+%			\fill (3,2) circle [radius=3pt];
+%			\fill (4,1) circle [radius=3pt];
+%			\end{tikzpicture}}}
+%	\end{figure}
+%\end{minipage}
+%
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Lösungen}
+%%
+%\begin{minipage}{.3\textwidth}
+%	\centering
+%	\scalebox{.75}{\begin{forest} MyP edges, [,phantom
+%[$\sigma$
+%	[O
+%		[x, tier=word[\textipa{b}]]
+%		[x, tier=word[\textipa{\textscr}]]
+%	]
+%	[R
+%		[N	[x, tier=word[\textipa{a}]]
+%		]
+%		[K
+%			[x[\textipa{n}]]
+%			[x[\textipa{t.}]]
+%		]
+%	]  
+%]
+%[$\sigma$
+%	[O	[x, tier=word[\textipa{S}]]
+%	]
+%	[R	
+%		[N	
+%			[x[\textipa{U}]]
+%		]
+%		[K	
+%			[x[\textipa{\t{ts}}]]
+%		]
+%	]
+%]]
+%	\end{forest}}
+%	
+%\end{minipage}
+%\pause
+%%
+%\begin{minipage}{.05\textwidth}
+%	\hfill
+%\end{minipage}
+%%
+%\begin{minipage}{.6\textwidth}
+%\centering
+%\scalebox{.75}{
+%\begin{forest}
+%	MyP edges, [, phantom
+%[$ \sigma $
+%	[O
+%		[x, tier=word[\textipa{P}]]
+%	]
+%	[R
+%		[N
+%			[x, tier=word[\textipa{a}]]
+%		]
+%		[K
+%			[x[\textipa{p}]]
+%		]
+%	]
+%]
+%[$ \sigma $
+%	[O
+%		[x, tier=word[\textipa{S}]]
+%		[x, tier=word[\textipa{t}]]
+%	]
+%	[R
+%		[N
+%			[x[\textipa{a}]]
+%		]
+%		[K
+%			[x[\textipa{n}]]
+%			[x[\textipa{\t{ts}}]]
+%		]
+%	]
+%]
+%[$ \sigma $
+%	[O
+%		[x, tier=word[\textipa{h}]]
+%	]
+%	[R
+%		[N
+%			[x[\textipa{a}]]
+%		]
+%		[K
+%			[x[\textipa{l}]]
+%		]
+%	]
+%]
+%[$ \sigma $
+%	[O
+%		[x, tier=word[t]]
+%	]
+%	[R	
+%		[N
+%			[x[\textipa{\textturna}]]
+%		]
+%	]
+%]]
+%\end{forest}}
+%\end{minipage}
+%\pause
+%\begin{minipage}{.3\textwidth}
+%	\begin{figure}
+%		\centering
+%		\scalebox{.75}{
+%			\begin{tikzpicture}[scale=0.5]
+%			\draw[black] (-1,0) -- (7.5,0) ; % x axis
+%			\draw[black] (-1,0) -- (-1,6.5); % y axis
+%			\node at (-2,1) {Plos.};
+%			\node at (-2,2) {Frik.};
+%			\node at (-2,3) {Nas.};
+%			\node at (-2,4) {\textipa{/l/}};
+%			\node at (-2,5) {\textipa{/\;R/}};
+%			\node at (-2,6) {Vok.};
+%			\draw[black] (0,1) -- (1,5) -- (2,6) -- (3,3) -- (4,1);
+%			\draw[black] (5,2) -- (6,6) -- (7,2);
+%			\node at (0,-1) {\textipa{b}};
+%			\node at (1,-1) {\textipa{\textscr}};
+%			\node at (2,-1) {\textipa{a}};
+%			\node at (3,-1) {\textipa{n}};
+%			\node at (4,-1) {\textipa{t}};
+%			\node at (5,-1) {\textipa{S}};
+%			\node at (6,-1) {\textipa{U}};
+%			\node at (7,-1) {\textipa{\t{ts}}};
+%			\fill (0,1) circle [radius=3pt];
+%			\fill (1,5) circle [radius=3pt];
+%			\fill (2,6) circle [radius=3pt];
+%			\fill (3,3) circle [radius=3pt];
+%			\fill (4,1) circle [radius=3pt];
+%			\fill (5,2) circle [radius=3pt];
+%			\fill (6,6) circle [radius=3pt];
+%			\fill (7,2) circle [radius=3pt];
+%			\end{tikzpicture}}
+%	\end{figure}
+%\end{minipage}
+%\pause
+%\begin{minipage}{.05\textwidth}
+%	\hfill
+%\end{minipage}
+%\begin{minipage}{.6\textwidth}
+%\begin{figure}
+%			\centering
+%			\scalebox{.75}{
+%			\begin{tikzpicture}[scale=0.5]
+%			\draw[black] (-1,0) -- (12.5,0) ; % x axis
+%			\draw[black] (-1,0) -- (-1,6.5); % y axis
+%			\node at (-2,1) {Plos.};
+%			\node at (-2,2) {Frik.};
+%			\node at (-2,3) {Nas.};
+%			\node at (-2,4) {\textipa{/l/}};
+%			\node at (-2,5) {\textipa{/\;R/}};
+%			\node at (-2,6) {Vok.};
+%			\draw[black] (0,1)--(1,6)--(2,1);
+%			\draw[black](3,2)--(4,1)--(5,6)--(6,3)--(7,2);
+%			\draw[black](8,1)--(9,6)--(10,4);
+%			\draw[black](11,1)--(12,6);
+%			\fill (0,1) circle [radius=3pt];
+%			\fill (1,6) circle [radius=3pt];
+%			\fill (2,1) circle [radius=3pt];
+%			\fill (3,2) circle [radius=3pt];
+%			\fill (4,1) circle [radius=3pt];
+%			\fill (5,6) circle [radius=3pt];
+%			\fill (6,3) circle [radius=3pt];
+%			\fill (7,2) circle [radius=3pt];
+%			\fill (8,1) circle [radius=3pt];
+%			\fill (9,6) circle [radius=3pt];
+%			\fill (10,4) circle [radius=3pt];
+%			\fill (11,1) circle [radius=3pt];
+%			\fill (12,6) circle [radius=3pt];
+%			\node at (0,-1){\textipa{P}};
+%			\node at (1,-1){\textipa{a}};
+%			\node at (2,-1){\textipa{p}};
+%			\node at (3,-1){\textipa{S}};
+%			\node at (4,-1){\textipa{t}};
+%			\node at (5,-1){\textipa{a}};
+%			\node at (6,-1){\textipa{n}};
+%			\node at (7,-1){\textipa{\t{ts}}};
+%			\node at (8,-1){\textipa{h}};
+%			\node at (9,-1){\textipa{a}};
+%			\node at (10,-1){\textipa{l}};
+%			\node at (11,-1){\textipa{t}};
+%			\node at (12,-1){\textipa{\textturna}};
+%			\end{tikzpicture}}
+%	\end{figure}
+%\end{minipage}
+%
+%
+%\end{frame}
+%
+%}
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Silbifizierung}
+%\iftoggle{toc}{
+%\frame{
+%\frametitle{~}
+%\begin{multicols}{2}
+%	\tableofcontents[currentsection]
+%\end{multicols}	
+%}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Silbifizierung}
+%
+%\begin{itemize}
+%	\item Silbifizierung, Syllabierung $:=$ in Silben einteilen
+%	\item[]
+%	\item Wie würden Sie folgende Lautsequenzen silbifizieren?
+%
+%	  \ea
+%          ata, odo, eke
+%          \z
+%
+%\pause
+%
+%	\item Ein einziger intervokalischer Konsonant wird immer als Silbenanlaut silbifiziert (universelles Prinzip: \textbf{Onset-Maximierung})
+%	
+%	
+%\end{itemize}
+%
+%\begin{block}{Onsetmaximierung}
+%Bilde zuerst den größtmöglichen Silbenanlaut;\\ dann bilde den Silbenauslaut \citep[218]{Hall00a}
+%\end{block}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Onset-Maximierung}
+%
+%\begin{block}{Onset-Maximierung}
+%Bilde zuerst den größtmöglichen Silbenanlaut;\\
+%dann bilde den Silbenauslaut \citep[218]{Hall00a}.
+%\end{block}
+%
+%
+%\begin{itemize}
+%	\item Onset-Maximierung herleitbar aus:
+%	\begin{enumerate}
+%		\item Silbenanlautgesetz (CV häufiger als V), und
+%		\item Silbenauslautgesetz (CVC$^{n} >$ CVC$^{n+1}$)
+%	\end{enumerate}
+%
+%\pause
+%	\item Silbifizierung nicht über Morphemgrenzen hinweg! 
+%	\item Ausnahme: Suffixe mit vokalischem Onset:
+%	
+%	  \ea
+%          kind\#isch: \textipa{[kIn.dIS]}
+%          \z
+%	
+%	  \ea
+%          kind\#lich: \textipa{[kInt.lI\c{c}]}
+%          \z
+%          
+%     \item \# := Morphemgrenze
+%
+%% Wenn man Morphmgrenzenbedingung weglassen würde, ergäbe sich Bra. ndschutz
+%
+%% rek.nen vs. re.gnen
+%	
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsection{Übung}
+%%\iftoggle{toc}{
+%%\frame{
+%%\frametitle{~}
+%%\begin{multicols}{2}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}	
+%%}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Übung}
+%
+%\begin{itemize}
+%	\item Was bedeutet die Annahme des Sonoritätsprinzips und der Onset-Maximierung für die folgenden Beispielwörter:
+%	
+%	  \ea
+%          Fabrik, Imker, neblig, Falter, regnen
+%          \z
+%\end{itemize}	
+%\pause
+%
+%%\iftoggle{loesung}{
+%	\begin{itemize}
+%		\item[] \textcolor{red}{\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]},
+%                  \textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}} 
+%	\item [] \textcolor{red}{Koda: *Obstruent vor Sonorant} 
+%	\item [] \textcolor{red}{Onset: *Sonorant vor Obstruent}
+%
+%          \item Onset-Maximierung ist nicht strikt. Alternativ ginge auch \textipa{[ne:p.lI\c{c}]}, \textipa{[\textscr e:k.n@n]}.
+%
+%	\end{itemize}
+%%}
+%
+%\begin{itemize}
+%	\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
+%\end{itemize}
+%
+%\begin{minipage}{.3\textwidth}
+%	\eal
+%	\ex \textipa{[PE.b@]}
+%	\ex \textipa{[PEb.@]}
+%	\ex \textipa{[PEp.@]}
+%	\ex \textipa{[PEp.b@]}
+%        \zl
+%\end{minipage}
+%\pause
+%\begin{minipage}{.6\textwidth}
+%	\pause	
+%	\begin{itemize}
+%	\item[] \textcolor{red}{\ras Kurzvokal} Lösung \zb Silbengelenk \textipa{[PE\textsubdot{b}@]}
+%	\item[] \textcolor{red}{\ras Auslautverhärtung}
+%	\item[] \textcolor{red}{\ras Onset-Maximierung}
+%	\item[] \textcolor{red}{\ras keine Regelverletzung}
+%	\end{itemize}
+%	
+%\end{minipage}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%\begin{frame}
+%\frametitle{Übung}
+%
+%\begin{itemize}
+%	\item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
+%	\begin{itemize}
+%		\item Onsetmaximierungsprinzip
+%		\item Sonoritätsprinzip
+%	\end{itemize}
+%
+%\item Stellen Sie fest, ob alle Silben wohlgeformt sind.\\
+%      Falls nicht, benennen Sie die Verletzungen
+%	
+%\ea\label{ex:Otling}
+%\textipa{[o:tlIN5mSplag\textscr e:hOn]}
+%\z
+%
+%% Otlingamsplagrehon
+%	\ea\label{ex:Blumentopf}
+%	Blumentopferde
+%	\z
+%
+%\end{itemize}
+%
+%% blu.men.to.pfer.de
+%
+%%\ea
+%%Urinstinkt
+%%\z	
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Lösung}
+%
+%zu (\ref{ex:Otling}):
+%
+%zuerst Onset"=Maximierung: \textipa{o:.tlI.\ng \textturna. mSpla .g\textscr e: .hOn}\\
+%dann Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}
+%
+%zu (\ref{ex:Blumentopf}): 
+%
+%zuerst Onset-Maximierung: \textipa{blu: .m@ .ntO .pfE .{\textscr}d@}\\
+%dann Awendung des Sonoritätsprinzip: \textipa{blu: .m@n .tO .pfE{\textscr} .d@}
+%
+%
+%
+%
+%
+%
+%\end{frame}
+%	
+%
+%
+%% ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Exkurs: Akzent}
+%\iftoggle{toc}{
+%\frame{
+%\frametitle{~}
+%\begin{multicols}{2}
+%	\tableofcontents[currentsection]
+%\end{multicols}	
+%}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Exkurs: Akzent}
+%
+%\begin{itemize}
+%	\item Silben können \textbf{betont} oder \textbf{unbetont} sein, d.\,h. sie können einen Akzent tragen oder nicht
+%	\item[]
+%
+%\begin{block}{Akzent}
+%\textbf{Auditiver Eindruck der Prominenz eines Vokals} gegenüber einem anderen durch (relational, nicht absolut!):
+%\begin{itemize}
+%	\item Lautstärke
+%	\item Dauer
+%	\item Höhere Tonlage
+%	\item Ausgeprägtere Artikulationsbewegungen
+%\end{itemize}
+%\end{block}	 
+%	
+%	\item[]
+%	\item Man unterscheidet zwischen \textbf{Wort-} und \textbf{Satzakzent} (engl. \emph{stress} und \emph{accent})
+%
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsubsection{Exkurs: Wortakzent}
+%%\frame{
+%%\begin{multicols}{2}
+%%\frametitle{~}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Exkurs: Wortakzent}
+%
+%\begin{itemize}
+%	\item Was scheint die häufigste Betonung im Deutschen zu sein?
+%	
+%	  \ea
+%          Mutter, Männer, Autos, Hühner, Lehrer, Kinder, alle \ldots
+%          \z
+%	
+%\pause
+%	\textbf{betont-unbetont (Trochäus)}
+%	
+%	\item Ausnahmen (die je nach Theorie verschieden erklärt werden):
+%
+%\end{itemize}
+%
+%\begin{minipage}{.4\textwidth}
+%		
+%	\eal 
+%	\ex \textipa{['f\textscr aU]}
+%	\ex \textipa{[mu.'zi:k]}
+%	\ex \textipa{[le:.b@n.d@]}
+%	\ex \textipa{[pa.pa.'g\t{aɪ}]}
+%	\ex \textipa{[f\t{ɛɐ}.'Pa5.b\t{aɪ}.t@n]}
+%	\zl
+%
+%\end{minipage}
+%\begin{minipage}{.5\textwidth}
+%	
+%%	\iftoggle{loesung}{
+%	\begin{itemize}
+%		\item[] \textcolor{red}{\ras nur eine Silbe }
+%		\item[] \textcolor{red}{\ras Fremdwort}
+%		\item [] \textcolor{red}{\ras Flektierte Elemente \ab{-de}}
+%		\item [] \textcolor{red}{\ras Fremdwort}
+%		\item [] \textcolor{red}{\ras Derivation \ab{ver-}}
+%	\end{itemize}
+%%}
+%
+%\end{minipage}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsubsection{Exkurs: Satzakzent}
+%%\frame{
+%%\begin{multicols}{2}
+%%\frametitle{~}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Exkurs: Satzakzent}
+%
+%\begin{itemize}
+%	\item In einem Satz können betonte Silben \textbf{noch weiter hervorgehoben} werden (dabei meist durch die Tonhöhe):
+%	
+%	\eal 
+%	\ex Géstern hat BAyern gewónnen.
+%	\ex GÉStern hat Báyern gewónnen.
+%	\ex Géstern hat Báyern geWONnen.
+%	\zl
+%	\item Die prominenteste Silbe im Satz wird meist mit \textbf{Großbuchstaben} dargestellt, sie trägt den Satzakzent
+%
+%	\item Durch diese Akzentuierung wird das gesamte Wort
+%hervorgehoben \ras\\ \textbf{Fokus des Satzes} (\gqq{Informationsstruktur})
+%	
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\subsubsection{Exkurs: Intonation}
+%%\frame{
+%%\begin{multicols}{2}
+%%\frametitle{~}
+%%	\tableofcontents[currentsection]
+%%\end{multicols}
+%%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Exkurs: Intonation}
+%
+%\begin{block}{Intonation}
+%Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
+%\end{block}
+%
+%\begin{itemize}
+%	\item \textbf{Satztypen} können mittels Intonation unterschieden werden.
+%	
+%	\item Sprechen Sie die folgenden Äußerungen mit fallender und steigender Intonation
+%	\eal 
+%	\ex Heute gewinnen die Bayern.
+%	\ex Schon Schluss.
+%        \zl
+%\pause
+%	\textbf{Aussage-} \vs \textbf{Interrogativsatz}	
+%	
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Disambiguierung}
+%
+%Ambige ($\approx$ mehrdeutige) Sätze können mittels Intonation \gs{durch die sog. Hutkontur} \textbf{disambiguiert} werden: 
+%	
+%	  \ea
+%          Alle Studenten haben die Klausur nicht bestanden.
+%          \z
+%        \eal
+%	\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
+%	\ex Für alle Studenten gilt, dass sie die Klausur nicht bestanden haben. \hfill $\lsem \forall \neg \rsem$
+%        \zl
+%\pause 
+%
+%\ea
+%/Alle Studenten haben die Klausur  nicht\textbackslash\ bestanden.
+%\z
+%\eal
+%\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
+%	\zl
+%
+%
+%\end{frame}
+%
+%
+%\iftoggle{hausaufgabe}{
+%	
+%\subsection{Hausaufgabe}
+%	%% \iftoggle{toc}{
+%	%% 	\frame{
+%	%% 		\frametitle{~}
+%	%% 		\begin{multicols}{2}
+%	%% 			\tableofcontents[currentsection]
+%	%% 		\end{multicols}	
+%	%% 	}
+%	%% }
+%	
+%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}%[allowframebreaks]
+%	\frametitle{Hausaufgabe}
+%\begin{itemize}
+%			
+%	\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbenstruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
+%		
+%		\eal\label{ex:HA1}
+%		\ex Stimmenfang \label{ex:HA1a}
+%		\ex Mittagessen\label{ex:HA1b}
+%		\ex Bierdeckel\label{ex:HA1c}
+%		\zl
+%\end{itemize}
+%
+%\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+%	Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+%	$x > y :=$ $x$ ist sonorer als $y$
+%\end{block}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\begin{itemize}
+%	\item[2.] Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
+%	\begin{itemize}
+%		\item Onsetmaximierungsprinzip
+%		\item Sonoritätsprinzip
+%	\end{itemize}
+%	
+%	Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
+%	\ea\label{ex:HA2}
+%	Urinstinkt
+%	\z	
+%	\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
+%	
+%	\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/""phonologischen Gründen im Deutschen nicht möglich sind:
+%	
+%	\eal\label{ex:HA3}
+%	\ex[*]{\textipa{['Napl.O:t]}}
+%	\ex[*]{\textipa{[a\;R.'tUng]}}
+%	\zl
+%	
+%\end{itemize}
+%
+%\end{frame}
+%	
+%}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lösungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\iftoggle{ha-loesung}{
+%	
+%	%% \subsection{Lösung}
+%	%% \iftoggle{toc}{
+%	%% 	\frame{
+%	%% 		\frametitle{~}
+%	%% 		\begin{multicols}{2}
+%	%% 			\tableofcontents[currentsection]
+%	%% 		\end{multicols}	
+%	%% 	}
+%	%% }
+%	
+%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}%[allowframebreaks]
+%	\frametitle{Lösung}
+%	\begin{itemize}
+%			
+%		\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbestruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
+%			
+%			\begin{exe}
+%				\exi{(\ref{ex:HA1})}
+%				\begin{xlist}
+%					\ex Stimmenfang
+%					\ex Mittagessen
+%					\ex Bierdeckel
+%				\end{xlist}
+%			\end{exe}
+%
+%			\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+%		Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+%		$x > y :=$ $x$ ist sonorer als $y$
+%	\end{block}
+%			
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%
+%%\begin{minipage}{.35\textwidth}
+%			%\input{localforestsyllables}
+%\begin{minipage}{.2\textwidth}
+%	\centering
+%Zu (\ref{ex:HA1a}):
+%\end{minipage}
+%%
+%\begin{minipage}{.7\textwidth}
+%	\begin{figure}
+%\footnotesize
+%\centering
+%			\begin{forest} MyP edges, [, phantom
+%				[$\sigma$
+%				[O [x, tier=word [\textipa{S}]] [x, tier=word [\textipa{t}]]]
+%				[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x [\textipa{m}]]]]
+%				]
+%				[$\sigma$
+%				[O, name=onset]
+%				[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
+%				]
+%				[$\sigma$
+%				[O [x, tier=word [\textipa{f}]]]
+%				[R [N [x [\textipa{a}]]] [K [x [\textipa{N}]]]]
+%				]
+%				]				
+%				{
+%					\draw[black] (x.north)--(onset.south);
+%				}
+%			\end{forest}
+%		
+%		\begin{tikzpicture}[scale=0.4]
+%		\draw[black] (-1,0) -- (9.5,0) ; % x axis
+%		\draw[black] (-1,0) -- (-1,6.5); % y axis
+%		\node at (-2,1) {Plos.};
+%		\node at (-2,2) {Frik.};
+%		\node at (-2,3) {Nas.};
+%		\node at (-2,4) {\textipa{/l/}};
+%		\node at (-2,5) {\textipa{/\;R/}};
+%		\node at (-2,6) {Vok.};
+%		\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4);
+%		\draw[black] (4,4) -- (5,6) -- (6,4);
+%		\draw[black] (7,2) -- (8,6) -- (9,3);
+%		\node at (0,-1) {\textipa{S}};
+%		\node at (1,-1) {\textipa{t}};
+%		\node at (2,-1) {\textipa{I}};
+%		\node at (3.5,-1) {\textipa{m}};
+%		\node at (5,-1) {\textipa{@}};
+%		\node at (6,-1) {\textipa{n}};
+%		\node at (7,-1) {\textipa{f}};
+%		\node at (8,-1) {\textipa{a}};
+%		\node at (9,-1) {\textipa{N}};
+%		\fill (0,2) circle [radius=3pt];
+%		\fill (1,1) circle [radius=3pt];
+%		\fill (2,6) circle [radius=3pt];
+%		\fill (3,4) circle [radius=3pt];
+%		\fill (4,4) circle [radius=3pt];
+%		\fill (5,6) circle [radius=3pt];
+%		\fill (6,4) circle [radius=3pt];
+%		\fill (7,2) circle [radius=3pt];
+%		\fill (8,6) circle [radius=3pt];
+%		\fill (9,3) circle [radius=3pt];
+%		\end{tikzpicture}
+%\end{figure}
+%
+%\end{minipage}
+%\end{frame}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-	\begin{itemize}	
-		\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
-	\end{itemize}
-		
-		\begin{minipage}{.5\textwidth}
-			\begin{figure}
-				\scalebox{.8}{\begin{forest}
-					MyP edges [, phantom
-[$\sigma$
-	[O 
-						[x, tier=word[\textipa{S}]]
-						[x, tier=word[\textipa{t}]]
-						]
-	[R
-		[N
-						[x, tier=word[\textipa{a:}, name=a]]
-						[x, name=x]
-						]
-		[K[x[\textipa{l.}]]]
-						]
-						]
-[$\sigma$
-	[O [x, tier=word[\textipa{t}]]]
-	[R
-		[N
-						[x[\textipa{I}]]
-						]
-		[K
-						[x,name=S[\textipa{S}] ]
-						]
-						]
-						]
-[$\sigma$
-	[O, name=o]
-	[R
-		[N
-						[x[\textipa{@}]]
-						]
-						]
-						]
-						]
-						\draw[black](o.south)--(S.north);
-						\draw[black](a.north)--(x.south);
-				\end{forest}}
-			\end{figure}
-		\end{minipage}
-	\begin{minipage}{.45\textwidth}
-		\begin{itemize}
-			\item Onset-Maximierung
-			\item Sonoritätshierarchie im Onset: *Sonorant vor Obstruent (*[\textipa{lt}])
-			\item Silbengelenk nach ungespanntem, betonten Vokal
-		\end{itemize}
-	\end{minipage}
-
-\end{frame}
-
-
-\begin{frame}
-	\begin{itemize}
-					
-		\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/""phonologischen Gründen im Deutschen nicht möglich sind:
-			
-		\begin{exe}
-			\exi{(\ref{ex:HA3})}
-			\begin{xlist}
-		\ex[*]{\textipa{['Napl.O:t]}: \textcolor{red}{Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang}}
-\ex[*]{\textipa{[a\;R.'tUng]}: \textcolor{red}{Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut}}
-			\end{xlist}
-
-		\end{exe}
-	
-	\end{itemize}
-		
-\end{frame}
-	
-}% Loesung-HA
+%
+%
+%
+%\begin{frame}		
+%
+%\begin{minipage}{.2\textwidth}
+%	\centering
+%	Zu (\ref{ex:HA1b})
+%\end{minipage}	
+%\begin{minipage}{.7\textwidth}
+%	\footnotesize
+%	\centering
+%	\begin{forest} MyP edges, [, phantom
+%	[$\sigma$
+%	[O [x, tier=word [\textipa{m}]]] 
+%	[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
+%	]
+%	[$\sigma$
+%	[O, name=onset1]
+%	[R [N [x [\textipa{a:}, name=a]]
+%              [x, name=ax]] [K [x [\textipa{k}]]]]
+%	]
+%	[$\sigma$
+%	[O [x, tier=word [\textipa{P}]]]
+%	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
+%	]
+%	[$\sigma$
+%	[O, name=onset2]
+%	[R [N [x [\textipa{\textsyllabic{n}}]]]
+%	]
+%	]]
+%	{
+%		\draw[black] (x1.north)--(onset1.south);
+%		\draw[black] (x2.north)--(onset2.south);
+%		\draw[black] (a.north)--(ax.south);
+%	}
+%	\end{forest}
+%\vfill
+%\begin{tikzpicture}[scale=0.4]
+%\draw[black] (-1,0) -- (11.5,0) ; % x axis
+%\draw[black] (-1,0) -- (-1,6.5); % y axis
+%\node at (-2,1) {Plos.};
+%\node at (-2,2) {Frik.};
+%\node at (-2,3) {Nas.};
+%\node at (-2,4) {\textipa{/l/}};
+%\node at (-2,5) {\textipa{/\;R/}};
+%\node at (-2,6) {Vok.};
+%\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
+%\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,3);
+%\node at (0,-1) {\textipa{m}};
+%\node at (1,-1) {\textipa{i}};
+%\node at (2,-1) {\textipa{t}};
+%\node at (3,-1) {\textipa{a:}};
+%\node at (4,-1) {\textipa{k}};
+%\node at (5,-1) {\textipa{P}};
+%\node at (6,-1) {\textipa{E}};
+%\node at (7,-1) {\textipa{s}};
+%\node at (8,-1) {\textipa{\textsyllabic{n}}};
+%\fill (0,3) circle [radius=3pt];
+%\fill (1,6) circle [radius=3pt];
+%\fill (2,1) circle [radius=3pt];
+%\fill (3,6) circle [radius=3pt];
+%\fill (4,1) circle [radius=3pt];
+%\fill (5,1) circle [radius=3pt];
+%\fill (6,6) circle [radius=3pt];
+%\fill (7,2) circle [radius=3pt];
+%\fill (8,3) circle [radius=3pt];
+%\end{tikzpicture}
+%\end{minipage}
+%	
+%\end{frame}
+%
+%
+%\begin{frame}		
+%
+%\begin{minipage}{.2\textwidth}
+%	\centering
+%	Zu (\ref{ex:HA1b})  (alternative Lösung):
+%\end{minipage}	
+%%\end{minipage}%
+%\begin{minipage}{.7\textwidth}
+%	\footnotesize
+%	\centering
+%	\begin{forest} MyP edges, [, phantom
+%	[$\sigma$
+%	[O [x, tier=word [\textipa{m}]]] 
+%	[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
+%	]
+%	[$\sigma$
+%	[O, name=onset1]
+%	[R [N [x [\textipa{a:}, name=a]]
+%              [x, name=ax]] [K [x [\textipa{k}]]]]
+%	]
+%	[$\sigma$
+%	[O [x, tier=word [\textipa{P}]]]
+%	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
+%	]
+%	[$\sigma$
+%	[O, name=onset2]
+%	[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
+%	]
+%	]
+%	{
+%		\draw[black] (x1.north)--(onset1.south);
+%		\draw[black] (x2.north)--(onset2.south);
+%		\draw[black] (a.north)--(ax.south);
+%	}
+%	\end{forest}
+%\vfill
+%\begin{tikzpicture}[scale=0.4]
+%\draw[black] (-1,0) -- (11.5,0) ; % x axis
+%\draw[black] (-1,0) -- (-1,6.5); % y axis
+%\node at (-2,1) {Plos.};
+%\node at (-2,2) {Frik.};
+%\node at (-2,3) {Nas.};
+%\node at (-2,4) {\textipa{/l/}};
+%\node at (-2,5) {\textipa{/\;R/}};
+%\node at (-2,6) {Vok.};
+%\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
+%\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,6) -- (9,3);
+%\node at (0,-1) {\textipa{m}};
+%\node at (1,-1) {\textipa{i}};
+%\node at (2,-1) {\textipa{t}};
+%\node at (3,-1) {\textipa{a:}};
+%\node at (4,-1) {\textipa{k}};
+%\node at (5,-1) {\textipa{P}};
+%\node at (6,-1) {\textipa{E}};
+%\node at (7,-1) {\textipa{s}};
+%\node at (8,-1) {\textipa{@}};
+%\node at (9,-1) {\textipa{n}};
+%\fill (0,3) circle [radius=3pt];
+%\fill (1,6) circle [radius=3pt];
+%\fill (2,1) circle [radius=3pt];
+%\fill (3,6) circle [radius=3pt];
+%\fill (4,1) circle [radius=3pt];
+%\fill (5,1) circle [radius=3pt];
+%\fill (6,6) circle [radius=3pt];
+%\fill (7,2) circle [radius=3pt];
+%\fill (8,6) circle [radius=3pt];
+%\fill (9,3) circle [radius=3pt];
+%\end{tikzpicture}
+%\end{minipage}
+%	
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%
+%\begin{minipage}{.2\textwidth}
+%	\centering
+%	Zu (\ref{ex:HA1c}):
+%\end{minipage}	
+%\begin{minipage}{.7\textwidth}
+%
+%	\begin{figure}
+%	\footnotesize
+%	\centering
+%	\begin{forest} MyP edges, [, phantom
+%	[$\sigma$
+%	[O [x,tier=word [\textipa{b}]]]
+%	[R [N [x, tier=word [\textipa{i:}, name=i]] [x,name=x1]] [K [x [\textipa{5}]]]]
+%	]
+%	[$\sigma$
+%	[O [x, tier=word [\textipa{d}]]]
+%	[R [N [x [\textipa{E}]]] [K [x, name=x [\textipa{k}]]]]
+%	]
+%	[$\sigma$
+%	[O, name=onset]
+%	[R [N [x, tier=word [\textipa{@}]]] [K [x [\textipa{l}]]]]
+%	]
+%	]
+%	{
+%		\draw[black] (x1.south)--(i.north);
+%		\draw[black] (x.north)--(onset.south);
+%	}
+%\end{forest}
+%
+%\scalebox{.85}{\begin{tikzpicture}[scale=0.5]
+%	\draw[black] (-1,0) -- (8.5,0) ; % x axis
+%	\draw[black] (-1,0) -- (-1,6.5); % y axis
+%	\node at (-2,1) {Plos.};
+%	\node at (-2,2) {Frik.};
+%	\node at (-2,3) {Nas.};
+%	\node at (-2,4) {\textipa{/l/}};
+%	\node at (-2,5) {\textipa{/\;R/}};
+%	\node at (-2,6) {Vok.};
+%	\draw[black] (0,1) -- (1,6) -- (2,6);
+%	\draw[black] (3,1) -- (4,6) -- (5,1) -- (6,6) -- (7,1);
+%	\node at (0,-1) {\textipa{b}};
+%	\node at (1,-1) {\textipa{i:}};
+%	\node at (2,-1) {\textipa{5}};
+%	\node at (3,-1) {\textipa{d}};
+%	\node at (4,-1) {\textipa{E}};
+%	\node at (5,-1) {\textipa{k}};
+%	\node at (6,-1) {\textipa{@}};
+%	\node at (7,-1) {\textipa{l}};
+%	\fill (0,1) circle [radius=3pt];
+%	\fill (1,6) circle [radius=3pt];
+%	\fill (2,6) circle [radius=3pt];
+%	\fill (3,1) circle [radius=3pt];
+%	\fill (4,6) circle [radius=3pt];
+%	\fill (5,1) circle [radius=3pt];
+%	\fill (6,6) circle [radius=3pt];
+%	\fill (7,1) circle [radius=3pt];
+%	\end{tikzpicture}}
+%\end{figure}
+%\end{minipage}
+%%
+%%
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	
+%\begin{frame}
+%	\begin{itemize}
+%		\item[2.] Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
+%			\begin{itemize}
+%				\item Onsetmaximierungsprinzip
+%				\item Sonoritätsprinzip
+%			\end{itemize}
+%			
+%		Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
+%	\begin{exe}
+%		\exi{(\ref{ex:HA2})} Urinstinkt (einfach nach Lautfolge):
+%		\begin{xlist}
+%			\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)
+%			\ex \textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch)
+%		\end{xlist}
+%	\end{exe}
+%      \item Die Silbifizierung erfolgt auf der Ebene des phonologischen Wortes.\\
+%        Daher werden die phonologischen Wörter \ab{ur-} und \ab{Instinkt} einzeln silbifiziert.
+%                  \ea
+%                  \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
+%	          \z
+%	\end{itemize}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%	\begin{itemize}	
+%		\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
+%	\end{itemize}
+%		
+%		\begin{minipage}{.5\textwidth}
+%			\begin{figure}
+%				\scalebox{.8}{\begin{forest}
+%					MyP edges [, phantom
+%[$\sigma$
+%	[O 
+%						[x, tier=word[\textipa{S}]]
+%						[x, tier=word[\textipa{t}]]
+%						]
+%	[R
+%		[N
+%						[x, tier=word[\textipa{a:}, name=a]]
+%						[x, name=x]
+%						]
+%		[K[x[\textipa{l.}]]]
+%						]
+%						]
+%[$\sigma$
+%	[O [x, tier=word[\textipa{t}]]]
+%	[R
+%		[N
+%						[x[\textipa{I}]]
+%						]
+%		[K
+%						[x,name=S[\textipa{S}] ]
+%						]
+%						]
+%						]
+%[$\sigma$
+%	[O, name=o]
+%	[R
+%		[N
+%						[x[\textipa{@}]]
+%						]
+%						]
+%						]
+%						]
+%						\draw[black](o.south)--(S.north);
+%						\draw[black](a.north)--(x.south);
+%				\end{forest}}
+%			\end{figure}
+%		\end{minipage}
+%	\begin{minipage}{.45\textwidth}
+%		\begin{itemize}
+%			\item Onset-Maximierung
+%			\item Sonoritätshierarchie im Onset: *Sonorant vor Obstruent (*[\textipa{lt}])
+%			\item Silbengelenk nach ungespanntem, betonten Vokal
+%		\end{itemize}
+%	\end{minipage}
+%
+%\end{frame}
+%
+%
+%\begin{frame}
+%	\begin{itemize}
+%					
+%		\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/""phonologischen Gründen im Deutschen nicht möglich sind:
+%			
+%		\begin{exe}
+%			\exi{(\ref{ex:HA3})}
+%			\begin{xlist}
+%		\ex[*]{\textipa{['Napl.O:t]}: \textcolor{red}{Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang}}
+%\ex[*]{\textipa{[a\;R.'tUng]}: \textcolor{red}{Auslautverhärtung, regressive velarare nasale Assimilation, Knacklaut}}
+%			\end{xlist}
+%
+%		\end{exe}
+%	
+%	\end{itemize}
+%		
+%\end{frame}
+%	
+%}% Loesung-HA
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

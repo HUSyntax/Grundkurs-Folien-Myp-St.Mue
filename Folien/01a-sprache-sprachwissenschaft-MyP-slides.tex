@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,10pt, bibtotoc]{beamer}
-%\documentclass[10pt,handout]{beamer}
+%\documentclass[11pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%     PACKAGES      
@@ -19,38 +19,36 @@
 
 \begin{document}
 	
-\input{localcommands}
-
-
+	\input{localcommands}
+	
 %%%% uebung
 %%%% true: nur Fragen / false: Fragen & Lösungen
 %	\toggletrue{uebung}
-	\togglefalse{uebung}
+\togglefalse{uebung}
 
 %%%% hausaufgabe
-%%%% true: nur Fragen / false: Fragen & Lösungen
+%%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
 %	\toggletrue{hausaufgabe}
-	\togglefalse{hausaufgabe}
+\togglefalse{hausaufgabe}
 
 %%%% toc
-%%%% true: TOC am Anfang von Slides / false: TOC nicht am Anfang von Slides
-	\toggletrue{toc}
+%%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
+\toggletrue{toc}
 %	\togglefalse{toc}
 
 %%%% sectoc
-%%%% true: TOC für Sections (MyP) / false: TOC für Sections (MyP)
-	\toggletrue{sectoc}
+%%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
+\toggletrue{sectoc}
 %	\togglefalse{sectoc}
 
 %%%% gliederung
-%%%% true: Gliederung für Sections (StM) / false: Gliederung für Sections (StM)
-	\toggletrue{gliederung}
-%	\togglefalse{gliederung}
+%%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
+%	\toggletrue{gliederung}
+\togglefalse{gliederung}
 
 
-\input{02-phonetik-include}
+\input{01a-sprache-sprachwissenschaft-include}
 
 \input{gk-literatur}
 
 \end{document}
-

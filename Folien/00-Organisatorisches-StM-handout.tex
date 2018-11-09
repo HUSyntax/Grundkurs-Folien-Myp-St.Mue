@@ -1,26 +1,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
-%% Slides: Antonio Machicao y Priemer
+%% Handout: Stefan Müller
 %% Course: GK Linguistik
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,10pt, bibtotoc]{beamer}
-%\documentclass[10pt,handout]{beamer}
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+%\documentclass[10pt,a4paper]{beamer}
+\documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES      
+%%     PACKAGES       %%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   
+%%%             Preamble's End                   %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{document}
-	
-	\input{localcommands}
-	
+
+\input{localcommands}
+
 %%%% uebung
 %%%% true: nur Fragen / false: Fragen & Lösungen
 %	\toggletrue{uebung}
@@ -33,8 +37,8 @@
 
 %%%% toc
 %%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
-\toggletrue{toc}
-%	\togglefalse{toc}
+%	\toggletrue{toc}
+\togglefalse{toc}
 
 %%%% sectoc
 %%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
@@ -47,7 +51,17 @@
 \togglefalse{gliederung}
 
 
-\input{00-Organisatorisches-MyP-include}
+\author[St.Mü.]{
+	{Stefan Müller}
+%	\\
+%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
+%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+}
+
+\institute{Institut für deutsche Sprache und Linguistik}
+
+
+\input{00-Organisatorisches-StM-include}
 
 \input{gk-literatur}
 

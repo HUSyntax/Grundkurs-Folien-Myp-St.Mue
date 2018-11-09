@@ -70,28 +70,45 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sprache \& Sprachwissenschaft II}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Grammatik}
-%\iftoggle{toc}{
-%\frame{
+%% MyP: Contents
+\iftoggle{sectoc}{
+\frame{
 %\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+\frametitle{~}
+	\tableofcontents[currentsubsection, subsubsectionstyle=hide]
 %\end{multicols}
-%}
-%}
+}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item \blaubf{Grammatik}
+			\item Grammatikbegriff
+			\item Modularität der Grammatik
+			%% Lexikon
+			%% Phonologische Komponente
+			%% Morphologische Komponente
+			%% Syntaktische Komponente
+			%% Semantische Komponente
+			%% Architektur des Sprachsystems
+			\item Linguistische Teildisziplinen
+			\item Linguistik als Geistes- und/oder Naturwissenschaft
+			\item Sprachwissenschaft \vs Linguistik
+			
+		\end{itemize}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \begin{frame}{Grammatik}
@@ -113,13 +130,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Grammatikbegriff}
 
-\iftoggle{toc}{
+%% MyP: Contents
+\iftoggle{sectoc}{
 \frame{
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \frametitle{~}
-	\tableofcontents%[currentsection]
-\end{multicols}
+	\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%\end{multicols}
 }
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Grammatik
+			\item \blaubf{Grammatikbegriff}
+			\item Modularität der Grammatik
+			%% Lexikon
+			%% Phonologische Komponente
+			%% Morphologische Komponente
+			%% Syntaktische Komponente
+			%% Semantische Komponente
+			%% Architektur des Sprachsystems
+			\item Linguistische Teildisziplinen
+			\item Linguistik als Geistes- und/oder Naturwissenschaft
+			\item Sprachwissenschaft \vs Linguistik
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -164,13 +205,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Modularität der Grammatik}
 
-\iftoggle{toc}{
+%% MyP: Contents
+\iftoggle{sectoc}{
 \frame{
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \frametitle{~}
-	\tableofcontents%[currentsection]
-\end{multicols}
+	\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%\end{multicols}
 }
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Grammatik
+			\item Grammatikbegriff
+			\item \blaubf{Modularität der Grammatik}
+			%% Lexikon
+			%% Phonologische Komponente
+			%% Morphologische Komponente
+			%% Syntaktische Komponente
+			%% Semantische Komponente
+			%% Architektur des Sprachsystems
+			\item Linguistische Teildisziplinen
+			\item Linguistik als Geistes- und/oder Naturwissenschaft
+			\item Sprachwissenschaft \vs Linguistik
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -228,11 +293,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Lexikon}
-
-%\iftoggle{toc}{
+%%% MyP: Contents
+%\iftoggle{sectoc}{
 %	\frame{
 %		%\begin{multicols}{2}
-%		\tableofcontents[currentsection]
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
 %		%\end{multicols}
 %	}
 %}
@@ -300,11 +366,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Phonologische Komponente}
-
-%\iftoggle{toc}{
+%%% MyP: Contents
+%\iftoggle{sectoc}{
 %	\frame{
 %		%\begin{multicols}{2}
-%		\tableofcontents[currentsection]
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
 %		%\end{multicols}
 %	}
 %}
@@ -336,10 +403,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Morphologische Komponente}
-%\iftoggle{toc}{
+%%% MyP: Contents
+%\iftoggle{sectoc}{
 %	\frame{
 %		%\begin{multicols}{2}
-%		\tableofcontents[currentsection]
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
 %		%\end{multicols}
 %	}
 %}
@@ -372,43 +441,45 @@
 	\end{itemize}
 			
 
-	
+\begin{columns}
+
+\column[b]{.4\linewidth}		
 \begin{figure}[b]
 	
-	\begin{minipage}[b]{0.37\textwidth}
-					\tiny{
+\scriptsize{
 		\begin{forest}MyP edges
 		[Bedeutungsableitung [Be][deutungsableitung [deut][ungsableitung [ungsableit [ung][sableit [sab [s][ab]][leit]]][ung]]]]
-		\end{forest}}
+		\end{forest}
+}
 		
-	\caption{Ungrammatisch}
-	\end{minipage}
-	%
-	\begin{minipage}[b]{0.20\textwidth}
-  	%	
-	\end{minipage}
-	%				
-	\begin{minipage}[b]{0.37\textwidth}
-	\tiny{
+\caption{Ungrammatisch}
+
+\end{figure}
+
+\column[b]{.4\linewidth}
+\begin{figure}[b]
+	\scriptsize{
 		\begin{forest}MyP edges
 		[Bedeutungsableitung [Bedeutungs [Bedeutung [Bedeut [Be][deut]][ung]][s]][ableitung [ableit [ab][leit]][ung]]]
 		\end{forest}}
 			
 	\caption{Grammatisch}
-	\end{minipage}
-	                        
+
 \end{figure}
 
+\end{columns}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Syntaktische Komponente}
-%\iftoggle{toc}{
+%%% MyP: Contents
+%\iftoggle{sectoc}{
 %	\frame{
 %		%\begin{multicols}{2}
-%		\tableofcontents[currentsection]
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
 %		%\end{multicols}
 %	}
 %}
@@ -449,10 +520,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Semantische Komponente}
-%\iftoggle{toc}{
+%%% MyP: Contents
+%\iftoggle{sectoc}{
 %	\frame{
 %		%\begin{multicols}{2}
-%		\tableofcontents[currentsection]
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
 %		%\end{multicols}
 %	}
 %}
@@ -491,10 +564,12 @@ wenn sie aus den gleichen Wörtern bestehen?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Architektur des Sprachsystems}
-%\iftoggle{toc}{
+%%% MyP: Contents
+%\iftoggle{sectoc}{
 %	\frame{
 %		%\begin{multicols}{2}
-%		\tableofcontents[currentsection]
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
 %		%\end{multicols}
 %	}
 %}
@@ -587,12 +662,12 @@ $ \Leftarrow $
 \small
 \outputbox{
 Grammatik
-\begin{itemize}
+\begin{itemize*}
 \item Phonologische Komponente\\
 \item Morphologische K.\\
 \item Syntaktische K.\\
 \item Semantische K.
-\end{itemize}}
+\end{itemize*}}
 \end{minipage}
 
 \begin{minipage}{0.24\textwidth}
@@ -642,12 +717,36 @@ Weltwissen, Kontextwissen, analytisches Wissen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Linguistische Teildisziplinen}		
 
-\iftoggle{toc}{
+%% MyP: Contents
+\iftoggle{sectoc}{
 \frame{
-\begin{multicols}{2}
-	\tableofcontents%[currentsection]
-\end{multicols}
+%\begin{multicols}{2}
+	\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%\end{multicols}
 }
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Grammatik
+			\item Grammatikbegriff
+			\item Modularität der Grammatik
+			%% Lexikon
+			%% Phonologische Komponente
+			%% Morphologische Komponente
+			%% Syntaktische Komponente
+			%% Semantische Komponente
+			%% Architektur des Sprachsystems
+			\item \blaubf{Linguistische Teildisziplinen}
+			\item Linguistik als Geistes- und/oder Naturwissenschaft
+			\item Sprachwissenschaft \vs Linguistik
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -678,12 +777,36 @@ Weltwissen, Kontextwissen, analytisches Wissen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Linguistik als Geistes- und/oder Naturwissenschaft}		
 
-\iftoggle{toc}{
+%% MyP:Contents
+\iftoggle{sectoc}{
 \frame{
-\begin{multicols}{2}
-	\tableofcontents%[currentsection]
-\end{multicols}
+%\begin{multicols}{2}
+	\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%\end{multicols}
 }
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Grammatik
+			\item Grammatikbegriff
+			\item Modularität der Grammatik
+			%% Lexikon
+			%% Phonologische Komponente
+			%% Morphologische Komponente
+			%% Syntaktische Komponente
+			%% Semantische Komponente
+			%% Architektur des Sprachsystems
+			\item Linguistische Teildisziplinen
+			\item \blaubf{Linguistik als Geistes- und/oder Naturwissenschaft}
+			\item Sprachwissenschaft \vs Linguistik
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -739,18 +862,42 @@ Weltwissen, Kontextwissen, analytisches Wissen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Sprachwissenschaft vs. Linguistik}
+\subsection{Sprachwissenschaft \vs Linguistik}
 
-\iftoggle{toc}{
+%% MyP: Contents
+\iftoggle{sectoc}{
 \frame{
-\begin{multicols}{2}
-	\tableofcontents %[currentsection, hideallsubsections]
-\end{multicols}
+%\begin{multicols}{2}
+	\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%\end{multicols}
 }
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Grammatik
+			\item Grammatikbegriff
+			\item Modularität der Grammatik
+			%% Lexikon
+			%% Phonologische Komponente
+			%% Morphologische Komponente
+			%% Syntaktische Komponente
+			%% Semantische Komponente
+			%% Architektur des Sprachsystems
+			\item Linguistische Teildisziplinen
+			\item Linguistik als Geistes- und/oder Naturwissenschaft
+			\item \blaubf{Sprachwissenschaft \vs Linguistik}
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Sprachwissenschaft vs. Linguistik}
+\begin{frame}{Sprachwissenschaft \vs Linguistik}
 
 	\begin{itemize}
 		\item<1-> Linguistik und Sprachwissenschaft \idR \textbf{synonymisch} gebraucht

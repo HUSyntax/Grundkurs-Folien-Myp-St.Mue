@@ -1,11 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
-%% Slides: Antonio Machicao y Priemer
+%% Handout: Antonio Machicao y Priemer
 %% Course: GK Linguistik
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,10pt, bibtotoc]{beamer}
-%\documentclass[10pt,handout]{beamer}
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%     PACKAGES      
@@ -20,16 +20,16 @@
 \begin{document}
 	
 	\input{localcommands}
-	
+
 %%%% uebung
 %%%% true: nur Fragen / false: Fragen & Lösungen
-%	\toggletrue{uebung}
-\togglefalse{uebung}
+\toggletrue{uebung}
+% \togglefalse{uebung}
 
 %%%% hausaufgabe
 %%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
-%	\toggletrue{hausaufgabe}
-\togglefalse{hausaufgabe}
+\toggletrue{hausaufgabe}
+% \togglefalse{hausaufgabe}
 
 %%%% toc
 %%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
@@ -38,8 +38,8 @@
 
 %%%% sectoc
 %%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
-%	\toggletrue{sectoc}
-\togglefalse{sectoc}
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
 
 %%%% gliederung
 %%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
@@ -47,7 +47,7 @@
 \togglefalse{gliederung}
 
 
-\input{00-Organisatorisches-MyP-include}
+\input{01b-sprache-sprachwissenschaft-include}
 
 \input{gk-literatur}
 

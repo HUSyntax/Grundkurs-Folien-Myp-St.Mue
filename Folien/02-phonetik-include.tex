@@ -82,14 +82,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phonetik}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -108,12 +100,12 @@
 
 %% MyP: Contents
 \iftoggle{sectoc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
 %% StM: Contents
@@ -369,15 +361,19 @@ Wie viele Laute haben die folgenden Wörter?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bereiche der Phonetik}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
+%% StM: Contents
+\iftoggle{gliederung}{
 \outline{
 
 \begin{itemize}
@@ -397,6 +393,7 @@ Wie viele Laute haben die folgenden Wörter?
 \item Übungen
   
   \end{itemize}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -470,15 +467,19 @@ Wie viele Laute haben die folgenden Wörter?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Methodik}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
+%% StM: Contents
+\iftoggle{gliederung}{
 \outline{
 
 \begin{itemize}
@@ -498,6 +499,7 @@ Wie viele Laute haben die folgenden Wörter?
 \item Übungen
   
   \end{itemize}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -584,15 +586,19 @@ Wie viele Laute haben die folgenden Wörter?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Probleme der Phonetik}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
+%% StM: Contents
+\iftoggle{gliederung}{
 \outline{
 
 \begin{itemize}
@@ -612,6 +618,7 @@ Wie viele Laute haben die folgenden Wörter?
 \item Übungen
   
   \end{itemize}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -671,14 +678,20 @@ Wie viele Laute haben die folgenden Wörter?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{IPA-Alphabet}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
-}
+
+%%StM: Contents
+\iftoggle{gliederung}{
+
 \outline{
 
 \begin{itemize}
@@ -698,6 +711,7 @@ Wie viele Laute haben die folgenden Wörter?
 \item Übungen
   
   \end{itemize}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1050,14 +1064,19 @@ Die rot-markierten Zeichen werden Sie häufiger in diesem und in zukünftigen Se
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Artikulatorische Phonetik}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
-}
+
+%% StM: Contents
+\iftoggle{gliederung}{
 \outline{
 
 \begin{itemize}
@@ -1079,6 +1098,7 @@ Die rot-markierten Zeichen werden Sie häufiger in diesem und in zukünftigen Se
 \item Übungen
   
   \end{itemize}
+}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1124,13 +1144,14 @@ Mehrere Körperteile sind für Erzeugung von Schall nötig:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Konsonanten}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1187,13 +1208,14 @@ Mehrere Körperteile sind für Erzeugung von Schall nötig:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Konsonantenklassifikation}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1654,14 +1676,16 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 
 \subsubsection{Vokale}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
-}
+
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Vokale}
@@ -1682,13 +1706,14 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Vokalklassifikation}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1864,13 +1889,14 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Vokalviereck}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1957,13 +1983,14 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Monophthong, Diphthong, Triphthong}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2024,7 +2051,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 			\ea Im Bayrischen: \textipa{[ \t{ɪa} , \t{ʊa} ]} oder \textipa{[ \textsubarch{I}a , {\textsubarch{U}}a ]} (in \ab{liap} und \ab{guat})
 			\z
 			
-			\ea In Fremdwörtern: \ab{Span\textit{ie}n}, \ab{Rit\textit{ua}l}, \ab{Stud\textit{iu}m}, \ab{Ling\textit{ui}stik}
+			\ea In Fremdwörtern: \ab{Span\textbf{ie}n}, \ab{Rit\textbf{ua}l}, \ab{Stud\textbf{iu}m}, \ab{Ling\textbf{ui}stik}
 			\z
 			
 			\item fallend vs. steigend \ras akustisch-auditive Perspektive
@@ -2092,35 +2119,40 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Übungen}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
-}
-%% \outline{
 
-%% \begin{itemize}
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 
-%% \item Einführung
-%% \item Bereiche der Phonetik
-%% \item  Methodik
-%% \item  Probleme der Phonetik
-%% \item  IPA-Alphabet
-%% \item Artikulatorische Phonetik
-%% %% Konsonanten
-%% %% Konsonantenklassi kation
-%% %% Vokale
-%% %% Vokalklassi kation
-%% %% Vokalviereck
-%% %% Monophthong, Diphthong, Triphthong
-%% \item Übungen
+%% StM: Contents
+\iftoggle{gliederung}{
+ \outline{
+
+ \begin{itemize}
+
+ \item Einführung
+ \item Bereiche der Phonetik
+ \item  Methodik
+ \item  Probleme der Phonetik
+ \item  IPA-Alphabet
+ \item Artikulatorische Phonetik
+ %% Konsonanten
+ %% Konsonantenklassi kation
+ %% Vokale
+ %% Vokalklassifikation
+ %% Vokalviereck
+ %% Monophthong, Diphthong, Triphthong
+ \item \blaubf{Übungen}
   
-%%   \end{itemize}
-%% }
-
+   \end{itemize}
+ }
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{uebung}{
@@ -2285,17 +2317,8 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hausaufgabe}
-%\iftoggle{toc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2304,20 +2327,8 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 \begin{frame}
 \frametitle{Hausaufgabe}
 
-\end{frame}
-
-} 
-%% END true = Q
-%% BEGIN false = Q + A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe}
-
-HIER DIE LÖSUNG
-
-\begin{enumerate}
-	\item Transkribieren Sie folgende Wörter des Deutschen mit dem IPA.
+	Transkribieren Sie folgende Wörter des Deutschen mit dem IPA.
+\scriptsize{
 	
 	\ea arbeiten
 	\ex Giebel
@@ -2326,9 +2337,14 @@ HIER DIE LÖSUNG
 	\ex Enge
 	\ex Dampfschiff
 	\z 
+}	
+\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\item Schreiben Sie für folgenden Lautbeschreibungen das passende IPA-Symbol auf.
+\begin{frame}
 
+	Schreiben Sie für folgenden Lautbeschreibungen das passende IPA-Symbol auf.
+	
 	\ea bilabialer stimmloser Plosiv
 	\ex hoher vorderer ungerundeter gespannter Vokal
 	\ex velarer dorsaler stimmloser Frikativ
@@ -2340,34 +2356,79 @@ HIER DIE LÖSUNG
 	\ex  alveolare koronale stimmlosere Affrikate
 	\ex  mittlerer zentraler ungerundeter Vokal
 	\z 
-\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{\textipa{[ S l U s ]}}
+
+\begin{itemize}
+	\item \textbf{VIDEO:} \href{run:material/04vocalcordssinging.mp4}{Vocal Cords}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+} 
+%% END true = Q
+%% BEGIN false = Q + A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Lösung der Hausaufgabe}
+
+HIER DIE LÖSUNG
+
+	Transkribieren Sie folgende Wörter des Deutschen mit dem IPA.
+
+	\ea arbeiten
+	\ex Giebel
+	\ex sagen
+	\ex fröhlich
+	\ex Enge
+	\ex Dampfschiff
+	\z 
+
+\end{frame}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+	Schreiben Sie für folgenden Lautbeschreibungen das passende IPA-Symbol auf.
+	
+	\ea bilabialer stimmloser Plosiv
+	\ex hoher vorderer ungerundeter gespannter Vokal
+	\ex velarer dorsaler stimmloser Frikativ
+	\ex  glottaler stimmloser Plosiv
+	\ex  halbhoher fast vorderer ungerundeter ungespannter Vokal
+	\ex  postalveolarer stimmhafter Frikativ
+	\ex  halbtiefer zentraler ungerundeter ungespannter Vokal
+	\ex  obermittelhoher hinterer gerundeter gespannter Vokal
+	\ex  alveolare koronale stimmlosere Affrikate
+	\ex  mittlerer zentraler ungerundeter Vokal
+	\z 
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{\textipa{[ S l U s ]}}
+
+\begin{itemize}
+	\item \textbf{VIDEO:} \href{run:material/04vocalcordssinging.mp4}{Vocal Cords}
+\end{itemize}
+
 \end{frame}
 
 }%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{\textipa{[ S l U s ]}}
 
-	\begin{itemize}
-		\item \textbf{VIDEO:} \href{run:material/04vocalcordssinging.mp4}{Vocal Cords}
-	\end{itemize}
-	
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Abbildungen}
-%\iftoggle{toc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[allowframebreaks]{Abbildungen}
@@ -2389,14 +2450,7 @@ HIER DIE LÖSUNG
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Elektronische Quellen}
-%\iftoggle{toc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[allowframebreaks]{Elektronische Quellen}

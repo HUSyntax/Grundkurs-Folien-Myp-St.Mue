@@ -21,18 +21,31 @@
 	
 	\input{localcommands}
 
-%%%%Nur Fragen:
-%\toggletrue{uebung}
-%%%%Fragen+Antworten:
-%\togglefalse{uebung}
-%%%%%%%%%%%%%%%%%%
-%%%%Nur Aufgaben:
-%\toggletrue{ha}
-%%%%Aufgaben+Lösung:
-%\togglefalse{ha}
-%%%%%%%%%%%%%%%%%%
-%\togglefalse{toc}
+%%%% uebung
+%%%% true: nur Fragen / false: Fragen & Lösungen
+\toggletrue{uebung}
+%	\togglefalse{uebung}
+
+%%%% hausaufgabe
+%%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
+\toggletrue{hausaufgabe}
+%	\togglefalse{hausaufgabe}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
 \toggletrue{toc}
+%	\togglefalse{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
+%	\toggletrue{gliederung}
+\togglefalse{gliederung}
+
 
 \input{01a-sprache-sprachwissenschaft-include}
 

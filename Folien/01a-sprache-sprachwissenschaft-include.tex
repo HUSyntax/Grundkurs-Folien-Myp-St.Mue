@@ -42,10 +42,10 @@
 
 \iftoggle{toc}{
 \frame{
-\begin{multicols}{2}
-	\frametitle{Inhaltsverzeichnis}\tableofcontents
-	%[pausesections]
-\end{multicols}
+%\begin{multicols}{2}
+	\frametitle{Inhaltsverzeichnis}
+	\tableofcontents
+%\end{multicols}
 	}
 	}
 
@@ -110,14 +110,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sprache \& Sprachwissenschaft I}
-%\iftoggle{toc}{
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -133,13 +126,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \subsection{Ziel des Kurses}
-
-\iftoggle{toc}{
+%% MyP: Contents
+\iftoggle{sectoc}{
 \frame{
-\begin{multicols}{2}
-	\tableofcontents%[currentsection]
-\end{multicols}
+%\begin{multicols}{2}
+\frametitle{~}
+\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%\end{multicols}
 }
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item \blaubf{Ziel des Kurses}
+			\item Sprache und natürliche Sprache
+			\item Zeichensysteme
+			\item Merkmale natürlicher Sprachen
+			%% Bidirektionalität
+			%% Situationelle Ungebundenheit
+			%% Rückkopplung
+			%% Diskretheit
+			%% Produktivität
+			%% Arbitrarität
+			%% Fazit
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -159,21 +175,39 @@
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Begleitlektüre}
-	\begin{itemize}
-	\item AM S.~2--6
-	\item \citet{Luedeling2009a}: Kapitel 1 (S.~8--17) \& 3 (S.~28--41)
-	\end{itemize}
-\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Sprache und natürliche Sprache}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-	\tableofcontents%[currentsection]
-\end{multicols}
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Ziel des Kurses
+			\item \blaubf{Sprache und natürliche Sprache}
+			\item Zeichensysteme
+			\item Merkmale natürlicher Sprachen
+			%% Bidirektionalität
+			%% Situationelle Ungebundenheit
+			%% Rückkopplung
+			%% Diskretheit
+			%% Produktivität
+			%% Arbitrarität
+			%% Fazit
+			
+		\end{itemize}
+	}
 }
 
 \begin{frame}{Sprache und natürliche Sprache}
@@ -221,7 +255,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sprache: weite Definition (2)}
+\frametitle{Sprache: weite Definition II}
 		
 \begin{itemize}
 	\item<1-> Weit gefasste Definition von Sprache $\rightarrow$ alle vier Punkte (von einem \textbf{Universal}wörterbuch erwartbar).
@@ -251,7 +285,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Sprache: enge Definition (2)}
+\frametitle{Sprache: enge Definition II}
 
 \begin{itemize}
 	\item<1-> Demnach: Sprache (in erster Linie) als \textbf{Kommunikationsmittel} zum Austausch von Informationen
@@ -274,13 +308,36 @@
 %
 \subsection{Zeichensysteme}
 
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents%[currentsection]
-\end{multicols}
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Ziel des Kurses
+			\item Sprache und natürliche Sprache
+			\item \blaubf{Zeichensysteme}
+			\item Merkmale natürlicher Sprachen
+			%% Bidirektionalität
+			%% Situationelle Ungebundenheit
+			%% Rückkopplung
+			%% Diskretheit
+			%% Produktivität
+			%% Arbitrarität
+			%% Fazit
+			
+		\end{itemize}
+	}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -385,13 +442,36 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Merkmale natürlicher Sprachen}
 
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents%[currentsection]
-\end{multicols}
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Ziel des Kurses
+			\item Sprache und natürliche Sprache
+			\item Zeichensysteme
+			\item \blaubf{Merkmale natürlicher Sprachen}
+			%% Bidirektionalität
+			%% Situationelle Ungebundenheit
+			%% Rückkopplung
+			%% Diskretheit
+			%% Produktivität
+			%% Arbitrarität
+			%% Fazit
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -407,11 +487,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Bidirektionalität}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -439,11 +522,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Situationelle Ungebundenheit}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -470,11 +556,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Rückkopplung}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -496,11 +585,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Diskretheit}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -529,11 +621,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Produktivität}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -562,11 +657,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Arbitrarität}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -605,11 +703,14 @@ Imhoof, Markus. 2012: \emph{More than honey}, 13min 50sec
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Fazit}
-%\frame{
-%	\begin{multicols}{2}
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
 %		\frametitle{~}
-%		\tableofcontents%[currentsection]
-%	\end{multicols}
+%		\tableofcontents[currentsubsubsection]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Fazit}

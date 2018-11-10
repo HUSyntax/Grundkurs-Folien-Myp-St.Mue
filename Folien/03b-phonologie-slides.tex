@@ -19,25 +19,33 @@
 
 \begin{document}
 	
-	\input{localcommands}
+\input{localcommands}
 
-%%	 Nur Fragen bei Übungen
+
+%%%% uebung
+%%%% true: nur Fragen / false: Fragen & Lösungen
 %	\toggletrue{uebung}
+\togglefalse{uebung}
 
-%%	 Fragen & Antwort bei Übungen
-	\togglefalse{uebung}
+%%%% hausaufgabe
+%%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
+%	\toggletrue{hausaufgabe}
+\togglefalse{hausaufgabe}
 
-%%	 Nur Fragen bei Hausaufgaben
-	\toggletrue{hausaufgabe}
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
+\toggletrue{toc}
+%	\togglefalse{toc}
 
-%%	 Fragen & Antwort bei Hausaufgaben
-%	\togglefalse{hausaufgabe}	
+%%%% sectoc
+%%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
 
-	
-	%\togglefalse{loesung}
-	%\toggletrue{ha-loesung}
-	%\togglefalse{toc}
-	\toggletrue{toc}
+%%%% gliederung
+%%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
+%	\toggletrue{gliederung}
+\togglefalse{gliederung}
 
 
 \input{03b-phonologie-include}

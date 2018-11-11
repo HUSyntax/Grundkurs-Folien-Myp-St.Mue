@@ -123,7 +123,9 @@
 		
 		\item hierarchische Strukturierung
 		
-		\item Vorteil: Beschreibung von \textbf{Merkmalsausbreitung} und \textbf{segmentunabhängigen Prozessen}
+		\item Vorteil: 
+		
+		Beschreibung von \textbf{Merkmalsausbreitung} und \textbf{segmentunabhängigen Prozessen}
 		
 	\end{itemize}
 \end{itemize}
@@ -131,18 +133,16 @@
 \end{frame}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{CV-Modell}
+\subsubsection{CV-Modell}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
 %}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink]
+
+\begin{frame}%[shrink]
 \frametitle{CV-Modell (einfaches Modell)}
 
 \begin{itemize}
@@ -153,36 +153,38 @@
 \item Charakterisierung der Silbenstruktur durch C und V 
 \end{itemize}
 
-
+\begin{columns}
+	
+\column[c]{.45\textwidth}
 \begin{figure}
-\centering
-\begin{forest}
-	MyP edges,
-	[$\sigma$
-	[C [\textipa{b}]]
-	[C [\textipa{l}]]
-	[V [\textipa{I}]]
-	[C [\textipa{n}]]
-	[C [\textipa{t}]]
-	]
-\end{forest}
-\caption{CV-Modell}
+	\centering
+	\begin{forest}
+		MyP edges,
+		[$\sigma$
+		[C [\textipa{b}]]
+		[C [\textipa{l}]]
+		[V [\textipa{I}]]
+		[C [\textipa{n}]]
+		[C [\textipa{t}]]
+		]
+	\end{forest}
+	\caption{CV-Modell}
 \end{figure}
 
 
-\begin{itemize}
-\item $\sigma :=$ Silbe
-\item C $:=$ nicht-silbisch, \gqq{konsonantisch}
-\item V $:=$ silbisch, \gqq{vokalisch}
-\end{itemize}
-% V bildet den Silbengipfel
+\column[c]{.5\textwidth}
+$\sigma :=$ Silbe
+
+C $:=$ nicht-silbisch, \gqq{konsonantisch}
+
+V $:=$ silbisch, \gqq{vokalisch}
+
+\end{columns}
 
 \end{frame}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Verteilung von Segmenten in der Silbe}
 
@@ -191,13 +193,13 @@
 \end{itemize}
 
 \begin{minipage}{.59\textwidth}
-\begin{itemize}
-\item C $\neq$ Konsonant, sondern \textbf{nicht-silbisch}
-\item[]
-\item V $\neq$ Vokal, sondern \textbf{silbisch}
-\item[]
-\item Jede Silbe enthält einen \textbf{Kern} (V)
-\end{itemize}
+	\begin{itemize}
+	\item C $\neq$ Konsonant, sondern \textbf{nicht-silbisch}
+	
+	\item V $\neq$ Vokal, sondern \textbf{silbisch}
+	
+	\item Jede Silbe enthält \textbf{einen} \textbf{Kern} (V)
+	\end{itemize}
 \end{minipage}
 %
 \begin{minipage}{.4\textwidth}
@@ -241,59 +243,54 @@
 % als zwei Zeiteinheiten, bei langen Vokalen wird auch auf zwei geteilt. Der Doppelpunkt ist dann
 % ein C
 
-% Bei Beirisch guot geht der SOnoritätsgipfel aufs o und dann ist das o V und davor ein C
+% Bei Beirisch guot geht der Sonoritätsgipfel aufs o und dann ist das o V und davor ein C
 
 \end{frame}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Verteilung von Segmenten in der Silbe}
 
-%% \begin{itemize}
-%% 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
-%% \end{itemize}
 
 \begin{minipage}{.59\textwidth}
-\begin{itemize}
-\item \textbf{Maximale Anzahl an Cs} vor und nach V
-
-% Aber strumpfst. Es kommt ein weiteres verbessertes Modell
-\item[]
-\item Korrelation zwischen Anzahl an Cs nach V und der \textbf{Länge}/(Un-)Gespanntheit des Vokals
-\end{itemize}
+	\begin{itemize}
+	\item \textbf{Maximale Anzahl an Cs} vor und nach V
+	
+	% Aber strumpfst. Es kommt ein weiteres verbessertes Modell
+	
+	\item Korrelation zwischen Anzahl an Cs nach V und der \textbf{Länge}/(Un-)Gespanntheit des Vokals
+	\end{itemize}
 \end{minipage}
 %
 \begin{minipage}{.4\textwidth}
 
 \begin{figure}
-%\tiny
-\small
-\centering
-\begin{forest}
-MyP edges,
-[$\sigma$
-[C [\textipa{g}]]
-[C [\textipa{l}]]
-[V [\textipa{a}]]	
-[C [\textipa{U}]]
-[C [\textipa{p}]]
-[C [\textipa{t}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[$\sigma$
-[C [\textipa{k}]]
-[C [\textipa{\textscr }]]
-[V [\textipa{a}]]
-[C [\textipa{N}]]
-[C [\textipa{k}]]	
-]
-\end{forest}
+	%\tiny
+	\small
+	\centering
+	\begin{forest}
+	MyP edges,
+	[$\sigma$
+	[C [\textipa{g}]]
+	[C [\textipa{l}]]
+	[V [\textipa{a}]]	
+	[C [\textipa{U}]]
+	[C [\textipa{p}]]
+	[C [\textipa{t}]]
+	]
+	\end{forest}
+	
+	\begin{forest}
+	MyP edges,
+	[$\sigma$
+	[C [\textipa{k}]]
+	[C [\textipa{\textscr }]]
+	[V [\textipa{a}]]
+	[C [\textipa{N}]]
+	[C [\textipa{k}]]	
+	]
+	\end{forest}
 
 \end{figure}
 
@@ -307,79 +304,92 @@ MyP edges,
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Verteilung von Segmenten in der Silbe}
 
 
-%% \begin{itemize}
-%% 	\item Wie ist die Verteilung von Segmenten in der Silbe (im Deutschen)?
-%% \end{itemize}
+\begin{columns}
 
-\begin{minipage}{.59\textwidth}
-\begin{itemize}
-\item Diphthonge \ras VC (bzw. CV \textipa{[g\textsubarch{U}Ot]})
-\item[]
-\item Lange Vokale \ras VC
-\item[]
-\item Affrikate \ras C
-\item[]
-\item Silbische Konsonanten \ras V
-\end{itemize}
+\column[t]{.49\textwidth}	
+	\begin{itemize}
+		\item Diphthonge: \textbf{VC} (bzw. CV \textipa{[g\textsubarch{U}Ot]})
+	
+		\item Lange Vokale: \textbf{VC}
+	\end{itemize}
+
+\column[t]{.49\textwidth}
+	\begin{itemize}
+		\item Affrikate: \textbf{C}
+	
+		\item Silbische Konsonanten: \textbf{V}
+	\end{itemize}
+\end{columns}
+
+
+\begin{minipage}{.49\textwidth}
+
+	\begin{figure}
+%	\tiny
+%	\scriptsize
+	\small
+	\centering
+	\begin{forest}
+		MyP edges,
+		[$\sigma$
+		[C [\textipa{g}]]
+		[C [\textipa{l}]]
+		[V [\alertred{\textipa{a}}]]	
+		[C [\alertred{\textipa{U}}]]
+		[C [\textipa{p}]]
+		[C [\textipa{t}]]
+		]
+	\end{forest}
+	
+	\begin{forest}
+		MyP edges,
+		[$\sigma$
+		[C [\textipa{k}]]
+		[V [\alertred{\textipa{a}}]]
+		[C [\alertred{\textipa{:}}]]	
+		[C [\textipa{l}]]
+		]
+	\end{forest}
+	\end{figure}	
+
 \end{minipage}
 %
-\begin{minipage}{.4\textwidth}
+\begin{minipage}{.49\textwidth}
 
-\begin{figure}
-\tiny
-%\scriptsize
-\centering
-\begin{forest}
-MyP edges,
-[$\sigma$
-[C [\textipa{g}]]
-[C [\textipa{l}]]
-[V [\textipa{a}]]	
-[C [\textipa{U}]]
-[C [\textipa{p}]]
-[C [\textipa{t}]]
-]
-\end{forest}
+	\begin{figure}
+%	\tiny
+%	\scriptsize
+	\small
+	\centering
 
-\begin{forest}
-MyP edges,
-[$\sigma$
-[C [\textipa{k}]]
-[V [\textipa{a}]]
-[C [\textipa{:}]]	
-[C [\textipa{l}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[$\sigma$
-[C [\textipa{k}]]
-[V [\textipa{O}]]
-[C [\textipa{\t{pf}}]]	
-[C [\textipa{s}]]
-]
-\end{forest}
-
-\begin{forest}
-MyP edges,
-[,phantom
-[$\sigma$
-[C [\textipa{k}]]
-[V [\textipa{U}]]
-[C [\textipa{m}]]	
-]
-[$\sigma$
-[C [\textipa{p}]]
-[V [\textipa{\textsyllabic{l}}]]
-]
-]
-\end{forest}
+	\begin{forest}
+	MyP edges,
+	[$\sigma$
+	[C [\textipa{k}]]
+	[V [\textipa{O}]]
+	[C [\alertred{\textipa{\t{pf}}}]]	
+	[C [\textipa{s}]]
+	]
+	\end{forest}
+	
+	\begin{forest}
+	MyP edges,
+	[,phantom
+	[$\sigma$
+	[C [\textipa{k}]]
+	[V [\textipa{U}]]
+	[C [\textipa{m}]]	
+	]
+	[$\sigma$
+	[C [\textipa{p}]]
+	[V [\alertred{\textipa{\textsyllabic{l}}}]]
+	]
+	]
+	\end{forest}
 
 \end{figure}
 
@@ -391,7 +401,7 @@ MyP edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsubsection{Konstituentenmodell}
+\subsubsection{Konstituentenmodell}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}

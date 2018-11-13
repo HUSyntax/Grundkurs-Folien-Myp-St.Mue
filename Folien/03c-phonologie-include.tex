@@ -44,11 +44,11 @@
 \huberlintitlepage[22pt]
 \iftoggle{toc}{
 \frame{
-\begin{multicols}{2}
+%\begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}
 	\tableofcontents
 	%[pausesections]
-\end{multicols}
+%\end{multicols}
 }
 }
 
@@ -93,12 +93,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Silbenmodelle}
-\iftoggle{toc}{
+
+%% MyP: Contents
+\iftoggle{sectoc}{
 	\frame{
+		%\begin{multicols}{2}
 		\frametitle{~}
-		\begin{multicols}{2}
-			\tableofcontents[currentsection]
-		\end{multicols}	
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item \blaubf{Silbenmodelle}
+			%% CV-Modell
+			%% Konstituentenmodell
+			\item Silbengelenk
+			\item Silbifizierung
+			\item Exkurs: Akzent
+			\item Hausaufgabe
+			
+		\end{itemize}
 	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,7 +168,7 @@
 \begin{itemize}
 \item Silben und Segmente auf unterschiedlichen Schichten
 
-\item Verbunden durch Assoziationslinien
+\item verbunden durch Assoziationslinien
 
 \item Charakterisierung der Silbenstruktur durch C und V 
 \end{itemize}
@@ -198,7 +218,7 @@ V $:=$ silbisch, \gqq{vokalisch}
 	
 	\item V $\neq$ Vokal, sondern \alertblue{silbisch}
 	
-	\item Jede Silbe enthält \alertgreen{einen Kern} (V)
+	\item Jede Silbe enthält \alertgreen{einen Kern} (V).
 	\end{itemize}
 \end{minipage}
 %
@@ -255,7 +275,7 @@ V $:=$ silbisch, \gqq{vokalisch}
 
 \begin{minipage}{.59\textwidth}
 	\begin{itemize}
-	\item \textbf{Maximale Anzahl an Cs} vor und nach V
+	\item \textbf{maximale Anzahl an Cs} vor und nach V
 	
 	% Aber strumpfst. Es kommt ein weiteres verbessertes Modell
 	
@@ -314,14 +334,14 @@ V $:=$ silbisch, \gqq{vokalisch}
 	\begin{itemize}
 		\item Diphthonge: \textbf{VC} (bzw. CV \textipa{[g\textsubarch{U}Ot]})
 	
-		\item Lange Vokale: \textbf{VC}
+		\item lange Vokale: \textbf{VC}
 	\end{itemize}
 
 \column[t]{.49\textwidth}
 	\begin{itemize}
 		\item Affrikate: \textbf{C}
 	
-		\item Silbische Konsonanten: \textbf{V}
+		\item silbische Konsonanten: \textbf{V}
 	\end{itemize}
 \end{columns}
 
@@ -461,10 +481,10 @@ V $:=$ silbisch, \gqq{vokalisch}
 		\item Evidenz aus Versprecherforschung
 		
 		\ea
-		\textipa{\alertred{k}Il\c{c}.\alertblue{m}a\.f@} vs. \textipa{\alertblue{m}Il\c{c}.\alertred{k}a\.f@} (nicht \textipa{\textbf{k}al\c{c}.\textbf{m}I\.f@})
+		\textipa{\alertred{k}Il\c{c}.\alertblue{m}a\.fe:} vs. \textipa{\alertblue{m}Il\c{c}.\alertred{k}a\.fe:} (nicht \textipa{k\textbf{a}l\c{c}.m\textbf{I}\.fe:})
 		\z
-		% Versprecher: Kilchmafe für   Milchkafe
-		% Aber keinen Versprecher * Kalchmife
+		% Versprecher: Kilchmafee für   Milchkafee
+		% Aber keinen Versprecher * Kalchmifee
 	\end{itemize}	
 
 \pause 
@@ -479,7 +499,7 @@ V $:=$ silbisch, \gqq{vokalisch}
 		% sagst -> sakst, d.h. g ist in der Koda
 		
 		\item Gedichte
-		\item Typischerweise VCC (auch als VVC kodiert)
+		\item typischerweise VCC (auch als VVC kodiert)
 	\end{itemize}
 
 \end{itemize}
@@ -600,7 +620,7 @@ V $:=$ silbisch, \gqq{vokalisch}
 \item \textbf{Onset} und \textbf{Koda}:
 
 \begin{itemize}
-\item Pro C ein X
+\item pro C ein X
 \item<2-> Achtung: \alertred{Affrikate} \ras 1 X (eine Zeiteinheit!)
 \item<3-> Ausnahme: \alertblue{Silbengelenk} (s.u.)
 
@@ -698,14 +718,14 @@ V $:=$ silbisch, \gqq{vokalisch}
 \begin{block}{Lange Vokale}
 Nach einem langen Vokal oder einem Diphthong steht in monomorphemischen Silben \textbf{kein Konsonantencluster}. 
 
-Es gibt wenige Ausnahmen: \emph{Mo\textbf{nd}}, \emph{O\textbf{bst}}
+Es gibt wenige Ausnahmen: \emph{Mo\textbf{nd}}, \emph{O\textbf{bst}}.
 \end{block}
 
 
 \column[t]{.5\textwidth}
 \begin{block}{Kurze Vokale}
-In betonten Silben folgt auf ungespannten (kurzen) Vokal \textbf{meistens ein Konsonant}.
-%@EE: Ausnahmen finden
+In betonten Silben folgt auf ungespannten (kurzen) Vokal \textbf{meistens ein Konsonant}.\par
+Ausnahmen in Fremdwörtern: \emph{\textbf{a}.sozial}
 \end{block}	
 
 \end{columns}
@@ -780,13 +800,33 @@ In betonten Silben folgt auf ungespannten (kurzen) Vokal \textbf{meistens ein Ko
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Silbengelenk}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-\tableofcontents[currentsection]
-\end{multicols}	
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Silbenmodelle
+			%% CV-Modell
+			%% Konstituentenmodell
+			\item \blaubf{Silbengelenk}
+			\item Silbifizierung
+			\item Exkurs: Akzent
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -936,13 +976,15 @@ In betonten Silben folgt auf ungespannten (kurzen) Vokal \textbf{meistens ein Ko
 \iftoggle{uebung}{
 
 %\subsection{Übung}
-%\iftoggle{toc}{
-%\frame{
-%\frametitle{~}
-%\begin{multicols}{2}
-%	\tableofcontents[currentsection]
-%\end{multicols}	
-%}
+%
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
 %}
 
 
@@ -950,7 +992,7 @@ In betonten Silben folgt auf ungespannten (kurzen) Vokal \textbf{meistens ein Ko
 \begin{frame}
 \frametitle{Übung}
 
-Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbenstruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
+Geben Sie eine \textbf{phonetische Tranksription} der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die \textbf{Silbenstruktur} nach dem Konstituentenmodell und mit der \textbf{Skelettschicht}, und geben Sie die \textbf{Sonoritätsprofile} an.
 
 \begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
 Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
@@ -1093,10 +1135,10 @@ Geben Sie eine \textbf{phonetische Tranksription} der folgenden Wörter nach der
 \node at (-2,6) {Vok.};
 \draw[black] (0,2) -- (1,1) -- (2,5) -- (3,6) -- (4,2) -- (5,6) -- (6,3);
 \node at (0,-1) {\textipa{S}};
-\node at (1,-1) {\textipa{p}};
+\node at (1,-1.08) {\textipa{p}};
 \node at (2,-1) {\textipa{\textscr}};
 \node at (3,-1) {\textipa{E}};
-\node at (4,-1) {\textipa{\c{c}}};
+\node at (4,-1.08) {\textipa{\c{c}}};
 \node at (5,-1) {\textipa{@}};
 \node at (6,-1) {\textipa{n}};
 \fill (0,2) circle [radius=3pt];
@@ -1129,10 +1171,10 @@ Geben Sie eine \textbf{phonetische Tranksription} der folgenden Wörter nach der
 \node at (-2,6) {Vok.};
 \draw[black] (0,1) -- (1,6) -- (2,1) -- (3,2) -- (4,1);
 \node at (0,-1) {\textipa{P}};
-\node at (1,-1) {\textipa{o:}};
-\node at (2,-1) {\textipa{p}};
-\node at (3,-1) {\textipa{s}};
-\node at (4,-1) {\textipa{t}};
+\node at (1,-1.08) {\textipa{o:}};
+\node at (2,-1.15) {\textipa{p}};
+\node at (3,-1.08) {\textipa{s}};
+\node at (4,-1.03) {\textipa{t}};
 \fill (0,1) circle [radius=3pt];
 \fill (1,6) circle [radius=3pt];
 \fill (2,1) circle [radius=3pt];
@@ -1161,7 +1203,7 @@ Geben Sie eine \textbf{phonetische Tranksription} der folgenden Wörter nach der
 ]
 [K
 [x[\textipa{n}]]
-[x[\textipa{t.}]]
+[x[\textipa{t}]]
 ]
 ]  
 ]
@@ -1260,14 +1302,14 @@ MyP edges, [, phantom
 \node at (-2,6) {Vok.};
 \draw[black] (0,1) -- (1,5) -- (2,6) -- (3,3) -- (4,1);
 \draw[black] (5,2) -- (6,6) -- (7,2);
-\node at (0,-1) {\textipa{b}};
+\node at (0,-0.9) {\textipa{b}};
 \node at (1,-1) {\textipa{\textscr}};
 \node at (2,-1) {\textipa{a}};
 \node at (3,-1) {\textipa{n}};
-\node at (4,-1) {\textipa{t}};
+\node at (4,-0.95) {\textipa{t}};
 \node at (5,-1) {\textipa{S}};
 \node at (6,-1) {\textipa{U}};
-\node at (7,-1) {\textipa{\t{ts}}};
+\node at (7,-0.9) {\textipa{\t{ts}}};
 \fill (0,1) circle [radius=3pt];
 \fill (1,5) circle [radius=3pt];
 \fill (2,6) circle [radius=3pt];
@@ -1313,18 +1355,18 @@ MyP edges, [, phantom
 \fill (10,4) circle [radius=3pt];
 \fill (11,1) circle [radius=3pt];
 \fill (12,6) circle [radius=3pt];
-\node at (0,-1){\textipa{P}};
+\node at (0,-0.91){\textipa{P}};
 \node at (1,-1){\textipa{a}};
-\node at (2,-1){\textipa{p}};
+\node at (2,-1.09){\textipa{p}};
 \node at (3,-1){\textipa{S}};
-\node at (4,-1){\textipa{t}};
+\node at (4,-0.95){\textipa{t}};
 \node at (5,-1){\textipa{a}};
 \node at (6,-1){\textipa{n}};
-\node at (7,-1){\textipa{\t{ts}}};
-\node at (8,-1){\textipa{h}};
+\node at (7,-0.91){\textipa{\t{ts}}};
+\node at (8,-0.91){\textipa{h}};
 \node at (9,-1){\textipa{a}};
-\node at (10,-1){\textipa{l}};
-\node at (11,-1){\textipa{t}};
+\node at (10,-0.91){\textipa{l}};
+\node at (11,-0.95){\textipa{t}};
 \node at (12,-1){\textipa{\textturna}};
 \end{tikzpicture}}
 \end{figure}
@@ -1333,21 +1375,40 @@ MyP edges, [, phantom
 
 \end{frame}
 
-}
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Silbifizierung}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-\tableofcontents[currentsection]
-\end{multicols}	
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Silbenmodelle
+			%% CV-Modell
+			%% Konstituentenmodell
+			\item Silbengelenk
+			\item \blaubf{Silbifizierung}
+			\item Exkurs: Akzent
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1418,17 +1479,20 @@ kind\#lich: \textipa{[kInt.lI\c{c}]}
 
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Übung}
-%\iftoggle{toc}{
-%\frame{
-%\frametitle{~}
-%\begin{multicols}{2}
-%	\tableofcontents[currentsection]
-%\end{multicols}	
-%}
+%
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1436,28 +1500,13 @@ kind\#lich: \textipa{[kInt.lI\c{c}]}
 \frametitle{Übung}
 
 \begin{itemize}
-\item Was bedeutet die Annahme des Sonoritätsprinzips und der Onset-Maximierung für die folgenden Beispielwörter:
-
-\ea
-Fabrik, Imker, neblig, Falter, regnen
-\z
-\end{itemize}	
-\pause
-
-%\iftoggle{loesung}{
-\begin{itemize}
-\item[] \textcolor{red}{\textipa{[fa:.b\textscr Ik]}, \textipa{[PIm.k5]},
-\textipa{[ne:.blI\c{c}]}, \textipa{[fal.t5]}, \textipa{[\textscr e:.gn@n]}} 
-\item [] \textcolor{red}{Koda: *Obstruent vor Sonorant} 
-\item [] \textcolor{red}{Onset: *Sonorant vor Obstruent}
-
-\item Onset-Maximierung ist nicht strikt. Alternativ ginge auch \textipa{[ne:p.lI\c{c}]}, \textipa{[\textscr e:k.n@n]}.
-
-\end{itemize}
-%}
-
-\begin{itemize}
-\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
+	\item Was bedeutet die Annahme des Sonoritätsprinzips und der Onset-Maximierung für die folgenden Beispielwörter:
+	
+	\ea
+	Fabrik, Imker, neblig, Falter, regnen
+	\z
+	
+	\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
 \end{itemize}
 
 \begin{minipage}{.3\textwidth}
@@ -1468,21 +1517,116 @@ Fabrik, Imker, neblig, Falter, regnen
 \ex \textipa{[PEp.b@]}
 \zl
 \end{minipage}
-\pause
-\begin{minipage}{.6\textwidth}
-\pause	
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung}
+
 \begin{itemize}
-\item[] \textcolor{red}{\ras Kurzvokal} Lösung \zb Silbengelenk \textipa{[PE\textsubdot{b}@]}
-\item[] \textcolor{red}{\ras Auslautverhärtung}
-\item[] \textcolor{red}{\ras Onset-Maximierung}
-\item[] \textcolor{red}{\ras keine Regelverletzung}
+	\item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
+	\begin{itemize}
+		\item Onsetmaximierungsprinzip
+		\item Sonoritätsprinzip
+	\end{itemize}
+	
+	\item Stellen Sie fest, ob alle Silben wohlgeformt sind.\\
+	Falls nicht, benennen Sie die Verletzungen
+	
+	\ea
+	\textipa{[o:tlIN5mSplag\textscr e:hOn]}
+	\z
+	
+	% Otlingamsplagrehon
+	\ea
+	Blumentopferde
+	\z
+	
 \end{itemize}
 
-\end{minipage}
+% blu.men.to.pfer.de
+
+%\ea
+%Urinstinkt
+%\z	
 
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+} 
+%% END true = Q
+%% BEGIN false = Q + A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Übung}
+%
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Übung}
+
+\begin{itemize}
+	\item Was bedeutet die Annahme des Sonoritätsprinzips und der Onset-Maximierung für die folgenden Beispielwörter:
+	
+
+	\ea Fabrik, Imker, neblig, Falter, regnen
+	\z
+
+\pause
+
+	\begin{itemize}
+	\item[] \textcolor{red}{\textipa{[fa:.b\textscr Ik]}, \pause
+		\textipa{[PIm.k5]}, \pause
+		\textipa{[ne:.blI\c{c}]}, \pause
+		\textipa{[fal.t5]}, \pause
+		\textipa{[\textscr e:.gn@n]}} \pause
+	\item [] \textcolor{red}{Koda: *Obstruent vor Sonorant} 
+	\item [] \textcolor{red}{Onset: *Sonorant vor Obstruent}
+	\end{itemize}
+	\pause
+	\item Onset-Maximierung ist nicht strikt. Alternativ ginge auch \textipa{[ne:p.lI\c{c}]}, \textipa{[\textscr e:k.n@n]}.
+	
+
+	\item Welche Prinzipien bzw. Regularitäten werden verletzt bei:
+
+%\begin{multicols}{2}
+\begin{columns}
+	\column{.25\textwidth}
+	\eal
+		\ex \textipa{[PE.b@]}
+		\ex \textipa{[PEb.@]}
+		\ex \textipa{[PEp.@]}
+		\ex \textipa{[PEp.b@]}
+	\zl
+
+\column{.65\textwidth}
+\pause
+
+\begin{itemize}
+	\item[] \textcolor{red}{\ras Kurzvokal} Lösung \zb Silbengelenk \textipa{[PE\.b@]}
+	\item[] \textcolor{red}{\ras Auslautverhärtung}
+	\item[] \textcolor{red}{\ras Onset-Maximierung}
+	\item[] \textcolor{red}{\ras keine Regelverletzung}
+\end{itemize}
+	
+%\end{multicols}
+\end{columns}
+\end{itemize}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1494,20 +1638,27 @@ Fabrik, Imker, neblig, Falter, regnen
 \begin{itemize}
 \item Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
 \begin{itemize}
-\item Onsetmaximierungsprinzip
-\item Sonoritätsprinzip
+	\item Onsetmaximierungsprinzip
+	\item Sonoritätsprinzip
 \end{itemize}
 
 \item Stellen Sie fest, ob alle Silben wohlgeformt sind.\\
 Falls nicht, benennen Sie die Verletzungen
 
-\ea\label{ex:Otling}
-\textipa{[o:tlIN5mSplag\textscr e:hOn]}
-\z
+\ea
+\textipa{[o:tlIN5mSplag\textscr e:hOn]}\\ \pause
+\alertred{zuerst Onset"=Maximierung: \textipa{o: . tlI . \ng {\textturna} . mSpla . g\textscr e: . hOn}\\
+dann Anwendung des Sonoritätsprinzips: \textipa{o: . tlI\. \ng \textturna mS . pla . g\textscr e: . hOn}}
+
 
 % Otlingamsplagrehon
-\ea\label{ex:Blumentopf}
-Blumentopferde
+
+\ex
+Blumentopferde\\ \pause
+\alertred{
+	zuerst Onset-Maximierung: \textipa{blu: . m@ . ntO . pfE . {\textscr}d@}\\
+dann Awendung des Sonoritätsprinzips: \textipa{blu: . m@n . tO . pfE{\textscr} . d@}
+}
 \z
 
 \end{itemize}
@@ -1521,42 +1672,43 @@ Blumentopferde
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-
-zu (\ref{ex:Otling}):
-
-zuerst Onset"=Maximierung: \textipa{o:.tlI.\ng \textturna. mSpla .g\textscr e: .hOn}\\
-dann Anwendung des Sonoritätsprinzips: \textipa{o:.tlI\ng \textturna mS .pla .g\textscr e: .hOn}
-
-zu (\ref{ex:Blumentopf}): 
-
-zuerst Onset-Maximierung: \textipa{blu: .m@ .ntO .pfE .{\textscr}d@}\\
-dann Awendung des Sonoritätsprinzip: \textipa{blu: .m@n .tO .pfE{\textscr} .d@}
-
-
-
-
-
-
-\end{frame}
-
-
-
 % ' Stahl , tische     Hauptbetonung auf Stahl, Nebenbetonung auf Tische
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exkurs: Akzent}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-\tableofcontents[currentsection]
-\end{multicols}	
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Silbenmodelle
+			%% CV-Modell
+			%% Konstituentenmodell
+			\item Silbengelenk
+			\item Silbifizierung
+			\item \blaubf{Exkurs: Akzent}
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1619,9 +1771,9 @@ Mutter, Männer, Autos, Hühner, Lehrer, Kinder, alle \ldots
 \eal 
 \ex \textipa{['f\textscr aU]}
 \ex \textipa{[mu.'zi:k]}
-\ex \textipa{[le:.b@n.d@]}
+\ex \textipa{['le:.b@n.d@]}
 \ex \textipa{[pa.pa.'g\t{aɪ}]}
-\ex \textipa{[f\t{ɛɐ}.'Pa5.b\t{aɪ}.t@n]}
+\ex \textipa{[f\t{ɛɐ}.'Pa\textscr .b\t{aɪ}.t@n]}
 \zl
 
 \end{minipage}
@@ -1718,45 +1870,67 @@ Tonhöhenverlauf (\gqq{Melodie}) einer Äußerung
 
 Ambige ($\approx$ mehrdeutige) Sätze können mittels Intonation \gs{durch die sog. Hutkontur} \textbf{disambiguiert} werden: 
 
-\ea
-Alle Studenten haben die Klausur nicht bestanden.
-\z
-\eal
-\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
-\ex Für alle Studenten gilt, dass sie die Klausur nicht bestanden haben. \hfill $\lsem \forall \neg \rsem$
-\zl
+\begin{exe}
+\ex  \label{exe:nicht}Alle Studenten haben die Klausur nicht bestanden.
+
+	\begin{xlist}
+	\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
+	\ex Für alle Studenten gilt, dass sie die Klausur nicht bestanden haben. \hfill $\lsem \forall \neg \rsem$
+	\end{xlist}
+
 \pause 
 
-\ea
-/Alle Studenten haben die Klausur  nicht\textbackslash\ bestanden.
-\z
-\eal
-\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
-\zl
+\ex /ALle Studenten haben die Klausur  NICHT\textbackslash\ bestanden.
+\exr{exe:nicht}
+	\begin{xlist}
+	\ex Es ist nicht der Fall, dass alle Studenten die Klausur bestanden haben. \hfill $\lsem \neg \forall \rsem$
+	\end{xlist}
+\end{exe}
 
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \iftoggle{hausaufgabe}{
 
 \subsection{Hausaufgabe}
-%% \iftoggle{toc}{
-%% 	\frame{
-%% 		\frametitle{~}
-%% 		\begin{multicols}{2}
-%% 			\tableofcontents[currentsection]
-%% 		\end{multicols}	
-%% 	}
-%% }
 
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
+%}
+
+%%% StM: Contents
+%\iftoggle{gliederung}{
+%	
+%	\outline{
+%		\begin{itemize}
+%			
+%			\item Silbenmodelle
+%			%% CV-Modell
+%			%% Konstituentenmodell
+%			\item Silbengelenk
+%			\item Silbifizierung
+%			\item Exkurs: Akzent
+%			\item \blaubf{Hausaufgabe}
+%			
+%		\end{itemize}
+%	}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}%[allowframebreaks]
 \frametitle{Hausaufgabe}
 \begin{itemize}
 
-\item[1.] Geben Sie eine phonetische Tranksription der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die Silbenstruktur nach dem Konstituentenmodell und mit der Skelettschicht, und geben Sie die Sonoritätsprofile an.
+\item[1.] Geben Sie eine \textbf{phonetische Tranksription} der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die \textbf{Silbenstruktur} nach dem \textbf{Konstituentenmodell} und mit der \textbf{Skelettschicht}, und geben Sie die \textbf{Sonoritätsprofile} an.
 
 \eal\label{ex:HA1}
 \ex Stimmenfang \label{ex:HA1a}
@@ -1799,22 +1973,92 @@ Urinstinkt
 
 \end{frame}
 
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+} 
+%% END true = Q
+%% BEGIN false = Q + A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Hausaufgabe}
+
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}%[allowframebreaks]
+\frametitle{Hausaufgabe}
+\begin{itemize}
+	
+	\item[1.] Geben Sie eine \textbf{phonetische Tranksription} der folgenden Wörter nach der \gqq{Standardaussprache} an, zeichnen Sie dabei die \textbf{Silbenstruktur} nach dem \textbf{Konstituentenmodell} und mit der \textbf{Skelettschicht}, und geben Sie die \textbf{Sonoritätsprofile} an.
+	
+	\eal\label{ex:HA1}
+	\ex Stimmenfang \label{ex:HA1a}
+	\ex Mittagessen\label{ex:HA1b}
+	\ex Bierdeckel\label{ex:HA1c}
+	\zl
+\end{itemize}
+
+\begin{block}{Sonoritätshierarchie (Zur Erinnerung)}
+	Vokal $>$ \textipa{/\textscr /} $>$ \textipa{/l/} $>$ Nasal $>$ Frikativ $>$ Plosiv \\
+	$x > y :=$ $x$ ist sonorer als $y$
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\begin{itemize}
+\item[2.] Silbifizieren Sie folgende Segmentsequenzen in zwei Schritten
+\begin{itemize}
+	\item Onsetmaximierungsprinzip
+	\item Sonoritätsprinzip
+\end{itemize}
+
+Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
+\ea\label{ex:HA2}
+Urinstinkt
+\z	
+\item[3.] Geben Sie die standarddeutsche phonetische Transkription des Wortes \ab{Stahltische} inklusive der Silbenstruktur (mit X-Skelettschicht) an. Ermitteln Sie die Kriterien, die bei der Silbifizierung wirken.
+
+\item[4.] Geben Sie die Gründe an, warum die folgenden Wörter aus phonetisch/""phonologischen Gründen im Deutschen nicht möglich sind:
+
+\eal\label{ex:HA3}
+\ex[*]{\textipa{['Napl.O:t]}}
+\ex[*]{\textipa{[a\;R.'tUng]}}
+\zl
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lösungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Lösung}
+%
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
+%}
 
-\iftoggle{ha-loesung}{
-
-%% \subsection{Lösung}
-%% \iftoggle{toc}{
-%% 	\frame{
-%% 		\frametitle{~}
-%% 		\begin{multicols}{2}
-%% 			\tableofcontents[currentsection]
-%% 		\end{multicols}	
-%% 	}
-%% }
+%%%%%%%%%%%%%
+%@MyP: Soll hier wirklich 2x hintereinander die Aufgabe gezeigt werden (1x unter Überschrift H direkt danach unter Lösung)???????????????????
+%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1873,8 +2117,10 @@ Zu (\ref{ex:HA1a}):
 }
 \end{forest}
 
+\pause
+
 \begin{tikzpicture}[scale=0.4]
-\draw[black] (-1,0) -- (9.5,0) ; % x axis
+\draw[black] (-1,0) -- (9,0) ; % x axis
 \draw[black] (-1,0) -- (-1,6.5); % y axis
 \node at (-2,1) {Plos.};
 \node at (-2,2) {Frik.};
@@ -1882,28 +2128,26 @@ Zu (\ref{ex:HA1a}):
 \node at (-2,4) {\textipa{/l/}};
 \node at (-2,5) {\textipa{/\;R/}};
 \node at (-2,6) {Vok.};
-\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4);
-\draw[black] (4,4) -- (5,6) -- (6,4);
-\draw[black] (7,2) -- (8,6) -- (9,3);
+\draw[black] (0,2) -- (1,1) -- (2,6) -- (3,4) -- (4,6) -- (5,4);
+\draw[black] (6,2) -- (7,6) -- (8,3);
 \node at (0,-1) {\textipa{S}};
 \node at (1,-1) {\textipa{t}};
 \node at (2,-1) {\textipa{I}};
-\node at (3.5,-1) {\textipa{m}};
-\node at (5,-1) {\textipa{@}};
-\node at (6,-1) {\textipa{n}};
-\node at (7,-1) {\textipa{f}};
-\node at (8,-1) {\textipa{a}};
-\node at (9,-1) {\textipa{N}};
+\node at (3,-1) {\textipa{m}};
+\node at (4,-1) {\textipa{@}};
+\node at (5,-1) {\textipa{n}};
+\node at (6,-1) {\textipa{f}};
+\node at (7,-1) {\textipa{a}};
+\node at (8,-1) {\textipa{N}};
 \fill (0,2) circle [radius=3pt];
 \fill (1,1) circle [radius=3pt];
 \fill (2,6) circle [radius=3pt];
 \fill (3,4) circle [radius=3pt];
-\fill (4,4) circle [radius=3pt];
-\fill (5,6) circle [radius=3pt];
-\fill (6,4) circle [radius=3pt];
-\fill (7,2) circle [radius=3pt];
-\fill (8,6) circle [radius=3pt];
-\fill (9,3) circle [radius=3pt];
+\fill (4,6) circle [radius=3pt];
+\fill (5,4) circle [radius=3pt];
+\fill (6,2) circle [radius=3pt];
+\fill (7,6) circle [radius=3pt];
+\fill (8,3) circle [radius=3pt];
 \end{tikzpicture}
 \end{figure}
 
@@ -1911,8 +2155,6 @@ Zu (\ref{ex:HA1a}):
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 \begin{frame}		
 
@@ -1948,9 +2190,11 @@ Zu (\ref{ex:HA1b})
 \draw[black] (a.north)--(ax.south);
 }
 \end{forest}
-\vfill
+
+\pause
+
 \begin{tikzpicture}[scale=0.4]
-\draw[black] (-1,0) -- (11.5,0) ; % x axis
+\draw[black] (-1,0) -- (9,0) ; % x axis
 \draw[black] (-1,0) -- (-1,6.5); % y axis
 \node at (-2,1) {Plos.};
 \node at (-2,2) {Frik.};
@@ -1961,7 +2205,7 @@ Zu (\ref{ex:HA1b})
 \draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
 \draw[black] (5,1) -- (6,6) -- (7,2) -- (8,3);
 \node at (0,-1) {\textipa{m}};
-\node at (1,-1) {\textipa{i}};
+\node at (1,-1) {\textipa{I}};
 \node at (2,-1) {\textipa{t}};
 \node at (3,-1) {\textipa{a:}};
 \node at (4,-1) {\textipa{k}};
@@ -1983,6 +2227,7 @@ Zu (\ref{ex:HA1b})
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}		
 
@@ -2019,9 +2264,11 @@ Zu (\ref{ex:HA1b})  (alternative Lösung):
 \draw[black] (a.north)--(ax.south);
 }
 \end{forest}
-\vfill
+
+\pause
+
 \begin{tikzpicture}[scale=0.4]
-\draw[black] (-1,0) -- (11.5,0) ; % x axis
+\draw[black] (-1,0) -- (10,0) ; % x axis
 \draw[black] (-1,0) -- (-1,6.5); % y axis
 \node at (-2,1) {Plos.};
 \node at (-2,2) {Frik.};
@@ -2032,7 +2279,7 @@ Zu (\ref{ex:HA1b})  (alternative Lösung):
 \draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
 \draw[black] (5,1) -- (6,6) -- (7,2) -- (8,6) -- (9,3);
 \node at (0,-1) {\textipa{m}};
-\node at (1,-1) {\textipa{i}};
+\node at (1,-1) {\textipa{I}};
 \node at (2,-1) {\textipa{t}};
 \node at (3,-1) {\textipa{a:}};
 \node at (4,-1) {\textipa{k}};
@@ -2090,8 +2337,10 @@ Zu (\ref{ex:HA1c}):
 }
 \end{forest}
 
+\pause
+
 \scalebox{.85}{\begin{tikzpicture}[scale=0.5]
-\draw[black] (-1,0) -- (8.5,0) ; % x axis
+\draw[black] (-1,0) -- (8,0) ; % x axis
 \draw[black] (-1,0) -- (-1,6.5); % y axis
 \node at (-2,1) {Plos.};
 \node at (-2,2) {Frik.};
@@ -2134,18 +2383,20 @@ Zu (\ref{ex:HA1c}):
 \end{itemize}
 
 Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die Verletzungen	
+
 \begin{exe}
-\exi{(\ref{ex:HA2})} Urinstinkt (einfach nach Lautfolge):
+\exr{ex:HA2} Urinstinkt
+\pause
 \begin{xlist}
-\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)
-\ex \textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch)
+\ex \label{ex:HA2a}\textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung) \pause
+\ex \label{ex:HA2b}\textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch) \pause
+\ex \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
 \end{xlist}
 \end{exe}
-\item Die Silbifizierung erfolgt auf der Ebene des phonologischen Wortes.\\
+\pause
+\item \ref{ex:HA2}a und \ref{ex:HA2}b sind einfach nach der Lautfolge silbifiziert.\\
+Silbifizierung erfolgt jedoch auf der Ebene des phonologischen Wortes.\\
 Daher werden die phonologischen Wörter \ab{ur-} und \ab{Instinkt} einzeln silbifiziert.
-\ea
-\textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
-\z
 \end{itemize}
 \end{frame}
 
@@ -2227,64 +2478,11 @@ MyP edges [, phantom
 
 \end{frame}
 
-}% Loesung-HA
-
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{X}
-%%\frame{
-%%\frametitle{~}
-%%	\tableofcontents[currentsection]
-%%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Y}
-%
-%\begin{itemize}
-%	\item 
-%
-%\end{itemize}
-%
-%\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Y}
-%
-%\begin{itemize}
-%	\item 
-%
-%\end{itemize}
-%
-%\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{X}
-%%\frame{
-%%\frametitle{~}
-%%	\tableofcontents[currentsection]
-%%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Y}
-%
-%\begin{itemize}
-%	\item 
-%
-%\end{itemize}
-%
-%\end{frame}
-
 
 
 

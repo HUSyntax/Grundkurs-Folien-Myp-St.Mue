@@ -1,59 +1,104 @@
-\togglefalse{uebung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Include: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+%%%             Metadata                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \title{Grundkurs Linguistik}
 
 \subtitle{Graphematik}
 
-\section{Graphematik}
-
 \author[aMyP]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	{\small\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
+\institute{Institut für deutsche Sprache und Linguistik}
 
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
-\date{ }
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
+%%%             Preamble's End                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%   
 \huberlintitlepage[22pt]
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{Inhaltsverzeichnis}
+			\tableofcontents
+			%[pausesections]
+		\end{multicols}
+	}
+}
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
 
-\nocite{Brandt&Co06a}
-\nocite{Glueck05a} 
-\nocite{Luedeling2009a} 
-\nocite{Repp&Co15a}
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Schierholz&Co18}
+\nocite{Luedeling2009a}
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
 
+%%% Sprache & Sprachwissenschaft
+%\nocite{Fries16c} %Adäquatheit
+%\nocite{Fries16a} %Grammatikalität
+%\nocite{Fries&MyP16c} %GG
+%\nocite{Fries&MyP16b} %Akzeptabilität
+%\nocite{Fries&MyP16d} %Kompetenz vs. Performanz
+
+%% Phonetik & Phonologie
 \nocite{Altmann&Co07a}
-%\nocite{Eisenberg00a}
+\nocite{DudenAussprache00a}
+\nocite{Hall00a} 
+\nocite{Kohler99a}
+\nocite{Krech&Co09a}
+\nocite{Pompino95a}
+\nocite{Ramers08a}
+\nocite{Ramers&Vater92a}
+\nocite{Rues&Co07a}
+\nocite{WieseR96a}
+\nocite{WieseR11a}
+
+%% Graphematik
+\nocite{Altmann&Co07a}
+\nocite{Eisenberg00a}
 \nocite{Fuhrhop08a}
 \nocite{Fuhrhop09a}
 \nocite{Fuhrhop&Co13a}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Graphematik}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\frametitle{Begleitlektüre}
 	
 	\begin{itemize}
-		\item AM S.~30--40; \citet{Eisenberg04}: Kapitel 8 (S.~301--327)
+		\item AM S.~30--34; \citet{Eisenberg04}: Kapitel 8 (S.~301--327)
 		\item \citet{Meibauer&Co07a}: Kapitel 2 (S.~29--36)
 	\end{itemize}
 \end{frame}
@@ -61,8 +106,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Einführung}
 \iftoggle{toc}{
 \frame{
@@ -80,16 +125,25 @@
 \begin{itemize}
 	\item Die Graphematik ist die \textbf{linguistische Teildisziplin}, die sich mit der \textbf{schriftlichen Seite} der Sprache beschäftigt. 
 	\item[]
+
+\pause 
+	
 	\item \textbf{Schriftlichkeit} vs. \textbf{Mündlichkeit}
 	
 	\begin{itemize}
-		\item Materielle Unterschiede
-		\item Unterschied im Gebrauch \ras Zeitpunkt der Produktion und der Rezeption
+		\item materielle Unterschiede
+		\item Unterschied im Gebrauch bzgl. Zeitpunkt der Produktion und der Rezeption
 		
 		\begin{itemize}
-			\item  \textbf{Produktion:} Geschriebener Text benötigt Informationen, die sonst von \textbf{Äußerung oder Kontext} in der gesprochenen Kommunikation gegeben wären.
-			\item \textbf{Rezeption:} Geschriebener Text ist \textbf{unabhängig von Zeit und Kontext}.\\
-			\ras Einheitlichkeitsregeln, um unabhängig verständlich zu bleiben.
+			\item  \textbf{Produktion:} 
+			
+			geschriebener Text benötigt Informationen, die sonst von \textbf{Äußerung oder Kontext} in der gesprochenen Kommunikation gegeben wären.
+	
+			\item \textbf{Rezeption:} 
+			
+			geschriebener Text ist \textbf{unabhängig von Zeit und Kontext}.
+			
+			Einheitlichkeitsregeln werden benötigt, um \textbf{unabhängig verständlich} zu bleiben.
 		\end{itemize}
 
 	\end{itemize} 
@@ -105,36 +159,30 @@
 
 \begin{itemize}
 	\item Sätze wie (\ref{ex-du-bist-schlau}) und (\ref{ex-nein}) können sehr unterschiedlich gelesen werden.
-	\item[]
-	\item[]
-		
-	  \ea\label{ex-du-bist-schlau}
-          Du bist schlau.
-          \z
 
-	  \ea\label{ex-nein}
-          Nein.
-          \z
+	\ea\label{ex-du-bist-schlau}
+	Du bist schlau.
+
+	\ex\label{ex-nein}
+	Nein.
+	\z
+	
 \pause		
-	\item[]
-	\item In der Mündlichkeit vorhandene Informationen: situativer Kontext, Satzintonation, Mimik und Gestik
-	\item[]
-	\item Mögliche Kodierung in der Schriftlichkeit:
-	\item[]
-	\item[]
-		
-	  \ea
-          DU bist aber \gqq{schlau}!
-          \z
-	  
-	  \ea
-          nein $|$ NEIN $|$ nein! $|$ nein. $|$ NEIN. $|$ *nein
-          \z
+
+\item In der Mündlichkeit vorhandene Informationen: situativer Kontext, Satzintonation, Mimik und Gestik
+
+\item Mögliche \textbf{Kodierung} in der Schriftlichkeit:
+
+	\ea
+	DU bist aber \gqq{schlau}!
+
+	\ex 
+	nein $|$ NEIN $|$ nein! $|$ nein. $|$ NEIN. $|$ *nein
+	\z
 
 \end{itemize}		
 
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,7 +190,7 @@
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Eine Sprache ABER verschiedene \textbf{Varietäten} (Dialekte)
+	\item Eine Sprache \emph{aber} verschiedene \textbf{Varietäten} (Dialekte)
 	
 	\begin{itemize}
 		\item (\idR) eine einzige gemeinsame \textbf{Rechtschreibung}
@@ -151,15 +199,14 @@
 
 	\end{itemize}
 
-	\item[]
+\pause
+
 	\item \textbf{Schrift}: ca. 5\,000 Jahre vs. \textbf{Sprache}: ca. 150\,000 Jahre
-	\item[]
-	\item Man \textbf{lernt} zuerst das Sprechen, bevor man überhaupt schreiben kann und man \textbf{verlernt} eher das Schreiben als das Sprechen
+
+	\item Man \textbf{lernt} zuerst das Sprechen, bevor man überhaupt schreiben kann und man \textbf{verlernt} eher das Schreiben als das Sprechen.
 \end{itemize}
 
-
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,14 +215,13 @@
 
 \begin{itemize}
 	 \item Schriftlichkeit \ras \textbf{System} mit Inventar von Minimaleinheiten und (mehr oder weniger) vorhersagbaren Regeln
-	 \item[]
+
 	 \item Graphematik vs. Orthographie
 	 
 	 \begin{itemize}
-	 	\item[]
-	 	\item Terminologisch manchmal gleich behandelt
-	 	\item[]
-	 	\item Völlig unterschiedliche Ziele, die sie mit unterschiedlichen Methoden verfolgen
+	 	\item terminologisch manchmal gleich behandelt
+
+	 	\item aber mit unterschiedlichen Zielen, die sie mit unterschiedlichen Methoden verfolgen
 	 \end{itemize}
 \end{itemize}
 

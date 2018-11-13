@@ -95,15 +95,6 @@
 %@EE: Checken: wenn 3b und 3c stehen, kann der auskommentierte Text am Ende von 3b gelöscht werden
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Einführung}
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Begleitlektüre}
@@ -114,6 +105,39 @@
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Einführung}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item \blaubf{Einführung}
+			\item Silbenbestimmung
+			\item Silbenstruktur
+			%% Onset
+			%% Nukleus
+			%% Koda
+			\item Phonotaktik
+			%% Sonoritätshierarchie
+			%% Weitere phonotaktische Beschränkungen
+			
+		\end{itemize}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Einführung: Notation}
@@ -276,66 +300,64 @@ Silbe als \textbf{Domäne} \ldots
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Prosodische Konstituenten}
-
-%@EE: Original checken in Furhhop & Peters, s. nächste Folie 
-
-	\begin{multicols}{2}
-	\begin{itemize*}
-		\item UP = Äußerungsphrase
-		\item IP = Intonationsphrase
-		\item $\phi$ = phonol. Phrase
-\columnbreak
-		\item $\omega$ = phonol. Wort
-		\item F = phonol. Fuß
-		\item \alertred{$\sigma$ = Silbe}
-	\end{itemize*}
-	\end{multicols}
-
-\begin{figure} %%rote Box einfügen
-	\centering
-	\scalebox{.68}{
-	\begin{forest} MyP edges,
-	[IP
-	[$\Phi$
-	[$\omega$[F[\alertred{$\sigma$}[Frau]]]]
-	[$\omega$[F[\alertred{$\sigma$}[Müll, name=mueller]][\alertred{$\sigma$}, name=sigma[er]]]]]
-	[$\Phi$
-	[$\omega$[F[\alertred{$\sigma$}[kauft]]]]
-	[$\omega$[F[\alertred{$\sigma$}[Steck]]]
-			 [F[\alertred{$\sigma$}[rü]]
-			   [\alertred{$\sigma$}[ben]]]]]
-	[$\Phi$
-	[$\omega$[F[\alertred{$\sigma$}[auf]]]
-			 [F[\alertred{$\sigma$}[dem]]]]
-	[$\omega$[F[\alertred{$\sigma$}[Woch, name=woch]]
-			   [\alertred{$\sigma$}, name=sigmab[en]]]
-			 [F[\alertred{$\sigma$}[markt]]]]]
-	]
-	{
-		\draw[black] (mueller.north)--(sigma.south);
-		\draw[black] (woch.north)--(sigmab.south);
-	}
-	\end{forest}
-}
-	\caption{nach C. Féry}
-	\label{Zeichen1}
-\end{figure}
-
-% Doppeltverwendung bei Silbengelenken Mül ler
-
-% betonte Silben bilden Fuß einschließlich allen folgenden unbetonten Silben
-
-%\begin{figure}[b]
-%	\includegraphics[scale=0.3]{material/03bHierarchieIntonationsphrase}
-%	\caption{Hierarchie in der Intonationsphrase (Darstellung von C. Féry)}
+%
+%\begin{frame}
+%\frametitle{Prosodische Konstituenten}
+%
+%
+%	\begin{multicols}{2}
+%	\begin{itemize*}
+%		\item UP = Äußerungsphrase
+%		\item IP = Intonationsphrase
+%		\item $\phi$ = phonol. Phrase
+%\columnbreak
+%		\item $\omega$ = phonol. Wort
+%		\item F = phonol. Fuß
+%		\item \alertred{$\sigma$ = Silbe}
+%	\end{itemize*}
+%	\end{multicols}
+%
+%\begin{figure} %%rote Box einfügen
+%	\centering
+%	\scalebox{.68}{
+%	\begin{forest} MyP edges,
+%	[IP
+%	[$\Phi$
+%	[$\omega$[F[\alertred{$\sigma$}[Frau]]]]
+%	[$\omega$[F[\alertred{$\sigma$}[Müll, name=mueller]][\alertred{$\sigma$}, name=sigma[er]]]]]
+%	[$\Phi$
+%	[$\omega$[F[\alertred{$\sigma$}[kauft]]]]
+%	[$\omega$[F[\alertred{$\sigma$}[Steck]]]
+%			 [F[\alertred{$\sigma$}[rü]]
+%			   [\alertred{$\sigma$}[ben]]]]]
+%	[$\Phi$
+%	[$\omega$[F[\alertred{$\sigma$}[auf]]]
+%			 [F[\alertred{$\sigma$}[dem]]]]
+%	[$\omega$[F[\alertred{$\sigma$}[Woch, name=woch]]
+%			   [\alertred{$\sigma$}, name=sigmab[en]]]
+%			 [F[\alertred{$\sigma$}[markt]]]]]
+%	]
+%	{
+%		\draw[black] (mueller.north)--(sigma.south);
+%		\draw[black] (woch.north)--(sigmab.south);
+%	}
+%	\end{forest}
+%}
+%	\caption{nach C. Féry}
 %	\label{Zeichen1}
 %\end{figure}
-
-\end{frame}
-
+%
+%% Doppeltverwendung bei Silbengelenken Mül ler
+%
+%% betonte Silben bilden Fuß einschließlich allen folgenden unbetonten Silben
+%
+%%\begin{figure}[b]
+%%	\includegraphics[scale=0.3]{material/03bHierarchieIntonationsphrase}
+%%	\caption{Hierarchie in der Intonationsphrase (Darstellung von C. Féry)}
+%%	\label{Zeichen1}
+%%\end{figure}
+%
+%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -395,12 +417,36 @@ Silbe als \textbf{Domäne} \ldots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Silbenbestimmung}
-%\frame{
-%\frametitle{~}
-%\begin{multicols}{2}
-%	\tableofcontents[currentsection]
-%\end{multicols}	
-%}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item \blaubf{Silbenbestimmung}
+			\item Silbenstruktur
+			%% Onset
+			%% Nukleus
+			%% Koda
+			\item Phonotaktik
+			%% Sonoritätshierarchie
+			%% Weitere phonotaktische Beschränkungen
+			
+		\end{itemize}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -426,7 +472,7 @@ Silbe als \textbf{Domäne} \ldots
  
 	\item<3-> Silben können \textbf{betont} werden (tragen Akzent)
 	
-	\item<4-> \textbf{Silbenspiele} (\zB \only<5->{Sil\alertred{pi}-ben\alertred{pe}-spie\alertred{pi}-le\alertred{pe}}, \only<5->{Si\alertred{hi}l-be\alertred{he}n-spie\alertred{hi}-le\alertred{he}})
+	\item<4-> \textbf{Silbenspiele} (\zB \only<5->{Sil\alertred{pi}-ben\alertred{pe}-spie\alertred{pi}-le\alertred{pe},} \only<5->{Si\alertred{hi}l-be\alertred{he}n-spie\alertred{hi}-le\alertred{he})}
 % Geheimsprache, nach Silben wird immer pi, pa, pe oder so eingesetzt
 	
 	\item<6-> \textbf{Intuitiv} erkennbare Einheit: 
@@ -442,13 +488,36 @@ Silbe als \textbf{Domäne} \ldots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Silbenstruktur}
-%\frame{
-%\frametitle{~}
-%\begin{multicols}{2}
-%	\tableofcontents[currentsection]
-%\end{multicols}	
-%
-%}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Silbenbestimmung
+			\item \blaubf{Silbenstruktur}
+			%% Onset
+			%% Nukleus
+			%% Koda
+			\item Phonotaktik
+			%% Sonoritätshierarchie
+			%% Weitere phonotaktische Beschränkungen
+			
+		\end{itemize}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Silbenstruktur}
@@ -900,13 +969,35 @@ In der Koda sind/ist \ldots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonotaktik}
-\iftoggle{toc}{
-\frame{
-\frametitle{~}
-\begin{multicols}{2}
-	\tableofcontents[currentsection]
-\end{multicols}	
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Silbenbestimmung
+			\item Silbenstruktur
+			%% Onset
+			%% Nukleus
+			%% Koda
+			\item \blaubf{Phonotaktik}
+			%% Sonoritätshierarchie
+			%% Weitere phonotaktische Beschränkungen
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1156,26 +1247,26 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 \begin{figure}
 	\centering
-	\begin{tikzpicture}
-	\draw[fill] (0,0) circle [radius=0.075];
-	\draw[black] (0,0)--(1,1.5);
-	\draw[fill] (1,1.5) circle [radius=0.075];
-	\draw[black] (1,1.5)--(2,2.2);
-	\draw[fill] (2,2.2) circle [radius=0.075];
-	\draw[black] (2,2.2)--(3,0.75);
-	\draw[fill] (3,0.75) circle [radius=0.075];
-	\draw[black] (3,0.75)--(4,0);
-	\draw[fill] (4,0) circle [radius=0.075];
-	\node[below] at (0,0){p};
-	\node[below] at (1,0){l};
-	\node[below] at (2,0){\textipa{U}};
-	\node[below] at (3,0){m};
-	\node[below] at (4,0){p};
-	\node at (5,2.2){{\small Vokal}};
-	\node at (5,1.5){{\small /l/}};
-	\node at (5,0.75){{\small Nasal}};
-	\node at (5,0){{\small Obstruent}};
-\end{tikzpicture}
+	\begin{tikzpicture}[scale=0.5]
+	\draw[black] (-1,0) -- (5,0) ; % x axis
+	\draw[black] (-1,0) -- (-1,5.5); % y axis
+	\node at (-3,1) {Obstruent};
+	\node at (-3,2) {Sonorant};
+	\node at (-3,3) {Nasal};
+	\node at (-3,4) {\textipa{/l/}};
+	\node at (-3,5) {Vokal};
+	\draw[black] (0,1) -- (1,4) -- (2,5) -- (3,2) -- (4,1);
+	\node at (0,-1) {\textipa{p}};
+	\node at (1,-1) {\textipa{l}};
+	\node at (2,-1) {\textipa{U}};
+	\node at (3,-1) {\textipa{m}};
+	\node at (4,-1) {\textipa{p}};
+	\fill (0,1) circle [radius=3pt];
+	\fill (1,4) circle [radius=3pt];
+	\fill (2,5) circle [radius=3pt];
+	\fill (3,2) circle [radius=3pt];
+	\fill (4,1) circle [radius=3pt];
+	\end{tikzpicture}
 \caption{\citet[225]{Hall00a}}
 \end{figure}
 
@@ -1274,79 +1365,79 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 \vfill
 \hfill
-		\begin{tikzpicture}
-		\draw[fill] (0,0.3) circle [radius=0.075];
-		\draw[black] (0,0.3)--(1,0);
-		\draw[fill] (1,0) circle [radius=0.075];
-		\draw[black] (1,0)--(2,2.2);
-		\draw[fill] (2,2.2) circle [radius=0.075];
-		\draw[black] (2,2.2)--(3,0.3);
-		\draw[fill] (3,0.3) circle [radius=0.075];
-		\node[below] at (0,0){\textipa{S}};
-		\node[below] at (1,0){\textipa{p}};
-		\node[below] at (2,0){\textipa{a}};
-		\node[below] at (3,0){\textipa{\t{ts}}};
-		\node at (4,0.3){{\small Frikativ}};
-		\node at (4,0){{\small Plosiv}};
-		\node at (4,2.2){{\small Vokal}};
-		\end{tikzpicture}
+	\begin{tikzpicture}[scale=0.4]
+		\draw[black] (-1,0) -- (5,0) ; % x axis
+		\draw[black] (-1,0) -- (-1,5.5); % y axis
+		\node at (-3,0.5) {Plosiv};
+		\node at (-3,1.5) {Frikativ};
+		\node at (-3,5) {Vokal};
+		\draw[black] (0,1.5) -- (1,0.5) -- (2,5) -- (3,1);
+		\node at (0,-1.13) {\textipa{S}};
+		\node at (1,-1.23) {\textipa{p}};
+		\node at (2,-1.13) {\textipa{a}};
+		\node at (3,-1) {\textipa{\texttoptiebar{ts}}};
+		\fill (0,1.5) circle [radius=3pt];
+		\fill (1,0.5) circle [radius=3pt];
+		\fill (2,5) circle [radius=3pt];
+		\fill (3,1) circle [radius=3pt];
+	\end{tikzpicture}
 \pause
 	\hfill
-		\begin{tikzpicture}
-		\draw[fill] (0,0) circle [radius=0.075];
-		\draw[black] (0,0)--(1,2.2);
-		\draw[fill] (1,2.2) circle [radius=0.075];
-		\draw[black] (1,2.2)--(2,0);
-		\draw[fill] (2,0) circle [radius=0.075];
-		\draw[black] (2,0)--(3,0.3);
-		\draw[fill] (3,0.3) circle [radius=0.075];
-		\node[below] at (0,0){\textipa{d}};
-		\node[below] at (1,0){\textipa{a}};
-		\node[below] at (2,0){\textipa{k}};
-		\node[below] at (3,0){\textipa{s}};
-		\node at (4,0.3){{\small Frikativ}};
-		\node at (4,0){{\small Plosiv}};
-		\node at (4,2.2){{\small Vokal}};
+		\begin{tikzpicture}[scale=0.4]
+		\draw[black] (-1,0) -- (5,0) ; % x axis
+		\draw[black] (-1,0) -- (-1,5.5); % y axis
+		\node at (-3,0.5) {Plosiv};
+		\node at (-3,1.5) {Frikativ};
+		\node at (-3,5) {Vokal};
+		\draw[black] (0,0.5) -- (1,5) -- (2,0.5) -- (3,1.5);
+		\node at (0,-1) {\textipa{d}};
+		\node at (1,-1.13) {\textipa{a}};
+		\node at (2,-1) {\textipa{k}};
+		\node at (3,-1.13) {\textipa{s}};
+		\fill (0,0.5) circle [radius=3pt];
+		\fill (1,5) circle [radius=3pt];
+		\fill (2,0.5) circle [radius=3pt];
+		\fill (3,1.5) circle [radius=3pt];
 		\end{tikzpicture}
 \hfill\mbox{}
 \vfill
 \pause
 \hfill
-		\begin{tikzpicture}
-		\draw[fill] (0,0) circle [radius=0.075];
-		\draw[black] (0,0)--(1,1.5);
-		\draw[fill] (1,1.5) circle [radius=0.075];
-		\draw[black] (1,1.5)--(2,2.2);
-		\draw[fill] (2,2.2) circle [radius=0.075];
-		\draw[black] (2,2.2)--(3,0.75);
-		\draw[fill] (3,0.75) circle [radius=0.075];
-		\node[below] at (0,0){\textipa{k}};
-		\node[below] at (1,0){\textipa{l}};
-		\node[below] at (2,0){\textipa{\t{aU}}};
-		\node[below] at (3,0){\textipa{n}};
-		\node at (4,1.5){{\small /l/}};
-		\node at (4,0){{\small Plosiv}};
-		\node at (4,2.2){{\small Vokal}};
-		\node at (4,0.75){{\small Nasal}};
+		\begin{tikzpicture}[scale=0.4]
+		\draw[black] (-1,0) -- (5,0) ; % x axis
+		\draw[black] (-1,0) -- (-1,5.5); % y axis
+		\node at (-3,0.5) {Plosiv};
+		\node at (-3,3) {Nasal};
+		\node at (-3,4) {\textipa{/l/}};
+		\node at (-3,5) {Vokal};
+		\draw[black] (0,0.5) -- (1,4) -- (2,5) -- (3,3);
+		\node at (0,-1) {\textipa{k}};
+		\node at (1,-1) {\textipa{l}};
+		\node at (2,-1) {\textipa{\texttoptiebar{aU}}};
+		\node at (3,-1.15) {\textipa{n}};
+		\fill (0,0.5) circle [radius=3pt];
+		\fill (1,4) circle [radius=3pt];
+		\fill (2,5) circle [radius=3pt];
+		\fill (3,3) circle [radius=3pt];
 		\end{tikzpicture}
 	\hfill
 \pause
-		\begin{tikzpicture}
-		\draw[fill] (0,0.75) circle [radius=0.075];
-		\draw[black] (0,0.75)--(1,2.2);
-		\draw[fill] (1,2.2) circle [radius=0.075];
-		\draw[black] (1,2.2)--(2,1.5);
-		\draw[fill] (2,1.5) circle [radius=0.075];
-		\draw[black] (2,1.5)--(3,0.3);
-		\draw[fill] (3,0.3) circle [radius=0.075];
-		\node[below] at (0,0){\textipa{m}};
-		\node[below] at (1,0){\textipa{I}};
-		\node[below] at (2,0){\textipa{l}};
-		\node[below] at (3,0){\textipa{\c{c}}};
-		\node at (4,0.3){{\small Frikativ}};
-		\node at (4,1.5){{\small /l/}};
-		\node at (4,2.2){{\small Vokal}};
-		\node at (4, 0.75){\small Nasal};
+		\begin{tikzpicture}[scale=0.4]
+		\draw[black] (-1,0) -- (5,0) ; % x axis
+		\draw[black] (-1,0) -- (-1,5.5); % y axis
+		\node at (-3,1.5) {Frikativ};
+		\node at (-3,3) {Nasal};
+		\node at (-3,4) {\textipa{/l/}};
+		\node at (-3,5) {Vokal};
+		\draw[black] (0,3) -- (1,5) -- (2,4) -- (3,1.5);
+		\node at (0,-1) {\textipa{m}};
+		\node at (1,-1) {\textipa{I}};
+		\node at (2,-1) {\textipa{l}};
+		\node at (3,-1) {\textipa{\c{c}}};
+		\fill (0,3) circle [radius=3pt];
+		\fill (1,5) circle [radius=3pt];
+		\fill (2,4) circle [radius=3pt];
+		\fill (3,1.5) circle [radius=3pt];
 		\end{tikzpicture}
 \hfill\mbox{}
 \vfill
@@ -1415,7 +1506,7 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 \pause 
 	
-	\item Vor betontem Vokal steht immer immer ein Konsonant (\textbf{Glottisschlag}).
+	\item Vor betontem Vokal steht immer ein Konsonant (\textbf{Glottisschlag}).
 	
 	\ea
 	\textipa{[ka.\alertred{\textprimstress Po:}.tIS]}
@@ -1430,6 +1521,9 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 %@EE: Checken: Keine Abbildungen und elektronischen Quellen?
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%begin 03c:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Silbenmodelle}

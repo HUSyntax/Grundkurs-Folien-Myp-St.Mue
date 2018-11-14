@@ -122,12 +122,14 @@
 \begin{frame}
 \frametitle{Einführung}
 
-\begin{itemize}
-	\item Die Graphematik ist die \textbf{linguistische Teildisziplin}, die sich mit der \textbf{schriftlichen Seite} der Sprache beschäftigt. 
-	\item[]
+\begin{block}{Graphematik}
+	(auch Graphemik) \textbf{linguistische Teildisziplin}, die sich mit der \textbf{schriftlichen Seite} der Sprache beschäftigt. 
+\end{block}
 
 \pause 
-	
+
+\begin{itemize}
+
 	\item \textbf{Schriftlichkeit} vs. \textbf{Mündlichkeit}
 	
 	\begin{itemize}
@@ -244,24 +246,27 @@
 \begin{frame}
 \frametitle{Graph, Graphem, Allograph}
 
-	\begin{itemize}
-		\item Graphem: \textbf{Minimaleinheit} der Graphematik
+\begin{itemize}
+	\item Graphem: \textbf{Minimaleinheit} der Graphematik
 
-		\item Analog zum Phonembegriff in der Phonologie
-	\end{itemize}
+	\item Analog zum Phonembegriff in der Phonologie
+\end{itemize}
 
 \begin{block}{Graphem}
-	kleinste bedeutungsunterscheidende Einheit des Schriftsystems
+kleinste bedeutungsunterscheidende Einheit des Schriftsystems
 \end{block}
-	
-\pause 
-	
-	\begin{itemize}
-		\item Grapheme sollten \textbf{nicht mit Buchstaben verwechselt werden}.
 
-		\item Grapheme sind \textbf{abstrakte} und \textbf{funktionale} Einheiten,\\
-		die durch Buchstaben oder Buchstabenverbindungen realisiert werden können.
-	\end{itemize}
+\pause 
+
+\begin{itemize}
+	\item Grapheme sollten \textbf{nicht mit Buchstaben verwechselt werden}.
+
+	\ea \emph{Schwan} besteht aus 6 Buchstaben aber 4 Graphemen
+	\z 
+	 	
+	\item Grapheme sind \textbf{abstrakte} und \textbf{funktionale} Einheiten,\\
+	die durch Buchstaben oder Buchstabenverbindungen realisiert werden können.
+\end{itemize}
 
 \end{frame}
 
@@ -274,14 +279,28 @@
 	\item Grapheme kann man, wie auch die Phoneme, durch \textbf{Minimalpaare} ermitteln.
 	
 	\pause
+	 
+\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} 
+
+	\ea \ab{war\alertred{d}} vs. \ab{war\alertred{t}} 
+	\jambox{
+		\only<3->{\ras \ab{d} \vs \ab{t}}
+	}
 	
-	\ea \ab{war\alertred{d}} vs. \ab{war\alertred{t}} \only<3->{ \ras \ab{d} \vs \ab{t}}
+	\ex \ab{w\alertred{a}rt} vs. \ab{w\alertred{o}rt} 
+	\jambox{
+		\only<3->{\ras \ab{a} \vs \ab{o} }
+	}
 	
-	\ex \ab{w\alertred{a}rt} vs. \ab{w\alertred{o}rt} \only<3->{ \ras \ab{a} \vs \ab{o} }
+	\ex \ab{\alertred{w}art} vs. \ab{\alertred{p}art} 
+	\jambox{
+		\only<3->{\ras \ab{w} \vs \ab{p} }
+	}
 	
-	\ex \ab{\alertred{w}art} vs. \ab{\alertred{p}art} \only<3->{ \ras \ab{w} \vs \ab{p} }
-	
-	\ex \ab{pa\alertred{r}t} vs. \ab{pa\alertred{ch}t} \only<3->{ \ras \ab{r} \vs \ab{ch} }
+	\ex \ab{pa\alertred{r}t} vs. \ab{pa\alertred{ch}t} 
+	\jambox{
+		\only<3->{\ras \ab{r} \vs \ab{ch} }
+	}
 	\z
 \end{itemize}
 
@@ -301,8 +320,8 @@
 	
 		\ea Graphem: \ab{a}
 
-		\ex	Allographe von \ab{a}: \ab{\textit{a}} \ab{\textswab{a}} \ab{a} \ab{\textfrak{a}} %(hier verschiedene Schriftarten, RF)
-		%%%%Wie kann ich die Schriftart ändern für die einzelnen Allographen?%%%%			 
+		\ex	Allographe von \ab{a}: \ab{\textit{a}} \ab{\textswab{a}} \ab{a} \ab{\textfrak{a}} \ab{\texttt{a}}%(hier verschiedene Schriftarten, RF)
+		%@EE Wie kann man die Schriftart ändern für die einzelnen Allographen?
 		\z 
 		
 		\item In einigen älteren Arbeiten unterscheidet man die Notation von Graphemen \ab{a} in einfachen spitzen Klammern von der Notation von Graphen $\langle \langle$a$\rangle \rangle$ in doppelten spitzen Klammern.
@@ -345,9 +364,18 @@
 			\item Erlernen der mündlichen (Erst-)Sprache \ras \textbf{natürlich}	
 		\end{itemize}
 	\end{itemize}
-
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Graphematik vs. Orthographie}
+
+\begin{block}{Graphematik}
+	[\ldots] Wissenschaft vom \textbf{Schriftsystem einer Sprache} [, die] die Regularitäten des Schriftsystems auf \textbf{segmentaler} und \textbf{suprasegmentaler} Ebene beschreibt. Diese Regularitäten finden [\ldots] ihre empirische Basis im \textbf{Schreibusus}, \dash darin, wie tatsächlich geschrieben wird. \citep[vgl.][140]{Duerscheid04a}
+\end{block}
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -355,18 +383,26 @@
 \frametitle{Graphematik vs. Orthographie}
 
 \begin{itemize}
-	\item Die Orthographie (Rechtschreibung) ist dagegen eine \textbf{\gqq{willkürliche} Festlegung}. Sie legt fest, was \textbf{\gqq{richtig oder falsch}} (nach einer bestimmten Norm) ist.
+	\item Die Orthographie (Rechtschreibung) ist dagegen eine \textbf{\gqq{willkürliche} Festlegung}. Sie legt fest, was \textbf{\gqq{richtig}} oder \textbf{\gqq{falsch}} (nach einer bestimmten Norm) ist.
 	
 	\begin{itemize}
-		\item[]		
-		\item Ergebnis der Rechtschreibung \ras ein \textbf{explizit geregeltes und per Konventionen akzeptiertes System}
-		\item[]		
+		\item Ergebnis der Rechtschreibung: \textbf{explizit geregeltes} und \textbf{per Konventionen akzeptiertes} System
+		
 		\item Die normative Instanz (Orthographie) resultiert häufig aus \textbf{(sprach-)politischen} Entscheidungen.
-		\item[]		
+		
 		\item Das aus der Graphematik explizit gemachte Wissen spielt eine bedeutende Rolle für die Entwicklung der Orthographie.
 	\end{itemize}
 \end{itemize}
 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Graphematik vs. Orthographie}
+
+\begin{block}{Orthographie}
+	Regelsystem, das dem Schreiber als externe Normen vorgegeben werden. Die normativen Festlegungen basieren \idR auf den in der Graphematik gewonnenen Erkenntnissen auf \citep[vgl.][141]{Duerscheid04a}.
+\end{block}
 
 \end{frame}
 
@@ -378,23 +414,24 @@
 %\begin{itemize}
 %	\item[]
 
-	Bsp. Wie wird das Wort \textipa{[\textscr a:t]} geschrieben?
+Wie wird das Wort \textipa{[\textscr a:t]} geschrieben?
 
         \pause
 	\begin{table}
 		\centering
 		%\scalebox{0.9}{
 		\begin{tabular}{l | c | l}
-			\ab{Raht} oder \ab{Rahd} & ah & vgl. \ab{Kahn}\\ 
+			\ab{R\alertred{ah}t}, \ab{R\alertred{ah}d} & ah & vgl. \ab{Kahn}\\ 
 			\hline
-			\ab{Raad} oder \ab{Raat} & aa & vgl. \ab{Aal}\\ 
+			\ab{R\alertred{aa}d}, \ab{R\alertred{aa}t} & aa & vgl. \ab{Aal}\\ 
 			\hline
-			\ab{Rard}, \ab{Rart} oder & ar & vgl. \ab{Bart} als \textipa{[ba:t]}\\ 
-			\ab{Rahrt} & ahr	& vgl. \ab{Fahrt} als \textipa{[fa:t]}\\
+			\ab{R\alertred{ar}d}, \ab{R\alertred{ar}t} & ar & vgl. \ab{Bart} als \textipa{[ba:t]}\\ 
 			\hline
-			\ab{Rad} & d & vgl. \ab{Bad}\\ 
+			\ab{R\alertred{ahr}t} & ahr	& vgl. \ab{Fahrt} als \textipa{[fa:t]}\\
 			\hline
-			\ab{Rat} & t & vgl. \ab{Tat}\\ 
+			\ab{Ra\alertred{d}} & d & vgl. \ab{Bad}\\ 
+			\hline
+			\ab{Ra\alertred{t}} & t & vgl. \ab{Tat}\\ 
 		\end{tabular} 
 		%}
 	\end{table}
@@ -410,15 +447,21 @@
 
 \begin{itemize}
 	\item \textbf{Graphematisch} sind unterschiedliche Schreibungen möglich!
+
+\pause 
+	
 	\item \textbf{Orthographisch} gibt es \textbf{nur zwei richtige} Schreibungen: \\
 	\ab{Rad} oder \ab{Rat}
 	\item[]
 	\item Gleiche Lautung aber verschiedene \gqq{Wörter}
 	
 	\begin{itemize}
-		\item \textbf{Morphemkonstanz} (\su): \ab{Rad} wird mit \ab{d} geschrieben, um die morphologische Verwandtschaft zu anderen Wortformen im Paradigma anzuzeigen \ras \ab{Räder}, \ab{Rädern}, \ab{radeln}
-		\item[]		
-		\item \textbf{Homonymiedifferenzierung} (\su): Zwei Wörter mit der gleichen Lautung aber verschiedenen Bedeutungen sollten möglichst verschieden geschrieben werden.
+		\item \textbf{Morphemkonstanz} (\su): \ab{Rad} wird mit \ab{d} geschrieben, um die \textbf{morphologische Verwandtschaft} zu anderen Wortformen im Paradigma anzuzeigen 
+		
+		\ea \ab{Räder}, \ab{Rädern}, \ab{radeln}
+		\z 
+
+		\item \textbf{Homonymiedifferenzierung} (\su): Zwei Wörter mit der \textbf{gleichen Lautung aber verschiedenen Bedeutungen} sollten möglichst verschieden geschrieben werden.
 		
 		\begin{itemize}
 			\item Unterschiedliche Bedeutungen können anhand der Schrift aber nicht der Lautung differenziert werden!
@@ -426,9 +469,7 @@
 	\end{itemize}
 \end{itemize}
 
-
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -439,30 +480,25 @@
 	\item Orthographie legt \idR eine einzige, \textbf{verbindliche Form} für die Schreibung eines Wortes fest
 	
 	\begin{itemize}
-		\item[]		
-		\item Orthographische Normierung \ras möglichst \textbf{geringe Variabilität} in der Schreibung
-		\item[]
+		\item Orthographische Normierung: möglichst \textbf{geringe Variabilität} in der Schreibung
+
+\pause
+
 		\item Weniger als 1\% der Wörter variabel
 			
-		  \ea
-                  Graphik/Grafik, Cousine/Kusine, Friseur/Frisör, Nougat/Nugat, so dass/sodass,
-                  mithilfe/mit Hilfe, \dots
-                  \z
+		\ea Graphik/Grafik, Cousine/Kusine, Friseur/Frisör, Nougat/Nugat, so dass/sodass, mithilfe/mit Hilfe, \dots
+		\z
+
+\pause 
 			
-		\item Abweichungen in der Schreibung können auch auf internen, nicht-kodifizierten Normen beruhen
+		\item Abweichungen in der Schreibung können auch auf internen, \textbf{nicht-kodifizierten} Normen beruhen
 			
-		  \ea
-                  die Klassiker Bibliothek, Ulla's Lädchen, Hits für Kid's, BahnCard, StudentInnen,
-                  \dots
-                  \z
-			
-		
+		\ea die Klassiker Bibliothek, Ulla's Lädchen, Hits für Kid's, BahnCard, StudentInnen, \dots
+		\z
 	\end{itemize}
 \end{itemize}
 
-
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -472,25 +508,22 @@
 \begin{itemize}
 	\item \textbf{Gemeinsames Ziel} von Graphematik und Orthographie:\\
 	 das Schreiben und Lesen möglichst \textbf{reibungslos} und \textbf{intuitiv} zu gestalten.
+
 	\item Regeln müssen systematisch nachvollziehbar sein:
 	
-	  \ea
-          \ab{fertig} nicht mit \ab{v}, sondern mit \ab{f} \ras \ab{fer} in \ab{fertig} hat nicht
-          die gleiche Bedeutung wie \ab{ver} in \ab{verpetzt} oder \ab{verschreiben}
-          \z
+	\ea \ab{fertig} nicht mit \ab{v}, sondern mit \ab{f} \ras \ab{fer} in \ab{fertig} hat nicht die gleiche Bedeutung wie \ab{ver} in \ab{verpetzt} oder \ab{verschreiben}
+	\z
 	
-	\item[]
 	\item Beschäftigung mit dem \textbf{Erstspracherwerb} bei Kindern und mit der \textbf{Fehleranalyse} ist für die Erstellung der Prinzipien von besonderer Bedeutung.
 \end{itemize}
-
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Schriftsysteme}
-\iftoggle{toc}{
+\subsection{Schrifttypen \& -systeme}
+\iftoggle{sectoc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
@@ -501,27 +534,29 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
+
+
+\begin{block}{Schriftsystem}
+	Regularitäten in der schriftlichen Realisierung einer bestimmten Sprache
+\end{block}
+
+\ea \textbf{Das deutsche Schriftsystem} verwendet das Zeichen \gqq{ß}.
+\z 
+
+\pause 
 
 \begin{itemize}
-	\item \textbf{Schriftsystem}: Regularitäten in der schriftlichen Realisierung einer bestimmten Sprache.
-	\item[]
-	\item Verschiedene Arten von Schriftsystemen (\textbf{Schrifttypen})
+	\item Verschiedene Arten von Schriftsystemen gehören zu einem Schrifttyp. 
 	
-	\begin{itemize}
-		\item[]
-		\item Beziehung zwischen sprachlichen und graphischen Einheiten
-	\end{itemize}
-	
-	\item[]
-	\item Deutsches Schriftsystem (wie auch bei den anderen europäischen Sprachen) \ras \textbf{phonographischer Schrifttyp}
-	
-	\begin{itemize}
-		\item[]
-		\item Graphische Einheiten (Buchstaben) $\leftrightarrow$ lautliche Einheiten
-	\end{itemize}
+	\ea Das deutsche, das französische und das englische Schriftsystem gehören zu den \textbf{phonographischen Schrifttypen} \\
+	(graphische Einheiten (Buchstaben) $\leftrightarrow$ lautliche Einheiten)
+	\z 
 \end{itemize}
 
+\begin{block}{Schrifttyp}
+	Art der \textbf{Beziehung} zwischen \textbf{sprachlichen} und \textbf{graphischen} Einheiten
+\end{block}	
 
 \end{frame}
 
@@ -529,30 +564,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Phonographische Schrifttypen}
 
-\begin{minipage}{.4\textwidth}
+\begin{minipage}{.59\textwidth}
 
 \begin{itemize}
-	\item \textbf{Phonographische Schrifttypen}
+	\item Grundformen (\zB Grapheme) sind primär auf \textbf{bedeutungsunterscheidende} Elemente (\zB Phoneme) im Sprachsystem bezogen.
 	
-	\begin{itemize}
-		%\item[]
-		\item \textbf{Alphabetische Schrifttypen} \ras Korrespondenz zwischen Lauten und Buchstaben (Deutsch, Englisch, \dots)
-		
-		Deutsch: \ab{k} für Laut \textipa{[k]}
-		
-		\item \textbf{Syllabische Schrifttypen} \ras Korrespondenz zwischen graphischem Zeichen und Silbe (Japanisch, Koreanisch, \dots)
-		
-		%\ex. Japanisch: [Japanisch Package] für die Silbe \textipa{[ka]} (in der Silbenschrift Hiragana)
-		
-	\end{itemize}
+	\ea Deutsch: \ab{k} für Laut \textipa{[k]}
+	\z 
 \end{itemize}
 
 \end{minipage}\hfill%
-\begin{minipage}{.58\textwidth}
-
-
+%%
+%%
+\begin{minipage}{.4\textwidth}
 \begin{figure}
 	\centering
 	
@@ -560,47 +586,81 @@
 	\caption{Katakana, lat. Umschrift}
 	\label{Katakana}
 \end{figure}
-
 \end{minipage}
 
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Phonographische Schrifttypen}
+
+\begin{minipage}{.59\textwidth}
+\begin{itemize}
+	\item \textbf{Syllabische Schrifttypen}: \\
+	Korrespondenz zwischen \textbf{graphischem Zeichen} und \textbf{Silbe} (Japanisch, Koreanisch, \dots)
+	
+	%\ex. Japanisch: [Japanisch Package] für die Silbe \textipa{[ka]} (in der Silbenschrift Hiragana)
+
+\pause 
+	
+	\item \textbf{Alphabetische Schrifttypen:} \\
+	Korrespondenz zwischen \textbf{graphischem Zeichen} (Buchstaben) und \textbf{Lauten}  (Deutsch, Russisch, Arabisch, \dots)
+	
+	\ea Deutsch: \ab{t} für Laut \textipa{[t]}
+	\z 
+
+\pause 
+	
+	\begin{itemize}
+		\item \textbf{Konsonant-Vokal-Schrift:} \\
+		enthält Grapheme für Konsonanten und Vokale (\zB Deutsch)
+		
+		\item \textbf{Konsonantenschrift:}\\
+		enthält Grapheme (fast) nur für Konsonanten (\zB Arabisch) 
+	\end{itemize}
+\end{itemize}
+\end{minipage}\hfill%
+%%
+%%
+\begin{minipage}{.4\textwidth}
+	\begin{figure}
+		\centering
+		
+		\includegraphics[scale=.057]{material/05Katakana}
+		\caption{Katakana, lat. Umschrift}
+%		\label{Katakana}
+	\end{figure}
+\end{minipage}
+
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Logographische Schrifttypen}
 
 \begin{itemize}
-	\item \textbf{Logographische Schrifttypen}
+	\item Bezug von graphischen Einheiten auf Bedeutungseinheiten wie Wörter bzw. Morpheme (kleinste bedeutungstragende Einheiten) 
 	
-	\begin{itemize}
-		\item[]
-		\item Bezug von graphischen Einheiten auf Bedeutungseinheiten wie Wörter bzw. Morpheme (kleinste bedeutungstragende Einheiten) 
-		\item[]
-		\item Bspw. im Chinesischen und in Teilen der ägyptischen Hieroglyphen
-		
-		
-		\end{itemize}
+	\item Bspw. im Chinesischen und in Teilen der ägyptischen Hieroglyphen
 \end{itemize}
 		
-	\begin{minipage}{.28\textwidth}
-	
+\begin{minipage}{.28\textwidth}
 	\begin{figure}
 	\centering
 	\includegraphics[scale=.45]{material/Chinesemountain-Lee-Sau-Dan}
 	\caption[chinese]{Chinesisches Zeichen für `Berg'}
 	\end{figure}
-	
-	\end{minipage}\hfill%
-	\begin{minipage}{.68\textwidth}
-	
+\end{minipage}\hfill%
+%%
+\begin{minipage}{.68\textwidth}
 	\begin{figure}
 	\centering
 	\includegraphics[scale=.4]{material/04Hieroglyphenzahlen}
 	\caption[Hiero]{Hieroglyphenzahlen}
 	\end{figure}
-	\end{minipage}
+\end{minipage}
 		
 \end{frame}
 
@@ -608,7 +668,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 \begin{itemize}
 	\item Vorteil von phonographischen Schrifttypen:
@@ -637,7 +697,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 Grobe Übersicht der Schrifttypen:
 \begin{figure}
@@ -658,7 +718,7 @@ MyP edges
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 \begin{itemize}
 	\item Trotz phonographischer/ alphabetischer Schriftsysteme \ras\\
@@ -680,7 +740,7 @@ MyP edges
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 \begin{itemize}
 	\item \textbf{Flaches System}
@@ -705,7 +765,7 @@ MyP edges
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 \begin{itemize}
 	\item \textbf{Tiefes System}
@@ -733,7 +793,7 @@ MyP edges
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 %\begin{itemize}
 %	\item 
@@ -760,7 +820,7 @@ MyP edges
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Schriftsysteme}
+\frametitle{Schrifttypen \& -systeme}
 
 
 \begin{figure}

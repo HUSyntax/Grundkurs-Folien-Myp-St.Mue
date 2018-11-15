@@ -4,8 +4,8 @@
 %% Course: GK Linguistik
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\documentclass[a4paper,11pt, bibtotoc]{beamer}
-\documentclass[11pt,handout]{beamer}
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
+\documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%     PACKAGES      
@@ -21,14 +21,31 @@
 	
 	\input{localcommands}
 	
-	%\togglefalse{uebung}
-	\toggletrue{uebung}
 	
-	%\togglefalse{loesung}
-	%\toggletrue{loesung}
-	
-	%\togglefalse{toc}
-	\toggletrue{toc}
+%%%% uebung
+%%%% true: nur Fragen / false: Fragen & Lösungen
+%	\toggletrue{uebung}
+\togglefalse{uebung}
+
+%%%% hausaufgabe
+%%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
+%	\toggletrue{hausaufgabe}
+\togglefalse{hausaufgabe}
+
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+\toggletrue{toc}
+%	\togglefalse{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
+%	\toggletrue{gliederung}
+\togglefalse{gliederung}
 
 
 \input{03a-phonologie-include}

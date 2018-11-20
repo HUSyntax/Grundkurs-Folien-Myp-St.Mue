@@ -151,6 +151,9 @@
 	\makebox[0pt]{#1}%
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%solutions in red + w/ jambox
+\newcommand{\loesung}[2]{\jambox{\only<#1->{\textcolor{red}{#2}}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TIPA Lösungen           
@@ -181,6 +184,7 @@
 \newtoggle{uebung}
 
 \newtoggle{hausaufgabe}
+%%%%%%%%%%%%werden alle durch \togglefalse{hausaufgabe} ersetzt:
 \newtoggle{ha-loesung}\togglefalse{ha-loesung}
 \newtoggle{phonologie-loesung}
 \newtoggle{graphematik-loesung}
@@ -190,7 +194,7 @@
 \newtoggle{gliederung}
 
 
-% The toc is not needed on Handouts. Safe trees.
+% The toc is not needed on Handouts. Save trees.
 \mode<handout>{
 \togglefalse{toc}
 }
@@ -289,6 +293,12 @@
 %\frametitle{Übung}
 %
 %\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}
+%\frametitle{Lösung}
+%
+%\end{frame}
 %
 %}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -297,6 +307,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\iftoggle{hausaufgabe}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Hausaufgabe}
+%
+%
 %\begin{frame}
 %\frametitle{Hausaufgabe}
 %
@@ -307,6 +320,18 @@
 %%% BEGIN false = Q + A
 %{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Hausaufgabe}
+%
+%
+%\begin{frame}
+%\frametitle{Hausaufgabe}
+%
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection*{Lösung der Hausaufgabe}
+%
+%
 %\begin{frame}
 %\frametitle{Lösung}
 %

@@ -2400,9 +2400,9 @@ Stellen Sie fest, ob alle Silben wohlgeformt sind. Falls nicht, benennen Sie die
 \exr{ex:HA2} Urinstinkt
 \pause
 \begin{xlist}
-\ex \textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung) \pause
-\ex \textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch) \pause
-\ex \textipa{[Pu5.PIn.stinkt]} (Silbifizierung)
+	\ex \alertred{\textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)} \pause
+	\ex  \alertred{\textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch)} \pause
+	\ex  \alertred{\textipa{[Pu5.PIn.stinkt]} (Silbifizierung)}
 \end{xlist}
 \end{exe}
 \pause
@@ -2435,7 +2435,7 @@ MyP edges [, phantom
 [x, tier=word[\textipa{a:}, name=a]]
 [x, name=x]
 ]
-[K[x[\textipa{l.}]]]
+[K[x[\textipa{l}]]]
 ]
 ]
 [$\sigma$
@@ -2470,7 +2470,7 @@ MyP edges [, phantom
 \begin{itemize}
 \item Onset-Maximierung \pause
 \item Sonoritätshierarchie im Onset: *Sonorant vor Obstruent (*[\textipa{lt}]) \pause
-\item Silbengelenk nach ungespanntem, betonten Vokal
+\item Silbengelenk nach ungespanntem, betontem Vokal
 \end{itemize}
 \end{minipage}
 
@@ -2485,11 +2485,13 @@ MyP edges [, phantom
 
 \begin{exe}
 	\exr{ex:HA3}
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
 	\begin{xlist}
 		\ex[*]{ \textipa{['Napl.O:t]}
-			\only<2->{: \textcolor{red}{Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang, \textipa{[O]} ist ungespannt und lang}} }
+			\loesung{2}{Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang,} 
+			\loesung{2}{\textipa{[O]} ist ungespannt und lang} }
 		\ex[*]{ \textipa{[a\;R.'tUng]}
-			\only<3->{: \textcolor{red}{Auslautverhärtung, regressive velare nasale Assimilation, Knacklaut}} }
+			\loesung{3}{Auslautverhärtung, regressive velare nasale Assimilation,}\loesung{3}{Knacklaut} }
 	\end{xlist}
 
 \end{exe}

@@ -1,64 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Include: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
+%%%             Metadata                         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 \title{Grundkurs Linguistik}
 
 \subtitle{Morphologie I: Einführung \& Begriffe}
 
-\author[aMyP]{
+\author[A. Machicao y Priemer, S. Müller, A. Lüdeling]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	{\small\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
-\date{ }
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
+
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%
 \huberlintitlepage[22pt]
 \iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-	\frametitle{Inhaltsverzeichnis}\tableofcontents
-	%[pausesections]
-\end{multicols}
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{Inhaltsverzeichnis}
+			\tableofcontents
+			%[pausesections]
+		\end{multicols}
 	}
-	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Schierholz&Co18}
+\nocite{Luedeling2009a}
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%%% Sprache & Sprachwissenschaft
+%\nocite{Fries16c} %Adäquatheit
+%\nocite{Fries16a} %Grammatikalität
+%\nocite{Fries&MyP16c} %GG
+%\nocite{Fries&MyP16b} %Akzeptabilität
+%\nocite{Fries&MyP16d} %Kompetenz vs. Performanz
+
+%%% Phonetik & Phonologie
+%\nocite{Altmann&Co07a}
+%\nocite{DudenAussprache00a}
+%\nocite{Hall00a} 
+%\nocite{Kohler99a}
+%\nocite{Krech&Co09a}
+%\nocite{Pompino95a}
+%\nocite{Ramers08a}
+%\nocite{Ramers&Vater92a}
+%\nocite{Rues&Co07a}
+%\nocite{WieseR96a}
+%\nocite{WieseR11a}
+
+%%% Graphematik
+%\nocite{Altmann&Co07a}
+%\nocite{Duerscheid04a}
+%\nocite{Eisenberg00a}
+%\nocite{Fuhrhop08a}
+%\nocite{Fuhrhop09a}
+%\nocite{Fuhrhop&Co13a}
+
+%% Morphologie
+\nocite{Bauer00a} %Word
+\nocite{Eisenberg00a}
+\nocite{Fleischer00a} %Wortbildungsprozesse
+\nocite{Fleischer&Barz12a} %Einführung Morphologie
+\nocite{Haspelmath2002a}
+\nocite{Plungian00a} %Morphologie im Sprachsystem
+\nocite{Salmon00a} %Term Morphology
+\nocite{Wurzel00a} %Gegenstand Morphologie
+\nocite{Wurzel00b} %Wort
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Morphologie I}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Begleitlektüre}
 
 \begin{itemize}
 	\item \citet[35--40]{Abramowski2016} 
+	\item Lüdeling
 \end{itemize}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Einführung}
+\subsection{Einführung}
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
@@ -74,58 +134,74 @@
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Morphologie = \textbf{Formenlehre} \\
-	(griech. \emph{morphe}: \gq{Form, Gestalt}, \emph{logos} \gq{Sinn, Lehre}
-	\item[]
+	\item Morphologie: \textbf{Formenlehre} in der Biologie \citep[vgl.][]{Salmon00a, Wurzel00a}\\
+	(griech. \emph{morphe}: \gq{Form, Gestalt}; \emph{logos} \gq{Sinn, Lehre}
+
 	\item Goethe (1796): Bezeichnung der \textbf{Lehre von Form und Struktur lebender Organismen}.
-	\item[]
-	\item August Schleicher (19. Jh.): Übernahme in die Sprachwissenschaft zur Bezeichnung von \textbf{Wörtern als Untersuchungsgegenstand}.
 	
-	\begin{itemize}
-		\item \ras \bf{Struktur und Aufbau von Wörtern} und \bf{Theorien von komplexen Wörtern} (Produktivität, Schnittstellen zu Phonologie, Syntax, Semantik).
-	\end{itemize}
+	\item August Schleicher (1859): Übernahme in die Sprachwissenschaft zur Bezeichnung von \textbf{Wörtern als Untersuchungsgegenstand}
+
 \end{itemize}
 
+\pause 
+
+\begin{block}{Morphologie}
+	Linguistische Disziplin, die sich mit der \textbf{Struktur} und dem \textbf{Aufbau} von \textbf{Wörtern} und mit \textbf{Theorien} von komplexen Wörtern (Produktivität, Schnittstellen zu Phonologie, Syntax, Semantik) befasst.
+\end{block}
+
+\settowidth\jamwidth{(Luedeling, 2009)} 
+\ea Brunnenkressesüppchens \jambox{\citep{Luedeling2009a}}
+
+\pause 
+
+{[[[[Brunnen $+$ kresse] $+$ süpp] $+$ -chen] $+$ s]}
+\z 
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Einführung}
+\frametitle{Unterteilung der Morphologie}
 
 \begin{itemize}
 	\item Morphologie unterteilt sich in:
 	
 	\begin{itemize}
-		\item \textbf{Wortformen}bildung (Flexion) \ras grammatische Wortformveränderungen
-		\item[]
-		\item \textbf{Wort}bildung \ras Ableitung und Zusammensetzung lexikalischer Wörter
+		\item \textbf{Wort}bildung: Ableitung und Zusammensetzung lexikalischer Wörter (Lemmata)
+		
+		\ea {[[[Brunnen $+$ kresse] $+$ süpp] $+$ -chen]}		
+		\z 
+		
+		\item \textbf{Wortformen}bildung (\textbf{Flexion}): grammatische Wortformveränderungen
+		
+		\ea {[Brunnenkressesüppchen] $+$ s}
+		\z 
 	\end{itemize}
 \end{itemize}
 
 \begin{figure}	
 \centering
-\scalebox{0.49}{
+\scalebox{0.6}{
 \begin{forest} %% how to scale forest?
-sm edges,
-	[Morphologie
-		[Flexion
-			[Konjugation] 
-			[Deklination]]
-		[Wortbildung
-			[Komposition
+%sm edges,
+	[\textbf{Morphologie}
+		[\alertblue{Flexion}
+			[\alertred{Konjugation}] 
+			[\alertred{Deklination}]]
+		[\alertblue{Wortbildung}
+			[\alertred{Komposition}
 				[Determinativ]
 				[Kopulativ]
 				[\dots]]
-			[Derivation
+			[\alertred{Derivation}
 				[Suffigierung]
 				[Präfigierung]
 				[\dots]]
-			[Konversion
+			[\alertred{Konversion}
 				[morphologisch]
 				[syntaktisch]]
-			[Rückbildung]
+			[\alertred{Rückbildung}]
 			[\dots]]]										
 \end{forest}}
 \end{figure}
@@ -134,9 +210,9 @@ sm edges,
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Wort}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wortbegriff}
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
@@ -148,21 +224,37 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort}
+\frametitle{Wortbegriff}
 
-\begin{itemize}
-	\item \textbf{Intuitiv} vorgegebener und \textbf{umgangssprachlich} verwendeter
+\begin{block}{Wort}
+\textbf{Intuitiv} vorgegebener und \textbf{umgangssprachlich} verwendeter
 Begriff für \textbf{sprachliche Grundeinheiten}. Seine Definition ist
-\textbf{uneinheitlich} und \textbf{kontrovers}.
-\end{itemize}
+\textbf{uneinheitlich} und \textbf{kontrovers}. \citep[vgl.][]{Bussmann2002a, Glueck&Roedel16a}
+\end{block}
 
+\pause 
+
+\begin{itemize}
+	\item Wörter werden auf verschiedenen Ebenen unterschiedlich definiert.
+	
+	\begin{itemize}
+		\item phonetisch-phonologisches Wort
+		\item orthographisch-graphemisches Wort
+		\item morphologisches Wort
+		\item flektivisches Wort
+		\item leixikalisch-semantisches Wort
+		\item syntaktisches Wort
+	\end{itemize}
+
+\item Je nach Ebene gibt es eine \textbf{unterschiedliche Menge} von \gqq{Wörtern}.
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wort: phonetisch-phonologisch}
+\subsubsection{Phonetisch-phonologisches Wort}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -171,32 +263,41 @@ Begriff für \textbf{sprachliche Grundeinheiten}. Seine Definition ist
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort: phonetisch-phonologisch}
+\frametitle{Phonetisch-phonologisches Wort}
 
 \begin{itemize}
-	\item die kleinsten durch Wortakzent und Grenzsignale (Pause, Knacklaut) theoretisch isolierbare Lautsegmente
-	\item[]
-	\item Es stimmt nicht immer mit dem graphemischen Wort überein.
-	\item[]
-	\item Viele phonologische Prozesse haben das phonologische Wort
-als Domäne:
+	\item kleinsten durch \textbf{Wortakzent} und \textbf{Grenzsignale} (Pause, Knacklaut) theoretisch isolierbare Lautsegmente
+	\item Es stimmt nicht immer mit dem orthographisch-graphemischen Wort überein.
+
+\pause 
+	
+	\item Viele \textbf{phonologische Prozesse} haben das phonologische Wort als Domäne:
 	
 	\begin{itemize}
-		\item[]
-		\item Die Silbifizierung erfolgt nur innerhalb des phonologischen
-Wortes.
-		\item Assimilationsprozesse sind nur innerhalb des phonologischen
-Wortes obligatorisch.
+		\item Die \textbf{Silbifizierung} erfolgt nur innerhalb des phonologischen Wortes.
+		
+		\ea kindlich \vs kindisch \ab{-lich} ist ein phonolog. Wort, aber \ab{-isch} nicht.
+		\z 
+
+\pause 
+
+		\item \textbf{Assimilationsprozesse} sind nur innerhalb des phonolog. Wortes obligatorisch.
+		
+		\ea ungern \vs Bearbeitung \ab{un-} ist ein phonolog. Wort
+		\z 
+
+\pause 
+		
+		\item \textbf{Vokalharmonie} (\zB im Türkischen) erfolgt nur innerhalb eines phonolog. Wortes.
 	\end{itemize}
 \end{itemize}
-
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wort: orthographisch-graphemisch}
+\subsubsection{Orthographisch-graphemisches Wort}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -205,37 +306,75 @@ Wortes obligatorisch.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort: orthographisch-graphemisch}
+\frametitle{Orthographisch-graphemisches Wort}
 
 \begin{itemize}
-	\item Buchstabensequenz zwischen zwei Leerzeichen (Spatien) oder
-zwischen einem Leerzeichen und einem Satzzeichen
-	\item[]
-	\item Es enthält selbst kein Leerzeichen
-	\item[]
-	\item Definition gilt nur für Sprachen mit alphabetischem Schriftsystem!
-	\item[]
-	\item Sprachspezifisch:
+	\item Buchstabensequenz zwischen zwei \textbf{Leerzeichen} (Spatien) oder zwischen einem \textbf{Leerzeichen} und einem \textbf{Satzzeichen}
+
+\pause 
+
+	\item Es enthält selbst \textbf{kein Leerzeichen}.
 	
-	\begin{itemize}
-		\item \emph{Morphologieeinführungsbuch} vs. \emph{introductory morphology book}
-	\end{itemize}
+	\ea Hör auf! \vs Aufhören!
+	\ex New York \vs Berlin
+	\z 
+
+	\item Definition ist \textbf{sprachspezifisch}:
 	
-	\item Seit der letzen Rechtschreibreform gibt es im Deutschen weniger
-graphemische Wörter:
+	\ea Sommerschule \vs summer school
+	\ex Morphologieeinführungsbuch \vs introductory morphology book
+	\z 
 	
-	\begin{itemize}
-		\item \emph{heilig sprechen}, \emph{Rad fahren}
-	\end{itemize}
+\pause 
+
+	\item Seit der letzten großen Rechtschreibreform gibt es im Deutschen \textbf{weniger orth.-
+graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich nicht verändert hat!)
+	
+		\ea \ab{radfahren} \ras \ab{Rad fahren} 
+		\z 
+		
 \end{itemize}
 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Orthographisch-graphemisches Wort}
+
+\begin{itemize}
+	\item Definition gilt nur für Sprachen mit \textbf{alphabetischem Schriftsystem}.
+
+	\ea 
+%\begin{CJK*}{UTF8}{gbsn} % ist jetzt gefixt (SuSE 11.1)
+近年来，``应用语言学''作为语言学的一个分支，在国内外都得到了较大的发展，但对于``什么是应用语言学''，
+``应用语言学包括哪些研究领域'' 等最基本的问题，学者们却始终没有一个统一的看法。对于一门发展中的、涉及内容广泛的学科而言这是正常的，但长期下去，又会对学科的发展产生不利影响。
+%\end{CJK*}
+	\z 
+
+\pause 
+
+\begin{itemize}
+	\item Chinesische Wörter können aus einem oder mehreren Symbolen bestehen.
+	
+	\item Texte werden von oben nach unten geschrieben.
+	
+	\item Auf Computern von links nach rechts.
+	
+	\item Es gibt \textbf{keine Leerzeichen} zwischen Wörtern.
+\end{itemize}
+
+\pause
+
+	\item Es gibt \textbf{Sprachen ohne Schriftsystem}, \dash ohne orth.-graph. Wörter.
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wort: morphologisch}
+\subsubsection{Morphologisches Wort}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -244,76 +383,101 @@ graphemische Wörter:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort: morphologisch}
+\frametitle{Morphologisches Wort}
 
 \begin{itemize}
-	\item auch \textbf{lexikalisches} Wort oder \textbf{Lexem} genannt
-	\item[]
-	\item Grundeinheit von einem grammatischen Paradigma
-	\item[]
-	\item strukturell stabil und nicht trennbar
-	\item[]
-	\item durch spezifische Regeln der Wortbildung zu beschreiben
-	\item[]
+	\item \textbf{strukturell stabile} (und \textbf{nicht trennbare}) Grundeinheit eines grammatischen \textbf{Paradigmas} (auch \textbf{lexikalisches Wort} oder \textbf{Lexem} genannt)
+
+	\ea \ab{schreiben}: schreibe, schreibst, schrieb, geschrieben, \ldots 
+	\z 
+
+\pause 
+	
+	\item Sie können \textbf{morphologisch einfach} oder \textbf{komplex} sein.
+	
+	\ea Tisch, Tischbein, Hals-Nasen-Ohren-Arzt
+	\z 
+
+\pause 
+	
+	\item Komplexe morph. Wörter sind durch spezifische \textbf{Regeln der Wortbildung} zu beschreiben.
+	
+	\ea Tischbein $=$ Tisch $+$ Bein (Komposition)
+	\z 
+
+\pause 
+
+	\item Nichttrennbarkeitskriterium ist problematisch für Partikelverben:
+	
+	\ea umfahren, mitkommen, anrufen
+	\z 
+		
 	\item im Lexikon kodifiziert (Basiseinheit des Lexikons)
 \end{itemize}
 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Morphologisches \vs flektivisches Wort}
+
+\begin{itemize}
+	\item Das \textbf{morphologische Wort} sollte von dem \textbf{flektivischen Wort} (Wortform) unterschieden werden.
+	
+	\item Das \textbf{morphologische Wort} ist die Grundeinheit eines Paradigmas.
+\end{itemize}
+
+	\begin{block}{Paradigma}
+		alle vorkommenden Wortformen eines Lexems
+	\end{block}
+	
+%	\item 
+	Die \textbf{flektivischen Wörter} sind die \textbf{verschiedenen Realisierungen} eines \textbf{morphologischen Wortes}. Sie sind \textbf{hinsichtlich grammatischer Kategorien} wie
+	Tempus, Person, Numerus, Kasus, \dots\ spezifiziert.
+	
+	\ea flektivische Wörter von \emph{Bank} (\gq{Geldinstitut}): Bank, Banken
+	\ex flektivische Wörter von \emph{Bank} (\gq{Sitzgelegenheit}): Bank, Bänke, Bänken
+	\ex flektivische Wörter von \emph{kaufen}: kaufe, kaufte, (gekauft), kaufest, \dots   
+	\z
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort: morphologisch}
+\frametitle{Morphologisches \vs flektivisches Wort}
 
 \begin{itemize}
-	\item kommt in verschiedenen grammatischen Wortformen vor \ras \\ 
-	\textbf{flektivische Wörter} (Wortformen)
-	\item[]
-	\item \textbf{flektivische Wörter}: hinsichtlich grammatischer Kategorien wie
-Tempus, Person, Numerus, Kasus, etc \dots spezifiziert:
+	\item Die morphologischen Wörter (\textbf{Lexeme}) sind die lexikalischen Einheiten der Sprache.
 	
-	\begin{itemize}
-		\item Bank (Geldinstitut) \ras flektivische Wörter: Bank, Banken
-		\item Bank (Sitzgelegenheit) \ras flektivische Wörter: Bank, Bänke, Bänken
-	\end{itemize}
-	
-	\item[]
-	\item Ein \textbf{Paradigma} sind alle vorkommenden Wortformen eines
-Lexems.
+	\item Um auf Lexeme zu referieren verwendet man häufig eine \textbf{Zitierform}.
 \end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wort: morphologisch}
+	
+	\begin{block}{Zitierform (auch Lemma)}
+		\textbf{konventionell festgelegte} Form eines Paradigmas, die stellvertretend für das gesamte Paradigma steht.
+		
+		Im Deutschen bei \textbf{Nomina} \ras Nominativ Singular
+		
+		Im Deutschen bei \textbf{Verben} \ras Infinitiv
+		
+	\end{block} 
 
 \begin{itemize}
-	\item \textbf{Zitierform} (Lemma)
-	\item[]
-	\item konventionell festgelegte Form eines Paradigmas
-	\item stellvertretend für das gesamte Paradigma
-	\item im Deutschen bei Nomina \ras Nominativ Singular
-	\item im Deutschen bei Verben \ras Infinitiv
-	\item Zitierform von Verben enthält
+	\item Zitierform von Verben ist eine \textbf{komplexe Wortform}:
 	
-	\begin{itemize}
-		\item[]
-		\item freies Morphem (Imperativform) + gebundenes Morphem (-\emph{en})
-		\item \emph{lach} oder \emph{schlaf} + -\emph{en}
-	\end{itemize}
+	\ea
+	\gll lach- {} -en\\
+	{\footnotesize morph. Wort (Imperativform)} $+$ {\footnotesize gebundenes Morphem}\\
+	
+	\z 
 \end{itemize}
-
-
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wort: syntaktisch}
+\subsubsection{Syntaktisches Wort}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -322,7 +486,7 @@ Lexems.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort: syntaktisch}
+\frametitle{Syntaktisches Wort}
 
 \begin{itemize}
 	\item die kleinste verschiebbare und ersetzbare Einheit eines Satzes
@@ -356,7 +520,7 @@ vorkommen kann.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wort: lexikalisch-semantisch}
+\subsubsection{Wort: lexikalisch-semantisch}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -386,7 +550,7 @@ vorkommen kann.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wort: Hauptkriterien}
+\subsubsection{Wort: Hauptkriterien}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -415,7 +579,7 @@ vorkommen kann.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Morphologische Grundbegriffe}
+\subsection{Morphologische Grundbegriffe}
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
@@ -426,7 +590,7 @@ vorkommen kann.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Morph, Morphem, Allomorph}
+\subsubsection{Morph, Morphem, Allomorph}
 %\frame{
 %\frametitle{Morphologische Grundbegriffe}
 %	\tableofcontents[currentsection]
@@ -587,7 +751,7 @@ lach + te & träum + te \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Morphemklassifikation}
+\subsubsection{Morphemklassifikation}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -749,7 +913,7 @@ lach + te & träum + te \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wurzel, Stamm, Basis, Simplex}
+\subsubsection{Wurzel, Stamm, Basis, Simplex}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -882,7 +1046,7 @@ lach + te & träum + te \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Affix \& Konfix}
+\subsubsection{Affix \& Konfix}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]

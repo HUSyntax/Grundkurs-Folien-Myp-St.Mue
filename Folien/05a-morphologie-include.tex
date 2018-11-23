@@ -92,6 +92,7 @@
 \nocite{Eisenberg00a}
 \nocite{Fleischer00a} %Wortbildungsprozesse
 \nocite{Fleischer&Barz12a} %Einführung Morphologie
+\nocite{Grewendorf&Co91a} %Betonung bei Komposita
 \nocite{Haspelmath2002a}
 \nocite{Plungian00a} %Morphologie im Sprachsystem
 \nocite{Salmon00a} %Term Morphology
@@ -388,7 +389,10 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 \begin{itemize}
 	\item \textbf{strukturell stabile} (und \textbf{nicht trennbare}) Grundeinheit eines grammatischen \textbf{Paradigmas} (auch \textbf{lexikalisches Wort} oder \textbf{Lexem} genannt)
 
-	\ea \ab{schreiben}: schreibe, schreibst, schrieb, geschrieben, \ldots 
+	\ea 
+		\ea \alertred{schreib}(-en): schreibe, schreibst, schrieb, geschrieben, \ldots 
+		\ex \alertred{Tisch}: Tisches, Tische, Tischen
+		\z 
 	\z 
 
 \pause 
@@ -404,15 +408,29 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 	
 	\ea Tischbein $=$ Tisch $+$ Bein (Komposition)
 	\z 
+\end{itemize}
 
-\pause 
+\end{frame}
 
-	\item Nichttrennbarkeitskriterium ist problematisch für Partikelverben:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Morphologisches Wort}
+
+\begin{itemize}
+	\item \textbf{Nichttrennbarkeitskriterium} ist problematisch für Partikelverben:
 	
-	\ea umfahren, mitkommen, anrufen
+	\ea umfahr(-en), mitkomm(-en), anruf(-en)
 	\z 
-		
-	\item im Lexikon kodifiziert (Basiseinheit des Lexikons)
+	
+	\item \textbf{Paradigmenbildung} ist problematisch für nicht-flektierbare Wortarten (Präpositionen, Partikeln, Subjuktionen, \ldots)
+	
+	\ea auf, ja, wohl, dass
+	\z 
+	
+	\item Das morphologische Wort (\textbf{Lexem}) gilt als Basiseinheit des Lexikons.
+	
+	\item \textbf{Lexeme} sind die lexikalischen Einheiten der Sprache.
 \end{itemize}
 
 \end{frame}
@@ -436,9 +454,11 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 	Die \textbf{flektivischen Wörter} sind die \textbf{verschiedenen Realisierungen} eines \textbf{morphologischen Wortes}. Sie sind \textbf{hinsichtlich grammatischer Kategorien} wie
 	Tempus, Person, Numerus, Kasus, \dots\ spezifiziert.
 	
+	\ea 
 	\ea flektivische Wörter von \emph{Bank} (\gq{Geldinstitut}): Bank, Banken
 	\ex flektivische Wörter von \emph{Bank} (\gq{Sitzgelegenheit}): Bank, Bänke, Bänken
-	\ex flektivische Wörter von \emph{kaufen}: kaufe, kaufte, (gekauft), kaufest, \dots   
+	\ex flektivische Wörter von \emph{verkauf}(\emph{-en}): verkaufe, verkaufte, verkaufest, \dots
+	\z    
 	\z
 
 \end{frame}
@@ -454,7 +474,7 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 	\item Um auf Lexeme zu referieren verwendet man häufig eine \textbf{Zitierform}.
 \end{itemize}
 	
-	\begin{block}{Zitierform (auch Lemma)}
+	\begin{block}{Zitierform (Lemma)}
 		\textbf{konventionell festgelegte} Form eines Paradigmas, die stellvertretend für das gesamte Paradigma steht.
 		
 		Im Deutschen bei \textbf{Nomina} \ras Nominativ Singular
@@ -464,10 +484,10 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 	\end{block} 
 
 \begin{itemize}
-	\item Zitierform von Verben ist eine \textbf{komplexe Wortform}:
+	\item Zitierform von Verben ist eine \textbf{komplexe Wortform} (\zB \emph{verlieben}):
 	
 	\ea
-	\gll lach- {} -en\\
+	\gll verlieb- {} -en\\
 	{\footnotesize morph. Wort (Imperativform)} $+$ {\footnotesize gebundenes Morphem}\\
 	
 	\z 
@@ -489,38 +509,37 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 \frametitle{Syntaktisches Wort}
 
 \begin{itemize}
-	\item die kleinste verschiebbare und ersetzbare Einheit eines Satzes
-(Problem: Artikel, manche Präpositionen)
+	\item \textbf{kleinste} \textbf{verschiebbare} und \textbf{ersetzbare} Einheit eines \textbf{Satzes}
+	(Problem: Artikel, manche Präpositionen, Partikelverben)
 	
-	  \eal
-          \ex[]{
-            Wir bauten Häuser.
-            }
-	    \ex[]{
-              Häuser bauten wir.
-            }
-	  \ex[*]{
-            Ein bauten wir Haus.
-          }
-          \zl
+	\ea
+		\ea[]{Wir bauen \alertred{Häuser}.}
+		\ex[]{\alertred{Häuser} bauen wir.}
+		\ex[*]{\alertred{Ein} bauten wir \alertred{Haus}.}
+		\z 
+	\ex 
+		\ea[]{weil die Schule gestern \alertred{angefangen} hat.}
+		\ex[]{\alertred{Angefangen} hat die Schule noch nicht.}
+		\ex[]{Die Schule \alertred{fing} gestern \alertred{an}.}
+		\z 
+	\z
+	
+%	\item Auch definiert als die kleinste Einheit, die alleine als Satz
+%	vorkommen kann.
+%	
+%	\eal
+%	\ex Heißt es \gqq{ein} oder \gqq{eine} Hund?
+%	\ex \gqq{Ein}
+%	\zl
 
-	\item Auch definiert als die kleinste Einheit, die alleine als Satz
-vorkommen kann.
-
-\eal
-\ex Heißt es \gqq{ein} oder \gqq{eine} Hund?
-\ex \gqq{Ein}
-\zl
-		 
 \end{itemize}
-
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Wort: lexikalisch-semantisch}
+\subsubsection{Lexikalisch-semantisches Wort}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -529,21 +548,28 @@ vorkommen kann.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wort: lexikalisch-semantisch}
+\frametitle{Lexikalisch-semantisches Wort}
 
 \begin{itemize}
-	\item \textbf{die kleinste Einheit},
+	\item \textbf{kleinste} im Lexikon kodifizierte Einheit, der eine \textbf{Bedeutung} (vgl.\ (\ref{ex:LexWort1})) oder eine syntaktische/pragmatische Funktion (vgl.\ (\ref{ex:LexWort2})) zugeordnet werden kann.
 	
-	\begin{itemize}
-		\item[]
-		\item der eine Bedeutung zugeordnet werden kann (\emph{Tisch}) oder
-		\item[]		
-		\item die eine syntaktische/pragmatische Funktion hat (\emph{der}, \emph{ja})
-		\item[]
-		\item Problem: \emph{der US-amerikanische Präsident}
-	\end{itemize}
-\end{itemize}
+	\ea 
+		\ea\label{ex:LexWort1} Tisch, Tischbein
+		\ex\label{ex:LexWort2} der, ja, dass, und 
+		\z 
+	\z 
 
+	\item Problem: unikale Elemente
+	
+	\ea 
+		\ea \alertred{klipp} und klar
+		\ex auf \alertred{Anhieb}
+		\z 
+	\z 
+	
+%	\item Problem: \emph{der US-amerikanische Präsident}
+
+\end{itemize}
 
 \end{frame}
 
@@ -566,13 +592,13 @@ vorkommen kann.
 	\item morphologische Stabilität und
 	\item syntaktische Mobilität
 	\item[]
-	\item Jede unterschiedliche Wortdefinition liefert eine unterschiedliche Menge von \gqq{Wörtern}, mit denen in den verschiedenen Teilgebieten der Linguistik gearbeitet wird.
+	\item Jede Wortdefinition liefert eine \textbf{unterschiedliche Menge} von potentiellen \gqq{Wörtern}. 
 	
-	\begin{itemize}
-		\item Morphologie \ras \gqq{morphologische und flektivische Wörter}
-	\end{itemize}
-\end{itemize}
+	\item Jede linguistische Subdisziplin arbeitet mit ihrer eigenen Definition. 
+	
+	I.\,d.\,R.\ wird der Wortbegriff vermieden.
 
+\end{itemize}
 
 \end{frame}
 
@@ -588,6 +614,7 @@ vorkommen kann.
 \end{multicols}
 }
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Morph, Morphem, Allomorph}
@@ -601,22 +628,17 @@ vorkommen kann.
 \begin{frame}
 \frametitle{Morph, Morphem, Allomorph}
 
-\begin{itemize}
-	\item \textbf{Morphem}:
+\begin{block}{Morphem (strukturalistische Definition)}
+	\textbf{kleinste} \textbf{bedeutungstragende} Einheit in einem Sprachsystem
+\end{block}
 
-	\begin{itemize}
-		\item[]
-		\item Strukturalistische Definition: \\
-		kleinste bedeutungstragende Einheit
-		\item[]
-		\item Wurzel 1984: \\
-		Ein Morphem ist die kleinste, in ihren \textbf{verschiedenen Vorkommen} als formal \textbf{einheitlich identifizierbare Folge von Segmenten}, der (wenigstens) eine als einheitlich identifizierbare \textbf{außerphonologische Eigenschaft} zugeordnet ist.
-	\end{itemize}
-\end{itemize}
+\pause
 
+\begin{block}{Morphem \citep[38]{Wurzel84x}}
+	Ein Morphem ist die \textbf{kleinste}, in ihren \textbf{verschiedenen Vorkommen} als formal \textbf{einheitlich identifizierbare Folge von Segmenten}, der (wenigstens) eine als einheitlich identifizierbare \textbf{außerphonologische Eigenschaft} zugeordnet ist.
+\end{block}
 
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -624,117 +646,91 @@ vorkommen kann.
 \frametitle{Morph, Morphem, Allomorph}
 
 \begin{itemize}
-	\item \textbf{Morphem}:
+	\item \textbf{außerphonologische Eigenschaften}: \alertred{grammatische} (\zB Kasus, Numerus) und/oder \alertblue{lexikalische} Bedeutung
+	
+	\ea
+		\ea
+%		\gll Tisches $=$ Tisch $+$ es\\  
+%		{} {} \gq{\alertblue{Tisch}} {} \gq{\textsc{\alertred{gen.sg}}}\\
+%		
+%		\ex	
+		\gll Haustüren $=$ Haus $+$ tür $+$ en \\
+		{} {} \gq{\alertblue{Haus}} {} \gq{\alertblue{Tür}} {} \gq{\textsc{\alertred{pl}}} \\
+		
+		\ex	
+		\gll (ihr) essen $=$ ess $+$ t \\
+		{} {} {} \gq{\alertblue{ess}} {} \gq{\textsc{\alertred{2.pl}}}\\
+		
+		\z
+	\z 
+
+\pause 
+	
+	\item \textbf{verschiedene Vorkommen}: unterschiedliche Realisierungen (\textbf{Morphe}) können dieselbe Funktion/Bedeutung tragen.
+	
+	\ea\label{ex:Allomorph} Tür$+$\alertred{en}, Kind$+$\alertred{er}, Schal$+$\alertred{s}
+	\z
+
+\pause 
+	
+	\item \textbf{Allomorphe:} Varianten eines Morphems, mit derselben Bedeutung/Kategorie
 	
 	\begin{itemize}
-		\item[]
-		\item Außerphonologische Eigenschaften: grammatische (\zB Kasus, Numerus) und/ oder lexikalische Bedeutung
-		
-		  \eal
-                  \ex	Tisches = Tisch + 
-                  es = Bed. \gq{TISCH} + Bed./Kat. \gq{GEN.SG}
-		  \ex	Haustüren = Haus + tür + en = Bed. \gq{HAUS} + Bed. \gq{TÜR} + Bed./Kat. \gq{PL} 
-		  \ex	(sie) essen = ess + en = Bed. \gq{ESS} +
-                  Bed./Kat. \gq{3.P.PL}
-                  \zl
-			 
+		\item \{\emph{-en}, \emph{-er}, \emph{-s}\} in (\ref{ex:Allomorph}) tragen die Bedeutung \gq{\textsc{pl}}. Sie sind unterschiedliche \textbf{Morphe}, sie sind \textbf{Allomorphe} zu einem \textbf{Morphem} (abstrakte Einheit).
 	\end{itemize}
+
 \end{itemize}
-
-
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Morph, Morphem, Allomorph}
+\frametitle{Gründe für Allomorphie}
 
 \begin{itemize}
-	\item \textbf{Morphem vs. Morph vs. Allomorph:}
+	\item \textbf{phonologisch bedingt} 
 	
-	\begin{itemize}
-		\item[]
-		\item Verschiedene Vorkommen: Unterschiedliche Formen (\textbf{Morphe}) können dieselbe Funktion/Bedeutung tragen.
-		
-		  \ea
-                  Tür + en, Kind + er, Schal + s
-           \z
-		
-		\item \textbf{Allomorphe} \ras Varianten eines Morphems, die dieselbe Bedeutung/Kategorie tragen
-		
-		\begin{itemize}
-			\item[]
-			\item \{\emph{-en}, \emph{-er}, \emph{-s}\} tragen eine einzelne Bedeutung \gq{PLURAL}; sie sind unterschiedliche \textbf{Morphe} und alle \textbf{Allomorphe} zu einem \textbf{Morphem} (abstrakte Einheit).
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
+	\ea 
+	
+	\ea \textsc{land}: \{\textipa{[lan\alertred{d}]}, \textipa{[lan\alertred{t}]}\}
 
+	Auslautverhärtung in \ab{Landes} vs. \ab{Land}
+	
+	\ex \textsc{infinitivendung}: \{\textipa{[n]}, \textipa{[\alertred{@}n]}\}
+	
+	Schwatilgung nach Liquiden: \ab{segeln} vs.\ \ab{formen}, \ab{turnen}
+	\z
+	\z 
+
+\pause 
+
+	\item \textbf{morphologisch bedingt}
+	\ea \textsc{haus}: \{\textipa{[h\alertred{\t{aU}}s]}, \textipa{[h\alertred{\t{O}I}s]}\}
+	
+	Neutra mit \emph{-er}-Plural und umlautfähigem Stammvokal erhalten \textbf{immer} einen Umlaut (s.\ \ab{Häuser}, \ab{Fässer}, \ab{Bücher}, \ab{Hörner}).
+	\z 
+
+\pause 
+
+	\item \textbf{lexikalisch bedingt}
+	
+	\ea \textsc{kuss}: \{\textipa{[k\alertred{U}s]}, \textipa{[k\alertred{Y}s]}\}
+	
+	Maskulina mit \emph{-e}-Plural erhalten \textbf{manchmal} einen Umlaut (\ab{Küsse} aber \ab{Tage}). Allomorphe müssen im Lexikon gespeichert werden.
+	\z 
+	
+%	\item Häufig verwendet man den Begriff \textbf{morphologisch bedingte Allomorphie} auch für die \textbf{lexikalisch bedingte Allomorphie}.
+\end{itemize}
 
 \end{frame}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Morph, Morphem, Allomorph}
+\frametitle{Minimalpaare}
 
 \begin{itemize}
-	\item \textbf{phonologisch bedingte Allomorphie:}
-	
-	\begin{itemize}
-		\item[]
-		\item Ein Morphem kann verschiedene Allomorphe aufgrund phonologischer Regularitäten haben:
-		
-		\begin{itemize}
-			\item[]
-			\item Allomorphe \textipa{[land]} und \textipa{[lant]} \\
-			durch Auslautverhärtung in Landes vs. Land
-			\item[]
-			\item Allomorphe \textipa{[n]} und \textipa{[@n]} für Infinitiv: \\
-			durch Schwaeinsetzung: segeln vs. formen, turnen
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Morph, Morphem, Allomorph}
-
-\begin{itemize}
-	\item \textbf{morphologisch bedingte Allomorphie:}
-	
-	\begin{itemize}
-		\item Allomorphe \textipa{[haUs]} und \textipa{[hOIs]} in Haus vs. Häuschen, häuslich
-		\item Regel: Neutra mit \emph{-er}-Plural und umlautfähigem Stammvokal erhalten immer einen Umlaut (Fässer, Bücher, Hörner).
-	\end{itemize}
-	
-	\item \textbf{lexikalisch bedingte Allomorphie:}
-	
-	\begin{itemize}
-		\item Allomorphe \textipa{[kUs]} und \textipa{[kYs]} in Kuss vs. Küsse (auch: Küsschen) im Lexikon festgelegt: Maskulina mit der Pluralendung \emph{-e} erhalten manchmal einen Umlaut und manchmal nicht (Tage)
-	\end{itemize}
-	
-	\item[]
-	\item Häufig verwendet man den Begriff \textbf{morphologisch bedingte Allomorphie} auch für die \textbf{lexikalisch bedingte Allomorphie}.
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Morph, Morphem, Allomorph}
-
-\begin{itemize}
-	\item Morpheme (sowie Phoneme) findet man mithilfe von \textbf{Minimalpaaren}:
+	\item Morpheme (sowie Phoneme) findet man mithilfe von (morphologischen) \textbf{Minimalpaaren}:
 \end{itemize}
 
 \begin{table}
@@ -751,26 +747,23 @@ lach + te & träum + te \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Morphemklassifikation}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\subsection{Kriterien der Morphemklassifikation}
+\frame{
+\frametitle{~}
+	\tableofcontents[currentsection]
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Morphemklassifikation}
+\frametitle{Kriterien der Morphemklassifikation}
 
 \begin{itemize}
-	\item \textbf{Morpheme lassen sich hinsichtlich verschiedener Kriterien klassifizieren:}
+	\item Morpheme lassen sich hinsichtlich verschiedener Kriterien klassifizieren:
 	
 	\begin{itemize}
-	 \item[]
 	 \item Verhältnis Form und Bedeutung
-	 \item[]
 	 \item Art der Bedeutung
-	 \item[]
 	 \item Distribution und Selbstständigkeit
 	\end{itemize}
 \end{itemize}
@@ -785,39 +778,38 @@ lach + te & träum + te \\
 \frametitle{Form \& Bedeutung}
 
 \begin{itemize}
-	\item \textbf{Wodurch unterscheiden sich die unterstrichenen Morpheme?}
-		
-	  \only<1->{
-            \ea
-            Helga ist die schön\underline{st}e.
-          \z
-          }
+	\item \textbf{strukturalistischer Idealfall:} eine Form mit einer Bedeutung
 	
-	\only<2>{eine Form - eine Bedeutung: \\
-		Form: \emph{-st} \\
-		gramm. Funktion: Superlativ\\
-		\textbf{= strukturalistischer Idealfall}}
+	\ea	Jakob ist der schön\alertred{st}e.
 	
-	\only<1->{\ea
-          Karl \underline{gab} Ilse die Hauptrolle.
-          \z}
-	
-	\only<3>{eine Form - Komplex mehrerer Bedeutungen \\
-		Form: \emph{gab} \\
-		Bedeutung: \gq{GEBEN} + \gq{3.P.SG.PRÄT.IND.AKTIV} \\
-		\textbf{= Portmanteau-Morphem} \\
-		Die Verschmelzung zweier Morpheme wird manchmal auch Portmanteau-Morphem genannt: \ab{zum, am, im}}
-	
-	\only<1->{\ea Paul hat Ilse wirklich \underline{ge}lieb\underline{t}!
-        \z}	
-		
-	\only<4>{zwei Formen - eine Bedeutung (gramm. Funktion) \\
-		Form: \emph{ge-} + \emph{-t} \\
-		gramm. Funktion: \gq{Partizip II} \\
-		\textbf{= diskontinuierliches Morphem}}
-	
-\end{itemize}
+	Form: \emph{-st} \\
+	Bedeutung: Superlativ
+	\z
 
+\pause 
+	
+	\item \textbf{Portmanteau-Morphem:}  eine Form mit Komplex mehrerer Bedeutungen
+	
+	\ea Luise \alertred{gab} Jakob ein Buch.
+	
+	Form: \emph{gab} \\
+	Bedeutung: \gq{geb-} $+$ \gq{\textsc{3.sg.prät.ind.akt}}
+	\z
+	
+	\item Die \textbf{Verschmelzung zweier Morpheme} wird manchmal auch Portmanteau-Morphem genannt: \ab{zum}, \ab{am}, \ab{im}
+
+\pause 
+	
+	\item \textbf{diskontinuierliches Morphem:} zwei Formen mit einer Bedeutung 
+	
+	\ea Luise hat das Buch \alertred{ge}klau\alertred{t}.
+	
+	Form: \emph{ge-} $+$ \emph{-t} \\
+	Bedeutung: \gq{Partizip II} \\
+
+	\z	
+
+\end{itemize}
 
 \end{frame}
 
@@ -826,258 +818,171 @@ lach + te & träum + te \\
 \begin{frame}
 \frametitle{Bedeutungsart}
 
-\begin{itemize}
-	\item \textbf{Wodurch unterscheiden sich die unterstrichenen Morpheme?}
-	
-		\only<1->{\ea Paul \underline{geht} mit Lisa ins \underline{Kino}.\z}
-				
-		\only<2>{Morpheme bezeichnen Außersprachliches (Objekte, Sachverhalte). \\
-		Inhalt ist Gegenstand semantischer/lexikologischer Analyse. \\
-		Ihre Klasse ist erweiterbar. \\
-		\textbf{= lexikalische Morpheme (offene Klasse)}}		
-		
-		\only<1->{\ea
-                  Karl spiel\underline{t} in der Küche den Held\underline{en}, \underline{dass} es
-                  einen graust.
-                \z}
-		
-		\only<3>{Morpheme kodieren grammatische Information, dienen der Realisierung grammatischer Beziehungen im Satz \\
-		\textbf{= grammatische Morpheme (geschlossene Klasse)} \\
-		Umstritten: Wortbildungsmorpheme wie \emph{-lich}, \emph{-heit}; sog. Funktionswörter wie Präpositionen, Konjunktionen, etc.}
-		
-	
-\end{itemize}
 
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Distribution/Selbstständigkeit}
+\ea Jakob \alertred{denk}t, \alertblue{dass} er \alertblue{den} \alertred{Nachbar}\alertblue{n} \alertred{treff}\alertblue{en} wird.
+\z
 
 \begin{itemize}
-	\item \textbf{Wodurch unterscheiden sich die unterstrichenen Morpheme?}
-
-	  \only<1->{\ea
-            \underline{Und} Paul sieht \underline{rot}, \underline{weil} Lisa \underline{sehr}
-            \underline{schnell} \underline{mit} Peter verschwand.
-          \z}
+	\item \alertred{lexikalische} Morpheme:
+	\begin{itemize}
+		\item Sie bezeichnen \textbf{Außersprachliches} (Objekte, Sachverhalte). 
 		
-		\only<2>{Morpheme kommen frei vor; können sowohl lexikalische als auch grammatische Bedeutung haben \\
-		\textbf{= freie Morpheme}}
+		\item Inhalt ist Gegenstand semantischer/lexikologischer Analyse.
 		
-		\only<1->{\ea
-                  Sprachwissen\underline{schaft} kann auch sehr
-                  \underline{un}übersicht\underline{lich} sein.}
-                \z
-		
-		\only<3>{Morpheme sind an andere Morpheme gebunden; treten nicht selbstständig auf (sie sind nicht \gqq{wortfähig}) \\
-		\textbf{= gebundene Morpheme} \\
-		Umstritten: die Einordnung bestimmter lexikalischer Morpheme, wie \emph{geb-}, \emph{weiger-}, wenn sie nicht frei vorkommen (meist dient die Wortform des Imperativs als Kriterium).}
-
+		\item Ihre Klasse ist erweiterbar (\textbf{offene Klasse}).
 	
-\end{itemize}
+	\end{itemize}
 
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Distribution/Selbstständigkeit}
-
-\begin{itemize}
-	\item Sonderfall des gebundenen Morphems: \textbf{Unikales Morph(em)} (\emph{cranberry morph})
+\pause 
+		
+	\item \alertblue{grammatische} Morpheme:
 	
 	\begin{itemize}
-		\item[]
-		  \ea
-                  \underline{Brom}beere, \underline{Him}beere, \underline{Schorn}stein,
-                  ver\underline{geu}den, Tausend\underline{sassa}
-                  \z
-		\item[]
-		\item nur in einer einzigen Kombination
-		\item[]
-		\item keine produktiven Morpheme
-		\item[]
-		\item Bedeutung synchron nicht mehr erschließbar
-		\item[]
-		\item Bedeutung auf distinktive Funktion beschränkt
+		\item Sie kodieren \textbf{grammatische Information}, bzw.\ dienen der Realisierung grammatischer Beziehungen im Satz.
+		
+		\item Ihre Klasse ist nicht mit den herkömmlichen Wortbildungsprozessen erweiterbar (\textbf{geschlossene Klasse})
+	
+%		Umstritten: Wortbildungsmorpheme wie \emph{-lich}, \emph{-heit}; sog. Funktionswörter wie Präpositionen, Konjunktionen, etc.
 	\end{itemize}
 \end{itemize}
 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Distribution/Selbstständigkeit}
+
+\ea \alertblue{Jakob} denk\alertred{t}, \alertblue{dass} er \alertblue{den} \alertblue{Nachbar}\alertred{n} \alertblue{treff}\alertred{en} wird.
+\z
+
+\begin{itemize}
+
+	\item \alertblue{freie} Morpheme: 
+	
+	\begin{itemize}
+		\item Sie kommen \gqq{\textbf{frei}} vor (sie sind \gqq{wortfähig}).
+		
+		\item Sie können sowohl \textbf{lexikalische} als auch \textbf{grammatische} Bedeutung tragen.
+	\end{itemize}
+	
+\pause
+	
+	\item \alertred{gebundene} Morpheme (Affixe): 
+	
+	\begin{itemize}
+		\item Sie sind an andere Morpheme gebunden.
+		
+		\item Sie treten \textbf{nicht selbstständig} auf (sie sind nicht \gqq{wortfähig}).
+		
+		\item Umstritten: Einordnung bestimmter lexikalischer Morpheme, wie \emph{geb-}, \emph{weiger-}, da sie nicht frei vorkommen (meist dient die Wortform des Imperativs als Kriterium).
+		
+\pause
+
+		\item Sonderfall: \textbf{unikales Morph(em)} (\emph{cranberry morph})
+	
+	\end{itemize}
+	
+	
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Unikales Morph(em)}
+
+\begin{itemize}
+	\item Sonderfall des gebundenen Morphems
+	
+	\item auch: \emph{cranberry morph}
+	
+	
+	\ea \alertred{Brom}beere, \alertred{Him}beere, \alertred{Schorn}stein, ver\alertred{geu}den, Tausend\alertred{sassa}
+	\z
+
+
+	\item Sie kommen nur in einer einzigen Kombination vor (nicht \textbf{produktiv})
+
+	\item Bedeutung synchron nicht mehr erschließbar (nicht \textbf{transparent})
+
+	\item Ihre Bedeutung ist auf eine \textbf{distinktive Funktion} beschränkt.
+	
+	\ea \alertred{Brom}beere \vs \alertred{Him}beere
+	\z 
+
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Wurzel, Stamm, Basis, Simplex}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
+\subsection{Morphologische Einheiten}
+\frame{
+\frametitle{~}
+	\tableofcontents[currentsection]
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wurzel, Stamm, Basis, Simplex}
+\frametitle{Wurzel \& Stamm}
 
 \begin{itemize}
-	\item \textbf{Wurzel:} (Wurzelmorphem, Basismorphem)
+	\item \textbf{Wurzel} (auch Wurzelmorphem, Basismorphem): 
 	
 	\begin{itemize}
-		\item[]
 		\item Unterste, atomare Basis komplexer Wörter
-		\item[]
-		\item hinsichtlich \textbf{Wortbildung und Flexion} nicht mehr zerlegbar
-		\item[]
+		\item hinsichtlich \textbf{Wortbildung} und \textbf{Flexion} nicht mehr zerlegbar
 		\item oft, aber nicht immer frei
 		
-		\begin{itemize}
-			\item[]			
-			\item Wurzel \emph{ehr}: \emph{Ehr-e, Ehr-gefühl, ehr-bar}
-			\item Wurzel \emph{ess}: \emph{ess-en, ess-bar}
-		\end{itemize}
+		\ea \alertred{Ehr}-e, ver-\alertred{ehr}-st, \alertred{ess}-bar, \alertred{Ess}-\alertred{tisch}				
+		\z 
 	\end{itemize}
-\end{itemize}
 
 
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wurzel, Stamm, Basis, Simplex}
-
-\begin{itemize}
 	\item \textbf{Stamm:}
 	
 	\begin{itemize}
-		\item[]
-		\item Ausgangsform der \textbf{Flexion}
-		\item[]
-		\item kann Wurzel oder komplexe morphologische Einheit sein
-		
-		\begin{itemize}
-			\item[]
-			\item \ab{sag} + \emph{-st}
-			\item \abu{be-lächel} + \emph{-st}
-		\end{itemize}
+		\item Ausgangsform der \textbf{Flexion} und der \textbf{Komposition}
+		\item Ein Stamm kann \textbf{morphologisch einfach} (Wurzel) oder \textbf{komplex} sein.
+	
+		\ea 
+			\ea \alertred{sag}-st, \alertred{Tisch}-es
+			\ex \alertred{be-lächel}-st, \alertred{Tisch-bein}-es
+			\z 
+		\z 
 	\end{itemize}
 \end{itemize}
 
 \end{frame}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wurzel, Stamm, Basis, Simplex}
+\frametitle{Basis \& Derivat}
 
 \begin{itemize}
 	\item \textbf{Basis:} (Pl. Basen)
 	
 	\begin{itemize}
-		\item etwas, woran etwas affigiert werden kann
-		\item Ausgangsformen der \textbf{Derivation}
-		\item kann selber auch komplex sein
+		\item Ausgangsform der \textbf{Derivation} (Wortbildung durch Affigierung)
+		\item Eine Basis kann \textbf{morphologisch einfach} (Wurzel) oder \textbf{komplex} sein.
 		
-		\begin{itemize}
-			\item (Basis) \emph{Les} + (Suffix) \emph{ung}
-			\item (Präfix) \emph{un} + (Basis) \emph{freundlich}
-			\item (Basis) \emph{freund} + (Suffix) \emph{lich}
-		\end{itemize}
+		\ea \alertred{freund}-lich, un-\alertred{freund-lich}, \alertred{Un-freund-lich}-keit
+		\z 
+
 	\end{itemize}
-	\item[]
+
 	\item \textbf{Derivat:} Resultat der \textbf{Derivation}
 	
-	\begin{itemize}
-		\item[]
-		\begin{itemize}
-			\item Lesung
-			\item unfreundlich
-			\item freundlich
-		\end{itemize}
-	\end{itemize}
+	\ea 
+		\ea \alertred{freund-lich} $=$ freund $+$ -lich
+		\ex \alertred{unfreundlich} $=$ un- $+$ freundlich
+		\z 
+	\z 
+
 \end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wurzel, Stamm, Basis, Simplex}
-
-\begin{itemize}
-	\item \textbf{Simplex}: (Pl. Simplizia)
-	
-	\begin{itemize}
-		\item[]
-		\item nicht zusammengesetztes oder abgeleitetes Lexem
-		\item kann als Basis für Neubildungen dienen.
-		
-		\begin{itemize}
-			\item[]
-			\item geben
-			\item in angeben, vergeblich, Zugabe
-		\end{itemize}
-		
-	\end{itemize}
-		
-		\item[]
-		\item Wenn Derivationsaffixe oder Stämme/Wurzeln nicht mehr aktiv (auch nicht mehr produktiv) sind, nimmt man die Form als Simplex wahr.
-		
-	\begin{itemize}
-		\item[]
-		\begin{itemize}
-			\item Ursache, Mädchen, freilich
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Affix \& Konfix}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Affix \& Konfix}
-
-\begin{itemize}
-	\item \textbf{Affixe}
-	
-	\begin{itemize}
-		\item \textbf{nicht frei vorkommende} \emph{Wort}bildungs- oder \emph{Wortform}bildungselemente
-		\item Nach ihrer \textbf{Stellung zum Stamm/Basis} unterscheidet man:
-		
-		\begin{itemize}
-			\item Präfix: \\
-			\underline{un}-schön, \underline{ver}-teilen
-			\item Suffix: \\
-			teil-\underline{bar}, Bäck-\underline{er}
-			\item Zirkumfix: \\
-			\underline{ge}-sag-\underline{t}, \underline{Ge}-red-\underline{e}
-			\item Infix: \\
-			Chrau (Vietnam): v\u{o}h \gq{wissen} \ras v\underline{an}\u{o}h \gq{weise} \\
-			Tagalog (Philippinen): sulat \gq{schreiben} \ras su\underline{mu}lat \gq{schrieb}
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
 
 \end{frame}
 
@@ -1087,26 +992,43 @@ lach + te & träum + te \\
 \frametitle{Affix \& Konfix}
 
 \begin{itemize}
-	\item \textbf{Affixe}
+	\item \textbf{Affix:}
 	
 	\begin{itemize}
-		\item[]
-		\item Nach ihrer morphologischen Funktion unterscheidet man:
+		\item \textbf{nicht frei vorkommende} (gebundene) Morpheme
 		
-		\begin{itemize}
-			\item[]
-			\item Derivationsaffixe (\emph{Wort}bildungsaffixe): \\
-			\emph{-ig, -lich, -keit; ver-, be-, ent-, un-, \dots}
-			\item[]
-			\item Flexionsaffixe (\emph{Wortformen}bildungsaffixe): \\
-			\emph{-st} (kommst), \emph{-(e)n} (gehen, Betten), \emph{-er} (Kinder, kleiner), \dots
-		\end{itemize}
+		\item nach der \textbf{Stellung} zum Stamm / zur Basis:
+		
+		\settowidth\jamwidth{[ TTagalog (Philippinen)]} 
+		\ea
+			\ea \textbf{Präfix:} \alertred{un}-schön, \alertred{ver}-teilen
+		
+			\ex \textbf{Suffix:} teil-\alertred{bar}, Bäck-\alertred{er}
+		
+			\ex \textbf{Zirkumfix:} \alertred{ge}-sag-\alertred{t}, \alertred{Ge}-red-\alertred{e}
+		
+			\ex \textbf{Infix:} 
+			
+			 v\u{o}h \gq{wissen} \ras v\alertred{an}\u{o}h \gq{weise} \jambox{[Chrau (Vietnam)]}
+			 
+			sulat \gq{schreiben} \ras su\alertred{mu}lat \gq{schrieb} \jambox{[Tagalog (Philippinen)]}
+		
+			\z 
+		\z 
+
+\pause 
+		
+		\item nach der \textbf{morphologischen Funktion}: \\
+		\textbf{Derivationsaffixe} (s. (\ref{ex:DerAff})) \vs \textbf{Flexionsaffixe} (s.\ (\ref{ex:FlexAff})):
+		
+		\ea 
+		\ea\label{ex:DerAff} -ig, -lich, -keit, ver-, be-, ent-, un-, \dots
+		\ex\label{ex:FlexAff} \emph{-st} in \ab{kommst}, \emph{-en} in \ab{Betten}, \emph{-er} in \ab{kleiner}, \dots
+		\z
+		\z 
 	\end{itemize}
 \end{itemize}
-
-
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1114,29 +1036,65 @@ lach + te & träum + te \\
 \frametitle{Affix \& Konfix}
 
 \begin{itemize}
-	\item \textbf{Konfixe}
+\item \textbf{Konfix}: 
+
+\begin{itemize}
+	\item \textbf{nicht frei vorkommende} Morpheme (ähnlich wie Affixe)
+	\item Aber sie lassen sich zu einem selbständigen Wort kombinieren (wie normale Wurzeln/ Stämme).
 	
-	\begin{itemize}
-		\item nicht frei vorkommende Elemente (ähnlich wie Affixe)
-		\item Sie lassen sich zu einem selbständigen Wort kombinieren (wie normale Wurzeln/ Stämme)
-		
-		\begin{itemize}
-			\item \underline{Bio}-loge
-			\item Soft-ie
-		\end{itemize}
-		
-		\item[]
-		\item stärker lexikalische Grundbedeutung als Affixe, können jedoch als Präfixe oder Suffixe fungieren
-		
-		\begin{itemize}
-			\item kino-phil
-			\item Phil-anthrop
-			\item Soft-getränk
-		\end{itemize}
+	\ea
+		\ea[]{\alertred{Bio}-\alertred{log}e}
+		\ex[]{\alertred{Soft}-ie}
+		\ex[*]{un-keit, ver-lich}
+		\z 
+	\z 
+	
+	\item Ihre Bedeutung ist \textbf{stärker lexikalisch} als bei Affixen.
+	
+	\item Sie können sowohl als \textbf{Präfixe} als auch als \textbf{Suffixe} fungieren.
+	
+		\ea 
+			\ea {kino-\alertred{phil} \vs \alertred{Phil}-anthrop}
+			\ex {\alertred{Un-}Mensch \vs *Mensch\alertred{-un}}
+			\ex {Soft-getränk}
+			\z 
+		\z 
 	\end{itemize}
 \end{itemize}
-
 
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Simplex vs.\ komplexe Lexeme}
+
+\begin{itemize}
+	\item \textbf{Simplex:} (Pl. Simplizia)
+	
+	\begin{itemize}
+		\item nicht zusammengesetztes oder abgeleitetes Lexem (\textbf{nicht komplex})
+		\item Sie können als Basis für Neubildungen dienen.
+		
+		\ea Tisch, geb(-en), rot
+		\z 
+		
+		\item Wenn Derivationsaffixe oder Stämme/Wurzeln \textbf{nicht mehr aktiv} (auch \textbf{nicht mehr produktiv}) sind, nimmt man die komplexe Form als Simplex wahr.
+
+		\ea Ursache, Mädchen, freilich
+		\z 
+	\end{itemize}
+
+\pause 
+
+	\item \textbf{komplexe Lexeme:}
+	
+	\begin{itemize}
+		\item durch Anwendung eines \textbf{Wortbildungsprozesses} erzeugte \textbf{komplexe Form}
+		
+		\ea un-freundlich (Derivation), Tisch-bein (Komposition)
+		\z 
+	\end{itemize}
+\end{itemize}
+
+\end{frame}

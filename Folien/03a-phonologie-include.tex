@@ -41,11 +41,11 @@
 \huberlintitlepage
 \iftoggle{toc}{
 \frame{
-\begin{multicols}{2}
+%\begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}
 	\tableofcontents
 	%[pausesections]
-\end{multicols}
+%\end{multicols}
 }
 }
 
@@ -83,28 +83,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phonologie}
-%\iftoggle{toc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Einführung}
-%\iftoggle{toc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Begleitlektüre}
 
@@ -125,6 +106,34 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Einführung}
+
+%%MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item \blaubf{Einführung}
+			\item Phonem, Phon, Allophon
+			\item Phonetisch-phonologische Ebenen
+			\item Phonetisch/phonologische Prozesse
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Einführung}
 
 \begin{itemize}
@@ -132,16 +141,16 @@
 	\item  Phonetik, auch \textbf{Sprechakt}lehre
 	\item Trennung von Phonetik und Phonologie: Ende der 1920er Jahre
 	\item Strukturalistische Lehre der Prager Schule \citep[vgl.][]{Trubetzkoy89a-doppelt}
-	\item[]
+	\item[]\pause
 	\item Unterscheidung auf allen Ebenen zwischen
 	
 	\begin{itemize}
 		\item[]
-		\item Sprachgebilde (zugrunde liegendes System \ras \textit{langue} -- später \textit{Kompetenz})
+		\item Sprachgebilde (\textbf{zugrunde liegendes System}: \textit{langue} (ab 1966: \textit{Kompetenz}))
 		\item[]
 		\item[] und
 		\item[]
-		\item Sprechakt (tatsächliche Realisierung in einer Kommunikationssituation \textit{parole} -- später \textit{Performanz})
+		\item Sprechakt (\textbf{tatsächliche Realisierung} in einer Kommunikationssituation: \textit{parole} (ab 1966: \textit{Performanz}))
 	\end{itemize}
 	
 \end{itemize}
@@ -152,75 +161,93 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Einführung}
+\frametitle{Phonetik \vs Phonologie}
 
 \begin{itemize}
 	\item \textbf{Phonetik:} Untersuchung der materiellen Seite des Sprechens (Phone)
 	\item[]
 	\item \textbf{Phonologie:} Systematik der Laute \ras Materielle (messbare) Daten der Phonetik werden in abstrakterer Art und Weise \textbf{systematisiert}
 	
-	\begin{itemize}
-		\item \textbf{Phoneminventar}: Bedeutungsunterscheidende Laute einer Sprache 
+\end{itemize}
 
-	\eal		
-		\ex Im Dt. bedeutungsunterscheidend \textipa{[v]} und \textipa{[f]}: \\
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Untersuchungsgegenstände der Phonologie -- I}
+	
+	\begin{itemize}
+		\item \textbf{Phoneminventar}: bedeutungsunterscheidende Laute einer Sprache 
+
+		\ea Im Dt. bedeutungsunterscheidend \textipa{[v]} und \textipa{[f]}: \\
 		\textipa{[v\t{aI}n]} vs.\ \textipa{[f\t{aI}n]} (Wein, fein)
-		\ex Deutsch: 16 Vokale \& 20 Konsonanten
-		\ex Rotokas (Papua): 5 Vokale \& 6 Konsonanten
-		\ex Mittelwert:  8 Vokale \& 23 Konsonanten
-	\zl
+	\z
+	
+		\item Deutsch: 16 Vokale \& 20 Konsonanten
+		\item Rotokas (Papua): 5 Vokale \& 6 Konsonanten
+		\item Mittelwert:  8 Vokale \& 23 Konsonanten
 	
 		\item \textbf{Allophonie}: Vorkommen vs. Nicht-Vorkommen (bzw. Variation) von Lauten in bestimmten Kontexten
 
 		\ea Wann kommt der \gqq{Ich-Laut} und wann der \gqq{Ach-Laut} vor?
 		\z
 
-	\end{itemize}
-	
 \end{itemize}
-		
+
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Einführung}
+\frametitle{Untersuchungsgegenstände der Phonologie -- II}
 
 \begin{itemize}
-	\item \textbf{Phonologische Distribution}: An welchen Stellen kann ein Laut oder eine Lautfolge auftreten
+
+		\item \textbf{Phonologische Distribution}:\par
+		An welchen Stellen kann ein Laut oder eine Lautfolge auftreten?
 
 	\ea \textipa{[St\textscr]} am Wortanfang aber nicht am Wortende:\\
 	\textipa{[St{\textscr}\t{aU}x]} \vs *\textipa{[\ldots aSt\textscr]}
 	\z
-
-	\item Phoneminventar, phonologische Distribution und Allophonie werden in der \textbf{strukturalistischen Phonologie} untersucht
-	\item[]
-	\item \textbf{Strukturalistische} Phonologie \ras Beschreibung von sprachlichen Daten 
+	
+	\item Phoneminventar, phonologische Distribution und Allophonie werden in der \textbf{strukturalistischen Phonologie} untersucht.
 
 \end{itemize}
+
+\begin{block}{Strukturalistische Phonologie}
+	Beschreibung von sprachlichen Daten 
+\end{block}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Einführung}
-
-\begin{itemize}
+	
+\begin{itemize}		
 	\item \textbf{Phonologische Prozesse}: Welche Lautfolgen, die an der Oberfläche unterschiedlich klingen, werden durch die Sprachnutzer trotzdem als Varianten eines zugrunde liegenden Musters erkannt?
 
-\ea \textipa{[ga{\textscr}t@n]} \vs 
-\textipa{[ga:d\textsyllabic{n}]}
+\ea \textipa{[ga{\textscr}t@n]} kann als \textipa{[ga:d\textsyllabic{n}]} ausgesprochen werden aber nicht als 
+\textipa{[ga:b\s{m}]}
 \z
 
-\item \textbf{Generative} Phonologie $\rightarrow$ Zugrundeliegende Form +  Regeln\\
-      ($\rightarrow$ Schlüsse über die allgemeine Sprachfähigkeit!) 
-	\item[]
-	\item Aufgaben des phonologischen Moduls:
+\end{itemize}
+
+
+\begin{block}{Generative Phonologie}
+	Untersuchung der zugrundeliegenden Form und der (generativen) Regeln, um Schlüsse über die \textbf{allgemeine Sprachfähigkeit} zu ziehen
+\end{block}
+
+      
+\begin{itemize}
+
+\item Aufgaben des \textbf{phonologischen Moduls}:
 	
 	\begin{itemize}
 		\item Bildung (und Verständnis) wohlgeformter Lautketten
-		\item Inventar von Minimaleinheiten (Distinktive Merkmale -- hier Phoneme!)
+		\item Inventar von Minimaleinheiten (distinktive Merkmale -- hier Phoneme!)
 		\item Regelinventar
 	\end{itemize}
 	 
@@ -231,40 +258,56 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Einführung}
+\frametitle{Weitere Untersuchungsgebiete der Phonologie}
 
-\begin{itemize}
-	\item Weitere Untersuchungsgebiete der Phonologie:
-	
 	\begin{itemize}
-		\item[]
 		\item Eigenschaften von (lautlichen) Einheiten, die größer sind als ein Laut (\zB~\textbf{Silbenphonologie})
-		\item[]
 		\item Wortakzent (\textbf{metrische Phonologie})
-		\item[]
 		\item Satzakzent, Phrasierung, Pausen, Sprechmelodie (\textbf{prosodische Phonologie}, Intonation)
+		\item Betrachtung der Laute (\textbf{lineare Phonologie})
+		\item Analyse einer Silbe (\textbf{nicht lineare/hierarchische Phonologie})
+
 	\end{itemize}
-	
-	\item[]
-	\item Betrachtung der Laute \ras \textbf{lineare Phonologie}
-	\item[]
-	\item Analyse von einer Silbe \ras \textbf{nicht lineare (hierarchische) Phonologie}
-\end{itemize}
 
+
+\begin{block}{Lineare Phonologie}
+Untersuchung der Segmente (Laute) und ihrer unmittelbaren Kontexte
+\end{block}
+
+\begin{block}{Hierarchische (nicht lineare) Phonologie}
+Untersuchung der suprasegmentalen Ebene (\zB Silbe)
+\end{block}
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonem, Phon, Allophon}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+
+%%MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item \blaubf{Phonem, Phon, Allophon}
+			\item Phonetisch-phonologische Ebenen
+			\item Phonetisch/phonologische Prozesse
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -276,23 +319,17 @@
 	\begin{itemize}
 		%\item[]
 		\item Minimaleinheit der Phonetik
-		\item Physikalisch messbare lautliche Einheit einer Sprache
+		\item physikalisch messbare lautliche Einheit einer Sprache
 	\end{itemize}
 	
-	\item[]
 	\item \textbf{Phonem} (Notation \textipa{/ /}):
 	
 	\begin{itemize}
 		%\item[]
 		\item Minimaleinheit der Phonologie
-		\item Abstraktes Konstrukt, steht für eine \textbf{Menge} von möglichen Phonen (Allophonen)
+		\item abstraktes Konstrukt, steht für eine \textbf{Menge} von möglichen Phonen (Allophonen)
 		\item Resultat von \textbf{Systematisierung}
-		\item Ermittelbar durch \textbf{Minimalpaarbildung} (strukturalistisches Kriterium)
-		
-	\begin{block}{Minimalpaar}
-Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unterscheidet.
-	\end{block}
-	
+		\item ermittelbar durch \textbf{Minimalpaarbildung} (strukturalistisches Kriterium)	
 	\end{itemize}
 	
 \end{itemize}
@@ -304,19 +341,18 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 \begin{frame}
 \frametitle{Phonem}
 
-Phoneme werden durch Schrägstirche gekennzeichnet: \textipa{/ /}
-	
 	\begin{itemize}
+	
 		\item Ermittelbar durch \textbf{Minimalpaarbildung} (strukturalistisches Kriterium)
 		
 		\begin{block}{Minimalpaar}
-Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unterscheidet
+			Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unterscheidet
 		\end{block}
 	
 	\eal
-		\ex \label{schaf} \textipa{[Sa:l]}  \ab{Schal} vs. \textipa{[Sa:f]} \ab{Schaf}
-		\ex\label{schall} \textipa{[Sa:l]} \ab{Schal} vs. \textipa{[Sal]} \ab{Schall}
-		\ex \label{saal} \textipa{[Sa:l]} \ab{Schal} vs. \textipa{[za:l]} \ab{Saal}
+		\ex \label{schaf} \textipa{[Sa:l]}  \ab{Schal} vs. \textipa{[Sa:f]} \ab{Schaf} \ras \textipa{/l/} \vs \textipa{/f/}
+		\ex\label{schall} \textipa{[Sa:l]} \ab{Schal} vs. \textipa{[Sal]} \ab{Schall} \ras \textipa{/a:/} \vs \textipa{/a/}
+		\ex \label{saal} \textipa{[Sa:l]} \ab{Schal} vs. \textipa{[za:l]} \ab{Saal} \ras \textipa{/S/} \vs \textipa{/z/}
 	\zl
 	
 		\item \textbf{Phonologische Opposition}: Austausch der Laute wirkt sich bedeutungsunterscheidend (oder kategorieunterscheidend) aus.
@@ -334,16 +370,13 @@ Wortpaar, das sich nur in einem Laut (eher Phonem) an der gleichen Stelle unters
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Phonem}
-
-\begin{block}{Phonem (strukturalistisch)}
-Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
-\end{block}
+\frametitle{Phonem (strukturalistisch)}
 
 \begin{itemize}
+	\item Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 	\item Ein Phonem trägt keine Bedeutung. Es unterscheidet Bedeutungen!
 	\item[]
-	\item Phoneme sind immer Phoneme \textbf{einer Sprache / eines Systems}
+	\item Phoneme sind immer Phoneme \textbf{einer Sprache/eines Systems}
 
 	\eal
 		\ex Deutsch: \textipa{[papa]} \textbf{=} \textipa{[p\super{h}ap\super{h}a]}
@@ -362,7 +395,7 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 	\begin{itemize}
 		\item Phonetische Realisierungsvarianten \textbf{eines} Phonems
 		
-		\ea \textipa{[Sp \textcolor{red}{r} a:xe]} = \textipa{[Sp \textcolor{red}{\textscr} a:xe]} = \textipa{[Sp \textcolor{red}{K} a:xe]} \\ \ras kein Bedeutungsunterschied
+		\ea \textipa{[Sp\textcolor{red}{r}a:xe]} = \textipa{[Sp\textcolor{red}{\textscr}a:xe]} = \textipa{[Sp\textcolor{red}{K}a:xe]} \\ \ras kein Bedeutungsunterschied
 		\z
 
 		\item \textbf{Komplementäre} Allophonie
@@ -397,26 +430,44 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonetisch-phonologische Ebenen}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+
+%%MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Phonem, Phon, Allophon
+			\item \blaubf{Phonetisch-phonologische Ebenen}
+			\item Phonetisch/phonologische Prozesse
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Phonetisch-phonologische Ebenen}
 
 	\begin{itemize}
-		\item Unterscheidung von mindestens zwei Ebenen
-		\item[$\rightarrow$] \textipa{[\textscr a: \alertred{t}]} und \textipa{[\textscr E: \alertred{d} 5]} (für \ab{Rad} und \abu{Räder})\\
+		\item Unterscheidung von (mindestens) zwei Ebenen
+		\item[$\rightarrow$] \textipa{[\textscr a:\alertred{t}]} und \textipa{[\textscr E:\alertred{d}5]} (für \ab{Rad} und \abu{Räder})\\
 		aber\\
-		\textipa{[\textscr a: \alertred{t}]} und \textipa{[\textscr E: \alertred{t} @]} (für \ab{Rat} und \abu{Räte})
+		\textipa{[\textscr a:\alertred{t}]} und \textipa{[\textscr E:\alertred{t}@]} (für \ab{Rat} und \abu{Räte})
 		\item[]
 		\item[$\rightarrow$] Warum verstehen wir dasselbe, wenn wir\\
-		\textipa{[h a: k @ \alertred{n}]} oder \textipa{[h a: k \alertred{N}]}\\
+		\textipa{[ha:k@\alertred{n}]} oder \textipa{[ha:k\alertred{N}]}\\
 		hören?
 		\item[]
 		\item \textbf{Tiefenstruktur} (Deep Structure) vs. \textbf{Oberflächenstruktur} (Surface Structure)
@@ -442,18 +493,18 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \begin{frame}{Tiefenstruktur (TS)}
 	
 \begin{itemize}
-	\item \textbf{Zugrundeliegende abstrakte Repräsentation} $\rightarrow$ Phoneme \textipa{/ /}
+	\item \textbf{zugrundeliegende abstrakte Repräsentation} $\rightarrow$ Phoneme \textipa{/ /}
 	\item[]
-	\item \textbf{Idiosynkratische} Form $\approx$ Nicht deriviert/abgeleitet
-	\item[$\rightarrow$] Die TS-Form kann nicht durch Regeln abgeleitet werden,\\
-                sie ist im Lexikon gespeichert.
+	\item \textbf{idiosynkratische} Form $\approx$ nicht deriviert/abgeleitet
+	\item Die TS-Form kann nicht durch Regeln abgeleitet werden,\\
+                sie ist im Lexikon gespeichert \dash idiosynkratisch.
 	\item[]
 	\item TS besteht aus Phonemen
 	
 	\eal
-		\ex \textipa{/\textscr\ a: t/}: TS-Form von \ab{Rat}
-		\ex \textipa{/\textscr\ a: d/}: TS-Form von \ab{Rad}
-		\ex \textipa{/h a: k @ n/}: TS-Form von \ab{Haken}
+		\ex \textipa{/\textscr a:t/}: TS-Form von \ab{Rat}
+		\ex \textipa{/\textscr a:d/}: TS-Form von \ab{Rad}
+		\ex \textipa{/ha:k@n/}: TS-Form von \ab{Haken}
 	\zl
 	
 \end{itemize}
@@ -463,17 +514,17 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Tiefenstruktur (TS)}
+\frametitle{Tiefenstruktur (TS) II}
 
 \begin{itemize}
-	\item \textipa{[t]} in \textipa{[\textscr\ a: \alertred{t}]} (von \textipa{/\textscr\ a: \alertred{d}/}) ist ableitbar
-	\item \textipa{/d/} in \textipa{/\textscr\ a: \alertred{d}/} ist idiosynkratisch
+	\item \textipa{[t]} in \textipa{[\textscr a:\alertred{t}]} (von \ab{Ra\alertred{d}}) ist ableitbar.
+	\item \textipa{/d/} in \textipa{/\textscr a:\alertred{d}/} ist idiosynkratisch.
 	\item[]
-	\item \textipa{/t/} in \textipa{/\textscr\ a: \alertred{t}/} ist idiosynkratisch
+	\item \textipa{/t/} in \textipa{/\textscr a:\alertred{t}/} (von \ab{Ra\alertred{t}}) ist idiosynkratisch.
 	\item[]
-	\item Wenn das Deutsche ein neues Wort wie \ab{Code} \textipa{[k @ U d]} entlehnen würde, würde dieses Wort früher oder später \gqq{eingedeutscht} werden.
+	\item Wenn das Deutsche ein neues Wort wie \ab{Code} \textipa{[k@Ud]} entlehnen würde, würde dieses Wort früher oder später \gqq{eingedeutscht} werden.
 	
-	\ea \textipa{[k O U t]} oder \textipa{[k o: t]} aber \gqq{des \textipa{[k O U d @ s]}} oder \gqq{des \textipa{[k o: t s]}} 
+	\ea \textipa{[kOUt]} oder \textipa{[ko:t]} aber \gqq{des \textipa{[kOUd@s]}} oder \gqq{des \textipa{[ko:ts]}} 
 	\z
 	
 \end{itemize}
@@ -499,14 +550,20 @@ Kleinste bedeutungsunterscheidende Einheit eines Sprachsystems
 \begin{itemize}
 	\item Von der abstrakten phonembasierten TS wird die sog. Oberflächenstruktur mithilfe von vorhersagbaren (phonetisch-)phonologischen Regeln deriviert.
 	\item[]
-	\item OS entspricht der \textbf{tatsächlichen Realisierung} $\rightarrow$ Phone \textipa{[ ]}
+	\item OS entspricht der \textbf{tatsächlichen Realisierung} durch konkrete Phone \ras \textipa{[ ]}
 	\item[]
 	\item Demnach gibt es viele mögliche OS-Formen, darunter auch die sog.\\ 
-\textbf{kanonische Aussprache} ($\approx$ Standardaussprache) $\rightarrow$ \textipa{[P e: b @ n]},\\
-und die vielen möglichen\\
-\textbf{umgangssprachlichen Formen} $\rightarrow$ \textipa{[P e: b n]}, \textipa{[P e: b m]}, \textipa{[P e: m]}
+\textbf{kanonische Aussprache} ($\approx$ Standardaussprache)\\
+und die vielen möglichen \textbf{umgangssprachlichen Formen}:
 %	\item[]
 %	\item Häufig wird zwischen phonologischen und phonetischen Prozessen unterschieden.
+
+\eal
+\ex \textipa{[Pe:b@n]}
+\ex \textipa{[Pe:bn]}
+\ex \textipa{[Pe:bm]}
+\ex \textipa{[Pe:m]}
+\zl
 \end{itemize}
 
 \end{frame}
@@ -520,10 +577,10 @@ und die vielen möglichen\\
 	\item Häufig wird zwischen phonologischen und phonetischen Prozessen unterschieden.
 	\item[]
 	\item \textbf{Phonetische Prozesse} $\rightarrow$ vom Sprachtempo und Stil abhängig
-	\item[$\rightarrow$] Plosiveinsetzung: \textipa{/a m t/} $\rightarrow$ \textipa{[P a m p t]}
+	\item[$\rightarrow$] Plosiveinsetzung: \textipa{/amt/} $\rightarrow$ \textipa{[Pampt]}
 
 	\item \textbf{Phonologische Prozessen} $\rightarrow$ systematisch und obligatorisch
-	\item[$\rightarrow$] \textit{Ich}-/\textit{Ach}-Laut-Wechsel \textipa{[b u: x]} (von \textipa{/b u: \c{c}/}) ist ableitbar
+	\item[$\rightarrow$] \textit{Ich}-/\textit{Ach}-Laut-Wechsel \textipa{[bu:x]} (von \textipa{/b u: \c{c}/}) ist ableitbar
 	\item[]
 	\item Einen klaren Schnitt zwischen phonetischen und phonologischen Prozessen gibt es nicht:
 	\item[$\rightarrow$] Sind g-Tilgung, Spirantisierung, Schwa-Tilgung, \dots\ phonetische oder phonologische Prozesse?
@@ -556,7 +613,7 @@ und die vielen möglichen\\
 
 	\item Kind erhält als \textbf{Input im Spracherwerb} OS-Formen wie: 
 	
-	\ea \textipa{[\textscr\ a: t]} und \textipa{[\textscr~E:~t~@]}, \textipa{[\textscr\ a: t]} und \textipa{[\textscr\ E: d 5]}, \textipa{[b E t]} und \textipa{[b E t @ n]}, \textipa{[b a: t]} und \textipa{[b~E:~d~5]}, \textipa{[k I n t]} und \textipa{[k I n d 5]}
+	\ea \textipa{[\textscr a:t]} und \textipa{[\textscr E:t@]}, \textipa{[\textscr a:t]} und \textipa{[\textscr E:d5]}, \textipa{[bEt]} und \textipa{[bEt@n]}, \textipa{[ba:t]} und \textipa{[bE:d5]}, \textipa{[kInt]} und \textipa{[kInd5]}
 	\z 
 
 \pause 
@@ -581,7 +638,7 @@ und die vielen möglichen\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	%\frametitle{TS \& OS}
+\frametitle{TS \& OS II}
 		
 	\begin{itemize}
 		\item \textbf{systematischer Wechsel} \textipa{[d]} und \textipa{[t]}: \zB \ab{Rad}, \ab{Bad}, \ab{Kind}
@@ -637,14 +694,32 @@ und die vielen möglichen\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phonetisch/phonologische Prozesse}
-%\iftoggle{toc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
+
+%%MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Phonem, Phon, Allophon
+			\item Phonetisch-phonologische Ebenen
+			\item \blaubf{Phonetisch-phonologische Prozesse}
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Phonetisch/phonologische Prozesse}
@@ -657,7 +732,7 @@ und die vielen möglichen\\
 	\item \textbf{Veränderung} von Segmenten
 	\item[]
 	\item Allgemeine Notation: A \ras B / C \underline{\quad} D
-	\item[] \gq{Ein Segment \emph{A} im Input wird zu einem Segment \emph{B} im Output in einem Kontext (\gqq{/}), in dem \emph{C} \textit{vor} und \emph{D} \textit{nach} \emph{A} vorkommt.} 
+	\item[] \gq{Ein Segment \emph{A} im Input wird zu einem Segment \emph{B} im Output in einem Kontext (\gq{/}), in dem \emph{A} \textit{zwischen} \emph{C} und \emph{D} vorkommt.} 
 \end{itemize}
 
 \end{frame}
@@ -682,7 +757,7 @@ und die vielen möglichen\\
 	\item \textbf{\textipa{/@/}-Tilgung}:
 	
 	\begin{itemize}
-		\item Fakultativ
+		\item fakultativ
 		\item Regel: \textipa{/@/} \ras $\emptyset$ / X \underline{\quad} $\{$[sonorant]; absoluter Auslaut$\}$
 	
 	\eal
@@ -696,7 +771,7 @@ und die vielen möglichen\\
 	\item \textbf{\textipa{/g/}-Tilgung}:
 	
 	\begin{itemize}
-		\item Obligatorisch
+		\item obligatorisch
 		\item Regel: \textipa{/g/} \ras $\emptyset$ / [nasal, velar] \underline{\quad} $]_\sigma$
 		
 		\ea \ab{Tilgung}: \textipa{[tIl.gUNg]} \ras \textipa{[tIl.gUN]}
@@ -717,7 +792,7 @@ und die vielen möglichen\\
 	\item \textbf{Geminatenreduktion}:
 
 	\begin{itemize}
-		\item Fakultativ
+		\item fakultativ
 		\item Regel: XX \ras X / A \underline{\quad} B
 
 	\eal
@@ -755,7 +830,7 @@ und die vielen möglichen\\
 	\item \textbf{Plosiveinsetzung}:
 	
 	\begin{itemize}
-		\item Fakultativ
+		\item fakultativ
 		
 	\eal
 		\ex \ab{Amt}: \textipa{/amt/} \ras \textipa{[Pampt]}
@@ -774,7 +849,7 @@ und die vielen möglichen\\
 	\item \textbf{Knacklauteinsetzung}:
 
 	\begin{itemize}
-		\item (Fast) Obligatorisch
+		\item (fast) obligatorisch
 		\item Plosiveinsetzung
 		\item Regel: $\emptyset$ \ras \textipa{[P]} / 
 		$\{$\#; \textprimstress$_\sigma[\}$ 
@@ -812,7 +887,7 @@ und die vielen möglichen\\
 	\item \textbf{Regressive velare Nasalassimilation}
 
 	\begin{itemize}
-		\item Obligatorisch (innerhalb des phonologischen Wortes)
+		\item obligatorisch (innerhalb des phonologischen Wortes)
 		\item Regel: \textipa{/n/} \ras \textipa{[N]} /  \underline{\quad} [velar, plosiv]
 
 	\eal		
@@ -835,7 +910,7 @@ und die vielen möglichen\\
 	\item \textbf{(Allgemeine) regressive Nasalassimilation}:
 
 	\begin{itemize}
-		\item Fakultativ
+		\item fakultativ
 		\item Regel: [nasal, Art.Ort: Y] \ras [nasal, Art.Ort: X] /  \underline{\quad} [obstruent, Art.Ort: X]
 		
 		vorausgesetzt X $\neq$ Y
@@ -858,7 +933,7 @@ und die vielen möglichen\\
 	\item \textbf{Progressive Nasalassimilation}:
 
 	\begin{itemize}
-		\item Fakultativ
+		\item fakultativ
 		\item Regel: [nasal, Art.Ort: Y] $\rightarrow$ [nasal, Art.Ort: X] /  [obstruent, Art.Ort: X] \underline{\quad} 
 
 	\eal
@@ -874,7 +949,7 @@ und die vielen möglichen\\
 	\item \textbf{\textipa{[\c{c}]/[x]}-Alternation (Dorsale Assimilation)}
 
 	\begin{itemize}
-		\item Obligatorisch
+		\item obligatorisch
 		\item Regel: \textipa{/\c{c}/} $\rightarrow$ \textipa{[x]} / Hinterer Vokal \underline{\quad}
 
 	\eal
@@ -898,7 +973,7 @@ und die vielen möglichen\\
 	\item \textbf{\textipa{/g/}-Spirantisierung}
 
 	\begin{itemize}
-		\item Fakultativ (dialektal)
+		\item fakultativ (dialektal)
 		\item Regel: \textipa{/g/} \ras \textipa{/\c{c}/} / V\underline{\quad} $]_\sigma$
 
 \eal	
@@ -920,7 +995,7 @@ und die vielen möglichen\\
 	\item \textbf{\textipa{/{\textscr}/}-Vokalisierung}
 	
 	\begin{itemize}
-		\item Fakultativ -- Obligatorisch
+		\item fakultativ -- Obligatorisch
 		\item Regel: \textipa{/{\textscr}/} \ras \textipa{[5]} / V\underline{\quad} $]_\sigma$
 
 	\eal
@@ -944,7 +1019,7 @@ und die vielen möglichen\\
 	\item \textbf{Auslautverhärtung}
 
 	\begin{itemize}
-		\item Obligatorisch
+		\item obligatorisch
 		\item Regel: /obstruent, stimmhaft/ \ras [obstruent, stimmlos] / \underline{\quad} $]_\sigma$
 
 	\eal
@@ -975,7 +1050,6 @@ und die vielen möglichen\\
 %	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}{Reihenfolge der Prozesse}
 
 Die Reihenfolge der Prozesse spielt eine wichtige Rolle!
@@ -998,5 +1072,284 @@ Die Reihenfolge der Prozesse spielt eine wichtige Rolle!
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hausaufgabe}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{hausaufgabe}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+\begin{itemize}
+	\item[1.] Ordnen Sie die Artikulationsorte und -organe (Buchstaben) den entsprechenden Bezeichnungen (Klammern) zu.
+	
+	\begin{minipage}{0.48\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.33]{material/04phonoatonomy}
+		\end{figure}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		
+		(~~) Stimmritze (glottal)\\
+		(~~) Kehlkopf (laryngal)\\
+		(~~) Zahndamm (alveolar)\\
+		(~~) Nasenraum (nasal)\\
+		(~~) harter Gaumen (palatal)\\
+		(~~) Zähne (dental)\\
+		(~~) weicher Gaumen (velar)\\
+		(~~) Zungenrücken (dorsal)\\
+		(~~) Halszäpfchen (uvular)\\
+		(~~) Lippen (labial)\\
+		(~~) Zungenspitze (apikal)
+	\end{minipage}
+	
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Hausaufgabe}
+\begin{itemize}
+\item[2.] Welcher Laut passt jeweils nicht in die folgenden Reihen? Begründen Sie Ihre Entscheidungen.
+
+\eal
+\ex \textipa{[b]}, \textipa{[z]}, \textipa{[a]}, \textipa{[g]}, \textipa{[v]}, \textipa{[p]}, \textipa{[u]}
+\ex \textipa{[t]}, \textipa{[s]}, \textipa{[n]}, \textipa{[\c{c}]}, \textipa{[l]}, \textipa{[d]}, \textipa{[r]}
+\ex \textipa{[f]}, \textipa{[s]}, \textipa{[x]}, \textipa{[h]}, \textipa{[r]}, \textipa{[z]}
+\ex \textipa{[N]}, \textipa{[m]}, \textipa{[k]}, \textipa{[g]}
+\ex \textipa{[m]}, \textipa{[b]}, \textipa{[N]}, \textipa{[p]}
+\zl
+
+\item[3.] Geben Sie die \textbf{phonologische Repräsentation} der folgenden Wörter und \textbf{verschiedene phonetische Realisierungen} (\zB im Paradigma) an. Erläutern Sie anschließend den \textbf{Unterschied} zwischen den verschiedenen möglichen phonetischen Realisierungen.
+
+\eal
+\ex Dieb
+\ex König
+\ex eng
+\zl
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Hausaufgabe}
+
+\begin{itemize}
+\item[4.] Bestimmen Sie, ob es sich bei den folgenden Lautkombinationen um Affrikaten handeln kann. Begründen Sie Ihre Entscheidungen.
+
+\eal
+\ex \textipa{[kl]}
+\ex \textipa{[pf]}
+\ex \textipa{[st]}
+\ex \textipa{[tr]}
+\ex \textipa{[ts]}
+\zl
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+} 
+%% END true = Q
+%% BEGIN false = Q + A
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe}
+\begin{itemize}
+	\item[1.] Ordnen Sie die Artikulationsorte und -organe (Buchstaben) den entsprechenden Bezeichnungen (Klammern) zu.
+	
+\begin{minipage}{0.48\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.33]{material/04phonoatonomy}
+	\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+	
+		(~~) Stimmritze (glottal)\\
+		(~~) Kehlkopf (laryngal)\\
+		(~~) Zahndamm (alveolar)\\
+		(~~) Nasenraum (nasal)\\
+		(~~) harter Gaumen (palatal)\\
+		(~~) Zähne (dental)\\
+		(~~) weicher Gaumen (velar)\\
+		(~~) Zungenrücken (dorsal)\\
+		(~~) Halszäpfchen (uvular)\\
+		(~~) Lippen (labial)\\
+		(~~) Zungenspitze (apikal)
+\end{minipage}
+
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Hausaufgabe}
+\begin{itemize}
+	\item[2.] Welcher Laut passt jeweils nicht in die folgenden Reihen? Begründen Sie Ihre Entscheidungen.
+	
+	\ea \label{ex:HA2}
+		\ea \textipa{[b]}, \textipa{[z]}, \textipa{[a]}, \textipa{[g]}, \textipa{[v]}, \textipa{[p]}, \textipa{[u]}
+		\ex \textipa{[t]}, \textipa{[s]}, \textipa{[n]}, \textipa{[\c{c}]}, \textipa{[l]}, \textipa{[d]}, \textipa{[r]}
+		\ex \textipa{[f]}, \textipa{[s]}, \textipa{[x]}, \textipa{[h]}, \textipa{[r]}, \textipa{[z]}
+		\ex \textipa{[N]}, \textipa{[m]}, \textipa{[k]}, \textipa{[g]}
+		\ex \textipa{[m]}, \textipa{[b]}, \textipa{[N]}, \textipa{[p]}
+		\z
+	\z
+	
+	\item[3.] Geben Sie die \textbf{phonologische Repräsentation} der folgenden Wörter und \textbf{verschiedene phonetische Realisierungen} (\zB im Paradigma) an. Erläutern Sie anschließend den \textbf{Unterschied} zwischen den verschiedenen möglichen phonetischen Realisierungen.
+	
+	\ea \label{ex:HA3}
+		\ea Dieb
+		\ex König
+		\ex eng
+		\z
+	\z
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Hausaufgabe}
+
+\begin{itemize}
+	\item[4.] Bestimmen Sie, ob es sich bei den folgenden Lautkombinationen um Affrikaten handeln kann. Begründen Sie Ihre Entscheidungen.
+	
+	\ea \label{ex:HA4}
+		\ea \textipa{[kl]}
+		\ex \textipa{[pf]}
+		\ex \textipa{[st]}
+		\ex \textipa{[tr]}
+		\ex \textipa{[ts]}
+		\z
+	\z
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lösung der Hausaufgabe}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Lösung}
+\begin{itemize}
+	\item[1.] Ordnen Sie die Artikulationsorte und -organe (Buchstaben) den entsprechenden Bezeichnungen (Klammern) zu.
+	
+	\begin{minipage}{0.48\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.33]{material/04phonoatonomy}
+		\end{figure}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		
+		(\only<2->{\alertred{G}}) Stimmritze (glottal)\\
+		(\only<3->{\alertred{F}}) Kehlkopf (laryngal)\\
+		(\only<4->{\alertred{B}}) Zahndamm (alveolar)\\
+		(\only<5->{\alertred{A}}) Nasenraum (nasal)\\
+		(\only<6->{\alertred{H}}) harter Gaumen (palatal)\\
+		(\only<7->{\alertred{D}}) Zähne (dental)\\
+		(\only<8->{\alertred{J}}) weicher Gaumen (velar)\\
+		(\only<9->{\alertred{I}}) Zungenrücken (dorsal)\\
+		(\only<10->{\alertred{K}}) Halszäpfchen (uvular)\\
+		(\only<11->{\alertred{C}}) Lippen (labial)\\
+		(\only<12->{\alertred{E}}) Zungenspitze (apikal)
+	\end{minipage}
+	
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Lösung}
+\begin{itemize}
+	\item[2.] Welcher Laut passt jeweils nicht in die folgenden Reihen? Begründen Sie Ihre Entscheidungen.
+	
+\begin{exe}
+	\exr{rx:HA2}
+\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXt}
+	\begin{xlist}
+		\ex \textipa{[b]}, \textipa{[z]}, \textipa{[a]}, \textipa{[g]}, \textipa{[v]}, \textipa{[p]}, \textipa{[u]} \loesung{2}{\textipa{[p]} (nicht sth., sondern stl.)}
+		\ex \textipa{[t]}, \textipa{[s]}, \textipa{[n]}, \textipa{[\c{c}]}, \textipa{[l]}, \textipa{[d]}, \textipa{[r]} \loesung{3}{\textipa{[ç]} (nicht alveolar, sondern palatal)}
+		\ex \textipa{[f]}, \textipa{[s]}, \textipa{[x]}, \textipa{[h]}, \textipa{[r]}, \textipa{[z]}
+		\loesung{4}{\textipa{[r]} (kein Frikativ, sondern Vibrant)}
+		\ex \textipa{[N]}, \textipa{[m]}, \textipa{[k]}, \textipa{[g]}
+		\loesung{5}{\textipa{[k]} (nicht sth., sondern stl.)}\loesung{6}{oder: \textipa{[m]} (nicht velar, sondern labial)}
+		\ex \textipa{[m]}, \textipa{[b]}, \textipa{[N]}, \textipa{[p]}
+		\loesung{7}{\textipa{[N]} (nicht labial, sondern velar)} \loesung{8}{oder: \textipa{[p]} (nicht sth., sondern stl.)}
+	\end{xlist}
+\end{exe}
+	
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Lösung}
+\begin{itemize}
+	\item[3.] Geben Sie die \textbf{phonologische Repräsentation} der folgenden Wörter und \textbf{verschiedene phonetische Realisierungen} (\zB im Paradigma) an. Erläutern Sie anschließend den \textbf{Unterschied} zwischen den verschiedenen möglichen phonetischen Realisierungen.
+	
+\begin{exe}
+	\exr{ex:HA3}
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXt}
+	\begin{xlist}
+		\ex Dieb
+		\loesung{2}{\textipa{/di:b/}: \textipa{[di:p], [di:.bə]} -- Auslautverhärtung des \textipa{/b/} in der Koda}
+		\ex König
+		\loesung{3}{\textipa{/k\o :nıg/}: \textipa{[k\super h\o:.nıç], [k\super h\o:.nı.gə]} --} \loesung{3}{Spirantisierung des \textipa{/g/} in der Koda}
+		\ex eng
+		\loesung{4}{\textipa{/εng/}: \textipa{[PεN]}, (gegebenenfalls (dialektal) \textipa{[PENk]} -- g-Elision)}
+	\end{xlist}
+\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Lösung}
+
+\begin{itemize}
+	\item[4.] Bestimmen Sie, ob es sich bei den folgenden Lautkombinationen um Affrikaten handeln kann. Begründen Sie Ihre Entscheidungen.
+
+\begin{exe}	
+	\exr{ex:HA4}
+\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
+	\begin{xlist}
+		\ex \textipa{[kl]} \loesung{2}{keine Affrikate (Zweitglied ist kein Frikativ)}
+		\ex \textipa{[pf]} \loesung{3}{Affrikate (Verbindung aus Plosiv und homorganem Frikativ)}
+		\ex \textipa{[st]} \loesung{4}{keine Affrikate (Plosiv ist Zweitglied)}
+		\ex \textipa{[tr]} \loesung{5}{keine Affrikate (Zweitglied ist kein Frikativ)}
+		\ex \textipa{[ts]} \loesung{6}{Affrikate (Verbindung aus Plosiv und homorganem Frikativ)}
+	\end{xlist}
+\end{exe}
+
+\end{itemize}
+
+\end{frame}
+
+
+}%% END LOESUNG	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

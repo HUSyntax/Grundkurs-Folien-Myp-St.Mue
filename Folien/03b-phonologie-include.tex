@@ -709,7 +709,7 @@ Die Silbe ist \textbf{intern strukturiert} und besteht aus den folgenden Teilen:
 	\item[] 
 	\item \textbf{Minimale Silbe} besteht nur aus einem V im  Nukleus
 	  \ea
-          \ab{gehe} \ras \textipa{[ge: . \alertred{@}]}
+          \ab{gehe} \ras \textipa{[ge:.\alertred{@}]}
           \z
 	
 \end{itemize}
@@ -797,7 +797,7 @@ Im Deutschen sind
 	\end{itemize}
 	
 	
-Maximale Onset-Belegung in verschiedenen Sprachen
+Maximale Onset-Belegung in verschiedenen Sprachen:
 
 \ea Deutsch \textipa{[\alertred{St\textscr}aIt]} \gq{Streit}
 \ex Tschechisch \textipa{[\alertred{fspl}a.nout]} \gq{aufflammen}
@@ -1215,11 +1215,11 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 	\node at (-3,3) {\textipa{/l/}};
 	\node at (-3,4) {Vokal};
 	\draw[black] (0,1) -- (1,3) -- (2,4) -- (3,2) -- (4,1);
-	\node at (0,-1.08) {\textipa{p}};
-	\node at (1,-0.91) {\textipa{l}};
-	\node at (2,-1) {\textipa{U}};
-	\node at (3,-1) {\textipa{m}};
-	\node at (4,-1.08) {\textipa{p}};
+	\node at (0,-1) {\strut \textipa{p}};
+	\node at (1,-1) {\strut \textipa{l}};
+	\node at (2,-1) {\strut \textipa{U}};
+	\node at (3,-1) {\strut \textipa{m}};
+	\node at (4,-1) {\strut \textipa{p}};
 	\fill (0,1) circle [radius=3pt];
 	\fill (1,3) circle [radius=3pt];
 	\fill (2,4) circle [radius=3pt];
@@ -1242,65 +1242,6 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Übung}
-%
-\begin{itemize}
-	\item Geben Sie die Sonoritätsprofile der folgenden Silben an.
-	
-	\ea Spatz, Dachs, Clown, Milch
-	\z
-
-% bei Spatz geht es von Frikativ s auf Plosiv p runter = Ausnahme
-% bei Dachs geht es auf k runter und dann auf s hoch   = Ausnahme
-% clown k = plosiv, l = /l/ au = Vokal, n = , keine Ausnahme
-
-% Glottal stop gehört zu den Plosiven
-
-	\item Erklären Sie die Ungrammatikalität der folgenden Silben:
-	
-	\begin{exe}
-		\ex
-		\begin{xlist}
-			\ex[*]{ 
-				\textipa{[lbat]} }
-			
-			\ex[*]{
-				\textipa{[blabl]}}
-			
-			\ex[*]{
-				\textipa{[ki:l\textscr]}}
-			
-			\ex[*]{
-				\textipa{[ngang]}}
-			
-			\ex[*]{
-				\textipa{[krafm]}}
-			
-			\ex[*]{
-				\textipa{[elat]}}
-			
-			\ex[*]{
-				\textipa{[plaml]}}
-			
-			\ex[*]{
-				\textipa{[nfatl]}}
-		\end{xlist}
-	\end{exe}
-
-\end{itemize}
-
-\end{frame}
-
-} 
-%% END true = Q
-%% BEGIN false = Q + A
-{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Übung}
@@ -1339,120 +1280,12 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-
-\vfill
-\hfill
-	\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (5,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,5.5); % y axis
-		\node at (-3,0.5) {Plosiv};
-		\node at (-3,1.5) {Frikativ};
-		\node at (-3,5) {Vokal};
-		\draw[black] (0,1.5) -- (1,0.5) -- (2,5) -- (3,1);
-		\node at (0,-1.13) {\textipa{S}};
-		\node at (1,-1.23) {\textipa{p}};
-		\node at (2,-1.13) {\textipa{a}};
-		\node at (3,-1) {\textipa{\texttoptiebar{ts}}};
-		\fill (0,1.5) circle [radius=3pt];
-		\fill (1,0.5) circle [radius=3pt];
-		\fill (2,5) circle [radius=3pt];
-		\fill (3,1) circle [radius=3pt];
-	\end{tikzpicture}
-\pause
-	\hfill
-		\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (5,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,5.5); % y axis
-		\node at (-3,0.5) {Plosiv};
-		\node at (-3,1.5) {Frikativ};
-		\node at (-3,5) {Vokal};
-		\draw[black] (0,0.5) -- (1,5) -- (2,0.5) -- (3,1.5);
-		\node at (0,-1) {\textipa{d}};
-		\node at (1,-1.13) {\textipa{a}};
-		\node at (2,-1) {\textipa{k}};
-		\node at (3,-1.13) {\textipa{s}};
-		\fill (0,0.5) circle [radius=3pt];
-		\fill (1,5) circle [radius=3pt];
-		\fill (2,0.5) circle [radius=3pt];
-		\fill (3,1.5) circle [radius=3pt];
-		\end{tikzpicture}
-\hfill\mbox{}
-\vfill
-\pause
-\hfill
-		\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (5,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,5.5); % y axis
-		\node at (-3,0.5) {Plosiv};
-		\node at (-3,3) {Nasal};
-		\node at (-3,4) {\textipa{/l/}};
-		\node at (-3,5) {Vokal};
-		\draw[black] (0,0.5) -- (1,4) -- (2,5) -- (3,3);
-		\node at (0,-1) {\textipa{k}};
-		\node at (1,-1) {\textipa{l}};
-		\node at (2,-1) {\textipa{\texttoptiebar{aU}}};
-		\node at (3,-1.15) {\textipa{n}};
-		\fill (0,0.5) circle [radius=3pt];
-		\fill (1,4) circle [radius=3pt];
-		\fill (2,5) circle [radius=3pt];
-		\fill (3,3) circle [radius=3pt];
-		\end{tikzpicture}
-	\hfill
-\pause
-		\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (5,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,5.5); % y axis
-		\node at (-3,1.5) {Frikativ};
-		\node at (-3,3) {Nasal};
-		\node at (-3,4) {\textipa{/l/}};
-		\node at (-3,5) {Vokal};
-		\draw[black] (0,3) -- (1,5) -- (2,4) -- (3,1.5);
-		\node at (0,-1) {\textipa{m}};
-		\node at (1,-1) {\textipa{I}};
-		\node at (2,-1) {\textipa{l}};
-		\node at (3,-1) {\textipa{\c{c}}};
-		\fill (0,3) circle [radius=3pt];
-		\fill (1,5) circle [radius=3pt];
-		\fill (2,4) circle [radius=3pt];
-		\fill (3,1.5) circle [radius=3pt];
-		\end{tikzpicture}
-\hfill\mbox{}
-\vfill
-\end{frame}
-
-
+\iftoggle{ue-loesung}{
+	\input{loesungen/03b-ue-loesung01-include}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-	
-	\begin{exe}
-		\exr{ex:lbat}
-		\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-		\begin{xlist}
-			\ex[*]{ \textipa{[lbat]}\loesung{2}{\textipa{[l]} vor \textipa{[b]} im Onset} }
-			\ex[*]{ \textipa{[blabl]}\loesung{3}{\textipa{[b]} vor \textipa{[l]} in der Koda $+$ Auslautverhärtung} }
-			\ex[*]{ \textipa{[m{\textscr}apt]}\loesung{4}{\textipa{[m]} vor \textipa{[\textscr ]} im Onset} }
-			\ex[*]{ \textipa{[ki:l\textscr]}\loesung{5}{\textipa{[l]} vor \textipa{[\textscr ]} in der Koda} }
-			\ex[*]{ \textipa{[ngang]}\loesung{6}{\textipa{[n]} vor \textipa{[g]} im Onset $+$ reg. velare Nasalassimiliation } \loesung{6}{$+$ g-Tilgung}}
-			\ex[*]{ \textipa{[krafm]}\loesung{7}{\textipa{[f]} vor \textipa{[m]} in der Koda} }
-			\ex[*]{ \textipa{[elat]}\loesung{8}{2 Silben (2 Nuklei) $+$ Knacklauteinsetzung} }
-			\ex[*]{ \textipa{[plaml]}\loesung{9}{\textipa{[m]} vor \textipa{[l]} in der Koda} }
-			\ex[*]{ \textipa{[nfatl]}\loesung{10}{\textipa{[n]} vor \textipa{[f]} im Onset $+$ \textipa{[t]} vor \textipa{[l]} in der Koda} }
-		\end{xlist}
-	\end{exe}
-	
-\end{frame}
 
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Weitere phonotaktische Beschränkungen}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1539,13 +1372,10 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{hausaufgabe}{
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Hausaufgabe}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Hausaufgabe}
@@ -1553,14 +1383,10 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \begin{itemize}
 	\item[1.]{Geben Sie die standarddeutsche \textbf{phonetische Transkription} für folgende Wörter an:}
 	
-	\eal
+	\eal \label{ex:03bHA1}
 	\ex Spitzenschuhe
 	\ex Endausscheidung
-	\ex Flammkuchen
-	\ex Erzeugnisse
 	\ex Platzanweiser
-	\ex zerstäubst
-	\ex Lieblingsonkel
 	\ex verzweifeln
 	\ex abverlangen
 	\ex Überarbeitung
@@ -1571,12 +1397,12 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}{Hausaufgabe}
 
 \begin{itemize}
 \item[2.]{Erläutern Sie anhand der folgenden Beispiele, unter welchen Bedingungen die \textbf{Auslautverhärtung} im Deutschen stattfindet.}
 
-\eal
+\eal \label{ex:03bHA2}
 \ex Wand -- Wände
 \ex lesen -- lesbar
 \ex sagen -- sagst
@@ -1590,12 +1416,12 @@ $x > y$ $:=$ $x$ ist sonorer als $y$
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}{Hausaufgabe}
 
 \begin{itemize}
 \item[3.]{Geben Sie fünf verschiedene \textbf{phonetische oder phonologische Prozesse} an, die in dem folgenden Satz -- teilweise nur bei schnellerem Sprechen -- beobachtet werden können.} 
 
-\ea
+\ea \label{ex:03bHA3}
 \begin{quote}
 Um die fünf Haken in regelmäßigen Abständen an die Wand schrauben zu können, sollten Sie sich Bohrmaschine, Wasserwaage, Zollstock und Dübel bereitgelegt haben und auf keinen Fall die Nerven verlieren, bevor Sie nicht befestigt sind.
 \end{quote}
@@ -1606,14 +1432,14 @@ Um die fünf Haken in regelmäßigen Abständen an die Wand schrauben zu können
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}{Hausaufgabe}
 
 \begin{itemize}	
 \item[4.]{Illustrieren Sie den deutschen phonemischen Kontrast der folgenden Phoneme durch \textbf{Minimalpaare}, wobei der Kontrast (wenn möglich) ein Mal initial, ein Mal final vorkommen soll.
 
 Beispiel: \textipa{[p]} -- \textipa{[f]} Paul -- faul (Initialposition), Laub -- Lauf (Finalposition)}
 
-\eal
+\eal \label{ex:03bHA4}
 \ex \textipa{[m]} -- \textipa{[n]}
 \ex \textipa{[p]} -- \textipa{[b]}
 \ex \textipa{[h]} -- \textipa{[v]}
@@ -1623,124 +1449,16 @@ Beispiel: \textipa{[p]} -- \textipa{[f]} Paul -- faul (Initialposition), Laub --
 
 \end{itemize}
 \end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-} 
-%% END true = Q
-%% BEGIN false = Q + A
-%% das hat nciht funktioniert St. Mü. Textverdopplung ist ohnehin nicht gut.
-
 \iftoggle{ha-loesung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection*{Lösung der Hausaufgabe}
+	\input{loesungen/03b-ha-loesung-include}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{Lösung}
-
-\begin{itemize}
-	\item[1.]{Geben Sie die standarddeutsche \textbf{phonetische Transkription} für folgende Wörter an:}
-	
-	\begin{exe}
-		\exr{ex:HA1}
-		\begin{xlist}
-		\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-			\ex Spitzenschuhe \loesung{2}{\textipa{['SpI\textsubdot{\t{ts}}@n.Su:.@]}}
-			\ex Endausscheidung \loesung{3}{\textipa{['PEnt.P\texttoptiebar{aU}s.S\texttoptiebar{aI}.dUN]}}
-			\ex Platzanweiser \loesung{4}{\textipa{['pla\texttoptiebar{ts}.Pan.v\texttoptiebar{aI}.z5]}}
-			\ex verzweifeln \loesung{5}{\textipa{[fE5.'\texttoptiebar{ts}v\texttoptiebar{aI}.f@ln]}}
-			\ex abverlangen \loesung{6}{\textipa{['Pap.vE5.la\.N@n]}}
-			\ex Überarbeitung \loesung{7}{\textipa{[y:.b5.'Pa\;R.b\texttoptiebar{aI}.tUN]}}
-			\ex Zugeständnis \loesung{8}{\textipa{['\texttoptiebar{ts}u:.g@.StEnt.nIs]}}
-		\end{xlist}
-	\end{exe}
-
-\end{itemize}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-
-\begin{itemize}
-	\item[2.]{Erläutern Sie anhand der folgenden Beispiele, unter welchen Bedingungen die \textbf{Auslautverhärtung} im Deutschen stattfindet.}
-
-	\begin{exe}
-		\exr{ex:HA2}
-		\begin{xlist}
-		\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-			\ex Wand -- Wände \loesung{2}{sth. Plosive am Wortende}
-			\ex lesen -- lesbar \loesung{3}{generell am Silbenende}
-			\ex sagen -- sagst \loesung{4}{betrifft \emph{alle} sth. Plosive in der Koda}
-			\ex Roggen \loesung{5}{jedoch keine Silbengelenke}
-		\end{xlist}
-	\end{exe}
-
-\end{itemize}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-
-\begin{itemize}
-\item[3.]{Geben Sie fünf verschiedene \textbf{phonetische oder phonologische Prozesse} an, die in dem folgenden Satz -- teilweise nur bei schnellerem Sprechen -- beobachtet werden können.} 
-
-\begin{exe}
-	\exr{ex:HA3}
-	\begin{quote}
-	Um die fünf Haken in regelmäßigen Abständen an die Wand schrauben zu können, sollten Sie sich Bohrmaschine, Wasserwaage, Zollstock und Dübel bereitgelegt haben und auf keinen Fall die Nerven verlieren, bevor Sie nicht befestigt sind.
-	\end{quote}
-\end{exe}
 
 
-	\begin{description}
-		\item[\alertred{\textbf{Beispiele:}}] ~
-	
-		\alertred{
-		regressive Nasalassimilation in \emph{fünf}\\
-		progressive Nasalassimilation nach Schwa-Elision (feeding) in \emph{Haken}\\
-		Auslautverhärtung in \emph{Wand}\\
-		progressive Nasalassimilation nach Schwa-Elision (feeding) in \emph{schrauben}\\
-		g-Spirantisierung in \emph{befestigt}\\
-		r-Vokalisierung in \emph{Bohrmaschine}
-	}						
-		\end{description}
 
-\end{itemize}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-
-\begin{itemize}	
-\item[4.]{Illustrieren Sie den deutschen phonemischen Kontrast der folgenden Phoneme durch \textbf{Minimalpaare}, wobei der Kontrast (wenn möglich) ein Mal initial, ein Mal final vorkommen soll.
-
-Beispiel: \textipa{[p]} -- \textipa{[f]} Paul -- faul (Initialposition), Laub -- Lauf (Finalposition)}
-
-\begin{exe}
-	\exr{ex:HA4}
-	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-	\begin{xlist}
-		\ex \textipa{[m]} -- \textipa{[n]} \loesung{2}{muss -- Nuss, beim -- Bein}
-		\ex \textipa{[p]} -- \textipa{[b]} \loesung{3}{Pass -- Bass (wegen Auslautverhärtung kein finaler Kontrast möglich)}
-		\ex \textipa{[h]} -- \textipa{[v]} \loesung{4}{heiß -- weiß (\textipa{[h]} kommt nicht final vor)}
-		\ex \textipa{[n]} -- \textipa{[N]} \loesung{5}{Sinn -- sing(\textipa{[N]} kommt nicht initial vor)}
-		\ex \textipa{[f]} -- \textipa{[v]} \loesung{6}{Fass -- was (wegen Auslautverhärtung kein finaler Kontrast möglich)}
-	\end{xlist}
-\end{exe}
-		
-\end{itemize}
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%@EE: Hausaufgabe + Lösung hinzufügen
 %@EE: Checken: Keine Abbildungen und elektronischen Quellen?
-
 

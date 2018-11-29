@@ -265,72 +265,27 @@
 \end{frame}
 
 
-\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Übung}
 
 Wie viele Laute haben die folgenden Wörter?
 
-	\begin{enumerate}
-		\item \ab{Fische}
-		\item \ab{Nixe}
-		\item \ab{lang}
-		\item \ab{Bearbeitung}
-	\end{enumerate}
+\begin{enumerate}
+	\item \ab{Fische}
+	\item \ab{Nixe}
+	\item \ab{lang}
+	\item \ab{Bearbeitung}
+\end{enumerate}
 \end{frame}
 
-} 
-%% END uebung true = Q
-%% BEGIN uebung false = Q + A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übung}
-
-Wie viele Laute haben die folgenden Wörter?
-
-\begin{columns}
-	\column{.30\textwidth}
-	\begin{enumerate}
-		\item \ab{Fische}
-		\item \ab{Nixe}
-		\item \ab{lang}
-		\item \ab{Bearbeitung}
-		\item[]
-	\end{enumerate} 				
-	\column{.35\textwidth}
-	\begin{enumerate}
-		\item<2-> \textipa{[ f \textsci{} \textesh{} @ ]}
-		\item<4-> \textipa{[ n \textsci{} k s @ ]}
-		\item<6-> \textipa{[ l a N ]}
-		\item<8-> \textipa{[ b @ P a \textscr\  b \t{aI} t U N ]}
-		\item<10->[] \textipa{[ b @ P a:  b \t{aI} t U N ]}
-	\end{enumerate} 
-	\column{.15\textwidth}
-	\begin{enumerate}
-		\item<3->[] 4
-		\item<5->[] 5
-		\item<7->[] 3
-		\item<9->[] 10--11 % bearbeitung ai als ein
-		% Laut oder als zwei gezählt
-		\item<11->[] 9--10 % beabeitung ai als ein
-		% Laut oder als zwei gezählt
-	\end{enumerate}
-\end{columns}
-
-
-\bigskip
-\begin{itemize}
-	\item[]<11-> \textipa{[\t{aI}]} kann man als einen oder als zwei Laute zählen.
-\end{itemize}         
-
-\end{frame}
-
-}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ue-loesung}{
 
+	\input{loesungen/02-ue-loesung01-include}
 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -859,15 +814,15 @@ Wie viele Laute haben die folgenden Wörter?
 	\draw[fill] (2,2) circle [radius=0.05];
 	\draw[fill] (2,3) circle [radius=0.05];
 	\draw[fill] (0.25,3) circle [radius=0.05];
-	\draw[black] (0.25,3)--(0.55,1.8);
+	\draw[black] (0.25,3)--(1,0);
 	\draw[black] (-0.1,3)--(-1,3);
 	\draw[black] (0.75,3)--(1.5,3);
 	\draw[fill] (0.5,2) circle [radius=0.05];
 	\draw[fill] (0.75,1) circle [radius=0.05];
-	\draw[black](0.7,1.25)--(0.85,0.7);
-	\node[right] at (0.25,3){\textipa{0}};
-	\node[left] at (0.25,3){\textipa{1}};
+	\node[right] at (0.25,3){\strut \textipa{0}};
+	\node[left] at (0.25,3){\strut \textipa{1}};
 	\node at (0,4){Zungenlage};
+	\node [rotate=90] at (-2,1.5){Zungenhöhe};
 	\node at (-1.5,3.5){{\scriptsize vorne}};
 	\node at (0.25,3.5){\scriptsize zentral};
 	\node at (2,3.5){{\scriptsize hinten}};
@@ -890,13 +845,13 @@ Wie viele Laute haben die folgenden Wörter?
 	\draw[black] (2,0)--(2,3);
 	\node[left] at (0.5,2){\textipa{9}};
 	\node[right] at (0.5,2){\textipa{8}};
-	\node at (0.625,1.5){\textipa{@}};
+	\node[rectangle,fill=white] at (0.625,1.5){\textipa{@}};
 	\node[left] at (0.75,1){\textipa{3}};
 	\node[right] at (0.75,1){\textipa{\textcloserevepsilon}};
-	\node at (0.875,0.5){\textipa{5}};
-	\node at (1,0){\textipa{a}};
-	\node[right] at (-1.5,3){\textipa{y}};
-	\node[left] at (-1.5,3){\textipa{i}};
+	\node[rectangle,fill=white] at (0.875,0.5){\textipa{5}};
+	\node[rectangle,fill=white] at (1,0){\textipa{a}};
+	\node[right] at (-1.5,3){\strut \textipa{y}};
+	\node[left] at (-1.5,3){\strut \textipa{i}};
 	\node[left] at (-0.5,2.5){\textipa{I}};
 	\node[right] at (-0.5,2.5){\textipa{Y}};
 	\draw[fill] (-0.5,2.5) circle [radius=0.05];
@@ -950,15 +905,15 @@ Wie viele Laute haben die folgenden Wörter?
 	\draw[fill] (2,2) circle [radius=0.05];
 	\draw[fill] (2,3) circle [radius=0.05];
 	\draw[fill] (0.25,3) circle [radius=0.05];
-	\draw[black] (0.25,3)--(0.55,1.8);
+	\draw[black] (0.25,3)--(1,0);
 	\draw[black] (-0.1,3)--(-1,3);
 	\draw[black] (0.75,3)--(1.5,3);
 	\draw[fill] (0.5,2) circle [radius=0.05];
 	\draw[fill] (0.75,1) circle [radius=0.05];
-	\draw[black](0.7,1.25)--(0.85,0.7);
-	\node[right] at (0.25,3){\textipa{0}};
-	\node[left] at (0.25,3){\textipa{1}};
+	\node[right] at (0.25,3){\strut \textipa{0}};
+	\node[left] at (0.25,3){\strut \textipa{1}};
 	\node at (0,4){Zungenlage};
+	\node [rotate=90] at (-2,1.5){Zungenhöhe};
 	\node at (-1.5,3.5){{\scriptsize vorne}};
 	\node at (0.25,3.5){\scriptsize zentral};
 	\node at (2,3.5){{\scriptsize hinten}};
@@ -981,13 +936,13 @@ Wie viele Laute haben die folgenden Wörter?
 	\draw[black] (2,0)--(2,3);
 	\node[left] at (0.5,2){\textipa{9}};
 	\node[right] at (0.5,2){\textipa{8}};
-	\node at (0.625,1.5){\rotul{\gruen<13>{\textipa{@}}}};
+	\node[rectangle,fill=white] at (0.625,1.5){\rotul{\gruen<13>{\textipa{@}}}};
 	\node[left] at (0.75,1){\textipa{3}};
 	\node[right] at (0.75,1){\textipa{\textcloserevepsilon}};
-	\node at (0.875,0.5){\rotul{\gruen<14>{\textipa{5}}}};
-	\node at (1,0){\rotul{\gruen<15>{\textipa{a}}}};
-	\node[right] at (-1.5,3){\rotul{\gruen<2>{\textipa{y}}}};
-	\node[left] at (-1.5,3){\rotul{\gruen<1>{\textipa{i}}}};
+	\node[rectangle,fill=white] at (0.875,0.5){\rotul{\gruen<14>{\textipa{5}}}};
+	\node[rectangle,fill=white] at (1,0){\rotul{\gruen<15>{\textipa{a}}}};
+	\node[right] at (-1.5,3){\rotul{\gruen<2>{\strut \textipa{y}}}};
+	\node[left] at (-1.5,3){\rotul{\gruen<1>{\strut \textipa{i}}}};
 	\node[left] at (-0.5,2.5){\rotul{\gruen<3>{\textipa{I}}}};
 	\node[right] at (-0.5,2.5){\rotul{\gruen<4>{\textipa{Y}}}};
 	\draw[fill] (-0.5,2.5) circle [radius=0.05];
@@ -1039,7 +994,7 @@ Deutsche Vokale sind \alt<handout>{unterstrichen}{rot}
 
 \textipa{;} & halblang & \\
 
-\textipa{\u{}} \textipa{\alertred{\textsubarch{ }}} & extra-kurz/unsilbischer Vokal & [\textipa{stu:d\u{i}@}] [\textipa{stu:d\textsubarch{i}@}]\\
+\textipa{\u{}} \textipa{\alertred{\textsubarch{ }}} & extra-kurz/unsilbischer Vokal & [\textipa{stu:d\u{i}@}], [\textipa{stu:d\textsubarch{i}@}]\\
 
 \textipa{\textvertline} & untergeordnete Intonationsgruppe &\\
 
@@ -1049,7 +1004,7 @@ Deutsche Vokale sind \alt<handout>{unterstrichen}{rot}
 
 \alertred{\textipa{\t{}}} & Doppelartikulation & [\textipa{P\t{aU}to}],  [\textipa{nE\t{ts}}] \\
 
-\alertred{\textipa{\.}} & Silbengelenkmarker & \textipa{[ka\.f@]}\\
+\alertred{\textipa{\.}} & Silbengelenkmarker & \textipa{[ka\.fe:]}\\
 
 \alertred{\textipa{\textsyllabic{ }}} & silbische Konsonanten & \textipa{[kUm.p\textsyllabic{l}]}\\
 \end{tabular}
@@ -1248,71 +1203,22 @@ Mehrere Körperteile sind für Erzeugung von Schall nötig:
 \end{frame}
 
 
-
-\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Übung}
 Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
-\ea \textipa{[ d, z, f, v, g, k, P ]}
+\ea \label{ex:02sth}
+\textipa{[ d, z, f, v, g, k, P ]}
 \z
 
 \end{frame}
 
-} 
-%% END uebung true = Q
-%% BEGIN uebung false = Q + A
-{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übung}
-
-Welche der folgenden Laute sind stimmhaft und welche stimmlos?
-
-\ea \textipa{[ d, z, f, v, g, k, P ]}
-\z
-
-\pause
-%Lösung:
-
-\begin{multicols}{2}
-\begin{itemize}
-	\item \textbf{stimmhaft:} \textipa{[ d, z, v, g ]}
-	
-	\ea \textipa{[ d ]}: \ab{Dampf}
-	
-	\ex \textipa{[ z ]}: \ab{Sinn}
-	
-	\ex \textipa{[ v ]}: \ab{Wald}
-	
-	\ex \textipa{[ g ]}: \ab{ganz}
-		
-	\z 
-\end{itemize}
-	
-\columnbreak
-
-\begin{itemize}
-	\item \textbf{stimmlos:} \textipa{[ f, k, P ]}
-	
-	\ea \textipa{[ f ]}: \ab{Fass}
-	
-	\ex \textipa{[ k ]}: \ab{kalt}
-	
-	\ex \textipa{[ P ]}: \ab{vereisen}
-	
-	\z
-\end{itemize}
-
-\end{multicols}
-
-\end{frame}
-
-}%% END LOESUNG	
+\iftoggle{ue-loesung}{
+	\input{loesungen/02-ue-loesung02-include}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -1593,8 +1499,6 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \frametitle{Übung}
@@ -1616,62 +1520,11 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 \end{itemize}
 \end{frame}
 
-} 
-%%% END uebung true = Q
-%%% BEGIN uebung false = Q + A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-
-\frametitle{Übung}
-
-\begin{itemize}
-	\item [] Beschreiben Sie die Konsonanten in den folgenden Wörtern und geben Sie die entsprechenden phonetischen Symbole an:
-	
-	\begin{enumerate}
-		\item Busch
-		\item malen
-		\item Maus
-		\item Achtung
-		\item Genie
-		\item zirpen
-		\item wichtig
-		\item Wald
-	\end{enumerate}
-	
-\end{itemize}
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-
-\begin{table}
-\scalebox{.9}{
-	\begin{tabular}{llp{9cm}}
-		1. Busch               & \only<2->{[\textipa{bUS}]}                             & \only<3->{\textipa{b}: bilabialer, stimmhafter Plosiv; \textipa{S}:~postalveolarer, stimmloser Frikativ}                                                                                \\
-		
-		\only<4->{2. malen}    & \only<5->{[\textipa{\textprimstress ma:l@n}]}          & \only<6->{\textipa{m}:~bilabialer, stimmhafter Nasal; \textipa{n}:~alveolarer, stimmhafter Nasal, \textipa{l}:~alveolar, stimmhafter Lateral}                                                             \\
-		
-		\only<7->{3. Maus}     & \only<8->{[\textipa{m\texttoptiebar{aU}s}]}                        & \only<9->{\textipa{m}:~s.\,o.; \textipa{s}:~stimmloser, alveolarer Frikativ}                                                                                                                       \\
-		
-		\only<10->{4. Achtung} & \only<11->{[\textipa{\textprimstress PaXtU\ng}]}       & \only<12->{\textipa{P}:~glottaler, stimmloser Plosiv; \textipa{X}:~velarer, stimmloser Frikativ; \textipa{t}:~alveolarer, stimmloser Plosiv \textipa{\ng}: velarer, stimmhafter Nasal} \\
-
-		\only<13->{5. Genie}   & \only<14->{[\textipa{Ze:\textprimstress ni:}]}         & \only<15->{\textipa{Z}: postalveolarer, stimmhafter Frikativ, \textipa{n}:~s.\,o.} \\                
-		                                                                                  
-		\only<16->{6. zirpen}  & \only<17->{[\textipa{\texttoptiebar{ts}IKp@n}]}                    & \only<18->{\textipa{\texttoptiebar{ts}}: alveolare, stimmlose Affrikate; \textipa{K}:~uvularer, stimmhafter Frikativ; \textipa{p}:~bilabialer, stimmloser Plosiv; \textipa{n}: s.\,o.}                         \\
-
-		\only<19->{7. wichtig} & \only<20->{[\textipa{\textprimstress vI\c{c}tI\c{c}}]} & \only<21->{\textipa{v}: labiodentaler, stimmhafter Frikativ; \textipa{\c{c}}: palataler, stimmloser Frikativ \textipa{t}: s.\,o.}                                                        \\
-
-		\only<22->{8. Wald}    & \only<23->{[\textipa{valt}]}                           & \only<24->{\textipa{v, l, t}: s.\,o.}
-\end{tabular}
+\iftoggle{ue-loesung}{
+	\input{loesungen/02-ue-loesung03-include}
 }
-\end{table}
-
-\end{frame}
-
-}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -1741,29 +1594,21 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 		\bigskip
  
- \iftoggle{uebung}{
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 	\item\textbf{ÜB:} Lesen Sie folgende Wörter mit gerundeten und mit gespreizten Lippen:
- Bühne, rühmen, Dünen, Stiele, Trieb, Möhre, Herd, Hefe
- } 
- %% END uebung true = Q
- %% BEGIN uebung false = Q + A
- {
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 		\item\textbf{ÜB:} Lesen Sie folgende Wörter mit gerundeten und mit gespreizten Lippen:
- Bühne, rühmen, Dünen, Stiele, Trieb, Möhre, Herd, Hefe
- \pause
- 
- Biene, Riemen, dienen, Stühle, trüb, Meere, hört, Höfe
 
- }%% END LOESUNG	
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%               
- 
+ 	\item Lesen Sie folgende Wörter mit \textbf{gerundeten} und mit \textbf{gespreizten} Lippen:
+	\ea 
+	\ea Bühne, rühmen, Dünen, Stiele, Trieb, Möhre, Herd, Hefe, kennen
 
+\pause 	
+
+	\ex  Biene, Riemen, dienen, Stühle, trüb, Meere, hört, Höfe, können
+	\z  
+	\z 
+ 
 \end{itemize}
 
-
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -1813,16 +1658,16 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 			
 \begin{frame}			
 		\begin{itemize}	
-			\item I.\,d.\,R. alle tiefen Vokale \ras ungespannt (strittig!)
+			\item i.\,d.\,R. alle tiefen Vokale \ras ungespannt (strittig!)
 			\item langer tiefer Vokal \textipa{[ a: ]} \ras gespannt(?)
 %		\end{itemize}
 
-	      \item Im Deutschen: Korrelation der Gespanntheit mit der Länge.
+	      \item im Deutschen: Korrelation der Gespanntheit mit der Länge
 
 		\ea \textipa{[ m i: t @ ]} vs. \textipa{[ m I t @ ]}
 		\z
 
-		\item In Lehnwörtern auch kurze gespannte Vokale
+		\item in Lehnwörtern auch kurze gespannte Vokale
 
 		\ea \textipa{[ P i . d e: ]}
 		\z
@@ -1850,9 +1695,9 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 			\item Nasalvokale kommen im Dt. nur in Lehnwörtern vor.
 
 			\eal
-			\ex \textipa{[ \~a ]} in \ab{Gourm\textbf{and}}
-			\ex \textipa{[ \~E ]} in \ab{T\textbf{eint}}
 			\ex \textipa{[ \~a ]} in \ab{Restaur\textbf{ant}}
+			\ex \textipa{[ \~E ]} in \ab{T\textbf{eint}}
+			\ex \textipa{[ \~o ]} in \ab{Balk\textbf{on}}
 			\ex \textipa{[ \~\oe\ ]} in \ab{in Parf\textbf{um}}
 			\zl
 		
@@ -1909,7 +1754,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 \begin{figure}
 	\centering
-\scalebox{.8}{	
+%\scalebox{.8}{	
 	\begin{tikzpicture}
 	\draw[fill] (0,0) circle [radius=0.05];
 	\draw[fill] (-0.5,1) circle [radius=0.05];
@@ -1922,15 +1767,15 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 	\draw[fill] (2,2) circle [radius=0.05];
 	\draw[fill] (2,3) circle [radius=0.05];
 	\draw[fill] (0.25,3) circle [radius=0.05];
-	\draw[black] (0.25,3)--(0.55,1.8);
+	\draw[black] (0.25,3)--(1,0);
 	\draw[black] (-0.1,3)--(-1,3);
 	\draw[black] (0.75,3)--(1.5,3);
 	\draw[fill] (0.5,2) circle [radius=0.05];
 	\draw[fill] (0.75,1) circle [radius=0.05];
-	\draw[black](0.7,1.25)--(0.85,0.7);
-	\node[right] at (0.25,3){\textipa{0}};
-	\node[left] at (0.25,3){\textipa{1}};
+	\node[right] at (0.25,3){\strut \textipa{0}};
+	\node[left] at (0.25,3){\strut \textipa{1}};
 	\node at (0,4){Zungenlage};
+	\node [rotate=90] at (-2,1.5){Zungenhöhe};
 	\node at (-1.5,3.5){{\scriptsize vorne}};
 	\node at (0.25,3.5){\scriptsize zentral};
 	\node at (2,3.5){{\scriptsize hinten}};
@@ -1953,13 +1798,13 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 	\draw[black] (2,0)--(2,3);
 	\node[left] at (0.5,2){\textipa{9}};
 	\node[right] at (0.5,2){\textipa{8}};
-	\node at (0.625,1.5){\textipa{@}};
+	\node[rectangle,fill=white] at (0.625,1.5){\textipa{@}};
 	\node[left] at (0.75,1){\textipa{3}};
 	\node[right] at (0.75,1){\textipa{\textcloserevepsilon}};
-	\node at (0.875,0.5){\textipa{5}};
-	\node at (1,0){\textipa{a}};
-	\node[right] at (-1.5,3){\textipa{y}};
-	\node[left] at (-1.5,3){\textipa{i}};
+	\node[rectangle,fill=white] at (0.875,0.5){\textipa{5}};
+	\node[rectangle,fill=white] at (1,0){\textipa{a}};
+	\node[right] at (-1.5,3){\strut \textipa{y}};
+	\node[left] at (-1.5,3){\strut \textipa{i}};
 	\node[left] at (-0.5,2.5){\textipa{I}};
 	\node[right] at (-0.5,2.5){\textipa{Y}};
 	\draw[fill] (-0.5,2.5) circle [radius=0.05];
@@ -1973,7 +1818,8 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 	\draw[black] (0.85,2)--(1.6,2);
 	\draw[black] (0,1)--(0.45,1);
 	\draw[black] (1.1,1)--(1.5,1);
-	\end{tikzpicture}}
+	\end{tikzpicture}
+%}
 	\caption{Vokalviereck}
 \end{figure}	
 	
@@ -2025,7 +1871,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Unterklassen der Diphthonge: fallend}
+\frametitle{Unterklassen der Diphthonge: fallende}
 		
 		\begin{itemize}
 			
@@ -2043,7 +1889,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Unterklassen der Diphthonge: steigend}		
+\frametitle{Unterklassen der Diphthonge: steigende}		
 
 		\begin{itemize}	
 			\item auch genannt öffnende Diphthonge
@@ -2138,9 +1984,9 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
  \item Einführung
  \item Bereiche der Phonetik
- \item  Methodik
- \item  Probleme der Phonetik
- \item  IPA-Alphabet
+ \item Methodik
+ \item Probleme der Phonetik
+ \item IPA-Alphabet
  \item Artikulatorische Phonetik
  %% Konsonanten
  %% Konsonantenklassifikation
@@ -2154,19 +2000,23 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
  }
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Übungen}
 
 \begin{itemize}
-	\item<1-> Bilden die folgenden Vokalabfolgen Diphthonge?
-	\item<1->[] Zeit, naiv, Haus
+	\item Bilden die folgenden Vokalabfolgen Diphthonge?
+	\item[] Zeit, naiv, Haus
 \end{itemize}
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ue-loesung}{
+	\input{loesungen/02-ue-loesung04-include}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -2193,7 +2043,12 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ue-loesung}{
+	\input{loesungen/02-ue-loesung05-include}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Übungen: Text in IPA lesen}
@@ -2214,133 +2069,16 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-} 
-%% END uebung true = Q
-%% BEGIN uebung false = Q + A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übungen}
 
-\begin{itemize}
-	\item<1-> Bilden die folgenden Vokalabfolgen Diphthonge?
-	\item<1->[] Zeit, naiv, Haus
-	
-	\item<2-> \textcolor{red}{Ja: \textipa{[ \texttoptiebar{ts} \texttoptiebar{aI} t ]} , \textipa{[h \texttoptiebar{aU} s ]}}
-	\item<2-> \textcolor{red}{Nein: \textipa{[ n a . P i: f ]}}
-\end{itemize}
 
-\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ue-loesung}{
+	\input{loesungen/02-ue-loesung06-include}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung: Transkription}
-
-\begin{itemize}
-
-\item Transkribieren Sie die folgenden Wörter nach einer standarddeutschen Aussprache:
-
-%\begin{columns}
-%	\column{.40\textwidth}
-%	\begin{enumerate}
-\ea 
-\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXX} 
-		\ea Bergsteiger
-		\jambox{\alertred{%
-						\only<2->{ \textipa{[bE͡5k.St\t{aI}.g5]}}	
-}}
-		\ex Quotennote
-		\jambox{\alertred{%
-		\only<3->{ \textipa{[kvo:.t@n.no:.t@]}}	
-}}
-		\ex vielfaches
-		\jambox{\alertred{%
-		\only<4->{ \textipa{[fi:l.fa\.x@s]}}	
-}}
-		\ex Päckchenannahme
-		\jambox{\alertred{%
-		\only<5->{ \textipa{[pEk.\c{c}@n.Pan.na:.m@]}}	
-}}
-		\ex beenden
-		\jambox{\alertred{%
-		\only<6->{ \textipa{[b@.PEn.d@n]}}	
-}}
-		\ex verreisen
-		\jambox{\alertred{%
-		\only<7->{ \textipa{[fE͡5.\textscr \t{aI}.z@n]}}	
-}}
-		\ex vereisen
-		\jambox{\alertred{%
-		\only<8->{ \textipa{[fE͡5.P\t{aI}.z@n]}}	
-}}
-		\ex Einzahlung
-		\jambox{\alertred{%
-		\only<9->{ \textipa{[P\t{aI}n.\t{ts}a:.lUN]}}	
-}}
-		\ex gehen
-		\jambox{\alertred{%
-		\only<10->{ \textipa{[ge:.@n]}}	
-}}
-		\ex Gästebad
-		\jambox{\alertred{%
-		\only<11->{ \textipa{[gEs.t@.ba:t]}}	
-}}
-		\z 
-\z		
-
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Übungen: Text in IPA lesen}
-
-\begin{itemize}
-\item Geben Sie die orthographische Transkription des folgenden Textes an:		
-\item []
-\item [] \textbf{Enge Transkription einer aufgenommenen Passage}
-
-\textipa{aIns 'StKItn zI\c{c} \textprimstress nO5tvInt Un \textprimstress zOn@, v@5 f@n im \textprimstress baIdn vol d5 \textprimstress StE5k@K@ veK@, als aIn \textprimstress vand@K5, dE5 In aIn \textprimstress va5m \textprimstress mantl g@\textsecstress hylt va5, d@s \textprimstress veg@s da\textprimstress he5ka:m. zI vU5dn \textprimstress aInI\c{c}, das \textprimstress de5jenIg@ fy5 d@n \textprimstress StE5k@K@n \textsecstress gEltn zOlt@, dE5 d@n \textprimstress vand@K5 \textprimstress {tsvI\ng \ng}  {vy5d@}, zaIm \textprimstress mantl \textprimstress aptsU\textsecstress nemm. dE5 \textprimstress nO5tvIm \textprimstress blis mIt \textprimstress al5 \textprimstress maXt, ab5 je \textprimstress me5 E5 \textprimstress blis, dEsto \textprimstress fEst5 \textprimstress hylt@ zI\c{c} d5 \textprimstress vand@K5 In zaIm \textprimstress mantl aIn. \textprimstress EntlI\c{c} ga:p d5 \textprimstress nO5tvIn {d@\ng} \textprimstress kampf \textprimstress aUf. nun E5\textprimstress vE5mt@ dI \textprimstress zOn@ dI \textprimstress lUfp mIt i5n \textprimstress fKOIntlI\c{c}n \textprimstress StKa:ln, Un SonaX {\textprimstress venIg\ng} {\textprimstress aUg\ng \textsecstress blIk\ng} tsok d5 \textprimstress vand@K5 zaIm \textprimstress mantl aUs. da mUst@ d5 \textprimstress nO5tvIn \textprimstress tsugebm, das dI \textprimstress zOn@ f@n im \textprimstress baIdn d5 \textprimstress StE5k@K@ va5.}
-
-%	\begin{figure}[H]
-%		\includegraphics[scale=0.22]{material/04einststrittentranspompino}		
-%	\end{figure}
-\end{itemize}
-
-\begin{itemize}
-\item \href{run:material/04einststrittenaudio/narrative_complete.mp3}{\textbf{SOUND}}
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung: Text in IPA lesen}
-
-\begin{itemize}
-	\item {\footnotesize \textipa{aIns 'StKItn zI\c{c} \textprimstress nO5tvInt Un \textprimstress zOn@, v@5 f@n im \textprimstress baIdn vol d5 \textprimstress StE5k@K@ veK@, als aIn \textprimstress vand@K5, dE5 In aIn \textprimstress va5m \textprimstress mantl g@\textsecstress hylt va5, d@s \textprimstress veg@s da\textprimstress he5ka:m. zI vU5dn \textprimstress aInI\c{c}, das \textprimstress de5jenIg@ fy5 d@n \textprimstress StE5k@K@n \textsecstress gEltn zOlt@, dE5 d@n \textprimstress vand@K5 \textprimstress {tsvI\ng \ng}  {vy5d@}, zaIm \textprimstress mantl \textprimstress aptsU\textsecstress nemm. dE5 \textprimstress nO5tvIm \textprimstress blis mIt \textprimstress al5 \textprimstress maXt, ab5 je \textprimstress me5 E5 \textprimstress blis, dEsto \textprimstress fEst5 \textprimstress hylt@ zI\c{c} d5 \textprimstress vand@K5 In zaIm \textprimstress mantl aIn. \textprimstress EntlI\c{c} ga:p d5 \textprimstress nO5tvIn {d@\ng} \textprimstress kampf \textprimstress aUf. nun E5\textprimstress vE5mt@ dI \textprimstress zOn@ dI \textprimstress lUfp mIt i5n \textprimstress fKOIntlI\c{c}n \textprimstress StKa:ln, Un SonaX {\textprimstress venIg\ng} {\textprimstress aUg\ng \textsecstress blIk\ng} tsok d5 \textprimstress vand@K5 zaIm \textprimstress mantl aUs. da mUst@ d5 \textprimstress nO5tvIn \textprimstress tsugebm, das dI \textprimstress zOn@ f@n im \textprimstress baIdn d5 \textprimstress StE5k@K@ va5.}}
-	
-	\item \textcolor{red}{\footnotesize Einst stritten sich Nordwind und Sonne, wer von ihnen beiden wohl der Stärkere wäre, als ein Wanderer, der in einen warmen Mantel gehüllt war, des Weges daherkam. Sie wurden einig, dass derjenige für den Stärkeren gelten sollte, der den Wanderer zwingen würde, seinen Mantel abzunehmen. Der Nordwind blies mit aller Macht, aber je mehr er blies, desto fester hüllte sich der Wanderer in seinen Mantel ein. Endlich gab der Nordwind den Kampf auf. Nun erwärmte die Sonne die Luft mit ihrem freundlichen Strahlen, und schon nach wenigen Augenblicken zog der Wanderer seinen Mantel aus. Da musste der Nordwind zugeben, dass die Sonne von ihnen beiden der Stärkere war.}
-	
-	\hfill	(\citealp{Pompino95a}; \citealp[88--89]{Kohler99a})
-
-\end{itemize}
-
-\end{frame}
-
-}%% END LOESUNG	UEBUNG
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{hausaufgabe}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Hausaufgabe}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2351,7 +2089,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 	\item[1.] Transkribieren Sie folgende Wörter des Deutschen mit dem IPA:
 
 	\begin{exe}
-		\ex
+		\ex \label{ex:02HA1}
 		\begin{xlist}
 			\ex arbeiten
 			\ex Giebel
@@ -2375,7 +2113,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 	\item[2.] {Schreiben Sie für die folgenden Lautbeschreibungen das passende IPA-Symbol auf:}
 
  \begin{exe}
-	 \ex
+	 \ex \label{ex:02HA2}
  	\begin{xlist}
 		\ex bilabialer stimmloser Plosiv
 		\ex hoher vorderer ungerundeter gespannter Vokal
@@ -2388,12 +2126,13 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 		\ex  alveolare koronale stimmlose Affrikate
 		\ex  mittlerer zentraler ungerundeter Vokal
 	\end{xlist}
+\end{exe}
 \end{itemize}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
 
@@ -2401,7 +2140,7 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 	\item[3.] {Beschreiben Sie folgende Laute des Deutschen mit relevanten phonetischen Merkmalen:}
 	
 	\begin{exe}
-		\ex
+		\ex \label{ex:02HA3}
 		\begin{xlist}
 			\ex \textipa{[y]}
 			\ex \textipa{[x]}
@@ -2418,8 +2157,8 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{\textipa{[ S l U s ]}}
 
 \begin{itemize}
@@ -2429,238 +2168,11 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-} 
-%% END true = Q
-%% BEGIN false = Q + A
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Hausaufgabe}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Hausaufgabe}
-
-\begin{itemize}
-	\item[1.] {Transkribieren Sie folgende Wörter des Deutschen mit dem IPA:}
-	
-		\begin{exe}
-			\ex \label{ex:HA1}
-			\begin{xlist}
-				\ex arbeiten
-				\ex Giebel
-				\ex sagen
-				\ex fröhlich
-				\ex Enge
-				\ex Dampfschiff
-			\end{xlist}
-		\end{exe}
-	
-\end{itemize}
-
-\end{frame}	
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe}
-
-\begin{itemize}
-\item[2.] {Schreiben Sie für die folgenden Lautbeschreibungen das passende IPA-Symbol auf:}
-
-\begin{exe}
-	\ex \label{ex:HA2} 
-	\begin{xlist}
-		\ex bilabialer stimmloser Plosiv
-		\ex hoher vorderer ungerundeter gespannter Vokal
-		\ex velarer dorsaler stimmloser Frikativ
-		\ex  glottaler stimmloser Plosiv
-		\ex  halbhoher fast vorderer ungerundeter ungespannter Vokal
-		\ex  postalveolarer stimmhafter Frikativ
-		\ex  halbtiefer zentraler ungerundeter Vokal
-		\ex  obermittelhoher hinterer gerundeter gespannter Vokal
-		\ex  alveolare koronale stimmlose Affrikate
-		\ex  mittlerer zentraler ungerundeter Vokal
-	\end{xlist}
-\end{exe}
-
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe}
-
-\begin{itemize}
-\item[3.] {Beschreiben Sie folgende Laute des Deutschen mit relevanten phonetischen Merkmalen:}
-
-\begin{exe}
-	\ex \label{ex:HA3}
-	\begin{xlist}
-		\ex \textipa{[y]}
-		\ex \textipa{[x]}
-		\ex \textipa{[\o]}
-		\ex \textipa{[Z]}
-		\ex \textipa{[t]}
-		\ex \textipa{[E]}
-		\ex \textipa{[m]}
-		\ex \textipa{[O]}
-	\end{xlist}
-\end{exe}
-
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{\textipa{[ S l U s ]}}
-
-\begin{itemize}
-\item \textbf{VIDEO:} \href{run:material/04vocalcordssinging.mp4}{Vocal Chords}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Lösung der Hausaufgabe}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Lösung}
-
-\begin{itemize}
-	\item[1.] {Transkribieren Sie folgende Wörter des Deutschen mit dem IPA:}
-
-		\begin{exe}
-		\exr{ex:HA1}
-		\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} 
-		\begin{xlist}
-			\ex arbeiten\jambox{\only<2->{\textcolor{red}{
-						\textipa{['PaK.b\texttoptiebar{aI}.t@n], ['Pa\;R.b\texttoptiebar{aI}.t@n], ['P\texttoptiebar{a5}.b\texttoptiebar{aI}.t@n]}
-					}}}
-			\ex Giebel\jambox{\only<3->{\textcolor{red}{
-						\textipa{['gi:.b@l]}
-					}}}
-			\ex sagen\jambox{\only<4->{\textcolor{red}{
-						\textipa{['za:.g@n]}
-					}}}
-			\ex fröhlich\jambox{\only<5->{\textcolor{red}{
-						\textipa{['fr\o:.lI\c{c}]}
-					}}}
-			\ex Enge\jambox{\only<6->{\textcolor{red}{
-						\textipa{['PE\.N@]}
-					}}}
-			\ex Dampfschiff\jambox{\only<7->{\textcolor{red}{
-						\textipa{['dam\texttoptiebar{pf}.SIf]}
-					}}}
-		\end{xlist}
-	\end{exe}
-
-\end{itemize}
-
-\end{frame}	
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-
-\begin{itemize}
-	\item[2.] {Schreiben Sie für die folgenden Lautbeschreibungen das passende IPA-Symbol auf:}
-	
-	\begin{exe}
-		\exr{ex:HA2} 
-		\settowidth\jamwidth{XXXXXX} 
-		\begin{xlist}
-			\ex bilabialer stimmloser Plosiv\jambox{\only<2->{\textcolor{red}{
-						\textipa{[p]}
-					}}}
-			\ex hoher vorderer ungerundeter gespannter Vokal\jambox{\only<3->{\textcolor{red}{
-					\textipa{[i:]}
-				}}}
-			\ex velarer dorsaler stimmloser Frikativ\jambox{\only<4->{\textcolor{red}{
-						\textipa{[x]}
-			}}}
-			\ex glottaler stimmloser Plosiv\jambox{\only<5->{\textcolor{red}{
-						\textipa{[P]}
-			}}}
-			\ex halbhoher fast vorderer ungerundeter ungespannter Vokal\jambox{\only<6->{\textcolor{red}{
-					\textipa{[I]}
-				}}}
-			\ex postalveolarer stimmhafter Frikativ\jambox{\only<7->{\textcolor{red}{
-						\textipa{[Z]}
-					}}}
-			\ex halbtiefer zentraler ungerundeter Vokal\jambox{\only<8->{\textcolor{red}{
-						\textipa{[5]}
-					}}}
-			\ex obermittelhoher hinterer gerundeter gespannter Vokal\jambox{\only<9->{\textcolor{red}{
-						\textipa{[o:]}
-					}}}
-			\ex alveolare koronale stimmlose Affrikate\jambox{\only<10->{\textcolor{red}{
-						\textipa{[\texttoptiebar{ts}]}
-			}}}
-			\ex mittlerer zentraler ungerundeter Vokal\jambox{\only<11->{\textcolor{red}{
-						\textipa{[@]}
-			}}}
-		\end{xlist}
-	\end{exe}
-	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Lösung}
-
-\begin{itemize}
-	\item[3.] {Beschreiben Sie folgende Laute des Deutschen mit relevanten phonetischen Merkmalen:}
-	
-	\begin{exe}
-		\exr{ex:HA3}
-		\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-		\begin{xlist}
-			\ex \textipa{[y:]}\jambox{\only<2->{\textcolor{red}{
-						hoher vorderer gerundeter gespannter Vokal
-					}}}
-			\ex \textipa{[x]}\jambox{\only<3->{\textcolor{red}{
-						velarer dorsaler stimmloser Frikativ
-					}}}
-			\ex \textipa{[\o:]}\jambox{\only<4->{\textcolor{red}{
-						obermittelhoher hinterer gerundeter gespannter Vokal
-					}}}
-			\ex \textipa{[Z]}\jambox{\only<5->{\textcolor{red}{
-						postalveolarer koronaler stimmhafter Frikativ
-					}}}
-			\ex \textipa{[t]}\jambox{\only<6->{\textcolor{red}{
-						alveolarer koronaler stimmloser Plosiv
-					}}}
-			\ex \textipa{[E]}\jambox{\only<7->{\textcolor{red}{
-						untermittelhoher vorderer ungerundeter ungespannter Vokal
-					}}}
-			\ex \textipa{[m]}\jambox{\only<8->{\textcolor{red}{
-						bilabialer stimmhafter Nasal
-					}}}
-			\ex \textipa{[O]}\jambox{\only<9->{\textcolor{red}{
-						untermittelhoher hinterer gerundeter ungespannter Vokal
-					}}}
-		\end{xlist}
-	\end{exe}
-	
-\end{itemize}
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ha-loesung}{
+	\input{loesungen/02-ha-loesung-include}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2712,6 +2224,9 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 		
 		\item SOUND -- \gqq{Enge Transkription} (Zugriff: 22.11.2018):
 		\url{https://www.internationalphoneticassociation.org/sites/default/files/handbookfiles/German.zip}
+		
+		\item VIDEO -- \gqq{Aspiration} (Zugriff: 27.11.2018)
+		\url{https://www.youtube.com/watch?v=6PSdlctYBsw&index=62&list=PL6rcWnFnBuT7BEAex2IvI6l_bjLLycxaU&t=3s}
 	\end{itemize}
 	
 \end{frame}

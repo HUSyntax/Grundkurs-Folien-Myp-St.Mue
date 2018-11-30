@@ -1,50 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile the master file!
+%% 		Include: Antonio Machicao y Priemer
+%% 		Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Metadata                         %%%
+%%%             Metadata                         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
-\title{\textbf{Grundkurs Linguistik}}
+\title{Grundkurs Linguistik}
 
 \subtitle{Morphologie II: Wortbildung \& Komposition}
 
-\author[aMyP]{
+\author[A. Machicao y Priemer]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	{\small\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
-\date{ }
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
+
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
 %\hyphenation{nobreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%      
-\huberlintitlepage
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\huberlintitlepage[22pt]
 \iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-	\frametitle{Inhaltsverzeichnis}\tableofcontents
-	%[pausesections]
-\end{multicols}
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{Inhaltsverzeichnis}
+			\tableofcontents
+			%[pausesections]
+		\end{multicols}
 	}
-	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%LITERATURE:
+
+%% Allgemein
+\nocite{Glueck&Roedel16a}
+\nocite{Schierholz&Co18}
+\nocite{Luedeling2009a}
+\nocite{Meibauer&Co07a} 
+\nocite{Repp&Co15a} 
+
+%%% Sprache & Sprachwissenschaft
+%\nocite{Fries16c} %Adäquatheit
+%\nocite{Fries16a} %Grammatikalität
+%\nocite{Fries&MyP16c} %GG
+%\nocite{Fries&MyP16b} %Akzeptabilität
+%\nocite{Fries&MyP16d} %Kompetenz vs. Performanz
+
+%%% Phonetik & Phonologie
+%\nocite{Altmann&Co07a}
+%\nocite{DudenAussprache00a}
+%\nocite{Hall00a} 
+%\nocite{Kohler99a}
+%\nocite{Krech&Co09a}
+%\nocite{Pompino95a}
+%\nocite{Ramers08a}
+%\nocite{Ramers&Vater92a}
+%\nocite{Rues&Co07a}
+%\nocite{WieseR96a}
+%\nocite{WieseR11a}
+
+%%% Graphematik
+%\nocite{Altmann&Co07a}
+%\nocite{Duerscheid04a}
+%\nocite{Eisenberg00a}
+%\nocite{Fuhrhop08a}
+%\nocite{Fuhrhop09a}
+%\nocite{Fuhrhop&Co13a}
+
+%% Morphologie
+%\nocite{Bauer00a} %Word
+\nocite{Eisenberg00a}
+\nocite{Fleischer00a} %Wortbildungsprozesse
+\nocite{Fleischer&Barz12a} %Einführung Morphologie
+\nocite{Fries&MyP16j} %Kopf
+\nocite{Grewendorf&Co91a} %Betonung bei Komposita
+\nocite{Haspelmath2002a}
+\nocite{MyPb} %Kopf
+\nocite{Olsen86a} %Morphologie des Deutschen
+\nocite{Olsen14a} %Coordinative Structures
+%\nocite{Plungian00a} %Morphologie im Sprachsystem
+%\nocite{Salmon00a} %Term Morphology
+\nocite{Wurzel00a} %Gegenstand Morphologie
+\nocite{Wurzel00b} %Wort
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Morphologie II}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Begleitlektüre}
@@ -57,11 +121,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Einführung}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\subsection{Einführung}
+\iftoggle{sectoc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,17 +137,18 @@
 \frametitle{Einführung}
 
 \begin{itemize}
-	\item Deutscher Wortschatz: \\
-300\,000 – 500\,000 Wörter und Phraseologismen (fachliche und regionale Wortschätze, veraltete und neue Wörter)
-	\item Durchschnittlicher aktiver Wortschatz:
-10\,000 – 20\,000
-	\item Jährlich 1\,000 neue Wörter in den Duden aufgenommen, davon:
+	\item Wortschatz des Deutschen: \\
+300\,000– 500\,000 Wörter und Phraseologismen (fachliche und regionale Wortschätze, veraltete und neue Wörter)
+	\item durchschnittlicher \textbf{aktiver Wortschatz}:
+10\,000–20\,000 Wörter
+	\item Jährlich werden ung.\ 1\,000 neue Wörter in den Duden aufgenommen \\
+	(5\,000 im Jahr 2018), davon:
 	
 	\begin{itemize}
-		\item 83\% Wortbildungen
-		\item 12\% neue Bedeutung alter Wörter
-		\item 5\% Entlehnungen
-		\item Außerdem: neue Redewendungen, wie \zB \gqq{Es ist alles im grünen Bereich}, \gqq{mit den Füßen abstimmen}, etc.
+		\item 83\% Wortbildungen (\zB \emph{facebooken}, \emph{gegenchecken}, \emph{entfreunden}, \emph{Späti})
+		\item 12\% neue Bedeutung alter Wörter (\zB \emph{runterwürgen}, \emph{verpeilen})
+		\item 5\% Entlehnungen (\zB \emph{tindern}, \emph{liken})
+		\item außerdem: neue Redewendungen (\zB \emph{Es ist alles im grünen Bereich})
 	\end{itemize}
 \end{itemize}
 
@@ -91,286 +160,60 @@
 \begin{frame}
 \frametitle{Einführung (zur Erinnerung)}
 
-\begin{itemize}
-	\item Morphologie unterteilt sich in:
+Die Morphologie unterteilt man in:
 	
 	\begin{itemize}
-		\item Wortbildung: Ableitung und Zusammensetzung lexikalischer Wörter:
+		\item \textbf{Wortbildung:} Ableitung und Zusammensetzung lexikalischer Wörter:
 		
 		\eal 
-			\ex [anforder(n)] + [ung] \ras Anforderung
-			\ex [Haus] + [bau] \ras Hausbau
+			\ex {[anforder(n)] $+$ [-ung] $=$ \alertred{Anforderung}}
+			\ex {[les(e)] $+$ [kreis] $=$ \alertred{Lesekreis}}
 		\zl
 		
-		\item Flexion: Bildung von Wortformen: \\
-		Deklination der Nomina: (der) \emph{Kreis}, (den) \emph{Kreis}, (dem) \emph{Kreise}, (des) \emph{Kreises} \\
-		Konjugation der Verben: \emph{sage, sagst, sagt, sagt, sagen}			 
+		\item \textbf{Wortformenbildung} (Flexion): Bildung von Wortformen in einem Paradigma: 
+		
+		\begin{itemize}
+			\item Deklination der Nomina: 
+			
+			\ea (der) Lesekreis, (den) Lesekreis, (dem) Lesekreis(e), (des) Lesekreises, \ldots
+			\z 
+			
+			\item Konjugation der Verben: 
+			
+			\ea fordere, forderst, fordert, fordern, \ldots 
+			\z 
+		\end{itemize}	
 	\end{itemize}	
-\end{itemize}
-
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Einführung (zur Erinnerung)}
 
 \begin{itemize}
-	\item Bei der \textbf{Wortbildung}
+	\item \textbf{Wortbildung}
 	
 	\begin{itemize}
 		\item neue lexikalische Wörter
-		\item neue lexikalische Bedeutung
-		\item Ausgangswörter: einfach (\emph{Simplizia)} oder komplex (bereits Produkt von Wortbildung)
-		\item Änderung der Wortart möglich (aber nicht zwingend: be+arbeiten)
+		\item neue lexikalische Bedeutung (Begriffe)
+		\item Ausgangswörter können einfache (Simplizia) oder komplexe Lexeme sein.
+		\item Änderung der Wortart ist möglich (vgl.\ (\ref{ex:5bWortart1})) aber nicht zwingend (vgl.\ (\ref{ex:5bWortart2})). 
+		
+		\ea\label{ex:5bWortart1} {[\MyPdown{V}bearbeit] $+$ -ung $=$ [\MyPdown{N}Bearbeitung]}
+		\ex\label{ex:5bWortart2} {be- $+$ [\MyPdown{V}arbeit(-en)] $=$ [\MyPdown{V}bearbeit(-en)]}
+		\z
 	\end{itemize}
-	
-	\item[]
-	\item Bei der \textbf{Flexion}
+
+	\item \textbf{Flexion}
 	
 	\begin{itemize}
-		\item Flexionsmorpheme erst nach der Wortbildung an den Stamm (rechtsperipher)
-		\item Flexionsmorpheme enthalten nicht zwingend einen Vokal (nur Schwa!):
+		\item Flexionsmorpheme sind rechtsperipher: sie werden erst nach der Wortbildung mit dem Stamm verbunden
+		\item Flexionsmorpheme enthalten nicht zwingend einen Vokal (nur Schwa):
 		
-		\ea -ung, -in, -bar, ent- \vs -en, -est, -st, -n
-		\z
-		
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Wortbildung: Arten}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Kontamination} (Wortverschmelzung, -kreuzung, Amalgamierung)
-	
-	\begin{itemize}
-		\item Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter (oder beider) gelöscht wird.
-		
-		\ea Infotainment, Bioghurt, mainzigartig, Eurasien
-		\z
-	\end{itemize}
-
-	\item \textbf{Generifizierung}: Ausweitung auf Gattungsbezeichnung
-		
-		\ea Tempo (Taschentuch), Fit
-		\z
-		
-	\item \textbf{Analogie}: Bildung eines neuen Wortes durch Ersetzung eines Morphems eines komplexen Wortes durch ein anderes, kontextuell passenderes
-		
-		\ea e-card (von e-mail), slow food (von fast food)
-		\z
-		
-	\end{itemize}
-	
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Kurzwortbildung}
-
-\begin{itemize}
-	\item phonetisch ungebunden (\textbf{Abkürzung}):
-	
-	\ea ARD, EU, CIA
-	\z
-	
-	\item phonetisch gebunden (\textbf{Akronym}):
-	
-	\ea DAX, PIN, UFO
-	\z
-	
-\end{itemize}
-
-\item Weitere Kurzwörter: Wortmaterial am Anfang oder am Ende des Wortes wird getilgt
-
-\ea Kripo, Bus, Auto, bi, öko, Schumi, Alki
-\z
-
-	\item \textbf{Wortschöpfung}
-	
-	\ea Vileda (wie Leder), Iglo, Haribo (Hans Riegel Bonn)
-	\z
-	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Rückbildung} (Reanalyse): Umdrehen einer Wortbildungsregel
-	
-	\begin{itemize}
-		\item im Deutschen typisch bei Verben: Ableitung komplexer Verben aus komplexen Substantiven, deren Zweitglied von einem Verb stammt.
-		\item Rückbildung \ras Kürzung?
-		\item Verben als Produkt: in finaler Satzposition, mit problematischer Verbzweitstellung, Paradigma nicht vollständig
-		
-		\ea bergsteigen, schleichwerben, farbkopieren, mähdreschen
-		\z
-		
-		\item Selten auch bei der Herleitung von Substantiven oder Adjektiven zu finden:
-		
-		\ea Unsympath
-		\z
-		
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Fremdwortbildung:} Diese Wörter gibt es in der Ursprungssprache nicht oder nicht mit dieser Bedeutung
-	
-	\ea Handy, Wellness, Beamer
-	\z
-	
-	\begin{itemize}
-		\item Produktiv auch mit sog. Konfixen:
-		
-		\ea Thermohose, Schokaholic
-		\z
-		
-	\end{itemize}
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Reduplikation}
-
-		\begin{itemize}
-			\item Komplette Dopplung:
-	
-			\ea Blabla, Wauwau
-			\z
-	
-			\item Reimdopplung:
-	
-			\ea Larifari, Hokuspokus
-			\z
-	
-			\item Ablautdopplung:
-	
-			\ea Wirrwarr, Wischiwaschi, Singsang
-			\z
-	
-		\end{itemize}
-
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Zusammenrückung:}
-	
-	\begin{itemize}
-		\item Aus syntaktischen Phrasen hervorgegangen
-		\item Wortfolge und Flexionsmarkierungen werden beibehalten
-		
-		\ea Möchtegern, infolge, wassertriefend
-		\z
-		
-	\end{itemize}
-	
-	\item \textbf{Zusammenbildung:}
-	
-	\begin{itemize}
-		\item Dreigliedrig: weder die ersten beiden noch die letzten beiden Glieder kommen frei vor
-		\item Manchmal als Derivation mit einem nicht lexikalischen ersten Teil
-		
-		\eal 
-			\ex Schriftsteller, Altsprachler
-			\ex Schriftsteller: \\ {[}V schriftstell-{]} + {[}-er{]} \vs {[}N Schrift-{]} + {[}N -steller{]}
-		\zl
-			 
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-
-\begin{itemize}
-	\item \textbf{Komposition}
-	
-	\begin{itemize}
-		\item Bildung einer komplexen Form, in der zwei (oder mehr) freie Morpheme auftreten
-		
-		\ea Edelmut, Baukran, Geisteswissenschaft, süßsauer
-		\z
-		
-	\end{itemize}
-
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortbildung: Arten}
-	
-\begin{itemize}
-	\item \textbf{Derivation}
-	
-	\begin{itemize}
-		\item Bildung einer komplexen Form, meist mittels Derivationsaffixen, die dem Stamm vorausgehen oder ihm folgen können
-		
-		\ea Ableit + ung, ver + schlaf-, Un + mensch
-		\z
-		
-		\item Explizite / äußere Derivation: mittels abtrennbarer Affixe
-		
-		\ea (Grab + ung).
-		\z
-		
-		\item Implizite / innere Derivation: ohne klar abtrennbare Affixe
-		
-		\ea trink- \vs Trank
+		\ea Wortbildungsaffixe: -ung, -in, -bar, ent-, \ldots 
+		\ex Flexionsaffixe: -en, -t, -est, -st, -n, ge- -t, \ldots 
 		\z
 		
 	\end{itemize}
@@ -378,129 +221,134 @@
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Struktur komplexer Wörter}
+\iftoggle{sectoc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortbildung: Arten}
+\frametitle{Struktur komplexer Wörter}
 
 \begin{itemize}
-	\item \textbf{Konversion:}
+		\item Die meisten Wortbildungsprozesse sind \textbf{konkatenativ} (vgl.\ (\ref{ex:5bKonk1}) \vs (\ref{ex:5bKonk2})).
 	
-	\begin{itemize}
-		\item Umsetzung eines Stammes in eine andere Kategorie
-		\item ohne zusätzliches Morphem oder sonstige Veränderungen
-		\item Konversion \ras Derivation ? (Derivation mit einem Nullmorphem)
-		
-		\eal 
-			\ex Nomen Dank \vs Verb dank-
-			\ex das Blau
-			\ex die Betrunkene
-		\zl
-			 
-	\end{itemize}
+	\settowidth\jamwidth{[ nicht konkatenativ]} 
+	\ea\label{ex:5bKonk1} {[\MyPdown{N}Tisch] $+$ [\MyPdown{N}bein] \ras [\MyPdown{N}Tischbein]} 
+	\jambox{[konkatenativ]}
 	
-	\item[] \textbf{ÜB.1}
+	\ex\label{ex:5bKonk2} {[\MyPdown{V}schlaf] \ras [\MyPdown{N}Schlaf]}
+	\jambox{[nicht konkatenativ]}
+	\z 
+	
 \end{itemize}
+
+\begin{block}{Konkatenation (auch Verkettung)}
+	Prozess und Ergebnis einer systematischen linearen \textbf{Aneinanderreihung} linguistischer Kategorien	\citep[vgl.][]{Fries16i, Fuhrhop17a} 
+\end{block}	
 
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Wortstruktur}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstruktur}
-\begin{minipage}{.48\textwidth}
-\begin{itemize}
-	\item \textbf{Struktur:}
-	
+\frametitle{Struktur komplexer Wörter}
+
+\begin{minipage}{.65\textwidth}
+
 	\begin{itemize}
-		\item spiegelt Bildungsprozess wider
-		\item steuert Interpretation
-		\item \textbf{binär} (in den meisten Theorien)
+		\item Die Wortstruktur spiegelt \textbf{Bildungsprozess} wider.
+		\item Sie steuert die \textbf{Interpretation}.
+		\item In den meisten Theorien ist die komplexe Struktur \textbf{binär}.
 		
 		\begin{itemize}
-			\item maximal zwei Elemente (= \textbf{Konstituenten} von engl. \emph{constituent} \gq{Bestandteil}) verbinden sich zu einem komplexen Element
-			\item Zwei Elemente gehören enger zusammen
+			\item Maximal zwei Elemente ($=$ \textbf{Konstituenten} von engl. \emph{constituent} \gq{Bestandteil}) verbinden sich zu einem komplexen Element.
+			\item Zwei Elemente gehören enger zusammen.
 		\end{itemize}
-		\item[] \ras Aufbau ist \textbf{hierarchisch:}
+		\item Aufbau ist \textbf{hierarchisch} (vgl.\ phonologische Struktur)
 	\end{itemize}
-\end{itemize}
-\end{minipage}\hfill%
-\begin{minipage}{.48\textwidth}
+
+\end{minipage}
+%
+\hfill%
+%
+\begin{minipage}{.34\textwidth}
 \begin{figure}	
 \centering
 \scalebox{0.7}{
 \begin{forest} 
-sm edges,
 	[Haustürschlüssel
 		[Haustür
 			[Haus] 
 			[Tür]]
 		[Schlüssel]]									
 \end{forest}}
-%\end{figure}
 
-%\begin{figure}
-\centering
+\vspace{.75cm}
+
 \scalebox{.7}{
 \begin{forest}
-sm edges,
 	[Zugverbindung
 		[Zug]
 		[Verbindung
 			[verbind
-				[ver]
+				[ver-]
 				[bind]]
-			[ung]]]
+			[-ung]]]
 \end{forest}}
 \end{figure}
 \end{minipage}
+
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstruktur}
+\frametitle{Struktur komplexer Wörter}
 
-\begin{minipage}{0.48\textwidth}
+\begin{minipage}{0.65\textwidth}
 \begin{itemize}
-	\item Morphologische Einheiten (Stämme und Affixe) sind \textbf{kategoriell ausgezeichnet}, d.h. es wird markiert: 
+	\item Morphologische Einheiten (Stämme und Affixe) sind \textbf{kategoriell ausgezeichnet}, \dash es wird markiert, ob es sich bspw. 
 	
 	\begin{itemize}
-		\item[]
-		\item ob es sich bspw. um eine Nomen (N)
-		\item[] oder
-		\item ein Nomen bildendes Element (N\textsuperscript{af}) handelt:
+		\item um einen Nomenstamm (\alertred{N}), einen Verbstamm (\alertred{V}), \ldots 
+		\item[] bzw.
+		\item um ein Nomenaffix (\alertblue{N\MyPup{af}}), ein Verbaffix (\alertblue{V\MyPup{af}}), \ldots\  handelt
 	\end{itemize}
 \end{itemize}
-\end{minipage}\hfill%
-\begin{minipage}{.48\textwidth}
+\end{minipage}
+%
+\hfill%
+%
+\begin{minipage}{.34\textwidth}
 
 \begin{figure}	
 \centering
 \scalebox{0.7}{
 \begin{forest} 
 sm edges,
-	[N
-		[N
-			[N
+	[\alertred{N}
+		[\alertred{N}
+			[\alertred{N}
 				[Haus]]
-			[N 
+			[\alertred{N} 
 				[Tür]]]
-		[N
+		[\alertred{N}
 			[Schlüssel]]]								
 \end{forest}}
-%\end{figure}
 
-%\begin{figure}
+\vspace{.5cm}
+
 \centering
 \scalebox{.7}{
 \begin{forest}
@@ -510,11 +358,11 @@ sm edges,
 			[Zug]]
 		[N
 			[V				
-				[Vaf					
-					[ver]]
+				[\alertblue{V\MyPup{af}}					
+					[ver-]]
 				[V
 					[bind]]]
-			[Naf			
+			[\alertblue{N\MyPup{af}}			
 				[ung]]]]
 \end{forest}}
 \end{figure}
@@ -524,104 +372,190 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstruktur}
+\frametitle{Struktur komplexer Wörter}
 
-\begin{minipage}{.48\textwidth}
+\begin{minipage}{.66\textwidth}
 
 \begin{itemize}
-	\item Folgende Struktur nicht möglich:
-	\item[]
-	\item V\textsuperscript{af} \emph{ver-} + Nomen = Nomen ??
 	
-	\begin{itemize}
-		\item Dies ist nicht möglich!
-		\item \emph{ver-} kann sich nur mit Verben verbinden
-	\end{itemize}
+	\item Die einzelnen Elemente haben \textbf{Beschränkungen}, mit welchen anderen Elementen sie sich verbinden können.
+	
+	\item Ein \textbf{Präfix} der Kategorie $X$\MyPup{af} kann sich nur mit Elementen der Kategorie $X$ verbinden.
+
+	\ea[*]{
+		[\MyPdown{V\MyPup{af}}ver-] $+$ [\MyPdown{N}bindung] $=$ \alertred{\ding{56}} verbindung
+	}
+	\ex[]{
+		[\MyPdown{V\MyPup{af}}ver-] $+$ [\MyPdown{V}bind] $=$ \alertred{\ding{52}} verbind 
+	}
+	\z 	
+	
+	\item Ein \textbf{Suffix} der Kategorie $X$\MyPup{af} bestimmt, mit welchen Elementen (\zB $X$, $Y$, $Z$) es sich verbinden kann.
+	
+	\ea {\alertred{\ding{52}} [\MyPdown{V}bind]$+$[\MyPdown{N\MyPup{af}}-ung], \alertred{\ding{56}} [\MyPdown{N}Lampe]$+$[\MyPdown{N\MyPup{af}}-ung]}
+	\z 
 \end{itemize}
-\end{minipage}\hfill%
-\begin{minipage}{.48\textwidth}
-\begin{figure}
+
+\end{minipage}
+%
+\hfill%
+%
+\begin{minipage}{.32\textwidth}
+
+\begin{figure}	
 \centering
 \scalebox{.7}{
 \begin{forest}
 sm edges,
-	[*N
+	[\alertred{*}N
 		[N
 			[Zug]]
-		[N
-			[Vaf
-				[ver]]
+		[\alertred{*}N
+			[V\MyPup{af}
+				[ver-]]
 			[N
 				[V
 					[bind]]
-				[Naf
-					[ung]]]]]
+				[N\MyPup{af}
+					[-ung]]]]]
 \end{forest}}
+\caption{ungrammatische Struktur}
+\end{figure}
+
+\end{minipage}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Struktur komplexer Wörter: Kopf}
+
+
+\begin{itemize}
+	\item Das \textbf{rechte Element} in (\ref{ex:5bKonk3}) und (\ref{ex:5bKonk4}) bestimmt die \textbf{Kategorie} des Wortbildungsprodukts %,MyP18b}
+	
+\ea 
+	\ea\label{ex:5bKonk3} {[\MyPdown{V}brauch] $+$ [\MyPdown{\alertred{A\MyPup{af}}}-bar] $=$ [\alertred{\MyPdown{A}}brauchbar]}
+	\ex\label{ex:5bKonk4} {[\MyPdown{A}brauchbar] $+$ [\MyPdown{\alertred{N\MyPup{af}}}-keit] $=$ [\alertred{\MyPdown{N}}Brauchbarkeit]}
+	\z 
+\z 
+
+\end{itemize}
+
+\pause 
+	
+\begin{block}{Kopf}
+	Element in einem \textbf{konkatenativen morphosyntaktischen Prozess}, das die \textbf{wichtigsten Eigenschaften} des Resultats bestimmt. 
+
+\end{block}	
+
+\begin{block}{Kopfprinzip}
+	\textbf{jedes} komplexe Wort, das durch \textbf{Komposition} oder \textbf{Derivation} entstanden ist, hat einen morphologischen Kopf
+\end{block}	
+
+\hfill (vgl.\ \citealp[76]{Olsen86a}; \citealp[]{MyP18b})
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Struktur komplexer Wörter: Kopf}
+
+\begin{minipage}{.7\textwidth}
+
+
+\begin{itemize}
+	\item In der \textbf{Wortbildung} legt der Kopf die \textbf{morphosyntaktischen} Eigenschaften des komplexen Wortes fest (\zB Genus, Wortart, Flexionsart, \ldots ). 
+	
+	\item Auch einige der \textbf{semantischen} Eigenschaften des Resultats werden vom Kopf bestimmt.
+	
+	\item \textbf{Projektion:} Vom Kopf werden die Merkmale auf den sog. Mutterknoten übertragen.  
+	
+	\item Problematische Fälle:
+		
+		\ea verholz(-en), befreund(-en), beruhig(-en), Wasserablauf
+		\z
+		
+%	\item[] \textbf{ÜB.2}
+\end{itemize}
+
+
+\begin{block}{Righthand Head Rule}
+	die \textbf{am weitesten rechts stehende Konstituente} in einem \textbf{Wortbildungsprozess} ist der Kopf.
+\end{block}	
+
+\end{minipage}
+%
+\hfill%
+%
+\begin{minipage}{.29\textwidth}
+
+\begin{figure}	
+	\centering
+	\scalebox{.6}{
+	\begin{forest}
+		[N\\
+		{[}\alertred{neut}{]}, name=N3K
+		[N\\
+		{[}\alertblue{mask}{]}, name=N2K
+		[N\\	
+		{[}fem{]}, name=N1
+		[Kartoffel\\
+		]
+		]
+		[N\\
+		{[}\alertblue{mask}{]}, name=N2
+		[salat\\
+		]
+		]	
+		]
+		[N\\
+		{[}\alertred{neut}{]}, name=N3	
+		[rezept\\
+		]
+		]
+		]{
+			\draw[->,dashed] (N2) to[out=east,in=east] (N2K);
+			\draw[->,dashed] (N3) to[out=east,in=east] (N3K);
+		}
+	\end{forest}
+}
+
+\vspace{.5cm}
+
+	\centering
+	\scalebox{.6}{
+\begin{forest}
+	[\alertred{N}, name=N1
+	[N\MyPup{af}, name=N0
+	[un-]		
+	]
+	[\alertred{N}, name=A1
+	[\alertblue{A}, name=V1 
+	[V
+	[brauch-]
+	]
+	[\alertblue{A}\MyPup{af}, name=V0
+	[-bar]
+	]
+	]
+	[\alertred{N}\MyPup{af}, name=A0
+	[-keit]
+	]
+	]
+	]{
+		\draw[->,dashed] (V0) to[out=east,in=east] (V1);
+		\draw[->,dashed] (A0) to[out=east,in=east] (A1);
+		\draw[->,dashed] (A1) to[out=east,in=east] (N1);
+	}
+\end{forest}
+
+}
 \end{figure}
 
 \end{minipage}
 
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortstruktur}
-
-\begin{itemize}
-	\item Kombination:
-	
-	\begin{itemize}
-		\item verbalen Basis \emph{verbind} + Affix \emph{-ung} = Nomen
-		\item \emph{-ung} ist ein nomenbildendes Affix
-		
-		\begin{itemize}
-			\item die \textbf{Kategorie} des Affixes (N\textsuperscript{af}) bestimmt die Kategorie des entstehenden Wortes (N): kategorienbestimmende Eigenschaft
-			\item[] \ras Affix = Kopf der Struktur
-		\end{itemize}
-		\item \textbf{Kopf}:
-		
-		\begin{itemize}
-			\item bestimmt die Kategorie des Wortes	
-		\end{itemize}
-		\item \textbf{Kopfprinzip:}
-		
-		\begin{itemize}
-			\item jedes komplexe Wort, das durch Komposition oder Derivation entstanden ist, hat einen morphologischen Kopf
-		\end{itemize}
-		\item \textbf{Der Kopf legt die morphosyntaktischen Eigenschaften des komplexen Wortes fest} (Genus, Wortart, Flexionsart, etc.)
-		\item Vom Kopf werden Merkmale auf den sog. Mutterknoten übertragen: \textbf{Projektion}
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Wortstruktur}
-
-\begin{itemize}
-	\item \textbf{Kopf} (im Dt.): die am weitesten rechts stehende Konstituente (\textbf{Righthand Head Rule})
-	
-	\begin{itemize}
-		\item[]
-		\item Einige problematische Fälle
-		
-		\ea verholzen, befreunden, beruhigen, Wasserablauf
-		\z
-		
-	\end{itemize}
-	\item Aneinanderreihung von Elementen nennt man \textbf{Konkatenation}.
-	
-	\begin{itemize}
-		\item[]
-		\item Komplexe Wörter entstehen (manchmal) durch Konkatenation, es gibt jedoch auch nicht konkatenative Wortbildungsprozesse.
-	\end{itemize}
-	\item[]	
-	\item[] \textbf{ÜB.2}
-\end{itemize}
 
 
 \end{frame}
@@ -629,8 +563,8 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Komposition}
-\iftoggle{toc}{
+\subsection{Komposition}
+\iftoggle{sectoc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
@@ -642,14 +576,19 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Allgemeines}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+\subsubsection{Allgemeines}
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Komposition}
 
 \begin{itemize}
 	\item \textbf{Kombination von Stämmen}
@@ -974,12 +913,15 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Funktionale Klassifikation}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+\subsubsection{Funktionale Klassifikation}
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -1008,12 +950,16 @@ sm edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Determinativkomposita}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Determinativkomposita}
@@ -1038,7 +984,7 @@ sm edges,
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Determinativkomposita}
@@ -1072,8 +1018,9 @@ sm edges,
 \end{itemize}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Determinativkomposita}
 
@@ -1126,9 +1073,13 @@ sm edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Rektionskomposita}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
 
 
@@ -1248,9 +1199,13 @@ sm edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Possessivkomposita}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
 
 
@@ -1281,9 +1236,13 @@ sm edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Kopulativkomposita}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
 
 
@@ -1340,10 +1299,14 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wortstrukturregeln}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+\subsubsection{Wortstrukturregeln}
+%\iftoggle{sectoc}{
+%	\frame{
+%		\begin{multicols}{2}
+%			\frametitle{~}
+%			\tableofcontents[currentsection]
+%		\end{multicols}
+%	}
 %}
 
 
@@ -1474,6 +1437,272 @@ sm edges,
 	\ea '((Großraum)$\cdot$(flugzeug))
 	\z
 	
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Exkurs: Andere Wortbildungsarten}
+\iftoggle{sectoc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Exkurs: Andere Wortbildungsarten}
+
+\begin{itemize}
+	\item \textbf{Kontamination} (Wortverschmelzung, -kreuzung, Amalgamierung)
+	
+	\begin{itemize}
+		\item Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter (oder beider) gelöscht wird.
+		
+		\ea Infotainment, Bioghurt, mainzigartig, Eurasien
+		\z
+	\end{itemize}
+	
+	\item \textbf{Generifizierung}: Ausweitung auf Gattungsbezeichnung
+	
+	\ea Tempo (Taschentuch), Fit
+	\z
+	
+	\item \textbf{Analogie}: Bildung eines neuen Wortes durch Ersetzung eines Morphems eines komplexen Wortes durch ein anderes, kontextuell passenderes
+	
+	\ea e-card (von e-mail), slow food (von fast food)
+	\z
+	
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Kurzwortbildung}
+
+\begin{itemize}
+	\item phonetisch ungebunden (\textbf{Abkürzung}):
+	
+	\ea ARD, EU, CIA
+	\z
+	
+	\item phonetisch gebunden (\textbf{Akronym}):
+	
+	\ea DAX, PIN, UFO
+	\z
+	
+\end{itemize}
+
+\item Weitere Kurzwörter: Wortmaterial am Anfang oder am Ende des Wortes wird getilgt
+
+\ea Kripo, Bus, Auto, bi, öko, Schumi, Alki
+\z
+
+\item \textbf{Wortschöpfung}
+
+\ea Vileda (wie Leder), Iglo, Haribo (Hans Riegel Bonn)
+\z
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Rückbildung} (Reanalyse): Umdrehen einer Wortbildungsregel
+
+\begin{itemize}
+\item im Deutschen typisch bei Verben: Ableitung komplexer Verben aus komplexen Substantiven, deren Zweitglied von einem Verb stammt.
+\item Rückbildung \ras Kürzung?
+\item Verben als Produkt: in finaler Satzposition, mit problematischer Verbzweitstellung, Paradigma nicht vollständig
+
+\ea bergsteigen, schleichwerben, farbkopieren, mähdreschen
+\z
+
+\item Selten auch bei der Herleitung von Substantiven oder Adjektiven zu finden:
+
+\ea Unsympath
+\z
+
+\end{itemize}
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Fremdwortbildung:} Diese Wörter gibt es in der Ursprungssprache nicht oder nicht mit dieser Bedeutung
+
+\ea Handy, Wellness, Beamer
+\z
+
+\begin{itemize}
+\item Produktiv auch mit sog. Konfixen:
+
+\ea Thermohose, Schokaholic
+\z
+
+\end{itemize}
+
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Reduplikation}
+
+\begin{itemize}
+\item Komplette Dopplung:
+
+\ea Blabla, Wauwau
+\z
+
+\item Reimdopplung:
+
+\ea Larifari, Hokuspokus
+\z
+
+\item Ablautdopplung:
+
+\ea Wirrwarr, Wischiwaschi, Singsang
+\z
+
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Zusammenrückung:}
+
+\begin{itemize}
+\item Aus syntaktischen Phrasen hervorgegangen
+\item Wortfolge und Flexionsmarkierungen werden beibehalten
+
+\ea Möchtegern, infolge, wassertriefend
+\z
+
+\end{itemize}
+
+\item \textbf{Zusammenbildung:}
+
+\begin{itemize}
+\item Dreigliedrig: weder die ersten beiden noch die letzten beiden Glieder kommen frei vor
+\item Manchmal als Derivation mit einem nicht lexikalischen ersten Teil
+
+\eal 
+\ex Schriftsteller, Altsprachler
+\ex Schriftsteller: \\ {[}V schriftstell-{]} + {[}-er{]} \vs {[}N Schrift-{]} + {[}N -steller{]}
+\zl
+
+\end{itemize}
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Komposition}
+
+\begin{itemize}
+\item Bildung einer komplexen Form, in der zwei (oder mehr) freie Morpheme auftreten
+
+\ea Edelmut, Baukran, Geisteswissenschaft, süßsauer
+\z
+
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Derivation}
+
+\begin{itemize}
+\item Bildung einer komplexen Form, meist mittels Derivationsaffixen, die dem Stamm vorausgehen oder ihm folgen können
+
+\ea Ableit + ung, ver + schlaf-, Un + mensch
+\z
+
+\item Explizite / äußere Derivation: mittels abtrennbarer Affixe
+
+\ea (Grab + ung).
+\z
+
+\item Implizite / innere Derivation: ohne klar abtrennbare Affixe
+
+\ea trink- \vs Trank
+\z
+
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortbildung: Arten}
+
+\begin{itemize}
+\item \textbf{Konversion:}
+
+\begin{itemize}
+\item Umsetzung eines Stammes in eine andere Kategorie
+\item ohne zusätzliches Morphem oder sonstige Veränderungen
+\item Konversion \ras Derivation ? (Derivation mit einem Nullmorphem)
+
+\eal 
+\ex Nomen Dank \vs Verb dank-
+\ex das Blau
+\ex die Betrunkene
+\zl
+
+\end{itemize}
+
+\item[] \textbf{ÜB.1}
 \end{itemize}
 
 

@@ -2,22 +2,24 @@
 STYLE-PATH= ${HOME}/Library/tex/texmf/latex/
 
 
-SOURCE= grundkurs-handout.tex\
-	00-Organisatorisches-include.tex \
-        01a-sprache-sprachwissenschaft-include.tex\
-        01b-sprache-sprachwissenschaft-include.tex\
-        02-phonetik-include.tex\
-	03a-phonologie-include.tex\
-	03b-phonologie-include.tex\
-	04a-graphematik-include.tex\
-	05a-wortbildung-include.tex\
-	05b-flexion-include.tex\
-	06a-syntax-stefan-include.tex\
-	06b-xbar-simple-include.tex\
-	06c-syntax-ip-include.tex\
-	06-syntax-ha2.tex\
-	07-semantik-stefan-include.tex\
-	08-pragmatik-stefan-include.tex
+SOURCE= $(wildcard *.tex)
+
+# grundkurs-handout.tex\
+# 	00-Organisatorisches-include.tex \
+#         01a-sprache-sprachwissenschaft-include.tex\
+#         01b-sprache-sprachwissenschaft-include.tex\
+#         02-phonetik-include.tex\
+# 	03a-phonologie-include.tex\
+# 	03b-phonologie-include.tex\
+# 	04a-graphematik-include.tex\
+# 	05a-wortbildung-include.tex\
+# 	05b-flexion-include.tex\
+# 	06a-syntax-stefan-include.tex\
+# 	06b-xbar-simple-include.tex\
+# 	06c-syntax-ip-include.tex\
+# 	06-syntax-ha2.tex\
+# 	07-semantik-stefan-include.tex\
+# 	08-pragmatik-stefan-include.tex
 
 
 

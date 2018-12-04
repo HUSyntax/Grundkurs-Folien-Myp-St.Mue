@@ -113,69 +113,73 @@ Zu (\ref{ex:03cHA1b}) Mittagessen:
 \begin{figure}
 \footnotesize
 \centering
-	\begin{forest} MyP edges, [, phantom
-		[$\sigma$
-		[O [x, tier=word [\textipa{m}]]] 
-		[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
-		]
-		[$\sigma$
-		[O, name=onset1]
-		[R [N [x [\textipa{a:}, name=a]]
-		[x, name=ax]] [K [x [\textipa{k}]]]]
-		]
-		[$\sigma$
-		[O [x, tier=word [\textipa{P}]]]
-		[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
-		]
-		[$\sigma$
-		[O, name=onset2]
-		[R [N [x [\textipa{\textsyllabic{n}}]]] [K]
-		]
-		]]
-		{
+\begin{forest} MyP edges, [, phantom
+	[$\sigma$
+	[O [x, tier=word [\textipa{m}]]] 
+	[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
+	]
+	[$\sigma$
+	[O, name=onset1]
+	[R [N [x [\textipa{a:}, name=a]]
+	[x, name=ax]] [K [x [\textipa{k}]]]]
+	]
+	[$\sigma$
+	[O [x, tier=word [\textipa{P}]]]
+	[R [N [x [\textipa{E}]]] [K [x, name=x2 [\textipa{s}]]]]
+	]
+	[$\sigma$
+	[O, name=onset2]
+	[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
+	]
+	]
+	{
 		\draw[black] (x1.north)--(onset1.south);
 		\draw[black] (x2.north)--(onset2.south);
 		\draw[black] (a.north)--(ax.south);
-		}
-	\end{forest}
+	}
+\end{forest}
+
 \end{figure}
 
 \pause
+
 \column[b]{.5\textwidth}
 
 \begin{figure}
-	\footnotesize
-	\centering
-	\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (9,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,6.5); % y axis
-		\node at (-2,1) {Plos.};
-		\node at (-2,2) {Frik.};
-		\node at (-2,3) {Nas.};
-		\node at (-2,4) {\textipa{/l/}};
-		\node at (-2,5) {\textipa{/\;R/}};
-		\node at (-2,6) {Vok.};
-		\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
-		\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,3);
-		\node at (0,-1) {\strut \textipa{m}};
-		\node at (1,-1) {\strut \textipa{I}};
-		\node at (2,-1) {\strut \textipa{t}};
-		\node at (3,-1) {\strut \textipa{a:}};
-		\node at (4,-1) {\strut \textipa{k}};
-		\node at (5,-1) {\strut \textipa{P}};
-		\node at (6,-1) {\strut \textipa{E}};
-		\node at (7,-1) {\strut \textipa{s}};
-		\node at (8,-1) {\strut \textipa{\textsyllabic{n}}};
-		\fill (0,3) circle [radius=3pt];
-		\fill (1,6) circle [radius=3pt];
-		\fill (2,1) circle [radius=3pt];
-		\fill (3,6) circle [radius=3pt];
-		\fill (4,1) circle [radius=3pt];
-		\fill (5,1) circle [radius=3pt];
-		\fill (6,6) circle [radius=3pt];
-		\fill (7,2) circle [radius=3pt];
-		\fill (8,3) circle [radius=3pt];
-	\end{tikzpicture}
+\footnotesize
+\centering
+\begin{tikzpicture}[scale=0.4]
+\draw[black] (-1,0) -- (10,0) ; % x axis
+\draw[black] (-1,0) -- (-1,6.5); % y axis
+\node at (-2,1) {Plos.};
+\node at (-2,2) {Frik.};
+\node at (-2,3) {Nas.};
+\node at (-2,4) {\textipa{/l/}};
+\node at (-2,5) {\textipa{/\;R/}};
+\node at (-2,6) {Vok.};
+\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
+\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,6) -- (9,3);
+\node at (0,-1) {\strut \textipa{m}};
+\node at (1,-1) {\strut \textipa{I}};
+\node at (2,-1) {\strut \textipa{t}};
+\node at (3,-1) {\strut \textipa{a:}};
+\node at (4,-1) {\strut \textipa{k}};
+\node at (5,-1) {\strut \textipa{P}};
+\node at (6,-1) {\strut \textipa{E}};
+\node at (7,-1) {\strut \textipa{s}};
+\node at (8,-1) {\strut \textipa{@}};
+\node at (9,-1) {\strut \textipa{n}};
+\fill (0,3) circle [radius=3pt];
+\fill (1,6) circle [radius=3pt];
+\fill (2,1) circle [radius=3pt];
+\fill (3,6) circle [radius=3pt];
+\fill (4,1) circle [radius=3pt];
+\fill (5,1) circle [radius=3pt];
+\fill (6,6) circle [radius=3pt];
+\fill (7,2) circle [radius=3pt];
+\fill (8,6) circle [radius=3pt];
+\fill (9,3) circle [radius=3pt];
+\end{tikzpicture}
 \end{figure}
 
 \end{columns}
@@ -196,7 +200,7 @@ Zu (\ref{ex:03cHA1b}) Mittagessen (alternative Lösung):
 \footnotesize
 \centering
 
-	\begin{forest} MyP edges, [, phantom
+		\begin{forest} MyP edges, [, phantom
 		[$\sigma$
 		[O [x, tier=word [\textipa{m}]]] 
 		[R [N [x, tier=word [\textipa{I}]]] [K [x, name=x1 [\textipa{t}]]]]
@@ -212,57 +216,53 @@ Zu (\ref{ex:03cHA1b}) Mittagessen (alternative Lösung):
 		]
 		[$\sigma$
 		[O, name=onset2]
-		[R [N [x [\textipa{@}]]] [K [x [\textipa{n}]]]]
+		[R [N [x [\textipa{\textsyllabic{n}}]]] [K]
 		]
-		]
+		]]
 		{
-		\draw[black] (x1.north)--(onset1.south);
-		\draw[black] (x2.north)--(onset2.south);
-		\draw[black] (a.north)--(ax.south);
+			\draw[black] (x1.north)--(onset1.south);
+			\draw[black] (x2.north)--(onset2.south);
+			\draw[black] (a.north)--(ax.south);
 		}
 	\end{forest}
-
 \end{figure}
 
 \pause
-
 \column[b]{.5\textwidth}
 
 \begin{figure}
 \footnotesize
 \centering
-	\begin{tikzpicture}[scale=0.4]
-		\draw[black] (-1,0) -- (10,0) ; % x axis
-		\draw[black] (-1,0) -- (-1,6.5); % y axis
-		\node at (-2,1) {Plos.};
-		\node at (-2,2) {Frik.};
-		\node at (-2,3) {Nas.};
-		\node at (-2,4) {\textipa{/l/}};
-		\node at (-2,5) {\textipa{/\;R/}};
-		\node at (-2,6) {Vok.};
-		\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
-		\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,6) -- (9,3);
-		\node at (0,-1) {\strut \textipa{m}};
-		\node at (1,-1) {\strut \textipa{I}};
-		\node at (2,-1) {\strut \textipa{t}};
-		\node at (3,-1) {\strut \textipa{a:}};
-		\node at (4,-1) {\strut \textipa{k}};
-		\node at (5,-1) {\strut \textipa{P}};
-		\node at (6,-1) {\strut \textipa{E}};
-		\node at (7,-1) {\strut \textipa{s}};
-		\node at (8,-1) {\strut \textipa{@}};
-		\node at (9,-1) {\strut \textipa{n}};
-		\fill (0,3) circle [radius=3pt];
-		\fill (1,6) circle [radius=3pt];
-		\fill (2,1) circle [radius=3pt];
-		\fill (3,6) circle [radius=3pt];
-		\fill (4,1) circle [radius=3pt];
-		\fill (5,1) circle [radius=3pt];
-		\fill (6,6) circle [radius=3pt];
-		\fill (7,2) circle [radius=3pt];
-		\fill (8,6) circle [radius=3pt];
-		\fill (9,3) circle [radius=3pt];
-	\end{tikzpicture}
+\begin{tikzpicture}[scale=0.4]
+\draw[black] (-1,0) -- (9,0) ; % x axis
+\draw[black] (-1,0) -- (-1,6.5); % y axis
+\node at (-2,1) {Plos.};
+\node at (-2,2) {Frik.};
+\node at (-2,3) {Nas.};
+\node at (-2,4) {\textipa{/l/}};
+\node at (-2,5) {\textipa{/\;R/}};
+\node at (-2,6) {Vok.};
+\draw[black] (0,3) -- (1,6) -- (2,1) -- (3,6) -- (4,1);
+\draw[black] (5,1) -- (6,6) -- (7,2) -- (8,3);
+\node at (0,-1) {\strut \textipa{m}};
+\node at (1,-1) {\strut \textipa{I}};
+\node at (2,-1) {\strut \textipa{t}};
+\node at (3,-1) {\strut \textipa{a:}};
+\node at (4,-1) {\strut \textipa{k}};
+\node at (5,-1) {\strut \textipa{P}};
+\node at (6,-1) {\strut \textipa{E}};
+\node at (7,-1) {\strut \textipa{s}};
+\node at (8,-1) {\strut \textipa{\textsyllabic{n}}};
+\fill (0,3) circle [radius=3pt];
+\fill (1,6) circle [radius=3pt];
+\fill (2,1) circle [radius=3pt];
+\fill (3,6) circle [radius=3pt];
+\fill (4,1) circle [radius=3pt];
+\fill (5,1) circle [radius=3pt];
+\fill (6,6) circle [radius=3pt];
+\fill (7,2) circle [radius=3pt];
+\fill (8,3) circle [radius=3pt];
+\end{tikzpicture}
 \end{figure}
 
 \end{columns}
@@ -399,7 +399,7 @@ Zu (\ref{ex:03cHA1c}) Bierdeckel (alternative Lösung):
 		\node at (3,-1) {\strut \textipa{d}};
 		\node at (4,-1) {\strut \textipa{E}};
 		\node at (5,-1) {\strut \textipa{k}};
-		\node at (6,-1) {\strut \textipa{l}};
+		\node at (6,-1) {\strut \textipa{\textsyllabic{l}}};
 		\fill (0,1) circle [radius=3pt];
 		\fill (1,6) circle [radius=3pt];
 		\fill (2,6) circle [radius=3pt];
@@ -432,9 +432,15 @@ Falls nicht, benennen Sie die Verletzungen.
 \pause
 \begin{xlist}
 	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-	\ex \alertred{\textipa{[Pu.\;RI.nStInkt]} \jambox{(Onsetmaximierung)} } \pause
-	\ex  \alertred{\textipa{[Pu.\;RIn.(\,S\,)tInkt]} \jambox{(Sonoritätsprinzip, \textipa{S} ist extrasilbisch)} } \pause
-	\ex  \alertred{\textipa{[Pu5.PIn.stiNkt]} \jambox{(Silbifizierung der phonologischen Wörter)} }
+	\ex \alertred{\textipa{[Pu.\;RI.nstINkt]} \jambox{Onsetmaximierung, keine r-Vokalisierung} } \pause
+	
+	\ex  \alertred{\textipa{[Pu.\;RIns.tINkt]} \jambox{Sonoritätsprinzip} } \pause 
+
+	\ex  \alertred{\textipa{[Pu5.PIns.tINkt]} \jambox{Silbifizierung der phonologischen Wörter} } \pause
+	 
+	\exi{} \alertred{ \textipa{[Pu5.PIn.stINkt]} \jambox{nach alter Trennung mit extrasilbischem \textipa{[s]}} } 
+	\loesung{4}{\citep[vgl.][534]{DudenRechtschreibung06a}}
+% \pause
 \end{xlist}
 \end{exe}
 \pause
@@ -520,11 +526,13 @@ MyP edges [, phantom
 	\exr{ex:03cHA3}
 	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
 	\begin{xlist}
-		\ex[*]{ \textipa{['Napl.O:t]}
-			\loesung{2}{Onset-Maximierung \textipa{[pl]}, \textipa{[N]} steht am Wortanfang,} 
+		\ex[*]{ \textipa{['N@pl.O:t]}
+			\loesung{2}{\textipa{[N]} steht am Wortanfang, \textipa{[@]} in betonter Silbe,} 
+			\loesung{2}{ Onset-Maximierung bzw. Sonorität in der Koda \textipa{[pl]},}
 			\loesung{2}{\textipa{[O]} ist ungespannt und lang} }
 		\ex[*]{ \textipa{[a\;R.'tUng]}
-			\loesung{3}{Auslautverhärtung, regressive velare nasale Assimilation,}\loesung{3}{Knacklaut} }
+			\loesung{3}{Knacklaut, regressive nasale Assimilation \textipa{[ng]},}
+			\loesung{3}{g-Tilgung bzw. Auslautverhärtung \textipa{[g]}} }
 	\end{xlist}
 
 \end{exe}

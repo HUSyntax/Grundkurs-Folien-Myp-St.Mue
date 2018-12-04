@@ -28,7 +28,7 @@ $x > y :=$ $x$ ist sonorer als $y$
 
 \begin{frame}{Hausaufgabe -- Lösung}
 
-Zu (\ref{ex:03cHA1a}):
+Zu (\ref{ex:03cHA1a}) Stimmenfang:
 
 \begin{columns}	
 	
@@ -105,7 +105,7 @@ Zu (\ref{ex:03cHA1a}):
 \begin{frame}{Hausaufgabe -- Lösung}
 
 
-Zu (\ref{ex:03cHA1b})
+Zu (\ref{ex:03cHA1b}) Mittagessen:
 
 \begin{columns}
 	\column[b]{.5\textwidth}
@@ -129,7 +129,7 @@ Zu (\ref{ex:03cHA1b})
 		]
 		[$\sigma$
 		[O, name=onset2]
-		[R [N [x [\textipa{\textsyllabic{n}}]]]
+		[R [N [x [\textipa{\textsyllabic{n}}]]] [K]
 		]
 		]]
 		{
@@ -186,7 +186,7 @@ Zu (\ref{ex:03cHA1b})
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Hausaufgabe -- Lösung}
 
-Zu (\ref{ex:03cHA1b})  (alternative Lösung):
+Zu (\ref{ex:03cHA1b}) Mittagessen (alternative Lösung):
 
 \begin{columns}
 	\column[b]{.5\textwidth}
@@ -273,7 +273,7 @@ Zu (\ref{ex:03cHA1b})  (alternative Lösung):
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Hausaufgabe -- Lösung}
 
-Zu (\ref{ex:03cHA1c}):
+Zu (\ref{ex:03cHA1c}) Bierdeckel:
 
 \begin{columns}
 	\column[b]{.5\textwidth}
@@ -283,7 +283,8 @@ Zu (\ref{ex:03cHA1c}):
 	\begin{forest} MyP edges, [, phantom
 		[$\sigma$
 		[O [x,tier=word [\textipa{b}]]]
-		[R [N [x, tier=word [\textipa{i:}, name=i]] [x,name=x1]] [K [x [\textipa{5}]]]]
+		[R [N [x, tier=word [\textipa{i:}, name=i]] [x,name=x1][x [\textipa{5}]]] [K]
+		]
 		]
 		[$\sigma$
 		[O [x, tier=word [\textipa{d}]]]
@@ -344,6 +345,78 @@ Zu (\ref{ex:03cHA1c}):
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Hausaufgabe -- Lösung}
+
+Zu (\ref{ex:03cHA1c}) Bierdeckel (alternative Lösung):
+
+\begin{columns}
+	\column[b]{.5\textwidth}
+	
+	\begin{figure}
+		\centering
+		\begin{forest} MyP edges, [, phantom
+			[$\sigma$
+			[O [x,tier=word [\textipa{b}]]]
+			[R [N [x, tier=word [\textipa{i:}, name=i]] [x,name=x1][x [\textipa{5}]]] [K]
+			]
+			]
+			[$\sigma$
+			[O [x, tier=word [\textipa{d}]]]
+			[R [N [x [\textipa{E}]]] [K [x, name=x [\textipa{k}]]]]
+			]
+			[$\sigma$
+			[O, name=onset]
+			[R [N [x, tier=word [\textipa{\textsyllabic{l}}]]] [K]
+			]
+			]
+			]
+			{
+				\draw[black] (x1.south)--(i.north);
+				\draw[black] (x.north)--(onset.south);
+			}
+		\end{forest}
+	\end{figure}
+	
+	\pause
+	
+	\column[b]{.5\textwidth}
+	
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}[scale=0.4]
+		\draw[black] (-1,0) -- (8,0) ; % x axis
+		\draw[black] (-1,0) -- (-1,6.5); % y axis
+		\node at (-2,1) {Plos.};
+		\node at (-2,2) {Frik.};
+		\node at (-2,3) {Nas.};
+		\node at (-2,4) {\textipa{/l/}};
+		\node at (-2,5) {\textipa{/\;R/}};
+		\node at (-2,6) {Vok.};
+		\draw[black] (0,1) -- (1,6) -- (2,6);
+		\draw[black] (3,1) -- (4,6) -- (5,1) -- (6,4);
+		\node at (0,-1) {\strut \textipa{b}};
+		\node at (1,-1) {\strut \textipa{i:}};
+		\node at (2,-1) {\strut \textipa{5}};
+		\node at (3,-1) {\strut \textipa{d}};
+		\node at (4,-1) {\strut \textipa{E}};
+		\node at (5,-1) {\strut \textipa{k}};
+		\node at (6,-1) {\strut \textipa{l}};
+		\fill (0,1) circle [radius=3pt];
+		\fill (1,6) circle [radius=3pt];
+		\fill (2,6) circle [radius=3pt];
+		\fill (3,1) circle [radius=3pt];
+		\fill (4,6) circle [radius=3pt];
+		\fill (5,1) circle [radius=3pt];
+		\fill (6,4) circle [radius=3pt];
+		\end{tikzpicture}
+	\end{figure}
+	
+\end{columns}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Hausaufgabe -- Lösung}
 \begin{itemize}
 \item[2.] Silbifizieren Sie folgende Segmentsequenzen \textbf{in zwei Schritten}:
 \begin{itemize}
@@ -358,9 +431,10 @@ Falls nicht, benennen Sie die Verletzungen.
 \exr{ex:03cHA2} Urinstinkt
 \pause
 \begin{xlist}
-	\ex \alertred{\textipa{[Pu.\;RI.nStInkt]} (Onsetmaximierung)} \pause
-	\ex  \alertred{\textipa{[Pu.\;RIn.(\,S\,)tInkt]} (Sonoritätsprinzip, \textipa{S} ist extrasilbisch)} \pause
-	\ex  \alertred{\textipa{[Pu5.PIn.stinkt]} (Silbifizierung)}
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
+	\ex \alertred{\textipa{[Pu.\;RI.nStInkt]} \jambox{(Onsetmaximierung)} } \pause
+	\ex  \alertred{\textipa{[Pu.\;RIn.(\,S\,)tInkt]} \jambox{(Sonoritätsprinzip, \textipa{S} ist extrasilbisch)} } \pause
+	\ex  \alertred{\textipa{[Pu5.PIn.stiNkt]} \jambox{(Silbifizierung der phonologischen Wörter)} }
 \end{xlist}
 \end{exe}
 \pause

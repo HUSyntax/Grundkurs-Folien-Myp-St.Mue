@@ -8,10 +8,13 @@
 \documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES      
+%%     PACKAGES & COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
+
+\input{localcommands}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                   
@@ -19,7 +22,6 @@
 
 \begin{document}
 	
-\input{localcommands}
 
 %%%% ue-loesung
 %%%% true: Fragen & Lösungen / false: nur Uebung
@@ -29,9 +31,8 @@
 %%%% true: Fragen & Lösungen / false: nur Hausaufgabe
 %\toggletrue{ha-loesung}
 
-
 %%%% toc
-%%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides
+%%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
 \toggletrue{toc}
 %	\togglefalse{toc}
 
@@ -43,7 +44,7 @@
 %%%% gliederung
 %%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
 %	\toggletrue{gliederung}
-\togglefalse{gliederung}
+%	\togglefalse{gliederung}
 
 
 \input{03c-phonologie-include}

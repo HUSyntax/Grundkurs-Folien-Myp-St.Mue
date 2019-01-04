@@ -94,6 +94,8 @@
 \nocite{Fleischer&Barz12a} %Einführung Morphologie
 \nocite{Grewendorf&Co91a} %Betonung bei Komposita
 \nocite{Haspelmath2002a}
+\nocite{MyP18b} %Kopf
+\nocite{Olsen86a} %Morphologie des Deutschen
 \nocite{Plungian00a} %Morphologie im Sprachsystem
 \nocite{Salmon00a} %Term Morphology
 \nocite{Wurzel00a} %Gegenstand Morphologie
@@ -110,8 +112,12 @@
 \frametitle{Begleitlektüre}
 
 \begin{itemize}
-	\item \citet[35--40]{Abramowski2016} 
-	\item Lüdeling
+	\item \textbf{obligatorisch:}
+	\item[] \citet[35--40]{Abramowski2016a}
+	\item[] \citet{Luedeling2009a}
+	\item \textbf{optional:}
+	\item[] \citet[Kap. 2, S. 29--36]{Meibauer&Co07a}
+	
 \end{itemize}
 
 \end{frame}
@@ -120,15 +126,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Einführung}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item \blaubf{Einführung}
+			\item Wortbegriff
+			%%Phonetisch-phonologisches Wort
+			%%Orthographisch-graphemisches Wort
+			%%Morphologisches Wort Syntaktisches Wort
+			%%Lexikalisch-semantisches Wort
+			%%Wort: Hauptkriterien
+			\item Morphologische Grundbegriffe
+			%%Morph, Morphem, Allomorph
+			\item Kriterien der Morphemklassifikation
+			\item Morphologische Einheiten
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -214,13 +244,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Wortbegriff}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item \blaubf{Wortbegriff}
+			%%Phonetisch-phonologisches Wort
+			%%Orthographisch-graphemisches Wort
+			%%Morphologisches Wort Syntaktisches Wort
+			%%Lexikalisch-semantisches Wort
+			%%Wort: Hauptkriterien
+			\item Morphologische Grundbegriffe
+			%%Morph, Morphem, Allomorph
+			\item Kriterien der Morphemklassifikation
+			\item Morphologische Einheiten
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -277,19 +332,27 @@ Begriff für \textbf{sprachliche Grundeinheiten}. Seine Definition ist
 	\begin{itemize}
 		\item Die \textbf{Silbifizierung} erfolgt nur innerhalb des phonologischen Wortes.
 		
-		\ea kindlich \vs kindisch: \ab{-lich} ist ein phonolog. Wort, aber \ab{-isch} nicht.
+		\ea kindlich \textipa{[kInt.\alertred{lI\c{c}}]} \vs kindisch \textipa{[kIn.dIS]}:\\
+		\ab{-lich} ist ein phonolog. Wort, aber \ab{-isch} nicht.
 		\z 
 
 \pause 
 
 		\item \textbf{Assimilationsprozesse} sind nur innerhalb des phonolog. Wortes obligatorisch.
 		
-		\ea ungern \vs Bearbeitung: \ab{un-} ist ein phonolog. Wort
+		\ea ungern \textipa{[\alertred{PUn}.gE\;Rn]} \vs Leistung \textipa{[l\t{aI}s.tUN]}:\\
+		\ab{un-} ist ein phonolog. Wort, \ab{-ung} nicht.
 		\z 
 
 \pause 
 		
 		\item \textbf{Vokalharmonie} (\zB im Türkischen) erfolgt nur innerhalb eines phonolog. Wortes.
+		
+		\eal
+		\ex \alertred{e}v ,Haus` \ras ev-l\alertred{e}r ,Häuser`
+		\ex \alertred{a}d ,Name` \ras ad-l\alertred{a}r ,Namen`
+		\zl
+		
 	\end{itemize}
 \end{itemize}
 
@@ -406,7 +469,8 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 	
 	\item Komplexe morph. Wörter sind durch spezifische \textbf{Regeln der Wortbildung} zu beschreiben.
 	
-	\ea Tischbein $=$ Tisch $+$ Bein (Komposition)
+	\settowidth\jamwidth{XXXXX Komposotion}
+	\ea Tischbein $=$ Tisch $+$ Bein \jambox{[Komposition]}
 	\z 
 \end{itemize}
 
@@ -606,16 +670,40 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Morphologische Grundbegriffe}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Wortbegriff
+			%%Phonetisch-phonologisches Wort
+			%%Orthographisch-graphemisches Wort
+			%%Morphologisches Wort Syntaktisches Wort
+			%%Lexikalisch-semantisches Wort
+			%%Wort: Hauptkriterien
+			\item \blaubf{Morphologische Grundbegriffe}
+			%%Morph, Morphem, Allomorph
+			\item Kriterien der Morphemklassifikation
+			\item Morphologische Einheiten
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Morph, Morphem, Allomorph}
 %\frame{
@@ -634,8 +722,10 @@ graph. Wörter} (obwohl der \textbf{Wortstatus} dieser Buchstabensequenzen sich 
 
 \pause
 
-\begin{block}{Morphem \citep[38]{Wurzel84x}}
+\begin{block}{Morphem}
 	Ein Morphem ist die \textbf{kleinste}, in ihren \textbf{verschiedenen Vorkommen} als formal \textbf{einheitlich identifizierbare Folge von Segmenten}, der (wenigstens) eine als einheitlich identifizierbare \textbf{außerphonologische Eigenschaft} zugeordnet ist.
+	
+	\hfill \citep[38]{Wurzel84x}
 \end{block}
 
 \end{frame}
@@ -748,11 +838,39 @@ lach + te & träum + te \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Kriterien der Morphemklassifikation}
-\frame{
-\frametitle{~}
-	\tableofcontents[currentsection]
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Wortbegriff
+			%%Phonetisch-phonologisches Wort
+			%%Orthographisch-graphemisches Wort
+			%%Morphologisches Wort Syntaktisches Wort
+			%%Lexikalisch-semantisches Wort
+			%%Wort: Hauptkriterien
+			\item Morphologische Grundbegriffe
+			%%Morph, Morphem, Allomorph
+			\item \blaubf{Kriterien der Morphemklassifikation}
+			\item Morphologische Einheiten
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -919,9 +1037,38 @@ lach + te & träum + te \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Morphologische Einheiten}
-\frame{
-\frametitle{~}
-	\tableofcontents[currentsection]
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%% StM: Contents
+\iftoggle{gliederung}{
+	
+	\outline{
+		\begin{itemize}
+			
+			\item Einführung
+			\item Wortbegriff
+			%%Phonetisch-phonologisches Wort
+			%%Orthographisch-graphemisches Wort
+			%%Morphologisches Wort Syntaktisches Wort
+			%%Lexikalisch-semantisches Wort
+			%%Wort: Hauptkriterien
+			\item Morphologische Grundbegriffe
+			%%Morph, Morphem, Allomorph
+			\item Kriterien der Morphemklassifikation
+			\item \blaubf{Morphologische Einheiten}
+			\item Hausaufgabe
+			
+		\end{itemize}
+	}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -929,19 +1076,19 @@ lach + te & träum + te \\
 \frametitle{Wurzel \& Stamm}
 
 \begin{itemize}
-	\item \textbf{Wurzel} (auch Wurzelmorphem, Basismorphem): 
+	\item \textbf{Wurzel}, auch Wurzelmorphem, Basismorphem \citep[vgl.][]{Eins16d}
 	
 	\begin{itemize}
 		\item unterste, atomare Basis komplexer Wörter
 		\item hinsichtlich \textbf{Wortbildung} und \textbf{Flexion} nicht mehr zerlegbar
 		\item oft, aber nicht immer frei
 		
-		\ea \alertred{Ehr}-e, ver-\alertred{ehr}-st, \alertred{ess}-bar, \alertred{Ess}-\alertred{tisch}				
+		\ea \alertred{Schreib}-ung, ver-\alertred{schreib}-st, \alertred{ess}-bar, \alertred{Ess}-\alertred{tisch}				
 		\z 
 	\end{itemize}
 
 
-	\item \textbf{Stamm:}
+	\item \textbf{Stamm} \citep[vgl.][]{Eins16c}
 	
 	\begin{itemize}
 		\item Ausgangsform der \textbf{Flexion} und der \textbf{Komposition}
@@ -963,7 +1110,7 @@ lach + te & träum + te \\
 \frametitle{Basis \& Derivat}
 
 \begin{itemize}
-	\item \textbf{Basis:} (Pl. Basen)
+	\item \textbf{Basis}, Pl. Basen \citep[vgl.][]{Eins16a}
 	
 	\begin{itemize}
 		\item Ausgangsform der \textbf{Derivation} (Wortbildung durch Affigierung)
@@ -974,7 +1121,10 @@ lach + te & träum + te \\
 
 	\end{itemize}
 
-	\item \textbf{Derivat:} Resultat der \textbf{Derivation}
+	\item \textbf{Derivat}
+	\begin{itemize}
+		\item Resultat der \textbf{Derivation}
+	\end{itemize}
 	
 	\ea 
 		\ea \alertred{freund-lich} $=$ freund $+$ -lich
@@ -992,7 +1142,7 @@ lach + te & träum + te \\
 \frametitle{Affix \& Konfix}
 
 \begin{itemize}
-	\item \textbf{Affix:}
+	\item \textbf{Affix}
 	
 	\begin{itemize}
 		\item \textbf{nicht frei vorkommendes} (gebundenes) Morphem
@@ -1036,27 +1186,28 @@ lach + te & träum + te \\
 \frametitle{Affix \& Konfix}
 
 \begin{itemize}
-\item \textbf{Konfix}: 
+\item \textbf{Konfix} \citep{Eins16e}
 
 \begin{itemize}
-	\item \textbf{nicht frei vorkommendes} Morphem (wie Affix)
+	\item \textbf{nicht frei vorkommendes} (\idR entlehntes) Morphem (wie Affix) (vgl.\ (\ref{ex:Konf1}))
 	\item Aber Konfixe lassen sich zu einem selbständigen Wort kombinieren (wie normale Wurzeln/Stämme, vgl.\ (\ref{ex:Konf1}) \vs (\ref{ex:Konf2})).
 	
 	\ea
-		\ea\label{ex:Konf1} \alertred{Bio}-\alertred{log}e
-		\ex \alertred{Soft}-ie
+		\ea\label{ex:Konf1} Geo-\alertred{log}, \alertred{Log}-ik
+%		\ex \alertred{Soft}-ie
 		\ex\label{ex:Konf2} *un-keit, *ver-lich
 		\z 
 	\z 
 	
-	\item Ihre Bedeutung ist \textbf{stärker lexikalisch} als bei Affixen.
+	\item Ihre Bedeutung ist \textbf{stärker lexikalisch} als bei Affixen (vgl.\ (\ref{ex:Konf3})).
 	
-	\item Sie können sowohl als \textbf{Präfixe} als auch als \textbf{Suffixe} fungieren.
+	\item Manche Konfixe können sowohl als \textbf{Präfixe} als auch als \textbf{Suffixe} fungieren (vgl.\ (\ref{ex:Konf4}) \vs (\ref{ex:Konf5})).
 	
 		\ea 
-			\ea {kino-\alertred{phil} \vs \alertred{Phil}-anthrop}
-			\ex {\alertred{Un-}Mensch \vs *Mensch\alertred{-un}}
-			\ex {Soft-getränk}
+			\ea\label{ex:Konf3} \alertred{Bio}-loge, \alertred{Soft}-eis
+			\ex\label{ex:Konf4} kino-\alertred{phil} \vs \alertred{Phil}-anthrop, \alertred{Therm}-o-stat \vs exo-\alertred{therm}
+%			\alertred{therm}-o-\alertred{phil}, \alertred{Therm}-e
+			\ex\label{ex:Konf5} \alertred{Un-}Mensch \vs *Mensch\alertred{-un}
 			\z 
 		\z 
 	\end{itemize}
@@ -1067,10 +1218,10 @@ lach + te & träum + te \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Simplex vs.\ komplexe Lexeme}
+\frametitle{Simplizia vs.\ komplexe Lexeme}
 
 \begin{itemize}
-	\item \textbf{Simplex:} (Pl. Simplizia)
+	\item \textbf{Simplex}, Pl. Simplizia \citep[vgl.][]{Eins16b}
 	
 	\begin{itemize}
 		\item nicht zusammengesetztes oder abgeleitetes Lexem (\textbf{nicht komplex})
@@ -1079,15 +1230,15 @@ lach + te & träum + te \\
 		\ea Tisch, geb(-en), rot
 		\z 
 		
-		\item Wenn Derivationsaffixe oder Stämme/Wurzeln \textbf{nicht mehr aktiv} (auch \textbf{nicht mehr produktiv}) sind, nimmt man die komplexe Form als Simplex wahr.
+		\item Wenn Derivationsaffixe und Stämme/Wurzeln \textbf{nicht mehr aktiv} (auch \textbf{nicht mehr produktiv}) sind, bzw. das Resultat der Wortbildung nicht kompositionell ist (Lexikalisierung), nimmt man die komplexe Form als Simplex wahr.
 
-		\ea Ursache, Mädchen, freilich
+		\ea Ursprung, Mädchen, freilich
 		\z 
 	\end{itemize}
 
 \pause 
 
-	\item \textbf{komplexe Lexeme:}
+	\item \textbf{komplexe Lexeme}
 	
 	\begin{itemize}
 		\item durch Anwendung eines \textbf{Wortbildungsprozesses} erzeugte \textbf{komplexe Form}
@@ -1103,11 +1254,40 @@ lach + te & träum + te \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hausaufgabe}
-\frame{
-	\frametitle{~}
-	\tableofcontents[currentsection]
-}
-
+%
+%%% MyP: Contents
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection, subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
+%}
+%
+%%% StM: Contents
+%\iftoggle{gliederung}{
+%	
+%	\outline{
+%		\begin{itemize}
+%			
+%			\item Einführung
+%			\item Wortbegriff
+%			%%Phonetisch-phonologisches Wort
+%			%%Orthographisch-graphemisches Wort
+%			%%Morphologisches Wort Syntaktisches Wort
+%			%%Lexikalisch-semantisches Wort
+%			%%Wort: Hauptkriterien
+%			\item Morphologische Grundbegriffe
+%			%%Morph, Morphem, Allomorph
+%			\item Kriterien der Morphemklassifikation
+%			\item Morphologische Einheiten
+%			\item \blaubf{Hausaufgabe}
+%			
+%		\end{itemize}
+%	}
+%}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
@@ -1116,9 +1296,12 @@ lach + te & träum + te \\
 	\item[1.] Geben Sie an, \textbf{aus welchen Morphemen} die folgenden Wörter bestehen:	
 	
 	\begin{exe}
-		\item verteilenden %ver- teil -end -en
-		\item Bereinigungsanlage %be- rein -ig -ung(-s) an- lag -e
-		\item Hausarbeit %haus arbeit
+		\ex \label{ex:05aHA1}
+		\begin{xlist}
+			\ex verteilenden %ver- teil -end -en
+			\ex Bereinigungsanlage %be- rein -ig -ung(-s) an- lag -e
+			\ex Hausarbeit %haus arbeit
+		\end{xlist}
 	\end{exe}	
 	
 
@@ -1201,15 +1384,15 @@ lach + te & träum + te \\
 \frametitle{Hausaufgabe}
 
 \begin{enumerate}
-	\item[5.] Gegeben sei der Satz in (\ref{ex:5aBsp}). Geben Sie \textbf{jeweils 3 Beispiele} für die unten angegebenen Morphemtypen an.
+	\item[5.] Gegeben sei der Satz in (\ref{ex:05aHA5}). Geben Sie \textbf{jeweils 3 Beispiele} für die unten angegebenen Morphemtypen an.
 	
-	\ea\label{ex:5aBsp} Heute fragt Maria, ob wir den schönen Bären gekauft haben.
+	\ea\label{ex:05aHA5} Heute fragt Maria, ob wir den schönen Bären gekauft haben.
 	\z 
 	
 	\begin{itemize}
 		\item strukturalistische Idealfälle für Morpheme: %heute, frag, Maria, ob, schön, Bär, kauf
 		
-		\item Portmanteau-Morpheme: %-t (Präsens, 3., Sg., Ind., Akt.), wir (1., Pl., Nom.), -en (Mask., Sg., Akk.)
+		\item Portmanteau-Morpheme: %-t (Präsens, 3., Sg., Ind., Akt.), wir (1., Pl., Nom.), -en (Mask., Sg., Akk. $+$ )
 		
 		\item lexikalische Morpheme: %heute, frag, Maria, schön, Bär, kauf
 		
@@ -1226,3 +1409,10 @@ lach + te & träum + te \\
 \end{enumerate}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftoggle{ha-loesung}{
+	\input{loesungen/05a-ha-loesung-include}
+}
+

@@ -8,10 +8,13 @@
 \documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES      
+%%     PACKAGES & COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
+
+\input{localcommands}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                   
@@ -19,17 +22,14 @@
 
 \begin{document}
 	
-	\input{localcommands}
+	
+%%%% ue-loesung
+%%%% true: Fragen & Lösungen / false: nur Uebung
+%\toggletrue{ue-loesung}
 
-%%%% uebung
-%%%% true: nur Fragen / false: Fragen & Lösungen
-%	\toggletrue{uebung}
-\togglefalse{uebung}
-
-%%%% hausaufgabe
-%%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
-%	\toggletrue{hausaufgabe}
-\togglefalse{hausaufgabe}
+%%%% ha-loesung
+%%%% true: Fragen & Lösungen / false: nur Hausaufgabe
+%\toggletrue{ha-loesung}
 
 %%%% toc
 %%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
@@ -38,13 +38,13 @@
 
 %%%% sectoc
 %%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
-%	\toggletrue{sectoc}
-\togglefalse{sectoc}
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
 
 %%%% gliederung
 %%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
 %	\toggletrue{gliederung}
-\togglefalse{gliederung}
+%	\togglefalse{gliederung}
 
 
 \input{00-Organisatorisches-MyP-include}

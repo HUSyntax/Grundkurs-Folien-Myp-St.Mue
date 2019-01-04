@@ -93,14 +93,17 @@
 \nocite{Eisenberg00a}
 \nocite{Fleischer00a} %Wortbildungsprozesse
 \nocite{Fleischer&Barz12a} %Einführung Morphologie
+\nocite{Fuhrhop96a} %Fugenelemente
+\nocite{Fuhrhop00a} %Fugenelemente
 \nocite{Fries&MyP16j} %Kopf
 \nocite{Grewendorf&Co91a} %Betonung bei Komposita
 \nocite{Haspelmath2002a}
-\nocite{MyPb} %Kopf
+\nocite{MyP18b} %Kopf
 \nocite{Olsen86a} %Morphologie des Deutschen
 \nocite{Olsen14a} %Coordinative Structures
 %\nocite{Plungian00a} %Morphologie im Sprachsystem
 %\nocite{Salmon00a} %Term Morphology
+\nocite{Wegener03b} %Fugenelemente
 \nocite{Wurzel00a} %Gegenstand Morphologie
 \nocite{Wurzel00b} %Wort
 
@@ -272,7 +275,7 @@ Die Morphologie unterteilt man in:
 		\item In den meisten Theorien ist die komplexe Struktur \textbf{binär}.
 		
 		\begin{itemize}
-			\item Maximal zwei Elemente ($=$ \textbf{Konstituenten} von engl. \emph{constituent} \gq{Bestandteil}) verbinden sich zu einem komplexen Element.
+			\item \textbf{Maximal} zwei Elemente ($=$ \textbf{Konstituenten} von engl. \emph{constituent} \gq{Bestandteil}) verbinden sich zu einem komplexen Element.
 			\item Zwei Elemente gehören enger zusammen.
 		\end{itemize}
 		\item Aufbau ist \textbf{hierarchisch} (vgl.\ phonologische Struktur)
@@ -321,9 +324,9 @@ Die Morphologie unterteilt man in:
 	\item Morphologische Einheiten (Stämme und Affixe) sind \textbf{kategoriell ausgezeichnet}, \dash es wird markiert, ob es sich bspw. 
 	
 	\begin{itemize}
-		\item um einen Nomenstamm (\alertred{N}), einen Verbstamm (\alertred{V}), \ldots 
+		\item um Nomenstämme (\alertred{N}), Verbstämme (\alertred{V}), \ldots 
 		\item[] bzw.
-		\item um ein Nomenaffix (\alertblue{N\MyPup{af}}), ein Verbaffix (\alertblue{V\MyPup{af}}), \ldots\  handelt
+		\item um Nomenaffixe (\alertblue{N\MyPup{af}}), Verbaffixe (\alertblue{V\MyPup{af}}), \ldots\  handelt
 	\end{itemize}
 \end{itemize}
 \end{minipage}
@@ -379,6 +382,8 @@ sm edges,
 \begin{itemize}
 	
 	\item Die einzelnen Elemente haben \textbf{Beschränkungen}, mit welchen anderen Elementen sie sich verbinden können.
+
+\pause 
 	
 	\item Ein \textbf{Präfix} der Kategorie $X$\MyPup{af} kann sich nur mit Elementen der Kategorie $X$ verbinden.
 
@@ -389,6 +394,8 @@ sm edges,
 		[\MyPdown{V\MyPup{af}}ver-] $+$ [\MyPdown{V}bind] $=$ \alertred{\ding{52}} verbind 
 	}
 	\z 	
+
+%\pause 
 	
 	\item Ein \textbf{Suffix} der Kategorie $X$\MyPup{af} bestimmt, mit welchen Elementen (\zB $X$, $Y$, $Z$) es sich verbinden kann.
 	
@@ -556,7 +563,118 @@ sm edges,
 
 \end{minipage}
 
+\end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Struktur komplexer Wörter: Rekursion}
+
+
+\begin{block}{Rekursion}
+	Prozess, der es erlaubt, mittels einer \textbf{endlichen Menge von Elementen und Regeln} eine \textbf{unendliche Menge von Symbolfolgen} zu erzeugen \citep[vgl.][]{Hetland14a, Olsen15a}. 
+\end{block}
+
+\begin{itemize}
+	\item Durch rekursive Regeln (vgl.\ (\ref{ex:5bRekRegel1}) \& (\ref{ex:5bRekRegel2})) kann man eine unendliche Menge von Wörtern oder Sätze generieren.
+
+	\item \textbf{Einige Wortbildungsprozesse} können rekursiv sein.
+		
+	\item Durch \textbf{Nominalkomposition} kann man sehr komplexe Stämme erzeugen (\ref{ex:5bRekRegel3}).
+	
+\end{itemize}
+
+\settowidth\jamwidth{[XXabstrakte rekursive Regel]} 
+\ea 
+	\ea\label{ex:5bRekRegel1} $X \rightarrow Y~Z$, wobei $X = Y$ oder $X = Z$ 
+	\jambox{[abstrakte rekursive Regel]}
+	
+	\ex\label{ex:5bRekRegel2} N \ras N N 
+	\jambox{[konkrete rekursive Regel]}
+		
+	\ex\label{ex:5bRekRegel3} Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz
+	% @EE: Link zu den Quellen:
+	% https://de.wikipedia.org/wiki/Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz
+	\z 
+\z 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Struktur komplexer Wörter: Rekursion}
+
+\begin{minipage}{.74\textwidth}
+
+\begin{itemize}
+	\item Anwendung einer rekursiven Regel (\ref{ex:5bRekRegel4})
+	
+	\ea \label{ex:5bRekRegel4} $\alertblue{X} \rightarrow \alertblue{X}~Y$	
+	\z 
+	
+	\item Mit einigen Affixen ist rekursive Wortbildung möglich:
+	
+	\ea \alertred{Ur}großmutter, \alertred{Ur}urgroßmutter, \alertred{Ur}ururgroßmutter, \ldots
+	\z 
+	
+	\item Andere Affixe erlauben keine rekursive Wortbildung:
+	\ea 
+		\ea[]{Schönheit}
+		\ex[*]{Schönheit\alertred{heit}}
+		\z 
+	\z 
+	
+\end{itemize}
+
+\end{minipage}
+%%
+%%
+\begin{minipage}[c]{.25\textwidth}
+
+\begin{figure}
+	\centering
+	\scalebox{.9}{
+		\begin{forest}
+			[X
+			[X
+			[X
+			[X]
+			[Y]
+			]
+			[Y]
+			]
+			[Y]
+			]	
+		\end{forest}	
+	}
+\end{figure}
+
+\end{minipage}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Struktur komplexer Wörter: Rekursion}
+
+\begin{itemize}
+	\item Mit Adjektiven als Erstglied ist \textbf{keine Rekursion} möglich.
+	
+	\ea *Samtigrotwein, *Weißmagerquark, *Feuchtgrünfutter
+	\z
+	
+	\item Das kann in der Regel dadurch erfasst werden, dass die \textbf{Symbole rechts und links der Regel unterschiedlich} sind.
+	
+	\ea N\MyPdown{\alertred{1}} \ras A N\MyPdown{\alertred{2}}
+	\z   
+	
+	\item Es gibt Ausnahmen:
+	
+	\ea Frühneuhochdeutsch, Billigrotwein
+	\z 
+	
+\end{itemize}
 
 \end{frame}
 
@@ -564,7 +682,7 @@ sm edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Komposition}
-\iftoggle{sectoc}{
+\iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
 \frametitle{~}
@@ -573,78 +691,68 @@ sm edges,
 }
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Allgemeines}
-%\iftoggle{sectoc}{
-%	\frame{
-%		\begin{multicols}{2}
-%			\frametitle{~}
-%			\tableofcontents[currentsection]
-%		\end{multicols}
-%	}
-%}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Komposition}
 
 \begin{itemize}
-	\item \textbf{Kombination von Stämmen}
-	\item Kombination von Kompositionsgliedern zu einem Kompositum
-	\item Jedes Kompositionsglied kann selbst auch wieder ein Kompositum (od. \gqq{morphologisch komplex}) sein:
+	\item \textbf{Komposition:} Kombination von \textbf{Stämmen} (Kompositionsgliedern) zu einem neuen Stamm.
+	
+	\item Ergebnis der Komposition: \textbf{Kompositum} (Pl. Komposita).
+	
+	\item Jedes Kompositionsglied kann selbst auch morphologisch komplex (\zB ein Kompositum) sein.
 	
 	\ea
-	\glll Kompositum = Erstglied + Zweitglied \\
-		Haustür = Haus + Tür \\
-		Haustürschlüssel = {(Haus + Tür)} + Schlüssel\\
+	\glll \alertred{Haustür} $\rightarrow$ Haus $+$ Tür \\
+	Haustürschlüssel $\rightarrow$ {\alertred{[Haus$+$Tür]}} $+$ Schlüssel\\
+	\textbf{Kompositum} {} \textbf{Erstglied} {} \textbf{Zweitglied} \\
 	\z
 		 
-	\item Kopf bei Komposita: rechts
-	\item Ist das rechte Kompositionsglied ein Substantivstamm so ist das ganze Kompositum ein Substantiv
 \end{itemize}
-
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
-\begin{minipage}{0.56\textwidth}
-\begin{itemize}
-	\item Man spricht auch von \\
-	\textbf{Nominalkomposita} \\
-	\textbf{Verbalkomposita} \\
-	oder \\
-	\textbf{Adjektivkomposita}:
-	
-	\ea weinrot - Rotwein
-	\z
-	
-	\ea Kartentelefon - Telefonkarte
-	\z
+\frametitle{Kopf}
 
-	\ea Fahrrad - radfahr-
-	\z
+\begin{itemize}
+	\item \textbf{Kopfigkeit:} rechtsperiphär
+
+	\item Ist das rechte Kompositionsglied ein Substantivstamm so ist das ganze Kompositum ein Substantiv
+	
+	\ea 
+		\ea wein\alertred{rot} -- Rot\alertred{wein}
+		
+		\ex Karten\alertred{telefon} -- Telefon\alertred{karte}
+	
+		\ex Fahr\alertred{rad} -- rad\alertred{fahr-}
+		\z
+	\z 
 		 
 \end{itemize}
-\end{minipage}\hfill%
-\begin{minipage}{0.24\textwidth}
 
-\begin{figure}
-\centering
-\scalebox{0.7}{
-\begin{forest}
-sm edges,
-	[A
-		[N
-			[welt]]
-		[A
-			[frem]]]
-\end{forest}}
-\end{figure}
+\begin{minipage}[b]{0.32\textwidth}
+	\begin{figure}
+		\centering
+		\scalebox{0.7}{
+			\begin{forest}
+				sm edges,
+				[A
+				[N
+				[welt]]
+				[A
+				[fremd]]]
+		\end{forest}}
+%	\caption{Adjektivkompositum}
+	\end{figure}
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[b]{0.32\textwidth}
 \begin{figure}
 \centering
 \scalebox{0.7}{
@@ -656,11 +764,13 @@ sm edges,
 		[N
 			[holz]]]
 \end{forest}}
+%	\caption{Nominalkompositum}
 \end{figure}
-
-\end{minipage}\hfill%
-\begin{minipage}{0.18\textwidth}
-
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[b]{0.32\textwidth}
 \begin{figure}
 \centering
 \scalebox{0.7}{
@@ -675,8 +785,8 @@ sm edges,
 		[N
 			[weg]]]
 \end{forest}}
-\end{figure}
 
+\end{figure}
 \end{minipage}
 
 \end{frame}
@@ -684,236 +794,312 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Kopf}
 
 \begin{itemize}
 	\item Der Kopf gibt nicht nur \textbf{kategorielle} sondern auch andere Merkmale an die Gesamtstruktur weiter.
-	\item Bei Nominalkomposita bestimmt er bspw. auch \textbf{Genus und Flexionsklasse}:
+	\item Bei Nominalkomposita bestimmt der Kopf bspw. auch \textbf{Genus} und \textbf{Flexionsklasse}:
 	
 	\eal 
-		\ex der Kartoffelsalat – die Salatkartoffel
-		\ex die Eisschokolade - das Schokoladeneis
+		\ex \alertred{der} Kartoffel\alertred{salat} -- \alertblue{die} Salat\alertblue{kartoffel}
+		\ex \alertred{die} Eis\alertred{schokolade} -- \alertblue{das} Schokoladen\alertblue{eis}
+		\ex die Kartoffelsalat\alertred{e} -- die Salatkartoffel\alertblue{n}
+
 	\zl
 		 
 \end{itemize}
-
-
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fugenelemente}
+\iftoggle{toc}{
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{~}
+			\tableofcontents[currentsection]
+		\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Fugenelemente}
 
 \begin{itemize}
-	\item Nicht immer einfache Konkatenation von Stämmen
-	\item In ung. 30\% der Komposita wird noch etwas hinzugefügt, manchmal wird etwas getilgt:
+	\item Komposition ist nicht immer einfach die Konkatenation von Stämmen.
 	
+	\item In ung. 30\% der Kompositionen wird noch etwas \textbf{hinzugefügt}, manchmal wird etwas \textbf{getilgt} (vgl.\ (\ref{ex:5bSchwaTilg})).
+	
+	\settowidth\jamwidth{[XSchwa-Tilgung]} 
 	\eal 
-		\ex -es-Einsetzung: \\
-		 {[N Landesvater] \ras [N Land] + es + [N Vater]}
-		\ex -e-Einsetzung: \\
-		 {[N Haltestelle] \ras [V halt] + e + [N Stelle]}
-		\ex -s-Einsetzung: \\
-		 {[N Leitungswasser] \ras [N Leitung] + s + [N Wasser]}
-		\ex Schwa-Tilgung: \\
-		 {[N Sprachkurs] \ras [N Sprache] – e + [N Kurs]}
+		\ex %\emph{-es}-Einsetzung: \\
+		 {[\MyPdown{N}Land\alertred{es}hauptstadt]\ra [\MyPdown{N}Land]$+$\alertred{-es}$+$[\MyPdown{N}Hauptstadt]}
+		 \jambox{[\emph{-es}-Einsetzung]}
+		 
+		\ex %\emph{-e}-Einsetzung: \\
+		 {[\MyPdown{N}Hund\alertred{e}futter]\ra [\MyPdown{N}Hund]$+$\alertred{-e}$+$[\MyPdown{N}Futter]}
+		 \jambox{[\emph{-e}-Einsetzung]}
+		 
+		\ex %\emph{-s}-Einsetzung: \\
+		 {[\MyPdown{N}Leitung\alertred{s}wasser]\ra [\MyPdown{N}Leitung]$+$\alertred{-s}$+$[\MyPdown{N}Wasser]}
+		 \jambox{[\emph{-s}-Einsetzung]}
+		 
+		\ex\label{ex:5bSchwaTilg} %Schwa-Tilgung: \\
+		 {[\MyPdown{N}Sprach\alertred{\_}kurs]\ra [\MyPdown{N}Sprache]$-$\alertred{-e}$+$[\MyPdown{N}Kurs]}
+		 \jambox{[Schwa-Tilgung]}
 	\zl
 		 
-\end{itemize}
+\pause
 
+	\item \textbf{Fugenelemente} entwickelten sich \textbf{aus Flexionsendungen} des ersten Kompositionsglieds. Synchron haben sie jedoch \textbf{keine Flexionsfunktion mehr}.
+	
+	\item Die \textbf{subtraktive Fuge} (vgl.\ (\ref{ex:5bSchwaTilg}) \& (\ref{ex:5bSubstrFuge})) kann mit Flexion nicht erklärt werden.
+	
+	\eal \label{ex:5bSubstrFuge}
+	\ex die Perl\alertblue{e} -- Perl\alertred{\_}wein, Perl\alertred{\_}zwiebel
+	\ex die Kehl\alertblue{e} -- Kehl\alertred{\_}kopf, Kehl\alertred{\_}laut
+	\zl
+	
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Fugenelemente}
 
 \begin{itemize}
-	\item \textbf{Fugenelemente:}
+	\item \gqq{Fugenelement} impliziert, dass die hinzugefügten Elemente wie Fugen \textbf{zwischen} den beteiligten Stämmen stehen. \\
+	Das ist aus zwei Gründen problematisch:
+
+	\begin{itemize}
+		\item Die \textbf{Tilgung} (eine \gqq{negative Fuge}) kann so nicht erklärt werden.
+		\item Es gibt Evidenz dafür, dass die hinzugefügten Elemente \textbf{zum Erstglied gehören}:
+
+\pause 
 	
 	\begin{itemize}
-		\item[]
-		\item historisch \textbf{aus Flexionsendungen} des ersten Kompositionsglieds \textbf{entwickelt}
-		\item[]
-		\item \textbf{heute keine Flexionsfunktion mehr!!}
-		\item[]
-		\item Von Fugenelementen zu reden impliziert, dass die hinzugefügten Elemente wie Fugen zwischen die beteiligten Kompositionsglieder gestellt werden. Dies ist aus zwei Gründen problematisch:
+		\item Sie bleiben bei Koordinationsellipsen (Weglassungen) beim Erstglied:
 		
-		\begin{itemize}
-			\item Die Tilgung (eine \gqq{negative Fuge}) kann so nicht erklärt werden.
-			\item Des Weiteren gibt es Evidenz dafür, dass die hinzugefügten Elemente zum Erstglied gehören:
-		\end{itemize}
+		\ea Leitung\alertred{s}- und Mineralwasser (nicht: und Mineral\alertred{s}wasser)
+		\z
+		
+		\item Wird das Erstglied getilgt, darf die Fuge nicht erhalten bleiben:
+		
+		\ea Kind\alertred{er}wagen und -sitz (nicht: und \alertred{-er}sitz)
+		\z
+		
+		\item Sie werden in der Regel vom Erstglied bestimmt:
+		
+		\ea Kuhstall -- *Küh\alertred{e}stall \vs *Huhnstall -- Hühn\alertred{er}stall
+		\z
+		
+		\ea aber: Rind\alertred{\_}fleisch -- Rind\alertred{s}leder -- Rind\alertred{er}braten
+		\z
+		
 	\end{itemize}
+
+%	\item[] \textbf{ÜB.3}
+
 \end{itemize}
-
-
+\end{itemize}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
-
-\begin{itemize}
-	\item Evidenz der Zugehörigkeit des FE zum Erstglied:
-	
-	\begin{itemize}
-		\item sie bleiben bei Koordinationsellipsen (Weglassungen) beim Erstglied:
-		
-		\ea Leitung\underline{s}- und Mineralwasser
-		\z
-		
-		\item wird das Erstglied getilgt, darf die Fuge nicht erhalten bleiben:
-		
-		\ea Kinderwagen und *\underline{er}sitz
-		\z
-		
-		\item sie werden in der Regel vom Erstglied bestimmt
-		
-		\ea Kuhstall – *Kühestall \vs *Huhnstall – Hühnerstall
-		\z
-		
-		\ea aber: Rind\_fleisch – Rind\underline{s}leder – Rind\underline{er}braten
-		\z
-		
-		\item[]
-	\end{itemize}
-	\item[] \textbf{ÜB.3}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Fugenelemente}
 
 \begin{itemize}
 	\item Die Flexionsendungen, die historisch zugrunde gelegen haben könnten, sind:
 	
-	\begin{itemize}
-		\item vorangestellte Genitivattribute: Herzensangelegenheit, Landesvater
-		\item Plural: Häuserfront, Staatengemeinschaft
-	\end{itemize}
+		\settowidth\jamwidth{[Xvorangestellte Genitivattribute]} 
+		\ea Herz\alertred{ens}angelegenheit, Land\alertred{es}ministerium
+		\jambox{[vorangestellte Genitivattribute]}
+
+		\ex Häus\alertred{er}front, Staat\alertred{en}gemeinschaft
+		\jambox{[Plural]}
+		\z 
+
+\pause 
 	
-	\item Es gibt jedoch zahlreiche Gegenbeispiele:
+	\item Es gibt jedoch zahlreiche \textbf{Gegenbeispiele}:
 	
+	\settowidth\jamwidth{[keine Genitivalternation bei Fuge]} 
 	\eal 
-		\ex Lieblingsgetränk (semantisch falscher Genitiv)
-		\ex Liebesbrief (formal falscher Genitiv)
-		\ex Hühnerei, Scheibenwischer, Sonnenschein (semantisch falscher Plural)
-		\ex Freundeskreis, Bischofskonferenz (semantisch falscher Singular)
-		\ex Ende des Jahres/Jahrs \vs Jahreszahl/*Jahrszahl (keine Alternation bei Fuge)
+		\ex Liebling\alertred{s}getränk \jambox{[semantisch falscher Genitiv]}
+		\ex Lieb\alertred{es}brief \jambox{[formal falscher Genitiv]}
+		\ex Hühn\alertred{er}ei, Scheib\alertred{en}wischer \jambox{[semantisch falscher Plural]}
+		\ex Freund\alertred{es}kreis, Bischof\alertred{s}konferenz \jambox{[semantisch falscher Singular]}
+		\ex Ende des Jahr\alertblue{es}/Jahr\alertblue{s} \jambox{[Genitivalternation]}
+		
+		\vs Jahr\alertred{es}zahl/*Jahr\alertred{s}zahl \jambox{[keine Genitivalternation bei Fuge]} 
 	\zl
 		 
 \end{itemize}
 
-
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Tendenzen für das Vorkommen der Fugenelemente}
 
 \begin{itemize}
-	\item Faktoren für Vorkommen der Fugenelemente
+	\item Wortart des Erstglieds, Laut-, Silben- oder Wortbildungsstruktur 
+	
+	\item Es ist nicht möglich Fugenelemente 100\%ig vorherzusagen \citep[vgl.][]{Fuhrhop96a}.
+
+\pause
+	
+	\item \textbf{phonologische Aspekte:}
 	
 	\begin{itemize}
-		\item Wortart des Erstglieds, Laut-, Silben- und Wortbildungsstruktur
-	\end{itemize}
-	\item \textbf{phonologische Aspekte}
-	
-	\begin{itemize}
-		\item Phonologisch bedingte Regularität
+		\item \textipa{[@]} nach stimmhaftem Konsonant im Stammauslaut bei verbalen Erstgliedern:
 		
-		\begin{itemize}
-			\item \ab{-e} nach stimmhaftem Konsonant im Stammauslaut bei verbalen Erstgliedern:
-			
-			\ea Pflegefall, Leseecke (aber Lesart), Reibekuchen
-			\z
-			
-		\end{itemize}
-		
-		\item Aufeinanderfolge zweier betonter Silben wird verhindert:
-		
-		\ea 'Lichtre,klame vs. 'Lichter,kette ('= Primärakzent ,=Sekundärakzent)
+		\ea Pfleg-\alertred{e}-fall, Les-\alertred{e}-ecke (aber: Lesart), Reib-\alertred{e}-kuchen
 		\z
 		
-		aber:
+		\item Aufeinanderfolge zweier betonter Silben wird verhindert\\
+		(Primärakzent: ' / Sekundärakzent: ,):
 		
-		\ea 'Licht,schalter	
+		\ea 'Licht.\alertred{\_}re.,kla.me vs. 'Lich.t\alertred{er}.,ket.te (aber: 'Licht\alertred{\_}.,schal.ter)
 		\z
 			
 	\end{itemize}
-\end{itemize}
 
+\pause 
 
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Allgemeines}
-
-\begin{itemize}
-	\item \textbf{Anzeigen der morphologischen Gliederung}
+	\item \textbf{morphologische Aspekte:}
 	
 	\begin{itemize}
-		\item \ab{-s} steht häufig nach komplexen Erstgliedern
-		
-		\begin{itemize}
-			\item vgl. Werkzeug \vs Handwerkszeug
-		\end{itemize}
-	\end{itemize}
-	
-	\item Es ist (noch) unmöglich, die Anwesenheit der Fuge regelhaft zu erklären bzw. vorherzusagen.
-	\item []
-	\item Außerdem: Es gibt subtraktive Fugen, die mit einem Flexionssuffix nichts gemein haben:
-	
-	\eal 
-		\ex die Perle - Perlwein, Perlzwiebel
-		\ex die Kehle - Kehlkopf, Kehllaut
-	\zl
-		 
-\end{itemize}
+		\item \ab{-s} steht manchmal nach komplexen Erstgliedern
 
+		\ea {[[Hand$+$werk]\alertred{-s}]$+$[zeug] \vs [Werk]$+$[zeug] }
+		\z 
+	\end{itemize}
+
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Allgemeines}
+\frametitle{Fugenelement \vs Stammformen}
 
 \begin{itemize}
-	\item Einige Autoren (\zB Eisenberg 1998) sprechen von \textbf{Kompositionsstammformen}: nicht nur der Stamm eines Nomens ist im Lexikon verzeichnet, sondern auch die vorkommenden Kompositionsstammformen (Lexikon als Speicher von Idiosynkrasien)
+	\item Einige Autoren \citep[vgl.][211ff; 227ff]{Eisenberg00a} sprechen von \textbf{Kompositionsstammformen} (KS): nicht nur der Stamm eines Nomens (\zB \ab{kind}) ist im Lexikon verzeichnet, sondern auch die vorkommenden Kompositionsstammformen (vgl.\ (\ref{ex:5bKSFormen})).
 	
-	\ea 
-		kind \\
-		  KS kinder \zB Kinderwagen \\
-		  KS kindes \zB Kindesentführung \\
-		  KS kinds \zB Kindskopf \\
-		  KS kind \zB Kindfrau \\
+	\item Lexikon als Speicher von Idiosynkrasien, \dash von Nicht-Derivierbarem
+	
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} 
+	\ea\label{ex:5bKSFormen} \ab{kind}:\\
+	KS\MyPdown{1}: kinder \jambox{\zB in \emph{Kind\alertred{er}wagen}} 
+	
+	KS\MyPdown{2}: kindes \jambox{\zB in \emph{Kind\alertred{es}entführung}} 
+	
+	KS\MyPdown{3}: kinds \jambox{\zB in \emph{Kind\alertred{s}kopf}}
+	
+	KS\MyPdown{4}: kind \jambox{\zB in \emph{Kind\alertred{\_}frau}}
+	\z    
+	
+	\item Ähnlich werden bei der Derivation \textbf{Derivationsstammformen} angenommen:
+	
+	\ea hoffnung\alertred{s}los, sag\alertred{e}nhaft, wein\alertred{er}lich, Hütt\alertred{\_}chen
 	\z
-		  
-	\item Ähnlich bei der Derivation (\textbf{Derivationsstammformen}):
-	
-	\ea hoffnung\underline{s}los, sag\underline{e}nhaft, wein\underline{er}lich, Hütt\_chen
-	\z
-	
+
 \end{itemize}
 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Fugenelement \vs Stammform}
+
+\begin{minipage}{.78\textwidth}
+	
+Struktur nach der \textbf{Annahme einer Kompositionsstammform}:
+
+\begin{itemize}	
+	\item Fugenelement ist \textbf{kein Morphem}
+
+	\item Fugenelement und Stamm bilden eine \textbf{untrennbare Einheit}.
+	
+	\item \ab{Kinder} ist im Lexikon als Allomorph von \ab{Kind} verzeichnet.
+	
+	\item Annahme: Form \ab{Kinder} ist \textbf{nicht vorhersagbar}.
+\end{itemize}
+
+\end{minipage}
+%%
+%%
+\begin{minipage}{.21\textwidth}	
+	\centering	
+	\scalebox{.8}{
+	\begin{forest}
+		[N
+		[N 
+		[Kind\alertred{(-er)}]
+		]
+		[N
+		[Wagen]
+		]
+		]	
+	\end{forest}
+	}
+\end{minipage}
+
+\begin{minipage}{.76\textwidth}
+
+\pause 
+
+Struktur nach der \textbf{Annahme eines Fugenelements}
+
+\begin{itemize}	
+	\item Fugenelement ist \textbf{kein Morphem}
+	
+	\item Fugenelement bildet mit Stamm eine \textbf{neue Konstituente}.
+	
+	\item \ab{Kind} ist im Lexikon verzeichnet, FE \ab{-er} wird durch eine Regel hinzugefügt.
+	
+	\item Annahme: Form \ab{Kinder} ist (irgendwie) \textbf{vorhersagbar}.
+\end{itemize}
+	
+\end{minipage}
+%%
+%%
+\begin{minipage}{.23\textwidth}	
+	\centering	
+	\scalebox{.8}{
+	\begin{forest}
+		%MyP edges,	
+		[N
+		[N 
+		[Kind]
+		[FE
+		[\alertred{-er}]
+		]
+		]
+		[N
+		[Wagen]
+		]
+		]		
+	\end{forest}
+	}
+\end{minipage}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Funktionale Klassifikation}
+\subsubsection{Komposita: Funktionale Klassifikation}
 %\iftoggle{sectoc}{
 %	\frame{
 %		\begin{multicols}{2}
@@ -924,25 +1110,35 @@ sm edges,
 %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
-\frametitle{Funktionale Klassifikation}
+\frametitle{Komposita: Funktionale Klassifikation}
 
 \begin{itemize}
-	\item Kompositaklassifikation:
+	\item Komposita kann man nach der \textbf{semantischen Beziehung} zwischen \textbf{Erst-} und \textbf{Zweitglied} klassifizieren.
 	
-	\begin{itemize}
-		\item[]		
-		\item \textbf{semantische Relation} zwischen der ersten und der zweiten Konstituente
-		
-		\begin{itemize}
-			\item[]
-			\item Erste Konstituente bestimmt die zweite näher \ras Determinativkomposita
-			\item[]
-			\item Andere Art der Relation \ras Kopulativkomposita.
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
+	\begin{block}{Determinativkompositum}
+		Das Erstglied \textbf{bestimmt} das Zweitglied \textbf{näher}. 
+	\end{block}
+	
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
 
+	\ea {[Wein$+$Flasche]} \jambox{$=$ $x$ ist eine Flasche, die etwas mit Wein zu tun hat.}
+	
+	\jambox{$\neq$ $x$ ist eine Flasche und $x$ ist Wein.}
+	\z 
+
+\pause 
+	
+	\begin{block}{Kopulativkompositum}
+		Das Erstglied und das Zweitglied sind \textbf{gleichrangig}.\\
+		Es ist nicht der Fall, dass das Erstglied  das Zweitglied \textbf{näher} \textbf{bestimmt}. 
+	\end{block}
+	
+	\ea {[süß$+$sauer]} \jambox{$=$ $x$ ist süß und $x$ ist sauer}
+	\z 
+	
+\end{itemize}
 
 \end{frame}
 
@@ -965,108 +1161,114 @@ sm edges,
 \frametitle{Determinativkomposita}
 
 \begin{itemize}
-	\item Erste Konstituente (auch: Bestimmendes/Determinans) bestimmt die zweite Konstituente (Bestimmtes/Grundwort/Determinatum) näher.
-	\item[]
-	\item Das Kompositum bezeichnet eine Unterart des durch die zweite Konstituente Bezeichneten.
-	\item[]
-	\item Produktivste Art der Komposition
+	\item \alertblue{Erste Konstituente} (auch: Bestimmendes/Determinans) bestimmt\\
+	die \alertred{zweite Konstituente} (auch: Bestimmtes/Grundwort/Determinatum) näher.
+
+	\item Das Kompositum bezeichnet eine \textbf{Unterart} des durch die \alertred{zweite Konstituente} Bezeichneten.
+
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
+	\ea 
+		\ea \alertblue{Wein}$+$\alertred{flasche} \jambox{\ras \alertred{Flasche}}
+		\ex \alertblue{Flasche(-n)}$+$\alertred{Wein} \jambox{\ras \alertred{Wein}}
+		\z
 	
-	\ea Wein + flasche \vs Flasche(n) + wein (Flasche \vs Wein)
+	\ex 
+		\ea \alertblue{Stern(-en)}$+$\alertred{himmel} \jambox{\ras \alertred{Himmel}}
+		\ex \alertblue{Himmel(-s)}$+$\alertred{stern} \jambox{\ras \alertred{Stern}}
+		\z
+	
+	\ex 	
+		\ea \alertblue{Fenster}$+$\alertred{glas} \jambox{\ras \alertred{Glas}}
+		\ex \alertblue{Glas}$+$\alertred{fenster} \jambox{\ras \alertred{Fenster}}
+		\z 
 	\z
 	
-	\ea Stern(en) + himmel \vs Himmel(s) + stern
-	\z
-		
-	\ea Fenster + glas \vs Glas + fenster
-	\z
-	
+	\item produktivste Art der Komposition (ung.\ 80\% der Komposita)
 \end{itemize}
 
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}
 \frametitle{Determinativkomposita}
 
-\begin{itemize}
-	\item Vielfältige Bedeutungsbeziehung (kann unterspezifiziert sein):
-		\begin{itemize}
-		
-			\item Raum und Zeitbeziehung einschließlich kausaler Beziehungen
-			
-			\ea Gartentor, Erdöl, Winterferien, Freudentränen
-			\z
-			
-			\item Konstitution des Zweitglieds (bestehen aus, haben, Form/Farbe):
-			
-			\ea Holzkäfig, Kapuzenjacke, Grünspecht
-			\z
-			
-			\item Zweck des Zweitglieds (dient zu, schützt vor)
-			
-			\ea Gießkanne, Haarband, Regenmantel
-			\z
-			
-			\item Instrumenteigenschaft des Zweitglieds (funktioniert mit Hilfe von)
-			
-			\ea Benzinmotor, Windrad
-			\z
-			
-		\end{itemize}
+
+Bedeutungsbeziehung ist \textbf{vielfältig} und \textbf{nicht eindeutig bestimmbar}
+
+\begin{columns}
 	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Determinativkomposita}
+\column[t]{.5\textwidth}
 
 \begin{itemize}
-	\item Adjektivische Komposita
+
+	\item \textbf{räumlich},  \textbf{zeitlich} oder \textbf{kausal}
 	
-	\begin{itemize}
-		\item Vergleichsbeziehungen
-		
-		\ea aalglatt, krebsrot
-		\z
-		
-		\item Steigernde
-		
-		\ea bitterernst, mordsgeil, bettelarm
-		\z
-		
-	\end{itemize}
-	
-	\item Es ist nicht immer klar, wie genau die Bedeutungsbeziehung aussieht, sie ist \textbf{unabhängig von grammatischen Faktoren} und hängt häufig vom \textbf{Weltwissen}, \textbf{Kontext}, etc. ab:
-	
-	\ea Fischfrau
+	\ea Gartentor, Winterferien, Freudentränen
 	\z
 	
+	\item \textbf{Konstitution} des Zweitglieds (bestehen aus, haben, Form/Farbe):
+	
+	\ea Holzkäfig, Kapuzenjacke, Grünspecht
+	\z
+
+	\item \textbf{Zweck} des Zweitglieds (dienen zu, schützen vor)
+
+	\ea Haarband, Regenmantel
+	\z	
 \end{itemize}
 
+\column[t]{.5\textwidth}
+	
+\begin{itemize}
+	\item \textbf{Instrument}eigenschaft des Zweitglieds (funktioniert mit Hilfe von)
+	
+	\ea Benzinmotor, Windrad
+	\z
+	
+	\item \textbf{Vergleich}sbeziehung
+	
+	\ea aalglatt, krebsrot
+	\z
+	
+	\item \textbf{steigernde} Bedeutung
+	
+	\ea bitterernst, mordsgeil, bettelarm
+	\z
+\end{itemize}
 
+\end{columns}
+	
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Determinativkomposita}
+	
+Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zweitglied ist. Sie ist \textbf{unabhängig} von \textbf{grammatischen Faktoren} und hängt häufig vom \textbf{Weltwissen}, \textbf{Kontext}, usw. ab:
+	
+	\ea Fischmann
+		\ea Mann, der Fisch verkauft
+		\ex Mann, der wie Fisch aussieht
+		\ex Mann, der nach Fisch riecht
+		\ex Mann, der viel über Fische redet
+		\ex \ldots 
+		\z 
 
-\begin{itemize}
-	\item \textbf{Weltwissen}, \textbf{Kontext}, etc.:
-	\item [] Hühner Kebap 2,50\\
-	Kinder Kebap 1,10\\
-	\emph{(auf einem Werbeschild)}
-\end{itemize}
-
-%\begin{figure}
-%\centering
-%\includegraphics[scale=.55]{material/05Morph-Kebap}
-%\end{figure}
-
+\pause 
+		
+	\ex Auf einem Werbeschild:
+	
+	Hühner-Kebap 2,50\\
+	Kinder-Kebap 1,10 \jambox{[Weltwissen, Kontext, etc.]}
+	\z
+	
+	%\begin{figure}
+	%\centering
+	%\includegraphics[scale=.55]{material/05Morph-Kebap}
+	%\end{figure}
+	
 \end{frame}
 
 
@@ -1088,14 +1290,53 @@ sm edges,
 \frametitle{Rektionskomposita}
 
 \begin{itemize}
-	\item Wichtige \textbf{Untergruppe} der Determinativkomposita:
+	\item wichtige \textbf{Untergruppe} der Determinativkomposita
 	
-	\ea \label{ex:Bsp1} die Linguisten tagen – die Tagung der Linguisten – Linguistentagung
+	\ea Bus\alertred{fahrer} \ras \alertred{Fahrer}, der einen Bus fährt
+	\z 
+\end{itemize}
+
+\pause 
+
+\begin{block}{Rektion}
+	Art der \textbf{syntagmatischen Beziehung} zwischen zwei Einheiten, bei der die eine \textbf{grammatische Eigenschaften} der anderen bestimmt. I.\,d.\,R. redet man von Rektion bei Verben, aber andere Wortarten regieren auch Argumente.  Verben bestimmen bspw.\ den Kasus ihrer Argumente (vgl.\ (\ref{ex:5bKasus2}) \vs (\ref{ex:5bKasus3})) \citep[vgl.][]{McIntyre13a, MyP16e}.
+
+\end{block}
+
+\ea 
+	\ea\label{ex:5bKasus2} {Jakob \textbf{unterstützt} [\MyPdown{\alertred{\textsc{akk}}}den Verein].}
+	\ex\label{ex:5bKasus3} {Jakob \textbf{hilft} [\MyPdown{\alertred{\textsc{dat}}}dem Verein].}
 	\z
+\z  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rektionskomposita}
+
+\begin{itemize}
+	\item Bedeutungsbeziehung zwischen Erst- und Zweitglied ist durch die \textbf{Argumentstruktur des Zweitglieds} bestimmt (vgl.\ (\ref{ex:5bFolien})), sie ist nicht so ambig wie bei anderen Determinativkomposita (vgl.\ (\ref{ex:5bFischMann})).
 	
-	\ea \label{ex:Bsp2} die Linguisten besteigen den Watzmann – die Besteigung des Watzmann – Watzmannbesteigung
-	\z
-		 
+	\ea 
+		\ea\label{ex:5bFischMann} Fisch\alertred{mann} \ras Mann, der \textbf{irgendwas} mit Fisch zu tun hat
+		\ex\label{ex:5bFolien} Folien\alertred{bearbeitung} \ras Bearbeitung der Folien
+		\z 	
+	\z 
+\end{itemize}
+
+\begin{itemize}
+	\item Häufig findet man Rektionskomposita bei \textbf{deverbalen} Nomina
+	
+
+	\ea 
+		\ea tag(-en) \ras Tag$+$\alertred{-ung}
+		\ex bearbeit(-en) \ras Bearbeit$+$\alertred{-ung}
+		\ex fahr(-en) \ras Fahr$+$\alertred{-er}		
+		\z 
+	\z 
+	
 \end{itemize}
 
 
@@ -1107,91 +1348,70 @@ sm edges,
 \frametitle{Rektionskomposita}
 
 \begin{itemize}
-	\item \textbf{deverbale} Nomina (durch Derivation)
 	
-	\begin{itemize}
-		\item[]
-		\item tagen \ras Tagung
-		\item[]
-		\item Verb bestimmt mit wie vielen und mit welchen Argumenten es im Satz erscheint (s. Rektion, Subkategorisierungsrahmen)
+	\item Verb bestimmt mit wie vielen und mit welchen Argumenten es im Satz erscheint (vgl.\ (\ref{ex:5bBsp1}) \& (\ref{ex:5bBsp2})) (s.\ Rektion, Valenz, Subkategorisierungsrahmen)
+	
+	\item \textbf{Erstglied} in einem deverbalen Rektionskompositum realisiert ein \textbf{Argument} des der zweiten Konstituente zugrunde liegenden Verbs.
+
+	\settowidth\jamwidth{[2 ArgumenteX]} 
+	\ea \label{ex:5bBsp1} 
+		\ea {[\MyPdown{\alertred{\textsc{subj}}}Die \alertred{Linguisten}] \alertblue{tagen}.}
+		\jambox{[1 Argument]}
+		\ex die \alertblue{Tagung} der Linguisten 
+		\ex \alertred{Linguisten}\alertblue{tagung}
+		\z 
+
+	\ex \label{ex:5bBsp2} 
+		\ea {Die Linguisten \alertblue{bearbeiten} [\MyPdown{\alertred{\textsc{obj}}}die \alertred{Folien}].}
+		\jambox{[2 Argumente]}
+		\ex die \alertblue{Bearbeitung} der Folien
+		\ex \alertred{Folien}\alertblue{bearbeitung}
+		\z 
+	\z
+	
+	\ea	 
+		\ea Auto\alertblue{fahrer} (jemand fährt Auto)
+		\ex Wetter\alertblue{beobachter} (jemand beobachtet das Wetter)
+		\ex Rotkehlchen\alertblue{gesang} (das Rotkehlchen singt)
+		\z 
+	\z
+		 
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rektionskomposita}
+
+\begin{itemize}
+	\item Es gibt auch Rektionskomposita, bei denen die zweite Konstituente \textbf{nicht deverbal} ist, \zB Nomen oder Adjektiv.
+	
+	\settowidth\jamwidth{[2 ArgumenteXXXXXXXXXXXXXXX]} 
+	\ea 
+		\ea {[\MyPdown{\alertred{N}}\alertred{Angst} [\MyPdown{PP}vor der \alertblue{Prüfung}]]}
+		\jambox{\ras \alertblue{Prüfungs}\alertred{angst}}
+
+		\ex Sehnsucht nach dem Tod
+		\ex Todessehnsucht
+		 
+		\ex dem Staat treu
+		\ex staatstreu
 		
-		\begin{itemize}
-			\item[]
-			\item Tagen in \ref{ex:Bsp1} + Subjekt
-			\item[]
-			\item besteigen in \ref{ex:Bsp2} + Subject + Objekt
-			\item[]
-			\item Beziehung zwischen Verb und seinen Argumenten auch innerhalb eines Kompositums
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Rektionskomposita}
-
-\begin{itemize}
-	\item Rektionskompositum: \\
-	die erste Konstituente in einem deverbalen Rektionskompositum realisiert ein Argument des der zweiten Konstituente zugrunde liegenden Verbs
-	
-	\begin{itemize}
-		\item[]
-		\item In \ref{ex:Bsp1}: \emph{Linguist(en)} \ras Subjekt von \emph{tagen}
-		\item[]
-		\item In \ref{ex:Bsp2}: Watzmann \ras Objekt von besteigen
-	\end{itemize}
-	
-	\ea	 Auto$\cdot$fahrer (jemand fährt Auto), \\
-		 Wetter$\cdot$beobachter (jemand beobachtet das Wetter), \\
-		 Rotkehlchen$\cdot$gesang (das Rotkehlchen singt)
+		\ex sicher vor Fälschung
+		\ex fälschungssicher
+		
+		\ex frei von Blei
+		\ex bleifrei
+		\z 
 	\z
+
+%% @EE: Alle nach dem Muster von "Prüfungsangst"
+
+%Üb4
 		 
 \end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Rektionskomposita}
-
-\begin{itemize}
-	\item Es gibt auch Rektionskomposita, in denen die zweite Konstituente ein nicht-deverbales Nomen oder ein Adjektiv ist, denn auch Nomina und Adjektive können Argumente nehmen:
-	
-	\ea Prüfungsangst (Angst vor der Prüfung), \\
-		 Todessehnsucht (Sehnsucht nach dem Tod)
-	\z
-		 
-	\ea staatstreu (dem Staat treu), \\
-		 fälschungssicher (vor Fälschung sicher), \\
-		 bleifrei (von Blei frei)
-	\z
-		 
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Rektionskomposita}
-
-\begin{itemize}
-	\item \textbf{Rektionskompositum:} \\
-	Kompositum, bei dem die \textbf{erste Konstituente ein Argument} (Subj., Akk.-Obj., Dat.-Obj., Gen.-Obj., Präp.-Obj., etc.) der zweiten Konstituente ist.
-	\item[]
-	\item Bei Nicht-Rektionskomposita besteht keine Argumentrelation.
-	\item[]
-	\item[] \textbf{ÜB.4}
-	
-\end{itemize}
-
 
 \end{frame}
 
@@ -1214,21 +1434,32 @@ sm edges,
 \frametitle{Possessivkomposita}
 
 \begin{itemize}
-	\item Auch bei Possessivkomposita bestimmt die erste Konstituente die zweite näher.
-	\item[]
-	\item Das Kompositum bezieht sich aber auf \textbf{eine dritte Entität}, sie sind \textbf{exozentrisch}
+	\item Unterart der \textbf{Determinativkomposita}: Die erste Konstituente bestimmt die zweite näher, das Kompositum bezieht sich aber auf \textbf{eine dritte Entität}, sie sind \textbf{exozentrisch} (\ref{ex:5bexo}) -- im Vgl.\ zu Rektionskomposita und anderen Determinativkomposita, die \textbf{endozentrisch} sind (\ref{ex:5bendo}).
 	
-	\ea \emph{Rot$\cdot$kehlchen} = Vogel, der ein rotes Kehlchen hat, nicht ein rotes Kehlchen ist
-	\z
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} 
+	\ea\label{ex:5bexo}
+		\ea Rot\alertred{kehlchen} \jambox{\ras \alertblue{Vogel}, mit rotem Kehlchen, \textbf{kein Kehlchen}}
+
 	
-	\ea \emph{Rot$\cdot$käppchen} = Person, die eine rote Kappe hat (Märchenfigur), kein Käppchen
-	\z
+		\ex Rot\alertred{käppchen} \jambox{\ras \alertblue{Person} mit roter Kappe, \textbf{kein Käppchen}}
 	
-	\ea \emph{Lang$\cdot$finger} = Person, die lange Finger hat (= die stiehlt), kein Finger
-	\z
+		\ex Lang\alertred{finger} \jambox{\ras \alertblue{Person} mit langen Fingern, \textbf{kein Finger}}
+		\z
+
+	
+	\ex \label{ex:5bendo}
+		\ea Prüfungs\alertred{angst} \jambox{\ras \alertred{Angst}}
+		\ex Linguisten\alertred{tagung} \jambox{\ras \alertred{Tagung}}
+		\ex Wein\alertred{flasche} \jambox{\ras \alertred{Flasche}}
+		\z 
+	\z 
+
+\pause 
+
+	\item Der \textbf{morphosyntaktische} Kopf ist die rechte Konstituente (wie immer), aber bzgl.\ der lexikalischen Bedeutung sind Possessivkomposita \textbf{exozentrisch}\\
+	\citep[vgl.][]{Fries&MyP16j}.
 	
 \end{itemize}
-
 
 \end{frame}
 
@@ -1244,30 +1475,37 @@ sm edges,
 %		\end{multicols}
 %	}
 %}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Kopulativkomposita}
 
 \begin{itemize}
-	\item Erste Konstituente \textbf{bestimmt} die zweite \textbf{nicht näher}
-	\item[]
-	\item Beide Konstituenten sind \textbf{gleichrangig}
-	\item[]
-	\item Auch aus mehr als zwei Konstituenten bestehend
-	\item[]
-	\item \textbf{Koordinierende} (= verknüpfende) Beziehung zwischen den Kompositionsgliedern
-	\item[]
-	\item Bedeutung des Kompositums ergibt sich \textbf{additiv}
+	\item Kein Determinativkompositum: \\
+	Erste Konstituente \textbf{bestimmt} die zweite \textbf{nicht näher}.
 	
-	\eal 
-	\ex süß$\cdot$sauer, nass$\cdot$kalt, rot$\cdot$grün, Fürst-Bischof
-	\ex rot-rot-grün
-	\zl
+	\ea rot-grün, Fürst-Bischof
+	\z 
+	
+	\item Beide Konstituenten sind \textbf{gleichrangig}.
+	
+	\item \textbf{Koordinierende} (\dash verknüpfende) Beziehung zwischen den Kompositionsgliedern: Bedeutung des Kompositums ergibt sich \textbf{additiv}.
+	
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} 
+	\ea 
+		\ea {[süß$+$sauer]} \jambox{$=$ $x$ ist süß \textbf{und} $x$ ist sauer}
+		\ex {[Spieler$+$Trainer]} \jambox{$=$ $x$ ist Spieler \textbf{und} $x$ ist Trainer}
+		\z 
+	\z 
+
+	\item möglich auch aus mehr als zwei Konstituenten bestehend
+		
+	\ea rot-rot-grün
+%	\ex süß$+$sauer, nass$+$kalt, rot$+$grün, Fürst-Bischof
+%	\ex 
+	\z 
 	
 \end{itemize}
-
 
 \end{frame}
 
@@ -1277,20 +1515,34 @@ sm edges,
 \frametitle{Kopulativkomposita}
 
 \begin{itemize}
-	\item Konstituenten in Kopulativkomposita \ras \textbf{gleiche Kategorie}
-	\item[]
-	\item Reihenfolge: prinzipiell frei, aber meistens \textbf{konventionalisiert}
-	\item[]
-	\item Anderes \textbf{Betonungsmuster} als Determinativkomposita
+	\item Konstituenten in Kopulativkomposita haben die \textbf{gleiche Kategorie}
 	
-	\ea ein 'blau-'grünes 'Hemd - Kopulativ \\
-		 ein 'blaugrünes 'Hemd - Determinativ
+	\ea 
+		\ea nass-kalt \ras A $+$ A
+		\ex Schauspieler-Regisseur \ras N $+$ N
+		\z 
+	\z 
+	
+	\item Die Reihenfolge ist im Prinzip \textbf{frei}, aber meistens \textbf{konventionalisiert}.
+	
+	\ea Strumpfhose \vs ?Hosenstrumpf
+	\z 
+	
+	\item Anderes \textbf{Betonungsmuster} als Determinativkomposita: \\
+	Bei Determinativkomposita wird der \textbf{Nichtkopf} betont, \\
+	bei Kopulativkomposita werden \textbf{alle Konstituenten} betont.
+	
+	\settowidth\jamwidth{X[Determinativkompositum]} 
+	\ea 
+		\ea ein 'blau-'grünes 'Hemd  \jambox{[Kopulativkompositum]}
+	
+		\ex ein 'blaugrünes 'Hemd \jambox{[Determinativkompositum]}
+		\z 
 	\z
 		 
-	\item Während bei Determinativkomposita der Nichtkopf betont wird,\\
-              werden bei Kopulativkomposita alle Konstituenten betont.
-	\item[]
-	\item[] \textbf{ÜB.5}
+%	\item 
+
+%	\item[] \textbf{ÜB.5}
 \end{itemize}
 
 
@@ -1299,7 +1551,7 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Wortstrukturregeln}
+\subsubsection{Komposition: Wortstruktur}
 %\iftoggle{sectoc}{
 %	\frame{
 %		\begin{multicols}{2}
@@ -1312,76 +1564,109 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstrukturregeln}
+\frametitle{Wortstruktur: Kopf}
 
 \begin{itemize}
-	\item Unter Berücksichtigung der \textbf{Rechtsköpfigkeit} bei der Wortbildung gilt für Determinativ- und Possessivkomposita die folgende Wortbildungsregel:
-	\item[]
-	\item X \ras Y X
-	\item[]
-	\item wobei \gqq{X} und \gqq{Y} für \gqq{N}, \gqq{V}, \gqq{A} und \gqq{P} stehen, also:
-	\item[]
-	\item V \ras Y V'; N \ras Y N' usw.
-	\item 	
-	\item Für Kopulativkomposita gilt: alle Konstituenten sind von derselben Kategorie, also:
-	\item[]
-	\item N \ras N N 
-\end{itemize}
+	\item Bei allen Kompositionsarten gilt das Prinzip der \textbf{Rechtsköpfigkeit}.
+	
+	\settowidth\jamwidth{X[Determinativkompositum]} 
+	\ea 
+		\ea die Wein\alertred{flasche} \jambox{[Determinativkompositum]} 
+		
+			\ea[]{die Weinflasche\alertblue{n} }
+			\ex[*]{die Wein\alertblue{e}flasche\alertblue{n}}
+			\z 		
+		
+		\ex die Schnaps\alertred{nase} 	\jambox{\hfill [Possessivkompositum]} 
+			\ea[]{die Schnapsnase\alertblue{n} }
+			\ex[*]{die Schnäps\alertblue{e}nase\alertblue{n}}
+			\z 
+	
+		
+		\ex der Fürst-\alertred{Bischof} \jambox{[Kopulativkompositum]} 
+			\ea[]{die Fürst-Bischöf\alertblue{e}}
+			\ex[*]{die Fürst\alertblue{en}-Bischöf\alertblue{e}}
+			\z 		
+		\z 
+	\z 
 
+	\item Bspw. bestimmt der Kopf wie das gesamte Kompositum pluralisiert wird. Der Nicht-Kopf wird nicht pluralisiert.
+
+\end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstrukturregeln}
+\frametitle{Wortstruktur: Verzweigung}
 
 \begin{itemize}
-	\item Kopulativkomposita können mehr als zwei Glieder haben!
-	\item Einige der Kompositionsregeln (aber nicht alle) sind \textbf{rekursiv}, d.h. sie können auf das Ergebnis einer Regelanwendung erneut angewendet werden, damit können im Prinzip unendlich lange Wörter gebildet werden:
+	\item Die meisten Komposita sind \textbf{binär}. Kopulativkomposita können mehr als zweigliedrig sein.
+
+\scalebox{.8}{
+\begin{forest}
+		[A
+			[A [rot]]
+			[A [rot]]
+			[A [grün]]
+		]
+\end{forest}	
+}
+%	\item Einige der Kompositionsregeln (aber nicht alle) sind \textbf{rekursiv}.
 	
-	\begin{itemize}
-		\item N+N-Komposita: (Struktur ist immer binär)
-		\item[]
-		\item Es gibt symmetrisch strukturierte (\textbf{beidseitigverzweigende}) Komposita \ref{ex:Bsp3}, \textbf{linksverzweigende} \ref{ex:Bsp4} und \textbf{rechtsverzweigende} \ref{ex:Bsp5}
-		
-		\ea \label{ex:Bsp3} ((Groß$\cdot$raum)$\cdot$(flug$\cdot$zeug))
-		\z
-		
-		\ea \label{ex:Bsp4} (((Berb$\cdot$bau)$\cdot$(wissenschaft$\cdot$s)$\cdot$studium)
-		\z
-		
-		\ea \label{ex:Bsp5} (Bezirk$\cdot$s$\cdot$(jahr$\cdot$es$\cdot$(haupt$\cdot$versammlung)))
-		\z
-		
-	\end{itemize}
+	
+	\item Komposita können symmetrisch strukturiert (\textbf{beidseitigverzweigend}) (\ref{ex:Bsp3}), \textbf{linksverzweigend} (\ref{ex:Bsp4}) oder \textbf{rechtsverzweigend} (\ref{ex:Bsp5}) sein.
+	
+	\ea \label{ex:Bsp3} {((Groß$+$raum)$+$(flug$+$zeug))}
+	
+	\ex \label{ex:Bsp4} {(((Berg$+$bau)$+$(wissenschaft$+$s)$+$studium)}
+	
+	\ex \label{ex:Bsp5} (Bezirk$+$s$+$(jahr$+$es$+$(haupt$+$versammlung)))
+	\z
+
+%@EE Baume malen, und runde durch eckige Klammern ersetzen
+	
 \end{itemize}
 
+%
+%\scalebox{.8}{
+%\begin{forest}
+%	[A
+%	[A [rot]]
+%	[A [rot]]
+%	[A [grün]]
+%	]
+%\end{forest}	
+%}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstrukturregeln}
+\frametitle{Wortstrukturregeln: Interpretation}
 
 \begin{itemize}
-	\item Komposita können auch strukturell ambig sein (\ref{ex:Bsp6} und \ref{ex:Bsp7})
+	\item Komposita können \textbf{strukturell ambig} sein, vgl.\ (\ref{ex:Bsp6}) und (\ref{ex:Bsp7})
 	
-	\ea\label{ex:Bsp6} ((Bund$\cdot$es$\cdot$straße$\cdot$n)$\cdot$bau) \vs \emph{(Bund$\cdot$es$\cdot$(straße$\cdot$n$\cdot$bau))}
-	\z
+	\ea{[[\alertred{Bund(-es)$+$straße(-n)}]$+$bau] \vs [Bund(-es)$+$[\alertred{straße(-n)$+$bau}]]}
+
+\pause 
+
+	\ex\label{ex:Bsp6}  ((Frau(-en)$+$film)$+$fest) $=$ \alertblue{Fest}, das etwas mit \alertred{Frauenfilmen} (\zB Filmen von weiblichen Regisseurinnen) zu tun hat
 	
-	\ea \label{ex:Bsp7} ((Frau$\cdot$en$\cdot$film)$\cdot$fest) \vs (Frau$\cdot$en$\cdot$(film$\cdot$fest))
-	\z
-	
+	\ex\label{ex:Bsp7}  (Frau(-en)$+$(film$+$fest)) $=$ \alertred{Filmfest}, das etwas mit \alertblue{Frauen} zu tun hat (\zB Filmfest wird von Frauen organisiert)
+	\z 
 \end{itemize}
 
+%@EE: Frauenfilmfest wie Bundesstraßenbau formatieren	
 
-\begin{minipage}{.48\textwidth}
+\begin{minipage}{.49\textwidth}
 
 \begin{figure}
 \centering
-\scalebox{.7}{
+\scalebox{.6}{
 \begin{forest}
 sm edges,
 	[N
@@ -1395,12 +1680,19 @@ sm edges,
 \end{forest}}
 \end{figure}
 
-\end{minipage}\hfill%
-\begin{minipage}{.48\textwidth}
+%\ea\label{ex:Bsp6}  ((Frau(-en)$+$film)$+$fest)\\
+%$=$ \alertblue{Fest}, das etwas mit \alertred{Frauenfilmen} (\zB Filmen von weiblichen Regisseurinnen) zu tun hat
+%\z
+
+\end{minipage}%
+%
+\hfill ~
+%
+\begin{minipage}{.49\textwidth}
 
 \begin{figure}
 \centering
-\scalebox{.7}{
+\scalebox{.6}{
 \begin{forest}
 sm edges,
 	[N
@@ -1414,32 +1706,126 @@ sm edges,
 \end{forest}}
 \end{figure}
 
+%\ea\label{ex:Bsp7}  (Frau(-en)$+$(film$+$fest))\\
+%$=$ \alertred{Filmfest}, das etwas mit \alertblue{Frauen} zu tun hat (\zB Filmfest wird von Frauen organisiert)
+%\z 
+
 \end{minipage}
 
+\pause 
+
+Die \textbf{Betonung} ist je nach Struktur auch unterschiedlich.
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstrukturregeln}
+\frametitle{Wortstrukturregeln: Betonung}
+
+Welche Konstituente trägt die Hauptbetonung in den folgenden Wörtern?
+
+\begin{columns}
+\column{.46\textwidth}
+	\ea\label{ex:5bFuss} \rotul<2->{Fuß}$+$ball$+$feld
+	\ex\label{ex:5bLandes} Landes$+$\rotul<2->{haupt}$+$versammlung
+	\z 
+
+\column{.46\textwidth}
+	\ea\label{ex:5bWelt} Welt$+$\rotul<2->{nicht}$+$raucher$+$tag
+	\ex\label{ex:5bGross} \rotul<2->{Groß}$+$raum$+$flug$+$zeug
+	\z 
+\end{columns}
+
+\pause 
 
 \begin{itemize}
-	\item Mit Verzweigungsrichtung (bei Determinativkomposita) \ras spezielle \textbf{Betonungsmuster}
-	\item[]
-	\item Bei \textbf{zweigliedrigen} Determinativkomposita wird generell der \textbf{Nichtkopf} betont.
-	\item Bei \textbf{mehrgliedrigen} trägt meist der \textbf{Nichtkopf} der verzweigenden Konstituente den Hauptakzent
-	\item Bei \textbf{symmetrisch} verzweigenden erhält die linke Konstituente den Hauptakzent:
+	\item Betonungs\textbf{tendenzen} bei Det.-Komposita \citep[vgl.][131ff]{Grewendorf&Co91a}:
+	\begin{itemize}
+		
+		\item \textbf{zweigliedrige} Komposita: \textbf{Nichtkopf}
 	
-	\ea (('Bundes$\cdot$es$\cdot$straße$\cdot$n)$\cdot$bau) \vs (Bund$\cdot$es$\cdot$('straße$\cdot$n$\cdot$bau))
-	\z
-	
-	\ea '((Großraum)$\cdot$(flugzeug))
-	\z
-	
+		\item \textbf{mehrgliedrige} Komposita: meist der \textbf{Nichtkopf} \textbf{der verzweigenden Konstituente}
+				
+		\item \textbf{symmetrisch} verzweigenden Komposita: \textbf{linke Konstituente} (vgl.\ (\ref{ex:5bGross}))
+		
+	%	\ea (('Bundes$+$es$+$straße$+$n)$+$bau) \vs (Bund$+$es$+$('straße$+$n$+$bau))
+	%	\z
+	%	
+	%	\ea '((Großraum)$+$(flugzeug))
+	%	\z
+		
+	\end{itemize}
 \end{itemize}
 
-
+\begin{minipage}[t]{.17\textwidth}
+\scalebox{.7}{
+\begin{forest}
+[
+	[s
+		[s [\alertred{Fuß}]]
+		[w [ball]]
+	]
+	[w [feld]]
+]	
+\end{forest}	
+}
+\end{minipage}
+%%
+\hfill ~
+%%
+\begin{minipage}[t]{.25\textwidth}
+\scalebox{.7}{
+\begin{forest}
+[
+	[w [Landes]]
+	[s 
+		[s [\alertred{haupt}]]
+		[w [versammlung]]
+	]
+]	
+\end{forest}	
+}
+\end{minipage}
+%%
+\hfill ~
+%%
+\begin{minipage}[t]{.21\textwidth}
+\scalebox{.7}{
+	\begin{forest}
+	[
+		[w [Welt]]
+			[s 
+				[s 
+					[s [\alertred{nicht}]]
+					[w [raucher]]
+				]
+			[w [tag]]
+		]
+	]	
+	\end{forest}	
+}
+\end{minipage}
+%%
+\hfill ~
+%%
+\begin{minipage}[t]{.28\textwidth}
+\scalebox{.7}{
+\begin{forest}
+[
+	[s 
+		[s [\alertred{Groß}]]
+		[w [raum]]
+	]
+	[w
+		[s [flug]]
+		[w [zeug]]
+	]
+]	
+\end{forest}	
+}
+\end{minipage}
+	
 \end{frame}
 
 
@@ -1702,7 +2088,7 @@ sm edges,
 
 \end{itemize}
 
-\item[] \textbf{ÜB.1}
+%\item[] \textbf{ÜB.1}
 \end{itemize}
 
 

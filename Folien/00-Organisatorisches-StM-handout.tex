@@ -5,50 +5,46 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\documentclass[a4paper,10pt, bibtotoc]{beamer}
-%\documentclass[10pt,a4paper]{beamer}
 \documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES       %%
+%%     PACKAGES & COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
 
-
+\input{localcommands}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{document}
+	
 
-\input{localcommands}
+%%%% ue-loesung
+%%%% true: Fragen & Lösungen / false: nur Uebung
+%\toggletrue{ue-loesung}
 
-%%%% uebung
-%%%% true: nur Fragen / false: Fragen & Lösungen
-%	\toggletrue{uebung}
-\togglefalse{uebung}
-
-%%%% hausaufgabe
-%%%% true: nur Hausaufgabe / false: Hausaufgabe & Lösungen
-%	\toggletrue{hausaufgabe}
-\togglefalse{hausaufgabe}
+%%%% ha-loesung
+%%%% true: Fragen & Lösungen / false: nur Hausaufgabe
+%\toggletrue{ha-loesung}
 
 %%%% toc
 %%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
-%	\toggletrue{toc}
-\togglefalse{toc}
+\toggletrue{toc}
+%	\togglefalse{toc}
 
 %%%% sectoc
 %%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
 %	\toggletrue{sectoc}
-\togglefalse{sectoc}
+%	\togglefalse{sectoc}
 
 %%%% gliederung
 %%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
 %	\toggletrue{gliederung}
-\togglefalse{gliederung}
+%	\togglefalse{gliederung}
 
 
 \author[St.Mü.]{

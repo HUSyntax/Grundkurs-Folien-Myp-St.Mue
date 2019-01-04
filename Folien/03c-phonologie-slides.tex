@@ -8,10 +8,13 @@
 %\documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES      
+%%     PACKAGES & COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{localpackages}
+
+\input{localcommands}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                   
@@ -19,9 +22,7 @@
 
 \begin{document}
 	
-\input{localcommands}
-
-
+	
 %%%% ue-loesung
 %%%% true: Fragen & Lösungen / false: nur Uebung
 \toggletrue{ue-loesung}
@@ -29,7 +30,6 @@
 %%%% ha-loesung
 %%%% true: Fragen & Lösungen / false: nur Hausaufgabe
 \toggletrue{ha-loesung}
-
 
 %%%% toc
 %%%% true: TOC am Anfang von Slides / false: keine TOC am Anfang von Slides

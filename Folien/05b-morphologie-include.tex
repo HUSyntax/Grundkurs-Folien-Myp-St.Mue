@@ -30,24 +30,23 @@
 
 %\hyphenation{nobreak}
 
-
+%%@ee ggf. zusätzl. Übungen in: 2012-2013 WS MyP Doering/04. Morphologie/02c ÜB........FALLS NICHT SCHON IM TUTORIUM VERWENDET!?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\huberlintitlepage[22pt]
+\huberlintitlepage
 \iftoggle{toc}{
 	\frame{
-		\begin{multicols}{2}
-			\frametitle{Inhaltsverzeichnis}
-			\tableofcontents
-			%[pausesections]
-		\end{multicols}
+		%\begin{multicols}{2}
+		\frametitle{Inhaltsverzeichnis}
+		\tableofcontents
+		%[pausesections]
+		%\end{multicols}
 	}
 }
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,15 +129,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Einführung}
+
 \iftoggle{sectoc}{
 	\frame{
-		\begin{multicols}{2}
-			\frametitle{~}
-			\tableofcontents[currentsection]
-		\end{multicols}
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
 	}
 }
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -234,14 +233,16 @@ Die Morphologie unterteilt man in:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Struktur komplexer Wörter}
+
 \iftoggle{sectoc}{
 	\frame{
-		\begin{multicols}{2}
-			\frametitle{~}
-			\tableofcontents[currentsection]
-		\end{multicols}
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
 	}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -693,8 +694,6 @@ sm edges,
 	\jambox{[konkrete rekursive Regel]}
 		
 	\ex\label{ex:5bRekRegel3} Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz
-	% @EE: Link zu den Quellen:
-	% https://de.wikipedia.org/wiki/Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz
 	
 	% SM: Gasherdverkäuferschulungszentrumseinrichtungsbudget
 	\z 
@@ -738,14 +737,14 @@ sm edges,
 	\scalebox{.9}{
 		\begin{forest}
 			[X
-			[X
-			[X
-			[X]
-			[Y]
-			]
-			[Y]
-			]
-			[Y]
+				[X
+					[X
+						[X]
+						[Y]
+					]
+					[Y]
+				]
+				[Y]
 			]	
 		\end{forest}	
 	}
@@ -784,13 +783,14 @@ sm edges,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Komposition}
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -799,7 +799,7 @@ sm edges,
 \frametitle{Komposition}
 
 \begin{itemize}
-	\item \textbf{Komposition:} Kombination von \textbf{Stämmen} (Kompositionsgliedern) zu einem neuen Stamm.
+	\item Wortbildungsprozess mittels \textbf{Konkatenation}, bei dem zwei \textbf{Stämme} (Kompositionsglieder) zu einem neuen Stamm verbunden werden.
 	
 	\item Ergebnis der Komposition: \textbf{Kompositum} (Pl. Komposita).
 	
@@ -924,7 +924,6 @@ sm edges,
 		\end{multicols}
 	}
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -1105,7 +1104,8 @@ sm edges,
 \frametitle{Fugenelement \vs Stammform}
 
 \begin{itemize}
-	\item Einige Autoren \citep[vgl.][211ff; 227ff]{Eisenberg00a} sprechen von \textbf{Kompositionsstammformen} (KS): nicht nur der Stamm eines Nomens (\zB \ab{kind}) ist \textbf{im Lexikon} verzeichnet, sondern auch die vorkommenden Kompositionsstammformen (vgl.\ (\ref{ex:5bKSFormen})).
+	\item Einige Autoren \citep[vgl.][211ff; 227ff]{Eisenberg00a} sprechen von \textbf{Kompositionsstammformen} (KS): nicht nur der Stamm eines Nomens \\
+	(\zB \ab{kind}) ist \textbf{im Lexikon} verzeichnet, sondern auch die vorkommenden Kompositionsstammformen (vgl.\ (\ref{ex:5bKSFormen})).
 	
 	\item Lexikon als Speicher von \textbf{Idiosynkrasien}, \dash von Nicht-Derivierbarem
 	
@@ -1173,7 +1173,7 @@ Struktur nach der \textbf{Annahme einer Kompositionsstammform}:
 
 \medskip 
 
-Struktur nach der \textbf{Annahme eines Fugenelements}
+Struktur nach der \textbf{Annahme eines Fugenelements:}
 
 \begin{itemize}	
 	\item Fugenelement ist \textbf{kein Morphem}.
@@ -1229,7 +1229,8 @@ Struktur nach der \textbf{Annahme eines Fugenelements}
 \frametitle{Komposita: Funktionale Klassifikation}
 
 \begin{itemize}
-	\item Komposita kann man nach der \textbf{semantischen Beziehung} zwischen \textbf{Erst-} und \textbf{Zweitglied} klassifizieren.
+	\item Komposita kann man nach der \textbf{semantischen Beziehung} \\
+	zwischen \textbf{Erst-} und \textbf{Zweitglied} klassifizieren.
 	
 	\begin{block}{Determinativkompositum}
 		Das Erstglied \textbf{bestimmt} das Zweitglied \textbf{näher}. 
@@ -1307,7 +1308,7 @@ Struktur nach der \textbf{Annahme eines Fugenelements}
 \frametitle{Determinativkomposita}
 
 
-Bedeutungsbeziehung ist \textbf{vielfältig} und \textbf{nicht eindeutig bestimmbar}
+Bedeutungsbeziehung ist \textbf{vielfältig} und \textbf{nicht eindeutig bestimmbar}.
 
 \begin{columns}
 	
@@ -1397,9 +1398,8 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 %		\end{multicols}
 %	}
 %}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Rektionskomposita}
 
@@ -1465,7 +1465,7 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 
 \begin{itemize}
 	
-	\item Verb bestimmt mit wie vielen und mit welchen Argumenten es im Satz erscheint (vgl.\ (\ref{ex:5bBsp1}) \& (\ref{ex:5bBsp2})) (s.\ Rektion, Valenz, Subkategorisierungsrahmen).
+	\item Verb bestimmt, mit wie vielen und mit welchen Argumenten es im Satz erscheint (vgl.\ (\ref{ex:5bBsp1}) \& (\ref{ex:5bBsp2})) (s.\ Rektion, Valenz, Subkategorisierungsrahmen).
 	
 	\item \textbf{Erstglied} in einem deverbalen Rektionskompositum realisiert ein \textbf{Argument} des der zweiten Konstituente zugrunde liegenden Verbs.
 
@@ -1504,18 +1504,23 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 \begin{itemize}
 	\item Es gibt auch Rektionskomposita, bei denen die zweite Konstituente \textbf{nicht deverbal} ist, \zB Nomen oder Adjektiv.
 	
-	\settowidth\jamwidth{[2 ArgumenteXXXXXXXXXXXXXXX]} 
+	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXX}
 	\ea 
-		\ea {[\MyPdown{\alertred{N}}\alertred{Angst} [\MyPdown{PP}vor der \alertblue{Prüfung}]]}
+		\ea {[\MyPdown{N}\alertred{Angst} [\MyPdown{PP}vor der \alertblue{Prüfung}]]}
 		\jambox{\ras \alertblue{Prüfungs}\alertred{angst}}
 
-		\ex Sehnsucht nach dem Tod \ras Todessehnsucht
+		\ex  {[\MyPdown{N}\alertred{Sehnsucht} [\MyPdown{PP}nach dem \alertblue{Tod}]]}
+		\jambox{\ras \alertblue{Todes}\alertred{sehnsucht}}
 		 
-		\ex dem Staat treu \ras  staatstreu
+		\ex  {[[\MyPdown{DP}dem \alertblue{Staat}] \MyPdown{A}\alertred{treu}]}
+		\jambox{\ras \alertblue{staats}\alertred{treu}}
 		
-		\ex sicher vor Fälschung \ras fälschungssicher
+		\ex {[\MyPdown{A}\alertred{sicher} [\MyPdown{PP}vor \alertblue{Fälschung}]]}
+		\jambox{\ras \alertblue{fälschungs}\alertred{sicher}}
 		
-		\ex frei von Blei \ras bleifrei
+		\ex {[\MyPdown{A}\alertred{frei} [\MyPdown{PP}von \alertblue{Blei}]]}
+		\jambox{\ras \alertblue{blei}\alertred{frei}}
+
 		\z 
 	\z
 
@@ -1550,7 +1555,7 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 	
 	\settowidth\jamwidth{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} 
 	\ea\label{ex:5bexo}
-		\ea Rot\alertred{kehlchen} \jambox{\ras \alertblue{Vogel}, mit rotem Kehlchen, \textbf{kein Kehlchen}}
+		\ea Rot\alertred{kehlchen} \jambox{\ras \alertblue{Vogel} mit roter Kehle, \textbf{kein Kehlchen}}
 
 	
 		\ex Rot\alertred{käppchen} \jambox{\ras \alertblue{Person} mit roter Kappe, \textbf{kein Käppchen}}
@@ -1635,11 +1640,15 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 		\ex Schauspieler-Regisseur \ras N $+$ N
 		\z 
 	\z 
+
+\pause 
 	
 	\item Die Reihenfolge ist im Prinzip \textbf{frei}, aber meistens \textbf{konventionalisiert}.
 	
 	\ea Strumpfhose \vs ?Hosenstrumpf
 	\z 
+
+\pause 
 	
 	\item Anderes \textbf{Betonungsmuster} als Determinativkomposita: \\
 	Bei Determinativkomposita wird der \textbf{Nichtkopf} betont, \\
@@ -1652,8 +1661,6 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 		\ex ein 'blaugrünes 'Hemd \jambox{[Determinativkompositum]}
 		\z 
 	\z
-		 
-%	\item 
 
 %	\item[] \textbf{ÜB.5}
 \end{itemize}
@@ -1703,7 +1710,7 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 		\z 
 	\z 
 
-	\item Bspw. bestimmt der Kopf wie das gesamte Kompositum \textbf{flektiert} wird: der Nicht-Kopf wird nicht pluralisiert.
+	\item Bspw. bestimmt der Kopf wie das gesamte Kompositum \textbf{flektiert} wird, der Nicht-Kopf wird nicht pluralisiert.
 
 \end{itemize}
 
@@ -1712,14 +1719,14 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Wortstruktur: Verzweigung}
+\frametitle{Wortstruktur: Verzweigung I}
 
 \begin{itemize}
 	\item Die meisten Komposita sind \textbf{binär}. \\
 	\textbf{Kopulativkomposita} können mehr als zweigliedrig sein.
 \begin{figure}
 	\centering
-\scalebox{.8}{
+
 \begin{forest}
 		[A
 			[A [rot]]
@@ -1727,35 +1734,90 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 			[A [grün]]
 		]
 \end{forest}	
-}
+
 \end{figure}
 %	\item Einige der Kompositionsregeln (aber nicht alle) sind \textbf{rekursiv}.
-	
-\pause 
-	
-	\item Komposita können symmetrisch strukturiert (\textbf{beidseitigverzweigend}) (\ref{ex:Bsp3}), \textbf{linksverzweigend} (\ref{ex:Bsp4}) oder \textbf{rechtsverzweigend} (\ref{ex:Bsp5}) sein.
-	
-	\ea \label{ex:Bsp3} {((Groß$+$raum)$+$(flug$+$zeug))}
-	
-	\ex \label{ex:Bsp4} {(((Berg$+$bau)$+$(wissenschaft$+$s)$+$studium)}
-	
-	\ex \label{ex:Bsp5} (Bezirk$+$s$+$(jahr$+$es$+$(haupt$+$versammlung)))
-	\z
 
-%@EE Baume malen, und runde durch eckige Klammern ersetzen
-	
 \end{itemize}
+\end{frame}
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Wortstruktur: Verzweigung II}
 
-%
-%\scalebox{.8}{
-%\begin{forest}
-%	[A
-%	[A [rot]]
-%	[A [rot]]
-%	[A [grün]]
-%	]
-%\end{forest}	
-%}
+%\begin{columns}
+%	\begin{column}{.4\textwidth}
+%\begin{itemize}
+%	\item 
+Komposita können
+\begin{itemize}
+	\item symmetrisch strukturiert (\textbf{beidseitigverzweigend}),
+	\item \textbf{linksverzweigend} oder
+	\item \textbf{rechtsverzweigend}
+\end{itemize}
+sein.
+
+\begin{columns}[b]
+	
+	\begin{column}{.29\textwidth}
+	\centering
+	\scalebox{.6}{
+		\begin{forest}
+			[N
+				[N
+					[A [Groß] ]
+					[N [raum] ]
+				]
+				[N
+					[N [flug] ]
+					[N [zeug] ]
+				]
+			]
+		\end{forest}
+	}
+	\end{column}
+%%%
+	\begin{column}{.32\textwidth}
+	\centering
+	\scalebox{.6}{
+			\begin{forest}
+				[N
+					[N
+						[N
+							[N [Berg] ]
+							[N [bau] ]
+						]
+						[N [wissenschaft(-s)] ]
+					]
+					[N [studium] ]
+				]
+			\end{forest}
+	}	
+	\end{column}
+%%%
+	\begin{column}{.38\textwidth}	
+	\centering
+	\scalebox{.6}{
+		\begin{forest}
+			[N
+				[N [Bezirk(-s)] ]
+				[N
+					[N [jahr(-es)] ]
+					[N
+						[N [haupt] ]
+						[N [versammlung] ]
+					]
+				]
+			]
+		\end{forest}
+	}	
+	\end{column}
+\end{columns}
+
+
+%@ee dazu gab es auf jeden Fall eine Übung in den o.g. Aufgaben!
+	
 
 \end{frame}
 
@@ -1765,20 +1827,18 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 \frametitle{Wortstrukturregeln: Interpretation}
 
 \begin{itemize}
-	\item Komposita können \textbf{strukturell ambig} sein, vgl.\ (\ref{ex:Bsp6}) und (\ref{ex:Bsp7})
+	\item Komposita können \textbf{strukturell ambig} sein, vgl.\ (\ref{ex:Bsp6}) und (\ref{ex:Bsp7}).
 	
-	\ea{[[\alertred{Bund(-es)$+$straße(-n)}]$+$bau] \vs [Bund(-es)$+$[\alertred{straße(-n)$+$bau}]]}
+	\ea{[[\alertred{Bund(-es)$+$straße(-n)}]$+$\alertblue{bau}] \vs [\alertblue{Bund(-es)}$+$[\alertred{straße(-n)$+$bau}]]}
 
 \pause 
 	\ex
-	\ea\label{ex:Bsp6}  ((Frau(-en)$+$film)$+$fest) $=$ \alertblue{Fest}, das etwas mit \alertred{Frauenfilmen} (\zB Filmen von weiblichen Regisseurinnen) zu tun hat
+	\ea\label{ex:Bsp6}  [[\alertred{Frau(-en)$+$film}]$+$\alertblue{fest}] $=$ \alertblue{Fest}, das etwas mit \alertred{Frauenfilmen} (\zB Filmen von weiblichen Regisseurinnen) zu tun hat
 	
-	\ex\label{ex:Bsp7}  (Frau(-en)$+$(film$+$fest)) $=$ \alertblue{Filmfest}, das etwas mit \alertred{Frauen} zu tun hat (\zB Filmfest wird von Frauen organisiert)
+	\ex\label{ex:Bsp7}  [\alertblue{Frau(-en)}$+$[\alertred{film$+$fest}]] $=$ \alertred{Filmfest}, das etwas mit \alertblue{Frauen} zu tun hat (\zB Filmfest wird von Frauen organisiert)
 	\z 
 	\z 
 \end{itemize}
-
-%@EE: Frauenfilmfest wie Bundesstraßenbau formatieren	
 
 \begin{minipage}{.49\textwidth}
 
@@ -1950,15 +2010,15 @@ Welche Konstituente trägt die Hauptbetonung in den folgenden Wörtern?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exkurs: Andere Wortbildungsarten}
+
 \iftoggle{sectoc}{
 	\frame{
-		\begin{multicols}{2}
-			\frametitle{~}
-			\tableofcontents[currentsection]
-		\end{multicols}
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
 	}
 }
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -2199,7 +2259,7 @@ Welche Konstituente trägt die Hauptbetonung in den folgenden Wörtern?
 \begin{itemize}
 \item Umsetzung eines Stammes in eine andere Kategorie
 \item ohne zusätzliches Morphem oder sonstige Veränderungen
-\item Konversion \ras Derivation ? (Derivation mit einem Nullmorphem)
+\item Konversion \ras Derivation? (Derivation mit einem Nullmorphem)
 
 \eal 
 \ex Nomen Dank \vs Verb dank-
@@ -2214,6 +2274,28 @@ Welche Konstituente trägt die Hauptbetonung in den folgenden Wörtern?
 
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Elektronische Quellen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[allowframebreaks]{Elektronische Quellen}
+
+\footnotesize
+
+\begin{itemize}
+	
+	\item LINK -- \gqq{Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz}\\
+	(Zugriff: 17.04.2019):
+	\url{https://de.wikipedia.org/wiki/Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz}
+	
+	\item VIDEO -- \gqq{Spoken Pirahã with subtitles} (Zugriff: 24.10.2013): \url{http://www.youtube.com/watch?v=SHv3-U9VPAs}
+	
+\end{itemize}
+
+\end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

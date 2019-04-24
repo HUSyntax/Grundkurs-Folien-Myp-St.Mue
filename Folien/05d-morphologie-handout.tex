@@ -1,33 +1,49 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Handout: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\documentclass[a4paper,11pt, bibtotoc]{beamer}
-%\documentclass[10pt,a4paper]{beamer}
+%\documentclass[a4paper,10pt, bibtotoc]{beamer}
 \documentclass[10pt,handout]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%     PACKAGES       %%
+%%     PACKAGES & COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \input{localpackages}
 
+\input{localcommands}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%             Preamble's End                   %%%
+%%%             Preamble's End                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \begin{document}
+	
+	
+%%%% ue-loesung
+%%%% true: Fragen & Lösungen / false: nur Uebung
+%\toggletrue{ue-loesung}
 
-\input{localcommands}
+%%%% ha-loesung
+%%%% true: Fragen & Lösungen / false: nur Hausaufgabe
+%\toggletrue{ha-loesung}
 
-%\togglefalse{uebung}
-%\toggletrue{uebung}
-%\togglefalse{loesung}
-%\toggletrue{loesung}
-\togglefalse{toc}
-%\toggletrue{toc}
+%%%% toc
+%%%% true: TOC am Anfang von Slides / false: keine TOC nicht am Anfang von Slides
+\toggletrue{toc}
+%	\togglefalse{toc}
+
+%%%% sectoc
+%%%% true: TOC für Sections (MyP) / false: keine TOC für Sections (MyP)
+\toggletrue{sectoc}
+%	\togglefalse{sectoc}
+
+%%%% gliederung
+%%%% true: Gliederung für Sections (StM) / false: keine Gliederung für Sections (StM)
+%	\toggletrue{gliederung}
 
 \input{05d-morphologie-include}
 

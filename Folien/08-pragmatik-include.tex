@@ -103,6 +103,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pragmatik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -119,12 +120,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Einführung}
-%
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\subsection{Einführung}
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -175,13 +181,18 @@ kontextabhängige  (und durch Wahrheitsbedingungen nicht erfassbare) Bedeutung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Kontext}
+\subsection{Kontext}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -203,7 +214,7 @@ Vorhergehende Äu\ss{}erungen, Diskurs-Thema, \dots
 Was wei\ss{} der Sprecher, was nimmt der Sprecher über den Hörer an, Weltwissen, \dots
 		\item []
 		\item \textbf{Intentionaler Kontext} \\
-Was sind die Ziele/ Wünsche/ Pläne des Sprechers?
+Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	\end{itemize}
 	
 \end{itemize}
@@ -214,12 +225,14 @@ Was sind die Ziele/ Wünsche/ Pläne des Sprechers?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Deixis}
+\subsubsection{Deixis}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{sectoc}{
 %\frame{
 %\frametitle{~}
-%	\tableofcontents[currentsection]
+%	\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -245,7 +258,7 @@ Was sind die Ziele/ Wünsche/ Pläne des Sprechers?
 \frametitle{Deixis}
 
 \begin{itemize}
-	\item \textbf{Personaldeixis:} 
+	\item \textbf{Personaldeixis} 
 	
 	\begin{itemize}
 		\item Aktuelle Gesprächsrollen
@@ -295,12 +308,14 @@ Was sind die Ziele/ Wünsche/ Pläne des Sprechers?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Anaphorik}
+\subsubsection{Anaphorik}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame
+%\iftoggle{sectoc}{
+%	\begin{frame
 %\frametitle{~}
-%	\tableofcontents[currentsection]
+%	\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -357,12 +372,12 @@ Erstgenannter referentieller Ausdruck in einer anaphorischen Kette
 \frametitle{Anaphorik}
 
 \begin{itemize}
-	\item \textbf{Anapher:}
+	\item \textbf{Anapher}
 	
 	\ea Wie viel an \textbf{Grice} auch immer auszusetzen ist, selbst die schärfsten Kritiker sehen \textbf{ihn} als einen der wichtigsten Pragmatiker an.
 	\z
 	
-	\item \textbf{Katapher:}
+	\item \textbf{Katapher}
 	
 	\ea Wie viel an \textbf{ihm} auch immer auszusetzen ist, selbst die schärfsten Kritiker sehen \textbf{Grice} als einen der wichtigsten Pragmatiker an.
 	\z
@@ -375,23 +390,23 @@ Erstgenannter referentieller Ausdruck in einer anaphorischen Kette
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Kontext}
+\subsubsection{Übung}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\iftoggle{sectoc}{
 %\begin{frame
 %\frametitle{~}
-%	\tableofcontents[currentsection]
+%	\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Kontext}
+\frametitle{Übung}
 
 \begin{itemize}
-	\item Markieren Sie und bestimmen Sie die deiktischen und anaphorischen Ausdrücke:
-	
-\vspace{5mm}
+	\item Markieren und bestimmen Sie die deiktischen und anaphorischen Ausdrücke.
 	
 	\begin{enumerate}
 	\item Morgen werde ich sie besuchen, obwohl es mir zeitlich nicht passt.
@@ -415,54 +430,32 @@ Erstgenannter referentieller Ausdruck in einer anaphorischen Kette
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Kontext}
 
-\begin{itemize}
-	\item Markieren Sie und bestimmen Sie die deiktischen und anaphorischen Ausdrücke:
-	
-\vspace{5mm}
-
-	\begin{enumerate}
-		\item Morgen werde ich sie besuchen, obwohl es mir zeitlich nicht passt.
-		\item[]
-		\item Gestern regnete es vor dem Supermarkt.
-		\item[]
-		\item Am 10.02.2014 hat Peter einen Sack Kartoffeln gekauft.
-		\item[]
-		\item Ich treffe Sie in Ihrem Büro.
-		\item[]
-		\item Der Dozent wei\ss{}, dass es gut für Sie ist, das zu lernen.
-		\item[]
-		\item Karl hat nicht hingeschaut und dann hat er mich angefahren.
-		\item[]
-		\item Mario hat ihn rasiert und Peter hat sich gewaschen.
-	\end{enumerate}
-	
-\end{itemize}
-
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Typen von Folgerungen}
+\subsection{Typen von Folgerungen}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Typen von Folgerungen}
 
 \begin{itemize}
-	\item Arten von Schlüssen, die aus einer Äu\ss{}erung gezogen werden können.
-	\item Unterschiede:\\
-Logische Eigenschaften und Bedingungen für die Gültigkeit
+	\item Arten von Schlüssen, die aus einer Äu\ss{}erung gezogen werden können
+	\item Unterschiede: Logische Eigenschaften und Bedingungen für die Gültigkeit
 
 \vspace{1ex}
 	\item \textbf{Semantische Implikation (Entailment)}
@@ -487,12 +480,14 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Semantische Implikation}
+\subsubsection{Semantische Implikation}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\begin{frame
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -502,9 +497,9 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 \begin{itemize}
 	\item Semantische Implikation  = Entailment ( $|$ =)
 	\item []
-	\item p impliziert q, gdw. in allen Welten, in denen p wahr ist, ist auch q wahr. (aber nicht notwendigerweise umgekehrt)
+	\item p impliziert q, gdw. in allen Welten, in denen p wahr ist, auch q wahr ist (aber nicht notwendigerweise umgekehrt).
 	\item[]
-	\item Logik der Teilaussagen steht in einer inhaltlichen Beziehung zueinander (anders als \textbf{materiale Implikation})
+	\item Logik der Teilaussagen steht in einer inhaltlichen Beziehung zueinander (anders als \textbf{materiale Implikation}).
 
 	\eal
 		\ex Die Frau wurde erstochen.
@@ -539,7 +534,7 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 	\zl
 	
 	\begin{itemize}
-		\item p impliziert / folgert semantisch / entails q
+		\item p impliziert/folgert semantisch/entails q:
 		\item p $|$ = q
 	\end{itemize}
 	
@@ -577,12 +572,14 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Präsupposition}
+\subsubsection{Präsupposition}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\begin{frame
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -591,7 +588,7 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 
 \begin{itemize}
 	\item Implizite Voraussetzung ($\gg$)
-	\item Präsuppositionen werden nicht vom Wahrheitsgehalt eines Satzes erfasst
+	\item Präsuppositionen werden nicht vom Wahrheitsgehalt eines Satzes erfasst.
 	\item Präsuppositionen müssen erfüllt sein, damit der Satz einen Wahrheitswert haben kann!
 
 \vspace{1ex}
@@ -600,9 +597,9 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 		\z
 		
 		\begin{itemize}
-			\item \ref{ex11} ist wahr, wenn es einen kahlköpfigen König von Frankreich gibt.
-			\item\ref{ex11} ist falsch, wenn es keinen kahlköpfigen König von Frankreich gibt.
-			\item \ref{ex11} kann keinen Wahrheitswert zugeordnet werden, wenn \gqq{es keinen König von Frankreich gibt}.
+			\item (\ref{ex11}) ist wahr, wenn es einen kahlköpfigen König von Frankreich gibt.
+			\item (\ref{ex11}) ist falsch, wenn es keinen kahlköpfigen König von Frankreich gibt.
+			\item (\ref{ex11}) kann kein Wahrheitswert zugeordnet werden, wenn \gqq{es keinen König von Frankreich gibt}.
 		\end{itemize}
 	
 \end{itemize}
@@ -617,7 +614,7 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 \frametitle{Präsupposition}
 
 \begin{itemize}
-	\item Semantische Präsupposition  (Bedingung für Wahrheit):
+	\item \textbf{Semantische} Präsupposition  (Bedingung für Wahrheit)
 	
 	\begin{itemize}
 		\item p präsupponiert semantisch q, gdw.
@@ -631,7 +628,7 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 	
 \vspace{1ex}
 
-	\item Pragmatische Präsupposition (Sprachgebrauch):
+	\item \textbf{Pragmatische} Präsupposition (Sprachgebrauch)
 	
 	\begin{itemize}
 		\item Ein Sprecher S präsupponiert (pragmatisch) q mit der Äu\ss{}erung von p, wenn er davon ausgeht, dass q gemeinsames Sprecher-Hörer-Wissen ist.
@@ -684,7 +681,7 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 		\ea Peters Freundin ist krank.\\ $\gg$ Peter hat eine Freundin.
 		\z
 		
-		\ea Peters Freundin ist wahrscheinlich/ vielleicht krank.\\ $\gg$ Peter hat eine Freundin.
+		\ea Peters Freundin ist wahrscheinlich/vielleicht krank.\\ $\gg$ Peter hat eine Freundin.
 		\z
 	
 	\end{itemize}
@@ -769,9 +766,9 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 	\z
 		
 		\begin{itemize}
-			\item \ref{ex21} ist wahr, wenn es einen König von Frankreich gibt, der kahlköpfig ist.
-			\item \ref{ex21} ist falsch, wenn es einen König von Frankreich gibt, der aber nicht kahlköpfig ist.
-			\item \ref{ex21} kann keinen Wahrheitswert zugeordnet werden, wenn \gqq{es keinen König von Frankreich gibt}!
+			\item (\ref{ex21}) ist wahr, wenn es einen König von Frankreich gibt, der kahlköpfig ist.
+			\item (\ref{ex21}) ist falsch, wenn es einen König von Frankreich gibt, der aber nicht kahlköpfig ist.
+			\item (\ref{ex21}) kann kein Wahrheitswert zugeordnet werden, wenn \gqq{es keinen König von Frankreich gibt}!
 		\end{itemize}
 
 \end{itemize}
@@ -793,10 +790,10 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 	\item \textbf{Definite DPs}
 	
 	\ea Der König von Frankreich ist kahlköpfig.\\ 
-	$\gg$ Es gibt (genau) einen König von Frankreich
+	$\gg$ Es gibt (genau) einen König von Frankreich.
 	\z
 	
-	\item \textbf{Verben der Zustandveränderung}
+	\item \textbf{Verben der Zustandsveränderung}
 
 	\ea Es hat aufgehört zu regnen.\\
 			$\gg$ Es hat (mal) geregnet.
@@ -863,7 +860,7 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 			$\gg$ Peter hat den Wagen gekauft.
 		\z
 			
-		\item Peter wird nicht bedauern (müssen), den Wagen gekauft zu haben. \\(Auch möglich wenn: Peter den Wagen nicht gekauft hat)
+		\item Peter wird nicht bedauern (müssen), den Wagen gekauft zu haben \\(auch möglich, wenn Peter den Wagen nicht gekauft hat).
 				
 	\end{itemize}
 					
@@ -875,12 +872,14 @@ Logische Eigenschaften und Bedingungen für die Gültigkeit
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Implikatur}
+\subsubsection{Implikatur}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%\iftoggle{sectoc}{
+%	\begin{frame
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -899,7 +898,7 @@ Bedeutungsaspekte einer Äu\ss{}erung, die nicht explizit erwähnt wurden \ras N
 	\end{itemize}
 
 
-	\item Implikation \ras implizieren / folgern
+	\item Implikation \ras implizieren/folgern
 	\item Implikatur \ras implikatieren
 	\item[]
 	\item Konventionelle Implikaturen (umstritten)
@@ -989,7 +988,7 @@ Bedeutungsaspekte einer Äu\ss{}erung, die nicht explizit erwähnt wurden \ras N
 	\item[]
 	\item Nicht aufhebbar \ras ohne sich selbst zu widersprechen
 	\item[]
-	\item Ablösbar / abtrennbar
+	\item Ablösbar/abtrennbar
 	
 	\eal
 	\ex Sogar Maria ist schwanger.
@@ -1010,7 +1009,7 @@ Bedeutungsaspekte einer Äu\ss{}erung, die nicht explizit erwähnt wurden \ras N
 	\item Konventionelle Implikatur \ras konventionell mit einem Ausdruck verbunden
 	\item[]
 	\item Konversationelle Implikatur (+ $>$ ) \ras
-Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängigkeit vom Kontext) entstehen.
+Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängigkeit vom Kontext) entstehen
 
 \vspace{5mm}
 
@@ -1062,10 +1061,10 @@ Gestalte deinen Beitrag zur Konversation so, wie es dem Zweck und der Richtung d
 
 \begin{itemize}
 	\item \textbf{Maxime der Qualität}\\
-Versuche deinen Beitrag so zu machen, dass er wahr ist (sage nichts, was du für falsch hältst oder wofür du keine Anhaltspunkte hast).
+Versuche deinen Beitrag so zu gestalten, dass er wahr ist (sage nichts, was du für falsch hältst oder wofür du keine Anhaltspunkte hast).
 	\item[]
 	\item \textbf{Maxime der Quantität}\\
-Mache deinen Beitrag so informativ wie erforderlich (nicht mehr und nicht weniger Information als nötig).
+Gestalte deinen Beitrag so informativ wie erforderlich (nicht mehr und nicht weniger Information als nötig).
 	\item[]
 	\item \textbf{Maxime der Relevanz}\\
 Sage nur Relevantes.
@@ -1159,7 +1158,7 @@ Rede klar und unzweideutig, kurz und bündig, geordnet.
 
 \vspace{5mm}
 
-	\item Kontext: Empfehlungsschreiben für einen Kandidaten für einen Lehrstuhl der Philosophie.
+	\item Kontext: Empfehlungsschreiben für einen Kandidaten für einen Lehrstuhl der Philosophie
 
 	\ea Sehr geehrte Damen und Herren, Herr X spricht ein gutes Deutsch, seine Handschrift ist leserlich und sein Besuch der Übungen war regelmä\ss{}ig. Mit freundlichen Grü\ss{}en \dots
 	\z
@@ -1167,7 +1166,7 @@ Rede klar und unzweideutig, kurz und bündig, geordnet.
 	\item[] + $>$ Herr X eignet sich nicht für diese Position.
 
 	\begin{itemize}
-		\item Verletzung der Quantitäts und/ oder Relevanzmaxime
+		\item Verletzung der Quantitäts- und/oder Relevanzmaxime
 	\end{itemize}
 	
 \end{itemize}
@@ -1215,7 +1214,7 @@ Rede klar und unzweideutig, kurz und bündig, geordnet.
 \frametitle{Konversationelle Implikatur}
 
 \begin{itemize}
-	\item Konversationelle Implikaturen sind aufhebbar (vgl. konventionelle Implikatur)
+	\item Konversationelle Implikaturen sind aufhebbar (vgl. konventionelle Implikatur).
 	
 		\ea Einige sind zur Klausur zugelassen. Sogar alle sind zur Klausur zugelassen!
 		\z
@@ -1254,9 +1253,18 @@ Peter begegnet einem Menschen weiblichen Geschlechts.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Übungen}
+\subsection{Übungen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{uebung}{
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[shrink]
 \frametitle{Übungen}
@@ -1298,10 +1306,9 @@ Peter begegnet einem Menschen weiblichen Geschlechts.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	}
-%END Uebung
-%BEGIN Loesung
-%	{
+
+\iftoggle{ue-loesung}{
+	
 	\begin{frame}[shrink]
 	\frametitle{Lösungen}
 	
@@ -1362,4 +1369,7 @@ Gottfried hat einige Nachbarn beleidigt.
 
 \end{frame}
 
-} % if uebung
+}{
+%
+}
+

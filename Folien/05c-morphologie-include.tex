@@ -11,7 +11,7 @@
 
 \title{Grundkurs Linguistik}
 
-\subtitle{Morphologie III: Wortbildung II \& Flexion}
+\subtitle{Morphologie III: Wortbildung II}
 
 \author[A. Machicao y Priemer]{
 	{\small Antonio Machicao y Priemer}
@@ -39,13 +39,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage[22pt]
 \iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-	\frametitle{Inhaltsverzeichnis}\tableofcontents
-	%[pausesections]
-\end{multicols}
+	\frame{
+		\begin{multicols}{2}
+			\frametitle{Inhaltsverzeichnis}\tableofcontents
+			%[pausesections]
+		\end{multicols}
 	}
-	}
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,8 +115,8 @@
 \begin{frame}
 \frametitle{Begleitlektüre}
 
-\begin{itemize}
-	\item Derivation und andere Wortbildungsarten:
+%\begin{itemize}
+%	\item Derivation und andere Wortbildungsarten:
 
 	\begin{itemize}
 		\item \textbf{obligatorisch:}
@@ -126,17 +126,7 @@
 		
 	\end{itemize}
 
-	\item Flexion:
-
-	\begin{itemize}
-		\item \textbf{obligatorisch:}
-		\item[] \citet[51--53]{Abramowski2016a}
-		\item[] \citet[Kap. 8]{Luedeling2009a}		
-		
-		\item \textbf{optional:}
-		\item[] \citet[Kap. 2, S. 21--29]{Meibauer&Co07a}
-	\end{itemize}	
-\end{itemize}
+%\end{itemize}
 
 \end{frame}
 
@@ -145,10 +135,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Derivation}
 
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -443,7 +438,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Zirkumfixe}
+\subsubsection{Zirkumfixe}
 %\frame{
 %%\begin{multicols}{2}
 %\frametitle{~}
@@ -487,7 +482,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Zirkumfixe}
+\frametitle{Zirkumfixe}
 
 \begin{itemize}
 
@@ -546,7 +541,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Struktur}
+\subsubsection{Struktur}
 %\frame{
 %%\begin{multicols}{2}
 %\frametitle{~}
@@ -689,7 +684,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Suffixe und Präfixe}
+\frametitle{Projektion von Eigenschaften}
 
 \begin{itemize}
 \item Suffixe und Zirkumfixe (qua Köpfigkeit) bestimmen die \textbf{Kategorie des Derivats}, d.\,h. die Art von Stämmen, die sie bilden.
@@ -713,7 +708,15 @@
 \z 
 \z
 
-\pause 
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projektion von Eigenschaften}
+
+\begin{itemize}
 
 \item Nominale Suffixe und Zirkumfixe bestimmen das \textbf{Genus des Derivats}.
 
@@ -725,12 +728,12 @@
 \ex \textbf{-keit}: Tapfer $+$ -keit\MyPdown{f}
 \ex \textbf{-chen}: Häus $+$ -chen\MyPdown{n}
 \ex \textbf{-tum}: Brauch $+$ -tum\MyPdown{n}\\
-(aber: Reichtum\MyPdown{m})
+(aber: Reichtum\MyPdown{\alertred{m}})
 \end{exe}
 
 \columnbreak
 
-\begin{exe}	
+\begin{exe}
 \ex \textbf{-ian}: Grob $+$ -ian\MyPdown{m}
 \ex \textbf{-ling}: Lehr $+$ -ling\MyPdown{m}
 \ex \textbf{-bold}: Witz $+$ -bold\MyPdown{m}
@@ -780,7 +783,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Beschränkungen von Affixen}
+\subsubsection{Beschränkungen von Affixen}
 %\frame{
 %%\begin{multicols}{2}
 %\frametitle{~}
@@ -830,7 +833,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Beschränkungen der Basis}
+\frametitle{Beschränkungen von Affixen}
 
 \begin{itemize}
 \item \textbf{Phonologische Beschränkungen}
@@ -872,7 +875,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Beschränkungen der Basis}
+\frametitle{Beschränkungen von Affixen}
 
 
 \begin{itemize}
@@ -908,7 +911,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Beschränkungen der Basis}
+\frametitle{Beschränkungen von Affixen}
 
 \begin{itemize}
 \item \textbf{Semantisch-konzeptuelle Beschränkungen}
@@ -928,7 +931,16 @@
 
 \end{itemize}
 
-\pause
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Beschränkungen von Affixen}
+
+\begin{itemize}
 
 \item \textbf{Beschränkungen der Herkunft}
 
@@ -955,7 +967,7 @@ Diese Information muss im \textbf{Lexikoneintrag} sowohl von \textbf{Basen} als 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Bedeutung von Affixen}
+\subsubsection{Bedeutung von Affixen}
 %\frame{
 %%\begin{multicols}{2}
 %\frametitle{~}
@@ -996,7 +1008,7 @@ Diese Information muss im \textbf{Lexikoneintrag} sowohl von \textbf{Basen} als 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Bedeutung von Affixen}
+\frametitle{Bedeutung von Affixen}
 
 \begin{itemize}
 \item Viele Suffixe sind \textbf{ambig}. Die Untersuchung ihrer \textbf{Bedeutungsvarianten} ist Untersuchungsgegenstand der Morphologie-Semantik-Schnittstelle.
@@ -1059,7 +1071,7 @@ Wortbildungselemente, die von frei vorkommenden Stämmen \textbf{grammatikalisie
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Produktive und aktive Muster}
+\subsubsection{Produktive und aktive Muster}
 %\frame{
 %%\begin{multicols}{2}
 %\frametitle{~}
@@ -1092,7 +1104,7 @@ Eine Wortbildungsregel (oder ein Wortbildungsmuster) ist produktiv, wenn mit ihr
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Produktive und aktive Muster}
+\frametitle{Produktive und aktive Muster}
 
 \begin{block}{aktives Wortbildungsmuster}
 Ein Wortbildungmuster ist \textbf{aktiv}, wenn \textbf{keine neuen Wörter} nach dem Muster gebildet werden können (oder selten und dann stilistisch markiert), aber das Muster \textbf{erkannt} werden kann (\ref{ex:5cProd4}), d.\,h. das Muster ist \textbf{transparent}.
@@ -1114,13 +1126,17 @@ Ein Wortbildungmuster ist \textbf{aktiv}, wenn \textbf{keine neuen Wörter} nach
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Partikelverbbildung}
-\frame{
-\frametitle{~}
-%	\begin{multicols}{2}
-\tableofcontents[currentsection, hideallsubsections]
-%	\end{multicols}
+\subsection{Partikelverbbildung}
+
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -1160,7 +1176,7 @@ Ein Wortbildungmuster ist \textbf{aktiv}, wenn \textbf{keine neuen Wörter} nach
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Einführung}
+\frametitle{Partikelverbbildung}
 
 \begin{itemize}
 \item Die \textbf{produktiven Muster} zur Bildung komplexer Verben verwenden eher \textbf{Präfixe} (\ref{ex:5cPraV}) und \textbf{Partikeln} (\ref{ex:5cPartV}).
@@ -1182,22 +1198,22 @@ Partikel $+$ Verb \ras \textbf{Komposition}?
 
 \item In (\ref{ex:5cPartV}): Nomen$+$Verb, Adjektiv$+$Verb, Präposition$+$Verb
 
-\pause
-\medskip 
-
-\begin{block}{Partikelverbbildung}
-Wortbildungsprozess, bei dem -- anders als bei der Derivation -- zwei \textbf{frei vorkommenden Formen} (Morpheme oder komplexere Stämme) verbunden werden. Partikelverben sind \textbf{morphologisch} und \textbf{syntaktisch trennbar} -- anders als bei der Komposition \size{\citep[vgl.][]{Eins16g,Eisenberg00a}}. 
-\end{block}
-
-%@EE: Eins16g muss in die Bib für den GK kopiert werden
 \end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Partikelverbbildung}
+Wortbildungsprozess, bei dem -- anders als bei der Derivation -- zwei \textbf{frei vorkommenden Formen} (Morpheme oder komplexere Stämme) verbunden werden. Partikelverben sind \textbf{morphologisch} und \textbf{syntaktisch trennbar} -- anders als bei der Komposition \size{\citep[vgl.][]{Eins16g,Eisenberg00a}}. 
+\end{frame}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Partikelverb \vs Präfixverb}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Partikelverb \vs Präfixverb}
 %\frame{
 %	\frametitle{~}
 %	%	\begin{multicols}{2}
@@ -1244,7 +1260,7 @@ Partikelverben sind wie folgt von Präfixverben zu unterscheiden:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Simplex-, Präfix- und  Partikelverb}
+\subsubsection{Simplex-, Präfix- und  Partikelverb}
 %\frame{
 %	\frametitle{~}
 %	%	\begin{multicols}{2}
@@ -1283,13 +1299,17 @@ Partikelverben sind wie folgt von Präfixverben zu unterscheiden:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Konversion}
-\frame{
-\frametitle{~}
-%	\begin{multicols}{2}
-\tableofcontents[currentsection, hideallsubsections]
-%	\end{multicols}
+\subsection{Konversion}
+
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -1313,9 +1333,9 @@ Partikelverben sind wie folgt von Präfixverben zu unterscheiden:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-%\frametitle{Konversion}
+\frametitle{verschiedene Möglichkeiten der Umkategorisierung}
 
-Verschiedene Möglichkeiten der Umkategorisierung:
+%Verschiedene Möglichkeiten der Umkategorisierung:
 
 \medskip 
 
@@ -1338,9 +1358,9 @@ Verschiedene Möglichkeiten der Umkategorisierung:
 \ex \textbf{Partikel}\\
 \alertred{\MyPdown{Part}}nein \ras  (das)  \alertred{\MyPdown{N}}Nein
 
-\ex \textbf{syntaktischer Fügung}\\
-kein Wenn \& Aber\\
-das So-tun-als-ob
+%\ex \textbf{syntaktischer Fügung}\\
+%ohne Wenn \& Aber\\
+%das So-tun-als-ob
 \z
 
 \end{minipage}
@@ -1351,11 +1371,11 @@ das So-tun-als-ob
 \begin{minipage}[t][][t]{.51\textwidth}
 \textbf{Verbbildung} aus 
 
-\ea Adjektiv:\\
+\ea \textbf{Adjektiv}\\
 \alertred{\MyPdown{A}}grün \ras  \alertred{\MyPdown{V}}grün(en)\\ 
 \alertred{\MyPdown{A}}rot \ras  \alertred{\MyPdown{V}}röt(en)
 
-\ex Substantiv:\\
+\ex \textbf{Substantiv}\\
 \alertred{\MyPdown{N}}Öl \ras  \alertred{\MyPdown{V}}öl(en)
 \z
 
@@ -1369,7 +1389,7 @@ das So-tun-als-ob
 
 \ex \textbf{Verb/Partizip}\\
 \alertred{\MyPdown{V}}reizend \ras  \alertred{\MyPdown{A}}reizend(e) \\
-\alertred{\MyPdown{V}}ausgezeichnet \ras  \alertred{\MyPdown{A}}ausgezeichnet(e)
+\alertred{\MyPdown{V}}ausgezeichnet~\ra~\alertred{\MyPdown{A}}ausgezeichnet(e)
 \z
 
 %\item \textbf{ÜB.4}
@@ -1381,7 +1401,7 @@ das So-tun-als-ob
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Untertypen der Konversion}
+\subsubsection{Untertypen der Konversion}
 %\frame{
 %	\frametitle{~}
 %	%	\begin{multicols}{2}
@@ -1410,8 +1430,8 @@ Umkategorisierung eines \textbf{Stammes mit Flexionselementen}. In einigen Ansä
 \end{block}
 
 \eal 
-\ex \alertred{\MyPdown{V}}lauf(\alertred{-en}) \ras  (das) \alertred{\MyPdown{V}}Lauf\alertred{en} 
-\ex \alertred{\MyPdown{A}}arbeitslos(\alertred{-e})/(\alertred{-er}) \ras (der) \alertred{\MyPdown{N}}Arbeitslos\alertred{e}, (ein) \alertred{\MyPdown{N}}Arbeitslos\alertred{er}
+\ex \alertred{\MyPdown{V}}lauf(\alertred{-en}) \ras  (das) \alertred{\MyPdown{V}}Lauf\alertblue{en} 
+\ex \alertred{\MyPdown{A}}arbeitslos(\alertred{-e})/(\alertred{-er}) \ras (der) \alertred{\MyPdown{N}}Arbeitslos\alertblue{e}, (ein) \alertred{\MyPdown{N}}Arbeitslos\alertblue{er}
 %	\ex gefallen(-e) \ras der/die/das Gefallene, ein Gefallener
 \zl
 
@@ -1425,18 +1445,18 @@ Umkategorisierung eines \textbf{Stammes mit Flexionselementen}. In einigen Ansä
 \begin{itemize}
 \item Bei der Konversion werden \textbf{keine Affixe} für die Umkategorisierung verwendet.
 
-\item Bei der \textbf{impliziten Ableitung} (\ref{ex:5cImplDer}) handelt es ich um die Umkategorisierung eines Stammes mittels \textbf{Ablaut} (\zB\ \textipa{[I]} \ras \textipa{[U]}), aber ohne Affixe (wie in der \textbf{expliziten Ableitung} (\ref{ex:5cExplDer})).
+\item Bei der \textbf{impliziten Derivation} (\ref{ex:5cImplDer}) handelt es ich um die Umkategorisierung eines Stammes mittels \textbf{Ablaut} (\zB\ \textipa{[I]} \ras \textipa{[U]}), aber ohne Affixe (wie in der \textbf{expliziten Derivation} (\ref{ex:5cExplDer})).
 
 \ea \label{ex:5cImplDer}
-\ea \alertred{\MyPdown{V}}find(-en) \ras \alertred{\MyPdown{N}}F\alertred{u}nd
-\ex \alertred{\MyPdown{V}}greif(-en) \ras \alertred{\MyPdown{N}}Gr\alertred{i}ff
+\ea \alertred{\MyPdown{V}}find(-en) \ras \alertred{\MyPdown{N}}F\alertblue{u}nd
+\ex \alertred{\MyPdown{V}}greif(-en) \ras \alertred{\MyPdown{N}}Gr\alertblue{i}ff
 \z 
 \ex \label{ex:5cExplDer} \alertred{\MyPdown{V}}trink(-en) \ras \alertred{\MyPdown{A}}trink$+$bar	
 \z 
 
-\item Die Behandlung von impliziten Ableitungen als Konversionen ist jedoch \textbf{umstritten} (aufgrund der \emph{Veränderung} im Stamm). Bei der \textbf{Konversion im strengeren Sinne} soll es \textbf{keinerlei Veränderung} geben.
+\item Die Behandlung von impliziten Derivationen als Konversionen ist jedoch \textbf{umstritten} (aufgrund der \emph{Veränderung} im Stamm). Bei der \textbf{Konversion im strengeren Sinne} soll es \textbf{keinerlei Veränderung} geben.
 
-\item Die \textbf{implizite Ableitung} ist im Deutschen \textbf{nicht mehr produktiv}.
+\item Die \textbf{implizite Derivation} ist im Deutschen \textbf{nicht mehr produktiv}.
 \end{itemize}
 
 \end{frame}
@@ -1444,7 +1464,7 @@ Umkategorisierung eines \textbf{Stammes mit Flexionselementen}. In einigen Ansä
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Struktur der Konversion}
+\subsubsection{Struktur der Konversion}
 %\frame{
 %	\frametitle{~}
 %	%	\begin{multicols}{2}
@@ -1520,7 +1540,7 @@ sn edges,
 \end{minipage}	
 
 \begin{itemize}
-\item<2-> \textbf{Alternativ} wird \textbf{Konversion} \textbf{als explizite Ableitung} analysiert (vgl.\ Abb. \ref{fig:5cKonDer}), bei der ein \textbf{Nullmorphem}, d.\,h. ein phonetisch leeres Element ($\emptyset$), als Kopf der Derivation angenommen wird (aus anderen Gründen problematisch). 
+\item<2-> \textbf{Alternativ} wird \textbf{Konversion} \textbf{als explizite Ableitung} analysiert (s. rechts), bei der ein \textbf{Nullmorphem}, d.\,h. ein phonetisch leeres Element ($\emptyset$), als Kopf der Derivation angenommen wird (aus anderen Gründen problematisch). 
 
 \item<2-> \textbf{In diesem Kurs} behandeln wir Konversionen als \textbf{unäre Projektionen}.
 \end{itemize}
@@ -1530,13 +1550,17 @@ sn edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Exkurs: Andere Wortbildungsarten}
-\frame{
-\frametitle{~}
-%	\begin{multicols}{2}
-\tableofcontents[currentsection, hideallsubsections]
-%	\end{multicols}
+\subsection{Exkurs: Andere Wortbildungsarten}
+
+\iftoggle{sectoc}{
+	\frame{
+		%		\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%		\end{multicols}
+	}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -1596,7 +1620,7 @@ sn edges,
 \z
 
 
-\medskip
+%\medskip
 \pause 
 
 
@@ -1692,7 +1716,7 @@ Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter
 
 \textbf{Generifizierung:} Ausweitung auf Gattungsbezeichnung
 
-\ea Tempo (für \gq{Taschentücher}), Fit (für \gq{Spülmittel})%, OB
+\ea Tempo (für \gq{Taschentücher}), Edding (für \gq{Permanentmarker}),\\Zewa (für \gq{Küchenpapier}), TippEx (für \gq{Korrekturflüssigkeit})
 \z
 
 
@@ -1719,440 +1743,27 @@ Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Flexion}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Flexion}
-
-\begin{itemize}
-	\item Flexion \ras Bildung von Wortformen aus Stämmen
-	\item Sprachspezifisch und wortartspezifisch werden verschiedene morphosyntaktische Flexionskategorien markiert (per Flexionsmorphem oder z.\,B. per Stammabwandlung)
-	\item[]
-	\item \textbf{Synthetische} Wortform: Flexionsstamm $+$ Flexionsaffix
-	\item \textbf{Analytische} Wortformen: mehrere Elemente werden verwendet um eine Wortform abzubilden.
-	
-	\ea les $+$ (en) \ras las (Stammabwandlung per Ablaut)
-	\z
-	
-	\ea kauf $+$ (en) \ras kauf $+$ tet (Affigierung \ras  synthetische Form)
-	\z
-	
-	\ea verwend $+$ (en) \ras wird verwendet haben (analytische Form)
-	\z
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Flexion}
-
-\begin{itemize}
-	\item Flexionsstämme können selbst morphologisch komplex sein (ver$+$wend(en)).
-	\item Ein morphologisch nicht komplexer Stamm heißt \gqq{Wurzel} (kauf(en)).
-	\item[] 
-	\item Bei der Flexion wird unterschieden zwischen:
-	
-	\begin{itemize}
-		\item der \textbf{Deklination} von Nomina und anderer nominaler Kategorien (wozu auch Adjektive, Pronomina und Artikel gehören)
-		\item[]
-		\item der \textbf{Konjugation} von Verben 
-		\item[]
-		\item Ob die \textbf{Komparation} von Adjektiven -- mit den Kategorien Positiv, Komparativ und Superlativ -- zur Flexion oder zur Wortbildung gehört, ist umstritten.
-	\end{itemize}
-	
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Flexion}
-
-\begin{itemize}
-	\item Die nicht-flektierbaren Wortarten sind:
-	
-	\begin{itemize}
-		\item[]
-		\item Adverbien
-		\item[]
-		\item Partikeln
-		\item[]
-		\item Präpositionen
-		\item[]
-		\item Konjunktionen
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Deklination}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Deklination}
-
-\begin{itemize}
-	\item Deklination umfasst die Bildung von Wortformen bei nominalen Kategorien.
-	\item[]
-	\item \textbf{Substantive} deklinieren nach:
-	
-	\begin{itemize}
-		\item[]
-		\item \textbf{Numerus:} Singular, Plural
-		\item[]
-		\item \textbf{Kasus:} Nominativ, Genitiv, Dativ, Akkusativ
-		\item[]
-		\item Substantive haben ein \textbf{inhärentes Genus}, d.\,h. sie flektieren nicht nach Genus. Die \textbf{Stärke} bei Nomina ist auch inhärent.
-	\end{itemize}
-	
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Deklination}
-
-\begin{itemize}
-	\item Beispiel:
-	
-	\begin{itemize}
-		\item \textbf{Stark:} Maskulina und Neutra mit Nullendung im Nominativ und s-Genitiv
-		
-		\ea Tisch, Fenster
-		\z
-		
-		\item \textbf{Schwach:} Maskulina au\ss{}er im Nominativ stets mit -(e)n
-		
-		\ea Held, Nachbar
-		\z
-		
-		\item \textbf{Gemischt:} Maskulina und Neutra stark im Singular, schwach im Plural
-		
-		\ea Staat, Ende
-		\z
-		
-		\item \textbf{Unveränderliche} Feminina: endungslos im Singular und mit konsequenter Markierung im Plural
-		
-		\ea Frau, Hand, Katze, Nadel
-		\z
-		
-	\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Deklination}
-
-\begin{itemize}
-	\item \textbf{Paradigma:}\\
-	Die Gesamtheit der Flexionsformen eines Wortes (egal welcher Wortart) bilden sein Flexionsparadigma.
-\end{itemize}
-
-\begin{table}
-\centering
-
-\begin{tabular}{p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}}
-& \textbf{Nom} & \textbf{Akk} & \textbf{Dat} & \textbf{Gen}\\
-\hline
-\textbf{Singular} & Tisch & Tisch & Tisch(e) & Tisches\\
-\hline
-\textbf{Plural} & Tische & Tische & Tischen & Tische\\
-
-\end{tabular}
-
-\end{table}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Deklination}
-
-\begin{itemize}
-	\item \textbf{Adjektive} deklinieren nach:
-	
-	\begin{itemize}
-		\item[]
-		\item \textbf{Numerus:} Singular, Plural
-		\item []
-		\item \textbf{Kasus:} Nominativ, Genitiv, Dativ, Akkusativ
-		\item[]
-		\item \textbf{Genus:} Maskulinum, Femininum, Neutrum
-		\item[]
-		\item \textbf{Stärke:} stark, schwach, gemischt (ob starke oder schwache Flexionsendungen beim Adjektiv verwendet werden, hängt vom Artikel ab)
-		\item[]
-		\item \textbf{Grad:} positiv (schön), komparativ (schöner), superlativ (am schönsten); ob Adjektive nach Grad flektieren, ist umstritten.
-	\end{itemize}
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Deklination}
-
-\begin{itemize}
-	\item Beispiel Stärke
-	
-	\begin{itemize}
-		\item \textbf{Stark:} ohne Artikel
-		
-		\ea schön\underline{es} Wetter, schön\underline{er} Tag, schön\underline{e} Frau
-		\z
-		
-		\item \textbf{Schwach:} nach bestimmten Artikeln oder einer entsprechend deklinierten Einheit
-		
-		\ea das gut\underline{e} Kind, dieser schön\underline{e} Tag, jede schön\underline{e} Frau
-		\z
-		
-		\item \textbf{Gemischt:} nach unbestimmten Artikeln oder einer entsprechend deklinierten Einheit
-		
-		\ea ein gut\underline{es} Kind, ein schön\underline{er} Tag, keine schön\underline{e} Frau
-		\z
-		
-	\end{itemize}
-	
-\end{itemize}
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Deklination}
-
-\begin{itemize}
-	\item Im Deutschen wirken zur Flexionsanzeige Artikel, Adjektiv und Substantiv zusammen (= Wortgruppenflexion), da Artikel und Adjektiv mit dem Nomen in Numerus, Kasus und Genus \textbf{kongruieren} müssen, d.h. sie müssen die gleichen Numerus-, Kasus-, und Genusmerkmale aufweisen.
-	
-	\eal 
-	\ex ein schöner Hund -- schöne Hunde -- des schönen Hundes
-	\ex ein schlaues Buch -- schlaue Bücher -- des schlauen Buches
-	\zl
-	
-	\item U.\,U. wird nur an einem Element Kasus und Numerus der gesamten Phrase ersichtlich:
-	
-	\eal 
-	\ex Der dicke Balken muss ersetzt werden.
-	\ex Der Architekt ordnete den Ersatz der dicken Balken an.
-	\zl
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Konjugation}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Konjugation}
-
-\begin{itemize}
-	\item Bei der \textbf{Verbflexion} spricht man von \textbf{Konjugation}.
-	\item[]
-	\item Zunächst unterscheidet man zwischen \textbf{finiten und infiniten} Verbformen.
-	\item[]
-	\item \textbf{Infinite} Verbformen sind unveränderlich, d.h. egal in welchem Kontext sie stehen, sehen sie immer gleich aus.
-	\item[]
-	\item Dazu gehören: Infinitiv, Partizip I, Partizip II
-	
-	\ea essen, essend, gegessen
-	\z
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Konjugation}
-
-\begin{itemize}
-	\item Finite Verbformen sind veränderlich. Sie verändern ihre Form nach: 
-	
-	\begin{itemize}
-		\item[]
-		\item \textbf{Person:} 1.,2.,3.
-		\item[]
-		\item \textbf{Numerus:} Singular, Plural
-		\item[]
-		\item \textbf{Modus:} Indikativ, Konjunktiv, Imperativ
-		\item[]
-		\item \textbf{Tempus:} Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I/ II
-		\item[]
-		\item \textbf{Genus verbi:} Aktiv, Passiv
-	\end{itemize}
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Konjugation}
-
-\begin{itemize}
-	\item Beispiel Stärke:
-	
-	\begin{itemize}
-		\item[]
-		\item \textbf{Starke} Konjugation: Vokalwechsel, Ablaut
-		
-		\ea essen, aß, gegessen/ rufen, rief, gerufen
-		\z
-		
-		\item \textbf{Schwache} Konjugation: immer mit -te im Präteritum, im mit -t im Partizip Perfekt
-		
-		\ea kaufen, kaufte, gekauft/ arbeiten, arbeitete, gearbeitet
-		\z
-		
-		\item \textbf{Gemischte} Konjugation: Vokalwechsel, immer mit -te im Präteritum, immer mit -t im Partizip Perfekt
-		
-		\ea wissen, wusste, gewusst/ kennen, kannte, gekannt
-		\z
-		
-	\end{itemize}
-	
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Konjugation}
-
-\begin{itemize}
-	\item Es gibt verschiedene Mittel, die Flexion bei Verben anzuzeigen. 
-	
-	\begin{itemize}
-	\item[]
-	\item \textbf{Flexionsaffixe} (\textit{nehm -- nehmt}) 
-	\item[]
-	\item \textbf{Ablautbildung} (fahr -- fuhr) mit anschließender \textbf{Umlautbildung} (führest) 
-	\item[]
-	\item Änderungen am \textbf{Konsonanten} im Stamm (\textit{bringen -- gebracht})
-	\item[]
-	\item \textbf{analytische} Mittel (Kombination mehrerer Wörter: ist abgeholt) 
-	\item[]
-	\item Oft werden diese Mittel miteinander kombiniert\\
-	(s. gebracht: Zirkumfix \ab{ge-{\dots}-t} $+$ Ablautbildung \ab{ie \ras a} $+$ Konsonantenänderung \\ab{ng \ras ch})
-	\end{itemize}
-
-\end{itemize}
-
-
-\end{frame}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Konjugation}
-
-\begin{itemize}
-	\item Von \textbf{Suppletion} spricht man, wenn bei bestimmten grammatischen Merkmalen ein völlig anderer Stamm benutzt wird:
-	
-\vspace{1em}
-	
-	\ea sein -- bist -- war
-	\z
-	
-	\ea gut -- besser -- am besten
-	\z
-	
-%\vspace{6em}	
-	
-%	\item \textbf{ÜB 5, 6 \& 7}
-	
-\end{itemize}
-
-
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hausaufgabe}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
+%
+%\iftoggle{sectoc}{
+%	\frame{
+%		%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		%		\end{multicols}
+%	}
 %}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% @ee	Muss irgendiwe aufgeteilt werden auf 05c und 05d
+%%			Aufg. 9 muss auf jeden Fall nach 05d
+
 \begin{frame}
-\frametitle{Hausaufgaben}
+\frametitle{Hausaufgabe}
 
 
 \begin{enumerate}
@@ -2179,7 +1790,7 @@ Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Hausaufgaben}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
 \item[3.] Geben Sie Argumente für oder gegen die Behandlung von \emph{ver-} in den folgenden Wörtern als Morphem an. Wenn es sich um ein Morphem handelt, ist das immer das gleiche Morphem? %(4 Punkte)
@@ -2198,7 +1809,7 @@ Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Hausaufgaben}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
 \item[4.] Ordnen Sie die Wortbildungsprozesse links den passenden Beispielen rechts zu (dazu müssen Sie nur den entsprechenden Buchstaben neben das passende Beispiel schreiben). %(0,5 Punkte pro Aussage)
@@ -2240,10 +1851,10 @@ Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Hausaufgaben}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
-\item[5.] Warum sind die Wörter unter \ref{05cHA5a} grammatisch und die unter \ref{05cHA5b} ungrammatisch? %(4 Punkte)
+\item[5.] Warum sind die Wörter unter \ref{ex:05cHA5a} grammatisch und die unter \ref{ex:05cHA5b} ungrammatisch? %(4 Punkte)
 \eal\label{ex:05cHA5}
 \ex\label{ex:05cHA5a} kaufbar, trinkbar
 \ex\label{ex:05cHA5b} *fensterbar, *helfbar, *schönbar
@@ -2270,7 +1881,7 @@ Wahlkampfberaterinnen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Hausaufgaben}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
 
@@ -2290,7 +1901,7 @@ Wahlkampfberaterinnen
 
 
 \begin{frame}
-\frametitle{Hausaufgaben}
+\frametitle{Hausaufgabe}
 
 \begin{itemize}
 

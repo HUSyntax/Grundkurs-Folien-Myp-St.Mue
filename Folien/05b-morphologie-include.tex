@@ -541,10 +541,8 @@ sm edges,
 		
 		\ea verholz(-en), befreund(-en), beruhig(-en), Wasserablauf
 		\z
-		
-%	\item[] \textbf{ÜB.2}
-\end{itemize}
 
+\end{itemize}
 
 %\begin{block}{Righthand Head Rule}
 %	die \textbf{am weitesten rechts stehende Konstituente} in einem \textbf{Wortbildungsprozess} ist der Kopf.
@@ -705,6 +703,82 @@ sm edges,
 \end{block}	
 
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Übung}
+	
+	\begin{itemize}
+		\item Geben Sie die Konstituentenstrukturen der Wörter unter (\ref{ex:5bUE1}) an und bestimmen Sie die Kategorien an den Knoten.
+		
+		\eal\label{ex:5bUE1} 
+		\ex Landkartensammlung
+		\ex kaufbar
+		\ex Grünzeug
+		\ex nichtraucherfreundlich
+		\zl
+	\end{itemize}
+	
+\end{frame}
+
+\iftoggle{ue-loesung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Übung -- Lösung}
+	
+\scalebox{.8}{
+\begin{forest}
+[N
+	[N
+		[N [land]]
+		[N [karten]]
+	]
+	[N
+		[V [samm(e)l]]
+		[N\MyPup{af} [-ung]]
+	]
+]
+\end{forest}
+}
+%%%%%%%%%%%%	
+%\scalebox{.8}{
+\begin{forest}
+[A
+	[V [kauf]]
+	[A\MyPup{af} [-bar]]
+]
+\end{forest}
+%}
+%%%%%%%%%%%%	
+%\scalebox{.8}{
+	\begin{forest}
+[N
+	[A [grün]]
+	[N [zeug]]
+]
+	\end{forest}
+%}
+%%%%%%%%%%%%	
+\scalebox{.8}{
+	\begin{forest}
+[A
+	[N
+		[Adv [nicht]]
+		[N
+			[V [rauch]]
+			[N\MyPup{af} [-er]]
+		]
+	]
+	[A
+		[N [freund]]
+		[A\MyPup{af} [-lich]]
+	]
+]
+	\end{forest}
+}
+\end{frame}
+}%% END ue-loesung
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1049,8 +1123,6 @@ sm edges,
 		
 	\end{itemize}
 
-%	\item[] \textbf{ÜB.3}
-
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -1058,38 +1130,82 @@ sm edges,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Fugenelemente}
+	\frametitle{Übung}
+	
+	\begin{itemize}
+		\item Welche Flexionsendungen könnten den folgenden Fugenelementen historisch zugrunde gelegen haben? Wo funktioniert diese Verknüpfung, wo gibt es Probleme?
+	
+	\begin{multicols}{2}
+		\eal
+		\ex Herzensangelegenheit
+		\ex Häuserfront
+		\ex Staatengemeinschaft
+		\ex Liebesbrief
+		\ex Scheibenwischer
+\columnbreak
+		\ex Freundeskreis
+		\ex Landesministerium
+		\ex Hühnerei
+		\ex Lieblingsgetränk
+		\ex Bischofskonferenz
+		\zl
+	\end{multicols}
+
+\end{itemize}
+\end{frame}
+
+
+\iftoggle{ue-loesung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Übung -- Lösung}
 
 \begin{itemize}
-	\item Die Flexionsendungen, die historisch zugrunde gelegen haben könnten, sind:
+	\item Flexionsendungen, die historisch zugrunde gelegen haben könnten:
 	
-		\settowidth\jamwidth{[Xvorangestellte Genitivattribute]} 
-		\ea Herz\alertred{ens}$+$angelegenheit, Land\alertred{es}$+$ministerium
+	\begin{itemize}
+		\settowidth\jamwidth{[vorangestellte Genitivattribute]}
+		
+		\item Herz\alertred{ens}$+$angelegenheit, Land\alertred{es}$+$ministerium
 		\jambox{[vorangestellte Genitivattribute]}
 
-		\ex Häus\alertred{er}$+$front, Staat\alertred{en}$+$gemeinschaft
+		\item Häus\alertred{er}$+$front, Staat\alertred{en}$+$gemeinschaft
 		\jambox{[Plural]}
-		\z 
+	\end{itemize}
 
 \pause 
 	
-	\item Es gibt jedoch zahlreiche \textbf{Gegenbeispiele}:
+	\item Probleme gibt es jedoch \dots
 	
 	\settowidth\jamwidth{[keine Genitivalternation bei Fuge]} 
-	\eal 
-		\ex Liebling\alertred{s}getränk \jambox{[semantisch falscher Genitiv]}
-		\ex Lieb\alertred{es}brief \jambox{[formal falscher Genitiv]}
-		\ex Hühn\alertred{er}ei, Scheib\alertred{en}wischer \jambox{[semantisch falscher Plural]}
-		\ex Freund\alertred{es}kreis, Bischof\alertred{s}konferenz \jambox{[semantisch falscher Singular]}
-		\ex Ende des Jahr\alertblue{es}/Jahr\alertblue{s} \jambox{[Genitivalternation]}
+	
+		\dots\ formal:
 		
-		\vs Jahr\alertred{es}zahl/*Jahr\alertred{s}zahl \jambox{[keine Genitivalternation bei Fuge]} 
-	\zl
-		 
+		\begin{itemize}
+		\item Lieb\alertred{es}brief \jambox{[formal falscher Genitiv]}
+		
+		\end{itemize}
+		\dots\ semantisch:
+		
+		\begin{itemize}
+		\item Liebling\alertred{s}getränk \jambox{[semantisch falscher Genitiv]}
+		
+		\item Hühn\alertred{er}ei, Scheib\alertred{en}wischer \jambox{[semantisch falscher Plural]}
+	
+		\item Freund\alertred{es}kreis, Bischof\alertred{s}konferenz \jambox{[semantisch falscher Singular]}
+		
+		\end{itemize}
+		\dots\ bei alternierenden Formen:
+		
+		\begin{itemize}
+		\item Ende des Jahr\alertblue{es}/Jahr\alertblue{s} \jambox{[Genitivalternation]}	
+		
+			\vs Jahr\alertred{es}zahl/*Jahr\alertred{s}zahl \jambox{[keine Genitivalternation bei Fuge]}
+\end{itemize}
 \end{itemize}
 
 \end{frame}
-
+}%% END ue-loesung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -1098,7 +1214,7 @@ sm edges,
 \begin{itemize}
 	\item Wortart des Erstglieds, Laut-, Silben- oder Wortbildungsstruktur 
 	
-	\item Es ist nicht möglich Fugenelemente 100\%ig vorherzusagen \citep[vgl.][]{Fuhrhop96a}.
+	\item Es ist nicht möglich, Fugenelemente 100\%ig vorherzusagen \citep[vgl.][]{Fuhrhop96a}.
 
 \pause
 	
@@ -1559,11 +1675,79 @@ Es ist nicht immer klar, wie genau die Bedeutungsbeziehung zwischen Erst- und Zw
 		\z 
 	\z
 
-%Üb4
 		 
 \end{itemize}
 
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Übung}
+	
+	\begin{itemize}
+		\item In welchen der folgenden Beispiele liegen Rektionskomposita vor?
+		
+		\ea\label{ex:05bUE3.1}
+			\ea Zigarrenraucher
+			\ex Gelegenheitsraucher
+			\ex Kettenraucher
+			\z
+		\ex\label{ex:05bUE3.2}
+			\ea Hochschullehrer
+			\ex Mathematiklehrer
+			\z
+		\ex\label{ex:05bUE3.3}
+			\ea hitzefrei
+			\ex kugelsicher
+			\z
+		\ex\label{ex:05bUE3.4}
+			\ea WDR-Kritiker
+			\z
+		\z
+	\end{itemize}
+	
+	
+\end{frame}
+
+\iftoggle{ue-loesung}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Übung -- Lösung}
+	
+\settowidth\jamwidth{zwei Lesarten: Rektionskompositum und kein}
+	
+\begin{itemize}
+	\item In welchen der folgenden Beispiele liegen Rektionskomposita vor?
+		
+	\begin{exe}
+		\exr{ex:05bUE3.1}
+		\begin{xlist}
+			\ex Zigarrenraucher \loesung{2}{Rektionskompositum}
+			\ex Gelegenheitsraucher \loesung{3}{kein Rektionskompositum}
+			\ex Kettenraucher \loesung{4}{kein Rektionskompositum}
+		\end{xlist}
+		\exr{ex:05bUE3.2}
+		\begin{xlist}
+			\ex Hochschullehrer \loesung{5}{kein Rektionskompositum}
+			\ex Mathematiklehrer \loesung{6}{Rektionskompositum}
+		\end{xlist}
+		\exr{ex:05bUE3.3}
+		\begin{xlist}
+			\ex hitzefrei \loesung{7}{kein Rektionskompositum}
+			\ex kugelsicher \loesung{8}{Rektionskompositum}
+		\end{xlist}
+		\exr{ex:05bUE3.4}
+		\begin{xlist}
+			\ex WDR-Kritiker \loesung{9}{zwei Lesarten: Rektionskompositum}
+			\loesung{9}{und kein Rektionskompositum}
+		\end{xlist}
+	\end{exe}
+
+\end{itemize}
+	
+\end{frame}
+}%% END ue-loesung
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2040,274 +2224,274 @@ Welche Konstituente trägt die Hauptbetonung in den folgenden Wörtern?
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Exkurs: Andere Wortbildungsarten}
+%
+%\iftoggle{sectoc}{
+%	\frame{
+%		%		\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		%		\end{multicols}
+%	}
+%}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Exkurs: Andere Wortbildungsarten}
-
-\iftoggle{sectoc}{
-	\frame{
-		%		\begin{multicols}{2}
-		\frametitle{~}
-		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
-		%		\end{multicols}
-	}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-	\item \textbf{Kontamination} (Wortverschmelzung, -kreuzung, Amalgamierung):
-
-	Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter (oder beider) gelöscht wird.
-		
-	\ea Infotainment, Bioghurt, mainzigartig, Eurasien
-	\z
-	
-	\item \textbf{Generifizierung}: Ausweitung auf Gattungsbezeichnung
-	
-	\ea Tempo (Taschentuch), Fit
-	\z
-	
-	\item \textbf{Analogie}: Bildung eines neuen Wortes durch Ersetzung eines Morphems eines komplexen Wortes durch ein anderes, kontextuell passenderes
-	
-	\ea e-card (von e-mail), slow food (von fast food)
-	\z
-	
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Kurzwortbildung}
-
-\begin{itemize}
-	\item phonetisch ungebunden (\textbf{Abkürzung}):
-	
-	\ea ARD, EU, CIA
-	\z
-	
-	\item phonetisch gebunden (\textbf{Akronym}):
-	
-	\ea DAX, PIN, UFO
-	\z
-
-	\item Weitere Kurzwörter: Wortmaterial am Wortanfang oder -ende wird getilgt.
-	
-	\ea Kripo, Bus, Auto, bi, öko, Schum\alertred{i}, Alk\alertred{i}
-	\z
-	
-\end{itemize}
-
-
-\item \textbf{Wortschöpfung}
-
-\ea Vileda (wie Leder), Iglo, Haribo (Hans Riegel Bonn)
-\z
-
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Rückbildung} (Reanalyse): Umdrehen einer Wortbildungsregel
-
-\begin{itemize}
-\item im Deutschen typisch bei Verben: Ableitung komplexer Verben aus komplexen Substantiven, deren Zweitglied von einem Verb stammt.
-%\item Rückbildung \ras Kürzung?
-\item Verb als Produkt: 
-
-\begin{itemize}
-	\item häufig nur in finaler Satzposition verwendbar
-	
-	\item mit problematischer Verbzweitstellung
-	
-	\item Paradigma manchmal nicht vollständig
-\end{itemize}
-
-\ea bergsteigen, schleichwerben, farbkopieren, mähdreschen
-\z
-
-\item Selten auch bei der Herleitung von Substantiven oder Adjektiven zu finden:
-
-\ea Unsympath
-\z
-
-\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Fremdwortbildung:} Bildung von Wörter nach dem Muster einer Fremdsprache 
-
-	\begin{itemize}
-		\item Diese Wörter gibt es in der Ursprungssprache nicht \\
-		oder nicht mit dieser Bedeutung (vgl. (\ref{ex:M5bFWB1})).
-		
-		\item Produktiv auch mit sog. Konfixen (vgl. (\ref{ex:M5bFWB2}))
-	\end{itemize}
-
-\ea\label{ex:M5bFWB1} Handy, Wellness, Beamer
-
-\ex\label{ex:M5bFWB2} Thermohose, Schokaholic
-\z
-
-
-\item \textbf{Reduplikation}
-
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
 %\begin{itemize}
-%	\item 
-	
-	\settowidth\jamwidth{XX[komplette Dopplung]} 
-	\ea Blabla, Wauwau \jambox{[komplette Dopplung]}
-	\z
-	
-%	\item :
-	
-	\ea Larifari, Hokuspokus \jambox{[Reimdopplung]}
-	\z
-	
-%	\item :
-	
-	\ea Wirrwarr, Wischiwaschi, Singsang  \jambox{[Ablautdopplung]}
-	\z
-	
+%	\item \textbf{Kontamination} (Wortverschmelzung, -kreuzung, Amalgamierung):
+%
+%	Verschmelzung zweier Wörter, so dass Wortmaterial aus einem der Originalwörter (oder beider) gelöscht wird.
+%		
+%	\ea Infotainment, Bioghurt, mainzigartig, Eurasien
+%	\z
+%	
+%	\item \textbf{Generifizierung}: Ausweitung auf Gattungsbezeichnung
+%	
+%	\ea Tempo (Taschentuch), Fit
+%	\z
+%	
+%	\item \textbf{Analogie}: Bildung eines neuen Wortes durch Ersetzung eines Morphems eines komplexen Wortes durch ein anderes, kontextuell passenderes
+%	
+%	\ea e-card (von e-mail), slow food (von fast food)
+%	\z
+%	
 %\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
+%
+%\end{frame}
+%
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Zusammenrückung:}
-
-\begin{itemize}
-\item aus syntaktischen Phrasen hervorgegangen
-\item Wortfolge und Flexionsmarkierungen werden beibehalten
-
-\ea Möchte+gern, in+folge, wasser+triefend
-\z
-
-\end{itemize}
-
-\item \textbf{Zusammenbildung:}
-
-\begin{itemize}
-\item Dreigliedrig: weder die ersten beiden noch die letzten beiden Glieder kommen frei vor.
-\item Sie werden manchmal als Derivation mit einem nicht lexikalischen ersten Teil analysiert.
-
-\ea Schrift+stell+er, Alt+sprach+ler
-\ex 
-	\ea[?]{ {[}V schriftstell-{]} + {[}-er{]} }
-	
-	\vs 
-	
-	\ex[?]{ {[}N Schrift-{]} + {[}N -steller{]}}
-	\z 
-\z
-
-\end{itemize}
-\end{itemize}
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Komposition}
-
-\begin{itemize}
-\item Bildung einer komplexen Form, in der zwei (oder mehr) freie Morpheme auftreten
-
-\ea Edelmut, Baukran, Geisteswissenschaft, süßsauer
-\z
-
-\end{itemize}
-
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Derivation}
-
-\begin{itemize}
-\item Bildung einer komplexen Form, meist mittels Derivationsaffixen, die dem Stamm vorausgehen oder ihm folgen können
-
-\ea Ableit + ung, ver + schlaf-, Un + mensch
-\z
-
-\item Explizite / äußere Derivation: mittels abtrennbarer Affixe
-
-\ea (Grab + ung).
-\z
-
-\item Implizite / innere Derivation: ohne klar abtrennbare Affixe
-
-\ea trink- \vs Trank
-\z
-
-\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Exkurs: Andere Wortbildungsarten}
-
-\begin{itemize}
-\item \textbf{Konversion:}
-
-\begin{itemize}
-\item Umsetzung eines Stammes in eine andere Kategorie
-\item ohne zusätzliches Morphem oder sonstige Veränderungen
-\item Konversion \ras Derivation? (Derivation mit einem Nullmorphem)
-
-\eal 
-\ex Nomen Dank \vs Verb dank-
-\ex das Blau
-\ex die Betrunkene
-\zl
-
-\end{itemize}
-
-%\item[] \textbf{ÜB.1}
-\end{itemize}
-
-
-\end{frame}
-
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Kurzwortbildung}
+%
+%\begin{itemize}
+%	\item phonetisch ungebunden (\textbf{Abkürzung}):
+%	
+%	\ea ARD, EU, CIA
+%	\z
+%	
+%	\item phonetisch gebunden (\textbf{Akronym}):
+%	
+%	\ea DAX, PIN, UFO
+%	\z
+%
+%	\item Weitere Kurzwörter: Wortmaterial am Wortanfang oder -ende wird getilgt.
+%	
+%	\ea Kripo, Bus, Auto, bi, öko, Schum\alertred{i}, Alk\alertred{i}
+%	\z
+%	
+%\end{itemize}
+%
+%
+%\item \textbf{Wortschöpfung}
+%
+%\ea Vileda (wie Leder), Iglo, Haribo (Hans Riegel Bonn)
+%\z
+%
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Rückbildung} (Reanalyse): Umdrehen einer Wortbildungsregel
+%
+%\begin{itemize}
+%\item im Deutschen typisch bei Verben: Ableitung komplexer Verben aus komplexen Substantiven, deren Zweitglied von einem Verb stammt.
+%%\item Rückbildung \ras Kürzung?
+%\item Verb als Produkt: 
+%
+%\begin{itemize}
+%	\item häufig nur in finaler Satzposition verwendbar
+%	
+%	\item mit problematischer Verbzweitstellung
+%	
+%	\item Paradigma manchmal nicht vollständig
+%\end{itemize}
+%
+%\ea bergsteigen, schleichwerben, farbkopieren, mähdreschen
+%\z
+%
+%\item Selten auch bei der Herleitung von Substantiven oder Adjektiven zu finden:
+%
+%\ea Unsympath
+%\z
+%
+%\end{itemize}
+%\end{itemize}
+%
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Fremdwortbildung:} Bildung von Wörter nach dem Muster einer Fremdsprache 
+%
+%	\begin{itemize}
+%		\item Diese Wörter gibt es in der Ursprungssprache nicht \\
+%		oder nicht mit dieser Bedeutung (vgl. (\ref{ex:M5bFWB1})).
+%		
+%		\item Produktiv auch mit sog. Konfixen (vgl. (\ref{ex:M5bFWB2}))
+%	\end{itemize}
+%
+%\ea\label{ex:M5bFWB1} Handy, Wellness, Beamer
+%
+%\ex\label{ex:M5bFWB2} Thermohose, Schokaholic
+%\z
+%
+%
+%\item \textbf{Reduplikation}
+%
+%%\begin{itemize}
+%%	\item 
+%	
+%	\settowidth\jamwidth{XX[komplette Dopplung]} 
+%	\ea Blabla, Wauwau \jambox{[komplette Dopplung]}
+%	\z
+%	
+%%	\item :
+%	
+%	\ea Larifari, Hokuspokus \jambox{[Reimdopplung]}
+%	\z
+%	
+%%	\item :
+%	
+%	\ea Wirrwarr, Wischiwaschi, Singsang  \jambox{[Ablautdopplung]}
+%	\z
+%	
+%%\end{itemize}
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Zusammenrückung:}
+%
+%\begin{itemize}
+%\item aus syntaktischen Phrasen hervorgegangen
+%\item Wortfolge und Flexionsmarkierungen werden beibehalten
+%
+%\ea Möchte+gern, in+folge, wasser+triefend
+%\z
+%
+%\end{itemize}
+%
+%\item \textbf{Zusammenbildung:}
+%
+%\begin{itemize}
+%\item Dreigliedrig: weder die ersten beiden noch die letzten beiden Glieder kommen frei vor.
+%\item Sie werden manchmal als Derivation mit einem nicht lexikalischen ersten Teil analysiert.
+%
+%\ea Schrift+stell+er, Alt+sprach+ler
+%\ex 
+%	\ea[?]{ {[}V schriftstell-{]} + {[}-er{]} }
+%	
+%	\vs 
+%	
+%	\ex[?]{ {[}N Schrift-{]} + {[}N -steller{]}}
+%	\z 
+%\z
+%
+%\end{itemize}
+%\end{itemize}
+%
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Komposition}
+%
+%\begin{itemize}
+%\item Bildung einer komplexen Form, in der zwei (oder mehr) freie Morpheme auftreten
+%
+%\ea Edelmut, Baukran, Geisteswissenschaft, süßsauer
+%\z
+%
+%\end{itemize}
+%
+%\end{itemize}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Derivation}
+%
+%\begin{itemize}
+%\item Bildung einer komplexen Form, meist mittels Derivationsaffixen, die dem Stamm vorausgehen oder ihm folgen können
+%
+%\ea Ableit + ung, ver + schlaf-, Un + mensch
+%\z
+%
+%\item Explizite / äußere Derivation: mittels abtrennbarer Affixe
+%
+%\ea (Grab + ung).
+%\z
+%
+%\item Implizite / innere Derivation: ohne klar abtrennbare Affixe
+%
+%\ea trink- \vs Trank
+%\z
+%
+%\end{itemize}
+%\end{itemize}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Exkurs: Andere Wortbildungsarten}
+%
+%\begin{itemize}
+%\item \textbf{Konversion:}
+%
+%\begin{itemize}
+%\item Umsetzung eines Stammes in eine andere Kategorie
+%\item ohne zusätzliches Morphem oder sonstige Veränderungen
+%\item Konversion \ras Derivation? (Derivation mit einem Nullmorphem)
+%
+%\eal 
+%\ex Nomen Dank \vs Verb dank-
+%\ex das Blau
+%\ex die Betrunkene
+%\zl
+%
+%\end{itemize}
+%
+%%\item[] \textbf{ÜB.1}
+%\end{itemize}
+%
+%
+%\end{frame}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Elektronische Quellen}
@@ -2371,5 +2555,5 @@ Welche Konstituente trägt die Hauptbetonung in den folgenden Wörtern?
 %
 %
 %\end{frame}
-
+%
 

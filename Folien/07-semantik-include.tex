@@ -959,34 +959,17 @@ Ein Ausdruck $X$ und ein Ausdruck $Y$ sind gleich in deren Form (phonetische und
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \iftoggle{ue-loesung}{
 	
-	\begin{frame}
-\frametitle{Relationen -- Lösung}
-
-\begin{itemize}
-	\item Bestimmen Sie die Sinnrelationen bzw.\ die Ambiguitätsarten in den folgenden Wortpaaren.
-\end{itemize}
-
-\begin{exe}	
-	\exr{ex:Rel1} Ballkleid -- Kleid \pause \hfill \alertred{Hyponym/ Hyperonym}
-	\exr{ex:Rel2} Bank -- Bank \pause \hfill \alertred{Homonymie (Homographie und -phonie)}
-	\exr{ex:Rel3} Schraubenzieher -- Zange \pause \hfill \alertred{Kohyponymie}
-	\exr{ex:Rel4} gro\ss{} -- klein \pause \hfill \alertred{Konträre Antonymie}
-	\exr{ex:Rel5} Henkel -- Tasse \pause \hfill \alertred{Meronymie}
-	\exr{ex:Rel6} Ahorn -- Baum \pause \hfill \alertred{Hyponym/ Hyperonym}
-	\exr{ex:Rel7} essen -- verzehren \pause \hfill \alertred{Synonymie}
-	\exr{ex:Rel8} gerade natürliche Zahl -- ungerade  natürliche Zahl 
+	\input{loesungen/07-ue-loesung01-include}
 	
-	\pause \hfill \alertred{Kontradiktorische Antonymie}
-\end{exe}
-
-\end{frame}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+
+
 \section{Satzsemantik (Satzbedeutung)}
 %
 \iftoggle{toc}{
@@ -1384,33 +1367,13 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \z 
 
 \end{frame}
-	
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{ue-loesung}{
 
-\begin{frame}
-\frametitle{Aussagenlogik -- Lösung}
-
-\begin{itemize}
-	\item Geben Sie die folgenden Aussagen in aussagenlogischer Notation an:
-\end{itemize}
-
-\begin{exe}
-	\exr{ex:Form1} Christiane schläft. \hfill \alertred{$p$}
-	\exr{ex:Form2} Norbert raucht nicht. \hfill \alertred{$\lnot p$}
-	\exr{ex:Form3} Norbert raucht und Christiane schläft nicht. \hfill \alertred{$(p \land \lnot q)$}
-	\exr{ex:Form4} Wenn Norbert nicht raucht, schläft Christiane nicht. \hfill \alertred{$(\lnot p \rightarrow \lnot q)$}
-	\exr{ex:Form5} Wenn ich schlafe, träume ich. \hfill \alertred{$(p \rightarrow q)$}
-	\exr{ex:Form6} Ich schlafe nicht oder ich träume. \hfill \alertred{$(\lnot p \lor q)$}
-\end{exe}
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\input{loesungen/07-ue-loesung02-include}
+	
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -1435,6 +1398,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 %%% BEGIN uebung false = A
 %{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
 \begin{frame}
 \frametitle{Aussagenlogik -- Übung}
 
@@ -1453,167 +1417,12 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{ue-loesung}{
 
-\begin{frame}
-\frametitle{Aussagenlogik -- Lösung}
+\input{loesungen/07-ue-loesung03-include}
 
-\begin{exe}
-\exr{ex:AL1} Christiane schläft.
-\exr{ex:AL2} Norbert raucht nicht.
-\end{exe}
-
-\begin{minipage}{0.4\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] \small{p: Christiane schläft.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}{l}
-			p\\
-			\hline
-			1\\
-			\hline
-			0\\
-		\end{tabular}
-	}
-\end{minipage}
-%	
-\begin{minipage}{0.5\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] \small{p: Norbert raucht.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}[b]{l|l}
-			p & $ \lnot $p \\
-			\hline
-			0 & 1 \\
-			\hline
-			1 & 0 \\
-	\end{tabular}
-	}
-
-\end{minipage}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-\begin{frame}
-\frametitle{Aussagenlogik -- Lösung}
-
-\begin{exe}
-	\exr{ex:AL3} Norbert raucht und Christiane schläft nicht.
-	\exr{ex:AL4} Wenn Norbert nicht raucht, schläft Christiane nicht.
-\end{exe}
-
-\begin{minipage}{0.45\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] \small{p: Norbert raucht.\\
-			q: Christiane schläft.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}{l|l|l|c}
-			p & q & $\lnot$ q & p $\land \lnot $q\\
-			\hline
-			1 & 1 & 0 & 0\\
-			\hline
-			1 & 0 & 1 & 1\\
-			\hline
-			0 & 1 & 0 & 0 \\
-			\hline
-			0 & 0 & 1 & 0 \\
-		\end{tabular}
-	}
-\end{minipage}
-%%
-%%
-\begin{minipage}{0.5\textwidth}
-	\centering
-	\begin{itemize}
-		\item[] \small{p: Norbert raucht.\\
-			q: Christiane schläft.}
-	\end{itemize}
-	\scalebox{0.8}{
-		\begin{tabular}{l|l|c|c|c}
-			p & q & $ \lnot $p& $ \lnot $q &$ \lnot $p \ras $ \lnot $q\\
-			\hline
-			1 & 1 & 0 & 0 & 1 \\
-			\hline
-			1 & 0 & 0 & 1 & 1\\
-			\hline
-			0 & 1 & 1 & 0 & 0 \\
-			\hline
-			0 & 0 & 1 & 1 & 1 \\
-	\end{tabular}
-	}
-\end{minipage}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-\begin{frame}
-\frametitle{Aussagenlogik -- Lösung}
-
-\begin{exe}
-	\exr{ex:AL5} Wenn ich schlafe, träume ich.
-	\exr{ex:AL6} Ich schlafe nicht oder ich träume.
-\end{exe}
-
-
-\begin{minipage}{0.48\textwidth}
-\centering
-\begin{itemize}
-	\item[] \small{$p$: Ich schlafe.\\
-	$q$: Ich träume.}
-\end{itemize}
-
-\scalebox{0.8}{
-\begin{tabular}[b]{c|c|c}
-	$p$ & $q$ & $p \ras q$ \\
-	\hline
-	1 & 1 & 1 \\
-	\hline
-	1 & 0 & 0 \\
-	\hline
-	0 & 1 & 1 \\
-	\hline
-	0 & 0 & 1 \\
-\end{tabular}}
-\end{minipage}
-%%
-%%
-\begin{minipage}{0.48\textwidth}
-\centering
-\begin{itemize}
-	\item[] \small{p: Ich schlafe.\\
-	q: Ich träume.}
-\end{itemize}
-
-\scalebox{0.8}{
-\begin{tabular}{c|c|c|c}
-	$p$ & $q$ & $\lnot p$ & $ \lnot p \lor q$\\
-	\hline
-	1 & 1 & 0 & 1 \\
-	\hline
-	1 & 0 & 0 & 0 \\
-	\hline
-	0 & 1 & 1 & 1 \\
-	\hline
-	0 & 0 & 1& 1 \\
-\end{tabular}}
-\end{minipage}
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \subsection{Tautologien, Kontradiktionen, Kontingenzen}
@@ -1831,124 +1640,10 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iftoggle{ue-loesung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
+\input{loesungen/07-ue-loesung04-include}
 
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
-	
-	\begin{itemize}
-		\item Die komplexen Aussagen (\ref{ex:Tau1}) und (\ref{ex:Tau2}) sind \textbf{Tautologien}.
-		
-		\begin{exe}
-		\exr{ex:Tau1} (p $\lor \lnot$ p)
-		\exr{ex:Tau2} (p $\rightarrow$ p)
-		\end{exe}
-		
-	\end{itemize}
-\end{itemize}
-
-\begin{table}
-	\centering	
-	%	\scalebox{0.8}{
-	\begin{tabular}{c|c|c}
-		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} \\ 
-		\hline 
-		1 & 0 & \alertred{1}\\ 
-		\hline 
-		0 & 1 & \alertred{1} \\
-	\end{tabular} 
-	%	}
-\end{table}
-\begin{itemize}
-	\item[]  \alertred{Der Satz ist eine Tautologie, weil die Aussage immer wahr ist (immer Wahrheitswert 1).}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
-
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
-	
-	\begin{itemize}
-		\item Die komplexe Aussagen (\ref{ex:Kon1}) ist eine \textbf{Kontradiktion}.
-		
-		\begin{exe}
-		\exr{ex:Kon1} $\lnot$ (p $\lor \lnot$ p)
-		\end{exe}
-		
-	\end{itemize}	
-	
-\end{itemize}
-
-\begin{table}
-	\centering	
-	%	\scalebox{0.8}{
-	\begin{tabular}{c|c|c|c}
-		\textbf{p}& \textbf{$\lnot$p} &\textbf{(p $\lor \lnot$p)} & $\lnot$ \textbf{(p $\lor \lnot$p)}\\ 
-		\hline 
-		1 & 0 & 1& \alertred{0} \\ 
-		\hline 
-		0 & 1 & 1 & \alertred{0} \\
-	\end{tabular} 
-	%	}
-\end{table}
-\begin{itemize}
-	\item[] \alertred{Der Satz ist ein Kontradiktion, weil der Wahrheitswert immer 0 ist. Die Aussage ist immer falsch.}
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Tautologien, Kontradiktionen, Kontingenzen -- Lösung}
-
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
-	
-	\begin{itemize}
-		\item Die komplexe Aussage (\ref{ex:Con1}) ist eine \textbf{Kontingenz}.
-		
-		\begin{exe}
-		\exr{ex:Con1} ((p $\lor$ q) $\rightarrow$ q)
-		\end{exe}
-		
-	\end{itemize}	
-	
-\end{itemize}
-
-\begin{table}
-	\centering	
-	%	\scalebox{0.8}{
-	\begin{tabular}{c|c|c|c}
-		\textbf{p}& \textbf{q} & \textbf{(p $\lor$ q)} & \textbf{(p $\lor$ q) \ras q}\\ 
-		\hline 
-		1 & 0 & 1& \alertred{0} \\ 
-		\hline 
-		1 & 1 & 1 & \alertred{1} \\
-		\hline 
-		0 & 0 & 0 & \alertred{1}\\
-		\hline 
-		0 & 1 &  1 &  \alertred{1}\\
-	\end{tabular} 
-	%	}
-\end{table}
-
-\begin{itemize}
-\item \alertred{Der Satz ist kontingent, d.\,h., dass sich unterschiedliche Wahrheitwerte ergeben können, die von der Welt abhängig sind. }
-\end{itemize}
-
-\end{frame}
-
-
-}%% END LOESUNG	
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -2487,10 +2182,6 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
 
@@ -2509,46 +2200,8 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 \end{frame}
 
 
-%} 
-%% END uebung true = Q
-%% BEGIN uebung false = A
-\iftoggle{ha-loesung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-\item Welche Bedeutungsrelationen bzw.\ Ambiguitätsarten bestehen zwischen den folgenden Wortpaaren? Nennen Sie diese.
-\end{itemize}
-
-\ea 
-	\ea betrunken -- nüchtern \pause 
-	\hfill \alertred{konträre Antonymie}
-	
-	\ex Orange -- Apfelsine \pause 
-	\hfill \alertred{Synonymie}
-	
-	\ex Vogel -- Feder \pause 
-	\hfill \alertred{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
-	
-	
-	\ex volljährig -- minderjährig \pause 
-	\hfill \alertred{kontradiktorische Antonymie}
-	
-	\ex mehr -- Meer \pause 
-	\hfill \alertred{Homonymie (genauer: Homophonie)}
-	\z 
-\z 
-
-\end{frame}
-
-}%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{uebung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
@@ -2571,61 +2224,6 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 	\z 	
 \z 
 \end{frame}
-
-
-%} 
-%% END uebung true = Q
-%% BEGIN uebung false = A
-\iftoggle{ha-loesung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
-\end{itemize}
-
-\ea 
-	\ea Auf dem Tisch liegt eine Rose.
-	\ex Auf dem Tisch liegt eine Blume.
-
-\pause 
-
-	\hfill \alertred{a impliziert b}
-	\z 
-
-\pause 
-
-\ex 	
-	\ea Alle Vögel können fliegen.
-	\ex Kein Vogel kann nicht fliegen.
-
-\pause 
-
-	\hfill \alertred{Paraphrase (synonyme Sätze)}
-	\z 
-
-\pause 
-
-\ex 	
-	\ea Einige Tiere haben Federn.
-	\ex Alle Tiere haben Federn.
-
-\pause 
-
-	\hfill \alertred{b impliziert a}
-	\z 	
-\z 
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2658,129 +2256,8 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 
 \end{frame}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iftoggle{ha-loesung}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
-	
-	\vspace{1em}
-	
-	\begin{itemize}
-		\item Die komplexe Aussage (\ref{ex:Tau3}) ist \textbf{tautologisch}.
-		
-		\begin{exe}
-		\exr{ex:Tau3} $\lnot (p \land \lnot p)$
-		\end{exe}
-	\end{itemize}	
-	
-\end{itemize}
-
-\begin{table}
-	\centering	
-		\begin{tabular}{c|c|c|c}
-			$p$& $\lnot p$ & $p \land \lnot p$ & $\lnot (p \land \lnot p)$ \\ 
-			\hline 
-			0 & 1 & 0& \alertred{1}\\ 
-			\hline 
-			1 & 0 & 0& \alertred{1}\\
-		\end{tabular} 
-\end{table} 
-
-\alertred{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
-	
-	\vspace{1em}
-	
-	\begin{itemize}	
-		\item Die komplexe Aussage (\ref{ex:Kon2}) ist \textbf{kontradiktorisch}.
-		
-		\begin{exe}
-			\exr{ex:Kon2} $\lnot ((p \lor q) \leftrightarrow (q \lor p))$
-		\end{exe}		
-	\end{itemize}	
-	
-\end{itemize}
-
-\begin{table}
-	\centering	
-	\scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
-		$p$ & $q$ & $p \lor q$ & $q \lor p$ & $(p \lor q) \leftrightarrow (q \lor p)$ & $\lnot ((p \lor q) \leftrightarrow (q \lor p))$ \\ 
-		\hline 
-		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
-		\hline 
-		1 & 0 & 1 & 1 & 1 & \alertred{0} \\
-		\hline
-		0 & 1 & 1 & 1 & 1 & \alertred{0} \\
-		\hline
-		0 & 0 & 0 & 0 & 1 & \alertred{0} \\
-	\end{tabular} }
-\end{table} 
-
-\alertred{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-	\item Überprüfen Sie die Richtigkeit der folgenden Aussagen.
-	
-	\vspace{1em}
-	
-	\begin{itemize}
-		\item Die komplexe Aussage (\ref{ex:Con2}) ist \textbf{kontingent}.
-		
-		\begin{exe}
-			\exr{ex:Con2} $((p \rightarrow q) \leftrightarrow (q \rightarrow p))$
-		\end{exe}
-		
-	\end{itemize}	
-	
-\end{itemize}
-
-\begin{table}
-	\centering	
-	\begin{tabular}{c|c|c|c|c}
-		$p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\ 
-		\hline 
-		1 & 1 & 1 & 1 & \alertred{1} \\ 
-		\hline 
-		1 & 0 & 0 & 1 & \alertred{0} \\
-		\hline
-		0 & 1 & 1 & 0 & \alertred{0} \\
-		\hline
-		0 & 0 & 1 & 1 & \alertred{1} \\
-	\end{tabular} 
-\end{table} 
-
-\alertred{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
-
-\end{frame}
-
-}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Hausaufgabe}
 
@@ -2795,27 +2272,11 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 
 \end{frame}
 
-%} 
-%% END uebung true = Q
-%% BEGIN uebung false = A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \iftoggle{ha-loesung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Hausaufgabe -- Lösung}
-
-\begin{itemize}
-	\item Geben Sie den Wahrheitswert der folgenden Formeln in einer Welt/Situation an, in der $p=0$ und $q=1$ sind.
-\end{itemize}
-
-\begin{exe}
-\exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
-\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
-\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
-\end{exe}
-\end{frame}
+\input{loesungen/07-ha-loesung-include}
 
 }%% END LOESUNG	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2832,25 +2293,3 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 
 \end{frame}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iftoggle{uebung}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Hausaufgabe}
-%
-%\end{frame}
-%
-%} 
-%%% END uebung true = Q
-%%% BEGIN uebung false = A
-%{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Hausaufgabe -- Lösung}
-%
-%\end{frame}
-%
-%}%% END LOESUNG	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

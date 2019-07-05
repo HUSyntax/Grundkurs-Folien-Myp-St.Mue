@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%
+%06f Syntax ha-loesung
+%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{itemize}
+	\item Geben Sie an, um welchen \textbf{Phrasentyp} es sich bei den folgenden Phrasen handelt, und \textbf{welches Wort} sich in der \textbf{Kopfposition} der Phrasen befindet:
+\end{itemize}	
+
+\eal
+	\ex viele besorgte Mütter  \pause \hfill \alertred{Mütter} \& \alertred{NP} oder \alertred{viele} \& \alertred{DP} \pause 
+
+	\ex den Menschen in Not helfen \pause \hfill \alertred{helfen} \& \alertred{VP} \pause 
+	
+	\ex Wasser ohne Kohlensäure \pause \hfill \alertred{Wasser} \& \alertred{NP} oder \alertred{$\emptyset$} \& \alertred{DP} \pause 
+	
+	\ex auf Maria warten \pause \hfill \alertred{warten} \& \alertred{VP} \pause 
+	
+	\ex ob sie heute kommen werden \pause \hfill \alertred{ob} \& \alertred{CP} \pause 
+	
+	\ex Peter seine Traumfrau gefunden hat \pause \hfill \alertred{hat} \& \alertred{IP}
+\zl
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+\begin{minipage}[b]{0.45\textwidth}
+	
+	{\small Peter schläft.}
+	
+	\pause
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+			MyP edges,
+			[CP 
+			[DP$_{k}$ [Peter,roof]
+			]
+			[\MyPxbar{C}
+			[\zerobar{C} [schläft$_{i}$]
+			]
+			[IP [t$_{k}$]
+			[\MyPxbar{I}
+			[VP [\MyPxbar{V} [\zerobar{V} [t$_{i}$	]]]]
+			[\zerobar{I} [t$_{i}$]]
+			]
+			]
+			]
+			]
+		\end{forest}
+	}
+\end{minipage}  
+%            
+%         
+\begin{minipage}[b]{0.45\textwidth}
+	
+	\pause 
+	
+	{\small Wer schläft?}	
+	
+	\pause 
+	
+	\centering
+	\scalebox{0.6}{
+		\begin{forest}
+			MyP edges,
+			[CP 
+			[DP$_{k}$ [Wer,roof]
+			]
+			[\MyPxbar{C}
+			[\zerobar{C} [schläft$_{i}$]
+			]
+			[IP [t$_{k}$]
+			[\MyPxbar{I}
+			[VP [\MyPxbar{V} [\zerobar{V} [t$_{i}$	]]]]
+			[\zerobar{I} [t$_{i}$]]
+			]
+			]
+			]
+			]
+		\end{forest}
+	}
+\end{minipage}  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+{\small Hat sie dir die schwierige Frage nach den Spuren gestellt?}
+
+\pause
+
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+	\begin{forest}
+		MyP edges,
+		[CP 
+		[\MyPxbar{C}
+		[\zerobar{C} [Hat$_{i}$]
+		]
+		[IP [DP [\MyPxbar{D} [\zerobar{D} [sie]]]
+		]
+		[\MyPxbar{I}
+		[VP 
+		[DP [\MyPxbar{D} [\zerobar{D} [dir]]]]
+		[\MyPxbar{V} 								
+		[DP, draw, red 
+		[die \dots\ Spuren,roof]
+		]		
+		[\zerobar{V} [gestellt]]
+		]
+		]
+		[\zerobar{I} [t$_{i}$]]
+		]
+		]
+		]
+		]
+	\end{forest}
+}
+\end{minipage}  
+%      
+\pause  	      
+%         
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.4}{
+	\begin{forest}
+		MyP edges,
+		[DP
+		[\MyPxbar{D}
+		[\zerobar{D}[die]]
+		[NP
+		[AP [\MyPxbar{A} [\zerobar{A} [schwierige]]]]
+		[NP 
+		[\MyPxbar{N} 
+		[\zerobar{N} [Frage]]
+		[PP
+		[\MyPxbar{P} 
+		[\zerobar{P} [nach]]
+		[DP
+		[\MyPxbar{D}
+		[\zerobar{D} [den]]
+		[NP [\MyPxbar{N} [\zerobar{N} [Spuren]]]]
+		]
+		]
+		]
+		]
+		]
+		]
+		]
+		]
+		]
+	\end{forest}
+}
+\end{minipage}  
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Hausaufgabe -- Lösung}
+
+{\small die fast vor dem Mittagessen erstellte Speisekarte}
+
+\pause 
+
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+\begin{forest}
+	MyP edges,
+	[DP
+	[\MyPxbar{D}
+	[\zerobar{D}[die]]
+	[NP
+	[AP
+	[PP, draw, red 
+	[fast vor dem Mittagessen,roof]
+	%							[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [kurz]]]]
+	%							[PP [\MyPxbar{P}
+	%									[\zerobar{Adv} [vor]]
+	%									[DP [\MyPxbar{D} [\zerobar{D} [dem]]
+	%										[NP [\MyPxbar{N} [\zerobar{N} [Mittagessen]]]]
+	%										]
+	%									]				
+	%								]							
+	%							]
+	]	
+	[AP [\MyPxbar{A} [\zerobar{A} [erstellte]]]]
+	]
+	[NP [\MyPxbar{N} [\zerobar{N} [Speisekarte]]]
+	]
+	]
+	]
+	]
+\end{forest}
+}
+\end{minipage}  
+%  
+\pause          
+%         
+\begin{minipage}[b]{0.45\textwidth}
+
+\centering
+\scalebox{0.6}{
+\begin{forest}
+	MyP edges,
+	[PP 
+	[AdvP [\MyPxbar{Adv} [\zerobar{Adv} [fast]]]]
+	[PP 
+	[\MyPxbar{P}
+	[\zerobar{P} [vor]]
+	[DP [\MyPxbar{D} [\zerobar{D} [dem]]
+	[NP [\MyPxbar{N} [\zerobar{N} [Mittagessen]]]]
+	]
+	]				
+	]							
+	]
+	]	
+\end{forest}
+}
+\end{minipage}  
+
+\end{frame}

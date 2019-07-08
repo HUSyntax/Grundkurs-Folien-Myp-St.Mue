@@ -111,16 +111,19 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Semantik}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Einführung}
-%
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
-%}
+\subsection{Einführung}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -194,14 +197,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Zeichen}
+\subsection{Zeichen}
 %
-\iftoggle{toc}{
+\iftoggle{sectoc}{
 	\frame{
-		\begin{multicols}{2}
+		%\begin{multicols}{2}
 		\frametitle{~}
-			\tableofcontents[currentsection]
-		\end{multicols}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
 	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -395,15 +398,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Bedeutung}
+\subsection{Bedeutung}
 %
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -451,13 +454,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Ausdrucksbedeutung}
+\subsubsection{Ausdrucksbedeutung}
 %
-%\frame{
-%\begin{multicols}{2}
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%\end{multicols}
+%\iftoggle{sectoc}{
+%	\frame{
+%		%\begin{multicols}{2}
+%		\frametitle{~}
+%		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+%		%\end{multicols}
+%	}
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -488,7 +493,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Äußerungsbedeutung}
+\subsubsection{Äußerungsbedeutung}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -520,7 +525,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Sprecherbedeutung}
+\subsubsection{Sprecherbedeutung}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -579,7 +584,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Bedeutung: Semantik vs.\ Pragmatik}
+\subsubsection{Bedeutung: Semantik vs.\ Pragmatik}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -605,15 +610,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\section{Lexikalische Semantik}
+\subsection{Lexikalische Semantik}
 %
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -640,7 +645,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Sinnrelationen}
+\subsubsection{Sinnrelationen}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -850,7 +855,7 @@ Ein Ausdruck $X$ ist ein konträres Antonym von $Y$, wenn $X$ und $Y$ nicht zugl
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Ambiguität}
+\subsubsection{Ambiguität}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -928,7 +933,7 @@ Ein Ausdruck $X$ und ein Ausdruck $Y$ sind gleich in deren Form (phonetische und
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Relationen -- Übung}
+\subsubsection{Übung}
 %
 %\frame{
 %\begin{multicols}{2}
@@ -970,15 +975,15 @@ Ein Ausdruck $X$ und ein Ausdruck $Y$ sind gleich in deren Form (phonetische und
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Satzsemantik (Satzbedeutung)}
+\subsection{Satzsemantik (Satzbedeutung)}
 %
-\iftoggle{toc}{
-\frame{
-\begin{multicols}{2}
-\frametitle{~}
-	\tableofcontents[currentsection]
-\end{multicols}
-}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1061,7 +1066,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Aussagenlogik}
+\subsubsection{Aussagenlogik}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -1316,7 +1321,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Aussagenlogik -- Übung}
+\subsubsection{Übung}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -1425,7 +1430,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsection{Tautologien, Kontradiktionen, Kontingenzen}
+\subsubsection{Tautologien, Kontradiktionen, Kontingenzen}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -1649,7 +1654,7 @@ Die Bedeutung eines komplexen Ausdrucks ergibt sich aus der \textbf{Bedeutung se
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{(Einige) Äquivalenzen -- Extra}
+\subsubsection{(Einige) Äquivalenzen -- Extra}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2062,7 +2067,7 @@ Diese Äquivalenz ist eines der \alertred{Gesetze des Konditionals} in der Aussa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Sinnrelationen zwischen Sätzen}
+\subsubsection{Sinnrelationen zwischen Sätzen}
 %\frame{
 %\begin{multicols}{2}
 %\frametitle{~}
@@ -2171,14 +2176,7 @@ $X$ ist eine ungerade Zahl (aus der Menge der natürlichen Zahlen).
 %
 \subsection{Hausaufgabe}
 %
-\iftoggle{toc}{
-	\frame{
-		\begin{multicols}{2}
-			\frametitle{~}
-			\tableofcontents[currentsection]
-		\end{multicols}
-	}
-}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

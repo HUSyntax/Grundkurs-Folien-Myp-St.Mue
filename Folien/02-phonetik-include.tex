@@ -38,6 +38,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
 \huberlintitlepage[22pt]
+
 \iftoggle{toc}{
 \frame{
 \begin{multicols}{2}
@@ -2093,6 +2094,18 @@ Welche der folgenden Laute sind stimmhaft und welche stimmlos?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hausaufgabe}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% MyP: Contents
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Hausaufgabe}

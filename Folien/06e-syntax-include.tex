@@ -39,10 +39,10 @@
 \huberlintitlepage
 \iftoggle{toc}{
 \frame{
-%\begin{multicols}{2}
+\begin{multicols}{2}
 	\frametitle{Inhaltsverzeichnis}\tableofcontents
 	%[pausesections]
-%\end{multicols}
+\end{multicols}
 	}
 	}
 
@@ -102,12 +102,20 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Syntax V}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Einführendes}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+
+\subsection{Einführendes}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -140,11 +148,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Lexikalische Phrasen}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\subsection{Lexikalische Phrasen}
+
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -168,7 +181,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Nominalphrase}
+\subsubsection{Nominalphrase}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -242,7 +255,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Adjektivphrase}
+\subsubsection{Adjektivphrase}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -317,7 +330,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Adverbialphrase}
+\subsubsection{Adverbialphrase}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -372,7 +385,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prä- \& Postpositionalphrase}
+\subsubsection{Prä- \& Postpositionalphrase}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -445,7 +458,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Verbalphrase}
+\subsubsection{Verbalphrase}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -769,7 +782,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Hausaufgabe}
+\subsection{Hausaufgabe}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]
@@ -799,7 +812,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Schlusswort}
+\subsection{Schlusswort}
 %\frame{
 %\frametitle{~}
 %	\tableofcontents[currentsection]

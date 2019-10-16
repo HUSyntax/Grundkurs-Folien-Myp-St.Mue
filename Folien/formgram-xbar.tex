@@ -1,6 +1,6 @@
-\section{\xbar-Syntax}
+\subsection{\xbar-Syntax}
 
-\subsection{Nominalphrasen}
+\subsubsection{Nominalphrasen}
 \label{sec-psg-np}
 
 \frame{
@@ -82,70 +82,41 @@ alle [[geschickten Kinder] und [klugen Frauen]]
 \ex \nbar $\to$ N
 \zl
 
+
 \hfill%
-\scalebox{0.75}{%
-\begin{tabular}[b]{@{}cc@{}}
-\multicolumn{2}{c}{\node{np-null}{NP}}\\[3ex]
-%
-\node{detp-null}{Det} & \node{nbar-null}{\nbar}\\[3ex]
-%
-                      & \node{n-null}{N}    \\[3ex]
-%
-% 
-\node{das-null}{eine}  & \node{Bild-null}{Frau}\\
-\end{tabular}
-\nodeconnect{np-null}{detp-null}\nodeconnect{np-null}{nbar-null}%
-\nodeconnect{detp-null}{das-null}%
-\nodeconnect{nbar-null}{n-null}%
-\nodeconnect{n-null}{Bild-null}%
-}
+\scalebox{.65}{%
+\begin{forest}
+sm edges
+[NP
+   [Det [eine] ]
+   [\nbar
+      [N [Frau] ] ] ]
+\end{forest}}
 \hfill
-\scalebox{0.75}{%
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{np}{NP}}\\[3ex]
-%
-\node{detp}{Det}    & \multicolumn{2}{c}{\node{nbar}{\nbar}}\\[3ex]
-%
-                     & \node{ap}{A}     & \node{nbar2}{\nbar}\\[3ex]
-%
-                     &                   & \node{n}{N}    \\[3ex]
-%
-% 
-\node{das}{eine}     & \node{schoene}{kluge} & \node{Bild}{Frau}\\
-\end{tabular}
-\nodeconnect{np}{detp}\nodeconnect{np}{nbar}%
-\nodeconnect{detp}{das}%
-\nodeconnect{nbar}{ap}\nodeconnect{nbar}{nbar2}%
-\nodeconnect{nbar2}{n}%
-\nodeconnect{ap}{schoene}%
-\nodeconnect{n}{Bild}%
-}
+\scalebox{.65}{%
+\begin{forest}
+sm edges
+[NP
+   [Det [eine] ]
+   [\nbar
+      [A [kluge] ]
+      [\nbar
+        [N [Frau] ] ] ] ]
+\end{forest}}
 %
 \hfill
-\scalebox{0.75}{%
-\begin{tabular}[b]{@{}cccc@{}}
-\multicolumn{2}{c}{\node{np-zwei}{NP}}\\[3ex]
-%
-\node{detp-zwei}{Det} & \multicolumn{2}{c}{\node{nbar-zwei}{\nbar}}\\[3ex]
-%
-                      & \node{ap-zwei}{A}        & \multicolumn{2}{c}{\node{nbar2-zwei}{\nbar}}\\[3ex]
-                  
-                      &                            & \node{ap2-zwei}{A}     & \node{nbar3-zwei}{\nbar}\\[3ex]
-%
-                      &                            &                          & \node{n-zwei}{N}    \\[3ex]
-%
-% 
-\node{das-zwei}{eine}  & \node{kluger-zwei}{glückliche} & \node{dicker}{kluge}    & \node{Bild-zwei}{Frau}\\
-\end{tabular}
-\nodeconnect{np-zwei}{detp-zwei}\nodeconnect{np-zwei}{nbar-zwei}%
-\nodeconnect{detp-zwei}{das-zwei}%
-\nodeconnect{nbar-zwei}{ap-zwei}\nodeconnect{nbar-zwei}{nbar2-zwei}%
-\nodeconnect{nbar2-zwei}{ap2-zwei}\nodeconnect{nbar2-zwei}{nbar3-zwei}%
-\nodeconnect{nbar3-zwei}{n-zwei}%
-\nodeconnect{ap-zwei}{kluger-zwei}%
-\nodeconnect{ap2-zwei}{dicker}%
-\nodeconnect{n-zwei}{Bild-zwei}%
-}
+\scalebox{.65}{%
+\begin{forest}
+sm edges
+[NP
+  [Det [eine] ]
+    [\nbar
+    [A [glückliche] ]
+       [\nbar
+       [A [kluge] ]
+         [\nbar
+         [N [Frau] ] ] ] ] ]
+\end{forest}}
 \hfill\mbox{}
 %
 \end{itemize}
@@ -245,44 +216,27 @@ Determinator-Adjunkt-Nomen-Kombinationen analysieren.
 \frametitle{Komplemente (und Adjunkte)}
 
 \hfill
-\scalebox{0.8}{%
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{3}{c}{\node{np}{NP}~~~~~~~~~~~~~~~~~~~}\\[3ex]
-%
-\node{detp}{Det}    & \multicolumn{2}{c}{\node{nbar}{\nbar}}\\[3ex]
-%
-                     & \node{n}{N}       & \node{pp}{PP}\\[5ex]
-%
-%
-\node{das}{das}      & \node{Bild}{Bild} & v\node{vonM}{om Gleimtunne}l\\
-\end{tabular}
-\nodeconnect{np}{detp}\nodeconnect{np}{nbar}%
-\nodeconnect{detp}{das}%
-\nodeconnect{nbar}{n}\nodeconnect{nbar}{pp}%
-\nodetriangle{pp}{vonM}%
-\nodeconnect{n}{Bild}}
-\hfill
-\scalebox{0.8}{%
-\begin{tabular}[b]{@{}cccc@{}}
-\multicolumn{3}{c}{\node{np}{NP}~~~~~~~~}\\[4ex]
-%
-\node{detp}{Det}    & \multicolumn{3}{c}{\node{nbar2}{\nbar}}\\[3ex]
-                     & \multicolumn{2}{c}{\node{nbar}{\nbar}~~~~~~~~~}         & \node{pp2}{PP}\\[3ex]
-%
-                     & \node{n}{N}       & \node{pp}{PP}\\[5ex]
-%
-%
-\node{das}{das}      & \node{Bild}{Bild} & v\node{vonM}{om Gleimtunne}l     & i\node{imN}{m Gropius Ba}u\\
-\end{tabular}
-\nodeconnect{np}{detp}\nodeconnect{np}{nbar2}%
-\nodeconnect{detp}{das}%
-\nodeconnect{nbar2}{nbar}\nodeconnect{nbar2}{pp2}
-\nodeconnect{nbar}{n}\nodeconnect{nbar}{pp}%
-\nodetriangle{pp}{vonM}%
-\nodetriangle{pp2}{imN}%
-\nodeconnect{n}{Bild}}
-\hfill
-\mbox{}
+
+\centerfit{%
+\begin{forest}
+sm edges
+[NP
+ [Det [das] ]
+ [\nbar
+   [N [Bild] ]
+   [PP [vom Gleimtunnel,roof ] ] ] ]
+\end{forest}%
+\hspace{2em}%
+\begin{forest}
+sm edges
+[NP
+  [Det [das] ]
+  [\nbar
+    [\nbar
+      [N [Bild] ]
+      [PP [vom Gleimtunnel,roof ] ] ] 
+    [PP [im Gropiusbau,roof ] ] ] ]
+\end{forest}}
 
 
 }
@@ -328,41 +282,25 @@ Beschriftung tragen, wie die Schachteln normaler Nomina.
 \frametitle{Analysen mit leerem Nomen}
 
 \hfill
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{np}{NP}}\\[3ex]
-%
-\node{detp}{Det}    & \multicolumn{2}{c}{\node{nbar}{\nbar}}\\[3ex]
-%
-                     & \node{ap}{A}     & \node{nbar2}{\nbar}\\[3ex]
-%
-                     &                   & \node{n}{N}    \\[3ex]
-%
-% 
-\node{das}{eine}     & \node{schoene}{kluge} & \node{Bild}{\trace}\\
-\end{tabular}
-\nodeconnect{np}{detp}\nodeconnect{np}{nbar}%
-\nodeconnect{detp}{das}%
-\nodeconnect{nbar}{ap}\nodeconnect{nbar}{nbar2}%
-\nodeconnect{nbar2}{n}%
-\nodeconnect{ap}{schoene}%
-\nodeconnect{n}{Bild}%
+\begin{forest}
+sm edges
+[NP
+  [Det [eine] ]
+  [\nbar
+    [A [kluge] ]
+    [\nbar
+      [N [\trace ] ] ] ] ]
+\end{forest}
 \hfill
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{np}{NP}}\\[3ex]
-%
-\node{detp}{Det}    & \multicolumn{2}{c}{\node{nbar}{\nbar}~~~~~~}\\[3ex]
-%
-                     & \node{n}{N}       & \node{pp}{PP}\\[5ex]
-%
-%
-\node{das}{das}      & \node{Bild}{\trace} & v\node{vonM}{om Gleimtunne}l\\
-\end{tabular}
-\nodeconnect{np}{detp}\nodeconnect{np}{nbar}%
-\nodeconnect{detp}{das}%
-\nodeconnect{nbar}{n}\nodeconnect{nbar}{pp}%
-\nodetriangle{pp}{vonM}%
-\nodeconnect{n}{Bild}
-\hfill
+\begin{forest}
+sm edges
+[NP
+  [Det [das] ]
+  [\nbar
+    [N [\trace] ]
+    [PP [vom Gleimtunnel,roof] ] ] ]
+\end{forest}
+\hfill%
 \mbox{}
 
 }
@@ -399,24 +337,15 @@ Plural:
 \frame{
 \frametitle{Fehlende Determinatoren}
 
-\hfill
-\begin{tabular}[b]{@{}cc@{}}
-\multicolumn{2}{c}{\node{np-null}{NP}}\\[3ex]
-%
-\node{detp-null}{Det} & \node{nbar-null}{\nbar}\\[3ex]
-%
-                      & \node{n-null}{N}    \\[3ex]
-%
-% 
-\node{das-null}{\trace}  & \node{Bild-null}{Frauen}\\
-\end{tabular}
-\nodeconnect{np-null}{detp-null}\nodeconnect{np-null}{nbar-null}%
-\nodeconnect{detp-null}{das-null}%
-\nodeconnect{nbar-null}{n-null}%
-\nodeconnect{n-null}{Bild-null}%
-\hfill
-\hfill
-\mbox{}
+
+\centering
+\begin{forest}
+sm edges
+[NP
+  [Det [\trace] ]
+  [\nbar
+    [N [Frauen] ] ] ]
+\end{forest}
 
 }
 
@@ -430,24 +359,16 @@ Determinator und Nomen können auch gleichzeitig weggelassen werden:
 \zl
 
 \centerline{%
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{np}{NP}}\\[3ex]
-%
-\node{detp}{Det}    & \multicolumn{2}{c}{\node{nbar}{\nbar}}\\[3ex]
-%
-                     & \node{ap}{A}     & \node{nbar2}{\nbar}\\[3ex]
-%
-                     &                   & \node{n}{N}    \\[3ex]
-%
-% 
-\node{das}{\trace}     & \node{schoene}{klugen} & \node{Bild}{\trace}\\
-\end{tabular}
-\nodeconnect{np}{detp}\nodeconnect{np}{nbar}%
-\nodeconnect{detp}{das}%
-\nodeconnect{nbar}{ap}\nodeconnect{nbar}{nbar2}%
-\nodeconnect{nbar2}{n}%
-\nodeconnect{ap}{schoene}%
-\nodeconnect{n}{Bild}%
+\scalebox{.9}{%
+\begin{forest}
+sm edges
+[NP
+  [Det [\trace] ]
+  [\nbar
+    [A [klugen] ]
+    [\nbar
+      [N [\trace] ] ] ] ]
+\end{forest}}
 }
 }
 
@@ -487,7 +408,7 @@ Determinator und Nomen können auch gleichzeitig weggelassen werden:
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Adjektivphrasen}
+\subsubsection{Adjektivphrasen}
 
 \frame[shrink]{
 \frametitle{Adjektivphrasen}
@@ -570,7 +491,7 @@ nicht.
 
 \fi
 
-\subsection{Präpositionalphrasen}
+\subsubsection{Präpositionalphrasen}
 
 \frame[shrink=5]{
 \frametitle{Präpositionalphrasen}
@@ -624,38 +545,23 @@ PP $\to$ P NP
 \frametitle{Präpositionalphrasen}
 
 \hfill
-\begin{tabular}[b]{@{}cc@{}}
-\multicolumn{2}{c}{\node{pp}{PP}~~~~~~}\\[3ex]
-%
-\multicolumn{2}{c}{\node{pbar}{\pbar}~~~~~~}\\[3ex]
-%
-\node{p}{P}     & \node{np}{NP}\\[3ex]
-%
-%
-% 
-\node{vor}{vor} & d\node{demA}{em Abgrun}d\\
-\end{tabular}
-\nodeconnect{pp}{pbar}%
-\nodeconnect{pbar}{p}\nodeconnect{pbar}{np}%
-\nodeconnect{p}{vor}%
-\nodetriangle{np}{demA}%
 \hfill
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{pp}{PP}}\\[3ex]
-%
-\node{ap}{AP}    & \multicolumn{2}{c}{\node{pbar}{\pbar}~~~~~~}\\[3ex]
-%
-                     & \node{p}{P}     & \node{np}{NP}\\[3ex]
-%
-%
-% 
-\node{kurz}{kurz}     & \node{vor}{vor} & d\node{demA}{em Abgrun}d\\
-\end{tabular}
-\nodeconnect{pp}{ap}\nodeconnect{pp}{pbar}%
-\nodeconnect{ap}{kurz}%
-\nodeconnect{pbar}{p}\nodeconnect{pbar}{np}%
-\nodeconnect{p}{vor}%
-\nodetriangle{np}{demA}%
+\begin{forest}
+sm edges
+[PP
+  [\pbar
+    [P [vor] ]
+    [NP [dem Abgrund,roof] ] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+sm edges
+[PP
+  [AP [kurz,roof] ]
+  [\pbar
+    [P [vor] ]
+    [NP [dem Abgrund,roof] ] ] ]
+\end{forest}
 \hfill
 \mbox{}
 
@@ -663,7 +569,7 @@ PP $\to$ P NP
 
 
 
-\subsection{Die \xbar-Theorie}
+\subsubsection{Die \xbar-Theorie}
 \label{sec-xbar}
 
 \frame{
@@ -722,75 +628,39 @@ PP $\to$ P NP
 
 
 \hfill
-\begin{tabular}[b]{@{}cc@{}}
-\node{pp}{AP}\\[3ex]
-%
-\node{pbar}{\abar}\\[3ex]
-%
-\node{p}{A}     \\[3ex]
-%
-%
-% 
-\node{vor}{proud} \\
-\end{tabular}
-\nodeconnect{pp}{pbar}%
-\nodeconnect{pbar}{p}%
-\nodeconnect{p}{vor}%
+\begin{forest}
+sm edges
+[AP
+  [\abar
+    [A [proud] ] ] ]
+\end{forest}
 \hfill
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{pp}{AP}~~~~~}\\[3ex]
-%
-\node{advp}{AdvP}    & \node{pbar}{\abar}\\[3ex]
-%
-%\node{advs}{\advbar} 
-    & \node{p}{A}\\[3ex]
-%
-%\node{adv}{Adv}\\[3ex]
-%
-% 
-\node{very}{very}     & \node{vor}{proud}\\
-\end{tabular}
-\nodeconnect{pp}{advp}\nodeconnect{pp}{pbar}%
-%\nodeconnect{advp}{advs}\nodeconnect{advs}{adv}
-\nodeconnect{advp}{very}%
-\nodeconnect{pbar}{p}%
-\nodeconnect{p}{vor}%
+\begin{forest}
+sm edges
+[AP
+  [AdvP [very] ]
+  [\abar
+    [A [proud] ] ] ]
+\end{forest}
 \hfill
-\begin{tabular}[b]{@{}cc@{}}
-\multicolumn{2}{c}{\node{pp}{AP}~~~~~~}\\[3ex]
-%
-\multicolumn{2}{c}{\node{pbar}{\abar}~~~~~~}\\[3ex]
-%
-\node{p}{A}     & \node{np}{PP}\\[3ex]
-%
-%
-% 
-\node{vor}{proud} & o\node{demA}{f his so}n\\
-\end{tabular}
-\nodeconnect{pp}{pbar}%
-\nodeconnect{pbar}{p}\nodeconnect{pbar}{np}%
-\nodeconnect{p}{vor}%
-\nodetriangle{np}{demA}%
+\begin{forest}
+sm edges
+[AP
+  [\abar
+    [A [proud] ]
+    [PP [of his son,roof] ] ] ]
+\end{forest}
 \hfill
-\begin{tabular}[b]{@{}ccc@{}}
-\multicolumn{2}{c}{\node{pp}{AP}}\\[3ex]
-%
-\node{advp}{AdvP}    & \multicolumn{2}{c}{\node{pbar}{\abar}~~~~~~}\\[3ex]
-%
-%\node{advs}{\advbar} 
-                      & \node{p}{A}     & \node{np}{PP}\\[3ex]
-%
-%\node{adv}{Adv}\\[3ex]
-%
-% 
-\node{very}{very}     & \node{vor}{proud} & o\node{demA}{f his so}n\\
-\end{tabular}
-\nodeconnect{pp}{advp}\nodeconnect{pp}{pbar}%
-%\nodeconnect{advp}{advs}\nodeconnect{advs}{adv}
-\nodeconnect{advp}{very}%
-\nodeconnect{pbar}{p}\nodeconnect{pbar}{np}%
-\nodeconnect{p}{vor}%
-\nodetriangle{np}{demA}%
+\begin{forest}
+sm edges
+[AP
+  [AdvP [very] ]
+  [\abar
+    [A [proud] ]
+    [PP [of his son,roof] ] ] ]
+\end{forest}
+\hfill
+\mbox{}
 \hfill
 \mbox{}
 
@@ -845,21 +715,25 @@ Phrasen sind mindestens dreistöckig:
 
 \bigskip
 
-\small\centerline{\begin{tabular}[t]{c}
-\node{xp}{XP}\\[5ex]
-\node{xs}{X$'$}\\[5ex]
-\node{x}{X}\\
-\end{tabular}%
-\nodeconnect{xp}{xs}\nodeconnect{xs}{x}\hspace{10ex}%
-\begin{tabular}[t]{cccc}
-\multicolumn{2}{c}{\hspace{18mm}\node{xp2}{XP}}\\[5ex]
-\node{spec}{Spezifikator} & \multicolumn{2}{c}{\node{xs2}{X$'$}}\\[5ex]
-                          & \node{adj}{Adjunkt} & \multicolumn{2}{c}{~~~~~\node{xs22}{X$'$}}\\[5ex]
-                          &                     & \node{comp}{Komplement} & \node{x2}{X}\\
-\end{tabular}
-\nodeconnect{xp2}{spec}\nodeconnect{xp2}{xs2}%
-\nodeconnect{xs2}{adj}\nodeconnect{xs2}{xs22}%
-\nodeconnect{xs22}{comp}\nodeconnect{xs22}{x2}}
+\small\hfill
+\begin{forest}
+sm edges
+[XP
+  [\xbar [X] ] ]
+\end{forest}
+\hfill
+\begin{forest}
+%where n children=0{}{},
+%sm edges
+%for tree={parent anchor=south, child anchor=north,align=center,base=bottom}
+[XP
+  [specifier]
+  [\xbar
+    [adjunct]
+    [\xbar
+      [complement] [X] ] ] ]
+\end{forest}
+\hfill\mbox{}
 
 
 \begin{itemize}
@@ -870,15 +744,15 @@ $\to$ muss nicht unbedingt ein X$'$ mit Adjunkttochter geben.
 %(Zusätzliche Regel nötig $\overline{\overline{\mbox{X}}} \rightarrow \xbar$)
 \pause
 \item zusätzlich mitunter: Adjunkte an XP und Kopfadjunkte an X. 
-\ifthenelse{\boolean{gb-intro}}{
+\iftoggle{gb-intro}{
 (dazu \hyperlink{inkorporation}{später})
-}{}
+}
 \end{itemize}
 
 }
 
 \frame{
-\frametitle{\xbar-Theorie: Regeln nach \citew{Jackendoff77}}\nocite{KP90a}\nocite{Pullum85a}
+\frametitle{\xbar-Theorie: Regeln nach \citew{Jackendoff77a}}\nocite{KP90a}\nocite{Pullum85a}
 
 
 

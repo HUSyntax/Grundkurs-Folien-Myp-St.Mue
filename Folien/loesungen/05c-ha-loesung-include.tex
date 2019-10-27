@@ -126,7 +126,30 @@
 	\end{minipage}
 \end{table}
 
+
+\item[5.] Geben Sie für die folgende Wortform die Flexionskategorien an, nach denen sie flektiert ist. %\\
+%\hfill(3 Punkte)\\
 \end{enumerate}
+
+\begin{columns}
+\column[t]{.28\textwidth}
+	\begin{exe}
+		\exr{ex:05cHA5} bestehe
+	\end{exe}
+
+\column[t]{.6\textwidth}
+\visible<7->{%
+\textcolor{red}{%
+1. / Sg. / Präsens / Indikativ / Aktiv\\
+1. / Sg. / Präsens / Konjunktiv I / Aktiv\\
+3. / Sg. / Präsens / Konjunktiv I / Aktiv\\
+2. / Sg. / Präsens / Imperativ / Aktiv
+}
+}
+\end{columns}
+
+
+
 \end{frame}
 
 
@@ -135,10 +158,10 @@
 \begin{frame}{Hausaufgabe -- Lösung}
 
 \begin{enumerate}
-	\item[5.] Warum sind die Wörter unter (\ref{ex:05cHA5a}) grammatisch und die unter (\ref{ex:05cHA5b}) ungrammatisch? %(4 Punkte)
+	\item[6.] Warum sind die Wörter unter (\ref{ex:05cHA6a}) grammatisch und die unter (\ref{ex:05cHA6b}) ungrammatisch? %(4 Punkte)
 	
 	\begin{exe}
-		\exr{ex:05cHA5}
+		\exr{ex:05cHA6}
 		\begin{xlist}
 			\ex kaufbar, trinkbar
 			\ex *fensterbar, *helfbar, *schönbar
@@ -162,10 +185,10 @@
 \begin{frame}{Hausaufgabe -- Lösung}
 
 \begin{enumerate}
-\item[6.] Sind die folgenden Verben Präfixverben oder Partikelverben? Begründen Sie Ihre Entscheidungen. %\hfill(3 Punkte)\\
+\item[7.] Sind die folgenden Verben Präfixverben oder Partikelverben? Begründen Sie Ihre Entscheidungen. %\hfill(3 Punkte)\\
 
 \begin{exe}
-	\exr{ex:05cHA6}
+	\exr{ex:05cHA7}
 	\begin{xlist}
 		\ex auskennen
 		\ex erkennen
@@ -204,10 +227,10 @@
 \begin{frame}{Hausaufgabe -- Lösung}
 
 \begin{enumerate}
-\item[7.] Geben Sie für das folgende Wort eine morphologische Konstituentenstruktur (inklusive Konstituentenkategorien (N, N\textsuperscript{af}, V, V\textsuperscript{af}, \dots)) an, und bestimmen Sie für jeden Knoten den Wortbildungstyp. %\hfill(6,5 Punkte)\\
+\item[8.] Geben Sie für das folgende Wort eine morphologische Konstituentenstruktur (inklusive Konstituentenkategorien (N, N\textsuperscript{af}, V, V\textsuperscript{af}, \dots)) an, und bestimmen Sie für jeden Knoten den Wortbildungstyp. %\hfill(6,5 Punkte)\\
 
 \begin{exe}
-	\exr{ex:05cHA7} Wahlkampfberaterinnen
+	\exr{ex:05cHA8} Wahlkampfberaterinnen
 \end{exe}
 
 \end{enumerate}
@@ -215,50 +238,54 @@
 \vspace{-.25cm}
 
 \begin{figure}
-\centering	
-\textcolor{red}{\scalebox{.6}{
-			\begin{forest} MyP edges,
-				[N, name=N1
-				[N, name=N2
-				[N, name=N3
-				[N, name=N4
-				[N, name=N6 [V[wahl/wähl]]]
-				[N, name=N7 [V[kampf/kämpf]]]]
-				[N, name=N5[V, name=V1	[V\textsubscript{af}[be-]]
-				[V[rat]]]
-				[N\textsuperscript{af}[-er]]]]
-				[N\textsuperscript{af}[-in]]]
-				[Fl[-nen]]]	
-				{
-					\draw[<-, red] (N1.west)--++(-12em,0pt)
-					node[anchor=east,align=center]{Flexion (KEIN Wortbildungsporzess)};
-					\draw[<-, red] (N2.west)--++(-14em,0pt)
-					node[anchor=east,align=center]{Derivation (Movierung)};
-					\draw[<-, red] (N3.west)--++(-9.5em,0pt)
-					node[anchor=east,align=center]{Determinativkompositum};
-					\draw[<-, red] (N4.west)--++(-4em,0pt)
-					node[anchor=east,align=center]{Determinativkompositum};
-					\draw[<-, red] (N5.west)--++(-3em,0pt)
-					node[anchor=east,align=center]{Derivation};
-					\draw[<-, red] (N6.west)--++(-3em,0pt)
-					node[anchor=east,align=center]{Implizite Derivation};
-					\draw[<-, red] (N7.east)--++(2.5em,0pt)--++(0em,-18ex)%--++(2em,0pt)
-					node[anchor=north,align=center]{Implizite Derivation};
-					\draw[<-, red] (V1.east)--++(1.5em,0pt)--++(0em,-14ex)--++(2em,0pt)
-					node[anchor=west,align=center]{Derivation};
-				}	
-			\end{forest}	
-		%\begin{itemize}
-		%	\item[]N1: Flexion (KEIN Wortbildungsporzess)
-		%	\item[]N2: Derivation (Movierung)
-		%	\item[]N3: Determinativkompositum
-		%	\item[]N4: Determinativkompositum
-		%	\item[]N5: Derivation
-		%	\item[]N6: Implizite Derivation
-		%	\item[]N7: Implizite Derivation
-		%	\item[]V1: Derivation
-		%\end{itemize}
-}}
+\centering
+
+\scalebox{.6}{
+
+\textcolor{red}{
+\begin{forest} MyP edges,
+	[N, name=N1
+	[N, name=N2
+	[N, name=N3
+	[N, name=N4
+	[N, name=N6 [V[wahl/wähl]]]
+	[N, name=N7 [V[kampf/kämpf]]]]
+	[N, name=N5[V, name=V1	[V\textsubscript{af}[be-]]
+	[V[rat]]]
+	[N\textsuperscript{af}[-er]]]]
+	[N\textsuperscript{af}[-in]]]
+	[Fl[-nen]]]	
+{
+	\draw[<-, red] (N1.west)--++(-12em,0pt)
+	node[anchor=east,align=center]{Flexion (KEIN Wortbildungsporzess)};
+	\draw[<-, red] (N2.west)--++(-14em,0pt)
+	node[anchor=east,align=center]{Derivation (Movierung)};
+	\draw[<-, red] (N3.west)--++(-9.5em,0pt)
+	node[anchor=east,align=center]{Determinativkompositum};
+	\draw[<-, red] (N4.west)--++(-4em,0pt)
+	node[anchor=east,align=center]{Determinativkompositum};
+	\draw[<-, red] (N5.west)--++(-3em,0pt)
+	node[anchor=east,align=center]{Derivation};
+	\draw[<-, red] (N6.west)--++(-3em,0pt)
+	node[anchor=east,align=center]{Implizite Derivation};
+	\draw[<-, red] (N7.east)--++(2.5em,0pt)--++(0em,-18ex)%--++(2em,0pt)
+	node[anchor=north,align=center]{Implizite Derivation};
+	\draw[<-, red] (V1.east)--++(1.5em,0pt)--++(0em,-14ex)--++(2em,0pt)
+	node[anchor=west,align=center]{Derivation};
+}
+\end{forest}	
+%\begin{itemize}
+%	\item[]N1: Flexion (KEIN Wortbildungsporzess)
+%	\item[]N2: Derivation (Movierung)
+%	\item[]N3: Determinativkompositum
+%	\item[]N4: Determinativkompositum
+%	\item[]N5: Derivation
+%	\item[]N6: Implizite Derivation
+%	\item[]N7: Implizite Derivation
+%	\item[]V1: Derivation
+%\end{itemize}
+}
+}
 
 \end{figure}
 \end{frame}
@@ -269,7 +296,7 @@
 \begin{frame}{Hausaufgabe -- Lösung}
 
 \begin{enumerate}
-\item[8.] Paraphrasieren Sie das folgende komplexe Wort so, dass es der angegebenen Struktur entspricht (auch wenn Sie selbst eine andere Struktur plausibler finden sollten). %\\
+\item[9.] Paraphrasieren Sie das folgende komplexe Wort so, dass es der angegebenen Struktur entspricht (auch wenn Sie selbst eine andere Struktur plausibler finden sollten). %\\
 %\hfill(2 Punkte)\\
 
 
@@ -287,30 +314,4 @@
 
 \end{enumerate}
 \end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Hausaufgabe -- Lösung}
-
-\begin{enumerate}
-\item[9.] Geben Sie für die folgende Wortform die Flexionskategorien an, nach denen sie flektiert ist. %\\
-%\hfill(3 Punkte)\\
-
-\begin{exe}
-	\exr{ex:05cHA9} bestehe
-\end{exe}
-
-\pause
-
-	\textcolor{red}{
-1.P. / Sg. / Präsens / Indikativ / Aktiv\\
-1.P. / Sg. / Präsens / Konjunktiv I / Aktiv\\
-3.P. / Sg. / Präsens / Konjunktiv I / Aktiv\\
-2.P. / Sg. / Präsens / Imperativ / Aktiv
-	}
-
-\end{enumerate}
-\end{frame}
-
 

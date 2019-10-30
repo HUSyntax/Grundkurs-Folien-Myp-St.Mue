@@ -131,10 +131,35 @@
 % Marking text with colour:
 % package needed: xcolor
 % Command \alert{} in Beamer >> FU-grün (leider!! @Stefan)
-\newcommand{\alertred}[1]{\textcolor{red}{#1}}
-\newcommand{\alertblue}[1]{\textcolor{blue}{#1}}
-\newcommand{\alertgreen}[1]{\textcolor{green}{#1}}
 
+%%%neue Farbbefehle in Anlehnung an rotul
+%%%(s. hu-beamer-includes-pdflatex.sty in texmf)
+
+%% Farbdefinitionen:
+
+%\newcommand{\alertred}[1]{\textcolor{red}{#1}}  % basic red
+\newcommand<>{\alertred}[1]{{\color#2[RGB]{138,15,20}#1}}  %HU rot + overlay
+
+%\newcommand{\alertblue}[1]{\textcolor{blue}{#1}} 		% basic blue
+\newcommand<>{\alertblue}[1]{{\color#2[RGB]{0,55,108}#1}} %HU blue + overlay
+
+%\newcommand{\alertgreen}[1]{\textcolor{green}{#1}}	% basic green
+\newcommand<>{\alertgreen}[1]{{\color#2[RGB]{0,87,44}#1}} %HU green + overlay
+
+
+%%% Verwendung der oben definierten Farben mit Unterschied in Handout und Beamer:
+
+\mode<handout>{%
+	\newcommand<>{\hured}[1]{\only#2{\underline{#1}}}
+	\newcommand<>{\hublue}[1]{\only#2{\textbf{#1}}}
+	\newcommand<>{\hugreen}[1]{\only#2{\textsc{#1}}}
+}
+%
+\mode<beamer>{%
+	\newcommand<>{\hured}[1]{\alertred#2{#1}}
+	\newcommand<>{\hublue}[1]{\alertblue#2{#1}}
+	\newcommand<>{\hugreen}[1]{\alertgreen#2{#1}}
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

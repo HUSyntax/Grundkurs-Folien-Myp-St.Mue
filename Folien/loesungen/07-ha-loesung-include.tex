@@ -7,20 +7,20 @@
 
 \ea 
 	\ea betrunken -- nüchtern \pause 
-	\hfill \alertred{konträre Antonymie}
+	\hfill \alertgreen{konträre Antonymie}
 	
 	\ex Orange -- Apfelsine \pause 
-	\hfill \alertred{Synonymie}
+	\hfill \alertgreen{Synonymie}
 	
 	\ex Vogel -- Feder \pause 
-	\hfill \alertred{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
+	\hfill \alertgreen{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
 	
 	
 	\ex volljährig -- minderjährig \pause 
-	\hfill \alertred{kontradiktorische Antonymie}
+	\hfill \alertgreen{kontradiktorische Antonymie}
 	
 	\ex mehr -- Meer \pause 
-	\hfill \alertred{Homonymie (genauer: Homophonie)}
+	\hfill \alertgreen{Homonymie (genauer: Homophonie)}
 	\z 
 \z 
 
@@ -41,7 +41,7 @@
 
 \pause 
 
-\hfill \alertred{a impliziert b}
+\hfill \alertgreen{a impliziert b}
 \z 
 
 \pause 
@@ -52,7 +52,7 @@
 
 \pause 
 
-\hfill \alertred{Paraphrase (synonyme Sätze)}
+\hfill \alertgreen{Paraphrase (synonyme Sätze)}
 \z 
 
 \pause 
@@ -63,7 +63,7 @@
 
 \pause 
 
-\hfill \alertred{b impliziert a}
+\hfill \alertgreen{b impliziert a}
 \z 	
 \z 
 
@@ -94,13 +94,13 @@
 	\begin{tabular}{c|c|c|c}
 		$p$& $\lnot p$ & $p \land \lnot p$ & $\lnot (p \land \lnot p)$ \\ 
 		\hline 
-		0 & 1 & 0& \alertred{1}\\ 
+		0 & 1 & 0& \alertgreen{1}\\ 
 		\hline 
-		1 & 0 & 0& \alertred{1}\\
+		1 & 0 & 0& \alertgreen{1}\\
 	\end{tabular} 
 \end{table} 
 
-\alertred{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
+\alertgreen{Die komplexe Aussage ist tautologisch (Wahrheitswert immer 1).}
 
 \end{frame}
 
@@ -128,17 +128,17 @@
 \scalebox{.9}{\begin{tabular}{c|c|c|c|c|c}
 		$p$ & $q$ & $p \lor q$ & $q \lor p$ & $(p \lor q) \leftrightarrow (q \lor p)$ & $\lnot ((p \lor q) \leftrightarrow (q \lor p))$ \\ 
 		\hline 
-		1 & 1 & 1 & 1 & 1 & \alertred{0}\\ 
+		1 & 1 & 1 & 1 & 1 & \alertgreen{0}\\ 
 		\hline 
-		1 & 0 & 1 & 1 & 1 & \alertred{0} \\
+		1 & 0 & 1 & 1 & 1 & \alertgreen{0} \\
 		\hline
-		0 & 1 & 1 & 1 & 1 & \alertred{0} \\
+		0 & 1 & 1 & 1 & 1 & \alertgreen{0} \\
 		\hline
-		0 & 0 & 0 & 0 & 1 & \alertred{0} \\
+		0 & 0 & 0 & 0 & 1 & \alertgreen{0} \\
 \end{tabular} }
 \end{table} 
 
-\alertred{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
+\alertgreen{Die komplexe Aussage ist kontradiktorisch (Wahrheitswert immer 0).}
 
 \end{frame}
 
@@ -167,17 +167,17 @@
 \begin{tabular}{c|c|c|c|c}
 $p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\ 
 \hline 
-1 & 1 & 1 & 1 & \alertred{1} \\ 
+1 & 1 & 1 & 1 & \alertgreen{1} \\ 
 \hline 
-1 & 0 & 0 & 1 & \alertred{0} \\
+1 & 0 & 0 & 1 & \alertgreen{0} \\
 \hline
-0 & 1 & 1 & 0 & \alertred{0} \\
+0 & 1 & 1 & 0 & \alertgreen{0} \\
 \hline
-0 & 0 & 1 & 1 & \alertred{1} \\
+0 & 0 & 1 & 1 & \alertgreen{1} \\
 \end{tabular} 
 \end{table} 
 
-\alertred{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
+\alertgreen{Die komplexe Aussage ist kontigent (Wahrheitswert von der Welt abhängig).}
 
 \end{frame}
 
@@ -191,8 +191,8 @@ $p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\
 \end{itemize}
 
 \begin{exe}
-	\exr{ex:Wert1} $(p \land q)$ \pause  \alertred{= 0}
-	\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertred{= 1}
-	\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertred{= 1}
+	\exr{ex:Wert1} $(p \land q)$ \pause  \alertgreen{= 0}
+	\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertgreen{= 1}
+	\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertgreen{= 1}
 \end{exe}
 \end{frame}

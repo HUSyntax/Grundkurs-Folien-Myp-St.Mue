@@ -12,16 +12,19 @@
 
 \subtitle{Syntax I: Einführung \& Terminologie}
 
-\author[aMyP]{
+\author[A. Machicao y Priemer]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
-%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	%	\\
+	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
 \institute{Institut für deutsche Sprache und Linguistik}
 
-\date{ }
+
+% bitte lassen, sonst kann man nicht sehen, von wann die PDF-Datei ist.
+%\date{ }
 
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
@@ -34,7 +37,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%      
-\huberlintitlepage
+\huberlintitlepage[22pt]
 \iftoggle{toc}{
 \frame{
 %\begin{multicols}{2}
@@ -198,15 +201,15 @@
 \scalebox{.8}{\begin{forest} MyP edges,
 	[S
 		[NP [N$'$
-			[AdjP [Adj$'$ [\zerobar{Adj} [\textcolor{red}{Colorless}] ] ]]
+			[AdjP [Adj$'$ [\zerobar{Adj} [\alertred{Colorless}] ] ]]
 			[N$'$
-				[AdjP [Adj$'$ [\zerobar{Adj} [\textcolor{red}{green}] ] ] ]
-				[N$'$ [\zerobar{N} [\textcolor{red}{ideas}] ] ]
+				[AdjP [Adj$'$ [\zerobar{Adj} [\alertred{green}] ] ] ]
+				[N$'$ [\zerobar{N} [\alertred{ideas}] ] ]
 			]
 		]]
 		[VP [V$'$
-			[V$'$ [\zerobar{V} [\textcolor{red}{sleep}] ] ]
-			[AdvP [Adv$'$ [\zerobar{Adv} [\textcolor{red}{furiously}] ] ] ]
+			[V$'$ [\zerobar{V} [\alertred{sleep}] ] ]
+			[AdvP [Adv$'$ [\zerobar{Adv} [\alertred{furiously}] ] ] ]
 		] ]
 	]
 \end{forest}}
@@ -457,10 +460,33 @@
 	\item[] \textbf{Aber:}
 	
 	\ea[]{Der \alertred{Vater} von Klaus kommt morgen.}
-	\z
+%	\z
 	
-	\ea[*]{\alertred{Vater} der von Klaus kommt morgen?}
-	\z
+%	\ea[*]{\alertred{Vater} der von Klaus kommt morgen?}
+%	\z
+
+%%%%%%%%%%%%%%%%%%%%
+% EXAMPLES WITH ARROWS (MOVEMENT):
+\ex[*]{
+	\begin{tabular}[c]{ll}
+		\begin{tikzpicture}
+			\begin{scope}
+			\node at (0,0) {};
+			\draw [<->] (0.3,-.2) -- (0.3,0) -- (1.72,0) -- (1.72,-.2);
+			\end{scope}
+		\end{tikzpicture}&\\
+		%%
+		\alertred{Vater$_1$} der \alertred{$t_1$} von Klaus kommt morgen?&\\
+		%%
+		\begin{tikzpicture}
+%		\begin{scope}
+%		\node at (0,0) {};
+%		\draw [<->] (0.3,.22) -- (0.3,0) -- (1.72,0) -- (1.72,.22);
+%		\end{scope}
+		\end{tikzpicture}&
+	\end{tabular}
+}
+\z
 	
 \end{itemize}
 
@@ -470,24 +496,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
+%\begin{itemize}
+
+%	\item 
+Entscheidend:
 \begin{itemize}
+	\item Manche Elemente gehören enger zusammen als andere (\textbf{phrasale Konstituente}): 
 
-	\item Entscheidend:
-		\begin{itemize}
-			\item Manche Elemente gehören enger zusammen als andere (\ras \textbf{Konstituente}): 
+	\ea {[Der Vater von Klaus] [kommt] [morgen].}
+	\z
+	
+	\item Rolle der \textbf{Kategorie} von Konstituenten:\\
+	Das \textbf{finite} (gebeugte) \textbf{Verb} im Satz muss nach vorne bewegt werden.
+	
+%	\ea {[Kommt]$_i$ der Vater von Klaus t$_i$ morgen?}
+%	\z
 
-			\ea {[Der Vater von Klaus] [kommt] [morgen].}
-			\z
+%%%%%%%%%%%%%%%%%%%%
+% EXAMPLES WITH ARROWS (MOVEMENT):
+\ea
+	\begin{tabular}[c]{ll}
+		\begin{tikzpicture}
+		\begin{scope}
+		\node at (0,0) {};
+		\draw [<->] (0.3,-.2) -- (0.3,0) -- (4.72,0) -- (4.72,-.2);
+		\end{scope}
+		\end{tikzpicture}&\\
+		%%
+		\alertred{Kommt$_i$} der Vater von Klaus \alertred{$t_i$} morgen?&\\
+		%%
+		\begin{tikzpicture}
+		%		\begin{scope}
+		%		\node at (0,0) {};
+		%		\draw [<->] (0.3,.22) -- (0.3,0) -- (1.72,0) -- (1.72,.22);
+		%		\end{scope}
+		\end{tikzpicture}&
+	\end{tabular}
+\z
 			
-			\item Rolle der \textbf{Kategorie} von Konstituenten:\\
-			\ras Das \textbf{finite} (gebeugte) \textbf{Verb} im Satz muss nach vorne bewegt werden.
-			
-			\ea {[Kommt]$_i$ der Vater von Klaus t$_i$ morgen?}
-			\z
-			
-		\end{itemize}
-
 \end{itemize}
+
+%\end{itemize}
 
 \end{frame}
 
@@ -634,50 +683,44 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 \begin{frame}
 \frametitle{Grammatikalität}
 
-\begin{itemize}
-	\item Was bedeutet \gqq{(nicht-)wohlgeformt}?
-	
-	\ea Schlafe ich
-	\z
-	
-	\ea Sitzt dem Hund unter Stuhl kleine der
-	\z
-	
-	\ea Was behauptet Maria, dass Klaus gesagt hat, dass er gehört hat, dass Irene gelesen hat?
-	\z
-	
-	\ea Ich bin gestern gegangen ins Kino.
-	\z
-	
-	\nocite{Finkbeiner&Meibauer14a}
-\end{itemize}
+Was bedeutet \gqq{(nicht-)wohlgeformt}?
 
-\end{frame}
+\settowidth\jamwidth{(Finkbeiner \& Meibauer 2014)} 	
+%\ea 
+	\ea Ich schlafe.
+	
+	\ex Was behauptet Maria, dass Klaus gesagt hat, dass Irene gelesen hat?
+	%WH-Bewegung
+	
+	\ex Sitzt dem Hund unter Stuhl kleine der.
+	%Ungrammatisch
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\ex Lili hatte gesagt, sie hat nur bis 20 Uhr Zeit am Telefon.
+	%Extraposition
+	
+	\ex 
+	\ea Ich bin glücklich, weil die Studenten lieben Syntax.
+	%Weil mit Hauptsatz
 
-\begin{frame}
-\frametitle{Grammatikalität}
-
-\begin{itemize}
+	\ex Weil die Studenten lieben Syntax, bin ich glücklich.
+	%Weil mit Hauptsatz
+	\z 
 	
-	\item Was bedeutet \gqq{(nicht-)wohlgeformt}?
-	
-	\ea Ich bin glücklich, weil die Studenten lieben Syntax!
-	\z
-	
-	\ea Ins Kino ich gehe heute.
-	\z
-	
+	\ex 
 	\ea Gestern ich war im Kino.
+	%Vorvorfeld
+	
+	\ex Jakob ich habe angerufen.
+	%Vorvorfeld
+
+	\ex Mit Ketchup oder ohne Ketchup ich ess' jetzt die Pommes.
+	%Vorvorfeld
+	
+	\jambox{\citep{Finkbeiner&Meibauer14a}}
+	\z 
+	
 	\z
-	
-	\ea Festschrift oder nicht Festschrift, meinen Geburtstag feiere ich auf jeden Fall. 
-	\z
-	
-\nocite{Finkbeiner&Meibauer14a}
-	
-\end{itemize}
+%\z 
 
 \end{frame}
 
@@ -760,24 +803,30 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Grammatikalität \vs Akzeptabilität}
+%\frametitle{Grammatikalität \vs Akzeptabilität}
 
 \begin{block}{Akzeptabilität}
-Die Akzeptabilität einer Äußerung meint ihre \textbf{beurteilbare Annehmbarkeit} durch einen kundigen Sprecher in der \textbf{Performanz} (Sprachverwendung). Sie ist \textbf{graduierbar} und von verschiedenen Performanzfaktoren abhängig, wie \zB Gedächtnis, Bildungsstand, Alter, Normativität, \dots\ \citep[vgl.][]{Fries&MyP16b}.
+Die Akzeptabilität einer Äußerung meint ihre \textbf{beurteilbare Annehmbarkeit} durch einen kundigen Sprecher in der \textbf{Performanz} (Sprachverwendung). Sie ist \textbf{graduierbar} und von verschiedenen Performanzfaktoren abhängig, wie \zB Gedächtnis, Bildungsstand, Alter, Normativität, \dots\ 
+
+\hfill \citep[vgl.][]{Fries&MyP16b}
 
 \end{block}
 
-\end{frame}
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Grammatikalität \vs Akzeptabilität}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Grammatikalität \vs Akzeptabilität}
+\pause 
 
 \begin{block}{Grammatikalität}
 Die Grammatikalität einer Struktur in einer Sprache meint ihre (Nicht-)\textbf{Generierbarkeit} durch den \textbf{Regelapparat} eines Sprach"=Modells (einer Grammatik). Die (Un"=)Grammatikalität sprachlicher Strukturen ist dementsprechend \textbf{theoriegebunden} und \idR \textbf{binär}. 
-Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers ab \citep[vgl.][]{Fries16a}.
+Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers ab. \hfill \citep[vgl.][]{Fries16a}
 \end{block}
+
+(vgl. auch \citealp{Haider11a})
 
 \end{frame}
 
@@ -897,7 +946,7 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=.05,angle=-90]{material/DudenRichtigesDeutsch}
+	\includegraphics[scale=.05]{material/DudenRichtigesDeutsch}
 	\caption{Duden}\label{Abb3}
 \end{figure}
 

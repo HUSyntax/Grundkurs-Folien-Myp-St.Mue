@@ -13,10 +13,10 @@
 
 \subtitle{Syntax IV: X-Bar-Theorie -- Köpfe}
 
-\author[aMyP]{
+\author[A. Machicao y Priemer]{
 	{\small Antonio Machicao y Priemer}
-%	\\
-%	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}\\
+	\\
+	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}\\
 %	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
 
@@ -50,10 +50,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%LITERATURE:
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%LITERATURE:
-
 %% Allgemein
 \nocite{Glueck&Roedel16a}
 \nocite{Luedeling2009a}
@@ -79,18 +75,32 @@
 \nocite{Luedeling2009a} 
 %\nocite{Meibauer&Co07a}
 %\nocite{MyP17b} % Kerngrammatik
-%\nocite{MyP18a} % Konstituententest
+\nocite{MyP18a} % Konstituententest
 \nocite{MyP18b} % Kopf
 \nocite{MyP18c} % Phrase
 \nocite{MyP18s} % Funktionale Kategorie
 \nocite{MyP18t} % Argumentstruktur
+\nocite{MyP18f} %Eliminierungstest
+\nocite{MyP18j} %Frageprobe
+\nocite{MyP18l} %Permutationstest
+\nocite{MyP18m} %Substitutionstest
 \nocite{MuellerS13f} 
 \nocite{MuellerS15b}
 %\nocite{Stechow&Sternefeld88a}
 \nocite{Sternefeld06a}
 \nocite{Sternefeld06b}
 %\nocite{Woellstein10a} % Topologisches Feldermodell
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+\frametitle{Begleitlektüre}
+	\begin{itemize}
+		\item \textbf{obligatorisch:}
+			\begin{itemize}
+				\item[] AM S.~79--86
+			\end{itemize}
+	\end{itemize}	
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Syntax IV}
@@ -235,26 +245,35 @@
 
 \begin{itemize}
 	\item Sehr starke Tradition und Verzweigung seit den 1950er Jahren
-	\item[]
+	
+	\medskip
+
+\settowidth\jamwidth{(vgl. Muller \& Machicao y Priemer 2019)}	
 	\item Sehr verschiedene Richtungen (Mainstream Generative Grammatik):
 	\begin{itemize}
-		\item Phrasenstrukturgrammatiken (PSG; \citealt{Chomsky57x})
-		\item Standardtheorie (ST; Auch Aspekte-Modell, \citealt{Chomsky65a})
-		\item \alertred{Rektions-Bindungs-Theorie} (GB; \citealt{Chomsky81x})
-		\item Minimalismus (MP; \citealt{Chomsky95a})
+		\item Phrasenstrukturgrammatiken \jambox{(PSG; \citealt{Chomsky57x})}
+		\item Standardtheorie \jambox{(ST; Auch Aspekte-Modell, \citealt{Chomsky65a})}
+		\item \alertred{Rektions-Bindungs-Theorie} \jambox{(GB; \citealt{Chomsky81x})}
+		\item Minimalismus \jambox{(MP; \citealt{Chomsky95a})}
 	\end{itemize}
-	\item[]
+
+\medskip
+
 	\item Daraus entstanden andere \gqq{GGen}:
+	
 	\begin{itemize}
-		\item Generative Semantik \citep{Harris93a}
-		\item Lexical-Functional Grammar (LFG)
-		\item Head-driven phrase Structure Grammar (HPSG)
-		\item Construction Grammar (CxG)
+		\item Generative Semantik \jambox{\citep[vgl.][]{Harris93a}}
+		\item Lexical-Functional Grammar (LFG) \jambox{\citep[vgl.][]{Dalrymple&Findlay19}}
+		\item Head-driven phrase Structure Grammar (HPSG) 
+		
+		\jambox{\citep[vgl.][]{Mueller&MyP19}}
+		
+		\item Construction Grammar (CxG) \jambox{\citep[vgl.][]{Chaves19}}
 		\item \dots
 	\end{itemize}
 \end{itemize}
 
-\citep[vgl.][]{MuellerS15b}
+\citep[vgl.][]{MuellerS15b, Kertész&Co19}
 
 \end{frame}
 
@@ -467,7 +486,7 @@
 \begin{forest}
 	MyP edges,
 	[XP [YP]
-	[\MyPxbar{X} [\zerobar{X}, draw, red]
+	[\MyPxbar{X} [\zerobar{X}, draw, HUred]
 	[ZP]
 	]
 	]
@@ -496,7 +515,7 @@
 MyP edges,
 [XP 
 	[YP]
-	[\MyPxbar{X}, draw, red 
+	[\MyPxbar{X}, draw, HUred 
 		[\zerobar{X}]
 		[ZP]
 	]
@@ -523,9 +542,9 @@ MyP edges,
 \centering
 \begin{forest}
 	MyP edges,
-	[XP [YP, draw, red]
+	[XP [YP, draw, HUred]
 	[\MyPxbar{X} [\zerobar{X}]
-	[ZP, draw, red]
+	[ZP, draw, HUred]
 	]
 	]
 \end{forest}
@@ -550,11 +569,11 @@ MyP edges,
 \centering
 \begin{forest}
 	MyP edges,
-	[XP{$=$}X$^2$, draw, red
-		[YP{$=$}Y$^2$, draw, red]
+	[XP{$=$}X$^2$, draw, HUred
+		[YP{$=$}Y$^2$, draw, HUred]
 		[X$^1$ 
 			[\zerobar{X}]
-			[ZP{$=$}Z$^2$, draw, red]
+			[ZP{$=$}Z$^2$, draw, HUred]
 		]
 	]
 \end{forest}
@@ -601,7 +620,7 @@ MyP edges,
 	\begin{forest}
 		MyP edges,
 		[XP 
-		[\MyPxbar{X} [\zerobar{X}, draw, red]
+		[\MyPxbar{X} [\zerobar{X}, draw, HUred]
 		]
 		]
 	\end{forest}
@@ -646,9 +665,9 @@ MyP edges,
 	\small{
 		\begin{forest}
 		sm edges,
-		[Autofahrer {\ras} Fahrer!
+		[Auto\alertred{fahrer}
 			[Auto] 
-			[Fahrer]{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+			[Fahrer]{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
 node[anchor=west,align=center]{Kopf};}
 		]
 		\end{forest}
@@ -662,7 +681,7 @@ node[anchor=west,align=center]{Kopf};}
 \end{figure}
 
 \begin{itemize}
-	\item Der Kopf bestimmt die \textbf{morphosyntaktischen Eigenschaften} eines Wortes (Kasus, Numerus, Genus, Flexionsart, syntaktische Kategorie, auch semantische Aspekte, \dots ).
+	\item Der morphologische Kopf bestimmt die \textbf{morphosyntaktischen Eigenschaften} eines Wortes (Kasus, Numerus, Genus, Flexionsart, syntaktische Kategorie, auch semantische Aspekte, \dots ).
 \end{itemize}
 
 \end{frame}
@@ -672,7 +691,7 @@ node[anchor=west,align=center]{Kopf};}
 \begin{frame}
 \frametitle{Kopf}
 
-\begin{block}
+\begin{block}{}
 Der Kopf einer Wortgruppe/""Konstituente/""Phrase/""Projektion ist dasjenige Element, das \textbf{die wichtigsten Eigenschaften} der Wortgruppe/""Konstituente/""Phrase/""Projektion bestimmt. 
 
 Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf verlangt die Anwesenheit bestimmter anderer Elemente in seiner Phrase.
@@ -684,28 +703,15 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 
 \begin{itemize}
 	\item Was sind \gqq{die wichtigsten Eigenschaften}?
+		\begin{itemize}
+			\item Interpretation der Phrase
+			\item Distribution der Phrase
+			\item Morphosyntaktische Eigenschaften der Phrase
+			\item Aufbau der Phrase	
+		\end{itemize}
 \end{itemize}
 
 \end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Kopf}
-
-\begin{itemize}
-	\item Was sind \gqq{die wichtigsten Eigenschaften}?
-	\begin{itemize}
-		\item Interpretation der Phrase
-		\item Distribution der Phrase
-		\item Morphosyntaktische Eigenschaften der Phrase
-		\item Aufbau der Phrase
-		
-	\end{itemize}
-\end{itemize}
-
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -734,11 +740,12 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 
 \pause
 
-\ex \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} kauft Peter.  \hfill [\textbf{Vorfeldtest}]
+\settowidth\jamwidth{Vorfeldtest}
+\ex \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} kauft Peter.  \jambox{ [\textbf{Vorfeldtest}]}
 
 \pause
 
-\ex \alertred{{[}Was]} kauft Peter? \ras \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} \hfill [\textbf{Fragetest}]
+\ex \alertred{{[}Was]} kauft Peter? \ras \alertred{{[}Das erfrischende Wasser, das ich dir letztens empfohlen habe]} \jambox{ [\textbf{Fragetest}]}
 \z
 
 \pause
@@ -759,7 +766,7 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 
 \pause 
 	
-	\ea {[}das erfrischende Wasser, das ich dir letztens empfohlen habe]
+	\ea Peter kauft \alertred{[das erfrischende Wasser, das ich dir letztens empfohlen habe]}
 
 \pause
 	
@@ -810,14 +817,18 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 \end{itemize}
 	\pause
 
-\eal[]{S \ras NP + VP}
-\ex[]{Peter + VP}
-\ex[]{Peter + [\textbf{schläft}].}
-\ex[]{Peter + [\textbf{kauft} den Wagen].}
-\ex[]{Peter + [\textbf{schenkt} Maria die Blumen].}
-\ex[*]{Peter + [der \textbf{Wagen}]}
-\ex[*]{Peter + [seiner Frau \textbf{treu}]}
-\zl
+
+\ea {S \ras NP $+$ VP}
+
+\ea[]{Peter $+$ VP}
+\ex[]{Peter $+$ [\textbf{schläft}].}
+\ex[]{Peter $+$ [\textbf{kauft} den Wagen].}
+\ex[]{Peter $+$ [\textbf{schenkt} Maria die Blumen].}
+\ex[*]{Peter $+$ [der \textbf{Wagen}]}
+\ex[*]{Peter $+$ [seiner Frau \textbf{treu}]}
+\z
+
+\z 
 	
 	
 \end{itemize}
@@ -838,15 +849,17 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 \end{itemize}
 	\pause
 
-\eal S \ras NP + VP
-\ex[]{NP + parkt an der Ecke}
-\ex[]{[\textbf{Peter}] + parkt an der Ecke.}
-\ex[]{[Der \textbf{Wagen}] + parkt an der Ecke.}
-\ex[]{[Der vermeintlich korrupte \textbf{Präsident} der FIFA] + parkt an der Ecke.}
-\ex[*]{[\textbf{Schläft}] + parkt an der Ecke.}
-\ex[*]{[\textbf{Nett}] + parkt an der Ecke.}
-\zl
-	
+\ea S \ras NP $+$ VP
+
+\ea[]{NP $+$ parkt an der Ecke}
+\ex[]{[\textbf{Peter}] $+$ parkt an der Ecke.}
+\ex[]{[Der \textbf{Wagen}] $+$ parkt an der Ecke.}
+\ex[]{[Der vermeintlich korrupte \textbf{Präsident} der FIFA] $+$ parkt an der Ecke.}
+\ex[*]{[\textbf{Schläft}] $+$ parkt an der Ecke.}
+\ex[*]{[\textbf{Nett}] $+$ parkt an der Ecke.}
+\z
+
+\z	
 	
 \end{itemize}
 
@@ -866,16 +879,18 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 \end{itemize}
 	\pause
 
-\eal NP \ras Det + (AP) + N
-\ex[]{Der + AP + N}
-\ex[]{Der + [\textbf{nette}] + Onkel}
-\ex[]{Der + [auf seinen Sohn \textbf{stolze}] + Onkel}
-\ex[]{Der + [seiner Frau \textbf{treue}] + Onkel}
-\ex[*]{Der + [\textbf{schläft}] + Onkel}
-\ex[*]{Der + [der \textbf{Wagen}] + Onkel}
-\zl
+\ea NP \ras Det $+$ (AP) $+$ N
+
+\ea[]{Der $+$ AP $+$ N}
+\ex[]{Der $+$ [\textbf{nette}] $+$ Onkel}
+\ex[]{Der $+$ [auf seinen Sohn \textbf{stolze}] $+$ Onkel}
+\ex[]{Der $+$ [seiner Frau \textbf{treue}] $+$ Onkel}
+\ex[*]{Der $+$ [\textbf{schläft}] $+$ Onkel}
+\ex[*]{Der $+$ [der \textbf{Wagen}] $+$ Onkel}
+\z
 	
-	
+\z	
+
 \end{itemize}
 
 \end{frame}
@@ -910,11 +925,11 @@ Gleichzeitig steuert der Kopf den \textbf{Aufbau} der Phrase, d.\,h. der Kopf ve
 	\begin{minipage}[b]{0.40\textwidth}
 	\centering
 	\scalebox{.68}{
-		\begin{forest}
+	\hfill	\begin{forest}
 		MyP edges,
 		[VP [NP [Peter,roof]]
 			[\MyPxbar{V} [NP [den Patienten,roof]]
-				[V [behandelt]]		{\draw[<-,red] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
+				[V [behandelt]]		{\draw[<-,HUred] (.south east)--++(0em,-1.5ex)--++(+2em,0pt)
 node[anchor=west,align=center]{Kopf};}
 			]
 		]
@@ -931,11 +946,11 @@ node[anchor=west,align=center]{Kopf};}
   	\begin{minipage}[b]{0.40\textwidth}
 	\centering
 	\scalebox{.68}{
-		\begin{forest}
+	\hfill	\begin{forest}
 		MyP edges,
 		[NP [Det [Peters]]
 			[\MyPxbar{N} [AP [sanfte,roof]]
-				[\MyPxbar{N} [N [Behandlung]]{\draw[<-,red] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
+				[\MyPxbar{N} [N [Behandlung]]{\draw[<-,HUred] (.south west)--++(0em,-1.5ex)--++(-2em,0pt)
 node[anchor=east,align=center]{Kopf};}
 					[NP [des Patienten,roof]]]]
 		]
@@ -982,7 +997,7 @@ node[anchor=east,align=center]{Kopf};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Phrasenaufbau \ras Argumentstruktur}
+\subsubsection{Phrasenaufbau: Argumentstruktur}
 
 %\iftoggle{sectoc}{
 %	\frame{
@@ -995,7 +1010,7 @@ node[anchor=east,align=center]{Kopf};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Phrasenaufbau \ras Argumentstruktur}
+\frametitle{Phrasenaufbau: Argumentstruktur}
 
 \begin{itemize}
 	\item Auch: Valenz, Subkategorisierung
@@ -1010,7 +1025,7 @@ node[anchor=east,align=center]{Kopf};}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Phrasenaufbau \ras Argumentstruktur}
+\frametitle{Phrasenaufbau: Argumentstruktur}
 
 \begin{block}{Argumente und Modifikatoren}
 Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten Einheiten, um eine wohlgeformte Phrase zu bilden. Der Kopf bestimmt dabei die \textbf{Anzahl}, die \textbf{Form} (\zB Kasus) und die \textbf{Art} (\zB Theta-Rolle) seiner Argumente. Nicht-Argumente in einer Struktur werden \textbf{Modifikatoren} genannt. Sie werden nicht verlangt, sondern können frei hinzugefügt werden und \textbf{modifizieren} die Aussage. 
@@ -1021,24 +1036,23 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Phrasenaufbau \ras Argumentstruktur}
+\frametitle{Phrasenaufbau: Argumentstruktur}
 
 \begin{itemize}
-	\item Der Kopf bestimmt,\\ 
-	\textbf{welche und wieviele} Argumente \textbf{notwendig} sind, um eine wohlgeformte Phrase zu bilden.
+	\item Der Kopf bestimmt, \textbf{welche und wieviele} Argumente \textbf{notwendig} sind, um eine wohlgeformte Phrase zu bilden.
 
-
+\settowidth\jamwidth{(3 Argumente)}
 \eal 
-\ex {[Peter] schläft.} \hfill (1 Argument)
-\ex {[Peter] küsst [Maria].} \hfill (2 Argumente)
-\ex {[Maria] schenkt [Peter] [die Blumen].} \hfill (3 Argumente)
+\ex {[Clara] schläft.} \jambox{(1 Argument)}
+\ex {[Clara] küsst [Maria].} \jambox{(2 Argumente)}
+\ex {[Maria] schenkt [Clara] [die Blumen].} \jambox{(3 Argumente)}
 \zl
 
 \pause
 
 \eal
-\ex[*]{[Peter] schläft [Maria].}
-\ex[*]{[Maria] küsst [Peter] [die Blumen].}
+\ex[*]{[Clara] schläft [Maria].}
+\ex[*]{[Maria] küsst [Clara] [die Blumen].}
 \ex[*]{schenkt.}
 \zl
 
@@ -1049,11 +1063,10 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Phrasenaufbau \ras Argumentstruktur}}
+\only<presentation>{\frametitle{Phrasenaufbau: Argumentstruktur}}
 
 \begin{itemize}
-	\item Der Kopf bestimmt\\ 
-	\textbf{die Form} seiner Argumente (\zB durch \textbf{Kasusrektion}).
+	\item Der Kopf bestimmt \textbf{die Form} seiner Argumente (\zB durch \textbf{Kasusrektion}).
 \end{itemize}
 
 \eal 
@@ -1078,11 +1091,10 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Phrasenaufbau \ras Argumentstruktur}}
+\only<presentation>{\frametitle{Phrasenaufbau: Argumentstruktur}}
 
 \begin{itemize}
-	\item Der Kopf bestimmt\\ 
-	\textbf{die Form} seiner Argumente (\zB durch \textbf{Finitheitsrektion}).
+	\item Der Kopf bestimmt \textbf{die Form} seiner Argumente (\zB durch \textbf{Finitheitsrektion}).
 \end{itemize}
 
 \ea \textbf{Modalverb} verlangt Infinitiv\\
@@ -1106,11 +1118,10 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\only<presentation>{\frametitle{Phrasenaufbau \ras Argumentstruktur}}
+\only<presentation>{\frametitle{Phrasenaufbau: Argumentstruktur}}
 
 \begin{itemize}
-	\item Der Kopf bestimmt\\ 
-	\textbf{die Art}, wie seine Argumente interpretiert werden (Theta-Rollen, $\theta$-Rollen).
+	\item Der Kopf bestimmt \textbf{die Art}, wie seine Argumente interpretiert werden (Theta-Rollen, $\theta$-Rollen).
 
 \eal 
 \ex {[Der Elefant]$_{\textsc{agens}}$ tötet [den Mann]$_{\textsc{patiens}}$.}
@@ -1123,7 +1134,7 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 \zl
 
 
-	\item Einige Verben (\zB \MyPobj{regnen, schneien}) vergeben ihrem Subjekt keine Theta-Rolle \ras semantisch gesehen 0-wertig.
+	\item Einige Verben (\zB \MyPobj{regnen, schneien}) vergeben ihrem Subjekt keine Theta-Rolle. Sie sind semantisch gesehen \textbf{0-wertig}.
 
 \end{itemize}
 
@@ -1149,15 +1160,19 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 \begin{itemize}
 	\item Auch: thematische/""semantische Rollen, Theta-Rollen, $\theta$-Rollen
+\medskip	
 	\item[]
 	\item Semantische Rolle, die ein Argument von seinem Kopf erhält
+\medskip	
 	\item[]
-	\item Anzahl und Definition der Theta-Rollen \ras theorieabhängig
+	\item Anzahl und Definition der Theta-Rollen: theorieabhängig
 
 	\begin{itemize}
 		\item \textbf{AGENS:} jemand, der die Handlung, die durch das Prädikat bezeichnet wird, willentlich anstößt/""ausführt.
+\medskip		
 		\item[]
 		\item \textbf{THEMA/""PATIENS:} jemand oder etwas, der oder das durch die vom Prädikat bezeichnete Handlung betroffen wird
+\medskip		
 		\item[]
 		\item \textbf{EXPERIENCER:} jemand, der durch die (in der) vom Prädikat bezeichneten Handlung etwas psychisch oder physisch empfindet
 
@@ -1178,16 +1193,16 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\begin{itemize}
 
 		\item \textbf{ZIEL (GOAL):} die Entität, auf die die vom Prädikat ausgedrückte Handlung gerichtet ist
-
+\medskip
 		\item[]
 		\item \textbf{QUELLE (SOURCE):} die Entität, von der die vom Prädikat ausgedrückte Handlung ausgeht
-
+\medskip
 		\item[]
 		\item \textbf{ORT (LOCATION):} der Ort, an dem die vom Prädikat ausgedrückte Handlung stattfindet
-
+\medskip
 		\item[]
 		\item \textbf{ZEIT (TIME):} die Zeit(spanne), an der die vom Prädikat ausgedrückte Handlung stattfindet
-
+\medskip
 		\item[]
 		\item \textbf{POSSESSOR:} Entität, die ein Objekt besitzt		
 	\end{itemize}
@@ -1220,14 +1235,18 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\begin{enumerate}
 		\item \textbf{Anzahl} der benötigten Argumente (syntaktische Information),
 		\item[]
+\medskip		
 		\item ihre \textbf{syntaktische Kategorie} (DP, PP, CP, \dots )\\
-		(syntaktische Information \ras c-selektionales Merkmal oder Subkategorisierungseigenschaft),
+		(syntaktische Information: c-selektionales Merkmal oder Subkategorisierungseigenschaft),
+\medskip		
 		\item[]
 		\item ihre \textbf{morphosyntaktische Realisierung} (\zB Kasus) (morphologische Information),
+\medskip		
 		\item[]
 		\item ihre \textbf{$\theta$-Rolle} (semantische Information),
+\medskip		
 		\item[]
-		\item \textbf{weitere semantische Eigenschaften}, \zB das Objekt vom Verb \MyPobj{trinken} muss \gqq{flüssig} sein (semantische Information \ras s-selektionales Merkmal oder 	Selektionsbeschränkung).
+		\item \textbf{weitere semantische Eigenschaften}, \zB das Objekt vom Verb \MyPobj{trinken} muss \gqq{flüssig} sein (semantische Information: s-selektionales Merkmal oder 	Selektionsbeschränkung).
 	\end{enumerate}
 	
 \end{itemize}
@@ -1246,7 +1265,7 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 	\ea lesen: DP$_{\textsc{nom,ag}}$ (DP)$_{\textsc{akk,th}}$ $\underline{\qquad}$
 	\z
 	
-	\item[] \textbf{=} \MyPobj{lesen} ist subkategorisiert für zwei Argumente, die beide syntaktisch NPn/DPn sind. Eine der NPn/DPn ist obligatorisch, wird im Nominativ realisiert und trägt die $\theta$-Rolle Agens, z.B. \MyPobj{Uta} in \MyPobj{Uta liest ein Buch}. Die andere NP/DP ist fakultativ, wird im Akkusativ realisiert und trägt die $\theta$-Rolle Thema (\zB \MyPobj{ein Buch} in \MyPobj{Uta liest ein Buch}).
+	\item[] \textbf{$=$} \MyPobj{lesen} ist subkategorisiert für zwei Argumente, die beide syntaktisch NPn/DPn sind. Eine der NPn/DPn ist obligatorisch, wird im Nominativ realisiert und trägt die $\theta$-Rolle Agens, z.B. \MyPobj{Uta} in \MyPobj{Uta liest ein Buch}. Die andere NP/DP ist fakultativ, wird im Akkusativ realisiert und trägt die $\theta$-Rolle Thema (\zB \MyPobj{ein Buch} in \MyPobj{Uta liest ein Buch}).
 
 	\ea schenken: DP$_{\textsc{nom,ag}}$ DP$_{\textsc{dat,ziel}}$  DP$_{\textsc{akk,th}}$ $\underline{\qquad}$ 
 	\z
@@ -1279,13 +1298,13 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 \eal 
 \ex Maria schläft \alertred{[heute] [im Zimmer] [unruhig]}.
-\ex Maria küsst Peter \alertred{[heute] [im Zimmer] [unruhig]}.
-\ex Maria schenkt Peter die Blumen \alertred{[heute] [im Zimmer] [unruhig]}.
+\ex Maria küsst Clara \alertred{[heute] [im Zimmer] [unruhig]}.
+\ex Maria schenkt Clara die Blumen \alertred{[heute] [im Zimmer] [unruhig]}.
 \zl
 
 	\begin{itemize}
 		\item Modifikatoren sind \textbf{immer fakultativ}!
-		\item Argumente können \textbf{obligatorisch} oder \textbf{fakultativ} sein (sie werden dann \gqq{mitverstanden}! \ras existentielle Interpretation).
+		\item Argumente können \textbf{obligatorisch} oder \textbf{fakultativ} sein (sie werden dann \gqq{mitverstanden}: existentielle Interpretation).
 		
 		\eal 
 		\ex Maria schläft \alertred{[heute] [im Zimmer]}.
@@ -1293,8 +1312,8 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 		\zl
 		
 		\eal 
-		\ex Peter isst \alertred{[eine Schokolade]}.
-		\ex Peter isst. 
+		\ex Clara isst \alertred{[eine Schokolade]}.
+		\ex Clara isst. 
 		\zl
 		
 	\end{itemize}
@@ -1307,15 +1326,15 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
-\textbf{Modifikatoren} sind vom Kopf weitgehend unabhängig in Bezug auf\dots
+\textbf{Modifikatoren} (syntaktisch: Adjunkte) sind vom Kopf weitgehend unabhängig in Bezug auf\dots
 
 \begin{itemize}
 	
 	\item \textbf{Form}
 \eal
 \ex Maria schläft \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
-\ex Maria küsst Peter \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
-\ex Maria schenkt Peter die Blumen \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
+\ex Maria küsst Clara \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
+\ex Maria schenkt Clara die Blumen \alertred{[heute]$_{AdvP}$ [im Zimmer]$_{PP}$, [obwohl die Heizung nicht funktioniert]$_{CP}$}.
 \zl
 
 \end{itemize}
@@ -1412,7 +1431,7 @@ Argumente sind die von einem Kopf (Nomen, Verb, Präposition, \dots ) verlangten
 
 \begin{itemize}
 	
-	\item Bestimmen Sie in den folgenden Sätzen, welche Phrasen Argumente sind und welche Phrasen Modifikatoren des Verbs sind, und begründen Sie Ihre Entscheidung.
+	\item Bestimmen Sie in den folgenden Sätzen, welche Phrasen Argumente und welche Modifikatoren des Verbs sind, und begründen Sie Ihre Entscheidung.
 
 \end{itemize}
 

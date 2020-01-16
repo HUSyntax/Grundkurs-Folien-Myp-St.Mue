@@ -5,23 +5,30 @@
 \item Welche Bedeutungsrelationen bzw.\ Ambiguitätsarten bestehen zwischen den folgenden Wortpaaren? Nennen Sie diese.
 \end{itemize}
 
+\settowidth\jamwidth{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
 \ea 
 	\ea betrunken -- nüchtern \pause 
-	\hfill \alertgreen{konträre Antonymie}
+	\jambox{\alertgreen{konträre Antonymie}}
 	
 	\ex Orange -- Apfelsine \pause 
-	\hfill \alertgreen{Synonymie}
+	\jambox{\alertgreen{Synonymie}}
 	
 	\ex Vogel -- Feder \pause 
-	\hfill \alertgreen{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}
+	\jambox{\alertgreen{Meronymie (\textit{Feder} ist ein Meronym zu \textit{Vogel})}}
 	
 	
 	\ex volljährig -- minderjährig \pause 
-	\hfill \alertgreen{kontradiktorische Antonymie}
+	\jambox{\alertgreen{kontradiktorische Antonymie}}
 	
 	\ex mehr -- Meer \pause 
-	\hfill \alertgreen{Homonymie (genauer: Homophonie)}
-	\z 
+	\jambox{\alertgreen{Homonymie (genauer: Homophonie)}}
+	
+	\ex Er studiert an der Universität -- Unsere Univesität steht unter Denkmalschutz \pause
+	\jambox{\alertgreen{Polysemie}}
+	
+	\ex umfahren -- umfahren \pause
+	\jambox{\alertgreen{Homonymie (genauer: Homographie)}}
+	\z
 \z 
 
 \end{frame}
@@ -32,39 +39,57 @@
 \frametitle{Hausaufgabe -- Lösung}
 
 \begin{itemize}
-	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Definieren Sie diese.
+	\item Welche semantischen Relationen bestehen zwischen den folgenden Sätzen? Nennen Sie diese.
 \end{itemize}
 
+\settowidth\jamwidth{Paraphrase (synonyme Sätze)}
 \ea 
 \ea Auf dem Tisch liegt eine Rose.
 \ex Auf dem Tisch liegt eine Blume.
-
 \pause 
-
-\hfill \alertgreen{a impliziert b}
+\jambox{\alertgreen{a impliziert b}}
 \z 
 
 \pause 
+\medskip
 
 \ex 	
 \ea Alle Vögel können fliegen.
 \ex Kein Vogel kann nicht fliegen.
-
 \pause 
-
-\hfill \alertgreen{Paraphrase (synonyme Sätze)}
+\jambox{\alertgreen{Paraphrase (synonyme Sätze)}}
 \z 
 
 \pause 
+\medskip
 
 \ex 	
 \ea Einige Tiere haben Federn.
 \ex Alle Tiere haben Federn.
-
 \pause 
+\jambox{\alertgreen{b impliziert a}}
+\z
 
-\hfill \alertgreen{b impliziert a}
-\z 	
+\pause
+\medskip
+
+\ex
+\ea Die Wand ist blau.
+\ex Die Wand ist rot.
+\pause
+\jambox{\alertgreen{Inkompatibilität}}
+\z
+
+\pause
+\medskip
+
+\ex
+\ea Der Mann ist ledig.
+\ex Der Mann ist verheiratet.
+\pause
+\jambox{\alertgreen{Kontradiktion}}
+\z
+
 \z 
 
 \end{frame}
@@ -192,7 +217,9 @@ $p$ & $q$ & $p \ras q$ & $q \ras p$ & $(p \ras q) \leftrightarrow (q \ras p)$ \\
 
 \begin{exe}
 	\exr{ex:Wert1} $(p \land q)$ \pause  \alertgreen{= 0}
+	\pause
 	\exr{ex:Wert2} $(p \rightarrow (q \lor p))$ \pause \alertgreen{= 1}
+	\pause
 	\exr{ex:Wert3} $((q \land q) \lor (p \land q))$ \pause \alertgreen{= 1}
 \end{exe}
 \end{frame}

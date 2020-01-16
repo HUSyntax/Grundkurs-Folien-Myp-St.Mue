@@ -28,8 +28,6 @@
 
 %\publishers{\textbf{6. linguistischer Methodenworkshop \\ Humboldt-Universität zu Berlin}}
 
-%\hyphenation{nobreak}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Preamble's End                  
@@ -76,6 +74,8 @@
 \nocite{MyP18a} % Konstituententest
 \nocite{MyP18b} % Kopf
 \nocite{MyP18c} % Phrase
+\nocite{MyP18g} %Entscheidungsfragesatz
+\nocite{MyP18i} %Ergänzungsfragesatz
 %\nocite{MuellerS13f} 
 %\nocite{MuellerS15b}
 %\nocite{Stechow&Sternefeld88a}
@@ -284,7 +284,7 @@
 
 \pause
 
-	\item [\dots] dass diese Teile zu \textbf{unterschiedlichen Kategorie} gehören können.
+	\item [\dots] dass diese Teile zu \textbf{unterschiedlichen Kategorien} gehören können.
 
 	\ea 
 	\gll {Jakob schläft.} $=$ Jakob $+$ schläft\\
@@ -318,12 +318,17 @@
 \pause
 
 	\item [\dots] dass diese Teile an der Stelle, wo sie stehen, eine bestimmte \textbf{Rolle} spielen.
-			
-	\ea
-	\gll Jakob schläft.\\
-	Subjekt Prädikat\\
-	\z
 	
+	\ea 		
+		\ea
+		\gll Luise trifft Clara.\\
+		\textsc{Subjekt} \textsc{Prädikat} \textsc{Objekt}\\
+		
+		\ex 
+		\gll Clara trifft Luise.\\
+		\textsc{Subjekt} \textsc{Prädikat} \textsc{Objekt}\\
+		\z
+	\z 
 \end{itemize}
 
 \end{itemize}
@@ -335,44 +340,57 @@
 \begin{frame}
 
 \begin{itemize}
-	\item Eine Minigrammatik:
+	\item Eine Minigrammatik (vorläufig):
 
 	\eal 
 	\ex Jakob schläft. $=$ Jakob $+$ schläft
-\pause	
-	\ex	S $=$ N $+$ V 
+%\pause	
+\visible<2->{
+	\ex	S $=$ N $+$ V\only<7->{\textsubscript{\hured{intransitiv}}} 
 	\zl
+}
 
-\pause
-	
+%\pause
+\visible<3->{
 	\eal 
 	\ex Jakob liebt Syntax.
-\pause
-	\ex S $=$ N $+$ V $+$ N
+}
+	
+%\pause
+\visible<4->{
+	\ex S $=$ N $+$ V\only<7->{\textsubscript{\hured{transitiv}}}  $+$ N
 	\zl
+}
 
-\pause
-		
+%\pause
+\visible<5->{		
 	\eal 
 	\ex Jakob zeigt Peter Chomsky.
-\pause
-	\ex S $=$ N $+$ V $+$ N $+$ N 
+}	
+
+%\pause
+\visible<6->{
+	\ex S $=$ N $+$ V\only<7->{\textsubscript{\hured{ditransitiv}}}  $+$ N $+$ N 
 	\zl
+}
 	
-\pause
-	
+%\pause
+\visible<8->{	
 	\eal 
 	\ex Gestern zeigte Jakob Peter Chomsky.
-\pause
-	\ex S $=$ Adv $+$ V $+$ N $+$ N $+$ N 
-	\zl
+}	
 
+%\pause
+\visible<9->{
+	\ex S $=$ (Adv) $+$ V\only<9->{\textsubscript{\hured{ditransitiv}}}  $+$ N $+$ N $+$ N 
+	\zl
+}
 \end{itemize}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 \textbf{Aber: }
@@ -404,7 +422,7 @@
 \frametitle{Linearität und Struktur}
 
 \begin{itemize}
-	\item \textbf{Linearität} ($\approx$ Reihenfolge) der Wörter in einem Satz ist wichtig!
+	\item \textbf{Linearität} ($\approx$ Reihenfolge) der Wörter in einem Satz ist wichtig.
 	
 	\ea []{Der kleine Hund sitzt unter dem Stuhl.}
 	\z
@@ -426,10 +444,10 @@
 
 \pause 
 	
-		\ea Paul sah [den Mann mit dem Fernglas].\\ 
+		\ea Paul sah \hured{[den Mann mit dem Fernglas]}.\\ 
 		\vs 
 		
-		\ex Paul sah [den 	Mann] [mit dem 	Fernglas].
+		\ex Paul sah \hured{[den 	Mann]} \hublue{[mit dem 	Fernglas]}.
 		\z
 	\z 
 
@@ -439,15 +457,15 @@
 
 \pause 
 	
-		\ea {[Alte Frauen] und Männer}\\
+		\ea {\hured{[Alte Frauen]} und Männer}\\
 		\vs
-		\ex Alte [Frauen und Männer]
+		\ex Alte \hured{[Frauen und Männer]}
 		\z
 	\z 
 
 \pause 
 
-	\item Die \textbf{Ambiguität} (Mehrdeutigkeit) der Phrasen liegt in den verschiedenen Möglichkeiten begründet, wie sich die Wörter zu größeren Einheiten kombinieren lassen.
+	\item Die \textbf{Ambiguität} (Mehrdeutigkeit) der Phrasen liegt in den verschiedenen Möglichkeiten begründet, wie sich die Wörter zu größeren Einheiten kombinieren lassen (\textbf{strukturelle Ambiguität}).
 
 \end{itemize}
 
@@ -533,7 +551,7 @@ Entscheidend ist \dots
 		\begin{tikzpicture}
 		\begin{scope}
 		\node at (0,0) {};
-		\draw [<->] (0.3,-.2) -- (0.3,0) -- (4.72,0) -- (4.72,-.2);
+		\draw [<->] (0.3,-.2) -- (0.3,0) -- (4.42,0) -- (4.42,-.2);
 		\end{scope}
 		\end{tikzpicture}&\\
 		%%
@@ -635,7 +653,7 @@ Syntax ist eine Teildisziplin der Sprachwissenschaft, die sich mit dem Aufbau un
 \end{block}
 
 \begin{block}{Syntax (Regelsystem)}
-Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisch wohlgeformten Phrasen einer Sprache ableitet und die nicht"=wohlgeformten Sätze ausschließt.
+Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisch wohlgeformten Phrasen einer Sprache ableitet und die nicht"=wohlgeformten Phrasen ausschließt.
 \end{block}
 
 \end{frame}
@@ -657,14 +675,13 @@ Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisc
 \begin{frame}
 
 \begin{block}{Syntax (Regelsystem)}
-Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisch wohlgeformten Phrasen einer Sprache ableitet und die nicht"=wohlgeformten Sätze ausschließt.
+Die \textbf{Syntax einer Sprache} ist das System von Regeln, das alle syntaktisch wohlgeformten Phrasen einer Sprache ableitet und die nicht"=wohlgeformten Phrasen ausschließt.
 \end{block}
 
 	\settowidth\jamwidth{(Nicht-wohlgeformt)}
-	\ea []{Ich schlafe.\label{ex:gramm} \jambox{(Wohlgeformt)} }
-	\z
+	\ea []{Ich schlafe.\label{ex:gramm} \jambox{(wohlgeformt)} }
 	
-	\ea [*]{Ich schläfst. \label{ex:ungramm} \jambox{(Nicht-wohlgeformt)} }
+	\ex [*]{Ich schläfst. \label{ex:ungramm} \jambox{(nicht-wohlgeformt)} }
 	\z
 	
 \begin{itemize}
@@ -702,33 +719,33 @@ Was bedeutet \gqq{(nicht-)wohlgeformt}?
 
 \settowidth\jamwidth{(Finkbeiner \& Meibauer 2014)} 	
 %\ea 
-	\ea Ich schlafe.
+	\ea[]{Ich schlafe.}
 	
-	\ex Was behauptet Maria, dass Klaus gesagt hat, dass Irene gelesen hat?
+	\ex[]{Was behauptet Maria, dass Klaus gesagt hat, dass Irene gelesen hat?}
 	%WH-Bewegung
 	
-	\ex Sitzt dem Hund unter Stuhl kleine der.
+	\ex[\visible<2->{*}]{Sitzt dem Hund unter Stuhl kleine der.}
 	%Ungrammatisch
 
-	\ex Lili hatte gesagt, sie hat nur bis 20 Uhr Zeit am Telefon.
+	\ex[]{Lili hatte gesagt, sie hat nur bis 20 Uhr Zeit am Telefon.}
 	%Extraposition
 	
 	\ex 
-	\ea Ich bin glücklich, weil die Studenten lieben Syntax.
+	\ea[]{Ich bin glücklich, weil die Studenten lieben Syntax.}
 	%Weil mit Hauptsatz
 
-	\ex Weil die Studenten lieben Syntax, bin ich glücklich.
+	\ex[\visible<2->{*}]{Weil die Studenten lieben Syntax, bin ich glücklich.}
 	%Weil mit Hauptsatz
 	\z 
 	
 	\ex 
-	\ea Gestern ich war im Kino.
+	\ea[]{Gestern ich war im Kino.}
 	%Vorvorfeld
 	
-	\ex Jakob ich habe angerufen.
+	\ex[\visible<2->{*}]{Jakob ich habe angerufen.}
 	%Vorvorfeld
 
-	\ex Mit Ketchup oder ohne Ketchup ich ess' jetzt die Pommes.
+	\ex[]{Mit Ketchup oder ohne Ketchup ich ess' jetzt die Pommes.}
 	%Vorvorfeld
 	
 	\jambox{\citep{Finkbeiner&Meibauer14a}}
@@ -749,14 +766,18 @@ Was bedeutet \gqq{(nicht-)wohlgeformt}?
 	
 	\begin{itemize}
 		\item \dots\ \textbf{inkorrekt verwendet} (Notation: \#) sind:
-
+		
+		\settowidth\jamwidth{(Fries 2015)}
+		
 		\ea A: Hier ist überhaupt nichts langweilig!\\
 		B: \# Selbst langweilig ist diese Vorlesung nicht.
+		\jambox{\citep{Fries15a}}
 		\z
 \pause
 
 		\ea A: Diese Vorlesung ist langweilig.\\
 		B: Selbst langweilig ist diese Vorlesung nicht!
+		\jambox{\citep{Fries15a}}
 		\z
 		
 	\end{itemize}
@@ -776,8 +797,12 @@ Was bedeutet \gqq{(nicht-)wohlgeformt}?
 	
 	\begin{itemize}
 	\item \dots\ aus \textbf{Verarbeitungsgründen} inakzeptabel (\#) sind:
-		
-		\ea [\#]{Die, die die, die die, die die Brücken, die für den Verkehr unentbehrlich sind, bauen, unterstützen, belästigen, 		werden bestraft.\hfill \citep{Coseriu88a}} 
+
+		\settowidth\jamwidth{(Coseriu 1988)}
+				
+		\ea [\#]{Die, die die, die die, die die Brücken, die für den Verkehr unentbehrlich sind, bauen, unterstützen, belästigen, werden bestraft.
+		\jambox{\citep{Coseriu88a}}
+		} 
 \pause
 		\ex Die werden bestraft.
 		\ex \alertred{Die, die die belästigen}, werden bestraft.
@@ -885,17 +910,18 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Deskriptiv \vs Präskriptiv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Deskriptiv \vs Präskriptiv}
+%
+%\begin{figure}
+%\centering
+%	\includegraphics[scale=.065]{material/05praeskriptiv}
+%	\caption{Das ist (unangemessen) präskriptiv.}\label{Abb2}
+%\end{figure}
+%
+%\end{frame}
 
-\begin{figure}
-\centering
-	\includegraphics[scale=.065]{material/05praeskriptiv}
-	\caption{Das ist (unangemessen) präskriptiv.}\label{Abb2}
-\end{figure}
-
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -967,7 +993,7 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers
 \begin{figure}
 	\centering
 	\includegraphics[scale=.045]{material/DudenRichtigesDeutsch}
-	\caption{Duden}\label{Abb3}
+	\caption{Duden \citep{DudenGramm09d}}\label{Abb3}
 \end{figure}
 
 \end{column}
@@ -987,21 +1013,24 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers
 %	\ras Regeln für \gqq{gutes/richtiges} Deutsch
 %	\item[]
 	
-	\item Linguistik \ras auf der Basis von deskriptiven Beobachtungen
-	\item[]
+	\item In der Linguistik wird auf der Basis von \textbf{deskriptiven Beobachtungen} gearbeitet.
+	
+	\medskip
+	
 	\item Kompetente Sprecher verwenden ständig Formulierungen wie \MyPobj{wegen dem Job}, aber nie solche wie:
 	
 	\ea[*]{Ich bin \alertred{wegen der Job} gekommen.}
-	\z
+%	\z
 	
-	\ea[*]{Ich bin \alertred{dem wegen Job} gekommen.}
-	\z
+	\ex[*]{Ich bin \alertred{dem wegen Job} gekommen.}
+%	\z
 	
-	\ea[*]{Ich bin \alertred{wegen Job dem} gekommen.}
+	\ex[*]{Ich bin \alertred{wegen Job dem} gekommen.}
 	\z
 	
 	\medskip
-	\item Diese Formulierungen sind \textbf{ungrammatisch}, denn sie verletzen Regeln des deutschen grammatischen Systems:
+	\item Diese Formulierungen sind \textbf{ungrammatisch}, denn sie verletzen Regeln des deutschen \textbf{grammatischen Systems}:
+	
 	\begin{itemize}
 		\item Präpositionen stehen \MyPobj{vor} Nominalphrasen
 		\item Artikel stehen \MyPobj{vor} dem Nominalkomplex
@@ -1024,7 +1053,9 @@ Die Grammatikalität bildet die \textbf{Kompetenz} des idealen Sprecher"=Hörers
 \begin{itemize}
 	%\item ABBILDUNG -- \gqq{Glowing blue binary code on screen with word error background concept} (Stock-Foto, Zugriff: 11.05.18)
 	%\url{https://www.colourbox.de/bild/bild-26254540}
-	\item ABBILDUNG -- Machicao y Priemer, Antonio: \gqq{Deskriptiv vs. Präskriptiv} (Privatfoto)
+
+%	\item ABBILDUNG -- Machicao y Priemer, Antonio: \gqq{Deskriptiv vs. Präskriptiv} (Privatfoto)
+	
 	\item ABBILDUNG -- Machicao y Priemer, Antonio: \gqq{Duden} (Privatfoto)
 \end{itemize}	
 

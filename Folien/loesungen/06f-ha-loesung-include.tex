@@ -40,21 +40,32 @@
 	\centering
 	\scalebox{0.6}{
 		\begin{forest}
-			MyP edges,
-			[\alertgreen{CP} 
-			[\alertgreen{DP$_{k}$} [\alertgreen{Peter},roof]
+		MyP edges,
+		[\alertgreen{CP} 
+			[\alertgreen{DP$_{k}$} 
+				[\alertgreen{Peter},roof]
 			]
 			[\alertgreen{\MyPxbar{C}}
-			[\alertgreen{\zerobar{C}} [\alertgreen{schläft$_{i}$}]
+				[\alertgreen{\zerobar{C}} 
+					[\alertgreen{schläft$_{i}$}]
+				]
+				[\alertgreen{IP} 
+					[\alertgreen{t$_{k}$}]
+					[\alertgreen{\MyPxbar{I}}
+						[\alertgreen{VP} 
+							[\alertgreen{\MyPxbar{V}} 
+								[\alertgreen{\zerobar{V}} 
+									[\alertgreen{t$_{i}$}]
+								]
+							]
+						]
+						[\alertgreen{\zerobar{I}} 
+							[\alertgreen{t$_{i}$}]
+						]
+					]
+				]
 			]
-			[\alertgreen{IP [t$_{k}$}]
-			[\alertgreen{\MyPxbar{I}}
-			[\alertgreen{VP} [\alertgreen{\MyPxbar{V}} [\alertgreen{\zerobar{V}} [\alertgreen{t$_{i}$}	]]]]
-			[\alertgreen{\zerobar{I}} [\alertgreen{t$_{i}$}]]
-			]
-			]
-			]
-			]
+		]
 		\end{forest}
 	}
 \end{minipage}  

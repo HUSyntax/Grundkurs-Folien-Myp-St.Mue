@@ -35,10 +35,10 @@
 \huberlintitlepage[22pt]
 \iftoggle{toc}{
 	\frame{
-		\begin{multicols}{2}
+%		\begin{multicols}{2}
 			\frametitle{Inhaltsverzeichnis}\tableofcontents
 			%[pausesections]
-		\end{multicols}
+%		\end{multicols}
 	}
 }
 
@@ -64,26 +64,38 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Anmerkungen zur Klausur}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\section{Wiederholungsstunde}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Anmerkungen zur Klausur}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Anmerkungen zur Klausur}
 
 \begin{itemize}
 	\item \textbf{Termin:} Mo. 17.02.2020, 12--14 Uhr
+	\medskip 
 	
 	\item \textbf{Raum:} DOR 24, 1.101
+	\medskip 
 
 	\item \textbf{Punkte:} 70
 	\begin{itemize}
 		\item GK: 50, UE: 20
 		\item Bestanden: ab 35
 	\end{itemize}
+	\medskip 
 
 	\item \textbf{Zeit:} \MyPxbar{90}
 	\begin{itemize}
@@ -107,18 +119,20 @@
 		\item Bitte lassen Sie immer einen Platz frei zwischen Ihnen und Ihrem Nachbarn.
 		\item Nehmen Sie so Platz, dass jemand direkt vor Ihnen sitzt.
 	\end{itemize}
+	\medskip 
 
 	\item \textbf{Personal-} und \textbf{Studentenausweis} mitbringen.
-	\item \textbf{Lehrveranstaltungs-/Arbeitsnachweise} werden der Klausur ausgegeben.
-	\begin{itemize}
+	\medskip 
+
+	\item \textbf{Lehrveranstaltungs-/Arbeitsnachweise} werden mit der Klausur ausgegeben.
+%	\begin{itemize}
+%	 	\item \dots werden mit der Klausur abgegeben, sofern die Angaben und die Unterschrift des Dozenten der UE deutsche Grammatik vorhanden ist.
+
+%	 	\item Die Scheine werden bei der Korrektur unterschrieben.
+	 	
+%	 	\item Wenn Sie den Schein vergessen haben, bzw. eine Unterschrift fehlt, können Sie den Schein direkt ins Prüfungsbüro bringen.
 	
-	 	\item \dots werden mit der Klausur abgegeben, sofern die Angaben und die Unterschrift des Dozenten der UE deutsche Grammatik vorhanden ist.
-	 	\item[]
-	 	\item Ich unterschreibe den Schein bei der Korrektur.
-	 	\item[]
-	 	\item Wenn Sie den Schein vergessen haben, bzw. eine Unterschrift fehlt, können Sie den Schein direkt ins Prüfungsbüro bringen.
-	
-	\end{itemize}
+%	\end{itemize}
 	
 \end{itemize}
 
@@ -131,37 +145,37 @@
 
 \begin{itemize}
 	\item Sie erhalten die Klausur in einem Umschlag. Beschädigen Sie den Umschlag bitte nicht. Denken Sie an die Umwelt!
-	\item[]
+
+	\item Benutzen Sie \textbf{keinen Bleistift}. Antworten mit Bleistift werden nicht berücksichtigt.
+	
 	\item \textbf{Handys} sind auszuschalten. 
-	\item[]
+
 	\item \textbf{Toilettengang} einzeln
-	\item[]
-	\item Sofortige Abgabe der Klausur bei \textbf{Täuschungsversuch} $+$ Meldung im Prüfungsbüro
-	\item[]
+
+	\item Sofortige Abgabe der Klausur bei Täuschungsversuch $+$ Meldung im Prüfungsbüro
+
 	\item \textbf{Hilfsmittel}: DaF-Wörterbuch wird bereitgestellt, andere Hilfsmittel sind nicht erlaubt!
-	\item[]
+
 	\item Alle \textbf{Schmierblätter} sind ebenfalls abzugeben.
 	
 \end{itemize}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Übungen}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Phonetik/Phonologie}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+\subsection{Übungen: Phonetik/Phonologie}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Übungen: Phonetik/Phonologie}
 
@@ -175,6 +189,8 @@
 	\ex \textipa{[P]}
 	\ex \textipa{[b]}
 	\ex \textipa{[x]}
+	\ex \textipa{[O]}
+	\ex \textipa{[u:]}
 	\zl
 
 \end{itemize}
@@ -187,7 +203,7 @@
 \frametitle{Übungen: Phonetik/Phonologie}
 
 \begin{itemize}
-	\item Geben Sie eine phonetische standarddeutsche Transkription der folgenden Wörter mit Silbenstruktur und X-Skelettschicht an
+	\item Geben Sie die phonologische Repräsentation und die phonetische standarddeutsche Transkription der folgenden Wörter mit Silbenstruktur und X-Skelettschicht an.
 	
 	\eal
 	\ex Spitzenschuhe
@@ -227,13 +243,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Graphematik}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
+\subsection{Übungen: Graphematik}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Übungen: Graphematik}
 
@@ -247,7 +267,10 @@
 	\zl
 	
 	\item Geben Sie die rein phonographische Schreibung des folgenden Wortes an:
-	\ea sprachbegabt
+	\ea 
+		\ea sprachbegabt
+		\ex Sträuchersee
+		\z 
 	\z
 	
 	
@@ -255,29 +278,63 @@
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Morphologie}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Übungen: Morphologie}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Übungen: Morphologie}
 
 \begin{itemize}
 	\item Welche Wortbildungsprozesse haben hier stattgefunden?
-	\a. übersetzen
-	\b. bleifrei
-	\b. Lauf
-	\b. Bearbeitung
 
-	\item Geben Sie die Konstituentenstruktur der folgenden Wörter an und bestimmen sie die Wortbildungstypen an jedem Knoten des Baumes so genau wie möglich.
-	\a. Unbeweisbarkeitsannahmen
-	\b. Blickbewegunsaufnahmen
+	\ea
+	\ea übersetzen
+	\ex bleifrei
+	\ex Lauf
+	\ex Bearbeitung
+	\z 
+	\z 
 	
+	\item Geben Sie die Konstituentenstruktur der folgenden Wörter an und bestimmen sie die Wortbildungstypen an jedem Knoten des Baumes so genau wie möglich.
+
+	\ea 
+	\ea Unbeweisbarkeitsannahmen
+	\ex (mit den) Blickbewegunsmessern
+	\z 
+	\z 
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Übungen: Morphologie}
+	
+\begin{itemize}	
+	\item Geben Sie ein Beispiel für die folgenden Kompositionsarten an:
+	\ea
+		\ea Determinativkomposition
+		\ex Rektionskomposition
+		\ex Possessivkomposition
+		\ex Kopulativkomposition
+		\z 
+	\z 
+
+	\item Geben Sie je ein Beispiel für einen Stamm, für eine Wurzel und für eine Basis an.
 \end{itemize}
 
 \end{frame}
@@ -285,13 +342,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Syntax}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
-
+\subsection{Übungen: Syntax}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
 \frametitle{Übungen: Syntax}
 
@@ -315,38 +376,54 @@
 \frametitle{Übungen: Syntax}
 
 \begin{itemize}
+	
+	\item Testen Sie anhand von jeweils zwei Konstituententests, ob die kursiv gesetzte Wortfolge eine Konstituente des Satzes bildet.
+	\ea 
+		\ea Am Ende bekam Jakob das \emph{für Luise vorbereitete} Kostüm.
+		\ex Er hatte sich das überlegt, \emph{weil Jakob wieder krank war}.
+		\z 
+	\z 
+	
 	\item Analysieren Sie die folgenden Sätze nach dem X-Bar-Schema.
-	\a. Maria schlägt Peter.
-	\b. Maria schlug gestern Peter.
-	\b. Obwohl Helga morgens gearbeitet hat, hat sie am Nachmittag Peter getroffen.
-	\b. Über die Behandlung von zwei Patienten haben bis zum Morgengrauen die Ärzte diskutiert.
+	\ea
+	\ea Maria schlägt Peter.
+%	\ex Maria schlug gestern Peter.
+	\ex Weil der netter Nachbar morgens gearbeitet hat, hat er erst am Nachmittag Peter getroffen.
+	\ex Über die Behandlung der zwei Patienten haben bis zum Morgengrauen die Ärzte diskutiert.
+	\ex Luise hat gefragt, ob Jakob kommt.
+	\z 
+	\z 
 	
 \end{itemize}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Semantik/Pragmatik}
-%\frame{
-%\frametitle{~}
-%	\tableofcontents[currentsection]
-%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Übungen: Semantik/Pragmatik}
+\iftoggle{sectoc}{
+	\frame{
+		%\begin{multicols}{2}
+		\frametitle{~}
+		\tableofcontents[currentsubsection,subsubsectionstyle=hide]
+		%\end{multicols}
+	}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Übungen: Semantik/Pragmatik}
 
 \begin{itemize}
-	\item Geben Sie die Bedeutungsrelationen zwischen den folgenden Wörtern an.
+	\item Geben Sie die Bedeutungsrelationen (so genau wie möglich) zwischen den folgenden Wörtern an.
 	\eal
-	\ex betrunken -- nüchtern
-	\ex Orange -- Apfelsine
-	\ex Vogel -- Feder
-	\ex verheiratet -- ledig
+	\ex satt -- hungrig
+	\ex erwerben -- kaufen
+	\ex Haare -- Kopf
+	\ex schuldig -- nicht schuldig
 	\ex mehr -- Meer
-	\ex Veilchen -- Lilie
+	\ex Tiger -- Katze
 	\ex fruchtbar -- unfruchtbar
 	\zl
 	
@@ -407,12 +484,18 @@
 \frametitle{Übungen: Semantik/Pragmatik}
 
 \begin{itemize}
-	\item Markieren Sie alle deiktischen und anaphorischen Elemente in den folgenden Sätzen
+	
+	\item Geben Sie eine Wahrheitswerttabelle für den folgenden aussagenlogischen Ausdruck an und bestimmen Sie, ob es sich dabei um eine tautologische, eine kontradiktorische oder eine kontingente Aussage handelt.
+	\ea $((p \rightarrow q) \lor q)$
+	\z 
+	
+	\item Markieren Sie alle deiktischen und anaphorischen Elemente in den folgenden Sätzen und spezifizieren Sie diese.
 	
 	\eal
 	\ex Sie haben diese Tür nicht geschlossen.
 	\ex Gestern war mir das Wetter echt zu kalt!
-	\ex \gqq{Ich bin sehr glücklich, mich wieder für das WTA-Finale qualifiziert zu haben. Ich freue mich darauf, dort anzutreten und gegen die Besten der Welt zu spielen}, sagte die 27-Jährige, die im vergangenen Jahr nur als Ersatzspielerin mitfahren durfte.
+	\ex Peter wusste, dass er es sich dort gemütlich machen würde. 
+%	\ex \gqq{Ich bin sehr glücklich, mich wieder für das WTA-Finale qualifiziert zu haben. Ich freue mich darauf, dort anzutreten und gegen die Besten der Welt zu spielen}, sagte die 27-Jährige, die im vergangenen Jahr nur als Ersatzspielerin mitfahren durfte.
 	\zl
 	
 \end{itemize}
@@ -427,19 +510,19 @@
 \begin{itemize}
 	\item Bestimmen Sie die Art von Folgerung, die zwischen dem ersten und den folgenden Sätzen besteht:
 	
-	\eal 
-	\ex Sogar Peter hat zwei Kinder. 
-	\ex Peter hat nicht mehr als zwei Kinder.
+	\ea Sogar Peter hat zwei Kinder. 
+	\ea Peter hat nicht mehr als zwei Kinder.
 	\ex Es gibt ein Individuum namens Peter.
 	\ex Peter ist Vater.
 	\ex Peter hat vier Kinder.
-	\zl
+	\z
+	\z 
 	
 	\item Bestimmen Sie jeweils eine semantische Implikation aus dem folgenden Sätzen:
 	
 	\eal
 	\ex In einem Schuhkarton gibt es Platz für zwei Schuhe.
-	\ex Greg heiratete eine Norwegerin.
+	\ex Jakob hat eine Schwedin geheiratet.
 	\zl
 		
 \end{itemize}
@@ -458,7 +541,7 @@
 	\ex Ich freue mich darüber, dass wir die Klausur bestanden haben.
 	\ex Maria ist auch schwanger.
 	\ex Alle Banken wurden mit unseren Steuergeldern gerettet.
-	\ex Sie lieben Syntax immer noch nicht.
+	\ex Sie mögen immer noch nicht Syntax.
 	\zl
 
 	\item Geben Sie an, ob eine Maxime (scheinbar) verletzt oder befolgt wurde und um welche es sich handelt, um die angegebene Implikatur zu erhalten.

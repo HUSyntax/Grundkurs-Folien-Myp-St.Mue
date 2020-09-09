@@ -149,7 +149,7 @@
 	\item Pragmatik: jüngste sprachwissenschaftliche Disziplin
 	\item Schnittstellen zur Philosophie, Soziologie, Psychologie
 	\item Gegenstand: \textbf{Gebrauch} sprachlicher Ausdrücke in einer bestimmten Situation (Kontext)
-	\item[]
+	\medskip
 	\item Semantik \vs Pragmatik (grob):
 	
 	\begin{itemize}
@@ -171,7 +171,7 @@ kontextabhängige  (und durch Wahrheitsbedingungen nicht erfassbare) Bedeutung
 
 \begin{itemize}
 	\item Semantik: Bedeutung aus Wörtern $+$ Strukturen
-	\item[]
+	\medskip
 	\item Pragmatik: kontextuell relevante Interpretation
 	
 	\begin{itemize}
@@ -215,13 +215,16 @@ kontextabhängige  (und durch Wahrheitsbedingungen nicht erfassbare) Bedeutung
 	\begin{itemize}
 		\item \textbf{Äu\ss{}erungssituation} \\
 Zeitpunkt, Sprecher, Hörer, \dots
-		\item []
+		\medskip
+		
 		\item \textbf{Sprachlicher Kontext}\\
 Vorhergehende Äu\ss{}erungen, Diskurs-Thema, \dots
-		\item[]
+		\medskip
+		
 		\item \textbf{Informationeller Kontext} \\
 Was wei\ss{} der Sprecher, was nimmt der Sprecher über den Hörer an, Weltwissen, \dots
-		\item []
+		\medskip
+		
 		\item \textbf{Intentionaler Kontext} \\
 Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	\end{itemize}
@@ -257,9 +260,9 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	\end{block}
 
 \begin{itemize}
-%		\item[]
+
 		\item Referenz: Aspekte der Äu\ss{}erungssituation
-		\item[]
+		\medskip
 		\item Referenz von deiktischen Ausdrücken ist anders als bei referierenden Ausdrücken.
 \end{itemize}
 
@@ -369,8 +372,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	Erstgenannter referentieller Ausdruck in einer anaphorischen Kette.
 \end{block}
 
-\begin{itemize}
-	\item[]
+
 	
 		\eal 
 		\ex \alertred{Peter} hat sich rasiert. (Syntaktische Anapher $=$ Reflexivpron.)
@@ -381,7 +383,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 			\item Antezedens: \gqq{Peter} von \gqq{sich} und \gqq{die Hausaufgabe} von \gqq{sie}
 		\end{itemize}
 	
-\end{itemize}
+
 
 \end{frame}
 
@@ -489,23 +491,23 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 %	\z
 	
 	\ea Susanne ist älter als Peter.\\
-	$\vDash$ Peter ist jünger als Susanne.
+	\ent\  Peter ist jünger als Susanne.
 	\z
 	
 	\item \textbf{Präsupposition}
 	
 %	\ea Maria hat aufgehört zu rauchen.\\ 
-%	\prspp  Maria hat geraucht.
+%	\prspp\  Maria hat geraucht.
 %	\z
 
 	\ea Maria weiß, dass heute ein Feiertag ist.\\
-	\prspp Heute ist ein Feiertag.
+	\prspp\ Heute ist ein Feiertag.
 	\z
 	
 	\item \textbf{Implikatur}
 	
 	\ea Ich habe zwei Kinder.\\
-	 \implc  Ich habe NUR zwei Kinder.
+	 \implc\  Ich habe NUR zwei Kinder.
 	\z
 
 \end{itemize}
@@ -529,11 +531,13 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 \begin{frame}
 \frametitle{Semantische Implikation}
 
+\begin{block}{Semantische Implikation  $=$ Entailment (\ent)}
+ p impliziert q semantisch, gdw. in allen Welten, in denen p wahr ist, auch q wahr ist (aber nicht notwendigerweise umgekehrt).
+\end{block}
+
+
 \begin{itemize}
-	\item Semantische Implikation  $=$ Entailment ( $\vDash$)
-	\item []
-	\item p impliziert q, gdw. in allen Welten, in denen p wahr ist, auch q wahr ist (aber nicht notwendigerweise umgekehrt).
-	\item[]
+
 	\item Logik der Teilaussagen steht in einer inhaltlichen Beziehung zueinander (anders als \textbf{materiale Implikation}).
 
 %	\eal
@@ -558,7 +562,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 \begin{itemize}
 	\item p impliziert q, gdw. in allen Welten, in denen p wahr ist, auch q wahr ist (aber nicht notwendigerweise umgekehrt).
-	\item[]
+	\medskip
 	\item \textbf{Gegenseitige} semantische Implikation (\ras Synonymie)
 	
 	\eal
@@ -580,7 +584,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	
 	\begin{itemize}
 		\item p impliziert/folgert semantisch/entails q:
-		\item p $|$ = q
+		\item p \ent  q
 	\end{itemize}
 	
 \end{itemize}
@@ -660,42 +664,31 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 \begin{itemize}
 	\item \textbf{Semantische} Präsupposition  (Bedingung für Wahrheit)
-	
-	\begin{itemize}
-		\item p präsupponiert semantisch q, gdw.
+		
+		p präsupponiert semantisch q, gdw.
 
 		\begin{itemize}
 			\item in allen Welten, in denen p wahr ist, auch q wahr ist,
 			\item in allen Welten, in denen p falsch ist, q wahr ist.
 			
-			\ea Lauras Freundin ist blond. \\
-			\implc Laura hat eine Freundin.
+			\ea Lauras Freundin ist blond. \hfill 
+			\prspp\ Laura hat eine Freundin.
 			\z
 			
-			\ea Lauras Freundin ist nicht blond. \\
-			\implc Laura hat eine Freundin.
+			\ea Lauras Freundin ist nicht blond. \hfill 
+			\prspp\ Laura hat eine Freundin.
 			\z
 			
 		\end{itemize}
-
-	\end{itemize}
 	
 	\item \textbf{Pragmatische} Präsupposition (Sprachgebrauch)
-	
-	\begin{itemize}
-		\item Ein Sprecher S präsupponiert (pragmatisch) q mit der Äu\ss{}erung von p, wenn er davon ausgeht, dass q gemeinsames Sprecher-Hörer-Wissen ist.
-		
-		\begin{itemize}
-		\item[]
+
+		Ein Sprecher S präsupponiert (pragmatisch) q mit der Äu\ss{}erung von p, wenn er davon ausgeht, dass q gemeinsames Sprecher-Hörer-Wissen ist.
 			
-		\ea A: wer ist das Kind da drüben? \\
-			   B: Melanies Sohn. \\
-			   \implc A und B kennen Melanie und können daher den Namen ohne Einführung verwenden.
+		\ea A: Wer ist das Kind da drüben? \\
+			   B: Der Sohn der Frau. \\
+			   \ent\ A und B kennen \gqq{die Frau} und können daher die Phrase ohne Einführung verwenden.
 		\z
-		
-		\end{itemize}
-	
-		\end{itemize}
 	
 \end{itemize}
 
@@ -709,7 +702,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 \begin{itemize}
 	\item Zur Unterscheidung von Präsuppositionen und Assertionen (wahrheitsfunktionaler Gehalt einer Äu\ss{}erung)
-	\item[]
+	\medskip
 	\item \textbf{Negationstest}
 	
 	\begin{itemize}
@@ -765,13 +758,13 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	\begin{itemize}
 		\item Präsupposition bleibt erhalten (vgl. semantische Implikation)
 		
-		\ea Peter geht immer noch zum Sport.\\ \prspp Peter ging zum Sport.
+		\ea Peter geht immer noch zum Sport.\\ \prspp\ Peter ging zum Sport.
 		\z
 		
-		\ea Geht Peter immer noch zum Sport?\\ \prspp Peter ging zum Sport.
+		\ea Geht Peter immer noch zum Sport?\\ \prspp\ Peter ging zum Sport.
 		\z
 		
-		\ea Geh (immer noch) zum Sport!\\ \prspp Peter ging zum Sport.
+		\ea Geh (immer noch) zum Sport!\\ \prspp\ Peter ging zum Sport.
 		\z
 		
 		
@@ -804,10 +797,10 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 	\begin{itemize}
 		\item Präsupposition bleibt erhalten (vgl. semantische Implikation)
 		
-		\ea Auch Andrea spielt Tennis.\\ \prspp Eine weitere Person spielt Tennis.
+		\ea Auch Andrea spielt Tennis.\\ \prspp\ Eine weitere Person spielt Tennis.
 		\z
 		
-		\ea Wenn auch Andrea Tennis spielt, hat sie dieses Wochenende ein Tunier.\\ \prspp Eine weitere Person spielt Tennis.
+		\ea Wenn auch Andrea Tennis spielt, hat sie dieses Wochenende ein Tunier.\\ \prspp\ Eine weitere Person spielt Tennis.
 		\z
 		
 %		\ea Auch Andrea studiert noch.\\
@@ -861,7 +854,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 \frametitle{Präsuppositionsauslöser}
 
 \begin{itemize}
-	\item \textbf{Eigennamen \& Definite DPs} (z.B. \MyPobj{Luise, Jakob, Peter usw.} \& \MyPobj{der Präsident, der Tisch}, usw.)
+	\item \textbf{Eigennamen \& Definite DPs} (\zB \MyPobj{Jakob}, \MyPobj{der Präsident, der Tisch}, usw.)
 	
 	\ea Jakob isst gerne Pasta. \\ $\gg$ Es gibt ein Individuum namens Jakob.
 	\z
@@ -876,13 +869,13 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 %	$\gg$ Es gibt (genau) einen König von Frankreich.
 %	\z
 	
-	\item \textbf{Verben der Zustandsveränderung} (z.B. \MyPobj{aufhören, anfangen}, usw.)
+	\item \textbf{Verben der Zustandsveränderung} (\zB \MyPobj{aufhören, anfangen}, usw.)
 
 	\ea Es hat begonnen zu regnen.\\
 			$\gg$ Es hat (davor) nicht geregnet.
 	\z
 	
-	\item \textbf{Gradpartikeln} (z.B. \MyPobj{nur, auch, sogar}, usw.)
+	\item \textbf{Gradpartikeln} (\zB \MyPobj{nur, auch, sogar}, usw.)
 	
 	\ea Nur Luise ist weggefahren. \\
 			$\gg$ Luise ist weggefahren.
@@ -899,17 +892,17 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 \frametitle{Präsuppositionsauslöser}
 
 \begin{itemize}
-	\item \textbf{Temporalsätze} (z.B. \MyPobj{bevor} \dots, \MyPobj{nachdem} \dots, \MyPobj{während} \dots, usw.)
+	\item \textbf{Temporalsätze} (\zB \MyPobj{bevor} \dots, \MyPobj{nachdem} \dots, \MyPobj{während} \dots, usw.)
 	
 	\ea Bevor Sie die Klausur geschrieben haben, hatten Sie Ihre Hausaufgaben zurückbekommen. \\ $\gg$ Sie haben die Klausur geschrieben.
 	\z
 	
-	\item \textbf{Temporaladverbien} (z.B. \MyPobj{noch, immer noch}, usw.)
+	\item \textbf{Temporaladverbien} (\zB \MyPobj{noch, immer noch}, usw.)
 	
 	\ea Peter ist noch krank.\\ $\gg$ Peter war krank.
 	\z
 	
-	\item \textbf{Faktive Verben} (z.B. \MyPobj{wissen, vergessen dass, bedauern}, usw.)
+	\item \textbf{Faktive Verben} (\zB \MyPobj{wissen, vergessen dass, bedauern}, usw.)
 	
 	\ea Sie wissen, dass Sie abgehört werden.\\ $\gg$ Sie werden abgehört.
 	\z
@@ -973,7 +966,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 \begin{itemize}
 	\item vom englischen Philosophen \citet{Grice89a} geprägter Terminus
-	\item[]
+	\medskip
 \begin{block}{Implikaturen}
 	Bedeutungsaspekte einer Äu\ss{}erung, die nicht explizit erwähnt wurden. Sie sind nicht durch die Wahrheitsbedingungen eines Satzes erfassbar.
 \end{block}	
@@ -988,7 +981,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 	\item Implikation \ras implizieren/folgern
 	\item Implikatur \ras implikatieren
-	\item[]
+	\medskip
 	\item konventionelle Implikaturen (umstritten)
 	\item konversationelle Implikaturen
 \end{itemize}
@@ -1003,9 +996,9 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 \begin{itemize}
 	\item konventionelle Implikaturen: umstritten
-	\item[]
+	\medskip
 	\item \textbf{konventionell} \ras mit der (konventionellen) Bedeutung eines Ausdrucks verbunden
-	\item[]
+	\medskip
 	\item keinen Einfluss auf die Wahrheitsbedingung des Satzes
 	
 	\begin{itemize}
@@ -1074,14 +1067,13 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 \end{columns}
 
 
-%\begin{itemize}
-%	\item[]
 %
 %	\eal 
 %	\ex Maria ist schwanger aber fährt Fahrrad.
 %	\ex Maria ist schwanger und fährt Fahrrad.
 %	\zl
-%	
+%
+%\begin{itemize}	
 %	\item \textit{und} vs. \textit{aber}:
 %		
 %	\begin{itemize}
@@ -1136,9 +1128,8 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 %		
 %	\end{itemize}
 %	
-%	\item[]
 %	\item Nicht aufhebbar \ras ohne sich selbst zu widersprechen
-%	\item[]
+%	\medskip
 %	\item Ablösbar/abtrennbar
 %	
 %	\eal
@@ -1158,7 +1149,7 @@ Was sind die Ziele/""Wünsche/""Pläne des Sprechers?
 
 \begin{itemize}
 	\item konventionelle Implikatur: per Konvention mit einem Ausdruck verbunden
-	\item[]
+	\medskip
 	\item konversationelle Implikatur (\implc ):
 Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängigkeit vom Kontext) entstehen
 
@@ -1188,7 +1179,7 @@ Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängi
 	\item Sprecher und Hörer befolgen (\idR) das Kooperationsprinzip.
 	\item Das Kooperationsprinzip steuert die Konversation.
 	
-	\item[]
+	\medskip
 	
 	\begin{block}{Kooperationsprinzip}
 		Gestalte deinen Beitrag zur Konversation so, wie es dem Zweck und der Richtung des Gesprächs angemessen ist.
@@ -1246,7 +1237,7 @@ Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängi
 \begin{block}{Maxime der Modalität}
 	Rede klar und unzweideutig, kurz und bündig, geordnet.
 	
-	\ea Der blaube kuboide Block steht auf der Pyramide.\\
+	\ea Der blaue kuboide Block steht auf der Pyramide.\\
 		   \implc Der blaue Block ist kein Würfel.
 	\z
 \end{block}
@@ -1266,9 +1257,9 @@ Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängi
 	
 	\begin{itemize}
 		\item Durch Befolgung von Maximen
-		\item[]
+		\medskip
 		\item Durch scheinbare Verletzung von Maximen
-		\item[]
+		\medskip
 		\item Durch offensichtliche Hinwegsetzung über eine Maxime
 	\end{itemize}
 	
@@ -1406,7 +1397,7 @@ Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängi
 %\includegraphics[width=\textwidth]{material/14Prag2}
 %\end{minipage}
 %
-\begin{minipage}[t]{0.45\textwidth}
+\begin{minipage}[t]{0.40\textwidth}
 \includegraphics[width=\textwidth]{material/15Prag3}
 \end{minipage}
 
@@ -1438,13 +1429,16 @@ Folgerungen, die nur in bestimmten Äu\ss{}erungssituationen (d.\,h. in Abhängi
 			\ea\label{ex:08ue1}
 			Einige der US-amerikanischen Beamten wissen, wer Richard erdrosselt hat.
 			\z
-			\item [] Geben Sie bei jedem der Sätze unter (\ref{ex:08ue2})--(\ref{ex:08ue5}) an, ob es sich um eine Implikatur, oder ob es sich um eine Präsupposition zu (\ref{ex:08ue1}) handelt. Schreiben Sie die richtige Antwort hinter den jeweiligen Satz. Wenn es sich um eine Präsupposition handelt, testen Sie dies anhand eines der Präsuppositionstests. \\
+			
+			Geben Sie bei jedem der Sätze unter (\ref{ex:08ue2})--(\ref{ex:08ue5}) an, ob es sich um eine Implikatur, oder ob es sich um eine Präsupposition zu (\ref{ex:08ue1}) handelt. Schreiben Sie die richtige Antwort hinter den jeweiligen Satz. Wenn es sich um eine Präsupposition handelt, testen Sie dies anhand eines der Präsuppositionstests. \\
 		\textbf{NB:} Vorsicht, zuweilen wird keine der Relationen wiedergegeben!
+		\ea 
 		\ea\label{ex:08ue2} Es existieren US-amerikanische Beamte.
 		\ex\label{ex:08ue3} Richard war ein Semantiker.
 		\ex\label{ex:08ue4} Nicht alle US"=amerikanischen Beamten wissen, wer den Mord begangen hat.
 		\ex\label{ex:08ue5} Richard wurde erdrosselt.
 		\z	
+		\z 
 	\end{enumerate}
 
 \end{frame}

@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
-%% Loesung-Handout: Antonio Machicao y Priemer
+%% Loesung-Handout: Stefan Müller
 %% Course: GK Linguistik
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -22,7 +22,7 @@
 
 \begin{document}
 	
-	
+
 %%%% ue-loesung
 %%%% true: Übung & Lösungen (slides) / false: nur Übung (handout)
 %	\toggletrue{ue-loesung}
@@ -42,20 +42,20 @@
 %%%% gliederung
 %%%% true: Gliederung für Sections / false: keine Gliederung für Sections
 %	\toggletrue{gliederung}
-	
-	
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Metadata                         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
 
 \title{Grundkurs Linguistik}
 
-\subtitle{Lösungen -- Morphologie}
+\subtitle{Lösungen -- Phonetik}
 
-\author[A. Machicao y Priemer]{
-	{\small Antonio Machicao y Priemer}
+\author[St. Mü.]{
+	{\small Stefan Müller}
 	\\
-	{\footnotesize \url{http://www.linguistik.hu-berlin.de/staff/amyp}}
+	{\footnotesize \url{https://hpsg.hu-berlin.de/~stefan/}}
 	%	\\
 	%	\href{mailto:mapriema@hu-berlin.de}{mapriema@hu-berlin.de}}
 }
@@ -81,16 +81,17 @@
 \iftoggle{toc}{
 	\frame{
 		\begin{multicols}{2}
-			\frametitle{Inhaltsverzeichnis}
-			\tableofcontents
-			%[pausesections]
-			\columnbreak
-% muss noch hinzugefügt werden, wenn in include auch \refs und \exrs angewendet sind
-%				\textcolor{white}{
-%					\ea \label{ex:05aHA1}
-%					\ex \label{ex:05aHA5}
-%					\z
-%				}
+		\frametitle{Inhaltsverzeichnis}
+		\tableofcontents
+		%[pausesections]
+	\columnbreak
+	\textcolor{white}{
+		\ea\label{ex:02sth}
+		\ex\label{ex:02HA1}
+		\ex\label{ex:02HA2}
+		\ex\label{ex:02HA3}
+		\z
+	}
 		\end{multicols}
 	}
 }
@@ -100,16 +101,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Übungen}
 
-\input{05b-stefan-ue-loesung01-include}
+\input{02-ue-loesung01-include}
+
+\input{02-ue-loesung02-include}
+
+\input{02-ue-loesung03-include}
+
+\input{02-ue-loesung04-include}
+
+\input{02-ue-loesung05-include}
+
+\input{02-ue-loesung06-include}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hausaufgaben}
-	
-\input{05c-stefan-ha-loesung-include}
 
-	
-\input{../gk-literatur}
-	
-	
+\input{02-ha-loesung-include}
+
+\input{loesungen-gk-literatur}
+
+
 \end{document}

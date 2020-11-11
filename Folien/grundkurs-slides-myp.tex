@@ -1,63 +1,15 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Compile: PDFLaTeX BibTeX PDFLaTeX(x2)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compile: XeLaTeX BibTeX XeLaTeX XeLaTeX
+%% Slides: Antonio Machicao y Priemer
+%% Course: GK Linguistik
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,10pt, bibtotoc]{beamer}
 %\documentclass[10pt,a4paper]{beamer}
 %\documentclass[10pt,handout]{beamer}
 
 
-%\includeonly{05a-wortbildung,05b-flexion}
-
-
-%\includeonly{01a-sprache-sprachwissenschaft-include}
-%
-%\includeonly{01b-sprache-sprachwissenschaft-include}
-%
-%\includeonly{02-phonetik-include}
-%
-%\includeonly{03a-phonologie-include}
-%
-%\includeonly{03b-phonologie-include}
-%
-%\includeonly{03c-phonologie-include}
-%
-%\includeonly{04a-graphematik-include}
-%
-%\includeonly{05a-morphologie-include}
-%
-%\includeonly{05b-morphologie-include}
-%
-%\includeonly{05c-morphologie-include}
-%
-%\includeonly{05d-morphologie-include}
-%
-%\includeonly{06a-syntax-include}
-%
-%\includeonly{06b-syntax-include}
-%
-%\includeonly{06c-syntax-include}
-%
-%\includeonly{06d-syntax-include}
-%
-%\includeonly{06e-syntax-include}
-%
-%\includeonly{06f-syntax-include}
-%
-%\includeonly{07-semantik-include}
-%
-%\includeonly{08-pragmatik-include}
-%
-%\includeonly{09-uebungen-include}
-
-%\includeonly{05a-wortbildung,05b-flexion}
-%\includeonly{05b-flexion-include}
-%\includeonly{06a-syntax-stefan-include}
-%\includeonly{06b-syntax-ip-include}
-
-%\includeonly{07-semantik-stefan-include}
-%\includeonly{08-pragmatik-stefan-include}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Die funktionieren:
 %\includeonly{00-Organisatorisches-include,01a-sprache-sprachwissenschaft-include,01b-sprache-sprachwissenschaft-include,02-phonetik-include,03a-phonologie-include,03b-phonologie-include,04-graphematik-include,05a-wortbildung-include,05b-flexion-include,06-syntax-stefan-include}
@@ -78,13 +30,18 @@
 
 \input{localcommands}
 
+%% Neue Toggles:
+\toggletrue{ue-loesung}
+\toggletrue{ha-loesung}
+%%
+
 %\togglefalse{uebung}
-%\toggletrue{uebung}
+\toggletrue{uebung}
 %\togglefalse{loesung}
-%\toggletrue{loesung}
+\toggletrue{loesung}
 %\togglefalse{toc}
-%\toggletrue{toc}
-%\toggletrue{hausaufgabe}
+\toggletrue{toc}
+\toggletrue{hausaufgabe}
 %\togglefalse{hausaufgabe}
 
 
